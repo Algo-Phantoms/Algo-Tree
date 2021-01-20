@@ -1,1 +1,44 @@
-# Algo-Tree
+# Algo-Tree 🌲
+
+[![Issues](https://img.shields.io/github/issues/Algo-Phantoms/Algo-Tree)](https://github.com/Algo-Phantoms/Algo-Tree/issues)
+[![Forks](https://img.shields.io/github/forks/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree) 
+[![Stars](https://img.shields.io/github/stars/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree) 
+[![Watchers](https://img.shields.io/github/watchers/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+**Algo-Tree** is a collection of Algorithms and data structures which are fundamentals to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. It contains solutions in various languages such as ``C++``, ``Python`` and ``Java``.
+
+# Code Structure
+
+
+# Contribution Guidelines :gear:
+
+You may go through these guidelines and contribute accordingly:
+
+* Make sure you do not copy codes from external sources like GFG, etc because that work will not be considered. **Plagiarism is strictly not allowed.** 
+* You can only work on issues that you have been assigned to you.
+* If you want to contribute for an existing algorithm, we prefer that you create an issue before making a PR and link your PR to that issue.
+* If you have modified/added code work, make sure the code compiles before submitting.
+* Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
+* Do not update the README.md and CONTRIBUTING.md.
+
+
+The value of a strong contribution stays beyond everything and gives you satisfaction 👍.
+
+# Maintainers 😇
+
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/rudrakshi99"><img alt="" src="https://avatars.githubusercontent.com/rudrakshi99" width="100px;"><br><sub><b>Rudrakshi</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=geekquad" title="Code">💻 🖋</a></td> </a></td>
+    <td align="center"><a href="https://github.com/nakul-19"><img alt="" src="https://avatars.githubusercontent.com/nakul-19" width="100px;"><br><sub><b>Nakul Sharma</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=major-beast" title="Code">💻 🖋</a></td></a></td>
+    <td align="center"><a href="https://github.com/plazzy99"><img alt="" src="https://avatars.githubusercontent.com/plazzy99" width="100px;"><br><sub><b>
+Vatsal kesarwani </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=major-beast" title="Code">💻 🖋</a></td></a></td>
+  </tr>
+</tbody></table>
+
+
+# License
+
+This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
