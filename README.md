@@ -24,6 +24,12 @@ You may go through these guidelines and contribute accordingly:
 * Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
 * Do not update the README.md and CONTRIBUTING.md.
 
+## Where to upload the files 📂
+
+* Your files should be uploaded directly into the corresponding folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the Java folder).
+* **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so**.
+* Edit the corresponding README.md file to add the link to your code in the corresponding section [(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
+
 
 The value of a strong contribution stays beyond everything and gives you satisfaction 👍.
 
@@ -38,6 +44,8 @@ Vatsal kesarwani </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Alg
   </tr>
 </tbody></table>
 
+# Code of Conduct
+You can find our Code of Conduct [here](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/CODE_OF_CONDUCT.md).
 
 # License
 
