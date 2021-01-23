@@ -1,4 +1,4 @@
- # Questuions related to Searching
+ # Questions related to Searching
 
 
- # Questuions related to Sorting
+ # Questions related to Sorting

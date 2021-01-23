@@ -1,1 +1,1 @@
- # Questuions related to Bit Manipulation
+ # Questions related to Bit Manipulation

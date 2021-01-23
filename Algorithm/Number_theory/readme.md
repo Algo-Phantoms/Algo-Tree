@@ -1,1 +1,1 @@
- # Questuions related to Number Theory
+ # Questions related to Number Theory

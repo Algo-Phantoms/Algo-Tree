@@ -1,3 +1,3 @@
-# Questuions related to Binary Tree
+# Questions related to Binary Tree
 
-# Questuions related to Binary Search Tree
+# Questions related to Binary Search Tree

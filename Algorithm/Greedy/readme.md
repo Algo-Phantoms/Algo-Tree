@@ -1,1 +1,1 @@
- # Questuions related to Greedy
+ # Questions related to Greedy
