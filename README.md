@@ -20,8 +20,16 @@
 * [Tree](/Tree)
 * [Graph](/Graph)
 * [Trie](/Trie)
-* [Algorithm](/Algorithm)
-
+### Algorithms
+* [Backtracking](/Algorithm/Backtracking)
+* [Bit Manipulation](/Algorithm/Bit_manipulation)
+* [Dynamic Programming](/Algorithm/DP)
+* [Greedy](/Algorithm/Greedy)
+* [Hashing](/Algorithm/Hashing)
+* [Recursion](/Algorithm/Recursion)
+* [Number Theory](/Algorithm/Number_theory)
+* [Searcing and Sorting](/Algorithm/Searching_Sorting)
+* [Special Algorithm](/Algorithm/Special_algo)
 
 # Contribution Guidelines :gear:
 
