@@ -11,6 +11,16 @@
 **Algo-Tree** is a collection of Algorithms and data structures which are fundamentals to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. It contains solutions in various languages such as ``C++``, ``Python`` and ``Java``.
 
 # Code Structure
+* [Array](/Array)
+* [2D_Array](/2D_Array)
+* [String](/string)
+* [Linked List](/Linked_list)
+* [Stack](/Stack)
+* [Queue](/Queue)
+* [Tree](/Tree)
+* [Graph](/Graph)
+* [Trie](/Trie)
+* [Algorithm](/Algorithm)
 
 
 # Contribution Guidelines :gear:
@@ -22,11 +32,11 @@ You may go through these guidelines and contribute accordingly:
 * If you want to contribute for an existing algorithm, we prefer that you create an issue before making a PR and link your PR to that issue.
 * If you have modified/added code work, make sure the code compiles before submitting.
 * Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
-* Do not update the README.md and CONTRIBUTING.md.
+* Do not update the README.md.
 
 ## Where to upload the files 📂
 
-* Your files should be uploaded directly into the corresponding folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the Java folder).
+* Your files should be uploaded inside the ***code** folder into the corresponding language folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the code/Java folder).
 * **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so**.
 * Edit the corresponding README.md file to add the link to your code in the corresponding section [(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
 
