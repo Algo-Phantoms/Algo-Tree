@@ -1,3 +1,9 @@
+/*
+At any point in time, we know the index of the last element of the Array, 
+as we've kept track of it in our length variable. All we need to do for inserting an element 
+at the end is to assign the new element to one index past (n-1) the current last element.
+*/ 
+
 #include<iostream>
 using namespace std;
 
@@ -32,17 +38,20 @@ int main(){
 return 0;
 }
 
-/* Test cases - 
+/* Test cases : 
 
-Input - 5
+Input : 5
 1 2 3 4 5
 6 
 
-Output- 
+Output : 
 Initial array 
 1 2 3 4 5 
 
 Final array 
 1 2 3 4 5 6
+
+Time Complexity : O(1)
+Space Complexity : O(1)
 
 */

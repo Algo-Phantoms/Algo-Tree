@@ -1,3 +1,15 @@
+/*
+The BFS algorithm works similar to level – order traversal of the trees. Like level – order
+traversal, BFS also uses queues. In fact, level – order traversal got inspired from BFS. BFS
+works level by level. Initially, BFS starts at a given vertex, which is at level 0. In the first stage it
+visits all vertices at level 1 (that means, vertices whose distance is 1 from the start vertex of the
+graph). In the second stage, it visits all vertices at the second level. These new vertices are the
+ones which are adjacent to level 1 vertices.
+BFS continues this process until all the levels of the graph are completed. Generally queue data
+structure is used for storing the vertices of a level.
+*/
+
+
 #include<iostream>
 #include<map>
 #include<string>
@@ -5,7 +17,7 @@
 #include<list>
 using namespace std;
 
-template<typename T> // for generic
+template<typename T>				// for generic
 
 class Graph{
 
@@ -14,7 +26,7 @@ public:
 	void AddEdge(T src, T dest, bool nondirectional = true){
 
 		m[src].push_back(dest);
-		if(nondirectional){ // bi-directional
+		if(nondirectional){				// bi-directional
 			m[dest].push_back(src);
 		}
 	}
@@ -29,7 +41,7 @@ public:
 		}
 	}
 
-	void BFS(T src){ // like level order traversal
+	void BFS(T src){				// like level order traversal
 		queue<T> q;
 		q.push(src);
 
@@ -42,8 +54,8 @@ public:
 
 			q.pop();
 
-			for(auto neigh : m[temp]){ // traverse list of neighbours
-				if(!visited[neigh]){ // if not visited
+			for(auto neigh : m[temp]){				// traverse list of neighbours
+				if(!visited[neigh]){				// if not visited
 					q.push(neigh);
 					visited[neigh] = true;
 				}
@@ -56,16 +68,18 @@ public:
 int main(){
 
     Graph<int> g;
-    g.AddEdge(0,1);
-    g.AddEdge(0,4);
-    g.AddEdge(1,2);
-    g.AddEdge(2,3);
-    g.AddEdge(2,4);
-    g.AddEdge(3,4);
-    g.AddEdge(3,5);
-  
-    g.print();
-  
+
+    int n;				//no. of edges
+
+    cin >> n;
+
+    int u, v;
+
+    for(int i=0; i<n; i++){
+        cin >> u >> v;
+        g.AddEdge(u,v);
+    }
+   
     g.BFS(0);
 
     
@@ -74,5 +88,21 @@ int main(){
 }
 
 /*
-Output - 0 1 4 2 3 5
+
+Test Case :
+
+Input : 
+0 1
+0 4
+1 2
+2 3
+2 4
+3 4
+3 5
+
+Output : 0 1 4 2 3 5
+
+Time Complexity: O(V+E) where V is number of vertices in the graph and E is number of edges in the graph.
+Space complexity : O(V)
+
 */

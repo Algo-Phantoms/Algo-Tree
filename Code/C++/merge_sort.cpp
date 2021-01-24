@@ -1,4 +1,17 @@
-// mergesort
+/*
+
+* Merge sort is an example of the divide and conquer strategy.
+* Merging is the process of combining two sorted files to make one bigger sorted file.
+* Selection is the process of dividing a file into two parts: k smallest elements and n –
+ k largest elements.
+* Selection and merging are opposite operations :
+      *selection splits a list into two lists
+      *merging joins two files to make one file
+* Merge sort is Quick sort’s complement
+* Merge sort accesses the data in a sequential manner
+* Merge sort is insensitive to the initial order of its input
+
+*/
 #include<iostream>
 using namespace std;
 
@@ -103,5 +116,11 @@ int main()
 
 Output - 
 1 2 3 4 5 6 
+
+Time Complexity : 
+  Worst case complexity : Θ(nlogn)
+  Best case complexity : Θ(nlogn)
+  Average case complexity : Θ(nlogn)
+  Worst case space complexity: Θ(n) auxiliary
 
 */

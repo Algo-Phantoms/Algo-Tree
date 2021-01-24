@@ -53,8 +53,9 @@ int main(){
    return 0;
 }
 
-/* Test case - 
- Input - 45
- Output - no
+/* Test case :
+
+ Input : 45
+ Output : no
 
  */

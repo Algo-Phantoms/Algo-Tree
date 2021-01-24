@@ -1,3 +1,7 @@
+/*
+Factorial of a non-negative integer, is multiplication of all integers smaller than or equal to n.
+*/
+
 #include<iostream>
 using namespace std;
 
@@ -17,7 +21,13 @@ using namespace std;
  	return 0;
  }
 
-/* Test case - 
- Input - 6
- Output - 720
+/* 
+Test case :
+
+Input : 6
+Output : 720
+
+Time complexity: O(n)
+Space Complexity: O(n)
+
  */

@@ -1,3 +1,16 @@
+/*
+Insertion sort is a simple and efficient comparison sort. In this algorithm, each iteration removes
+an element from the input data and inserts it into the correct position in the list being sorted. The
+choice of the element being removed from the input is random and this process is repeated until
+all input elements have gone through.
+
+ * Algorithm :
+	Every repetition of insertion sort removes an element from the input data, and inserts it into the
+	correct position in the already-sorted list until no input elements remain. Sorting is typically done
+	in-place. The resulting array after k iterations has the property where the first k + 1 entries are
+	sorted.Each element greater than x is copied to the right as it is compared against x.
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -29,12 +42,18 @@ int main()
 	return 0;
 }
 
-/* Test case - 
+/* 
+Test case : 
 Input - 5
 4 3 5 1 2
 
-Output - 
+Output : 
 1 2 3 4 5
 
+Time Complexity : 
+	Worst case complexity: Θ(n^2 )
+	Best case complexity: Θ(n)
+	Average case complexity: Θ(n^2 )
+	Worst case space complexity: O(n^2 ) total, O(1) auxiliary
 */
 

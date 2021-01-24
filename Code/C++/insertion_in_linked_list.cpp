@@ -1,3 +1,24 @@
+/*
+Insertion into a singly-linked list has three cases:
+
+1. Inserting a new node before the head (at the beginning)
+	• Update the next pointer of new node, to point to the current head.
+	• Update head pointer to point to the new node.
+
+2. Inserting a new node after the tail (at the end of the list)
+	• New nodes next pointer points to NULL.
+	• Last nodes next pointer points to the new node.
+
+3. Inserting a new node at the middle of the list (random location)
+	• If we want to add an element at position 3 then we stop at position 2. That means we
+	traverse 2 nodes and insert the new node. For simplicity let us assume that the
+	second node is called position node. The new node points to the next node of the
+	position where we want to add this node.
+	• Position node’s next pointer now points to the new node.
+
+
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -6,7 +27,7 @@ class node{
   public:
   	int data;
   	node* next;
-  	 node(int x){  //constructor
+  	 node(int x){ 				//constructor
        data = x;
        next = nullptr;
   	 }
@@ -17,14 +38,14 @@ class  LinkedList{
 public:
 	node* head;
 	node* tail;
-	 LinkedList(){  //constructor
+	 LinkedList(){				//constructor
 	 	head = nullptr;
 	 	tail = nullptr;
 	 }
 	void insertion_at_head(int x){
-		// node create
-		node* n = new node(x);
-		if(head == nullptr){ //only one node
+		
+		node* n = new node(x);				// node create
+		if(head == nullptr){				//only one node
 			head = n;
 			tail = n;
 		}
@@ -35,7 +56,7 @@ public:
 	}
 	void insertion_at_tail(int x){
 		node* n = new node(x);
-		if(head == nullptr){ //only one node
+		if(head == nullptr){				//only one node
 			head = n;
 			tail = n;
 		}
@@ -121,5 +142,11 @@ Output -
 4 3 2 1 6 
 4 3 7 2 1 6 
 6
+
+Time Complexity :
+
+Insertion at start : O(1)
+Insertion at end : O(N)
+Insertion at random position : O(N) 
 
 */

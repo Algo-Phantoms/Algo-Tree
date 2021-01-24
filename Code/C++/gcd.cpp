@@ -1,3 +1,7 @@
+/*
+GCD (Greatest Common Divisor) or HCF (Highest Common Factor) of two numbers is the largest number that divides both of them
+*/
+
 #include<iostream>
 using namespace std;
 
@@ -19,7 +23,11 @@ int main(){
 }
 
 
-/* Test case -
- Input - 6 9
- Output - 3
+/* Test case :
+
+ Input : 6 9
+ Output : 3
+
+ Time Complexity: O(Log min(a, b))  
+ Space Complexity: O(1)  
  */
