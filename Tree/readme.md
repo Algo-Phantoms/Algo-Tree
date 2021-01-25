@@ -46,7 +46,8 @@ that, this property should be satisfied at every node in the tree.
 * Finding k th -smallest element in tree
 * Sorting the elements of binary search tree and many more
 
-
-
+## Questions :
+* Breath First Search ----> [C++](/Code/C++/BFS.cpp) | [Java]() | [Python]()
+* Depth First Search ----> [C++](/Code/C++/DFS.cpp) | [Java]() | [Python]()
 
 
