@@ -24,3 +24,7 @@ decision point. Eventually, more and more of these decision points will have bee
 and we will have to backtrack further and further. If we backtrack all the way to our initial state
 and have explored all alternatives from there, we can conclude the particular problem is
 unsolvable. 
+
+## Questions :
+
+* Permutation of a string ----> [C++](/Code/C++/permutation_of_a_string.cpp)
