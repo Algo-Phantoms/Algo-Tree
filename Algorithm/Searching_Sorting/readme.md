@@ -38,4 +38,29 @@ Sorting algorithms are generally categorized based on the following parameters.
 	With a few sorting algorithms, the complexity changes based on pre-sortedness [quick sort]: pre-
 	sortedness of the input affects the running time. Algorithms that take this into account are known to
 	be adaptive.
+	
+# Searching
+Searching is one of the core computer science algorithms. We know that today’s computers store
+a lot of information. To retrieve this information proficiently we need very efficient searching
+algorithms. There are certain ways of organizing the data that improves the searching process.
+That means, if we keep the data in proper order, it is easy to search the required element. Sorting
+is one of the techniques for making the elements ordered.
+
+## Types of Searching
+
+Following are the types of searches which we will be discussing in this book.
+
+* Unordered Linear Search
+* Sorted/Ordered Linear Search
+* Binary Search
+* Interpolation search
+* Binary Search Trees 
+* Symbol Tables and Hashing
+* String Searching Algorithms: Tries, Ternary Search and Suffix Trees
+
+## Questions :
+
+* Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
+* Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
+* Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
 
