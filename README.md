@@ -1,12 +1,15 @@
 # Algo-Tree 🌲
+<img src="https://i.ibb.co/SsnRRrH/algotree.png" alt="algotree.png" />
 
 [![Issues](https://img.shields.io/github/issues/Algo-Phantoms/Algo-Tree)](https://github.com/Algo-Phantoms/Algo-Tree/issues)
-[![Forks](https://img.shields.io/github/forks/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree) 
-[![Stars](https://img.shields.io/github/stars/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree) 
-[![Watchers](https://img.shields.io/github/watchers/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+![Maintenance](https://img.shields.io/maintenance/yes/2021)
+
+[![Forks](https://img.shields.io/github/forks/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree) 
+[![Stars](https://img.shields.io/github/stars/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree) 
+[![Watchers](https://img.shields.io/github/watchers/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree)
 
 **Algo-Tree** is a collection of Algorithms and data structures which are fundamentals to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. It contains solutions in various languages such as ``C++``, ``Python`` and ``Java``.
 
@@ -68,3 +71,12 @@ You can find our Code of Conduct [here](https://github.com/Algo-Phantoms/Algo-Tr
 # License
 
 This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
+
+
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
