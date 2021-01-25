@@ -38,7 +38,7 @@ int main(){
 return 0;
 }
 
-/* Test cases : 
+/* Test case : 
 
 Input : 5
 1 2 3 4 5

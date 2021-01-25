@@ -110,11 +110,12 @@ int main()
   return 0;
 }
 
-/* Test case - 
- Input - 6
+/* 
+Test case : 
+ Input : 6
 4 3 5 6 1 2
 
-Output - 
+Output : 
 1 2 3 4 5 6 
 
 Time Complexity : 

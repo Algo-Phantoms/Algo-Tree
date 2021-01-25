@@ -44,7 +44,7 @@ int main()
 
 /* 
 Test case : 
-Input - 5
+Input : 5
 4 3 5 1 2
 
 Output : 

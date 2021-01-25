@@ -1,6 +1,9 @@
-//Prefix tree - trie
-// for reoccuring characters
-#include<iostream>
+/*
+A trie is a tree and each node in it contains the number of pointers equal to the number of
+characters of the alphabet. For example, if we assume that all the strings are formed with English
+alphabet characters “a” to “z” then each node of the trie contains 26 pointers.
+*/
+
 #include<map>
 #include<string>
 #include<queue>
@@ -35,20 +38,20 @@ public:
 		for(int i=0;word[i]!='\0';i++){
 			char ch = word[i];
 
-			if(temp->m.count(ch)==0){ //if not present
+			if(temp->m.count(ch)==0){				//if not present
 
                 node* child = new node(ch);
-                temp->m[ch] = child; // create link
+                temp->m[ch] = child;				// create link
                 temp = child;
 			}
 			else{
 
-				temp = temp->m[ch]; // next address
+				temp = temp->m[ch];				// next address
 
 			}
 		}
 
-		temp->is_terminal = true; // last node
+		temp->is_terminal = true;				// last node
 	}
 
 	bool search(char word[]){
@@ -59,19 +62,20 @@ public:
 
 			char ch = word[i];
 
-			if(temp->m.count(ch)==1){ // if present 
+			if(temp->m.count(ch)==1){				// if present 
                  temp = temp->m[ch];
 			}
-			else{ // not present
+			else{				// not present
                return false;
 			}
 			
 		}
-    return temp->is_terminal; // not always at last node
+    return temp->is_terminal;				// not always at last node
 	}
 
 
 };
+
 int main()
 {
 	Trie T;
@@ -89,8 +93,14 @@ int main()
 	return 0;
 }
 
-/* Test Case -
+/* 
 
-Input - adf
-Output - true
+Test Case :
+
+Input : adf
+Output : true
+
+Time Complexity : O(L), where L is the length of the string to be searched.
+Time Complexity : O(1)
+
 */

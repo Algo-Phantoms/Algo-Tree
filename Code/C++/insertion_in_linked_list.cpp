@@ -130,14 +130,16 @@ int main() {
 	return 0;
 }
 
-/* Test case - 
+/* 
 
-Input - 
+Test case : 
+
+Input : 
 5
 6
 7 3
 
-Output - 
+Output : 
 4 3 2 1 
 4 3 2 1 6 
 4 3 7 2 1 6 
@@ -148,5 +150,7 @@ Time Complexity :
 Insertion at start : O(1)
 Insertion at end : O(N)
 Insertion at random position : O(N) 
+
+Space Complexity : O(N)
 
 */

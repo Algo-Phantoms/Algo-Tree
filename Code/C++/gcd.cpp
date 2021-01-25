@@ -23,7 +23,8 @@ int main(){
 }
 
 
-/* Test case :
+/* 
+ Test case :
 
  Input : 6 9
  Output : 3

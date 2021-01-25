@@ -1,3 +1,8 @@
+/*
+A queue can be implemented using two stacks. 
+Let queue to be implemented be q and stacks used to implement q be s1 and s2.
+*/
+
 #include <iostream>
 #include <stack>
 using namespace std;
@@ -7,15 +12,11 @@ class Queue{
 
 public:
 
-	stack<int> s1; //main data structure
+	stack<int> s1;				//main data structure
 
-	stack<int> s2; //helper
+	stack<int> s2;				//helper
 
-	Queue(){
-		//no need
-	}
-
-	void push(int x){
+	void push(int x){ 
 		s1.push(x);
 	}
 
@@ -106,10 +107,13 @@ int main()
 	return 0;
 }
 
-/* Test case - 
-Input - 5
+/* 
 
-Output - 
+Test case :
+
+Input : 5
+
+Output : 
 1
 5
 2
@@ -118,4 +122,14 @@ Output -
 3
 4
 5
+
+Time Complexity : 
+
+Push operation : O(N).
+Pop operation : O(1).
+
+SpaceComplexity : O(N).
+
+
+
 */

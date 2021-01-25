@@ -1,13 +1,19 @@
+/*
+Stack is a linear data structure which follows a particular order in which the operations are performed. 
+The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+This is the implimentation of stack class using pointers.
+
+*/
 #include <iostream>
 using namespace std;
 
-template<typename T> // for data
+template<typename T> 
 
 class node{
 public:
 	T data;
 	node<T>* next;
-	node(T x){ // constructor
+	node(T x){				// constructor
 		data = x;
 		next = nullptr;
 	}
@@ -50,7 +56,7 @@ public:
 	}
 
 	bool empty(){
-       return head == nullptr; // or count == 0
+       return head == nullptr;				// or count == 0
 	}
 
 	T top(){
@@ -72,18 +78,20 @@ int main()
     cout << s.top() << "\n";
     cout << s.size()<< "\n";
     cout << s.empty() << "\n";
-    while(!s.empty()){  // print all elements
+    while(!s.empty()){ 				// print all elements
     	cout << s.top()<<"\n";
     	s.pop();
     }
-	return 0;
+  return 0;
 }
 
 
-/* Test Case -
- Input -5
+/* 
 
-Output - 
+Test Case :
+Input : 5
+
+Output : 
 5
 4
 4
@@ -92,5 +100,15 @@ Output -
 3
 2
 1
+
+
+Time Complexity of Push() : O(1)
+Time Complexity of Pop() : O(1)
+Time Complexity of Size() : O(1)
+Time Complexity of IsEmptyStack() : O(1)
+Time Complexity of IsFullStackf) : O(1)
+Time Complexity of DeleteStackQ : O(1)
+
+Space Complexity (for n push operations) : O(n)
 
 */
