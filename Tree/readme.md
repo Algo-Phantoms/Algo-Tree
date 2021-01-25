@@ -47,7 +47,7 @@ that, this property should be satisfied at every node in the tree.
 * Sorting the elements of binary search tree and many more
 
 ## Questions :
-* Breath First Search ----> [C++](/Code/C++/BFS.cpp) | [Java]() | [Python]()
-* Depth First Search ----> [C++](/Code/C++/DFS.cpp) | [Java]() | [Python]()
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+
 
 
