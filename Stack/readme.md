@@ -20,3 +20,6 @@ element in a full stack is called **overflow**.
 * **Size():** Returns the number of elements stored in the stack.
 * **IsEmptyStack():** Indicates whether any elements are stored in the stack or not.
 * **IsFullStack():** Indicates whether the stack is full or not.
+
+## Questions :
+* Stack Class ----> [C++](/Code/C++/stack_class.cpp)
