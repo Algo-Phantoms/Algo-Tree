@@ -32,5 +32,5 @@ A graph is a pair (V, E), where V is a set of nodes, called vertices, and £ is 
 
 ## Questions :
 
-* Breath First Search ----> [C++](/code/C++/BFS.cpp) | [Java]() | [Python]()
-* Depth First Search ----> [C++](/code/C++/DFS.cpp) | [Java]() | [Python]()
+* Breath First Search ----> [C++](/Code/C++/BFS.cpp) | [Java]() | [Python]()
+* Depth First Search ----> [C++](/Code/C++/DFS.cpp) | [Java]() | [Python]()
