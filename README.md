@@ -57,7 +57,7 @@ You may go through these guidelines and contribute accordingly:
 
 * Your files should be uploaded inside the **code** folder into the corresponding language folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the Code/Java folder).
 * **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so**.
-* Edit the corresponding README.md file to add the link to your code in the corresponding section [(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
+* Edit the corresponding README.md file to add the link to your code in the corresponding section in **alphabatical order**.[(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
 
 
 The value of a strong contribution stays beyond everything and gives you satisfaction 👍.
