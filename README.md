@@ -43,11 +43,19 @@ You may go through these guidelines and contribute accordingly:
 * If you want to contribute for an existing algorithm, we prefer that you create an issue before making a PR and link your PR to that issue.
 * If you have modified/added code work, make sure the code compiles before submitting.
 * Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
-* Do not update the README.md.
+* Do not update the [README.md](README.md).
+
+## Guidelines for code base :
+* Use **4 spaces** indentation.
+* Add the **description** of your algorithm using multi-line comments at the starting of the code.
+* Add **comments** to your code using single-line comments and use **4 tabs** spaces.
+* Try to make your code **user input**.
+* Add **test cases** along with input and output at the end of your code using multi-line comments.
+* Also, add **time** and **space complexity** at the end of your code using multi-line comments.
 
 ## Where to upload the files 📂
 
-* Your files should be uploaded inside the ***code** folder into the corresponding language folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the code/Java folder).
+* Your files should be uploaded inside the **code** folder into the corresponding language folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the Code/Java folder).
 * **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so**.
 * Edit the corresponding README.md file to add the link to your code in the corresponding section [(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
 
