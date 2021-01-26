@@ -1,5 +1,5 @@
 # Algo-Tree 🌲
-<img src="https://i.ibb.co/SsnRRrH/algotree.png" alt="algotree.png" />
+<img src="https://i.ibb.co/SsnRRrH/algotree.png" alt="algotree.png" width="1080" />
 
 [![Issues](https://img.shields.io/github/issues/Algo-Phantoms/Algo-Tree)](https://github.com/Algo-Phantoms/Algo-Tree/issues)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
