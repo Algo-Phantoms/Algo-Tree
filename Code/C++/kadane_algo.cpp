@@ -27,46 +27,46 @@ main()
     cin.tie(NULL);
 	
 	ll int t;
-	cin>>t;				
+	cin>>t;
 	// no of testcases
 	
 	while(t--)
 	{
 	    ll int n,maxs;
-	    cin>>n;				
+	    cin>>n;
 		// no of elements in the array
 	    
 	    ll int arr[n],i,sum=0,pos=0,neg=0;
 	    
 	    for(i=0;i<n;i++)
 	    {
-	        cin>>arr[i];				
+	        cin>>arr[i];
 			// array input
 	        
-			sum += arr[i];				
+			sum += arr[i];
 			// complete sum of the array
 	        
 	        if(arr[i] >=0 )
-	        pos++;				
+	        pos++;
 			// no of positive values
 	        
 	        else
-	        neg++;				
+	        neg++;
 			// no of negative values
 	    }
 	    
 	    
-	    if(pos == n)				
+	    if(pos == n)
 		// if all elements are positive
 	    printf("%lld\n",sum);
 	    
-	    else if(neg == n)				
+	    else if(neg == n)
 		// if all elements are negative
 	    {
-	        sort(arr , arr + n);				
+	        sort(arr , arr + n);
 			// sort the array in non-decreasing order
 	        
-	        printf("%lld\n",arr[n-1]);				
+	        printf("%lld\n",arr[n-1]);
 			// print the largest elements
 	    }
 	    else
@@ -76,25 +76,25 @@ main()
 	        
 	        for(i=0; i<n; i++)
 	        {
-	            if( left + arr[i] <=0 )					
+	            if( left + arr[i] <=0 )
 				// if variable becomes negative, reset left to 0				
 	            {
 	                
 	                left = 0;
 	            }
 	            
-	            else 				
+	            else
 				// add if the variable will remain positive
 	            {
 	                left += arr[i];
-	                maxs = max(maxs,left); 				
+	                maxs = max(maxs,left);
 					// keep track of variable's value to know the maximum
 	            
 	            }
 	            
 	        }
 	        
-	        printf("%lld\n",maxs); 				
+	        printf("%lld\n",maxs);
 			// print the answer
 	    }
 	}
