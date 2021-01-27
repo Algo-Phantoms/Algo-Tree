@@ -48,7 +48,7 @@ You may go through these guidelines and contribute accordingly:
 ## Guidelines for code base :
 * Use **4 spaces** indentation.
 * Add the **description** of your algorithm using multi-line comments at the starting of the code.
-* Add **comments** to your code using single-line comments and use **4 tabs** spaces.
+* Add **comments** to your code in a **new line** and use single-line comments.
 * Try to make your code **user input**.
 * Add **test cases** along with input and output at the end of your code using multi-line comments.
 * Also, add **time** and **space complexity** at the end of your code using multi-line comments.
