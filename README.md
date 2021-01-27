@@ -50,7 +50,7 @@ You may go through these guidelines and contribute accordingly:
 * Add the **description** of your algorithm using multi-line comments at the starting of the code.
 * Add **comments** to your code in a **new line** and use single-line comments.
 * Try to make your code **user input**.
-* Add **test cases** along with input and output at the end of your code using multi-line comments.
+* Add **minimum 2 test cases** along with input and output at the end of your code using multi-line comments.
 * Also, add **time** and **space complexity** at the end of your code using multi-line comments.
 
 ## Where to upload the files 📂
