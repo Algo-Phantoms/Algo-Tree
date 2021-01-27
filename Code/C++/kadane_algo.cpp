@@ -30,7 +30,7 @@ main()
 	cin>>n;
 	// no of elements in the array
 	    
-	ll int arr[n],i,sum=0,pos=0,neg=0;
+	ll int arr[n],i,sum=0,pos=0,neg=0, maxi = INT_MIN;
 	    
 	for(i=0;i<n;i++)
 	{
@@ -57,10 +57,11 @@ main()
 	else if(neg == n)
 	// if all elements are negative
 	{
-	    sort(arr , arr + n);
-		// sort the array in non-decreasing order
+	    for(i = 0; i<n; i++)
+	    maxi = max(maxi , arr[i]);
+		// find the largest element
 	        
-	    printf("%lld\n",arr[n-1]);
+	    printf("%lld\n",maxi);
 		// print the largest elements
 	}
 	else
