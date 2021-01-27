@@ -26,90 +26,89 @@ main()
 	ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 	
-	ll int t;
-	cin>>t;
-	// no of testcases
-	
-	while(t--)
+	ll int n,maxs;
+	cin>>n;
+	// no of elements in the array
+	    
+	ll int arr[n],i,sum=0,pos=0,neg=0;
+	    
+	for(i=0;i<n;i++)
 	{
-	    ll int n,maxs;
-	    cin>>n;
-		// no of elements in the array
-	    
-	    ll int arr[n],i,sum=0,pos=0,neg=0;
-	    
-	    for(i=0;i<n;i++)
-	    {
-	        cin>>arr[i];
-			// array input
+	    cin>>arr[i];
+		// array input
 	        
-			sum += arr[i];
-			// complete sum of the array
+		sum += arr[i];
+		// complete sum of the array
 	        
-	        if(arr[i] >=0 )
-	        pos++;
-			// no of positive values
+	    if(arr[i] >=0 )
+	    pos++;
+		// no of positive values
 	        
-	        else
-	        neg++;
-			// no of negative values
-	    }
-	    
-	    
-	    if(pos == n)
-		// if all elements are positive
-	    printf("%lld\n",sum);
-	    
-	    else if(neg == n)
-		// if all elements are negative
-	    {
-	        sort(arr , arr + n);
-			// sort the array in non-decreasing order
-	        
-	        printf("%lld\n",arr[n-1]);
-			// print the largest elements
-	    }
 	    else
-	    {
-	        ll int left = 0;
-	        ll int maxs = 0;
+	    neg++;
+		// no of negative values
+	}
+	    
+	    
+	if(pos == n)
+	// if all elements are positive
+	printf("%lld\n",sum);
+	    
+	else if(neg == n)
+	// if all elements are negative
+	{
+	    sort(arr , arr + n);
+		// sort the array in non-decreasing order
 	        
-	        for(i=0; i<n; i++)
+	    printf("%lld\n",arr[n-1]);
+		// print the largest elements
+	}
+	else
+	{
+	    ll int left = 0;
+	    ll int maxs = 0;
+	        
+	    for(i=0; i<n; i++)
+	    {
+	        if( left + arr[i] <=0 )
+			// if variable becomes negative, reset left to 0				
+	        {        
+	            left = 0;
+	        }
+	            
+	        else
+			// add if the variable will remain positive
 	        {
-	            if( left + arr[i] <=0 )
-				// if variable becomes negative, reset left to 0				
-	            {
-	                
-	                left = 0;
-	            }
-	            
-	            else
-				// add if the variable will remain positive
-	            {
-	                left += arr[i];
-	                maxs = max(maxs,left);
-					// keep track of variable's value to know the maximum
-	            
-	            }
+	            left += arr[i];
+	            maxs = max(maxs,left);
+				// keep track of variable's value to know the maximum
 	            
 	        }
-	        
-	        printf("%lld\n",maxs);
-			// print the answer
+	            
 	    }
+	        
+	    printf("%lld\n",maxs);
+		// print the answer
 	}
 }
 /*
 Testcase
 
 Input :
-1
+
 5
 4 1 -3 7 12
 
 Output : 21
 
-Time complexity : O(n) in best case, O(n log(n) ) in worst case, O(n) in average case
+Input :
+
+6
+-1 -4 -5 8 7 9
+
+Output : 24
+
+Time complexity : O(n) in average case
 Space complexity : O(1)
 
 */
