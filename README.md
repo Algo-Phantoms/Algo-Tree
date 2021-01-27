@@ -31,7 +31,7 @@
 * [Hashing](/Algorithm/Hashing)
 * [Recursion](/Algorithm/Recursion)
 * [Number Theory](/Algorithm/Number_theory)
-* [Searcing and Sorting](/Algorithm/Searching_Sorting)
+* [Searching and Sorting](/Algorithm/Searching_Sorting)
 * [Special Algorithm](/Algorithm/Special_algo)
 
 # Contribution Guidelines :gear:
