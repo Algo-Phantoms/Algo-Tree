@@ -17,7 +17,8 @@ structure is used for storing the vertices of a level.
 #include<list>
 using namespace std;
 
-template<typename T>				// for generic
+				// for generic
+template<typename T>				
 
 class Graph{
 
@@ -26,7 +27,8 @@ public:
 	void AddEdge(T src, T dest, bool nondirectional = true){
 
 		m[src].push_back(dest);
-		if(nondirectional){				// bi-directional
+				// bi-directional
+		if(nondirectional){				
 			m[dest].push_back(src);
 		}
 	}
@@ -41,7 +43,8 @@ public:
 		}
 	}
 
-	void BFS(T src){				// like level order traversal
+				// like level order traversal
+	void BFS(T src){				
 		queue<T> q;
 		q.push(src);
 
@@ -54,8 +57,10 @@ public:
 
 			q.pop();
 
-			for(auto neigh : m[temp]){				// traverse list of neighbours
-				if(!visited[neigh]){				// if not visited
+				// traverse list of neighbours
+			for(auto neigh : m[temp]){	
+				// if not visited			
+				if(!visited[neigh]){				
 					q.push(neigh);
 					visited[neigh] = true;
 				}
@@ -69,7 +74,8 @@ int main(){
 
     Graph<int> g;
 
-    int n;				//no. of edges
+			//no. of edges
+    int n;				
 
     cin >> n;
 
@@ -91,7 +97,7 @@ int main(){
 
 Test Case :
 
-Input : 
+Input : 7
 0 1
 0 4
 1 2
@@ -101,6 +107,16 @@ Input :
 3 5
 
 Output : 0 1 4 2 3 5
+
+Input : 6
+0 1
+0 2
+1 2
+2 0
+2 3
+3 3
+
+Output : 0 1 2 3
 
 Time Complexity: O(V+E) where V is number of vertices in the graph and E is number of edges in the graph.
 Space complexity : O(V)

@@ -80,7 +80,7 @@ int main(){
 
 Test Case :
 
-Input : 
+Input : 7
 0 1
 0 4
 1 2
@@ -90,6 +90,16 @@ Input :
 3 5
 
 output - 0 1 2 3 4 5 
+
+Input : 6
+0 1
+0 2
+1 2
+2 0
+2 3
+3 3
+
+Output : 0 1 2 3
 
 Time complexity: O(V + E), where V is the number of vertices and E is the number of edges in the graph.
 Space Complexity: O(V)
