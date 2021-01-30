@@ -9,14 +9,17 @@ using namespace std;
 
 int *quickSort(int *arr, int left_index, int right_index)
 {
-    if (left_index >= right_index)				// Base Case
+                // Base Case
+    if (left_index >= right_index)				
         return arr;
 
     int pivot = right_index, start = left_index, end = right_index;
     right_index--;
-    while (left_index <= right_index)				// Partitioning
+                // Partitioning
+    while (left_index <= right_index)				
     {
-        if (arr[left_index] >= arr[pivot] && arr[pivot] >= arr[right_index])				// Swapping the both in this case
+                // Swapping the both in this case        
+        if (arr[left_index] >= arr[pivot] && arr[pivot] >= arr[right_index])				
         {
             int temp = arr[left_index];
             arr[left_index] = arr[right_index];
@@ -28,13 +31,15 @@ int *quickSort(int *arr, int left_index, int right_index)
             right_index--;
     }
 
-    /* Placing the Pivot */
+                // Placing the Pivot 
     int temp = arr[pivot];
     arr[pivot] = arr[left_index];
     arr[left_index] = temp;
 
-    quickSort(arr, start, left_index - 1);				// Sorting the first half
-    quickSort(arr, left_index + 1, end);				// Sorting the second half
+                // Sorting the first half
+    quickSort(arr, start, left_index - 1);	
+                // Sorting the second half			
+    quickSort(arr, left_index + 1, end);				
 
     return arr;
 }
@@ -42,14 +47,15 @@ int *quickSort(int *arr, int left_index, int right_index)
 int main()
 {
     int n;
-    cin >> n;				// Getting the number of Elements
+                // Getting the number of Elements
+    cin >> n;				
     int arr[n];
     for (int i = 0; i < n; i++)
-        cin >> arr[i];				// Getting the unsorted array
+        cin >> arr[i];				
 
     int *sortedArr = quickSort(arr, 0, n - 1);
     for (int i = 0; i < n; i++)
-        cout << sortedArr[i] << ' ';				// Printing the sorted array
+        cout << sortedArr[i] << ' ';				
 
     cout << '\n';
     return 0;

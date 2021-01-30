@@ -18,11 +18,13 @@ using namespace std;
 void subset(char c[]){
    
   int l = strlen(c)-1;
-  int tot = 1<<l; // 2^n - total subsets
+        // 2^n - total subsets
+  int tot = 1<<l; 
   for(int mask=0;mask<tot;mask++){
   	for(int i=0;i<l;i++){
   		int f = 1<<i; 
-  		if(mask & f){ //setbit
+            //setbit
+  		if(mask & f){ 
   			cout << c[i];
   		}
   	}

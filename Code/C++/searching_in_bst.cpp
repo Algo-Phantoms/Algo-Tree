@@ -22,7 +22,8 @@ public:
 	node* left;
 	node* right;
 
-	node(int x){				// constructor
+				// constructor
+	node(int x){				
 		data = x;
 		left = nullptr;
 		right = nullptr;
@@ -32,7 +33,8 @@ public:
 
 node* Insert_into_bst(node* root, int data){
 
-	if(root == nullptr){				// make new node
+				// make new node
+	if(root == nullptr){				
 		root = new node(data);
 		return root;
 	}
@@ -48,7 +50,8 @@ node* Insert_into_bst(node* root, int data){
 }
 node* Create_BST(){
 
-	int data;				// root node
+				// root node
+	int data;				
 	cin >> data;
 
 	node* root = nullptr;

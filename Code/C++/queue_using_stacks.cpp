@@ -12,9 +12,10 @@ class Queue{
 
 public:
 
-	stack<int> s1;				//main data structure
-
-	stack<int> s2;				//helper
+				//main data structure
+	stack<int> s1;				
+				//helper
+	stack<int> s2;				
 
 	void push(int x){ 
 		s1.push(x);
@@ -22,7 +23,7 @@ public:
 
 	void pop(){
 
-		//copy s1 to s2
+				//copy s1 to s2
 
 		while(!s1.empty()){
 			s2.push(s1.top());
@@ -31,7 +32,7 @@ public:
 
 		s2.pop();
 
-		//copy s2 to s1
+				//copy s2 to s1
 
 		while(!s2.empty()){
 			s1.push(s2.top());
@@ -41,7 +42,7 @@ public:
 	}
 
 	int front(){
-		//copy s1 to s2
+				//copy s1 to s2
 
 		while(!s1.empty()){
 			s2.push(s1.top());
@@ -50,7 +51,7 @@ public:
 
 		int x = s2.top();
 
-		//copy s2 to s1
+				//copy s2 to s1
 
 		while(!s2.empty()){
 			s1.push(s2.top());

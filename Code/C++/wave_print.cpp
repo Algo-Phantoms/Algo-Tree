@@ -4,14 +4,14 @@ using namespace std;
 void waveprint(int a[][30], int r, int c){
 	for(int column = 0; column < c; column++){
 		if(column%2==0){
-			 // even -->print top to botom
+				// even -->print top to botom
 
             for(int row = 0; row < r; row++){
             	cout << a[row][column]<<" ";
             }
 		}
 		else{
-			// odd --> print bottom to top
+				// odd --> print bottom to top
 			for(int row = r-1; row>=0;row--){
 				cout<<a[row][column]<<' ';
 			}

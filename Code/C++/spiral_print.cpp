@@ -2,34 +2,42 @@
 using namespace std;
 
 void spiralprint(int a[][30], int r, int c){
-	int sr = 0; //start row
-	int er = r-1; //end row
-	int sc = 0;  // start coloumn
-	int ec = c-1; //end column
+				//start row
+	int sr = 0;
+				//end row 
+	int er = r-1; 
+				// start coloumn
+	int sc = 0;  
+					//end column
+	int ec = c-1; 
 	int ele = 0;
 	while(ele < r*c){
-		for(int i=sc; i<=ec;i++){ // top row
+					// top row
+		for(int i=sc; i<=ec;i++){ 
 			cout << a[sr][i] <<" ";
 			ele++;
 		}
 		sr++;
 		if(ele == r*c)
 			break;
-		for(int i=sr; i<=er;i++){ // last column
+					// last column
+		for(int i=sr; i<=er;i++){ 
 			cout << a[i][ec] <<" ";
 			ele++;
 		}
 		ec--;
 		if(ele == r*c)
 			break;
-		for(int i=ec; i>=sc;i--){  // last row
+					// last row
+		for(int i=ec; i>=sc;i--){  
 			cout << a[er][i] <<" ";
 			ele++;
 		}
 		er--;
 		if(ele == r*c)
 			break;
-		for(int i=er;i>=sr;i--){  // first coloumn
+					// first coloumn
+		for(int i=er;i>=sr;i--){  
 			cout << a[i][sc] <<" ";
 			ele++;
 		}

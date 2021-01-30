@@ -12,7 +12,7 @@ That means the new vertex becomes the current vertex. Follow this process until 
 #include<list>
 using namespace std;
 
-template<typename T>				// for generic
+template<typename T>				
 
 class Graph{
 
@@ -21,7 +21,8 @@ public:
 	void AddEdge(T src, T dest, bool nondirectional = true){
 
 		m[src].push_back(dest);
-		if(nondirectional){				// bi-directional
+				// bi-directional
+		if(nondirectional){				
 			m[dest].push_back(src);
 		}
 	}
@@ -58,7 +59,9 @@ public:
 
 int main(){
   Graph<int> g;
-  int n;				//no. of edges
+
+ 				//no. of edges
+  int n;				
 
   cin >> n;
 

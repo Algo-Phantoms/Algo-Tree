@@ -41,12 +41,14 @@ int topdown(int price[],int weigth[],int n,int capacity,int dp[][100]){
 
 
 	if(capacity>=weigth[n-1]){
-		inc = price[n-1] + topdown(price,weigth,n-1,capacity-weigth[n-1],dp); // include
+					// include
+		inc = price[n-1] + topdown(price,weigth,n-1,capacity-weigth[n-1],dp); 
 	} 
-	exc =  0 +  topdown(price,weigth,n-1,capacity,dp); // exclude
+				// exclude
+	exc =  0 +  topdown(price,weigth,n-1,capacity,dp); 
 
-
-	dp[n][capacity] = max(inc,exc); // take minimum 
+				// take minimum 
+	dp[n][capacity] = max(inc,exc); 
 	return max(inc,exc);
 
 }
@@ -64,12 +66,14 @@ int bottom_up(int price[], int weight[],int n, int capacity){
 
 				int inc = 0, exc = 0;
 				if(wei >= weight[items-1]){
-					inc = price[items-1] + dp[items-1][wei-weight[items-1]]; // include
+								// include
+					inc = price[items-1] + dp[items-1][wei-weight[items-1]]; 
 
 				}
-				exc = 0 + dp[items-1][wei];  // exclude
-
-				dp[items][wei] = max(inc, exc); // take minimum
+							// exclude
+				exc = 0 + dp[items-1][wei];  
+							// take minimum
+				dp[items][wei] = max(inc, exc); 
 			}
 		}
 	}

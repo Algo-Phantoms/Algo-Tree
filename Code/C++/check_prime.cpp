@@ -10,7 +10,7 @@ vector<int> primes;
 
 void sieve() {
  
-    //set all bits
+        //set all bits
     b.set();
 
     b[0]=b[1] = 0;

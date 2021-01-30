@@ -13,7 +13,8 @@ class node{
 public:
 	T data;
 	node<T>* next;
-	node(T x){				// constructor
+				// constructor
+	node(T x){				
 		data = x;
 		next = nullptr;
 	}
@@ -55,8 +56,9 @@ public:
        return count;
 	}
 
+
 	bool empty(){
-       return head == nullptr;				// or count == 0
+       return head == nullptr;				
 	}
 
 	T top(){
@@ -78,7 +80,8 @@ int main()
     cout << s.top() << "\n";
     cout << s.size()<< "\n";
     cout << s.empty() << "\n";
-    while(!s.empty()){ 				// print all elements
+   				// print all elements
+    while(!s.empty()){ 				
     	cout << s.top()<<"\n";
     	s.pop();
     }

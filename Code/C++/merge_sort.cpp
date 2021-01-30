@@ -20,9 +20,11 @@ void merge(int *a,int *x,int *y,int s,int e){
 
   int i = s;
 
-  int mid = (s+e)/2;  //x start 
+        //x start 
+  int mid = (s+e)/2;  
 
-  int j = mid+1 ;//start of y
+        //start of y
+  int j = mid+1 ;
 
   int k = s;
 
@@ -38,7 +40,7 @@ void merge(int *a,int *x,int *y,int s,int e){
       j++;
     }
   }
-//x is ot fiished
+        //x is ot fiished
   while(i<=mid){
     a[k]=x[i];
     i++;
@@ -58,12 +60,13 @@ void merge(int *a,int *x,int *y,int s,int e){
 
 
 void mergesort(int *a ,int s ,int e){
-  //base case
+  
+                //base case
 
   if(s==e){
     return;
   }
- \
+ 
 
   int x[100];
   int y[100];
@@ -79,10 +82,10 @@ void mergesort(int *a ,int s ,int e){
   }
   
 
-  //recusion
+                //recusion
   mergesort(x,s,mid);
   mergesort(y,mid+1,e);
-  //merge 2 sorted array
+                //merge 2 sorted array
   merge(a,x,y,s,e);
 
 }

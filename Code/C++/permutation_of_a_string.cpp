@@ -8,7 +8,7 @@ using namespace std;
 
 void permutation(char a[], int i){
 	
-	if(a[i]=='\0'){				// base
+	if(a[i]=='\0'){				
 		cout<<a<<"\n";
 		return;
 	}

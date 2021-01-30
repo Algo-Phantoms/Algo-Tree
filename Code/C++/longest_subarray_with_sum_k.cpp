@@ -4,7 +4,8 @@ using namespace std;
 
 int longestsubarry(int arr[],int n,int k){
     
-    unordered_map<int, int> m; // csum, index
+                // csum, index
+    unordered_map<int, int> m; 
     int pre = 0;
 
     int len = 0;
@@ -13,13 +14,16 @@ int longestsubarry(int arr[],int n,int k){
         pre += arr[i];
 
         if(pre==k){
-           len = max(len, i+1); //i+1 because 0 based indexing
+                        //i+1 because 0 based indexing
+           len = max(len, i+1); 
         }
-        if(m.find(pre-k)!=m.end()){ //repeating number
-           len = max(len, i - m[pre-k]); //i - first occurence of csum
-        }
+                    //repeating number
+        if(m.find(pre-k)!=m.end()){ 
+                        //i - first occurence of csum
+
+           len = max(len, i - m[pre-k]);         }
         else{
-          //store the first occ
+                //store the first occ
           m[pre] = i;
         }
     }

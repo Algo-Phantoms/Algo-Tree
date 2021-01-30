@@ -38,20 +38,21 @@ public:
 		for(int i=0;word[i]!='\0';i++){
 			char ch = word[i];
 
-			if(temp->m.count(ch)==0){				//if not present
-
+				//if not present
+			if(temp->m.count(ch)==0){				
+				// create link
                 node* child = new node(ch);
-                temp->m[ch] = child;				// create link
+                temp->m[ch] = child;				
                 temp = child;
 			}
 			else{
-
-				temp = temp->m[ch];				// next address
+				// next address
+				temp = temp->m[ch];				
 
 			}
 		}
-
-		temp->is_terminal = true;				// last node
+				// last node
+		temp->is_terminal = true;				
 	}
 
 	bool search(char word[]){
@@ -61,16 +62,18 @@ public:
 		for(int i=0;word[i]!='\0';i++){
 
 			char ch = word[i];
-
-			if(temp->m.count(ch)==1){				// if present 
+				// if present 
+			if(temp->m.count(ch)==1){				
                  temp = temp->m[ch];
 			}
-			else{				// not present
+			else{		
+				// not present		
                return false;
 			}
 			
 		}
-    return temp->is_terminal;				// not always at last node
+		    	// not always at last node
+    return temp->is_terminal;				
 	}
 
 
