@@ -75,9 +75,9 @@ int main()
 }
 
 /*
-Test Case:
+Test Cases:
 
-Input:
+Input 1 :
 5
 5
 0 1 17
@@ -87,13 +87,29 @@ Input:
 0 5 28
 1
 
-Output:
+Output 1 :
 Distance From 1 to Node 0 is 17 
 Distance From 1 to Node 1 is 0 
 Distance From 1 to Node 2 is 19 
 Distance From 1 to Node 3 is 26 
 Distance From 1 to Node 4 is 41 
 
+
+Input 2 :
+4
+4
+0 1 11
+0 2 2
+0 3 31
+0 4 24
+0 5 28
+1
+
+Output 2 :
+Distance From 0 to Node 0 is 0
+Distance From 0 to Node 1 is 11
+Distance From 0 to Node 2 is 2
+Distance From 0 to Node 3 is 31 
 
 Time complexity : O(ElogV) where E is no. of Edges and V are no. of Vertices
 
