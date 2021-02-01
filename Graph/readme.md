@@ -7,30 +7,36 @@ A graph is a pair (V, E), where V is a set of nodes, called vertices, and £ is 
 ## Terms related to Graph
 
 ### Directed edge:
-* ordered pair of vertices (u, v)
 
-* first vertex u is the origin
+- ordered pair of vertices (u, v)
 
-* second vertex v is the destination
+- first vertex u is the origin
 
-* Example: one-way road traffic
+- second vertex v is the destination
+
+- Example: one-way road traffic
 
 ### Undirected edge:
-* unordered pair of vertices (u, v)
 
-* Example: railway lines
+- unordered pair of vertices (u, v)
+
+- Example: railway lines
 
 ## Directed graph:
-* all the edges are directed
 
-* Example: route network
+- all the edges are directed
+
+- Example: route network
 
 ## Undirected graph:
-* all the edges are undirected
 
-* Example: flight network
+- all the edges are undirected
+
+- Example: flight network
 
 ## Questions :
 
-* Breath First Search ----> [C++](/Code/C++/BFS.cpp) | [Java]() | [Python]()
-* Depth First Search ----> [C++](/Code/C++/DFS.cpp) | [Java]() | [Python]()
+- Breath First Search ----> [C++](/Code/C++/BFS.cpp) | [Java]() | [Python]()
+- Depth First Search ----> [C++](/Code/C++/DFS.cpp) | [Java]() | [Python]()
+- Dijkstra Algorithm ----> [C++](/Code/C++/Dijkstra.cpp) | [Java]() | [Python]()
+- Kruskal Algorithm ----> [C++](/Code/C++/Kruskal.cpp) | [Java]() | [Python]()
