@@ -53,7 +53,8 @@ public:
         }
         else
         {
-            return parent[key] = find(parent[key]); // Path Compression algorithm
+            // Path Compression algorithm
+            return parent[key] = find(parent[key]);
         }
     }
     bool connected(int x, int y)

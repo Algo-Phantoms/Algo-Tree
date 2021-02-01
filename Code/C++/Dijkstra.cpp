@@ -23,12 +23,17 @@ typedef vector<int> vi;
 typedef pair<int, int> pii;
 typedef vector<pii> vii;
 typedef pair<int, int> pii;
-vii *Graph;  // Graph -> Vector - Pair
-vi Distance; // It Stores the Distance of every other node from start.
+
+// Graph -> Vector - Pair
+vii *Graph;
+
+// It Stores the Distance of every other node from start.
+vi Distance;
 
 void Dijkstra(int start, int N)
 {
-    priority_queue<pii, vector<pii>, greater<pii>> Q; // min heap
+    // min heap
+    priority_queue<pii, vector<pii>, greater<pii>> Q;
     Distance.assign(N, INF);
     Distance[start] = 0;
     Q.push({0, start});
