@@ -43,17 +43,17 @@ int main()
 }
 
 /* 
-Test case : 
-Input : 5
-4 3 5 1 2
+	Test case : 
+	Input : 5
+	4 3 5 1 2
 
-Output : 
-1 2 3 4 5
+	Output : 
+	1 2 3 4 5
 
-Time Complexity : 
-	Worst case complexity: Θ(n^2 )
-	Best case complexity: Θ(n)
-	Average case complexity: Θ(n^2 )
-	Worst case space complexity: O(n^2 ) total, O(1) auxiliary
+	Time Complexity : 
+		Worst case complexity: Θ(n^2 )
+		Best case complexity: Θ(n)
+		Average case complexity: Θ(n^2 )
+		Worst case space complexity: O(n^2 ) total, O(1) auxiliary
 */
 

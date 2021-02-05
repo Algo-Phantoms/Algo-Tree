@@ -36,14 +36,14 @@ int main(){
 }
 
 /*
-Input - 5
-1 2 3 4 5
-6
+  Input : 5
+  1 2 3 4 5
+  6
 
-Output - 
-Initial array 
-1 2 3 4 5 
+  Output : 
+  Initial array 
+  1 2 3 4 5 
 
-Final array 
-6 1 2 3 4 5
+  Final array 
+  6 1 2 3 4 5
 */

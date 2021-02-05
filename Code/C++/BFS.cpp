@@ -17,7 +17,7 @@ structure is used for storing the vertices of a level.
 #include<list>
 using namespace std;
 
-				// for generic
+// for generic
 template<typename T>				
 
 class Graph{
@@ -27,7 +27,7 @@ public:
 	void AddEdge(T src, T dest, bool nondirectional = true){
 
 		m[src].push_back(dest);
-				// bi-directional
+	// bi-directional
 		if(nondirectional){				
 			m[dest].push_back(src);
 		}
@@ -43,7 +43,7 @@ public:
 		}
 	}
 
-				// like level order traversal
+	// like level order traversal
 	void BFS(T src){				
 		queue<T> q;
 		q.push(src);
@@ -57,7 +57,7 @@ public:
 
 			q.pop();
 
-				// traverse list of neighbours
+	// traverse list of neighbours
 			for(auto neigh : m[temp]){	
 				// if not visited			
 				if(!visited[neigh]){				
@@ -74,7 +74,7 @@ int main(){
 
     Graph<int> g;
 
-			//no. of edges
+	//no. of edges
     int n;				
 
     cin >> n;
@@ -95,30 +95,30 @@ int main(){
 
 /*
 
-Test Case :
+	Test Case :
 
-Input : 7
-0 1
-0 4
-1 2
-2 3
-2 4
-3 4
-3 5
+	Input : 7
+	0 1
+	0 4
+	1 2
+	2 3
+	2 4
+	3 4
+	3 5
 
-Output : 0 1 4 2 3 5
+	Output : 0 1 4 2 3 5
 
-Input : 6
-0 1
-0 2
-1 2
-2 0
-2 3
-3 3
+	Input : 6
+	0 1
+	0 2
+	1 2
+	2 0
+	2 3
+	3 3
 
-Output : 0 1 2 3
+	Output : 0 1 2 3
 
-Time Complexity: O(V+E) where V is number of vertices in the graph and E is number of edges in the graph.
-Space complexity : O(V)
+	Time Complexity: O(V+E) where V is number of vertices in the graph and E is number of edges in the graph.
+	Space complexity : O(V)
 
 */

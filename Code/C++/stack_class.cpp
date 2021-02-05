@@ -13,7 +13,7 @@ class node{
 public:
 	T data;
 	node<T>* next;
-				// constructor
+	// constructor
 	node(T x){				
 		data = x;
 		next = nullptr;
@@ -80,7 +80,8 @@ int main()
     cout << s.top() << "\n";
     cout << s.size()<< "\n";
     cout << s.empty() << "\n";
-   				// print all elements
+
+   	// print all elements
     while(!s.empty()){ 				
     	cout << s.top()<<"\n";
     	s.pop();
@@ -91,27 +92,27 @@ int main()
 
 /* 
 
-Test Case :
-Input : 5
+	Test Case :
+	Input : 5
 
-Output : 
-5
-4
-4
-0
-4
-3
-2
-1
+	Output : 
+	5
+	4
+	4
+	0
+	4
+	3
+	2
+	1
 
 
-Time Complexity of Push() : O(1)
-Time Complexity of Pop() : O(1)
-Time Complexity of Size() : O(1)
-Time Complexity of IsEmptyStack() : O(1)
-Time Complexity of IsFullStackf) : O(1)
-Time Complexity of DeleteStackQ : O(1)
+	Time Complexity of Push() : O(1)
+	Time Complexity of Pop() : O(1)
+	Time Complexity of Size() : O(1)
+	Time Complexity of IsEmptyStack() : O(1)
+	Time Complexity of IsFullStackf) : O(1)
+	Time Complexity of DeleteStackQ : O(1)
 
-Space Complexity (for n push operations) : O(n)
+	Space Complexity (for n push operations) : O(n)
 
 */

@@ -67,33 +67,33 @@ int main()
 }
 
 /*
-Test Case:
+    Test Case:
 
-Input 1 :
-6
-5 2 
-5 0 
-4 0 
-4 1 
-2 3 
-3 1 
+    Input 1 :
+    6
+    5 2 
+    5 0 
+    4 0 
+    4 1 
+    2 3 
+    3 1 
 
-Output 1 :
-5 4 2 3 1 0 
+    Output 1 :
+    5 4 2 3 1 0 
 
-Input 2 :
-6
-4 2
-5 1
-4 0
-3 1
-1 3
-3 2
+    Input 2 :
+    6
+    4 2
+    5 1
+    4 0
+    3 1
+    1 3
+    3 2
 
-Output 2 : 
-5 4 1 3 2 0 
+    Output 2 : 
+    5 4 1 3 2 0 
 
-Time Complexity: O(V + E) – where V is the number of vertices and E is the number of edges.
+    Time Complexity: O(V + E) – where V is the number of vertices and E is the number of edges.
 
-Space Complexity: O(V)
+    Space Complexity: O(V)
 */

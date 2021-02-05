@@ -38,20 +38,21 @@ int main(){
 return 0;
 }
 
-/* Test case : 
+/* 
+  Test case : 
 
-Input : 5
-1 2 3 4 5
-6 
+  Input : 5
+  1 2 3 4 5
+  6 
 
-Output : 
-Initial array 
-1 2 3 4 5 
+  Output : 
+  Initial array 
+  1 2 3 4 5 
 
-Final array 
-1 2 3 4 5 6
+  Final array 
+  1 2 3 4 5 6
 
-Time Complexity : O(1)
-Space Complexity : O(1)
+  Time Complexity : O(1)
+  Space Complexity : O(1)
 
 */

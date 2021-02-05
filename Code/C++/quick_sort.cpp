@@ -9,16 +9,17 @@ using namespace std;
 
 int *quickSort(int *arr, int left_index, int right_index)
 {
-                // Base Case
+    // Base Case
     if (left_index >= right_index)				
         return arr;
 
     int pivot = right_index, start = left_index, end = right_index;
     right_index--;
-                // Partitioning
+
+    // Partitioning
     while (left_index <= right_index)				
     {
-                // Swapping the both in this case        
+        // Swapping the both in this case        
         if (arr[left_index] >= arr[pivot] && arr[pivot] >= arr[right_index])				
         {
             int temp = arr[left_index];
@@ -31,14 +32,14 @@ int *quickSort(int *arr, int left_index, int right_index)
             right_index--;
     }
 
-                // Placing the Pivot 
+    // Placing the Pivot 
     int temp = arr[pivot];
     arr[pivot] = arr[left_index];
     arr[left_index] = temp;
 
-                // Sorting the first half
+    // Sorting the first half
     quickSort(arr, start, left_index - 1);	
-                // Sorting the second half			
+    // Sorting the second half			
     quickSort(arr, left_index + 1, end);				
 
     return arr;
@@ -47,7 +48,8 @@ int *quickSort(int *arr, int left_index, int right_index)
 int main()
 {
     int n;
-                // Getting the number of Elements
+
+    // Getting the number of Elements
     cin >> n;				
     int arr[n];
     for (int i = 0; i < n; i++)
@@ -62,17 +64,17 @@ int main()
 }
 
 /* 
- Test Case : 
+    Test Case : 
 
- Input :	7
-			7 6 5 4 3 2 1 
- 
- Output : 	1 2 3 4 5 6 7
+    Input :	7
+    		7 6 5 4 3 2 1 
 
- Time Complexity: The time taken by QuickSort depends upon the input array and partition strategy. Following are three cases:
-	Best Case	: Θ(n.Logn)
-	Average Case: Θ(n.Logn)
-	Worst Case	: Θ(n^2)
+    Output : 	1 2 3 4 5 6 7
 
- Space Complexity: O(n)
+    Time Complexity: The time taken by QuickSort depends upon the input array and partition strategy. Following are three cases:
+    Best Case	: Θ(n.Logn)
+    Average Case: Θ(n.Logn)
+    Worst Case	: Θ(n^2)
+
+    Space Complexity: O(n)
 */

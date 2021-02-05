@@ -21,7 +21,7 @@ public:
 	void AddEdge(T src, T dest, bool nondirectional = true){
 
 		m[src].push_back(dest);
-				// bi-directional
+	// bi-directional
 		if(nondirectional){				
 			m[dest].push_back(src);
 		}
@@ -60,7 +60,7 @@ public:
 int main(){
   Graph<int> g;
 
- 				//no. of edges
+ 	//no. of edges
   int n;				
 
   cin >> n;
@@ -81,30 +81,30 @@ int main(){
 
 /*
 
-Test Case :
+	Test Case :
 
-Input : 7
-0 1
-0 4
-1 2
-2 3
-2 4
-3 4
-3 5
+	Input : 7
+	0 1
+	0 4
+	1 2
+	2 3
+	2 4
+	3 4
+	3 5
 
-output - 0 1 2 3 4 5 
+	output - 0 1 2 3 4 5 
 
-Input : 6
-0 1
-0 2
-1 2
-2 0
-2 3
-3 3
+	Input : 6
+	0 1
+	0 2
+	1 2
+	2 0
+	2 3
+	3 3
 
-Output : 0 1 2 3
+	Output : 0 1 2 3
 
-Time complexity: O(V + E), where V is the number of vertices and E is the number of edges in the graph.
-Space Complexity: O(V)
+	Time complexity: O(V + E), where V is the number of vertices and E is the number of edges in the graph.
+	Space Complexity: O(V)
 
 */

@@ -22,13 +22,13 @@ public class Factorial {
 }
 
 /*
-Test Cases:
-Input: 5
-Output: 120
+    Test Cases:
+    Input: 5
+    Output: 120
 
-Input: 0
-Output: 1
+    Input: 0
+    Output: 1
 
-Time Complexity: O(n)
-Space Complexity: O(n)
+    Time Complexity: O(n)
+    Space Complexity: O(n)
 */
