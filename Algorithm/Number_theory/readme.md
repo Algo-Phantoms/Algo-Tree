@@ -1,1 +1,0 @@
- # Questions related to Number Theory
