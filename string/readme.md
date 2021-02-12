@@ -1,4 +1,4 @@
-# Questions related to String
+# String
 
 A char array is just that - an array of characters:
 
@@ -11,5 +11,5 @@ A string is a class that contains a char array, but automatically manages it for
 
 <hr>
 
-# Questionare
+## Questions :
 

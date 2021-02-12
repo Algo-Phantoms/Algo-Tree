@@ -1,4 +1,4 @@
- # Questions related to Number Theory
+ # Number Theory
 
  #### Fundamentals
 
@@ -33,5 +33,5 @@
 
 <hr>
 
-# Questionare
+## Questions :
 
