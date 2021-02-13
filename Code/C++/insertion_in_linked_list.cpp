@@ -52,14 +52,15 @@ public:
 		node* n = new node(x);
 			
 		//only one node			
-		if(head == nullptr){				
-			head = n;
+		if(tail == nullptr){				
+			
 			tail = n;
+                        return;
 		}
-		else{
+		
 			n->next = head;
 			head = n;
-		}
+		
 	}
 	void insertion_at_tail(int x){
 		node* n = new node(x);
@@ -76,19 +77,17 @@ public:
 	}
 	void insertion_at_x(int x, int pos){
 		node* n = new node(x);
-		if(pos<=0){
+		if(pos<=1){
 			insertion_at_head(x);
 		}
-		else if(pos>length()){
-			insertion_at_tail(x);
-		}
+	
+			
+		
 		else{
 		  node* temp = head;
-		  int move = 1;
-		  while(move < pos-1){
-		  	move++;
-		  	temp = temp->next;
-		  }
+		  for(int i=1;i<pos-1;i++){
+                     temp=temp->next;
+                  }
 		  n->next = temp->next;
 		  temp->next = n;
 
