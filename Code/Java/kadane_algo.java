@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class kadane_algo {
+public class kadaneAlgo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
