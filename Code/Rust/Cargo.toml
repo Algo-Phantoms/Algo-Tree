@@ -21,3 +21,4 @@ clap = "*"
 # for all the algorithms
 spiral_print = { version = "0.1.0", path = "./spiral_print" }
 wave_print = { version = "0.1.0", path = "./wave_print" }
+permutation_of_a_string = { version = "0.1.0", path = "./permutation_of_a_string" }

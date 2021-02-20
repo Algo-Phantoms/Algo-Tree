@@ -1,16 +1,34 @@
 use std::io::{self, prelude::*};
 
-pub fn get_input() -> Result<String, Box<dyn std::error::Error>> {
-    let mut input_string = String::with_capacity(100);
+use io_tokenized::Scanner;
+
+pub fn get_input() -> Result<Vec<u8>, Box<dyn std::error::Error>> {
     let stdin = io::stdin();
-    let mut stdin = stdin.lock();
+    let mut scanner = Scanner::new(stdin.lock());
     let stdout = io::stdout();
     let mut stdout = stdout.lock();
 
     stdout.write(b"Enter the string to permute : ")?;
     stdout.flush()?;
 
-    stdin.read_until(b' ', unsafe { input_string.as_mut_vec() })?;
+    Ok(scanner.get::<String>().as_bytes().to_vec())
+}
 
-    Ok(input_string)
+pub fn permutation(arr: &mut Vec<u8>, idx: usize) -> Result<(), Box<dyn std::error::Error>> {
+    if idx >= arr.len() {
+        println!("{}", std::str::from_utf8(&arr[..]).unwrap());
+    }
+
+    for i in idx..arr.len() {
+        arr.swap(i, idx);
+        permutation(arr, idx + 1)?;
+        arr.swap(i, idx);
+    }
+
+    Ok(())
+}
+
+pub fn runner() -> Result<(), Box<dyn std::error::Error>> {
+    permutation(&mut get_input()?, 0)?;
+    Ok(())
 }

@@ -12,8 +12,8 @@ pub fn get_input() -> Result<([[i32; 30]; 30], usize, usize), Box<dyn std::error
     // reading dims
     stdout.write(b"Enter dimensions : ")?;
     stdout.flush()?;
-    let rows = scanner.get::<usize>();
-    let cols = scanner.get::<usize>();
+    let rows: usize = scanner.get();
+    let cols: usize = scanner.get();
 
     // panic is buffer size exceeded
     if rows > 30 || cols > 30 {
