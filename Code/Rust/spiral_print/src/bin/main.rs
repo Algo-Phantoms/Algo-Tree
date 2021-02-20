@@ -1,6 +1,5 @@
-use spiral_print::{get_input, spiral_print};
+use spiral_print::runner;
 
 fn main() {
-    let (arr, dim) = get_input().unwrap();
-    spiral_print(arr, dim);
+    runner().unwrap();
 }

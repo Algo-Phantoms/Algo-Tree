@@ -60,3 +60,9 @@ pub fn wave_print(arr: [[i32; 30]; 30], rows: usize, cols: usize) {
 
     println!();
 }
+
+pub fn runner() -> Result<(), Box<dyn std::error::Error>> {
+    let (arr, rows, cols) = get_input()?;
+    wave_print(arr, rows, cols);
+    Ok(())
+}

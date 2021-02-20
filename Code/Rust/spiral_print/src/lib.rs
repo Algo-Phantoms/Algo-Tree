@@ -78,3 +78,9 @@ pub fn spiral_print(arr: [[i32; 30]; 30], dim: usize) {
 
     println!();
 }
+
+pub fn runner() -> Result<(), Box<dyn std::error::Error>> {
+    let (arr, dim) = get_input()?;
+    spiral_print(arr, dim);
+    Ok(())
+}
