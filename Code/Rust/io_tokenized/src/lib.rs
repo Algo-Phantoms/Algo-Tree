@@ -18,7 +18,11 @@ pub struct Scanner<R> {
 impl<R: io::BufRead> Scanner<R> {
     /// Create a new `Scanner` with the given reader.
     pub fn new(reader: R) -> Self {
-        Self { reader, buf_str: Vec::new(), buf_iter: "".split_ascii_whitespace() }
+        Self {
+            reader,
+            buf_str: Vec::new(),
+            buf_iter: "".split_ascii_whitespace(),
+        }
     }
 
     /// Get the next token from `reader`.
@@ -28,7 +32,9 @@ impl<R: io::BufRead> Scanner<R> {
                 return token.parse().ok().expect("Failed parse");
             }
             self.buf_str.clear();
-            self.reader.read_until(b'\n', &mut self.buf_str).expect("Failed read");
+            self.reader
+                .read_until(b'\n', &mut self.buf_str)
+                .expect("Failed read");
 
             // SAFETY: The `self.buf_iter` is created from `self.buf_str`, thus the iterator will
             // be invalidated as soon as the str itself will be. Thus there is no danger of
@@ -41,8 +47,8 @@ impl<R: io::BufRead> Scanner<R> {
         }
     }
 
-    /// Get array of a given length from reader.
-    pub fn get_arr<T: str::FromStr>(&mut self, length: usize) -> Vec<T> {
+    /// Get `Vec<T>` of a given length from reader.
+    pub fn get_vec<T: str::FromStr>(&mut self, length: usize) -> Vec<T> {
         let mut arr = Vec::with_capacity(length);
         loop {
             while let Some(token) = self.buf_iter.next() {
@@ -58,8 +64,49 @@ impl<R: io::BufRead> Scanner<R> {
             }
 
             self.buf_str.clear();
-            self.reader.read_until(b'\n', &mut self.buf_str).expect("Failed read");
-            self.buf_iter =  unsafe {
+            self.reader
+                .read_until(b'\n', &mut self.buf_str)
+                .expect("Failed read");
+            self.buf_iter = unsafe {
+                let slice = str::from_utf8_unchecked(&self.buf_str);
+                std::mem::transmute(slice.split_ascii_whitespace())
+            };
+        }
+        arr
+    }
+
+    /// Get `[T; N]` of a given length from reader.
+    pub fn get_arr<T: str::FromStr, const N: usize>(&mut self) -> [T; N] {
+        use std::mem::MaybeUninit;
+
+        // SAFETY: the loop wont exit until either array is filled or an error occurs. In both
+        // cases this is fine.
+        let mut arr: [T; N] = unsafe {
+            MaybeUninit::uninit().assume_init()
+        };
+        let mut idx = 0;
+        loop {
+            while let Some(token) = self.buf_iter.next() {
+                if idx < N {
+                    arr[idx] = token.parse().ok().expect("Failed parse");
+                    idx += 1;
+                } else {
+                    break;
+                }
+            }
+
+            if idx == N {
+                break;
+            }
+
+            self.buf_str.clear();
+            self.reader
+                .read_until(b'\n', &mut self.buf_str)
+                .expect("Failed read");
+            // SAFETY: The `self.buf_iter` is created from `self.buf_str`, thus the iterator will
+            // be invalidated as soon as the str itself will be. Thus there is no danger of
+            // dangling pointers
+            self.buf_iter = unsafe {
                 let slice = str::from_utf8_unchecked(&self.buf_str);
                 std::mem::transmute(slice.split_ascii_whitespace())
             };

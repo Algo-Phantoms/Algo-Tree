@@ -1,23 +1,19 @@
 use std::io::{self, prelude::*};
 
-// TODO: refactor using `Scanner`
-pub fn get_input() -> Result<([[i32; 30]; 30], usize, usize), Box<dyn std::error::Error>> {
-    // string which will take input
-    let mut input_string = String::new();
+// importing scanner
+use io_tokenized::Scanner;
 
-    // locking stdin and stdout for speed
+pub fn get_input() -> Result<([[i32; 30]; 30], usize, usize), Box<dyn std::error::Error>> {
     let stdin = io::stdin();
-    let mut stdin = stdin.lock();
+    let mut scanner = Scanner::new(stdin.lock());
     let stdout = io::stdout();
     let mut stdout = stdout.lock();
 
     // reading dims
     stdout.write(b"Enter dimensions : ")?;
     stdout.flush()?;
-    stdin.read_line(&mut input_string)?;
-    let mut dims = input_string.split_whitespace();
-    let rows = dims.next().ok_or("Expected rows")?.parse::<usize>()?;
-    let cols = dims.next().ok_or("Expected rows")?.parse::<usize>()?;
+    let rows = scanner.get::<usize>();
+    let cols = scanner.get::<usize>();
 
     // panic is buffer size exceeded
     if rows > 30 || cols > 30 {
@@ -31,13 +27,8 @@ pub fn get_input() -> Result<([[i32; 30]; 30], usize, usize), Box<dyn std::error
     stdout.write(b"Enter the array row-wise :\n")?;
     stdout.flush()?;
     for i in 0..rows {
-        input_string.clear();
-        stdin.read_line(&mut input_string)?;
-        for (j, s) in input_string.split_whitespace().enumerate() {
-            if j > 30 {
-                panic!("Expected {} elements", cols);
-            }
-            arr[i][j] = s.parse()?;
+        for (j, elem) in scanner.get_vec::<i32>(cols).into_iter().enumerate() {
+            arr[i][j] = elem;
         }
     }
 
