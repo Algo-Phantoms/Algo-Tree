@@ -1,5 +1,6 @@
 use std::io::{self, prelude::*};
 
+// TODO: refactor using `Scanner`
 pub fn get_input() -> Result<([[i32; 30]; 30], usize, usize), Box<dyn std::error::Error>> {
     // string which will take input
     let mut input_string = String::new();

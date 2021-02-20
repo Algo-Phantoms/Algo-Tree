@@ -10,6 +10,8 @@ edition = "2018"
 members = [
 	"spiral_print",
 	"wave_print",
+	"permutation_of_a_string",
+	"io_tokenized",
 ]
 
 [dependencies]
