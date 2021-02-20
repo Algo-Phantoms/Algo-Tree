@@ -44,7 +44,7 @@ pub fn get_input() -> Result<([[i32; 30]; 30], usize, usize), Box<dyn std::error
 }
 
 pub fn wave_print(arr: [[i32; 30]; 30], rows: usize, cols: usize) {
-    let going_up = false;
+    let mut going_up = false;
 
     for col in 0..cols {
         if going_up {
@@ -56,6 +56,7 @@ pub fn wave_print(arr: [[i32; 30]; 30], rows: usize, cols: usize) {
                 print!("{}\t", arr[row][col]);
             }
         }
+        going_up = !going_up;
     }
 
     println!();
