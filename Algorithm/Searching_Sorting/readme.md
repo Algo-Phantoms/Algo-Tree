@@ -60,7 +60,7 @@ Following are the types of searches which we will be discussing in this book.
 
 ## Questions :
 
-* Bubble Sort ----> [C++](/Code/C++/bubble_sort.cpp)
+* Bubble Sort ----> [C++](/Code/C++/bubble_sort.cpp
 * Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
