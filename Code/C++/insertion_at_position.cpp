@@ -1,3 +1,7 @@
+/*In insertion at postion we shift all elements from the (last index) to (position index- 1) by one position to the right and 
+insert the new element in arr[position-1]*/
+
+
 #include <iostream>
 using namespace std;
 
@@ -48,4 +52,6 @@ int main()
   1 2 3 4 5 
   Final array 
   1 2 6 3 4 5
+  Time complexity: O(n)
+  Space complexity: O(n)
 */
