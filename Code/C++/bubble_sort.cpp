@@ -6,30 +6,45 @@ position, we have to do the following operation N-1 times.*/
 #include<iostream>
 using namespace std;
 
-int main() {
-    int n;
-    cin >> n;
-
-    int arr[n];
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-
-    int counter = 1;
-    while (counter < n - 1) {
-        for (int i = 0; i < n - counter; i++) {
-            if (arr[i] > arr[i + 1]) {
-                int temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
+void bubbleSort(int array[], int n)
+{
+    for(int i=0;i<n-1;i++)
+    {
+        int swap=0;
+        for(int j=0;j<n-i-1;j++)
+        {
+            if(array[j]>array[j+1])
+            {
+                int temp = array[j];
+                array[j]=array[j+1];
+                array[j+1]=temp;
+                swap=1;
             }
         }
-        counter++;
+        if(swap==0) break;
     }
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    } cout << "\n";
-    return 0;
+}
+
+void Print(int array[], int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        cout<<array[i]<<" ";
+    }
+    cout<<"\n";
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    bubbleSort(arr,n);
+    Print(arr,n);
 }
 
 /*
