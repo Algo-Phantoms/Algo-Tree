@@ -6,7 +6,7 @@ import java.util.*;
  /*recursive function calduplicacy() eliminates duplicate characters by adding characters to the new string if a new character is found in the 0th index of original string.
  The original string is then trimmed by deleting the first character each time till it becomes null.*/
  public int recur;
- String newstring;
+ public String newstring;
 
  Remove()
  {
