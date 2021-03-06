@@ -8,6 +8,7 @@ Postfix evaluation:
 48
 
 */
+package p1;
 
 import java.util.*;
 public class PostfixEval {
