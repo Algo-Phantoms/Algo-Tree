@@ -1,0 +1,18 @@
+# implementing queue using deque in python
+
+from collections import deque
+n=int(int(input("Enter the integer up to which you want to implement it: ")))
+queue=deque()
+
+print()
+
+print("Queue after appending")
+for i in range(0,n):
+    queue.append(i)
+    print(queue)
+print()
+
+print("Queue after popping")
+for j in range(len(queue)):
+    queue.popleft()
+    print(queue)
