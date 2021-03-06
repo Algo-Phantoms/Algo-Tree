@@ -10,7 +10,7 @@ Postfix evaluation:
 */
 
 import java.util.*;
-public class postfixEval {
+public class PostfixEval {
    // Function to evaluate a given postfix expression
     public static int evaluatePostfix(String exp)
     {
