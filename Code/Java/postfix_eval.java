@@ -9,9 +9,9 @@ Postfix evaluation:
 
 */
 
-package Java;
+package java;
 import java.util.*;
-public class Postfix_eval {
+public class Postfixeval {
    // Function to evaluate a given postfix expression
     public static int evaluatePostfix(String exp)
     {
