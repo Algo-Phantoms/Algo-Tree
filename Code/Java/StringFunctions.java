@@ -43,7 +43,7 @@ public class StringFunctions{
            Output:
            
            6
-           anjali
+           njali
            Equal Strings
            Not Empty
            */
