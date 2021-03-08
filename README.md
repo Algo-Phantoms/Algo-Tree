@@ -62,7 +62,7 @@ You may go through these guidelines and contribute accordingly:
 
 The value of a strong contribution stays beyond everything and gives you satisfaction 👍.
 
-# Admin and Mentors 😇
+# Maintainers 😇
 
 <table>
   <tbody><tr>
