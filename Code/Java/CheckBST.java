@@ -19,12 +19,29 @@ Time Complexity : O(n)
 Space Complexity : O(n)
  */
 
+package algoTree;
 import java.util.*;
 
 //Class which defines the structure of each node in the binary tree
 class Node{
-	int data;
-	Node left,right;
+	private int data;
+	private Node left;
+	private Node right;
+	public int getNodeData(){
+		return this.data;
+	}
+	public Node getNodeLeft() {
+		return this.left;
+	}
+	public Node getNodeRight() {
+		return this.right;
+	}
+	public void setNodeLeft(Node child){
+		this.left = child;
+	}
+	public void setNodeRight(Node child){
+		this.right = child;
+	}
 	Node(int data){
 		this.data = data;
 	}
@@ -32,6 +49,8 @@ class Node{
 
 public class CheckBST {
 
+	private static ArrayList<Integer> arr = new ArrayList<Integer>();
+	
 	//Create a binary tree by taking input level wise
 	public static Node createBinaryTree() {
 		Scanner sc = new Scanner(System.in);
@@ -49,7 +68,7 @@ public class CheckBST {
 		tree.add(root);
 		while(!tree.isEmpty()) {
 			Node temp = tree.remove();
-			System.out.print("Enter left  child of " + temp.data +" or -1 if there is no left child: ");
+			System.out.print("Enter left  child of " + temp.getNodeData() +" or -1 if there is no left child: ");
 			int leftChild = sc.nextInt();
 			// if leftChild is not null 
 			if (leftChild != -1) {
@@ -57,9 +76,9 @@ public class CheckBST {
 				Node child = new Node(leftChild);
 				tree.add(child);
 				//Create leftChildNode of a frontNode
-				temp.left = child;
+				temp.setNodeLeft(child);
 			}
-			System.out.print("Enter right child of " + temp.data +" or -1 if there is no right child: ");
+			System.out.print("Enter right child of " + temp.getNodeData() +" or -1 if there is no right child: ");
 			int rightChild = sc.nextInt();
 			//if rightChild is not null 
 			if (rightChild != -1) {
@@ -67,7 +86,7 @@ public class CheckBST {
 				Node child = new Node(rightChild);
 				tree.add(child);
 				//Create rightChildNode of a frontNode 
-				temp.right = child;
+				temp.setNodeRight(child);
 			}
 		}
 		sc.close();
@@ -80,32 +99,32 @@ public class CheckBST {
 	public static Node maxLST(Node root) {
 		if(root==null)
 			return root;
-		else if(root.right==null)
+		else if(root.getNodeRight()==null)
 			return root;
 		else
-			return maxLST(root.right);
+			return maxLST(root.getNodeRight());
 	}
 	//Function to find the minimum element in the Right Sub Tree of any node : Leftmost Node with no child
 	public static Node minRST(Node root) {
 		if(root==null)
 			return root;
-		else if(root.left==null)
+		else if(root.getNodeLeft()==null)
 			return root;
 		else
-			return minRST(root.left);
+			return minRST(root.getNodeLeft());
 	}
 	//Function to check if a tree is a Binary Search Tree by Approach 1
 	public static boolean checkBST1(Node root){
 		if(root==null)
 			return true;
 		//Return false if max element in LST is greater than root
-		else if((root.left!=null)&&(maxLST(root.left).data >= root.data))
+		else if((root.getNodeLeft()!=null)&&(maxLST(root.getNodeLeft()).getNodeData() >= root.getNodeData()))
 			return false;
 		//Return false if min element in RST is smaller than root
-		else if((root.right!=null)&&(minRST(root.right).data <= root.data))
+		else if((root.getNodeRight()!=null)&&(minRST(root.getNodeRight()).getNodeData() <= root.getNodeData()))
 			return false;
 		//The subtrees of root should be BSTs as well
-		else if((!checkBST1(root.left))||(!checkBST1(root.right)))
+		else if((!checkBST1(root.getNodeLeft()))||(!checkBST1(root.getNodeRight())))
 			return false;
 		else
 			return true;
@@ -113,14 +132,14 @@ public class CheckBST {
 	
 	
 	//Approach 2:
-	static ArrayList<Integer> arr = new ArrayList<Integer>();
+	
 	//Function to produce a list by inorder traversal of tree 
 	public static void inorder(Node root) {
 		if(root==null)
 			return;
-		inorder(root.left);
-		arr.add(root.data);
-		inorder(root.right);
+		inorder(root.getNodeLeft());
+		arr.add(root.getNodeData());
+		inorder(root.getNodeRight());
 	}
 	//Function to check if a Binary Tree is a Binary Search Tree by Approach 2
 	public static boolean checkBST2(Node root) {
@@ -143,7 +162,7 @@ public class CheckBST {
 		boolean check;
 		System.out.println("Checking by Approach 1:");
 		check = checkBST1(root);
-		if(check==true)
+		if(check)
 			System.out.println("It is a Binary Search Tree");
 		else
 			System.out.println("It is not a Binary Search Tree");
@@ -151,7 +170,7 @@ public class CheckBST {
 		
 		System.out.println("Checking by Approach 2:");
 		check = checkBST2(root);
-		if(check==true)
+		if(check)
 			System.out.println("It is a Binary Search Tree");
 		else
 			System.out.println("It is not a Binary Search Tree");
