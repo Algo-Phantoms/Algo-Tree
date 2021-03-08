@@ -1,0 +1,19 @@
+# implementing stack using deque in python
+
+from collections import deque
+n=int(int(input("Enter the integer up to which you want to implement it: ")))
+stack=deque()
+
+print()
+
+print("Stack after appending")
+for i in range(0,n):
+    stack.appendleft(i)
+    print(stack)
+
+print()
+
+print("Stack after popping")
+for j in range(len(stack)):
+    stack.popleft()
+    print(stack)
