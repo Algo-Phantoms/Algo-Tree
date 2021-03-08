@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class factorial {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        intgit  n = sc.nextInt();
+        int n = sc.nextInt();
         System.out.println(fact(n));
     }
     public static int fact(int n){
