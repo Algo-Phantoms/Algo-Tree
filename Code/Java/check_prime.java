@@ -1,3 +1,4 @@
+package primeno;
 import java.util.Scanner;
 /*
 Prime Numbers are those who dont's have any divisors other than 1 and itself,
@@ -7,7 +8,7 @@ then, all other even No. except 2  as Not Prime
 Thus, we will check from 3 to (n-1) (all odd No. )for reminder to be 0, if reminder comes 0 at any one position
 so that will not be prime No. if not at any single position then it will reach upto end of isPrime Method & will be prime.
  */
-public class check_prime {
+public class checkprime {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter No : ");
@@ -50,7 +51,7 @@ public class check_prime {
         Input: 2
         Output: true
 
-        Time Complexity: O(N)
-        Space Complexity: O(N)
+        Time Complexity: O(n)
+        Space Complexity: O(1)
 
  */
