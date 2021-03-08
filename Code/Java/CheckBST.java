@@ -1,6 +1,5 @@
-package algoTree;
-
-/*This is the solution to create a Binary Tree from user inputs taken level wise and to check if that binary tree is a Binary Search tree.This solution works for duplicate input values of nodes as well.
+/*This is the solution to check if a binary tree is a Binary Search tree.
+This solution works for duplicate input values of nodes as well.
 
 Constraints:
 0<= NodeValue <= 10^4
@@ -24,8 +23,6 @@ Time Complexity : O(n)
 Space Complexity : O(n)
  */
 
-
-
 import java.util.*;
 
 //Class which defines the structure of each node in the binary tree
@@ -46,7 +43,6 @@ public class CheckBST {
 		int rootData = sc.nextInt();
 		Node root=null;
 		if(rootData!=-1) {
-			
 			root = new Node(rootData);
 		}
 		else {
@@ -147,8 +143,6 @@ public class CheckBST {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Node root = createBinaryTree();
 		boolean check;
 		System.out.println("Checking by Approach 1:");
@@ -218,10 +212,4 @@ public class CheckBST {
 	It is not a Binary Search Tree
 	 
 	 */
-	
 }
-
-
-
-
- 
