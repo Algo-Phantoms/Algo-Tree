@@ -19,7 +19,7 @@ Time Complexity : O(n)
 Space Complexity : O(n)
  */
 
-package algoTree;
+package algotree;
 import java.util.*;
 
 //Class which defines the structure of each node in the binary tree
@@ -124,10 +124,8 @@ public class CheckBST {
 		else if((root.getNodeRight()!=null)&&(minRST(root.getNodeRight()).getNodeData() <= root.getNodeData()))
 			return false;
 		//The subtrees of root should be BSTs as well
-		else if((!checkBST1(root.getNodeLeft()))||(!checkBST1(root.getNodeRight())))
-			return false;
-		else
-			return true;
+		return((checkBST1(root.getNodeLeft()))&&(checkBST1(root.getNodeRight())));
+
 	}
 	
 	
