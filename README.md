@@ -73,6 +73,20 @@ Vatsal kesarwani </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Alg
   </tr>
 </tbody></table>
 
+# Mentors 😇
+
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/tarun26091999"><img alt="" src="https://avatars.githubusercontent.com/tarun26091999" width="100px;"><br><sub><b>
+Tarun Yadav </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=tarun26091999" title="Code">💻 🖋</a></td></a></td>
+    <td align="center"><a href="https://github.com/OjusWiZard"><img alt="" src="https://avatars.githubusercontent.com/OjusWiZard" width="100px;"><br><sub><b>Ojuswi Rastogi</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=OjusWiZard" title="Code">💻 🖋</a></td> </a></td>
+    <td align="center"><a href="https://github.com/shreyanspoddar"><img alt="" src="https://avatars.githubusercontent.com/shreyanspoddar" width="100px;"><br><sub><b>Shreyans Poddar</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=shreyanspoddar" title="Code">💻 🖋</a></td></a></td>
+  <td align="center"><a href="https://github.com/raksha009"><img alt="" src="https://avatars.githubusercontent.com/raksha009" width="100px;"><br><sub><b>
+Raksha Jain </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=raksha009" title="Code">💻 🖋</a></td></a></td>
+    <td align="center"><a href="https://github.com/Anjul2000"><img alt="" src="https://avatars.githubusercontent.com/Anjul2000" width="100px;"><br><sub><b>Anjul Singh</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=Anjul2000" title="Code">💻 🖋</a></td> </a></td>
+    
+</tbody></table>
+
 # Code of Conduct
 You can find our Code of Conduct [here](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/CODE_OF_CONDUCT.md).
 
