@@ -40,11 +40,13 @@ that, this property should be satisfied at every node in the tree.
 * Find/ Find Minimum / Find Maximum element in binary search trees
 * Inserting an element in binary search trees
 * Deleting an element from binary search trees
+* Search a given key in BST
 
 ## Auxiliary operations:
 
 * Finding k th -smallest element in tree
-* Sorting the elements of binary search tree and many more
+* Sorting the elements of binary search tree
+* Construct a balanced BST from the given keys and many more
 
 ## Questions :
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
