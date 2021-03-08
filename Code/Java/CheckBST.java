@@ -6,12 +6,8 @@ Constraints:
   
 Incorrect Approach:
 It is not enough to check if the left node of current node is smaller than it and the right node of current node is larger than it respectively.
-This approach would't work for the following example which is actually not a Binary Search Tree --
-     15
-    /   \
-  12     28
- /  \
-9    24 
+This approach would't work for the following example(input taken level-wise) which is actually not a Binary Search Tree --
+[15,12,23,9,24,-1,-1,-1,-1,-1,-1]
 
 Correct Approach:
 1. For each node we have to check, if maximum value in its left sub tree is smaller than the respective node value and the minimum value in its right sub tree is larger than the respective node value. 
@@ -60,17 +56,17 @@ public class CheckBST {
 				//Create leftChild Node
 				Node child = new Node(leftChild);
 				tree.add(child);
-				/* Create leftChildNode of a frontNode */
+				//Create leftChildNode of a frontNode
 				temp.left = child;
 			}
 			System.out.print("Enter right child of " + temp.data +" or -1 if there is no right child: ");
 			int rightChild = sc.nextInt();
 			//if rightChild is not null 
 			if (rightChild != -1) {
-				/* Create rightChild */
+				//Create rightChild
 				Node child = new Node(rightChild);
 				tree.add(child);
-				/* Create rightChildNode of a frontNode */
+				//Create rightChildNode of a frontNode 
 				temp.right = child;
 			}
 		}
