@@ -10,20 +10,6 @@
   and we are taking an extra column and row to get the value of the substring of length 1 and 1 we need to have to value of 01, 00, 10
 * Any position at i,j i.e dp[i][j] will denote the length of longest common subsequence of prefix string of s1[0...i-1] and prefix
   string of s2[0...j-1]
-* An example to demostrate the table view of the solution is
-  s1 : BAZ
-  s2 : AXYZ
-
-        B  A  Z
-     0  0  0  0
-  A  0  0  1  1
-  X  0  0  1  1
-  Y  0  0  1  1
-  Z  0  0  1  2
-
-  So dp[n] i.e 2 is the required answer here as we can see that "AZ" is the longest common subsequence int the example problem .
-* Time complexity for this solution is O(nm)
-* Space complexity for this solution is O(nm)
 
 */
 #include <bits/stdc++.h>
@@ -31,58 +17,58 @@ using namespace std;
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cin.tie(NULL);
-    //Taking the number of test cases
-    int t;
-    cin >> t;
-    while (t--)
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cin.tie(NULL);
+  //Taking the number of test cases
+  int t;
+  cin >> t;
+  while (t--)
+  {
+    //Taking input of the two strings
+    string s1, s2;
+    cin >> s1 >> s2;
+
+    //Calculating the length of the two string
+    int n = s1.length();
+    int m = s2.length();
+
+    //Constructing an 2D matrix of n+1 and m+1 size
+    int dp[n + 1][m + 1];
+
+    //Initializing the first row as 0
+    for (int i = 0; i <= n; i++)
     {
-        //Taking input of the two strings
-        string s1, s2;
-        cin >> s1 >> s2;
-
-        //Calculating the length of the two string
-        int n = s1.length();
-        int m = s2.length();
-
-        //Constructing an 2D matrix of n+1 and m+1 size
-        int dp[n + 1][m + 1];
-
-        //Initializing the first row as 0
-        for (int i = 0; i <= n; i++)
-        {
-            dp[i][0] = 0;
-        }
-
-        //Initializing the first column as 0
-        for (int j = 0; j <= m; j++)
-        {
-            dp[0][j] = 0;
-        }
-
-        //Finding the longest common subsequence
-        for (int i = 1; i <= n; i++)
-        {
-            for (int j = 1; j <= m; j++)
-            {
-                //Checking if the last two character of both the string match or not
-                //If the character matches then we calculate it as a operation so we
-                //add a +1 to the solution
-                if (s1[i - 1] == s2[j - 1])
-                    dp[i][j] = 1 + dp[i - 1][j - 1];
-
-                //Else we will take the maximum after reducing then length of either
-                //first string or the second string
-                else
-                    dp[i][j] = max(dp[i][j - 1], dp[i - 1][j]);
-            }
-        }
-        //This is out final answer for the LCS problem
-        cout << dp[n][m] << endl;
+      dp[i][0] = 0;
     }
-    return 0;
+
+    //Initializing the first column as 0
+    for (int j = 0; j <= m; j++)
+    {
+      dp[0][j] = 0;
+    }
+
+    //Finding the longest common subsequence
+    for (int i = 1; i <= n; i++)
+    {
+      for (int j = 1; j <= m; j++)
+      {
+        //Checking if the last two character of both the string match or not
+        //If the character matches then we calculate it as a operation so we
+        //add a +1 to the solution
+        if (s1[i - 1] == s2[j - 1])
+          dp[i][j] = 1 + dp[i - 1][j - 1];
+
+        //Else we will take the maximum after reducing then length of either
+        //first string or the second string
+        else
+          dp[i][j] = max(dp[i][j - 1], dp[i - 1][j]);
+      }
+    }
+    //This is out final answer for the LCS problem
+    cout << dp[n][m] << endl;
+  }
+  return 0;
 }
 
 /*
@@ -102,8 +88,20 @@ TEST CASE:
     2
     4
 
+* An example to demostrate the table view of the solution is
+  s1 : BAZ
+  s2 : AXYZ
 
-Time Complexity: O(nm)
-Space Complexity: O(nm)
+        B  A  Z
+     0  0  0  0
+  A  0  0  1  1
+  X  0  0  1  1
+  Y  0  0  1  1
+  Z  0  0  1  2
+
+  So dp[n] i.e 2 is the required answer here as we can see that "AZ" is the longest common subsequence int the example problem .
+
+* Time Complexity: O(nm)
+* Space Complexity: O(nm)
 
 */
