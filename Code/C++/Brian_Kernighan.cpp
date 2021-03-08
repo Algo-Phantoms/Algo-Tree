@@ -1,7 +1,8 @@
+// Brian Kernighan's Algorithm
 #include<bits/stdc++.h>
 using namespace std;
 
-// Brian Kernighan's Algorithm
+
 /* It is an algorithm developed to count the number of set bits in a number
    in a efficient way.
    
@@ -32,6 +33,7 @@ using namespace std;
              is that the left most set bit gets turned off.
         
         3) We repeat this step until n becomes 0.
+
     
     Below is the code (C++) representing the idea.
     There is a function count_set(), that takes an integer as argument and
@@ -61,6 +63,10 @@ int main(){
        output  : 1
     2) input   : 39
        output  : 4
+
+    
+        TIME COMPLEXITY - O(No. of set bits in input)
+        SPACE COMPLEXITY - O(1)
 
     END...
 */  
