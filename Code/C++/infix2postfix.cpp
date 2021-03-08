@@ -26,9 +26,9 @@ int main()
 { 
     int k=0, brac=0;
     string infix;
-    cin >> infix;
-    stack<char> stk;
-    for(int i = 0; i < infix.length(); i++) 
+    cin >> infix;								//accept infix expression as string input
+    stack<char> stk;								//creation of stack ‘stk’
+    for(int i = 0; i < infix.length(); i++) 					//length() - Returns length of string
     {          
         // If operand affects string 
         if (isOperand(infix[i])){
@@ -37,23 +37,24 @@ int main()
   
         // If ‘(‘, push to stack. 
         else if(infix[i] == '('){
-            stk.push('('); 
-            brac++;
+            stk.push('('); 							//push(e) – Adds the element ‘e’ at the top of the stack – Time Complexity : O(1)
+            brac++;								//to keep count of total no of bracket characters
         }
+	    
         // If ‘)’, pop until an ‘(‘ is encountered. 
         else if(infix[i] == ')') 
         { 
-            while(!stk.empty() && stk.top() != '(') 
-            { 
+            while(!stk.empty() && stk.top() != '(') 				//empty() – Returns whether the stack is empty – Time Complexity : O(1) 
+            { 									//top() – Returns a reference to the top most element of the stack – Time Complexity : O(1)
                 char c = stk.top(); 
-                stk.pop(); 
+                stk.pop(); 							//pop() – Deletes the top most element of the stack – Time Complexity : O(1) 
                 infix[k++] = c; 
             } 
             if(stk.top() == '(') 
             { 
                 char c = stk.top(); 
                 stk.pop(); 
-                brac++;
+                brac++;								//to keep count of total no of bracket characters
             }
         } 
           
@@ -76,7 +77,7 @@ int main()
         stk.pop();
         infix[k++] = c; 
     } 
-      
+      	//print the final expression (postfix)
 	for (int i = 0; i < infix.length() - brac; i++){
 		cout << infix[i];
     }
