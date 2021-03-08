@@ -77,6 +77,6 @@ int main()
         1 2 3 4 5
 
 	Time complexity: O(n)
-	Space Complexity: O(n)
+	Space Complexity: O(1)
 
 */
