@@ -86,9 +86,9 @@ int main()
 
 
 /*
-Sample Input:   a+b*c-d^e/(f+g)*h
-Std Output:  abc*+de^fg+/h*-
+Sample Input:	a+b*c-d^e/(f+g)*h
+Std Output:	abc*+de^fg+/h*-
 
-Sample Input:  a+b*c-d^e*(z^x/y+n)/(f+g)*h
-Std Output: abc*+de^zx^y/n+*fg+/h*-
+Sample Input:	a+b*c-d^e*(z^x/y+n)/(f+g)*h
+Std Output:	abc*+de^zx^y/n+*fg+/h*-
 */
