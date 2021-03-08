@@ -3,8 +3,8 @@
 
 #	 A :    3->7->2
 #	               \
-#		            5->6->4
-#		           /
+#		        5->6->4
+#		       /
 # 	 B : 1->9->0->8
 
 # The node intersect at node with value 5. 
