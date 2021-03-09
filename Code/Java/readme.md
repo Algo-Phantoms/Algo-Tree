@@ -1,2 +1,2 @@
  # Codes in the Java language
- * [Fibonacci Search](/fibonacci_search)
+ * [Fibonacci Search](/fibonacci_search.java)
