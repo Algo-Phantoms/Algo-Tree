@@ -2,7 +2,7 @@
 * Shortest Common Supersequence finds the shortest supersequence which consist of all the characters of both the string in the order specified.
 * Supersequence have the same relative order but may or may not be continuous.
 * Problem Statement :- Given two strings s1 and s2 and we have to find the shortest supersequence consisting of both s1 and and s2.
-* Approach used :- As we see we have 2 options either we should include a character of a string or either not.Thus we have to make choices and hence we will be using dynamic programming approach as the same process is repeated again and again. We can use either top-down approach or Bottom-up approach but we will be using top down manner with memoisation
+* Approach used :- As we see we have 2 options either we should include a character of a string or either not.Thus we have to make choices and hence we will be using dynamic programming approach as the same process is repeated again and again.
 * First we will be considering a 2D array of size (n+1) * (m+1) where n and m are the size of first and second string respectively
   and we are taking an extra column and row to get the value of the substring of length 1 to n (by 0 we determine the base conditions)
 * Any position at i,j i.e dp[i][j] will denote the length of longest common subsequence of prefix string of s1[0...i-1] and prefix
