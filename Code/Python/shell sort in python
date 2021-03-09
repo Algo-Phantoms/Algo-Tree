@@ -1,0 +1,30 @@
+arr = [] #creating a list
+size = int(input("Enter size of list: ")) # enter user input
+for n in range(size):
+    numbers = int(input(f"Enter number:{n}\n "))
+    arr.append(numbers) # adding the numbers in list at last
+print(arr)
+
+
+def shellSort(lists):
+    sublist = len(lists)//2
+    while sublist > 0:
+        for start_position in range(sublist):
+            InsertionSort(lists, start_position, sublist)
+
+        print("After increments of size",sublist, "The list is",arr)
+
+        sublist = sublist // 2
+
+def InsertionSort(arr,start,gap):
+    for i in range(start+gap,len(arr),gap):
+
+        value = arr[i]
+        position = i
+
+        while position>=gap and arr[position-gap]>value:
+            arr[position]=arr[position-gap]
+            position = position-gap
+
+        arr[position]=value
+print(shellSort(arr))
