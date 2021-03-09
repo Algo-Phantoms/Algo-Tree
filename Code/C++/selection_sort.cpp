@@ -27,13 +27,19 @@ int main()
     }
 
 
+    // move boundary of unsorted subarray one by one
+
     for(i=0;i<n-1;i++){
+
+        // Find the minimum element in unsorted array
 
         for(j=k=i;j<n;j++){
 
             if(a[j]<a[k])
                 k=j;
         }
+
+        // Swap the minimum element with the ith element of array
 
         swap(a[i],a[k]);
     }
