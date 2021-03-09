@@ -52,4 +52,4 @@ There are different bitwise operations used in the bit manipulation. Bit operati
 
 
 ## Questions :
-*   Hail XOR Problem ----> [C++](/Code/C++/HXOR.cpp)
+-   Hail XOR Problem ----> [C++](/Code/C++/HXOR.cpp)
