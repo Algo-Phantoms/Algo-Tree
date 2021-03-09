@@ -1,5 +1,11 @@
+/*Finding huge factorials such as !100, !1000 is sometimes required but in languages such as C++
+the datatypes are not even capable of storing such a big number. We could achieve calculation of
+such a number via going back to the basis of how we used to muiltiply two numbers back in school. 
+We used to muiltiply numbers and would add the summation and get the final result. 
+This program here uses a vector to store each particular digit in a single index of the vector. 
+The carry is forwarded as basic maths and in the end the complete result gets stored in the vector*/
+
 #include <vector>
-#include<bits/stdc++.h>
 #include <iostream>
 
 using namespace std;
