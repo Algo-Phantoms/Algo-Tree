@@ -1,0 +1,33 @@
+
+arr = [] #creating a list
+size = int(input("Enter size of list: ")) # enter user input
+for n in range(size):
+    numbers = int(input(f"Enter number:{n}\n "))
+    arr.append(numbers) # adding the numbers in list at last
+print(arr)
+
+
+def radix_sort(to_be_sorted):
+    max_exponent = len(str(max(to_be_sorted)))
+
+    being_sorted = to_be_sorted[:]  # create a copy of the list
+
+    # loop through each digit based on largest exponent
+    for exponent in range(max_exponent):
+        digits = [[] for i in range(10)]  # create buckets for each digit
+        index = -(exponent + 1)  # get the string index for the number
+
+    for number in being_sorted:  
+        number_as_a_string = str(number)
+        digit = int(number_as_a_string[index]) 
+            
+        digits[digit].append(number)
+
+    # adding numbers from digits as they appear
+    being_sorted = []
+    for numeral in digits:
+        being_sorted.extend(numeral)
+
+    return being_sorted
+print("using radix sort")
+print(radix_sort(arr))
