@@ -7,5 +7,6 @@ Greedy Algorithms are one of the most intuitive algorithms. Whenever we see a pr
 • You hope that by choosing a **local optimum** ateach step, you will end up at a **global optimum**. 
 
 ## Questions :
-* Sum of denominations ----> [C++](/Code/C++/moneySum.cpp)
+
+- Sum of denominations ----> [C++](/Code/C++/sum.cpp)
 
