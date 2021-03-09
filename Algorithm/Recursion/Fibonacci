@@ -1,5 +1,5 @@
 import java.util.*;
-class RecursionFibonacci{  
+class Fibonacci{  
  static int n1=0,n2=1,n3=0;    
  static void printFibonacci(int number){    
     if(number>0){    
