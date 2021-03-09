@@ -48,6 +48,7 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* Level Order Traversal in Binary Tree ----> [Python] (/Code/Python/level_order_traversal_binary_tree.py)
 
 
 
