@@ -1,4 +1,4 @@
-/* We are given n items and for each item we have been given a corresponding weight and value. 
+""" We are given n items and for each item we have been given a corresponding weight and value. 
 We need to pick certain items in such a way so as to maximize the total value of all the items such that the 
 total weight of the items does not exceed the capacity of the knapsack.
 
@@ -11,8 +11,7 @@ We take the max of
     1) not including the ith item i.e the optimal solution for i-1 items for a capacity of W 
     2) including the ith item i.e value of the ith item added to the optimal solution of i-1 items for a knapsack of size W-weights(i). 
     
-*/
-
+"""
 n = int(input())
 W = int(input())
 weights = []
@@ -44,7 +43,7 @@ for i in range(1,n+1):
 
 print("The maximum value obtained is : ", dp[n][W])
 
-/*
+"""
 	Test Case : 
 	1) Input :  6 15
                 8 5
@@ -67,4 +66,5 @@ print("The maximum value obtained is : ", dp[n][W])
 	
 	Time Complexity: O(N*W)
 	Space Complexity: O(N*W)
-*/         
+"""
+            
