@@ -15,9 +15,10 @@ class node{
   public:
   	int data;
   	node* next;
-
+ int x;
   	//constructor
-  	 node(int x){
+  	 node()
+	{
        data = x;
        next = NULL;
   	 }
