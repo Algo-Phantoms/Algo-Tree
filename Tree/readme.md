@@ -47,7 +47,9 @@ that, this property should be satisfied at every node in the tree.
 * Sorting the elements of binary search tree and many more
 
 ## Questions :
-* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp)
+
+* Construct binary tree from preorder and inorder traversal ----> [C++](/Code/C++/BinaryTreeFromPreorderAndInorderTraversal.cpp)
 
 
 
