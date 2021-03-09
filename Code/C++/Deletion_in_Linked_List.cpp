@@ -17,7 +17,7 @@ class node{
   	node* next;
 
   	//constructor
-  	 node(int x){
+  explicit node(int x){
        data = x;
        next = NULL;
   	 }
