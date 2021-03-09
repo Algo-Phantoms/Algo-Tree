@@ -13,3 +13,5 @@ A string is a class that contains a char array, but automatically manages it for
 
 ## Questions :
 
+### a) How to find the Longest Pallindromic Substring in any String
+
