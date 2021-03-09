@@ -8,7 +8,7 @@ then, all other even No. except 2  as Not Prime
 Thus, we will check from 3 to (n-1) (all odd No. )for reminder to be 0, if reminder comes 0 at any one position
 so that will not be prime No. if not at any single position then it will reach upto end of isPrime Method & will be prime.
  */
-public class checkprime {
+public class Checkprime {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter No : ");
