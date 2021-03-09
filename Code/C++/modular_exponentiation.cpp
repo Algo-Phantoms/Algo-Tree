@@ -40,7 +40,7 @@ int main()
     cin>>power;
     cout<<"Enter mod: ";
     cin>>mod;
-    cout<<"("<<power<<"^"<<base<<")%"<<mod<<" = "<<modular_exponentiation(base,power,mod)<<"\n";
+    cout<<"("<<base<<"^"<<power<<")%"<<mod<<" = "<<modular_exponentiation(base,power,mod)<<"\n";
 }
 
 /*
@@ -52,7 +52,7 @@ Sample I/0
     Enter power: 10 
     Enter mod: 8000 
     OUTPUT
-    (10^2)%8000 = 1024
+    (2^10)%8000 = 1024
 
 2.
     INPUT
