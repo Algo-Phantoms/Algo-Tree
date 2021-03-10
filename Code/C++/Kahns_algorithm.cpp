@@ -20,7 +20,8 @@ If in-degree of any neighboring node is reduced to zero, then add that node to t
 using namespace std;
 
 void kahn_topological_sort(vector <int> adj[], int n){
-    int in_degree[n]; //Array for keeping a track for indegree of all nodes
+    //Array for keeping a track for indegree of all nodes
+    int in_degree[n];
     
     memset(in_degree,0,sizeof(in_degree));
     
@@ -41,8 +42,8 @@ void kahn_topological_sort(vector <int> adj[], int n){
     }
 
     int count_of_visited_nodes{};
-
-    vector <int> topological_order; //This vector will store the order
+    //This vector will store the order
+    vector <int> topological_order; 
 
     while(!q.empty()){
         int curr = q.front();
