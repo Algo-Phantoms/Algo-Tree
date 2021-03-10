@@ -9,32 +9,6 @@ Now this algorithm is used to find the index of key element(which we need to fin
 
 key Observation of Algorithm =>
  -> if we choose any index and split the array into two then one of the two sub array is sorted.
-
-Test case 1 :
-  input -
-  size -> 7
-  a-> [3 4 5 6 7 1 2]
-  key -> 2
-
-  output -> 6
-
-  explanation ->
-  index - [0 1 2 3 4 5 6]
-    a   - [3 4 5 6 7 1 2]
-  2 is present on index 6 so output is 6.
-
-Test case 2 :
- input -
- size -> 8
- a-> [12 34 37 38 2 5 9 11]
- key -> 38
-
- output -> 3
-
- explanation ->
- index - [0  1  2  3  4 5 6 7]
-   a   - [12 34 37 38 2 5 9 11]
- 38 in present as index 3 so output is 3.
 */
 
 #include <iostream>
@@ -93,6 +67,32 @@ int main()
 }
 
 /*
+Test case 1 :
+  input -
+  size -> 7
+  a-> [3 4 5 6 7 1 2]
+  key -> 2
+
+  output -> 6
+
+  explanation ->
+  index - [0 1 2 3 4 5 6]
+    a   - [3 4 5 6 7 1 2]
+  2 is present on index 6 so output is 6.
+
+Test case 2 :
+ input -
+ size -> 8
+ a-> [12 34 37 38 2 5 9 11]
+ key -> 38
+
+ output -> 3
+
+ explanation ->
+ index - [0  1  2  3  4 5 6 7]
+   a   - [12 34 37 38 2 5 9 11]
+ 38 in present as index 3 so output is 3.
+ 
 Time complexity  -
 best case - O(1) - when key element is at mid position
 average case- O(logn)
