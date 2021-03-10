@@ -58,12 +58,9 @@ int main()
 /*
 
     Test Case:
-
     Input:    7
               4 63 1 53 87 44 36
-
     Output:   1 4 36 44 53 63 87
-
 
     Time Complexity:
     Worst Time Complexity: O(n^2)
