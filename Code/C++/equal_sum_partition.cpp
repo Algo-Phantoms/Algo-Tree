@@ -35,8 +35,7 @@ bool subset_sum(int arr[], int max_sum, int n)
 
             //To fill the first row
             else if(i==0){
-                if(j!=0)
-                    dp[i][j] = false;
+                dp[i][j] = false;
             }
 
             //for filling the rest of the cell

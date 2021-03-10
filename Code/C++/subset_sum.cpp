@@ -33,8 +33,7 @@ bool subset_sum(int arr[], int max_sum, int n)
 
             //To fill the first row
             else if(i==0){
-                if(j!=0)
-                    dp[i][j] = false;
+                dp[i][j] = false;
             }
 
             //for filling the rest of the cell
@@ -85,7 +84,7 @@ int main()
        Output : Yes
 
     2. arr[2, 19, 4, 3, 62, 12]
-       max_sum = 24
+       max_sum = 27
        Output : No
 
     Time Complexity : O(sum*n)
