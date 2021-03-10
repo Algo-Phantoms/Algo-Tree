@@ -1,25 +1,23 @@
-/*    Floyd’s Cycle-Finding Algorithm 
+/*    Floydâ€™s Cycle-Finding Algorithm 
       Approach: This is the fastest method and optimized approach to traverse a LinkedList:  
         * Traverse linked list using two pointers.
         * Move one pointer(slow_p) by one and another pointer(fast_p) by two.
-        * If these pointers meet at the same node then there is a loop. If pointers do not meet then linked list doesn’t have a loop.   
-      Complexity Analysis:  
-        * Time complexity: O(n). 
-          Only one traversal of the loop is needed.
-        * Auxiliary Space:O(1). 
-          There is no space required.     */
+        * If these pointers meet at the same node then there is a loop. If pointers do not meet then linked list doesnâ€™t have a loop.   
+*/
 import java.io.*;
 import java.util.*;
 public class Cycle_Detection_In_Linked_List {
+    // Creation of SinglyLinkedListNode 
     static class SinglyLinkedListNode {
         public int data;
         public SinglyLinkedListNode next;
-
+        
         public SinglyLinkedListNode(int nodeData) {
             this.data = nodeData;
             this.next = null;
         }
     }
+    // Creation of Singly Linked List with insertNode function  
     static class SinglyLinkedList {
         public SinglyLinkedListNode head;
         public SinglyLinkedListNode tail;
@@ -28,7 +26,7 @@ public class Cycle_Detection_In_Linked_List {
             this.head = null;
             this.tail = null;
         }
-
+         
         public void insertNode(int nodeData) {
             SinglyLinkedListNode node = new SinglyLinkedListNode(nodeData);
 
@@ -124,4 +122,10 @@ Enter the llist count:
 Enter next node: 
 1
 The LList has no cycle 
+
+Complexity Analysis:  
+    * Time complexity: O(N)
+      Only one traversal of the loop is needed.
+    * Auxiliary Space: O(1) 
+      There is no space required.
 */
