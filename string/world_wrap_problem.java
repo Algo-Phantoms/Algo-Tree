@@ -1,9 +1,11 @@
+import java.util.*;
+import java.io.*;
 
 public class word_wrap_problem 
 {
 	final int MAX = Integer.MAX_VALUE; 
 	   
-	void solveWordWrap (int l[], int n, int M) 
+	void solution (int l[], int n, int M) 
 	{ 
 	       
 	        int arr1[][] = new int[n+1][n+1]; //2-D array for storing the extra spaces
@@ -12,7 +14,7 @@ public class word_wrap_problem
 	      
 	        int arr3[] = new int[n+1]; //total cost of optimal arrangement of words
 	      
-	        int p[] =new int[n+1]; // to print the solution 
+	        int arr4[] =new int[n+1]; // to print the solution 
 	      
 	        for (int i = 1; i <= n; i++)  // calculate extra spaces in single line
 	        { 
@@ -47,10 +49,11 @@ public class word_wrap_problem
 	                   (arr3[i-1] + arr2[i][j] < arr3[j])) 
 	                { 
 	                    arr3[j] = arr3[i-1] + arr2[i][j]; 
-	                    p[j] = i; 
+	                    arr4[j] = i; 
 	                } 
 	            } 
 	        }  
+	        printing_the_solution(arr4, n);
 	}
 	
 	//Method to print the solution
@@ -73,6 +76,10 @@ public class word_wrap_problem
 	
 	public static void main(String[] args)
     {
-		
+		word_wrap_problem obj = new word_wrap_problem(); 
+	    int arr[] = {6, 1, 3, 0}; 
+	    int n = arr.length; 
+	    int M = 2; 
+	    obj.solution (arr, n, M);
     }
 }
