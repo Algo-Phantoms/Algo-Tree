@@ -41,4 +41,4 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 
-- Minimum Number of Deletions to Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
+- Minimum Number of Deletions To Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
