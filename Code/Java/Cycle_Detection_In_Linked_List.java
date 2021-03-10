@@ -45,7 +45,7 @@ public class Cycle_Detection_In_Linked_List {
               SinglyLinkedListNode slow = head;
               SinglyLinkedListNode fast = head.next;
               while(slow != fast) {
-                    if(fast == null || fast.next == null) {
+                    if(fast == null || fast.next == null || slow == null ) {
                        return false;
                     }
                     slow = slow.next;
