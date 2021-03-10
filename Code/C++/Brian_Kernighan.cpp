@@ -1,14 +1,7 @@
 // Brian Kernighan's Algorithm
-#include<bits/stdc++.h>
-using namespace std;
-
-
-/* It is an algorithm developed to count the number of set bits in a number
+/*
+It is an algorithm developed to count the number of set bits in a number
    in a efficient way.
-   
-    Time Complexity - 
-       1) Naive approach - O(total number of bits in the number)
-       2) Efficient approach - O(total number of set bits in the number)
 
     IDEA/INTUITION behind the efficient algorithm-
         1) Consider any number n. Then if we consider (n-1), it is observed
@@ -39,6 +32,8 @@ using namespace std;
     There is a function count_set(), that takes an integer as argument and
     returns the number of set bits.
 */
+#include<bits/stdc++.h>
+using namespace std;
 
 int count_set(int n){
     int ans=0;      // This keeps the track of the number of set bits 
