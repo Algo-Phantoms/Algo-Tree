@@ -83,7 +83,7 @@ void inorder(struct treenode *root)
     if (root == NULL)
         cout<<"Tree is empty";
 
-    while(temp->ltag == 0)
+    while(temp->ltag == NULL)
         temp = temp->left;
 
     while(temp != NULL)
