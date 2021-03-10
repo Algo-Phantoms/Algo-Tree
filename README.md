@@ -70,8 +70,14 @@ The value of a strong contribution stays beyond everything and gives you satisfa
 Vatsal kesarwani </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=plazzy99" title="Code">💻 🖋</a></td></a></td>
     <td align="center"><a href="https://github.com/rudrakshi99"><img alt="" src="https://avatars.githubusercontent.com/rudrakshi99" width="100px;"><br><sub><b>Rudrakshi</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=rudrakshi99" title="Code">💻 🖋</a></td> </a></td>
     <td align="center"><a href="https://github.com/nakul-19"><img alt="" src="https://avatars.githubusercontent.com/nakul-19" width="100px;"><br><sub><b>Nakul Sharma</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=nakul-19" title="Code">💻 🖋</a></td></a></td>
-  </tr>
-</tbody></table>
+    <td align="center"><a href="https://github.com/tarun26091999"><img alt="" src="https://avatars.githubusercontent.com/tarun26091999" width="100px;"><br><sub><b> Tarun Yadav </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=tarun26091999" title="Code">💻 🖋</a></td></a></td>
+    <td align="center"><a href="https://github.com/OjusWiZard"><img alt="" src="https://avatars.githubusercontent.com/OjusWiZard" width="100px;"><br><sub><b>Ojuswi Rastogi</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=OjusWiZard" title="Code">💻 🖋</a></td> </a></td>
+    <td align="center"><a href="https://github.com/shreyanspoddar"><img alt="" src="https://avatars.githubusercontent.com/shreyanspoddar" width="100px;"><br><sub><b>Shreyans Poddar</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=shreyanspoddar" title="Code">💻 🖋</a></td></a></td>
+  <td align="center"><a href="https://github.com/raksha009"><img alt="" src="https://avatars.githubusercontent.com/raksha009" width="100px;"><br><sub><b>
+Raksha Jain </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=raksha009" title="Code">💻 🖋</a></td></a></td>
+    <td align="center"><a href="https://github.com/Anjul2000"><img alt="" src="https://avatars.githubusercontent.com/Anjul2000" width="100px;"><br><sub><b>Anjul Singh</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=Anjul2000" title="Code">💻 🖋</a></td> </a></td>
+    
+</tbody></tr></table>
 
 # Code of Conduct
 You can find our Code of Conduct [here](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/CODE_OF_CONDUCT.md).

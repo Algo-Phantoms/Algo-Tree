@@ -1,4 +1,5 @@
-  # Number Theory
+
+ # Number Theory
 
  #### Fundamentals
 
@@ -33,6 +34,7 @@
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
 <hr>
+
 
 # Questions related to Number Theory
  
