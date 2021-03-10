@@ -11,18 +11,17 @@
   #include <iostream>
   using namespace std;
   int main()
-   {
+{
     float N;
   	cin>>N;  // Taking input the number from the user
   	
-  	int factor=0; // Variable to store number of factors of the inputted number
-  	
   	int x=(int)N; // Variable to store the integer part of the inputted number
 	   
-  	if(N>=2)  // Checking if the number id greater than equal to 2
+  	
+  	if(N>=2 && N-x==0)   //Checking if the inputted no is an integer
   	{
-  	if(N-x==0)   //Checking if the inputted no is an integer
-  	{
+  		int factor=0; // Variable to store number of factors of the inputted number
+  		
   		for(int i=N ;i>=1;i--)
   		{
   			if(((int)N)%i==0)
@@ -33,17 +32,12 @@
 	if(factor==2)
 	cout<<N<<" is a prime number."<<endl;
 	else
-	cout<<N<<" is not a prime number."<<endl;;
+	cout<<N<<" is not a prime number."<<endl;
   		
 	}
 	else
 	cout<<N<<" is not a prime number."<<endl;
   	
-  	}
-  	
-	else
-	cout<<N<<" is not a prime number."<<endl;
-	
 	return 0;
 }
 
