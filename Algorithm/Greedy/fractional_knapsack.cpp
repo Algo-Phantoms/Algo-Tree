@@ -1,3 +1,8 @@
+/*
+Given weights and values of n items, we need to put these items in a knapsack of capacity W to get the maximum total value in the knapsack.
+We can take a fraction of a particular item.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 void knapsack(int n,float weight[],float profit[],float items[],int knapsack_cap)
@@ -98,4 +103,7 @@ int main()
 	Total profit 440
 	Items ratio considered:
 	1 1 0.5 0
-	*/
+	
+    Time Complexity : O(n*n) ,this problem can solved in O(nlogn) by using a sorting algorithm which takes an O(nlogn)
+    Space Complexity: O(n)
+*/
