@@ -18,13 +18,15 @@ Step 6: If the key is not found, repeat the steps from Step 1 to Step 5 as long 
          
 */
 
+package Java;
+
 import java.util.*;
 
-public class fibonacci_search {
+public class FibonacciSearch {
 
     // function to find the predecessor of the Fibonacci number that is greater than
     // or equal to array_Size .
-    public static int get_fibanoci_Number(int array_Size) {
+    public static int getFibanociNumber(int array_Size) {
 
         int fibk = 0;
         int fibk2 = 0;
@@ -47,7 +49,13 @@ public class fibonacci_search {
         // Creating Scanner Object to read input from user
         Scanner s = new Scanner(System.in);
         int sorted_Array[] = new int[100];
-        int key, index, low, high, flag, location, array_Size;
+        int key;
+        int index;
+        int low;
+        int high;
+        int flag;
+        int location;
+        int array_Size;
 
         System.out.println("Enter the size of the array: ");
 
@@ -78,7 +86,7 @@ public class fibonacci_search {
         while (flag != 1 && low <= high) {
             // Returns the predecessor of the Fibonacci number that is greater than or equal
             // to array_Size .
-            index = get_fibanoci_Number(array_Size);
+            index = getFibanociNumber(array_Size);
 
             // key and array element at index are equal
             if (key == sorted_Array[index + low]) {
