@@ -92,6 +92,10 @@ TEST CASE:
    Here, dp[7][7]=5(abcba) is length longest Palindromic Subsequence
    
   So, length of string - dp[7][7]  i.e 2 is the required answer 
+  Input : krishna
+  
+  Output : 6
+  
 * Time Complexity: O(n*n)-- >n=length of string
 * Space Complexity: O(n*n)
 */
