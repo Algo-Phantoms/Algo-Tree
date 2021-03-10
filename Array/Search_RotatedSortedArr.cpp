@@ -5,7 +5,7 @@ Integer array is sorted in ascending order, but it is rotated at some pivot. */
 #include <bits/stdc++.h>
 using namespace std;
 
-int search_SortedRotatedArr(vector<int> arr, int x){ //O(logn) time (since it uses binary search) , O(1) auxiliary space
+int search_SortedRotatedArr(vector<int> arr, int x){ 
     int n = arr.size();
     if(n == 2){
         if(arr[0] == x){
@@ -59,6 +59,10 @@ int main() {
     return 0;
 }
 
+//O(logn) time (since it uses binary search) , O(1) auxiliary space
+
 /* Example:
-Input: arr[] = {5, 6, 7, 8, 9, 10, 1, 2, 3}, x = 3
-Output: 8 */
+1. Input: arr[] = {5, 6, 7, 8, 9, 10, 1, 2, 3}, x = 3
+   Output: 8 
+2. Input: arr = [4,5,6,7,0,1,2], x = 0
+   Output: 4 */
