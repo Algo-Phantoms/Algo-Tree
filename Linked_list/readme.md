@@ -29,3 +29,5 @@ properties.
 
 ## Questions :
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
+* InsertionSort in LinkList---->(/Code/Java/InsertionSort in LinkList/Main.java)
+* MergeSort in LinkList ---->(/Code/Java/Mergesort in Linklist/linkedList.java)
