@@ -28,4 +28,5 @@ properties.
 • Find nth node from the end of the list
 
 ## Questions :
-* Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp) | [Python](/Code/Python/linked_list.py)
+* Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
+* Linked List Class ----> [Python](/Code/Python/linked_list.py) 
