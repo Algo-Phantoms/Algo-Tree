@@ -40,6 +40,7 @@
 	cout<<N<<" is not a prime number."<<endl;
   	
   	}
+  	
 	else
 	cout<<N<<" is not a prime number."<<endl;
 	
