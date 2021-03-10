@@ -24,18 +24,20 @@ int maxValue(int A[], int n)
 void BucketSort(int A[], int n)
 {
   int maximum = maxValue(A, n);
+
+  //  Create empty bins
   vector<int> Bins[maximum + 1];
 
+  // Insert elements in their rescpetive bin
   for (int i = 0; i < n; i++)
     Bins[A[i]].push_back(A[i]);
 
+  // Get the sorted elements
   int i = 0, k = 0;
   while (i < maximum + 1)
   {
     for (int j = Bins[i].size() - 1; j >= 0; j--)
-    {
       A[k++] = Bins[i][j];
-    }
     i++;
   }
 }
@@ -44,21 +46,12 @@ int main()
 {
   int n;
   cin >> n;
-
   int A[n];
-
   for (int i = 0; i < n; i++)
-  {
     cin >> A[i];
-  }
-
   BucketSort(A, n);
-
   for (int i = 0; i < n; i++)
-  {
     cout << A[i] << " ";
-  }
-
   return 0;
 }
 
