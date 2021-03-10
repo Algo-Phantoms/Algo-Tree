@@ -1,4 +1,4 @@
- # Questions related to Bit Manipulation
+ # Bit Manipulation
 
 We all have been dealing with decimal, float, char and string. They are excellent way of storing data as they are in user readable form. But when we start to deal with data of very large size, they data structures are tough to handle, and demands high time and space complexity. That's where Bit manipulation plays an important role, and are the most optimum choice to follow.
 
@@ -51,4 +51,4 @@ There are different bitwise operations used in the bit manipulation. Bit operati
     - 6 >> 1 = 3
 
 
-# Questionare
+## Questions :
