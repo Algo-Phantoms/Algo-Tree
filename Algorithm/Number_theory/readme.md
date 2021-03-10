@@ -38,4 +38,4 @@
  
  1.Factorial of a number:[Java](/Code/Java/factorial.java)
  
- 2.GCD of two number:[Java](/Code/Java/GCD.java)
+ 2.GCD of two number using Eucledian Algorithm:[Java](/Code/Java/GCD.java)
