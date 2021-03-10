@@ -14,8 +14,9 @@ from collections import defaultdict
 #Represent a class of Graph
 class Graph:
     def __init__(self,vertices):
+        '''Initialize vertices and dictionary containing adjacency list'''
         self.v=vertices
-        self.graph=defaultdict(list)    #dictionary containing adjacency list
+        self.graph=defaultdict(list)    
 
     #Function to add an edge in graph
     def addEdge(self,u,v):
@@ -64,31 +65,30 @@ for i in range(n):
 g.topological_sort()
 
 
-"""" Test cases:
+# Test cases:
 
-1. Input:->
-Enter no of vertices : 6
-Enter source and destination of a path: 5 2
-Enter source and destination of a path: 5 0
-Enter source and destination of a path: 4 0
-Enter source and destination of a path: 4 1
-Enter source and destination of a path: 2 3
-Enter source and destination of a path: 3 1
-Output:->
-Topological sort : [4, 5, 2, 0, 3, 1]
+# 1. Input:->
+# Enter no of vertices : 6
+# Enter source and destination of a path: 5 2
+# Enter source and destination of a path: 5 0
+# Enter source and destination of a path: 4 0
+# Enter source and destination of a path: 4 1
+# Enter source and destination of a path: 2 3
+# Enter source and destination of a path: 3 1
+# Output:->
+# Topological sort : [4, 5, 2, 0, 3, 1]
 
-2. Input:->
-Enter no of vertices : 6
-Enter source and destination of a path: 5 5
-Enter source and destination of a path: 0 1
-Enter source and destination of a path: 1 2
-Enter source and destination of a path: 2 3
-Enter source and destination of a path: 3 4
-Enter source and destination of a path: 4 0
-Output:->
-Topological Sort is not possible in this graph because there exist a cycle
+# 2. Input:->
+# Enter no of vertices : 6
+# Enter source and destination of a path: 5 5
+# Enter source and destination of a path: 0 1
+# Enter source and destination of a path: 1 2
+# Enter source and destination of a path: 2 3
+# Enter source and destination of a path: 3 4
+# Enter source and destination of a path: 4 0
+# Output:->
+# Topological Sort is not possible in this graph because there exist a cycle
 
-Time complexity: O(V+E) //Order of Sum of number of edges and vertices
-Auxillary Space: O(V)   //Order of number of vertices
+# Time complexity: O(V+E) //Order of Sum of number of edges and vertices
+# Auxillary Space: O(V)   //Order of number of vertices
 
-"""
