@@ -41,6 +41,7 @@ class LinkedList:
 		for value in args:
 			self.insert(value)
 
+	# this method have time complexity : O(n)
 	def insert(self, data):
 		''' this method takes an argument append at the end of list '''
 		try:
@@ -53,6 +54,7 @@ class LinkedList:
 		except Exception as e:
 			raise e
 
+	# this method have time complexity : O(n)
 	def display(self):
 		''' this method print all available data present in the list 
 			and also return the data in list format '''
@@ -67,6 +69,7 @@ class LinkedList:
 		except Exception as e:
 			raise e
 
+	# this method have time complexity : O(n)
 	def delete(self, position):
 		''' this method takes an index position (start from 0) and remove that index element and return that value '''
 		try:
@@ -86,10 +89,12 @@ class LinkedList:
 		except Exception as e:
 			raise e
 
+	# this method have time complexity : O(1)
 	def delete_all(self):
 		''' this method removes all elements present in the list '''
 		self.head = Node()
 
+	# this method have time complexity : O(n)
 	def count(self):
 		''' this method returns the length of the list '''
 		temp = self.head
@@ -111,6 +116,7 @@ class LinkedList:
 		except Exception as e:
 			raise e
 
+	# this is a special method of the class...
 	def __get(self, position):
 		if position<0:
 			raise 'Error : Invalid index Position !!!'
@@ -124,7 +130,9 @@ class LinkedList:
 
 
 
-# testing code how to use :
+'''
+# Test Case :
+
 ls = LinkedList('sujoy','aot','mechanical engineering')
 ls.insert(10)
 ls.insert(20)
@@ -137,8 +145,8 @@ ls.display()
 print(ls.get_Nth_last(5))
 
 
-'''
-# output of the code :
+
+# OUTPUT :
 
 ['sujoy', 'aot', 'mechanical engineering', 10, 20, 30, 40]
 sujoy
