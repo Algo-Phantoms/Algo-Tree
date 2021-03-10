@@ -38,7 +38,7 @@ Test case 2 :
 */
 
 
-class Main {
+public class searching_in_sorted_array {
 
 	static int searchRotatedArray(int a[], int key, int left, int right) {
 		if (left > right) // it means the required element in not present in array
