@@ -56,7 +56,7 @@ public class Cycle_Detection_In_Linked_List {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-       System.out.println("Enter the test cases: ");
+        System.out.println("Enter the test cases: ");
         int tests = scanner.nextInt();
 
         for (int testsItr = 0; testsItr < tests; testsItr++) {
