@@ -7,68 +7,65 @@
 
 */
 
-
 #include <iostream>
 
 using namespace std;
 
-
 int maxValue(int A[], int n)
 {
-    int m=A[0];
+    int m = A[0];
     int i;
-    for(i=1;i<n;i++)
+    for (i = 1; i < n; i++)
     {
-        if(A[i]>m)
-            m=A[i];
+        if (A[i] > m)
+            m = A[i];
     }
     return m;
 }
 
 void CountSort(int A[], int n)
 {
-    int i,*C,j;
-    int max=maxValue(A,n);
-    C=(int *)malloc((max+1)*sizeof(int));
-    for(i=0;i<max+1;i++)
-        C[i]=0;
-    for(i=0;i<n;i++)
+    int i, *C, j;
+
+    // Obtaining thr max value from the array
+    int max = maxValue(A, n);
+
+    C = (int *)malloc((max + 1) * sizeof(int));
+
+    // Initialize empty array
+    for (i = 0; i < max + 1; i++)
+        C[i] = 0;
+
+    //  // Insert elements in their rescpetive position (array index)
+    for (i = 0; i < n; i++)
         C[A[i]]++;
-    i=0,j=0;
-    while(i<max+1)
+
+    // Get the sorted elements
+    i = 0, j = 0;
+    while (i < max + 1)
     {
-        if(C[i]>0)
+        if (C[i] > 0)
         {
-            A[j++]=i;
+            A[j++] = i;
             C[i]--;
         }
-        else i++;
+        else
+            i++;
     }
 }
-
 
 int main()
 {
     int n;
-    cin>>n;
-
+    cin >> n;
     int A[n];
-
-    for(int i=0; i<n ; i++)
-    {
-        cin>>A[i];
-    }
-
+    for (int i = 0; i < n; i++)
+        cin >> A[i];
     CountSort(A, n);
-
-    for(int i=0; i<n ; i++)
-    {
-        cout<<A[i]<<" ";
-    }
-
+    for (int i = 0; i < n; i++)
+        cout << A[i] << " ";
     return 0;
 }
-
 
 /*
 
