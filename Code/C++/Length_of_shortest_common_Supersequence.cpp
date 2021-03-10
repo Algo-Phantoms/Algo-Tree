@@ -14,23 +14,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//defining function to calculate lcs
+	//defining function to calculate lcs
 int LCS(string s1, string s2, int n, int m){
-	  //constructing an 2D matrix of size n+1 and m+1 
+	 	 //constructing an 2D matrix of size n+1 and m+1 
   	int dp[n+1][m+1];
 
   for(int i=0;i<=n;i++)
   	for(int j=0;j<=m;j++)
-  	{//base condition
+  	{	//base condition
   		//initializing the first row and first column as 0
   			if(i==0 || j==0)
   			dp[i][j]=0;
   	}
 
-  	//finding LCS
+  		//finding LCS
   	for(int i=1;i<n+1;i++)
   	{	for(int j=1;j<m+1;j++)
-  		{ //cheking if character matches or not
+  		{	 //cheking if character matches or not
   			//and if it matches then we add 1 to the solution
   			if(s1[i-1]==s2[j-1])
   				dp[i][j]=1+dp[i-1][j-1];
@@ -47,10 +47,10 @@ int main(){
 	ios_base::sync_with_stdio(false);
   	cin.tie(NULL);
   	cin.tie(NULL);
- // taking two strings
+ 	// taking two strings
   	string s1,s2;
   	cin>>s1>>s2;
-  //calculating length of string
+  	//calculating length of string
   	int n=s1.length();
   	int m=s2.length();
   	// calculating shortest supersequence

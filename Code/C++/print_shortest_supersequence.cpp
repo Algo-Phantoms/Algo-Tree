@@ -20,22 +20,21 @@ int main(){
 	ios_base::sync_with_stdio(false);
   	cin.tie(NULL);
   	cin.tie(NULL);
- // taking two strings
+   // taking two strings
   	string s1,s2;
   	cin>>s1>>s2;
     //string for storing the shortest supersequence
     string s;
-  //calculating length of string
+    //calculating length of string
   	int n=s1.length();
   	int m=s2.length();
-
-      //constructing an 2D matrix of size n+1 and m+1 
+    //constructing an 2D matrix of size n+1 and m+1 
     int dp[n+1][m+1];
 
   for(int i=0;i<=n;i++)
     for(int j=0;j<=m;j++)
-    {//base condition
-      //initializing the first row and first column as 0
+    {   //base condition
+        //initializing the first row and first column as 0
         if(i==0 || j==0)
         dp[i][j]=0;
     }
@@ -43,57 +42,57 @@ int main(){
     //finding LCS
     for(int i=1;i<n+1;i++)
     { for(int j=1;j<m+1;j++)
-      { //cheking if character matches or not
-        //and if it matches then we add 1 to the solution
+      {     //cheking if character matches or not
+            //and if it matches then we add 1 to the solution
         if(s1[i-1]==s2[j-1])
           dp[i][j]=1+dp[i-1][j-1];
 
-        //else length should be reduced and maximum of first or second string should be taken
+            //else length should be reduced and maximum of first or second string should be taken
         else dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
       }
     }
 
 
-    // Start from the bottom right corner and one by one 
-  // push characters in output string 
+     // Start from the bottom right corner and one by one 
+    // push characters in output string 
   int i=n,j=m;
   while(i>0 && j>0){
-    // If current character in X and Y are same, then 
-    // current character is a part of shortest subsquence
+     // If current character in X and Y are same, then 
+        // current character is a part of shortest subsquence
     if(s1[i-1]==s2[j-1])
-      //push current character into result
+        //push current character into result
     {  s.push_back(s1[i-1]);
-      //reduce values of i and j
+        //reduce values of i and j
       i--;
       j--;
     }
-    //if current character in s1 and s2 are different
+        //if current character in s1 and s2 are different
     else if(dp[i][j-1]>dp[i-1][j])
-    {//push current character of s2 in result
+    {   //push current character of s2 in result
       s.push_back(s2[j-1]);
-      //reduce value of j
+         //reduce value of j
       j--;
     }
     else 
-    {//push character of s1 in result
+    {   //push character of s1 in result
       s.push_back(s1[i-1]);
-      //reduce value of i
+        //reduce value of i
       i--;
     }
   
 }
-//if s2 reaches to its end then push remaining character of s1 in result string
+    //if s2 reaches to its end then push remaining character of s1 in result string
   while(i>0){
     s.push_back(s1[i-1]);
     i--;
   }
-  //if s1 reaches to its end then push remaining character of s2 in result string
+     //if s1 reaches to its end then push remaining character of s2 in result string
 
   while(j>0){
     s.push_back(s2[j-1]);
     j--;
   }
- //reverse the string 
+    //reverse the string 
  reverse(s.begin(),s.end());
  for(int i=0;i<s.length();i++)
   cout<<s[i];
