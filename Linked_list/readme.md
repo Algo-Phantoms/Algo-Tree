@@ -28,5 +28,8 @@ properties.
 • Find nth node from the end of the list
 
 ## Questions :
+
+* Cycle detection using Hare and Tortoise algorithm ----> [C++](/Code/C++/CycleDetectLinkedList.cpp)
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
 * InsertionSort ----> [java](/Code/Java/InsertionSort in LinkList/Main.java)
+* Cycle detection using Hare and Tortoise algorithm ----> [Java](/Code/Java/Cycle_Detection_In_Linked_List.java)
