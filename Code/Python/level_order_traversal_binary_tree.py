@@ -57,22 +57,50 @@ def printLevelOrder(root):
         if node.right is not None:
             queue.append(node.right)
  
-#Driver Code providing input testcase
-root = Node(1)
-root.left = Node(2)
-root.right = Node(3)
-root.left.left = Node(4)
-root.left.right = Node(5)
+#Driver Code 
+root = Node(int(input()))
+root.left = Node(int(input()))
+root.right = Node(int(input()))
+root.left.left = Node(int(input()))
+root.left.right = Node(int(input()))
+root.right.left=Node(int(input()))
+root.right.right=Node(int(input()))
  
 print ("Level Order Traversal of binary tree is -")
 printLevelOrder(root)
 
 '''
-Testcase:
+TestCase:
+1.
 
-Output for above input testcase:
+Input :
+1 2 3 4 5
+
+Explanation : 
+ The tree will look like this
+    1
+  2   3
+ 4 5
+
+Output :
 Level Order traversal of binary tree is 
 1 2 3 4 5 
+
+2.
+
+Input :
+15 10 20 8 12 16 25
+
+Explanation:
+ The tree will look like this
+    15
+  10   20
+ 8 12 16 25
+
+Output :
+Level Order traversal of binary tree is 
+15 10 20 8 12 16 25 
+
 
 Time Complexity: O(n) where n is number of nodes in the binary tree 
 Space Complexity: O(n) where n is number of nodes in the binary tree 
