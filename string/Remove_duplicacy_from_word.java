@@ -8,7 +8,7 @@ import java.util.*;
  public int recur;
  public String newstring;
 
- Remove()
+ Remove()  //default constructor
  {
  recur=0;
  newstring="";
@@ -73,5 +73,7 @@ import java.util.*;
  After removal of duplicate characters: PneumoltrAicsv
 
 
+Space Complexity: O(n)
+Time Complexity: O(n)
 */
 
