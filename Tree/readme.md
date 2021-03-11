@@ -48,7 +48,6 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
-
 * Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/searching_in_bst.cpp) 
 
 
