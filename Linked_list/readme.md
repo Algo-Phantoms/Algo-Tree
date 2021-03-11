@@ -29,3 +29,4 @@ properties.
 
 ## Questions :
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
+*Reversing LinkedList ---> [Java](/code/Java/Reversing_Linkedlist.java)
