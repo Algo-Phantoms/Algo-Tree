@@ -47,6 +47,7 @@ that, this property should be satisfied at every node in the tree.
 * Sorting the elements of binary search tree and many more
 
 ## Questions :
+* Check if a Binary Tree is a valid Binary Search Tree ----> [Java](/Code/Java/CheckBST.java)
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
 
 
