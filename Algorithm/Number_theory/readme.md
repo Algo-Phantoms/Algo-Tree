@@ -1,3 +1,4 @@
+
  # Number Theory
 
  #### Fundamentals
@@ -7,6 +8,7 @@
 - [Extended Euclidean Algorithm](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
 - [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
 - [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
+- [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
 
 #### Prime numbers
 
@@ -33,7 +35,8 @@
 
 <hr>
 
-## Questions :
 
+# Questions related to Number Theory
 
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - [Perform Basic operations like Addition,Subtraction,Multiplication,Division,Exponentiation on 10^500000 constraints](https://github.com/Algo-Phantoms/Algo-Tree/pull/407/files#diff-eb41d3d1d1cfafa6ca53cc5592d5df8ead3259da6ad5691aa09cf871405a5206)
