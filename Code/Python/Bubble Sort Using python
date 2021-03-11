@@ -1,0 +1,53 @@
+# Bubble sort in Python
+
+def BubbleSort(array):  #Function that runs the algorithm for Bubble sort
+    for i in range(len(array)):
+        for j in range(0, len(array) - i - 1):
+            if array[j] > array[j + 1]:
+                temp=array[j]
+                array[j]=array[j+1]
+                array[j+1]=temp
+
+
+array = []  #creating a array
+
+size = int(input("Enter size of array: "))  # enter user input
+
+for i in range(size):
+    elements = int(input("Enter number "))
+    array.append(elements)  # adding the numbers in array at last
+
+BubbleSort(array)
+
+print('Sorted Array in Ascending Order:')
+
+print(array)
+
+## Output for the program
+
+# Test case 1
+Input 
+Enter size of array: 5
+Enter number 51
+Enter number 26
+Enter number 98
+Enter number 43
+Enter number 29
+
+Output
+Sorted Array in Ascending Order:
+[26, 29, 43, 51, 98]
+
+#Test case 2
+Input
+Enter size of array: 6
+Enter number 25
+Enter number 88
+Enter number 145
+Enter number 654
+Enter number 701
+Enter number 999
+
+Output
+Sorted Array in Ascending Order:
+[25, 88, 145, 654, 701, 999]
