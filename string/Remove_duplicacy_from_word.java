@@ -1,10 +1,11 @@
+ /* Approach:
+ recursive function calduplicacy() eliminates duplicate characters by adding characters to the new string if a new character is found in the 0th index of original string.
+ The original string is then trimmed by deleting the first character each time till it becomes null.*/
+
 package mypack;
 import java.util.*; 
  public class Remove {
 
-
- /*recursive function calduplicacy() eliminates duplicate characters by adding characters to the new string if a new character is found in the 0th index of original string.
- The original string is then trimmed by deleting the first character each time till it becomes null.*/
  public int recur;
  public String newstring;
 
@@ -15,9 +16,9 @@ import java.util.*;
  } 
 
 
-   public void calduplicacy(String original)  
+   public void calduplicacy(String original)  //function for removing duplicacy
  { 	
-    if(original.equals(""))
+    if(original.equals(""))  //base condition
     {
     System.out.println("After removal of duplicate characters: "+newstring);
 
@@ -45,7 +46,7 @@ import java.util.*;
 
         System.out.println("Enter a word");
         String input=scan.nextLine();
-        Remove d=new Remove();
+        Remove d=new Remove();  //class instantiation
         d.calduplicacy(input);
     }
 
