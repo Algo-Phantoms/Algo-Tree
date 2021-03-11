@@ -52,4 +52,4 @@ There are different bitwise operations used in the bit manipulation. Bit operati
 
 
 ## Questions :
-* [Brian Kernighan's algorithm](Code/Java/BrianKernighanAlgorithm.java)
+* [Brian Kernighan's algorithm](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/Code/Java/BrianKernighanAlgorithm.java)
