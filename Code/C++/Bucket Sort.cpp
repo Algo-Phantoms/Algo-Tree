@@ -1,3 +1,12 @@
+/*
+Bucket Sort is a sorting technique that sorts the elements by first dividing the elements into several groups called buckets.
+The elements inside each bucket are sorted using any of the suitable sorting algorithms or recursively calling the same algorithm.
+
+-> Use Scatter-gather approach.
+-> In bucket sort is that once the elements are distributed into buckets, each bucket can be processed independently of the others
+-> Bucket sort is useful when there is a large dataset
+*/
+
 #include <iostream>
 #include <algorithm>	//For using sort function
 #include <vector> 		//For using vector
@@ -46,4 +55,7 @@ Before Sorting
 
 After Sorting
 0.0476 0.1235 0.2045 0.2101 0.315 0.4142
+
+Time complexity - O(n+k)
+Space complexity - O(n+k)
 */
