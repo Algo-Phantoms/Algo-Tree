@@ -33,3 +33,47 @@ public class Bubblesort
 		}
 	}
 }
+
+/*
+    Test Cases:
+    Input: 
+Enter the no of elements in the array: 
+5
+Enter the elements
+55
+89
+74
+15
+9
+    Output:
+The sorted array is: 
+9 
+15 
+55 
+74 
+89 
+
+    Input: 
+Enter the no of elements in the array: 
+7
+Enter the elements
+7
+6
+5
+4
+3
+2
+1
+    Output:
+The sorted array is: 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+
+    Time Complexity: O(n^2) (for Worst case)
+    Space Complexity: O(1)
+*/
