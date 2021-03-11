@@ -41,5 +41,7 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Equal Sum Partition using Dynamic Programming -----> [Java](Code/Java/Equal_Sum_Partition.java)
 
+- Job Scheduling Problem using Dynamic Programming ----> [Java](Code/Java/JobSchedulingProblem.java) 
+
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 
