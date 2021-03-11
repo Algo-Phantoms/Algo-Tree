@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Prime Numbers Till N (Method 1)(Nested-for-loops)---->[C++](Code/C++/primenumbers_till_n_nestedforloop(Method_1).cpp)
