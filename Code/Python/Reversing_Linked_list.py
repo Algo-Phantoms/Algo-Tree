@@ -64,9 +64,6 @@ print("Reverse Linked List:")
 create_linkedlist.printLinkedList()
 
 
-#time-complexity:O(n)
-#space-complexity:O(n)
-
 #test-case 1: 1 2 3 4 5
 #output:Given Linked List:
 # 5
@@ -100,3 +97,6 @@ create_linkedlist.printLinkedList()
 # 33
 # 89
 # 100
+
+#time-complexity:O(n)
+#space-complexity:O(n)
