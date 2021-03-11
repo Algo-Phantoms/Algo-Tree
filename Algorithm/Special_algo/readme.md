@@ -1,2 +1,3 @@
-# Extra Questions
-* Kahn's Algorithm ----> [C++](/Code/C++/Kahns_algorithm.cpp)
+# Extra Questions :
+
+* Kahns_algorithm ----> [C++](/Code/C++/Kahns_algorithm.cpp)
