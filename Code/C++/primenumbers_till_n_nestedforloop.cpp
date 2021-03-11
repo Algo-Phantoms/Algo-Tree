@@ -116,10 +116,10 @@ Total Prime Number till N are : 25
 
 /*
 
-Time Complexity As we are using two nested loop the time complexity of this problem is O(N^2)
+Time Complexity : O(N^2)
 
 */
 /*
 
-Space Complexity In this problem we have  declared 4 variables n,count,num & i so if we assume each varible takes 1 unit then space complexity is 4 
+Space Complexity :- O(1)
 */
