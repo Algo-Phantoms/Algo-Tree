@@ -121,7 +121,8 @@ Inorder traversal of binary tree is
 Postorder traversal of binary tree is
 4 5 2 3 1
 
-
+Time Complexity: O(n)
+Space Complexity: On not considering the  size of stack for function calls then O(1) otherwise O(n).
 
 
 */
