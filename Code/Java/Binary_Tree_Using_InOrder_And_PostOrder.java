@@ -2,20 +2,14 @@
 // representing the pre-order and in-order traversals of a binary tree, 
 // reconstruct the tree and return the root.
 
-// Example
 
-// Input
-
-// preorder = [4, 2, 1, 0, 3]
-// inorder = [2, 1, 0, 3, 4]
-
-// Output
-// 2 1 0 3 4
-
-// Explanation
-
-// The inorder traversal of the above tree is 2 1 0 3 4
-
+// Approach : 
+// Preorder traversal goes like root -> left -> right. Inorder traversal goes like left -> root -> right
+// We know that in preorder traversal, the first one is always the root. 
+// So we if we find the root in the inorder traversal,
+// The left subtree starts from 0 to rootIndex-1.
+// The right subtree starts from rootIndex+1 till end.
+// So we can simply make two recursive calls to find the answer.
 
 import java.util.*;
 
@@ -110,3 +104,34 @@ public class Binary_Tree_Using_InOrder_And_PostOrder{
         print_inorder(root);
     }
 }
+
+// Example 1 
+
+// Input
+
+// preorder = [4, 2, 1, 0, 3]
+// inorder = [2, 1, 0, 3, 4]
+
+// Output
+// 2 1 0 3 4
+
+// Explanation
+
+// The inorder traversal of the above tree is 2 1 0 3 4
+
+// Example 2
+
+// Input
+
+// preorder = [0, 2, 1]
+// inorder = [2, 1, 0]
+
+// Output
+// 2 1 0
+
+// Explanation
+
+// The inorder traversal of the above tree is 2 1 0
+
+// Time Complexity : O(n)
+// Space Complexity : O(n)
