@@ -8,8 +8,6 @@ The basic flow of the algorithm is :
 --> For this we will assign a new function 
 --> The function will take single argument N 
 --> The function will check each number from 2 is it prime or not 
---> If the number is prime then it will be  added in a array else the loop will continue
---> We can use the concept of  vector also for storing array but our main objective is to find the prime numbers till n it dont matter a lot.
 --> In last we will give two ouputs 
 --> 1. Total No. of prime numbers 
 --> 2. Prime numbers 
