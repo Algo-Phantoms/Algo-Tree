@@ -12,5 +12,5 @@ A string is a class that contains a char array, but automatically manages it for
 <hr>
 
 ## Questions :
-* Queue using Stacks ----> [Python](/Code/Python/Reverse_string.py)
+* Reverse_string ----> [Python](/Code/Python/Reverse_string.py)
 
