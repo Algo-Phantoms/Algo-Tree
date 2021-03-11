@@ -2,9 +2,9 @@
  * It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]),
  *  and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.*/
 
-/*For each node, first the node is visited and then it’s child nodes are put in a FIFO queue. 
+/*For each node, first the node is visited and then it’s child nodes are put in a FIFO queue.*/ 
 
-printLevelorder(tree)
+/*printLevelorder(tree)
 1) Create an empty queue q
 2) temp_node = root //start from root
 3) Loop while temp_node is not NULL

@@ -48,6 +48,7 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* BFS Traversal in Binary Tree ----> [Java](/code/Java/Bfs_Traversal.java)
 
 
 
