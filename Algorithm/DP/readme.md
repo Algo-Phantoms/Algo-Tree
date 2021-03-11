@@ -36,3 +36,5 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
 
+* Equal Sum Partition using Dynamic Programming -----> [Java](Code/Java/Equal_Sum_Partition.java)
+
