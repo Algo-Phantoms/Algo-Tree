@@ -50,7 +50,7 @@ is one of the techniques for making the elements ordered.
 
 Following are the types of searches which we will be discussing in this book.
 
-* Unordered Linear Search
+* Unordered Linear Search ----> [Python](/Code/Python/linearsearch.py)
 * Sorted/Ordered Linear Search
 * Binary Search
 * Interpolation search
