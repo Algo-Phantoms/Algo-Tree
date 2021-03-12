@@ -13,7 +13,7 @@
   int main()
 {
     int N;
-  	cin>>N;  // Taking input the number from the user
+    cin>>N;  // Taking input the number from the user
   	
     if(N>=2 )   //Checking if the inputted no is greater than equal to 2
   	{
@@ -26,10 +26,10 @@
 			
 		}
 	
-	    if(factor==2)
-	    cout<<N<<" is a prime number."<<endl;
- 	    else
-	    cout<<N<<" is not a prime number."<<endl;
+	       if(factor==2)
+	       cout<<N<<" is a prime number."<<endl;
+ 	       else
+	       cout<<N<<" is not a prime number."<<endl;
   		
 	}
 	
