@@ -23,3 +23,7 @@ element in a full stack is called **overflow**.
 
 ## Questions :
 * Stack Class ----> [C++](/Code/C++/stack_class.cpp)
+
+* Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
+
+* Reverse A String ---> [Java](/Stack/Reverse_String.java)
