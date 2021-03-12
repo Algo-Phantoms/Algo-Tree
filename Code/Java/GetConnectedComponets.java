@@ -73,14 +73,14 @@ public class GetConnectedComponets{
 // [[0, 1], [2, 3], [4, 5, 6]] different connected components
 
 
-Sample Input
-7
-5
-0 1 10
-2 3 10
-4 5 10
-5 6 10
-4 6 10
-Sample Output
-[[0, 1], [2, 3], [4, 5, 6]]
+// Sample Input
+// 7
+// 5
+// 0 1 10
+// 2 3 10
+// 4 5 10
+// 5 6 10
+// 4 6 10
+// Sample Output
+// [[0, 1], [2, 3], [4, 5, 6]]
 }
