@@ -33,5 +33,5 @@ properties.
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
 * Cycle detection using Hare and Tortoise algorithm ----> [Java](/Code/Java/Cycle_Detection_In_Linked_List.java)
 * Implementation of Linked List Class ----> [Python](/Code/Python/linked_list.py)
-* Reversing Linkedlist ----> [Java](/code/Java/Reversing_Linkedlist.java)
+* Reversing Linkedlist ----> [Java](/code/Java/Reversing_Linked_List.java)
 
