@@ -28,5 +28,9 @@ properties.
 • Find nth node from the end of the list
 
 ## Questions :
+
+* Cycle detection using Hare and Tortoise algorithm ----> [C++](/Code/C++/CycleDetectLinkedList.cpp)
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
 * MergeSort in LinkList ---->[Java](/Code/Java/Mergesort in Linklist/linkedList.java)
+* Cycle detection using Hare and Tortoise algorithm ----> [Java](/Code/Java/Cycle_Detection_In_Linked_List.java)
+* Implementation of Linked List Class ----> [Python](/Code/Python/linked_list.py)
