@@ -28,3 +28,5 @@ unsolvable.
 ## Questions :
 
 * Permutation of a string ----> [C++](/Code/C++/permutation_of_a_string.cpp)
+
+* Sudoku Solver ----> [C++](/Code/C++/sudoku_solver.cpp)

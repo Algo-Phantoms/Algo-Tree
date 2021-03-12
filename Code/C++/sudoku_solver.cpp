@@ -39,7 +39,6 @@ bool isValid(vector<vector<int>> sudoku, int row, int col, int num)
                 return false;
         }
     }
-
     return true;
 }
 
@@ -107,7 +106,6 @@ int main()
     cout<<"Enter the size of the sudoku matrix\n";
     int n;
     cin>>n;
-
     vector<vector<int>> sudoku;
     
     cout<<"Enter the elements of the sudoku matrix\n";
@@ -125,15 +123,8 @@ int main()
 
     //solving the sudoku by calling the helper method.
     sudoku_solver(sudoku, 0, 0);
-
     return 0;
 }
-
-
-/* 
-Time Complexity of the approach : O(9 ^ (N * N))
-Space Complexity of the approach : O(N * N)
-/*
 
 /*
 Input 1 : 
@@ -189,4 +180,9 @@ The solved sudoku matrix is :
 9 6 5 7 3 1 2 8 4 
 2 8 7 4 1 9 3 6 5 
 3 5 4 6 8 2 1 7 9 
+*/
+
+/* 
+Time Complexity of the approach : O(9 ^ (N * N))
+Space Complexity of the approach : O(N * N)
 */
