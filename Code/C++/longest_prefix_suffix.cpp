@@ -12,46 +12,41 @@
  #include <iostream>
  using namespace std;
 
-//function to find the length of longest substring
-
-int pre_suff(string str)
-{
-    /*if length of given string is less
-    than two, no such substring exist
-    hence returns 0*/
-    if(str.length() < 2)
-    {
-    return 0;
-    }
-
-    int l=0,i=str.length()/2;
-
-    /*loop calculating the length of
-    such substring*/
-    while(i<str.length())
-        {
-            if(str[i]==str[l])
-            {
-             ++l;
-             ++i;
-            }
-            else
-            {
-            i=i-l+1;
-            l=0;
-            }
-        }
-    /*as overlapping is not allowed*/
-    return (l> str.length()/2) ? str.length()/2 : l;
-}
-//main
-int main() {
+ int main() {
 
 	string s;
 	//input from the user
 	cin>>s;
-	//calling pre_suff(.)
-	cout<<pre_suff(s);
+    /*if length of given string is less
+    than two, no such substring exist
+    hence prints 0*/
+	if(s.length()<2)
+    cout<<0;
+   
+    else{
+        int l=0,i=s.length()/2;
+
+        /*loop calculating the length of
+        such substring*/
+         while(i<s.length())
+           {
+              if(s[i]==s[l])
+               {
+                ++l;
+                ++i;
+                }
+              else
+               {
+                i=i-l+1;
+                l=0;
+               }
+            }
+        /*as overlapping is not allowed*/
+            if(l>s.length()/2) 
+            cout<<s.length()/2 ;
+            else 
+            cout<<l;
+          }
 
 	return 0;
 }
