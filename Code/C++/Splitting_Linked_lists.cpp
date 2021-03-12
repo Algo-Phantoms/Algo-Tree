@@ -128,7 +128,7 @@ Split-ed Linked List: 1->2->3->4->NULL
 5->6->7->NULL
 ----------------------------------------------------
 
-Time Complexity: alternate_delete() function: O(n)
-Space complexity: alternate_delete() function: O(n)
+Time Complexity: split() function: O(n)
+Space complexity: split() function: O(n)
 
 */
