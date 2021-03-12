@@ -34,4 +34,5 @@ properties.
 * Cycle detection using Hare and Tortoise algorithm ----> [Java](/Code/Java/Cycle_Detection_In_Linked_List.java)
 * Implementation of Linked List Class ----> [Python](/Code/Python/linked_list.py)
 * Reversing Linkedlist ----> [Java](/code/Java/Reversing_Linked_List.java)
+* Implementation of Linked List ----> [Python](/Code/Python/linked_list.py
 
