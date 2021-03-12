@@ -30,5 +30,5 @@ properties.
 ## Questions :
 
 * Cycle detection using Hare and Tortoise algorithm ----> [C++](/Code/C++/CycleDetectLinkedList.cpp)
-* Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
+* Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)---> [Python](/Code/Python/insertion_in_linked_list.py)
 * Cycle detection using Hare and Tortoise algorithm ----> [Java](/Code/Java/Cycle_Detection_In_Linked_List.java)
