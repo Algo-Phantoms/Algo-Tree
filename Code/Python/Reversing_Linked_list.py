@@ -78,6 +78,9 @@ create_linkedlist.printLinkedList()
 # 4
 # 5
 
+#time-complexity:O(n)
+#space-complexity:O(n)
+
 
 #test case 2:
 # Enter item 1 54
