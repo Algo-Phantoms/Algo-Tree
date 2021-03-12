@@ -1,12 +1,14 @@
 """
+
 Converting a binary string to its equivalant decimal number.
 This program does not take negative and floating point numbers into account and will run only for positive integers.
 The approach is to multiply each bit by 2 raised to the power of the position of the bit from the right.
 The sum will be the final answer.
+
 """
 
-#This function checks whether the given string is a valid binary number or not. 
-def isBinary(s):    
+#This function checks whether the given string is a valid binary number or not.
+def isBinary(s):
     for c in s:
         if c not in ("1","0"):
             return 0
@@ -16,14 +18,14 @@ def isBinary(s):
 print("Enter the binary number: ", end = " ")
 binary = input()    #taking the string as input from the user
 
-while isBinary(binary) == 0:    #the program will keep asking the user for input until the string is a valid binary number
+while isBinary(binary) is 0:    #the program will keep asking the user for input until the string is a valid binary number
     print("Please enter a valid string: ", end = " ")
     binary = input()
 
 decimal = 0    #initialising the decimal number
 
-for i in range (len(binary)):    
-    if binary[i] is '1':    #if the bit is 1, only then it will count
+for i in range (len(binary)):
+    if binary[i] == '1':    #if the bit is 1, only then it will count
         decimal += 2**(len(binary)-i-1)    #since we consider the rightmost position as 0, therefore to calculate a position, we need to write len(binary)-i-1
 
 print("The decimal value of {} is {}".format(binary, decimal))
