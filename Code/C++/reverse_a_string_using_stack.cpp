@@ -6,7 +6,7 @@ Approach:-
 	In stack,we know LIFO principle works.
 	
 	First,i create an empty stack,then i push each character of string in stack
-	then,from for loop i popped out every single character.
+	then,using for loop i popped out every single character.
 
 */
 
