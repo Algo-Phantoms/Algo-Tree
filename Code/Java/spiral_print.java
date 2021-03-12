@@ -1,6 +1,6 @@
 /*This is a Java Program to print a 2D Array of 'r' rows and 'c' columns in a spiral form.*/
 import java.util.*;
-public class spiral_array
+public class spiralArrayPrint
 {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
