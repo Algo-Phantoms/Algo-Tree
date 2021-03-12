@@ -20,28 +20,35 @@ void staircase_search(vector<vector<int>> matrix , int key) {
 
 	bool is_found = false;
 	int n = matrix.size();
+
+	// To start the traversal of the matrix in top right corner
 	int i = 0 , j = n - 1;
 
+	// To search for a key until the indices satisfy the matrix bounds
 	while (i <= n - 1 && j >= 0) {
 
 		if (matrix[i][j] == key) {
 
+			// If key is found
 			cout << "Key found at : " << i << " " << j << endl;
 			is_found = true;
 			break;
 
 		} else if (matrix[i][j] > key) {
 
+			// If current element is greater than the key, then the current column can be skipped and move to previous column
 			j--;
 
 		} else {
 
+			// If current element is lesser than th key, then the current row can be skipped and move to next row
 			i++;
 
 		}
 
 	}
 
+	// If the key is not found
 	if (!is_found)
 		cout << "Key not found" << endl;
 
@@ -66,6 +73,7 @@ int main() {
 		int key;
 		cin >> key;
 
+		// Function Call to search for a key in the given matrix
 		staircase_search(matrix , key);
 
 	}
