@@ -27,14 +27,14 @@ import java.util.*;   //used for Scanner function
 
 
 
-public class Reversing_Linkedlist {
+public class Reversing_Linked_List {
 
 
     static class Node{                    //creating Node class 
          public int data;
          public  Node next;
 
-            Node(int x){
+           public Node(int x){
               this.data = x;
               this.next = null;
               }
