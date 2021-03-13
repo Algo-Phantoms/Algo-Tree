@@ -36,3 +36,4 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
 
+* Egg Drop ----> [C++](/Code/C++/Eggdrop.cpp)
