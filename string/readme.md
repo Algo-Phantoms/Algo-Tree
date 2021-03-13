@@ -11,5 +11,52 @@ A string is a class that contains a char array, but automatically manages it for
 
 <hr>
 
-## Questions :
+## Questions : Given a String A, arrange it in such a way so that the period of the string is minimum
+Solution:
+import java.util.*;
+public class PeriodOfString {
+    public static void main(String[] args) {
+         String A = "abacbc";
+        
+        // OR USE SCANNER FOR INPUT
+        // Scanner sc = new Scanner(System.in);
+        // String A = sc.next();
+        
+         System.out.println(solve(A));
+    }
+    public static int solve(String A) {
+        Map<Character,Integer> map = new HashMap<>();
+        for(int i=0;i<A.length();i++){
+            if(map.containsKey(A.charAt(i))) {
+                map.put(A.charAt(i),map.get(A.charAt(i))+1);
+            }
+            else {
+                map.put(A.charAt(i),1);
+            }
+        }
+        ArrayList<Integer> list = new ArrayList<>(map.values());
+        int gcd = list.get(0);
+        for(int i=0;i<list.size();i++) {
+            gcd = gcd(gcd,list.get(i));
+        }
+        return A.length()/gcd;
+    }
+    public static int gcd(int A,int B) {
+        if(A==0) return B;
+        return gcd(B%A,A);
+    }
+}
+
+
+<!-- N is length of String  -->
+TimeComplexity: O(N)  
+Space Complexity: O(N)
+
+Example : Given a String , arranged its letters in such a way that the period of the string is minimum and return the length of the string.
+        Input:
+        A = "abacbc"
+        Output:
+        3
+        Explanation:
+        The given string can be arranged as "abcabc" in which abc is the minimum string which repeats afterwards.
 
