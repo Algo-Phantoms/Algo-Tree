@@ -25,4 +25,4 @@ element in a full stack is called **overflow**.
 
 - Stack Class ----> [C++](/Code/C++/stack_class.cpp)
 
-- Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
+- Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp),[Python](/Code/Python/Balanced_bracket.py)
