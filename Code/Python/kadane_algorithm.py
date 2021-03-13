@@ -4,7 +4,6 @@
 
 #The basic idea of kadane's algorithm is to look for positive contigious sub-array, here current_sum keeps track of it.
 #In each loop we compare the current_sum with best_sum (i.e Maximum Sum) and update if current becomes larger than best_sum.
-#Time complexity: O(n) and Space Complexity: O(1)
 
 def kadane(array, size):
 	current_sum = 0
@@ -53,5 +52,7 @@ if __name__ == '__main__':
 	#Output
 	#Maximum sum subarray is:  23
 	#Maximum sum subarray is:  -1
+	
+#Time complexity: O(n) and Space Complexity: O(1)
 
 
