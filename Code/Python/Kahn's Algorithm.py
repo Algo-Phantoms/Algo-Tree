@@ -10,14 +10,14 @@
 from collections import defaultdict
 class Graph:
     def __init__(self,vertices):
-        """Initialize vertices and dictionary containing adjacency list"""
+        """Initialize vertices and dictionary containing adjacency list."""
         self.v=vertices
         self.graph=defaultdict(list)
     def addEdge(self,u,v):
-        """Function to add an edge in graph"""
+        """Function to add an edge in graph."""
         self.graph[u].append(v)
     def topological_sort(self):
-        """Function for topological sort"""
+        """Function for topological sort."""
         indegree=[0]*self.v
         for i in self.graph:
             for j in self.graph[i]:
