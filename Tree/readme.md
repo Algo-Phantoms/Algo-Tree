@@ -47,7 +47,8 @@ that, this property should be satisfied at every node in the tree.
 * Sorting the elements of binary search tree and many more
 
 ## Questions :
-* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp)
+* BFS Traversal in Binary Tree ----> [Java](Code/Java/Bfs_Traversal.java)
 
 
 
