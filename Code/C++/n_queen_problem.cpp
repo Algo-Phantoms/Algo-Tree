@@ -6,7 +6,7 @@
  Movement of a queen on any board:  Diagonally or horizontally or vertically
 
  Backtracking approach: In this method we place one queen row by row using recursion, Before placing the queen we check
-                        whether it will be attacked by other quuen or not,
+                        whether it will be attacked by other queen or not,
 
                         if not, we can place the queen in that particular coulumn of that row
                         if the queen is being at that partiular column, we try placing it in the next column of that row,
@@ -32,7 +32,7 @@ bool isSafe(int chessboard[][100], int row, int col, int n){
             //if any queen is already present on that diagonal we cannot place the queen
             return false;
         }
-        //x cordinate we can get row by reducing 1 and column by reducing 1;
+        //cordinate we can get of row by reducing 1 and of column by reducing 1;
         x--;
         y--;
     }
@@ -47,12 +47,12 @@ bool isSafe(int chessboard[][100], int row, int col, int n){
             //if any queen is already present on that diagonal we cannot place the queen
             return false;
         }
-        //x cordinate we can get row by reducing 1 and column by increasing 1;
+        //cordinates we can get of row by reducing 1 and of column by increasing 1;
         x--;
         y++;
     }
     //At last checking vertically, if there is any queen or not
-    //only checking till row(not n) because we are placing queen row wise so there is no possibility that there will be a queen after row passes
+    //only checking till row(not n) because we are placing queen row wise so there is no possibility that there will be a queen after row passes in function
     for(int i=0; i<row; i++)
     {
         if(chessboard[i][col]==1){
@@ -60,7 +60,7 @@ bool isSafe(int chessboard[][100], int row, int col, int n){
             return false;
         }
     }
-    //if till now there is no false  encountered then the queen can be places so return true
+    //if till now there is no false encountered then the queen can be placed so return true
     return true;
 }
 
@@ -82,7 +82,7 @@ bool recursiveBacktracking(int chessboard[][100],int row, int n){
                 else{
                     //if chessboard[i][j] is equal to zero
                     // that means queen is not present here 
-                    // print _ (blank space)
+                    // print *
                     cout << "* ";
                 }
             }
