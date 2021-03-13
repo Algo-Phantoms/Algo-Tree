@@ -84,13 +84,13 @@ int main()
 	knapsack(n,weight,profit,items,knapsack_cap);
 	return 0;
 }
-/* Test case 1:
-   weights[i]= 10 20 30
-   profit[i]= 60 100 120
-   knapsack capacity= 50
+	/* Test case 1:
+	weights[i]= 10 20 30
+   	profit[i]= 60 100 120
+   	knapsack capacity= 50
    
-   Output:
-   Total profit 240
+   	Output:
+   	Total profit 240
 	Items ratio considered:
 	1 1 0.666667
 	
@@ -104,6 +104,6 @@ int main()
 	Items ratio considered:
 	1 1 0.5 0
 	
-    Time Complexity : O(n*n) ,this problem can solved in O(nlogn) by using a sorting algorithm which takes an O(nlogn)
-    Space Complexity: O(n)
-*/
+    	Time Complexity : O(n*n) ,this problem can solved in O(nlogn) by using a sorting algorithm which takes an O(nlogn)
+    	Space Complexity: O(n)
+	*/
