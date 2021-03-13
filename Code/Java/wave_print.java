@@ -1,6 +1,7 @@
 /*This is a Java Program to print a 2D Array of 'r' rows and 'c' columns in a wave form.*/
+package javacode;
 import java.util.*;
-public class waveArrayPrint{
+public class WaveArrayPrint{
         public static void waveprint(int a[][], int r, int c){
                 for(int column = 0; column < c; column++){
                         if(column%2==0){
