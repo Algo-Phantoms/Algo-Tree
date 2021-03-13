@@ -6,7 +6,6 @@
 -idea is to divide the given string from between and check if both string are equal
 -if so return the length of that substring
 -otherwise check for the shorter length
--cpp code
  */
 
  #include <iostream>
