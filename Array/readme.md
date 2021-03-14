@@ -24,6 +24,6 @@ To create an array, you need to known the length (or size) of the array in advan
  
 ## Questions :
 
- * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
+ * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) 
  * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp) 
 
