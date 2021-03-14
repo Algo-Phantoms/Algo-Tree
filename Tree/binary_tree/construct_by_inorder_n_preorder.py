@@ -55,6 +55,6 @@ def Preorder(root):  #prints tree in order : root, left and right
 if __name__=='__main__':
     inOrder = [5 , 15 , 18 , 20 , 25 , 30 , 35 , 40 , 45 , 50 , 60]
     preOrder = [30 , 20 , 15 , 5 , 18 , 25 , 40 , 35 , 50 , 45 , 60]
-    root=create_tree(inOrder,preOrder,0,len(inOrder)-1)     #output should br [5 18 15 25 20 35 45 60 50 40 30]
+    root=create_tree(inOrder,preOrder,0,len(inOrder)-1)     #output should be [5 18 15 25 20 35 45 60 50 40 30]
     postorder(root)
     print(" - Postorder traversal of a Binary tree using inorder and preorder traversal. ")
