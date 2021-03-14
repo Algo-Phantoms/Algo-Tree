@@ -27,5 +27,5 @@ element in a full stack is called **overflow**.
 
 * Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
 
-* Reverse A String ---> [Java](/Stack/Reverse_String.java)
+
 
