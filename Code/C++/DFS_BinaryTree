@@ -1,0 +1,79 @@
+//DFS (Depth-first search) is technique used for traversing tree or graph. Here backtracking is used for traversal. In this traversal first the deepest node is visited and then backtracks to it’s parent node if no sibling of that node exist.
+#include <bits/stdc++.h>
+using namespace std;
+
+//Considering a Binary tree where every node has a left and right child.
+class TreeNode{
+public:
+	int num; //value at the node being referred to
+	TreeNode * right; //pointer pointing to the right child of the node
+	TreeNode * left; //pointer pointing to the left child of the node
+
+	TreeNode(int num){
+		this->num= num;
+		right= NULL;
+		left= NULL;
+	}
+};
+
+//Creating a Tree by calling this function recursively for the left and right of the node created in the current function call
+TreeNode* createtree(){
+	int n; cin>>n;
+	if(n==-1){
+		//Assuming that '-1' means that the node is actually a NULL pointer.
+		cout<<"Returning to the parent node as -1 is assumed to be a NULL pointer"<<endl;
+		return NULL;
+	} 
+		
+
+	TreeNode* root= new TreeNode(n);
+	cout<<"Enter the value of the left child of the node with value "<<n<<" : "<<endl;
+	root->left= createtree();
+	cout<<"Enter the value of the right child of the node with value "<<n<<" : "<<endl;
+	root->right= createtree();
+	cout<<"Returning to the parent node"<<endl;
+
+	return root;
+}
+
+//Recursion is followed usually for the DFS traversal in a tree
+//The algorithm works by moving to any of the branches of the tree(here, left first), traverses that side to it's entire depth and then backtracks towards the parent, and then moving to the other side.
+void dfs(TreeNode* root, vector<int> &dfsorder){
+	if(root == NULL){
+		//if the node is NULL then we have no other node yet to be discovered from the current node.
+		return ;
+	}
+
+	dfs(root->left, dfsorder); //now we will traverse the left side of the curremt node first
+	dfs(root->right, dfsorder); // after done with the complete left side, we will traverse on the right side of the current node
+	dfsorder.push_back(root->num); //once the deep/child nodes are dicovered, we will push the current/parent node in the vector
+}
+
+int main(){
+	cout<<"Enter the number you wish to insert as the root in the Tree: "<<endl;
+	TreeNode * root= createtree();
+
+	vector<int> dfsorder;
+	dfs(root, dfsorder);
+
+	cout<<"\nThe DFS traversal of the Binary Tree created above is as follows: \n\n";
+	for(int i=0; i<dfsorder.size()-1; i++)
+	{
+		cout<<dfsorder[i]<<" , ";
+	}
+	cout<<dfsorder[dfsorder.size()-1]<<endl<<endl;
+	return 0;
+}
+
+
+//Sample Test Case
+
+// For a Binary Tree:
+//    	5
+//     / \
+//    6   7
+//   / \   \
+//  8   9   10
+//
+// Traversal will occur in the following manner and the output would be:
+// 8 9 6 10 7 5
