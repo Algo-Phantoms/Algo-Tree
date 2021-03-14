@@ -21,12 +21,12 @@ void reverse(string &s)
 	int i;
 	# Creating empty stack
 	stack<int> str;
-	#pushing each character of the string into the stack
+	# pushing each character of the string into the stack
 	for(char ch:s)
 	{
         str.push(ch);
     	}
-	#popping each character one by one from the stack
+	# popping each character one by one from the stack
     	for(i=0;i<s.size();i++)
     	{
         s[i]=str.top();
@@ -41,7 +41,7 @@ int main()
 	string s;
 	cout<<"Enter a string you want to reverse:";
 	cin>>s;
-	#calling function
+	# calling function
 	reverse(s);
 	# printing result
 	cout<<s;
