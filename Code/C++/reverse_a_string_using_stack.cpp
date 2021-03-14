@@ -21,7 +21,7 @@ void reverse(string &s)
 	int i;
 	# Creating empty stack
 	stack<int> str;
-	#pushing each character of the string
+	#pushing each character of the string into the stack
 	for(char ch:s)
 	{
         str.push(ch);
