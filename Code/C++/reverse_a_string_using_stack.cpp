@@ -21,12 +21,12 @@ void reverse(string &s)
 	for(char ch:s)
 	{
         str.push(ch);
-    }
-    for(i=0;i<s.size();i++)
-    {
-        s[i]=str.top();
+    	}
+    	for(i=0;i<s.size();i++)
+    	{
+       	s[i]=str.top();
         str.pop();
-    } 
+    	} 
 }
 int main()
 {
