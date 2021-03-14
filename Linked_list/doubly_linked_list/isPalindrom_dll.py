@@ -2,7 +2,7 @@
 #language: Python 3.8
 
 #input: Enter a string: s         // here user will provide a string 
-#output: True or False          //check wheather a string palindrome or not
+#output: True or False          //check wheather a string palindrome or not 
 
 #firstly, we will create a doubly linked list in which data part contains each character of the string
 #then in "isPalindrom" function in "doubly_linked_list" class we will use head and tail iterator of doubly linked list and will compare each data part and retuens True or False accordingly.
@@ -15,7 +15,7 @@ class Node(object):          # Create Single linked node everytime
 
 
 class doubly_linked_list(object):
-    def __init__(self):           #sets defalut value as None at iterators and 0 at data part
+    def __init__(self):           #creating node with value as None at both address part and 0 at data part
         self.head = None
         self.tail = None
         self.count = 0
