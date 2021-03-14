@@ -48,6 +48,8 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* Binary Tree to Doubly Linkedlist ----> [Java] (/Code/Java/Binarytree_To_Doublylinkedlist.java)
+
 
 
 
