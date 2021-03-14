@@ -24,7 +24,7 @@
   	{
   		int factor=0; // Variable to store number of factors of the inputted number between 2 and square root of N
   		
-                int K=ceil(sqrt(N)); // Variable to store the ceil value of square root of N
+              int K=ceil(sqrt(N)); // Variable to store the ceil value of square root of N
 
   		for(int i=K;i>=2;i--)
   		{
