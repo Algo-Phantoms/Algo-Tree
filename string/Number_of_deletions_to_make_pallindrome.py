@@ -40,11 +40,11 @@ def noofDeletions(s):
             res = min(res, dp[i - 1][j]) 
         i -= 1
         j += 1
-    return res-1 
+    return res
   
 # Driver Code 
 if __name__ == "__main__": 
-    string = input('Enter string')
+    string = input('Enter string: ')
     print(noofDeletions(string)) 
 
 # Time Complexity: O(n*n)
