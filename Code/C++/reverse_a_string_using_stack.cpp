@@ -14,27 +14,36 @@ Approach:-
 #include<string>
 #include<stack>
 using namespace std;
+
+# function to reverse the string
 void reverse(string &s)
 {
 	int i;
+	# Creating empty stack
 	stack<int> str;
+	#pushing each character of the string
 	for(char ch:s)
 	{
         str.push(ch);
     	}
+	#popping each character one by one from the stack
     	for(i=0;i<s.size();i++)
     	{
         s[i]=str.top();
         str.pop();
     	} 
 }
+
+# driver code
 int main()
 {
 	cout<<"Program to reverse a string."<<endl;
 	string s;
 	cout<<"Enter a string you want to reverse:";
 	cin>>s;
+	#calling function
 	reverse(s);
+	# printing result
 	cout<<s;
 	return 0;
 }
