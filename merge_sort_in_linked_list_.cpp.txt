@@ -1,0 +1,186 @@
+Merge Sort Algorithm
+Merge sort is one of the most efficient sorting algorithms. It works on the principle of Divide and Conquer. 
+Merge sort repeatedly breaks down a list into several sublists until each sublist consists of a single element 
+and merging those sublists in a manner that results into a sorted list.
+
+Merge sort sorts a subarray array[a ... b] as follows
+1. If a = b, do not do anything, because a subarray that only contains one element
+is already sorted.
+2. Calculate the position of the middle element k = (a + b)2.
+3. Recursively sort the subarray array[a ... k].
+4. Recursively sort the subarray array[k + 1 ... b].
+5. Merge the sorted subarrays array[a ... k] and array[k + 1 ... b] into a sorted
+subarray array[a ... b].
+
+C++ Program for merge sprt of two linked lists.
+#include iostream
+#include stack
+using namespace std;
+ A Linked List Node
+struct Node
+{
+    int data;
+    struct Node next;
+};
+class SLL
+{
+    public
+    struct Node head;
+        SLL()
+        {
+            head = NULL;
+        }
+	void traversal(struct Node head_);traverse and display linked list using reference
+	void push(struct Node head_,int x);
+	Node MergeSortedList(Node lst1, Node lst2);
+	void SplitList(Node source, Node front, Node back);
+	void MergeSort(Node thead);
+};
+
+void SLLpush(struct Node head_, int x)
+{
+    Node newnode = new Node;
+    newnode-data = x;
+    newnode-next = NULL;
+    if( head_==NULL)
+    {
+        head_ =  newnode;
+    }
+    else
+    {   
+        Node temp = head_;
+        while (temp-next!=NULL)
+        {
+            temp=temp-next;
+        }
+        temp-next=newnode;
+    }
+}
+
+Function to traverse the linked list
+void SLL  traversal(struct Node head_)
+{
+    int c=0;
+    Node temp = head_;
+    while (temp!=NULL)  
+    {  
+        c++;
+        couttemp-data-;  
+        temp = temp-next;  
+    }  
+    coutNULLnThe Length of linked list is = c;
+}
+
+Node SLL  MergeSortedList(Node lst1, Node lst2) 
+{ 
+	Node result = NULL; 
+
+	 Base Cases
+	if (lst1 == NULL) 
+		return (lst2); 
+	else if (lst2 == NULL) 
+		return (lst1); 
+
+	 recursively merging two lists
+	if (lst1-data = lst2-data) { 
+		result = lst1; 
+		result-next = MergeSortedList(lst1-next, lst2); 
+	} 
+	else { 
+		result = lst2; 
+		result-next = MergeSortedList(lst1, lst2-next); 
+	} 
+	return result; 
+} 
+
+ Splitting two into halves.
+ If the size of the list is odd, then extra element goes in the first list.
+void SLL  SplitList(Node source, Node front, Node back) 
+{ 
+	Node ptr1; 
+	Node ptr2; 
+	ptr2 = source; 
+	ptr1 = source-next; 
+
+	 ptr1 is incrmented twice and ptr2 is icremented once.
+	while (ptr1 != NULL) { 
+		ptr1 = ptr1-next; 
+		if (ptr1 != NULL) { 
+			ptr2 = ptr2-next; 
+			ptr1 = ptr1-next; 
+		} 
+	} 
+
+	 ptr2 is at the midpoint.
+	front = source; 
+	back = ptr2-next; 
+	ptr2-next = NULL; 
+} 
+
+
+ Merge Sort
+void SLL  MergeSort(Node thead) 
+{ 
+	Node head = thead; 
+	Node ptr1; 
+	Node ptr2; 
+
+   Base Case
+	if ((head == NULL)  (head-next == NULL)) { 
+		return; 
+	} 
+
+	 Splitting list
+	SplitList(head, &ptr1, &ptr2); 
+
+	 Recursively sorting two lists.
+	MergeSort(&ptr1); 
+	MergeSort(&ptr2); 
+
+	 Sorted List.
+	thead = MergeSortedList(ptr1, ptr2); 
+} 
+
+int main()
+{
+    SLL L1;
+     Empty list
+	Node res = NULL; 
+	Node MyList = NULL; 
+	
+	taking the linked list as input
+	int input;
+	coutEnter the elemnets of unsorted listendl;
+	cininput;
+	L1.push(&MyList, input); 
+	cininput;
+	L1.push(&MyList, input);
+	cininput; 
+	L1.push(&MyList, input);
+	cininput; 
+	L1.push(&MyList, input);
+	cininput; 
+	L1.push(&MyList, input);
+	cininput; 
+	L1.push(&MyList, input);
+	cininput;
+        L1.push(&MyList, input); 
+
+	cout  Unsorted Linked List ; 
+	L1.traversal(MyList);traversal of unsorted list
+	cout  n; 
+
+	L1.MergeSort(&MyList);sorting the linked list
+
+	cout  Sorted Linked List ; 
+	L1.traversal(MyList);traversal of sorted linked list
+	return(0);
+}
+
+/*Two Test case you can try out with this code-
+# Input  10 4 15 1 2 12 54
+  Output  1-2-4-10-12-15-54-NULL
+# Input  777 0 3333 666 999 222 444 555
+  Output 0-222-444-666-777-999-3333-NULL*/
+/*Time Complexity - O(n Log n)
+Space Complexity - O(n)*/
