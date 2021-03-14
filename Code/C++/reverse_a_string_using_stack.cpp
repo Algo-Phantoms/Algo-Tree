@@ -24,7 +24,7 @@ void reverse(string &s)
     	}
     	for(i=0;i<s.size();i++)
     	{
-       	s[i]=str.top();
+        s[i]=str.top();
         str.pop();
     	} 
 }
