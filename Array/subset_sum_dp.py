@@ -1,5 +1,5 @@
 # Ques: Check wheather it is possible or not to get subset sum equal to given sum in an array of size n
-# Algorithm: DP
+# Algorithm: DP approach
 # language: Python
 
 
