@@ -11,5 +11,12 @@ A string is a class that contains a char array, but automatically manages it for
 
 <hr>
 
-## Questions :
+# Minimum number of deletions to make pallindromicsubstring:
+ 
+ There are two ways to solve this problem:
+
+- A simple solution is to remove all subsequences one by one and check if the remaining string is palindrome or not. The time           complexity of this solution is exponential.
+
+- An efficient approach uses the concept of finding the length of the longest palindromic subsequence of a given sequence. 
+
 
