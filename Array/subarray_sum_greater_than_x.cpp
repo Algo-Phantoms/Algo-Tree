@@ -24,7 +24,7 @@ bool isPresent(int v[],int n,int sum)          //this function checks wheather t
 			x+=v[j];
 			j++;
 		}
-		if(x==sum)      //checks if subarray sum from i to j is equal to sum of not
+		if(x==sum)      //checks if subarray sum from i to j is equal to sum(given) or not
 		return true;
 	}
 	return false;
