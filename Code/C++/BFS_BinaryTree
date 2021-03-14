@@ -87,7 +87,7 @@ int main(){
 //Sample Test Case
 
 // For a Binary Tree:
-//    	5
+//      5
 //     / \
 //    6   7
 //   / \   \
