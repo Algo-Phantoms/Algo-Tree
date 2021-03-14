@@ -1,4 +1,5 @@
 #Ques: Apply insertion sorting algorithm to sort a linked-list
+#language: Python 3
 #Insertion-sort = Each time we will compare value store at current node with the value next to it, if it is greater than next one then swap them,keep on doing utill to reach NULL
 #input: Enter no. of node u want:(n)     ------>here user will provide an integer which will be no. of node in linked list
 #                                    ------->from next line user will provide n integers each time in new line 
