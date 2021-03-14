@@ -27,7 +27,7 @@ int GCD(int n1,int n2)
 //Main function Code
 int main()
 {
-    //Declaring to integer variables
+    //Declaring two integer variables
     int a,b;
     cout<<"Enter 2 integers whose GCD you want to find out : ";
 
