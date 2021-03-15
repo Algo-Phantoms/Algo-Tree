@@ -1,3 +1,16 @@
+/*
+Time Complexity : O(N);
+Here we have given following binary tree as input:
+	5
+   / \
+  6   7
+ / \ / \
+3  4 2  9 
+
+When this will get converted to double linked list, we will get following output -
+3 6 4 5 2 7 9
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -21,11 +34,16 @@ void Convert_to_Double_Linked_List(TreeNode* A, TreeNode** h)
 	if(A==NULL){
 		return;
 	}
-	static TreeNode* p = NULL;			//Here we initialise the previous visited node as NULL
 	
-	Convert_to_Double_Linked_List(A->left, h);		//converting left subtree to double linked list recursively
+	//Here we initialise the previous visited node as NULL
 	
-	if(p==NULL)					//converting the node to double linked list
+	static TreeNode* p = NULL;			
+	
+	//converting left subtree to double linked list recursively
+	Convert_to_Double_Linked_List(A->left, h);		
+	
+	//converting the node to double linked list
+	if(p==NULL)					
 	{
 		*h = A;
 	}
@@ -36,7 +54,8 @@ void Convert_to_Double_Linked_List(TreeNode* A, TreeNode** h)
 	}
 	p = A;
 	
-	Convert_to_Double_Linked_List(A->right, h);		//now converting right subtree to double linked list recursively
+	//now converting right subtree to double linked list recursively
+	Convert_to_Double_Linked_List(A->right, h);		
 }
 
 void write_values(TreeNode* A)
@@ -58,7 +77,9 @@ int main()
 	root->right->right = InsertNode(9);
 	
 	TreeNode* top = NULL;
-	Convert_to_Double_Linked_List(root,&top);		//converting binary tree to double linked list
+	
+	//converting binary tree to double linked list
+	Convert_to_Double_Linked_List(root,&top);		
 	
 	cout<<"Elements of Doubly Linked List are: "<<endl;
 	
@@ -66,16 +87,3 @@ int main()
 	
 	return 0;
 }
-
-/*
-Time Complexity : O(N);
-Here we have given following binary tree as input:
-	5
-   / \
-  6   7
- / \ / \
-3  4 2  9 
-
-When this will get converted to double linked list, we will get following output -
-3 6 4 5 2 7 9
-*/
