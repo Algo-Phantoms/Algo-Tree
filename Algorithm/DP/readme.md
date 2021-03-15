@@ -40,3 +40,6 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 - Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
 
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
+
+- Longest Pallindromic Substring ----> [Python](/Code/Python/longest_palindromic_substring.py)
+
