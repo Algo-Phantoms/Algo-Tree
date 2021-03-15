@@ -1,14 +1,8 @@
 /*
-Time Complexity : O(N);
-Here we have given following binary tree as input:
-	5
-   / \
-  6   7
- / \ / \
-3  4 2  9 
-
-When this will get converted to double linked list, we will get following output -
-3 6 4 5 2 7 9
+Here we are converting a given binary tree to a doubly linked list. 
+Here the left and right pointers of the given binary tree will get converted into the previous and next pointer of the Doubly Linked List.
+Basically, the order of the nodes in the doubly linked list will be same as the inorder traversal of the Binary Tree.
+And hence, here the head of the doubly linked list will be the leftmost node of given binary tree. 
 */
 
 #include <iostream>
@@ -36,7 +30,7 @@ void Convert_to_Double_Linked_List(TreeNode* A, TreeNode** h)
 	}
 	
 	//Here we initialise the previous visited node as NULL
-	
+	//We use 'static' keyword here so that we can use this value only, in all the recursive calls
 	static TreeNode* p = NULL;			
 	
 	//converting left subtree to double linked list recursively
@@ -87,3 +81,32 @@ int main()
 	
 	return 0;
 }
+
+/*
+Time Complexity : O(N);
+Space Complexity : O(1);
+
+Test Case 1- 
+
+Here if we give following binary tree as input:
+	5
+   / \
+  6   7
+ / \ / \
+3  4 2  9 
+
+Then we will get following output - 
+3 6 4 5 2 7 9
+
+Test Case 2-
+
+If we give following binary tree as input:
+	2
+   / \
+  8   5
+ /   / 
+3   4 
+
+Then we will get following output - 
+3 8 2 4 5
+*/
