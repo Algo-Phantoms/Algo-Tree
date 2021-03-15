@@ -36,9 +36,10 @@ It is an algorithm developed to count the number of set bits in a number
 using namespace std;
 
 int count_set(int n){
-    int ans=0;      // This keeps the track of the number of set bits 
-    while(n>0){
-        n=(n&(n-1));
+    // 'ans' variable keeps the track of the number of set bits
+    int ans = 0;      
+    while(n > 0){
+        n = (n & (n-1));
         ans++;
     }
     return ans;
@@ -47,21 +48,18 @@ int count_set(int n){
 //main function
 int main(){
     int n;
-    cin>>n;   // Taking input from user
-    int ans= count_set(n);
+    // Taking input from the user
+    cin>>n;   
+    int ans = count_set(n);
     cout<<ans<<"\n";
 }
 
 /* TEST CASES
-
     1) input   : 32
        output  : 1
     2) input   : 39
        output  : 4
 
-    
         TIME COMPLEXITY - O(No. of set bits in input)
         SPACE COMPLEXITY - O(1)
-
-    END...
 */  
