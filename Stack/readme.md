@@ -23,3 +23,4 @@ element in a full stack is called **overflow**.
 
 ## Questions :
 * Stack Class ----> [C++](/Code/C++/stack_class.cpp)
+* Reverse individual words of a string ----> [C++](/Code/C++/reverseWordsOfString.cpp)
