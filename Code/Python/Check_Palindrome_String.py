@@ -1,8 +1,8 @@
-'''
-Check the given string is palindrome or not
-'''
+   '''
+   Check the given string is palindrome or not
+   '''
 
-def Check_Palindrome_String(str):
+   def Check_Palindrome_String(str):
       #pointer placed at the start
       left = 0
       #Sign to check palindrome
@@ -31,12 +31,12 @@ def Check_Palindrome_String(str):
          print("Not a Palindrome string")
       else: 
          print("Palindrome String")
-str = input("Enter a String:")
-str1 = str.lower() #coverting each string in lowercase
-Check_Palindrome_String(str1) #function calling
+   str = input("Enter a String:")
+   str1 = str.lower() #coverting each string in lowercase
+   Check_Palindrome_String(str1) #function calling
 
 
-'''
+   '''
         Test Case:
 
      1).Input: Madam
@@ -49,5 +49,5 @@ Check_Palindrome_String(str1) #function calling
         Time Complexity: O(N)
         Space Complexity: O(N)
         
-''' 
+   ''' 
 
