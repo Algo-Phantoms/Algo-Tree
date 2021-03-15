@@ -1,7 +1,7 @@
 
 /*Two strings are said to be an Anagram if all the characters of a string are equal and have same frequency but arranged in different order.
 The simple logic to solve is taking the two strings into a character array and sort both the arrays and again store it to the same string variable,
-if both the strings are equal then one string is said to be anagram of another
+if both the strings are equal then one string is said to be anagram of another.
 */
 package p1;
 
