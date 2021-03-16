@@ -7,7 +7,6 @@ we will get the spiral traversal printed.
 
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 struct Node {
@@ -81,6 +80,7 @@ int main() {
 }
 
 /*
+
 Input:
       1         <-
        \  
@@ -99,10 +99,11 @@ Input:
       6   4     <-
          / \
         2   3   ->
+
 Output:
 1 5 7 4 6 2 3
 
-
 Time Complexity: O(Nodes)
 Space Complexity: O(Nodes)
+
 */
