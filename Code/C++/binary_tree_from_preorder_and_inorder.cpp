@@ -15,14 +15,16 @@ repeatedly.
 
 using namespace std;
 
-//struct for the binary tree
-typedef struct Tree
+//class for the binary tree
+class TreeNode
 {
+public:
     char data;
-    struct Tree *left;
-    struct Tree *right;
-} TreeNode;
+    TreeNode *left;
+    TreeNode *right;
+};
 
+// search function searches the inorder traversal and returns the index if found
 int search(char in[], int start, int end, char key)
 {
     for (int i = start; i <= end; i++)
@@ -37,26 +39,34 @@ int search(char in[], int start, int end, char key)
 // Build Tree Builds the tree from preorder and inorder traversals
 TreeNode *BuildTree(char in[], char pre[], int start, int end)
 {
+    //preindex is static as it should get incremented after each recursive calls
     static int preindex = 0;
     if (start > end)
     {
         return NULL;
     }
-    TreeNode *node = (TreeNode *)malloc(sizeof(TreeNode));
+    //get New node and make left and right as null
+    TreeNode *node = new TreeNode();
     node->data = pre[preindex];
     node->left = NULL;
     node->right = NULL;
     preindex++;
+    //if there is only one node return that node
     if (start == end)
     {
         return node;
     }
+    // find the location of the root from the preorder traversal in the inorder
+    //traversal and store it in loc
     int loc = search(in, start, end, node->data);
+    //the elements to the left of the inorder traversal forms the left subtree
     node->left = BuildTree(in, pre, start, loc - 1);
+    // the elements to the right of the inorder traversal forms the right subtree
     node->right = BuildTree(in, pre, loc + 1, end);
     return node;
 }
 
+// inorder traversal for binary tree
 void inorder(TreeNode *root)
 {
     if (root != NULL)
@@ -66,7 +76,7 @@ void inorder(TreeNode *root)
         inorder(root->right);
     }
 }
-
+// preorder traversal for binary tree
 void preorder(TreeNode *root)
 {
     if (root != NULL)
@@ -76,7 +86,7 @@ void preorder(TreeNode *root)
         preorder(root->right);
     }
 }
-
+// postorder traversal for binary tree
 void postorder(TreeNode *root)
 {
     if (root != NULL)
@@ -86,7 +96,7 @@ void postorder(TreeNode *root)
         printf("%c ", root->data);
     }
 }
-
+// print the preorder inorder and postorder traversals of the resulting tree
 void printTree(TreeNode *root)
 {
     printf("\nThe inorder traversal of the tree is\n");
@@ -122,7 +132,7 @@ int main()
 
 /*
 Sample I/O :
-
+1)
 Enter the number of nodes in the binary tree
 6
 Enter the preorder traversal of the tree
@@ -137,5 +147,22 @@ A B D E C F
 The postorder traversal of the tree is
 D E B F C A
 
+
+2)
+Enter the number of nodes in the binary tree
+4
+Enter the preorder traversal of the tree
+A B D C
+Enter the inorder traversal of the tree
+B D A C
+
+The inorder traversal of the tree is
+B D A C
+The preorder traversal of the tree is
+A B D C
+The postorder traversal of the tree is
+D B C A
+
 Time complexity : O( n^2 )
+Space complexity : O( n )
 */
