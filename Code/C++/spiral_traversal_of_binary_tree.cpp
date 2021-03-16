@@ -1,6 +1,6 @@
 /*
 We need to traverse the binary tree in spiral order. First row will be traversed from right to left,second from left to right and so on. 
-NULL is pushed into the queue after every level. If we reach NULL we will print the entire vector(arr) in reverse if flag==0 and forward if flag=1.
+NULL is pushed into the queue after every level. If we reach NULL we will print the entire vector(arr) in reverse if flag==0 and forward if flag==1.
 After printing we will make the flag reverse and resize the vector to 0. We will keep on doing this process and at the end when the queue becomes empty
 we will get the spiral traversal printed.  
 */
@@ -37,12 +37,16 @@ void spiral_level_order(Node * root) {
 
         //Printing level when NULL arrived
         if (temp == NULL) {
+
+            //Printing in the reverse order
             if (flag == 0) {
                 for (auto it = arr.end() - 1; it >= arr.begin(); it--) {
                     cout << * it << " ";
                 }
                 flag = 1;
-            } else {
+            } 
+            //Printing in the forward order 
+            else {
                 for (auto e: arr) {
                     cout << e << " ";
                 }
