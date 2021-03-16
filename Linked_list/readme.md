@@ -32,4 +32,5 @@ properties.
 * Cycle detection using Hare and Tortoise algorithm ----> [C++](/Code/C++/CycleDetectLinkedList.cpp) | [Java](/Code/Java/Cycle_Detection_In_Linked_List.java)
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
 * Implementation of Linked List ----> [Python](/Code/Python/linked_list.py)
+* Implementation of Polynomial Addition & Multiplication using Linked Lists ----> [Java](/Code/Java/polynomial.java)
 
