@@ -1,0 +1,95 @@
+// The diameter of a tree (sometimes called the width) is the number of nodes on the longest path between two end nodes. 
+#include <bits/stdc++.h>
+using namespace std;
+
+//Considering a Binary tree where every node has a left and right child.
+class TreeNode{
+public:
+	int num; //value at the node being referred to
+	TreeNode * right; //pointer pointing to the right child of the node
+	TreeNode * left; //pointer pointing to the left child of the node
+
+	TreeNode(int num){
+		this->num= num;
+		right= NULL;
+		left= NULL;
+	}
+};
+
+//Creating a Tree by calling this function recursively for the left and right of the node created in the current function call
+//The algorithm works by moving to any of the branches of the tree(here, left first), traverses that side to it's entire depth and then backtracks towards the parent, and then moving to the other side.
+TreeNode* createtree(){
+	int n; cin>>n;
+	if(n==-1){
+		//Assuming that '-1' means that the node is actually a NULL pointer.
+		cout<<"Returning to the parent node as -1 is assumed to be a NULL pointer"<<endl;
+		return NULL;
+	} 
+
+	TreeNode* root= new TreeNode(n);
+	cout<<"Enter the value of the left child of the node with value "<<n<<" : "<<endl;
+	root->left= createtree();
+	cout<<"Enter the value of the right child of the node with value "<<n<<" : "<<endl;
+	root->right= createtree();
+	cout<<"Returning to the parent node"<<endl;
+
+	return root;
+}
+
+//A node which will maintain height and diameter simultaneously for each node. This will avoid extra calls to calculate height for every node at each step.
+class height_diameter_node{
+public:
+	int height;
+	int diameter;
+
+	height_diameter_node(int height, int diameter){
+		this->height= height;
+		this->diameter= diameter;
+	}
+};
+
+//Calculating diameter and the function returns a node which contains the height and diameter of the previous node visited. For first call of the function, it would be for the root node.
+height_diameter_node* calculate_diameter(TreeNode* root){
+	if(root==NULL){
+     //A null node has height = -1 and diameter = 0
+     	return new height_diameter_node(-1, 0);
+	}
+
+	height_diameter_node* leftnode= calculate_diameter(root->left);     //It calculates the maximum diameter from the left of the current node.
+	height_diameter_node* rightnode= calculate_diameter(root->right);   //It calculates the maximum diameter from the right of the current node.
+
+	//final diameter through the current node is the sum of heights of the left and right subtrees plus two(one[left tree]+ one[right tree])
+	int diameter_curr_node= leftnode->height + rightnode->height + 2;
+
+	//The final diameter is maximum of the diameter obtained from left subtree, right subtree and the diameter through current node
+	int fin_diameter = max(diameter_curr_node, max(leftnode->diameter, rightnode->diameter));
+  
+	//height is calculated for every node which will be used in subsequent calls.
+	int fin_height= max(leftnode->height, rightnode->height)+1;
+
+	return new height_diameter_node(fin_height, fin_diameter);
+}
+
+int main(){
+	cout<<"Enter the number you wish to insert as the root in the Tree: "<<endl;
+	TreeNode * root= createtree();
+
+	cout<<"\n\nThe diameter of the tree is : "<<calculate_diameter(root)->diameter<<endl<<endl;
+	return 0;
+}
+
+// For e.g.
+ 
+//        5
+//       / \
+//      4   6
+//     / \
+//    3   2
+//   / \   \
+//  1   8   6
+//     /     \
+//    10      11
+
+// Height of the tree is: 6 {10--> 8 --> 3 --> 4 --> 2 --> 6 --> 11}
+// ** It's not always important that the height should pass through the root node **
+// Considering the path {10 --> 8 --> 3 --> 4 --> 5 --> 6} , height would have been 5 which is not the maximum diameter of the tree
