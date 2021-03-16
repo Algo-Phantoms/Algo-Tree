@@ -1,13 +1,8 @@
-/*
-    Tim Sort
-    
-    Tim Sort is a stable sorting algorithm that combines the capabilities of  Merge sort     and Insertion sort.
-    It first splits the array into  small segments and sort them using Insertion Sort,       and then merges the small segments using merge operation.
-    It is used in Java’s Arrays.sort() as well as Python’s sorted() and sort()
-    
-    Time Complexity- O(n*log(n))
-    Space Complexity- O(n)
-
+/*Source Code to implement Tim Sort in C++
+  
+Tim Sort is a stable sorting algorithm that combines the capabilities of  Merge sort     and Insertion sort.
+It first splits the array into  small segments and sort them using Insertion Sort,       and then merges the small segments using merge operation.
+It is used in Java’s Arrays.sort() as well as Python’s sorted() and sort()
 */ 
 #include<bits/stdc++.h> 
 using namespace std; 
@@ -133,6 +128,9 @@ int main()
 }
 
 /*
+Time Complexity- O(n*log(n))
+Space Complexity- O(n)
+
 SAMPLE INPUT AND OUTPUT
 
 SAMPLE 1
