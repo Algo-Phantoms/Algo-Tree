@@ -30,14 +30,6 @@ public:
     int data;
     Node *left;
     Node *right;
-
-    Node(int data)
-    {
-        // Constructor
-        this->data = data;
-        left = NULL;
-        right = NULL;
-    }
 };
 
 Node *insertNode(Node *root, int data)
@@ -47,7 +39,10 @@ Node *insertNode(Node *root, int data)
     // If the tree is empty, the created new node is made as the root of the tree 
     if (root == NULL)
     {
-        root = new Node(data);
+        root = new Node();
+        root->data = data;
+        root->left = NULL;
+        root->right = NULL;
     }
     else
     {
