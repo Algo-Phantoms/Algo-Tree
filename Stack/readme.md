@@ -22,5 +22,5 @@ element in a full stack is called **overflow**.
 * **IsFullStack():** Indicates whether the stack is full or not.
 
 ## Questions :
-* Stack Class ----> [C++](/Code/C++/stack_class.cpp)
-* Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
+*   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
+*   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
