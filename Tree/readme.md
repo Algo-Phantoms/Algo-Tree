@@ -48,6 +48,8 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* Maximum Width of Binary Tree ----> [C++](/Code/C++/maximum_width_binarytree.cpp) 
+
 
 
 
