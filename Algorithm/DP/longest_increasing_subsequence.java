@@ -8,13 +8,19 @@ one sequence may have multiple increasing subsequences.
 
 Output:
 
-Input :[10,9,2,5,3,7,101,18]
+Test Case 1:
 
-Output :6
+Input :[3, 10, 2, 1, 20]
+Output : Length of LIS = 3
+
+Test Case 2:
+
+Input :[50, 3, 10, 7, 40, 80]
+Output : Length of LIS = 4
 
 */
-
-public class lcs {
+import java.util.*;
+public class longest_increasing_subsequence {
     static int incre_subseq(int my_arr[], int arr_len) {
         int seq_arr[] = new int[arr_len];
         int i, j, max = 0;
@@ -31,11 +37,18 @@ public class lcs {
     }
 
     public static void main(String args[]) {
-        int my_arr[] = { 10,9,2,5,3,7,101,18 };
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter number of elements :");
+        int n=scan.nextInt();
+        int my_arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            my_arr[i]=scan.nextInt();
+        }
         int arr_len = my_arr.length;
         System.out.println("The length of the longest increasing subsequence is " + incre_subseq(my_arr, arr_len));
+        scan.close();
     }
 }
 
-// Time Complexity is O(n^2)
-// Space Complexity is O(n)
+// Time Complexity is O(n^2) , n is the number of elements in the list.
+// Space Complexity is O(n) , n is the number of elements in the list.
