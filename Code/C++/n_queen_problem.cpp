@@ -16,7 +16,7 @@
 #include <cstring>
 using namespace std;
 
-//A queen is safe if there is not queen horizontally, verically and diagonal on both sides of eleements
+//A queen is safe if there is not queen horizontally, verically and diagonal on both sides of elements
 bool isSafe(int chessboard[][100], int row, int col, int n){
     //storing the position in x and y for reference; 
     int x = row;
