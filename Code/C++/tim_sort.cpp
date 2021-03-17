@@ -12,8 +12,7 @@ void insertion_sort(int arr[], int beg, int end)
 { 
     for (int i = beg + 1; i <= end; i++) 
     { 
-        int temp = arr[i]; 
-        int j = i - 1; 
+        int temp = arr[i], j = i - 1; 
         
         /* Shift elements of arr[0..i-1], that are 
         greater than temp, to one position ahead 
