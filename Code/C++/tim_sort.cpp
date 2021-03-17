@@ -82,8 +82,7 @@ void tim_sort(int arr[], int n)
     // From the start of the array, we are going to merge two segments each of size SIZE.
         for (int left = 0; left < n; left += 2*size) 
         { 
-            
-            // Find thier mid point
+            // Find  mid point
             int mid = left + size - 1; 
             int right = min((left + 2*size - 1), (n-1)); 
             // Merge the two subarrays
@@ -123,14 +122,20 @@ int main()
 
 /*
 Test Case :
+
 1.
-How many numbers do you want to sort? 5
-Enter the numbers: 1 3 5 2 4
+Input
+5
+1 3 5 2 4
+Output 
 The numbers in sorted order is:  1  2  3  4  5
+
 2.
-How many numbers do you want to sort? 0
+Input
+0
+Output
 There are no numbers to sort!!!
 
-Time Complexity- O(n*log(n))
-Space Complexity- O(n)
+Time Complexity- O(n*log(n)), where 'n' is the number of elements to sort
+Space Complexity- O(n), where 'n' is the number of elements to sort
 */
