@@ -36,7 +36,7 @@ class BucketSort {
         }
 
         // sorting each bucket one by one
-        for (int i=0; i<k; i++) {
+        for (int i=0; i<length; i++) {
             Collections.sort(bucketList.get(i));
         }
 
@@ -81,8 +81,10 @@ class BucketSort {
         sc.close();
     }
 }
+
 /*
-Sample input/output:-
+Test Cases:
+Input:
 Enter size of array:
 10
 Enter array elements:
@@ -98,10 +100,14 @@ Enter array elements:
 11
 Enter number of buckets:
 5
+
+Output:
 Array before bucket sort:
 88.0 26.0 77.0 49.0 91.0 62.0 33.0 85.0 99.0 11.0 
 Array after Bucket sort:
 11.0 26.0 33.0 49.0 62.0 77.0 85.0 88.0 91.0 99.0
-Time Complexity:  O(n2)
+
+Time Complexity:  O(n^2)
 Space Complexity: O(nk)
+
 */
