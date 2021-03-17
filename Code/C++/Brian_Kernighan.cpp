@@ -1,5 +1,5 @@
-// Brian Kernighan's Algorithm
-/*
+/* Brian Kernighan's Algorithm
+
 It is an algorithm developed to count the number of set bits in a number
    in a efficient way.
 
@@ -60,6 +60,8 @@ int main(){
     2) input   : 39
        output  : 4
 
-        TIME COMPLEXITY - O(No. of set bits in input)
-        SPACE COMPLEXITY - O(1)
+        TIME COMPLEXITY -> O(No. of set bits in input)
+        
+        SPACE COMPLEXITY -> O(1)
+
 */  
