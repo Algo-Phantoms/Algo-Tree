@@ -11,7 +11,6 @@
     if the queen is being at that partiular column, we try placing it in the next column of that row,
     if it is not possible to place the queen in any column of that row, we backtrack and change the position of the queen that was placed in the previous row and so on.
     in the similar way we place all the N queens on the (N X N) board. 
-
 */
 #include <iostream>
 #include <cstring>
@@ -22,8 +21,8 @@ bool isSafe(int chessboard[][100], int row, int col, int n){
     int x = row;
     int y = col;
     //checking left diogonal
-    while(x>=0 && y>=0){
-        if(chessboard[x][y]==1){
+    while(x >= 0 && y >= 0){
+        if(chessboard[x][y] == 1){
             //if any queen is already present on that diagonal we cannot place the queen
             return false;
         }
@@ -35,8 +34,8 @@ bool isSafe(int chessboard[][100], int row, int col, int n){
     x = row;
     y = col;
     //checking right diagonal
-    while(x>=0 && y<n){
-        if(chessboard[x][y]==1){
+    while(x >= 0 && y < n){
+        if(chessboard[x][y] == 1){
             //if any queen is already present on that diagonal we cannot place the queen
             return false;
         }
@@ -46,9 +45,9 @@ bool isSafe(int chessboard[][100], int row, int col, int n){
     }
     //At last checking vertically, if there is any queen or not
     //only checking till row(not n) because we are placing queen row wise so there is no possibility that there will be a queen after row passes in function
-    for(int i=0; i<row; i++)
+    for(int i = 0; i < row; i++)
     {
-        if(chessboard[i][col]==1){
+        if(chessboard[i][col] == 1){
             // if queen is present vertically then queen cannot be placed and return false
             return false;
         }
@@ -59,13 +58,13 @@ bool isSafe(int chessboard[][100], int row, int col, int n){
 //this is a recursive approch using backtracking
 bool recursiveBacktracking(int chessboard[][100],int row, int n){
     //base condition for recusion(when all rows have been filled then row will be n)
-    if(row==n){
+    if(row == n){
         //since all the quuens have been placed 
         //print the solution
-        for(int i=0; i<n; i++){
-            for(int j=0; j<n ;j++){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
                 //if chessboard[i][j]==1 then queen is present
-                if(chessboard[i][j]==1){
+                if(chessboard[i][j] == 1){
                     // print Q
                     cout << "Q ";
                 }
@@ -85,20 +84,20 @@ bool recursiveBacktracking(int chessboard[][100],int row, int n){
         return false;
     }
     //backtracking and placing queens
-    for(int j=0; j<n; j++){
+    for(int j = 0; j < n; j++){
         //check whether a queen can be places at that particular row, coloumn or not
         if(isSafe(chessboard, row, j, n)){
             //since it is safe
             //place the queen i.e put 1 at that place
             chessboard[row][j] = 1;
             //check if next queen we are able to place or not in next row
-            bool nextQueen = recursiveBacktracking(chessboard, row +1, n);
+            bool nextQueen = recursiveBacktracking(chessboard, row + 1, n);
             // if we are able to place then we continue placing queens
             if(nextQueen){
                 return true;
             }
             // if next queen connot be placed in any column, then we remove the queen we have placed earlier and try placing it in different column of this row
-            chessboard[row][j]=0;
+            chessboard[row][j] = 0;
         }
     }
     // if control comes here that mean we are not able to place all the queen 
@@ -112,15 +111,15 @@ int main(){
     //defining a 2d matrix 100 X 100 (Can be defined as per your input range)
     int chessboard[100][100];
     //initializing the 2d matrix with initial value 0
-    memset(chessboard,0,sizeof(chessboard));
+    memset(chessboard, 0, sizeof(chessboard));
     //function defined for backtracking approach
-    recursiveBacktracking(chessboard,0,n);
+    recursiveBacktracking(chessboard, 0, n);
     return 0;
 }
 /*
-    TEST CASE 1:
-    INPUT: 4
-    OUTPUT: 
+TEST CASE 1:
+INPUT: 4
+OUTPUT: 
 
 * Q * *
 * * * Q
@@ -133,9 +132,9 @@ Q * * *
 * * * Q
 * Q * *
 
-    TEST CASE 2:
-    INPUT: 5
-    OUTPUT:
+TEST CASE 2:
+INPUT: 5
+OUTPUT:
 
 Q * * * * 
 * * Q * *
