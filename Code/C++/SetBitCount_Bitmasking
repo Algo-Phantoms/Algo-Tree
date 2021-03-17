@@ -1,0 +1,40 @@
+//Set bits in a binary number is represented by 1. Whenever we calculate the binary number of an integer value then it is formed as the combination of 0's and 1's. So, the digit 1 is known as set bit in the terms of the computer.
+#include <iostream>
+using namespace std;
+
+//Also known as "Brian Kernighan’s Algorithm"
+int setbit_count(int n){
+	int count=0;
+	// Subtracting 1 from a decimal number flips all the bits after the rightmost set bit(which is 1) including the rightmost set bit. 
+	// So if we subtract a number by 1 and do bitwise & with itself (n & (n-1)), we unset the rightmost set bit. If we do n & (n-1) in a loop and count the no of times loop executes we get the set bit count. 
+	//The loop hence runs for the number of times equal to the number of setbits in the binary representation of the number.
+	while(n != 0){
+		n = n&(n-1);
+		count++;
+	}
+
+	return count;
+}
+
+int main(){
+	int t; //number of testcases
+	cout<<"Enter the count of numbers you want to find their setbit count for : ";
+	cin>>t;
+	while(t--){
+		int n;
+		cout<<"Enter a number n : ";
+		cin>>n;
+		cout<<"The total number of setbits in the binary representation of the given number is: "<<setbit_count(n)<<endl;
+	}
+	return 0;
+}
+
+//Time Complexity: O(logn)
+
+//For e.g.
+//For n==10 (1010) (setbitscount= 2), following steps are followed:
+
+// 	initializing count=0
+// 	n = 10&9 = 8, count=1
+// 	n = 8&7  = 0, count=2
+//  return count == 2, which is the correct answer.
