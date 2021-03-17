@@ -15,6 +15,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+
 //A queen is safe if there is not queen horizontally, verically and diagonal on both sides of eleements
 bool isSafe(int chessboard[][100], int row, int col, int n){
     //storing the position in x and y for reference; 
@@ -205,7 +206,7 @@ Q * * * *
 * * * Q *
 * Q * * *
 
-TIME COMPLEXITY: O(N!)
+TIME COMPLEXITY: O(N!)  (N is the user input, that is the number of queens to be placed on a N X N chessboard)
 SPACE COMPLEXITY: O(N^2) 
 */
 
