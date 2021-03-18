@@ -100,7 +100,10 @@ public class JumpGame {
                0
       Output : minimum number of Jumps required : 0
 
-- Time Complexity is O(n)
+- Complexity Analysis :
+    * Time Complexity : O(n)
+		  We are using only one for loop, so it iterates maximum 'n' times while traversing for loop
 
-- Space Complexity is O(n)
+    * Space Complexity : O(n)
+		 Auxiliary space : O(1)  +  input space : O(n)
 */
