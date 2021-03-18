@@ -30,6 +30,7 @@ int main(){
 }
 
 //Time Complexity: O(logn)
+//Space Complexity: O(1)
 
 //For e.g.
 //For n==10 (1010) (setbitscount= 2), following steps are followed:
