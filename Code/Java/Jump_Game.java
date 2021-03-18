@@ -25,11 +25,9 @@
    5. We have used checks-- so that we can iterate the for loop till the checks == 0 and find the maximum
       value for max_Jump_Reach and afterwards we will update checks by (max_Jump_Reach - i)
  */
-
 import java.util.Scanner;
 
 public class JumpGame {
-	
 	// jumpGame method
 	public static int jumpGame(int array[]) {
 
@@ -72,9 +70,8 @@ public class JumpGame {
 
 	// main method
 	public static void main(String[] args) {
-		try {
-			Scanner sc = new Scanner(System.in);
 
+			Scanner sc = new Scanner(System.in);
 			// Number of elements we want to put in array
 			int number = sc.nextInt();
 			int[] array = new int[number];
@@ -87,13 +84,8 @@ public class JumpGame {
 			int jumps = JumpGame.jumpGame(array);
 
 			System.out.println("minimum number of Jumps required : "+jumps);
-
-		}catch(Exception e) {
-
-		}
 	}
 }
-
 /*
   Test Cases :
    1.  Input : 7
