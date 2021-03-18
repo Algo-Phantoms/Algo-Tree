@@ -87,7 +87,7 @@ public class JumpGame {
 	}
 }
 /*
-  Test Cases :
+- Test Cases :
    1.  Input : 7
                2 1 3 4 1 2 3
       Output : minimum number of Jumps required : 3
@@ -100,8 +100,7 @@ public class JumpGame {
                0
       Output : minimum number of Jumps required : 0
 
+- Time Complexity is O(n)
 
-  Time Complexity is O(n)
-
-  Space Complexity is O(n)
+- Space Complexity is O(n)
 */
