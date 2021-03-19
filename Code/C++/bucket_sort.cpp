@@ -69,4 +69,6 @@ int main()
 
     Space Complexity: O(n+k)
 
+    where O(n) is the complexity for making the buckets and 
+    O(k) is the complexity for sorting the elements of the bucket
 */
