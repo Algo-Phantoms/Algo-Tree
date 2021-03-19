@@ -54,3 +54,10 @@ int main(void)
     }
     return 0;
 }
+/* _Test Case 1:_                                       _Test Case 2:_
+    Input:  5                                            Input: 10
+            1 2 3 4 5                                           6320 6020 6098 1332 7263 672 9472 2838 3401 9494
+    
+    Output: 9                                            Output: 18060
+
+Time and Space complexcity: We calculate the desired rectangle, for each bar is O(n) */
