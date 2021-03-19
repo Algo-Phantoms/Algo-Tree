@@ -1,0 +1,127 @@
+# Implementing Stack using deque in python    #(Stack follows "LIFO = Last In First Out" principle)
+
+from collections import deque
+n=int(int(input("Enter the integer up to which you want to implement it ")))    
+
+print()
+
+print("Stack after appending")         
+for i in range(0,n):
+    stack.appendleft(i)
+    print(stack)             #Initial stack
+
+print()
+
+print("Stack after popping")
+for j in range(len(stack)):
+    stack.popleft()
+    print(stack)             #Stack after popping elements according to LIFO
+
+
+## Output ##
+## Test Case 1
+
+Enter the integer up to which you want to implement it 5
+
+Stack after appending
+deque([0])
+deque([1, 0])
+deque([2, 1, 0])
+deque([3, 2, 1, 0])
+deque([4, 3, 2, 1, 0])
+
+Stack after popping
+deque([3, 2, 1, 0])      #Here we can see 4 which was enetred last is popped out first.
+deque([2, 1, 0])
+deque([1, 0])
+deque([0])
+deque([])
+
+## Test case 2
+
+Enter the integer up to which you want to implement it 7
+
+Stack after appending
+deque([0])
+deque([1, 0])
+deque([2, 1, 0])
+deque([3, 2, 1, 0])
+deque([4, 3, 2, 1, 0])
+deque([5, 4, 3, 2, 1, 0])
+deque([6, 5, 4, 3, 2, 1, 0])           
+
+Stack after popping
+deque([5, 4, 3, 2, 1, 0])    #Here we can see 6 which was entered last was popped out first.
+deque([4, 3, 2, 1, 0])
+deque([3, 2, 1, 0])
+deque([2, 1, 0])
+deque([1, 0])
+deque([0])
+deque([])
+
+
+
+# Implementing Queue using deque in python    #(Queue follows "FIFO = First In First Out" principle)
+
+from collections import deque
+n=int(int(input("Enter the integer up to which you want to implement it ")))
+queue=deque()
+
+print()
+
+print("queue after appending")
+for i in range(0,n):
+    queue.append(i)
+    print(queue)    #Initial Queue
+
+print()
+
+print("queue after popping")
+for j in range(len(queue)):
+    queue.popleft()
+    print(queue)    #Queue after popping Elements according to FIFO
+
+
+## Output ##
+#Test case 1
+
+Enter the integer up to which you want to implement it 5
+
+queue after appending
+deque([0])
+deque([0, 1])
+deque([0, 1, 2])
+deque([0, 1, 2, 3])
+deque([0, 1, 2, 3, 4])
+
+queue after popping
+deque([1, 2, 3, 4])
+deque([2, 3, 4])
+deque([3, 4])
+deque([4])
+deque([])
+
+#Test case 2
+Enter the integer up to which you want to implement it 7
+
+queue after appending
+deque([0])
+deque([0, 1])
+deque([0, 1, 2])
+deque([0, 1, 2, 3])
+deque([0, 1, 2, 3, 4])
+deque([0, 1, 2, 3, 4, 5])
+deque([0, 1, 2, 3, 4, 5, 6])
+
+queue after popping
+deque([1, 2, 3, 4, 5, 6])   #Here we can see 0 which was entered first was popped out first
+deque([2, 3, 4, 5, 6])
+deque([3, 4, 5, 6])
+deque([4, 5, 6])
+deque([5, 6])
+deque([6])
+deque([])
+
+
+## Hence we can conclude and analyse the basic difference between stack and queue by using deque.If one observes he or she can understand that there is just a single difference
+in the codes of Stack and Queue i.e we use appendleft() function in Stack and only append() function in queue.
