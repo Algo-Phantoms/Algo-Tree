@@ -1,7 +1,14 @@
+/*Here, we consider each bar has a unit width. We will use a notion of a Rectangle for each bar and two indices j and k. For each bar, we can find the rectangle with the height of it and also containing it.
+To do this for a bar, let's say i bar, we go to left from i and stop at the first bar which is smaller than the i bar. Say we have stopped at j position. 
+
+Time Complexity: For each bar we are considering a linear search. Thus it is O(n^2) in total.
+
+Here, we use Divide and Conquer Approach.*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long           lli;
+typedef long long lli;
 
 #define pb push_back
 
