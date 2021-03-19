@@ -34,6 +34,7 @@ public class longest_increasing_subsequence {
         for (i = 0; i < arr_len; i++)
             if (max < seq_arr[i])
                 max = seq_arr[i];
+                
         return max;
     }
 
