@@ -11,7 +11,7 @@
 [![Stars](https://img.shields.io/github/stars/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree) 
 [![Watchers](https://img.shields.io/github/watchers/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree)
 
-**Algo-Tree** is a collection of Algorithms and data structures which are fundamentals to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. It contains solutions in various languages such as ``C++``, ``Python`` and ``Java``.
+**Algo-Tree** is a collection of Algorithms and data structures that are fundamentals to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. It contains solutions in various languages such as ``C++``, ``Python`` and ``Java``.
 
 # Code Structure
 * [Array](/Array)
@@ -38,11 +38,11 @@
 
 You may go through these guidelines and contribute accordingly:
 
-* Make sure you do not copy codes from external sources like GFG,hackerearth, etc because that work will not be considered. **Plagiarism is strictly not allowed.** 
-* You can only work on issues that you have been assigned to you.
-* If you want to contribute for an existing algorithm, we prefer that you create an issue before making a PR and link your PR to that issue.
+* Make sure you do not copy codes from external sources like GFG, HackerEarth, etc because that work will not be considered. **Plagiarism is strictly not allowed.** 
+* You can only work on issues that have been assigned to you.
+* If you want to contribute to an existing algorithm, we prefer that you create an issue before making a PR and link your PR to that issue.
 * If you have modified/added code work, make sure the code compiles before submitting.
-* Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
+* Strictly use snake_case (underscore_separated) in your file_name and push it in the correct folder.
 * Do not update the [README.md](README.md).
 
 ## Guidelines for code base :
@@ -54,10 +54,10 @@ You may go through these guidelines and contribute accordingly:
 * Also, add **time** and **space complexity** at the end of your code using multi-line comments.
 
 ## Where to upload the files 📂
-
+ 
 * Your files should be uploaded inside the **code** folder into the corresponding language folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the Code/Java folder).
 * **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so**.
-* Edit the corresponding README.md file to add the link to your code in the corresponding section in **alphabatical order**.[(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
+* Edit the corresponding README.md file to add the link to your code in the corresponding section in **alphabetical order**.[(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
 
 
 The value of a strong contribution stays beyond everything and gives you satisfaction 👍.
