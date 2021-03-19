@@ -18,7 +18,6 @@ Test Case 2:
 
 Input :[50, 3, 10, 7, 40, 80]
 Output : Length of LIS = 4
-
 */
 import java.util.*;
 public class longest_increasing_subsequence {
@@ -47,7 +46,8 @@ public class longest_increasing_subsequence {
             my_arr[i]=scan.nextInt();
         }
         int arr_len = my_arr.length;
-        System.out.println("The length of the longest increasing subsequence is " + incre_subseq(my_arr, arr_len));
+        System.out.println("The length of the longest increasing subsequence is " + 
+        incre_subseq(my_arr, arr_len));
         scan.close();
     }
 }
