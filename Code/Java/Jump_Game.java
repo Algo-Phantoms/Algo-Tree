@@ -106,4 +106,5 @@ public class JumpGame {
 
  * Space Complexity : O(n)
 		 Auxiliary space : O(1)  +  input space : O(n)
+		 here 'n' is the length of input array
  */
