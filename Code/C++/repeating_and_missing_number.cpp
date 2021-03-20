@@ -19,13 +19,14 @@ using namespace std;
 
 int main()
 {
+    // n is the size of array
     int n;
-    cin>>n;
+    cin >> n;
 
     // taking array as input
     int a[n];
     for(int i = 0 ; i < n ; i++)
-        cin>>a[i];
+        cin >> a[i];
 
     int i = 0;
     while(i < n)
@@ -53,6 +54,7 @@ int main()
     cout<<"Repeating number is "<<r<<endl;
     cout<<"Missing number is "<<m;
 }
+
 /*
 Testcases
 Input :
