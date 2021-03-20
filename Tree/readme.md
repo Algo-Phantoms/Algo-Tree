@@ -49,6 +49,8 @@ that, this property should be satisfied at every node in the tree.
 ## Questions :
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
 * Check Whether given Binary Tree is BST ----> [C++](/Code/C++/check_tree_is_BST.cpp)
+* Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/binary_tree_from_preorder_and_inorder.cpp) 
+* Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
 
 
 
