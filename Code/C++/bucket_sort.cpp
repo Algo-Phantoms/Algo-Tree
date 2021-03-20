@@ -11,56 +11,56 @@ using namespace std;
 
 int maxValue(int A[], int n)
 {
-  int m = A[0];
-  int i;
-  for (i = 1; i < n; i++)
-  {
-    if (A[i] > m)
-      m = A[i];
-  }
-  return m;
+	int m = A[0];
+	int i;
+	for (i = 1; i < n; i++)
+	{
+		if (A[i] > m)
+			m = A[i];
+	}
+	return m;
 }
 
 void BucketSort(int A[], int n)
 {
-  int maximum = maxValue(A, n);
+	int maximum = maxValue(A, n);
 
-  //  Create empty bins
-  vector<int> Bins[maximum + 1];
+	//  Create empty bins
+	vector<int> Bins[maximum + 1];
 
-  // Insert elements in their rescpetive bin
-  for (int i = 0; i < n; i++)
-    Bins[A[i]].push_back(A[i]);
+	// Insert elements in their rescpetive bin
+	for (int i = 0; i < n; i++)
+		Bins[A[i]].push_back(A[i]);
 
-  // Get the sorted elements
-  int i = 0, k = 0;
-  while (i < maximum + 1)
-  {
-    for (int j = Bins[i].size() - 1; j >= 0; j--)
-      A[k++] = Bins[i][j];
-    i++;
-  }
+	// Get the sorted elements
+	int i = 0, k = 0;
+	while (i < maximum + 1)
+	{
+		for (int j = Bins[i].size() - 1; j >= 0; j--)
+			A[k++] = Bins[i][j];
+		i++;
+	}
 }
 
 int main()
 {
-  int n;
-  cin >> n;
-  int A[n];
-  for (int i = 0; i < n; i++)
-    cin >> A[i];
-  BucketSort(A, n);
-  for (int i = 0; i < n; i++)
-    cout << A[i] << " ";
-  return 0;
+	int n;
+	cin >> n;
+	int A[n];
+	for (int i = 0; i < n; i++)
+		cin >> A[i];
+	BucketSort(A, n);
+	for (int i = 0; i < n; i++)
+		cout << A[i] << " ";
+	return 0;
 }
 
 /*
 
     Test Case:
-    Input:    7
-              4 63 1 53 87 44 36
-    Output:   1 4 36 44 53 63 87
+    Input:   	7
+              	4 63 1 53 87 44 36
+    Output:   	1 4 36 44 53 63 87
 
     Time Complexity:
     Worst Time Complexity: O(n^2)
