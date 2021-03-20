@@ -28,3 +28,4 @@ unsolvable.
 ## Questions :
 
 * Permutation of a string ----> [C++](/Code/C++/permutation_of_a_string.cpp)
+* Sudoko Solver ----> [Java](/Code/Java/Sudoko_Solver.java)
