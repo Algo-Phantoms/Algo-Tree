@@ -27,9 +27,7 @@ It is an algorithm developed to count the number of set bits in a number
         
         3) We repeat this step until n becomes 0.
 
-    
-    Below is the code (C++) representing the idea.
-    There is a function count_set(), that takes an integer as argument and
+    Above function at line 36, that takes an integer as argument and
     returns the number of set bits.
 */
 #include<bits/stdc++.h>
@@ -49,9 +47,9 @@ int count_set(int n){
 int main(){
     int n;
     // Taking input from the user
-    cin>>n;   
+    cin >> n;   
     int ans = count_set(n);
-    cout<<ans<<"\n";
+    cout << ans << "\n";
 }
 
 /* TEST CASES
@@ -60,8 +58,8 @@ int main(){
     2) input   : 39
        output  : 4
 
-        TIME COMPLEXITY -> O(No. of set bits in input)
+        TIME COMPLEXITY -> O(n) where n is No. of set bits in input.
         
         SPACE COMPLEXITY -> O(1)
 
-*/  
+*/
