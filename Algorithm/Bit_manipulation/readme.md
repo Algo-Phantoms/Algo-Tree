@@ -52,3 +52,4 @@ There are different bitwise operations used in the bit manipulation. Bit operati
 
 
 ## Questions :
+* Count set bits of a number ----> [Python](/Code/Python/setbits.py)
