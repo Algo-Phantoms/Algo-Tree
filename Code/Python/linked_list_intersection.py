@@ -96,6 +96,45 @@ def twoPointerIntersect(headA, headB):
  
 
 if __name__ == '__main__':
+# uncomment below lines of code to manually enter input of user's choice.
+#	print(" Enter length of the first linked list ")
+#	m = int(input())
+#	print(" Enter the length of only uncommon nodes in second linked list ")
+#	n = int(input())
+#	intersect_node = headA = headB = prev = None
+#	flag = 1
+#	listA = LinkedList()
+#	listB = LinkedList()
+#	print("Enter data nodes in Linkedlist 1")
+#	for i in range(m):
+#		print("Enter data for Node"+str(i+1))
+#		data = input()
+#		if headA is None:
+#			headA = Node(data)
+#			listA.head = headA
+#			prev = headA
+#		else:
+#			prev.next = Node(data)
+#			prev = prev.next
+#			if flag:
+#				print("Is this node point of intersection 1 or 0")
+#				if int(input()) == 1:
+#					intersect_node = prev
+#					flag = 0
+
+#	print("Enter data of uncommon nodes in Linkedlist 2")
+#	for i in range(n):
+#		print("Enter data for Node"+str(i+1))
+#		data = input()
+#		if headB is None:
+#			headB = Node(data)
+#			listB.head = headB
+#			prev = headB
+#		else:
+#			prev.next = Node(data)
+#			prev = prev.next
+#	prev.next = intersect_node
+
 	listA = LinkedList()
 	listA.head = Node(3)
 	node2a = Node(7)
