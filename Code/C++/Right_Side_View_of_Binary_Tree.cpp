@@ -4,13 +4,13 @@ PROBLEM STATEMENT:
 Given a binary tree, print the right side view of the tree. The right side view of the binary tree
 includes the nodes which are visible when the tree is viewed from the right side.
 For example:
-			20
+		    20
 		   /  \
 		  4    7
 		 / \  / 
 		1  8 34  
-	   /	   \
-	  64        32
+	       /      \
+	      64      32
 
 Right side view: 20 7 34 32 
 The input will be in the form of preorder and -1 denotes a null node.
@@ -90,8 +90,7 @@ int main(){
 	//maxlevel ensures that no two nodes on the same level of the tree are printed
 	int maxlevel = -1;
 
-	//Function call to display the right side view of the tree
-	//The parameters passed are: the root node, the 0th level of the tree, and maxlevel 
+	//Function call to display the right side view of the tree. The parameters passed are: the root node, the 0th level of the tree, and maxlevel 
 	RightView(root, 0, maxlevel);
 
 	return 0;
@@ -106,24 +105,24 @@ Input: 20 4 1 64 -1 -1 -1 8 -1 -1 7 34 -1 32 -1 -1 -1
 Output: 20 7 34 32
 Explanation: The tree will look like this
 
-			20		<----
+		    20		<----
 		   /  \
 		  4    7	<----
 		 / \  / 
 		1  8 34  	<----
-	   /	   \
-	  64       32	<----
+	       /      \
+	      64       32	<----
 
 2.
 Input: 10 7 8 -1 -1 9 -1 -1 15 18 -1 -1 19 -1 -1
 Output: 10 15 19
 Explanation: The tree will look like this
 
-			10			<----
+	            10			<----
 		   /  \
-		  7	   15		<----
+		  7   15		<----
 		 / \  /  \
-		8   9 18  19	<----
+		8   9 18  19		<----
 
 
 TIME COMPLEXITY: O(N), where N is the number of nodes in the tree.
