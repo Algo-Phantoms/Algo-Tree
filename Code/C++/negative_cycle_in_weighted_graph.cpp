@@ -1,5 +1,5 @@
 /*
-    Find if there is negative cycle present in the weighted graph
+    Find if there is negative cycle present in the weighted graph using Bellman–Ford algorithm
 Approach:
 
 * First take the input and we don't have to put it the matrix or edgelist form, we have to store them as per the given input. 
