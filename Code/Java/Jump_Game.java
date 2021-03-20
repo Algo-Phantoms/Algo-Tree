@@ -83,7 +83,7 @@ public class JumpGame {
 		// Initializing the value returned by jumpGame method to jumps
 		int jumps = JumpGame.jumpGame(array);
 
-		System.out.println("minimum number of Jumps required : "+jumps);
+		System.out.println("minimum number of Jumps required : " + jumps);
 	}
 }
 /*
