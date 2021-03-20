@@ -77,6 +77,14 @@ Input: nums = [-1,0,1,2,-1,-4]
 Output: [[-1,-1,2],[-1,0,1]]
 as Unique triplets : -1+-1+2=0 and -1+0+1=0
 
+Example 2:
+Input : nums=[1,-1,3] 
+output: No such triplets exist 
+
+Example 3:
+Input: nums=[1,-1] 
+Output: No such elements found
+
 Complexity Analysis:
 Time complexity: O(N^2).
 There are only two nested loops traversing the array, so time complexity is O(n^2). Two pointers algorithm takes O(n) time and the first element can be fixed using another nested traversal.
