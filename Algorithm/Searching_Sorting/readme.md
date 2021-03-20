@@ -67,4 +67,4 @@ Following are the types of searches which we will be discussing in this book.
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
 * Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
-
+* Book Allocation ----> [Python](/Code/Python/Book_Allocation.py)
