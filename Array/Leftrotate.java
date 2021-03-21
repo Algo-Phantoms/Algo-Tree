@@ -11,18 +11,22 @@ import java.util.Scanner;
 public class Leftrotate {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+//Take size of input array
         System.out.println("Enter Size of Arraay");
         int n = scan.nextInt();
         int[] arrr = new int[n];
+//Taking Input values for Array
         System.out.println("Enter "+n+" Elements of array");
         for (int i = 0;i<n;i++){
             arrr[i] = scan.nextInt();
         }
+//Taking By How much Position You want to Shift Array Leftwards
         System.out.println("By How much Position You want to Shift Array Leftwards :");
         int t = scan.nextInt();
         for (int i = 0;i<t;i++){
             leftrotation(arrr);
         }
+//Results Printout
         System.out.println("After Left Rotation of Final Array by "+t+" Positions :");
         for (int i = 0;i<arrr.length;i++){
             System.out.print(arrr[i]+" ");
@@ -38,11 +42,21 @@ public class Leftrotate {
 }
 /*
     Test Cases:
-        Input: 5 8 9 5 2 4 1
-        Output: 9 5 2 4 8
+A.
+        Input: 5 
+	       8 9 5 2 4 
+	       1
+       Output: 9 5 2 4 8
 
-        Input: 6 2 4 6 5 8 3 2
-        Output: 6 5 8 3 2 4
+
+
+B.
+        Input: 6 
+	       2 4 6 5 8 3 
+	       2
+       Output: 6 5 8 3 2 4
+
+
 
         Time Complexity: O(n)
         Space Complexity: O(1)
