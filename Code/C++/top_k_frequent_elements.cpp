@@ -11,11 +11,7 @@
 #include <queue>
 #include <unordered_map>
 
-using std::vector;
-using std::unordered_map;
-using std::priority_queue;
-using std::pair;
-using std::greater;
+using namespace std;
 
 vector<int> topKFrequent(vector<int>& nums, int k) 
 {
@@ -56,26 +52,26 @@ vector<int> topKFrequent(vector<int>& nums, int k)
 int main()
 {
     int k, n;
-    std::cout << "Enter size of array: ";
-    std::cin >> n;
-    std::cout << "Enter k: ";
-    std::cin >> k;
+    cout << "Enter size of array: ";
+    cin >> n;
+    cout << "Enter k: ";
+    cin >> k;
     vector<int> nums(n);
-    std::cout << "Enter elements in the array: ";
+    cout << "Enter elements in the array: ";
     for(size_t i = 0;i < n; ++i)
     {
-        std::cin>>nums[i];
+        cin>>nums[i];
     }
 
     vector<int> ans = topKFrequent(nums, k);
 
-    std::cout << "Top "<< k << " Frequent elements: ";
+    cout << "Top "<< k << " Frequent elements: ";
 
     for(size_t i = 0;i < k;++i)
     {
-        std::cout << ans[i] << " ";
+        cout << ans[i] << " ";
     }
-    std::cout << "\n";
+    cout << "\n";
     return 0;
 }
 
