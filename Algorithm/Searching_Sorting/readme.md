@@ -50,7 +50,7 @@ is one of the techniques for making the elements ordered.
 
 Following are the types of searches which we will be discussing in this book.
 
-* Unordered Linear Search ----> [Python](/Code/Python/linearsearch.py)
+* Unordered Linear Search 
 * Sorted/Ordered Linear Search
 * Binary Search
 * Interpolation search
@@ -66,4 +66,5 @@ Following are the types of searches which we will be discussing in this book.
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
+* Linear Search ----> [Python](/Code/Python/linearsearch.py)
 
