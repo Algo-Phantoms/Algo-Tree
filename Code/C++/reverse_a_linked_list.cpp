@@ -1,3 +1,15 @@
+/*
+The following algorithm is used for reversing a linked list:
+    1. Initialize three pointers: prev, curr and ahead.
+    2. curr points to the current node we're at, prev to its previous node and ahead points to the node that comes after curr.
+    4. Initially curr = head and prev = nullptr.
+    3. We traverse the linked list until curr becomes null.
+    4. Make ahead = curr->next
+    5. Now make curr's pointer point to prev i.e. curr->next = prev
+    6. Move prev one step further i.e. prev = curr
+    7. Move curr one step further i.e curr = ahead
+    8. After the loop terminates, prev will be pointing to the new head i.e the last node in the list. So make head = prev
+*/
 #include<bits/stdc++.h>
 using namespace std;
 struct Node{
