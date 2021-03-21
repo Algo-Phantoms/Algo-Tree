@@ -30,13 +30,13 @@ def binary_search(item_list,item):
 	return found
 
 a=[]
-x=int(input("Enter x"))
+x=int(input("Enter x : "))
 print(x)
 for i in range(0,x):
-    a.append(int(input("Enter next no:")))
+    a.append(int(input("Enter next no : ")))
     print("array :",a)
 
-b=int(input("Enter Number to be Search"))
+b=int(input("Enter Number to be Search : "))
 print(b)
 
 print(binary_search(a, b))     #calling function binary search
