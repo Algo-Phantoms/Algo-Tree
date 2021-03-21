@@ -1,4 +1,13 @@
 //Evaluation of Postfix expression
+
+/*A postfix expression is a combination of operands and operators in which the operators are placed after the operands.
+In the Evaluation of the postfix expression, we are given a string which contains postfix expression.We have to evaluate that expression.
+The main idea of the evaluation of postfix expression is as follows:
+While reading the expression from left to right we should push the element in the stack if it is an operand.
+Pop the two operands from the stack, if the element is an operator and then evaluate it.
+Push back the result of the evaluation. Repeat it till the end of the expression.
+*/
+
 #include <iostream>
 #include <math.h>
 using namespace std;
@@ -98,4 +107,7 @@ Enter values ofc:2
 Enter values ofd:1                                                                                                    
 The given postfix expression is:4 3 2 1 * - +  
 The result of evaluated postfix expression is:5 
+
+Time Complexity : O(n) where 'n' is the size of the given string.
+Space Complexity: O(n) because we used the stack space for 'n' characters.
 */
