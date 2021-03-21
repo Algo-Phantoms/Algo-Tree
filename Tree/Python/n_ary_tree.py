@@ -60,7 +60,7 @@ if __name__=="__main__":
     root=build_tree()
     root.print_tree()
 
-#Output :Electronics
+#Output you will recieve:Electronics
 #           |__Laptop
 #               |__Mac
 #               |__Surface
