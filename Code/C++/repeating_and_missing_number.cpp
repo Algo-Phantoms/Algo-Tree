@@ -25,25 +25,25 @@ int main()
 
     // taking array as input
     int a[n];
-    for(int i = 0 ; i < n ; i++)
+    for ( int i = 0 ; i < n ; i++ )
         cin >> a[i];
 
     int i = 0;
-    while(i < n)
+    while ( i < n )
     {
         // if element is at its position
-        if(a[i] == i + 1 || a[i] == a[a[i] - 1])
-            i++;
+        if ( a[i] == i + 1 || a[i] == a[ a[i] - 1 ] )
+            i++ ;
         else
             // if not swap
-            swap(a[i],a[a[i] - 1]);
+            swap ( a[i], a[ a[i] - 1 ] );
     }
 
     int r = 0, m = 0;
-    for(int i = 0 ; i < n ; i++)
+    for ( int i = 0 ; i < n ; i++ )
     {
         // find the element which is not at its position
-        if(a[i] != i + 1)
+        if ( a[i] != i + 1 )
         {
             r = a[i];
             m = i + 1;
@@ -51,8 +51,8 @@ int main()
         }
     }
 
-    cout<<"Repeating number is "<<r<<endl;
-    cout<<"Missing number is "<<m;
+    cout << "Repeating number is " << r << endl;
+    cout << "Missing number is " << m;
 }
 
 /*
