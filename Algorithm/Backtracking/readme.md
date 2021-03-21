@@ -28,4 +28,5 @@ unsolvable.
 ## Questions :
 
 * Permutation of a string ----> [C++](/Code/C++/permutation_of_a_string.cpp)
+* N Queen Problem ----> [C++](/Code/C++/n_queen_problem.cpp)
 * Sudoko Solver ----> [Java](/Code/Java/Sudoko_Solver.java)
