@@ -30,7 +30,14 @@ Input : 100 56 789 456 321
         789
  
 Output  : True 
+
+Input : 1000 2000 3000 5000
+        4000
+ 
+Output  : False
  
 Time Complexity: O(n)
  
+Space Complexity : O(n)
+
 '''
