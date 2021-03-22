@@ -2,23 +2,6 @@
     Given a N*N maze matrix with a rat placed at the upper left most block of maze (maze[0][0]) 
     and we have to move rat towards lower rightmost destination block maze[N-1][N-1]. Rat can move only in two direction : forward and down.
     (i,j) -> (i+1,j) or (i,j+1);
-    for example:- 
-    Input
-        N  = 4
-        maze[4][4] =  1 0 0 1
-                      1 1 1 0
-                      1 0 1 1
-                      0 0 1 1
-    Output 
-        solution   =  1 0 0 0
-                      1 1 1 0
-                      0 0 1 0
-                      0 0 1 1
-
-    other solution =  1 0 0 0
-                      1 1 1 0
-                      0 0 1 1
-                      0 0 0 1
 */
 
 
@@ -95,9 +78,29 @@ int main()
     return 0;
 }
 
-
-
-
+/* TestCase 1:
+	Input:
+		N = 3
+		maze[3][3] = 1 0 1
+			     1 0 1
+			     1 1 1
+	Output:
+		1 0 0 
+		1 0 0 
+		1 1 1 
+   TestCase 2:
+	Input:
+		N  = 4
+		maze[4][4] =  1 0 0 1
+			      1 1 1 0
+			      1 0 1 1
+			      0 0 1 1
+	Output:
+		1 0 0 0
+                1 1 1 0
+                0 0 1 0
+		0 0 1 1
+*/
 // Time Complexity = O(2^n)
 // Space Complexity = O(n*n)
 
