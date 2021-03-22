@@ -129,7 +129,9 @@ import java.util.*;
 			 *  
 			 *   OUTPUT: 2 6 14 11 7 3 12 8 4 13 9 10 5 1   */
 			
-			/* Time Complexity => O(N logN) 
-			 * Space Complexity => O(depth of recursion tree)*/
+			/* Time Complexity => O(N) 
+			 * Space Complexity => O(depth of recursion tree)
+			                        Best-Case:- N(LogN)
+				                Worst-Case:- O(N)*/
 			 
 	}
