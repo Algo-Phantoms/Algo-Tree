@@ -1,19 +1,47 @@
+/*Menu driven Program to perform all the operation on Doubly linked list using classess.
+Doubly linked list is a type of linked list in which each node apart from storing its data has two links.
+The first link points to the previous node in the list and the second link points to the next node in the list. 
+In this program you will be given a Menu and you have to choose which operation You want to perform on the Doubly link list. 
+According to your choice the program will perform the operation on the Doubly link list.*/
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 
 //Basic structure of a node in doubly linked list consisting of value and two pointers of the node.
-struct node
+class node
 {
+public:
     int data;
-    struct node *next;
-    struct node *prev;
-} *start = NULL, *last = NULL;
+    node *next;
+    node *prev;
+};
+class Doubly_linklist
+{
+    node *start;
+    node *last;
+
+public:
+    Doubly_linklist()
+    {
+        start = NULL;
+        last = NULL;
+    }
+    void creation();
+    void traversal();
+    void insertion_at_beginning();
+    void insertion_at_end();
+    void insertion_after_given_index();
+    void insertion_at_index();
+    void deletion_at_beginning();
+    void deletion_at_end();
+    void deletion_at_index();
+};
 
 //Function for creating a new node.
-void creation()
+void Doubly_linklist::creation()
 {
-    struct node *new_node = new struct node;
+    node *new_node = new node;
     cout << "\nEnter the info of the node ";
     cin >> new_node->data;
     new_node->next = NULL;
@@ -31,10 +59,7 @@ void creation()
 }
 
 //Function for visiting each node once in the list.
-/* Time complexity:- O(n)
-   Space complexity:-O(n)
-*/
-void traversal()
+void Doubly_linklist::traversal()
 {
     struct node *ptr = start;
     struct node *p = last;
@@ -64,12 +89,10 @@ void traversal()
 }
 
 //Function for inserting a node in beginning.
-/* Time complexity:- O(1) 
-   Space complexity:- O(1)
-*/
-void insertion_at_beginning()
+
+void Doubly_linklist::insertion_at_beginning()
 {
-    struct node *new_node = new struct node;
+    node *new_node = new node;
     cout << "\nEnter the info of the node ";
     cin >> new_node->data;
     if (start == NULL && last == NULL)
@@ -88,12 +111,10 @@ void insertion_at_beginning()
 }
 
 //Function for inserting new node at end of list.
-/* Time complexity:- O(1) 
-   Space complexity:- O(1)
-*/
-void insertion_at_end()
+
+void Doubly_linklist::insertion_at_end()
 {
-    struct node *new_node = new struct node;
+    node *new_node = new node;
     cout << "\nEnter the info of node ";
     cin >> new_node->data;
     if (last == NULL)
@@ -110,13 +131,11 @@ void insertion_at_end()
 }
 
 // Function for inserting new node next to given position(index) in list.
-/* Time complexity:- O(1) 
-   Space complexity:- O(1)
-*/
-void insertion_after_given_index()
+
+void Doubly_linklist::insertion_after_given_index()
 {
-    struct node *ptr = start;
-    struct node *new_node = new struct node;
+    node *ptr = start;
+    node *new_node = new node;
     cout << "\nEnter the info of the node you want to insert";
     cin >> new_node->data;
     int count = 0, index;
@@ -149,13 +168,11 @@ void insertion_after_given_index()
 }
 
 //Function to insert a node at given index.
-/* Time complexity:- O(1) 
-   Space complexity:- O(1)
-*/
-void insertion_at_index()
+
+void Doubly_linklist::insertion_at_index()
 {
-    struct node *new_node = new struct node;
-    struct node *ptr = start;
+    node *new_node = new node;
+    node *ptr = start;
     cout << "\nEnter the info of the node you want to insert";
     cin >> new_node->data;
     int count = 0, index;
@@ -188,12 +205,10 @@ void insertion_at_index()
 }
 
 //Fuction for deleting a node from beginning.
-/* Time complexity:- O(1) 
-   Space complexity:- O(1)
-*/
-void deletion_at_beginning()
+
+void Doubly_linklist::deletion_at_beginning()
 {
-    struct node *ptr = start;
+    node *ptr = start;
     if (start == NULL && last == NULL)
     {
         cout << "\nList is empty ";
@@ -214,12 +229,10 @@ void deletion_at_beginning()
 }
 
 //Fuction for deleting a node from end.
-/* Time complexity:- O(1) 
-   Space complexity:- O(1)
-*/
-void deletion_at_end()
+
+void Doubly_linklist::deletion_at_end()
 {
-    struct node *temp = last;
+    node *temp = last;
     if (start == NULL && last == NULL)
     {
         cout << "\nList is empty ";
@@ -241,13 +254,11 @@ void deletion_at_end()
 }
 
 //Fuction for deleting a node from any index.
-/* Time complexity:- O(1) 
-   Space complexity:- O(1)
-*/
-void deletion_at_index()
+
+void Doubly_linklist::deletion_at_index()
 {
-    struct node *ptr = start;
-    struct node *ptr_1 = start->next;
+    node *ptr = start;
+    node *ptr_1 = start->next;
     int index;
     cout << "\nEnter the index where you want to delete the node ";
     cin >> index;
@@ -282,6 +293,7 @@ void deletion_at_index()
 //Menu driven program to perform all the operations of doubly linked list.
 int main()
 {
+    Doubly_linklist D1;
     int ch;
 read:
     cout << "\n************Menu*************";
@@ -300,55 +312,55 @@ read:
     {
     case 1:
     {
-        creation();
-        cout<<"\n Node created successfully";
+        D1.creation();
+        cout << "\n Node created successfully";
         break;
     }
     case 2:
     {
-        insertion_at_beginning();
-        cout<<"\n Node Inserted successfully at beginning";
+        D1.insertion_at_beginning();
+        cout << "\n Node Inserted successfully at beginning";
         break;
     }
     case 3:
     {
-        insertion_at_end();
-        cout<<"\n Node Inserted successfully at End";
+        D1.insertion_at_end();
+        cout << "\n Node Inserted successfully at End";
         break;
     }
     case 4:
     {
-        insertion_at_index();
-        cout<<"\n Node Inserted successfully at Given position";
+        D1.insertion_at_index();
+        cout << "\n Node Inserted successfully at Given position";
         break;
     }
     case 5:
     {
-        insertion_after_given_index();
-        cout<<"\n Node Inserted successfully after a given index";
+        D1.insertion_after_given_index();
+        cout << "\n Node Inserted successfully after a given index";
         break;
     }
     case 6:
     {
-        deletion_at_beginning();
-        cout<<"\n Node Deleted successfully from beginning";
+        D1.deletion_at_beginning();
+        cout << "\n Node Deleted successfully from beginning";
         break;
     }
     case 7:
     {
-        deletion_at_end();
-        cout<<"\n Node Deleted successfully from End";
+        D1.deletion_at_end();
+        cout << "\n Node Deleted successfully from End";
         break;
     }
     case 8:
     {
-        deletion_at_index();
-        cout<<"\n Node Deleted successfully from given position";
+        D1.deletion_at_index();
+        cout << "\n Node Deleted successfully from given position";
         break;
     }
     case 9:
     {
-        traversal();
+        D1.traversal();
         break;
     }
     }
@@ -362,4 +374,17 @@ read:
     else
         exit(0);
     return 0;
+
+    /*complexity of traversing is
+   Time complexity:- O(n)
+   Space complexity:-O(n)
+   
+   complexity of inserting node 
+   Time complexity:- O(1) 
+   Space complexity:- O(1)
+   
+   complexity of deleting node 
+   Time complexity:- O(1) 
+   Space complexity:- O(1)
+   */
 }
