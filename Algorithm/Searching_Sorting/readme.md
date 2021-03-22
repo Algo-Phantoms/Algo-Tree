@@ -65,6 +65,8 @@ Following are the types of searches which we will be discussing in this book.
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
+* Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
-* Binary Search ----> [Java] (/Code/Python/Binary_Search.py)
+* Binary Search ----> [Python] (/Code/Python/Binary_Search.py)
+* Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
 
