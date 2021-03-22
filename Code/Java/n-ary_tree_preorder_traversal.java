@@ -131,7 +131,9 @@
 		 *  
 		 *   OUTPUT: 1 2 3 6 7 11 14 4 8 12 5 9 13 10  */
 		
-		/* Time Complexity => O(N logN)
-		 * Space Complexity => O(depth of recursion tree)*/
+		/* Time Complexity => O(N)
+		 * Space Complexity => O(depth of recursion tree)
+		                       Best-Case:- N(LogN)
+				       Worst-Case:- O(N) */
 		 
 	}
