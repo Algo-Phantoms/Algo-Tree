@@ -1,7 +1,9 @@
-import java.util.*;
-/*Insertion sort is the simple sorting algorithm which is commonly used in the daily lives while ordering a deck of cards.
+/*
+Problem:-Insertion sort in Linkedlist.
+Insertion sort is the simple sorting algorithm which is commonly used in the daily lives while ordering a deck of cards.
  In this algorithm, we insert each element onto its proper place in the sorted array. 
 */
+import java.util.*;
 public class InsertionSort 
 { 
 public static void main(String[] args) 
@@ -104,6 +106,8 @@ public static void main(String[] args)
 	
 } 
 /*
+Time Complexity:-O(n).
+Space Complexity:-O(1).
 Test Case:-1
 Linked List before Sorting..
 30 3 4 20 5
