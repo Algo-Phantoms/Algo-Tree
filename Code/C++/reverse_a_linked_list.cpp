@@ -12,7 +12,8 @@ The following algorithm is used for reversing a linked list:
 */
 #include<bits/stdc++.h>
 using namespace std;
-struct Node{
+class Node{
+    public:
     int data;
     Node *next;
 };
