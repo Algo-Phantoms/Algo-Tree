@@ -185,4 +185,5 @@ The solved sudoku matrix is :
 /* 
 Time Complexity of the approach : O(9 ^ (N * N))
 Space Complexity of the approach : O(N * N)
+where, N = number of rows and columns of the input matrix 
 */
