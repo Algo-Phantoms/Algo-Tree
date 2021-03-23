@@ -18,14 +18,14 @@ class BucketSort {
         // getting upper limit for dividing numbers in buckets
         int length = arr.length;
         float max_val = arr[0];
-        for (int i = 1; i<length; i++) {
+        for (int i = 1; i < length; i++) {
             max_val = Math.max(max_val, arr[i]);
         }
         max_val += 1;
 
         //making bucket list and adding buckets in it
         ArrayList<ArrayList<Float>> bucketList = new ArrayList<ArrayList<Float>>();
-        for (int i=0; i<k; i++) {
+        for (int i=0; i < k; i++) {
             bucketList.add(new ArrayList<Float>());
         }
 
