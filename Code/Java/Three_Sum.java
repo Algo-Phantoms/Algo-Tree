@@ -71,7 +71,7 @@ public class Three_Sum {
         arr[]= {1, -2, 1, 0, 5}
     Output 2:
     	1 -2  1
-    	
+    
 Time Complexity: O(n2).
 Space Complexity: O(n). */
 		 
