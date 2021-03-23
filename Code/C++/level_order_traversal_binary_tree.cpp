@@ -29,21 +29,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// A Binary Tree Node
-struct Node
-{
+class Node{
+    public:
     int value;
-    struct Node *left, *right;
+    Node* left,*right;
+    Node(int val){
+      value=val;
+      left=NULL;
+      right=NULL;
+    }
 };
-
-// Function to create a new node with value val
-Node* createNode(int val){
-    Node *newNode = new Node;
-    newNode->value = val;
-    newNode->left = NULL;
-    newNode->right = NULL;
-    return newNode;
-}
 
 // Function for level order traversal of the binary tree
 void PrintLevelOrder(Node* root){
@@ -112,20 +107,52 @@ void PrintLevelOrderIndividually(Node* root){
 
 int main()
 {
-    //Creating a binary tree
-    Node *root = createNode(8);
-    root->left = createNode(3);
-    root->right = createNode(12);
-    root->left->left = createNode(1);
-    root->right->left = createNode(10);
-    root->right->right = createNode(16);
+    //Creating a binary tree for test case 1
+    //         (8)
+    //       /     \
+    //     (3)    (12)
+    //     /      /  \
+    //   (1)    (10) (16)
+    Node *root1 = new Node(8);
+    root1->left = new Node(3);
+    root1->right = new Node(12);
+    root1->left->left = new Node(1);
+    root1->right->left = new Node(10);
+    root1->right->right =new Node(16);
     
-    cout << "Level Order traversal of binary tree is: \n";
-    PrintLevelOrder(root);
+    cout << "Level Order traversal of binary tree with root1 is: \n";
+    PrintLevelOrder(root1);
     cout<<endl;
     
-    cout<<"Level Order Traversal with of each level individually is: \n";
-    PrintLevelOrderIndividually(root);
+    cout<<"Level Order Traversal with of each level individually for root1 is: \n";
+    PrintLevelOrderIndividually(root1);
+    cout<<endl;
     
+    //Creating a binary tree for test case 2
+    //         (1)
+    //       /    \
+    //     (3)   (4)
+    //           /  \
+    //         (5) (6)
+    //         /
+    //       (7)
+    Node *root2 = new Node(1);
+    root2->left = new Node(3);
+    root2->right = new Node(4);
+    root2->right->left = new Node(5);
+    root2->right->right = new Node(6);
+    root2->right->left->left =new Node(7);
+    
+    cout << "Level Order traversal of binary tree with root2 is: \n";
+    PrintLevelOrder(root2);
+    cout<<endl;
+    
+    cout<<"Level Order Traversal with of each level individually for root2 is: \n";
+    PrintLevelOrderIndividually(root2);
+    cout<<endl;
     return 0;
 }
+
+// Time complexity:O(n), where n is the number of nodes
+
+//Space complexity: O(n) for creating a queue, where n is the number of nodes
