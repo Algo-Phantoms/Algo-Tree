@@ -79,11 +79,6 @@ int main()
 }
 
 /* 
-	
-Time Complexity = O(2^n)
-Space Complexity = O(n*n)
-where n = size of maze rows and columns
-
 
   TestCase 1:
 	Input:
@@ -107,5 +102,10 @@ where n = size of maze rows and columns
                 1 1 1 0
                 0 0 1 0
 		0 0 1 1
+	
+	
+Time Complexity = O(2^n)
+Space Complexity = O(n*n)
+where n = size of maze rows and columns
 		
 */
