@@ -14,29 +14,29 @@ Else if x is smaller, the target x must lie in the left (lower) half. So we appl
 """
 
 
-def binary_search(item_list,item):
+def binary_search(item_list,item):      #function to perform binary search
 	first = 0
 	last = len(item_list)-1
 	found = False
-	while( first<=last and not found):
+	while( first<=last and not found):      
 		mid = (first + last)//2
-		if item_list[mid] == item :
+		if item_list[mid] == item :     #means Item is present at mid
 			found = True
 		else:
-			if item < item_list[mid]:
+			if item < item_list[mid]:  #If Item smaller, ignore right half
 				last = mid - 1
 			else:
-				first = mid + 1	
-	return found
+				first = mid + 1	    #If Item is greater, ignore left half
+	return found                        #It will return If found is true or false
 
-a=[]
-x=int(input("Enter x : "))
+a=[]                                         #initialising the array
+x=int(input("Enter x : "))                     # no. of items in array
 print(x)
 for i in range(0,x):
     a.append(int(input("Enter next no : ")))
-    print("array :",a)
+    print("array :",a)                              #printing array
 
-b=int(input("Enter Number to be Search : "))
+b=int(input("Enter Number to be Search : "))             #input for the Item need to search
 print(b)
 
 print(binary_search(a, b))     #calling function binary search
