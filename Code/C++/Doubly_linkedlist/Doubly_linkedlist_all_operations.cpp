@@ -24,8 +24,8 @@ class Doubly_linklist
 public:
     Doubly_linklist()
     {
-        start = NULL;
-        last = NULL;
+        start = nullptr;
+        last = nullptr;
     }
     void creation();
     void traversal();
@@ -44,9 +44,9 @@ void Doubly_linklist::creation()
     node *new_node = new node;
     cout << "\nEnter the info of the node ";
     cin >> new_node->data;
-    new_node->next = NULL;
-    new_node->prev = NULL;
-    if (start == NULL)
+    new_node->next = nullptr;
+    new_node->prev = nullptr;
+    if (start == nullptr)
     {
         start = last = new_node;
     }
@@ -61,17 +61,17 @@ void Doubly_linklist::creation()
 //Function for visiting each node once in the list.
 void Doubly_linklist::traversal()
 {
-    struct node *ptr = start;
-    struct node *p = last;
+    node *ptr = start;
+    node *p = last;
     int count = 0;
-    if (ptr == NULL || p == NULL)
+    if (ptr == nullptr|| p == nullptr)
     {
         cout << "List is empty " << endl;
     }
     else
     {
         cout << "\ntraversing from left from right ";
-        while (ptr != NULL)
+        while (ptr != nullptr)
         {
             cout << "\nInfo of node at index " << count << "--> " << ptr->data;
             ptr = ptr->next;
@@ -79,7 +79,7 @@ void Doubly_linklist::traversal()
         }
         count -= 1;
         cout << "\nTransversing from right to left ";
-        while (p != NULL)
+        while (p != nullptr)
         {
             cout << "\nInfo of node at index " << count << "--> " << p->data;
             p = p->prev;
@@ -95,15 +95,15 @@ void Doubly_linklist::insertion_at_beginning()
     node *new_node = new node;
     cout << "\nEnter the info of the node ";
     cin >> new_node->data;
-    if (start == NULL && last == NULL)
+    if (start == nullptr && last == nullptr)
     {
-        new_node->prev = NULL;
-        new_node->next = NULL;
+        new_node->prev = nullptr;
+        new_node->next = nullptr;
         start = last = new_node;
     }
     else
     {
-        new_node->prev = NULL;
+        new_node->prev = nullptr;
         new_node->next = start;
         start->prev = new_node;
         start = new_node;
@@ -117,13 +117,13 @@ void Doubly_linklist::insertion_at_end()
     node *new_node = new node;
     cout << "\nEnter the info of node ";
     cin >> new_node->data;
-    if (last == NULL)
+    if (last == nullptr)
     {
         cout << "\nList is empty ";
     }
     else
     {
-        new_node->next = NULL;
+        new_node->next = nullptr;
         last->next = new_node;
         new_node->prev = last;
         last = new_node;
@@ -145,7 +145,7 @@ void Doubly_linklist::insertion_after_given_index()
     {
         cout << "\nInvalid position ";
     }
-    else if (start == NULL || last == NULL)
+    else if (start == nullptr || last == nullptr)
     {
         cout << "\nList is empty ";
     }
@@ -182,7 +182,7 @@ void Doubly_linklist::insertion_at_index()
     {
         cout << "\nInvalid position ";
     }
-    else if (start == NULL || last == NULL)
+    else if (start == nullptr || last == nullptr)
     {
         cout << "\nList is empty ";
     }
@@ -209,22 +209,22 @@ void Doubly_linklist::insertion_at_index()
 void Doubly_linklist::deletion_at_beginning()
 {
     node *ptr = start;
-    if (start == NULL && last == NULL)
+    if (start == nullptr && last == nullptr)
     {
         cout << "\nList is empty ";
     }
-    else if (start->next == NULL)
+    else if (start->next == nullptr)
     {
-        start = NULL;
-        last = NULL;
+        start = nullptr;
+        last = nullptr;
         free(start);
         free(last);
     }
     else
     {
         start = start->next;
-        start->prev = NULL;
-        ptr->next = NULL;
+        start->prev = nullptr;
+        ptr->next = nullptr;
     }
 }
 
@@ -233,22 +233,22 @@ void Doubly_linklist::deletion_at_beginning()
 void Doubly_linklist::deletion_at_end()
 {
     node *temp = last;
-    if (start == NULL && last == NULL)
+    if (start == nullptr && last == nullptr)
     {
         cout << "\nList is empty ";
     }
-    else if (start->next == NULL)
+    else if (start->next == nullptr)
     {
-        start = NULL;
-        last = NULL;
+        start = nullptr;
+        last = nullptr;
         free(start);
         free(last);
     }
     else
     {
         last = last->prev;
-        last->next = NULL;
-        temp->prev = NULL;
+        last->next = nullptr;
+        temp->prev = nullptr;
         free(temp);
     }
 }
