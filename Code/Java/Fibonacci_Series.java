@@ -2,14 +2,10 @@
 The Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21....
 */
 /**
- * 
- */
-/**
  * @author Pallavi Dhere
  *
  */
 package fibonaccinumbers;
-
 import java.util.Scanner;
 
 /*Method 1 : Using For Loop*/
@@ -20,18 +16,18 @@ class FibonacciExample1{
                   System.out.println("Enter count : ");
                   int count = sc.nextInt();
                   System.out.println(count);
-                  int t1=0;
-                  int t2=1;
+                  int t1 = 0;
+                  int t2 = 1;
                   int t3;
                   int i;    
-                  System.out.print(t1+" "+t2);        //printing 0 and 1    
+                  System.out.print(t1 +" "+ t2);        //printing 0 and 1    
     
-                  for(i=2;i<count;++i)               //loop starts from 2 because 0 and 1 are already printed    
+                  for(i = 2 ; i < count ; ++i)               //loop starts from 2 because 0 and 1 are already printed    
                    {    
-                        t3=t1+t2;    
+                        t3 = t1 + t2;    
                         System.out.print(" "+t3);    
-                        t1=t2;    
-                        t2=t3;    
+                        t1 = t2;    
+                        t2 = t3;    
                     }    
   
           }
@@ -40,15 +36,15 @@ class FibonacciExample1{
 
 /*Method 2: Using Recursion*/
 class FibonacciExample2{  
-    public static int t1=0;
-    public static int t2=1;
-    public static int t3=0;    
+    public static int t1 = 0;
+    public static int t2 = 1;
+    public static int t3 = 0;    
     public static void printFibonacci(int count){    
        if(count>0){    
             t3 = t1 + t2;    
             t1 = t2;    
             t2 = t3;    
-            System.out.print(" "+t3);   
+            System.out.print(" " + t3);   
             printFibonacci(count-1);    
         }    
     }    
