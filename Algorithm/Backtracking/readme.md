@@ -29,7 +29,4 @@ unsolvable.
 
 * Permutation of a string ----> [C++](/Code/C++/permutation_of_a_string.cpp)
 * N Queen Problem ----> [C++](/Code/C++/n_queen_problem.cpp)
-<<<<<<< HEAD
 * Sudoku Solver ----> [C++](/Code/C++/sudoku_solver.cpp)
-=======
->>>>>>> main
