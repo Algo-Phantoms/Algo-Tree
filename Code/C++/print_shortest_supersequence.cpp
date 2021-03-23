@@ -11,123 +11,123 @@
 * Therefore, we conclude that Shortest Supersequence = n+m - LCS.
 
 */
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-
-
-int main(){
-	ios_base::sync_with_stdio(false);
-  	cin.tie(NULL);
-  	cin.tie(NULL);
-   // taking two strings
-  	string s1,s2;
-  	cin>>s1>>s2;
+void ShortestSupersequence(string s1, string s2)
+{
     //string for storing the shortest supersequence
     string s;
     //calculating length of string
-  	int n=s1.length();
-  	int m=s2.length();
-    //constructing an 2D matrix of size n+1 and m+1 
-    int dp[n+1][m+1];
+    int n = s1.length();
+    int m = s2.length();
+    //constructing an 2D matrix of size n+1 and m+1
+    int dp[n + 1][m + 1];
 
-  for(int i=0;i<=n;i++)
-    for(int j=0;j<=m;j++)
-    {   //base condition
-        //initializing the first row and first column as 0
-        if(i==0 || j==0)
-        dp[i][j]=0;
-    }
+    for (int i = 0; i <= n; i++)
+        for (int j = 0; j <= m; j++) { //base condition
+            //initializing the first row and first column as 0
+            if (i == 0 || j == 0)
+                dp[i][j] = 0;
+        }
 
     //finding LCS
-    for(int i=1;i<n+1;i++)
-    { for(int j=1;j<m+1;j++)
-      {     //cheking if character matches or not
+    for (int i = 1; i < n + 1; i++) {
+        for (int j = 1; j < m + 1; j++) { //cheking if character matches or not
             //and if it matches then we add 1 to the solution
-        if(s1[i-1]==s2[j-1])
-          dp[i][j]=1+dp[i-1][j-1];
+            if (s1[i - 1] == s2[j - 1])
+                dp[i][j] = 1 + dp[i - 1][j - 1];
 
             //else length should be reduced and maximum of first or second string should be taken
-        else dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
-      }
+            else
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+        }
     }
 
-
-     // Start from the bottom right corner and one by one 
-    // push characters in output string 
-  int i=n,j=m;
-  while(i>0 && j>0){
-     // If current character in X and Y are same, then 
+    // Start from the bottom right corner and one by one
+    // push characters in output string
+    int i = n, j = m;
+    while (i > 0 && j > 0) {
+        // If current character in X and Y are same, then
         // current character is a part of shortest subsquence
-    if(s1[i-1]==s2[j-1])
+        if (s1[i - 1] == s2[j - 1])
         //push current character into result
-    {  s.push_back(s1[i-1]);
-        //reduce values of i and j
-      i--;
-      j--;
-    }
+        {
+            s.push_back(s1[i - 1]);
+            //reduce values of i and j
+            i--;
+            j--;
+        }
         //if current character in s1 and s2 are different
-    else if(dp[i][j-1]>dp[i-1][j])
-    {   //push current character of s2 in result
-      s.push_back(s2[j-1]);
-         //reduce value of j
-      j--;
+        else if (dp[i][j - 1] > dp[i - 1][j]) { //push current character of s2 in result
+            s.push_back(s2[j - 1]);
+            //reduce value of j
+            j--;
+        }
+        else { //push character of s1 in result
+            s.push_back(s1[i - 1]);
+            //reduce value of i
+            i--;
+        }
     }
-    else 
-    {   //push character of s1 in result
-      s.push_back(s1[i-1]);
-        //reduce value of i
-      i--;
-    }
-  
-}
     //if s2 reaches to its end then push remaining character of s1 in result string
-  while(i>0){
-    s.push_back(s1[i-1]);
-    i--;
-  }
-     //if s1 reaches to its end then push remaining character of s2 in result string
+    while (i > 0) {
+        s.push_back(s1[i - 1]);
+        i--;
+    }
+    //if s1 reaches to its end then push remaining character of s2 in result string
 
-  while(j>0){
-    s.push_back(s2[j-1]);
-    j--;
-  }
-    //reverse the string 
- reverse(s.begin(),s.end());
- for(int i=0;i<s.length();i++)
-  cout<<s[i];
-cout<<endl;
-cout<<s.length();
-
-
-
+    while (j > 0) {
+        s.push_back(s2[j - 1]);
+        j--;
+    }
+    //reverse the string
+    reverse(s.begin(), s.end());
+    cout << "Shortest Common Supersequence: ";
+    for (int i = 0; i < s.length(); i++)
+        cout << s[i];
+    cout << endl;
+    cout << "Length of Shortest Common SuperSequence: ";
+    cout << s.length();
 }
 
+int main()
+{
+    // taking input from user
+    string s1, s2;
+    cout << "Enter string s1: ";
+    cin >> s1;
+    cout << "Enter string s2: ";
+    cin >> s2;
+    ShortestSupersequence(s1, s2);
+}
 
 /*
 Sample Test cases :-
 
-	Input 1:
-	aggtab
-	gxtxayb
+  Input 1:
+  Enter string s1: aggtab
+  Enter string s2: gxtxayb
 
-	Output 1:
-	agxgtxayb
+  Output 1:
+  Shortest Common Supersequence: agxgtxayb
+        Length of Shortest Common SuperSequence: 9
+  
+  Input 2:
+  Enter string s1: luck
+  Enter string s2: cyk
 
-	Input 2:
-	luck
-	cyk
+  Output 2:
+  Shortest Common Supersequence: lucyk
+        Length of Shortest Common SuperSequence: 5
+  
+        Input 3:
+        Enter string s1: acbcf
+        Enter string s2: abcdaf
 
-	Output 2:
-	lucyk
-
-  Input 3:
-  acbcf
-  abcdaf
-
-  Output 3:
-  acdcdaf
-
+        Output 3:
+        Shortest Common Supersequence: acdcdaf
+        Length of Shortest Common SuperSequence: 7
   
          * For s1 = "a c b c f" and s2 = "a b c d a f"
          * and LCS matrix for this is :
@@ -168,7 +168,7 @@ Sample Test cases :-
          *
          
 
-* TIme Complexity: O(m*n)
+* Time Complexity: O(m*n)
 * Space Complexity: O(m*n)
 
 */
