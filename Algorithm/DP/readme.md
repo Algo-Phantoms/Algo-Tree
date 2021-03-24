@@ -42,3 +42,6 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 
 - Shortest Common Supersequence ----> [Python](/Code/Python/Shortest_Common_Supersequence.py)
+
+- Minimum Number of Deletions To Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
+
