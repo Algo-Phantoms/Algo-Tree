@@ -67,9 +67,7 @@ public class BrianKernighanAlgorithm {
 		
 		// printing out the output
 		System.out.println("The number of set bits in "+ digit + " is: "+ answer);
-
 	}
-
 }
 
 /*
@@ -81,6 +79,5 @@ public class BrianKernighanAlgorithm {
  		   output = 3
  		   
  	Time Complexity  : O(number of set bits in the input)
- 	Space complexity : O(1)
-  
- * */
+ 	Space complexity : O(1)  
+ */
