@@ -72,11 +72,11 @@ public class BrianKernighanAlgorithm {
 
 /*
  	Test Cases:
- 		1. input  = 55
- 		   output = 5
+ 		1. input- 55
+ 		   output- 5
  		   
- 		2. input  = 145
- 		   output = 3
+ 		2. input- 145
+ 		   output- 3
  		   
  	Time Complexity  : O(number of set bits in the input)
  	Space complexity : O(1)  
