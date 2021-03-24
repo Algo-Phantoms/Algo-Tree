@@ -1,10 +1,6 @@
 /*The Fibonacci sequence is a series where the next term is the sum of pervious two terms. The first two terms of the Fibonacci sequence is 0 followed by 1.
 The Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21....
 */
-/**
- * @author Pallavi Dhere
- *
- */
 package fibonaccinumbers;
 import java.util.Scanner;
 
@@ -66,21 +62,20 @@ class FibonacciExample3
   public static int fibonacci(int n)
     {
     /* Declare an array to store Fibonacci numbers. */
-          int a[] = new int[n+2]; // 1 extra to handle case, n = 0
+          int arr[] = new int[n+2];   // 1 extra to handle case, n = 0
           int i;
       
     /* 0th and 1st number of the series are 0 and 1*/
-          a[0] = 0;
-          a[1] = 1;
+          arr[0] = 0;
+          arr[1] = 1;
      
          for (i = 2; i <= n; i++)
            {
-       /* Add the previous 2 numbers in the series
-         and store it */
-              a[i] = a[i-1] + a[i-2];
+       /* Add the previous 2 numbers in the series and store it */
+              arr[i] = arr[i-1] + arr[i-2];
            }
       
-     return a[n];
+     return arr[n];
  }
       
     public static void main (String args[])
@@ -92,38 +87,34 @@ class FibonacciExample3
     }
 }
 /*
- * (for method 1)
+ * (Method 1 - Via for Loop)
  * Time Complexity : O(n)
  * Space Complexity :O(1)
- * 
  *  
-(For method 2)
-* Time Complexity : T(n) = T(n-1) + T(n-2) which is exponential.
-* Space complexity : O(n) , if we consider stack space in recursive calls
-*/
-
-/*
-(For method 3)
-// Time Complexity : O(n)
-// Space Complexity : O(1)
-*/
-/*
-Sample test cases
-Enter the number of elements: 6
- 0
- 1
- 1 
- 2
- 3 
- 5 
-Enter the number of elements: 9
- 0 
- 1 
- 1 
- 2 
- 3 
- 5 
- 8 
- 13 
- 21 
+ * (Method 2 - Via Recursion)
+ * Time Complexity : T(n) = T(n-1) + T(n-2) which is exponential.
+ * Space complexity : O(n) , if we consider stack space in recursive calls
+ *
+ * (Method 3 : Via Dyanamic Programing)
+ * Time Complexity : O(n)
+ * Space Complexity : O(1)
+ *
+ * Test cases
+ * Enter the number of elements: 6
+   0
+   1
+   1 
+   2
+   3 
+   5 
+ * Enter the number of elements: 9
+   0 
+   1 
+   1 
+   2 
+   3 
+   5 
+   8 
+   13 
+   21 
 */ 
