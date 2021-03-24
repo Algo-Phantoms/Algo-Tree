@@ -3,14 +3,10 @@ Bucket Sort is a sorting technique that sorts the elements by first dividing the
 The elements inside each bucket are sorted using any of the suitable sorting algorithms or recursively calling the same algorithm.
 Several buckets are created. Each bucket is filled with a specific range of elements. 
 The elements inside the bucket are sorted using any other algorithm. Finally, the elements of the bucket are gathered to get the sorted array.
-
 */
 
-
 import java.util.*;
-
 class BucketSort {
-
     private static void bucketSort(float[] arr, int k) {
         if (arr.length < 2)
             return;
@@ -84,7 +80,7 @@ class BucketSort {
 
 /*
 Test Cases:
-Example 1:
+Input:
 Enter size of array:
 10
 Enter array elements:
@@ -107,7 +103,7 @@ Array before bucket sort:
 Array after Bucket sort:
 11.0 26.0 33.0 49.0 62.0 77.0 85.0 88.0 91.0 99.0
 
-Example 2:
+Input:
 Enter size of array:
 7
 Enter array elements:
