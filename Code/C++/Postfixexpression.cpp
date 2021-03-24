@@ -93,18 +93,29 @@ int main()
 
 /* Test cases:
 1.
+Input:
+
 Enter Postfix Expression with out any blank spaces:abc*+                                                              
 Enter values ofa:1                                                                                                    
 Enter values ofb:2                                                                                                    
-Enter values ofc:3                                                                                                    
+Enter values ofc:3
+
+Output:
+
 The given postfix expression is:1 2 3 * +                                                                             
 The result of evaluated postfix expression is:7 
+
 2.
+Input:
+
 Enter Postfix Expression with out any blank spaces:abcd*-+                                                            
 Enter values ofa:4                                                                                                    
 Enter values ofb:3                                                                                                    
 Enter values ofc:2                                                                                                    
-Enter values ofd:1                                                                                                    
+Enter values ofd:1 
+
+Output:
+
 The given postfix expression is:4 3 2 1 * - +  
 The result of evaluated postfix expression is:5 
 
