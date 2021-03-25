@@ -1,5 +1,6 @@
-// C++ Program for Floyd Warshall Algorithm 
-// Dynamic Programming
+// C++ Program for Floyd Warshall Algorithm (All source shortest path algorithm)
+/*Floyd–Warshall algorithm is an algorithm for finding shortest paths between every pair of vertices in a directed weighted graph with positive or negative edge weights (but with no negative cycles).
+It comes under Dynamic Programming paradigm. */
 #include <bits/stdc++.h>
 using namespace std;
  
