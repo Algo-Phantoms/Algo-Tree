@@ -78,15 +78,15 @@ int main() {
 /* 
 	Test case : 
   INPUT:
-	Enter the number of elements : 5
-  Enter the elements value:
-	4 3 5 1 2
+      Enter the number of elements : 5
+      Enter the elements value:
+      4 3 5 1 2
 
 	OUTPUT : 
-  Array before Tree Sorting:
-	4 3 5 1 2
-  Array after Tree Sorting:
-	1 2 3 4 5
+      Array before Tree Sorting:
+      4 3 5 1 2
+      Array after Tree Sorting:
+      1 2 3 4 5
 
   Worst complexity: n*log(n) (balanced)
   Average complexity: n*log(n)
