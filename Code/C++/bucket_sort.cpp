@@ -41,10 +41,10 @@ int main() {
    for(int i = 0; i<n; i++) {
       cin >> arr[i];
    }
-   cout << "Array before Sorting: ";
+   cout << "Array before Bucket Sorting: ";
    display(arr, n);
    bucketSort(arr, n);
-   cout << "Array after Sorting: ";
+   cout << "Array after Bucket Sorting: ";
    display(arr, n);
 }
 
@@ -52,14 +52,14 @@ int main() {
 /* 
 Test case : 
    INPUT:
-            Enter the number of elements : 5
-            Enter the elements value:
+            Enter the number of elements: 5
+            Enter elements:
             0.22 0.45 0.79 0.01 0.69
 
    OUTPUT : 
-            Array before Tree Sorting:
+            Array before Bucket Sorting:
             0.22 0.45 0.79 0.01 0.69
-            Array after Tree Sorting:
+            Array after Bucket Sorting:
             0.01 0.22 0.45 0.69 0.79
 
 
