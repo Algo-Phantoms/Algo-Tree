@@ -70,6 +70,72 @@ int main()
 /*
 Time Complexity = O(V^3)
 Space Complexity = O(V^2)
+
+** Test Cases ** 
+
+>> Case - 1
+
+[INPUT]
+Enter the number of vertices : 4
+
+Enter the Adjacency Matrix : 
+Graph[0][0] : 0
+Graph[0][1] : 5
+Graph[0][2] : 999
+Graph[0][3] : 10
+Graph[1][0] : 999
+Graph[1][1] : 0
+Graph[1][2] : 3
+Graph[1][3] : 999
+Graph[2][0] : 999
+Graph[2][1] : 999
+Graph[2][2] : 0
+Graph[2][3] : 1
+Graph[3][0] : 999
+Graph[3][1] : 999
+Graph[3][2] : 999
+Graph[3][3] : 0
+
+[OUTPUT]
+The final distance matrix with shortest distance between every pair of vertices : 
+0     5     8     9     
+999     0     3     4     
+999     999     0     1     
+999     999     999     0     
+ 
+
+>> Case - 2
+
+[INPUT]
+Enter the number of vertices : 4
+
+Enter the Adjacency Matrix : 
+Graph[0][0] : 0
+Graph[0][1] : 9
+Graph[0][2] : -4
+Graph[0][3] : 999
+Graph[1][0] : 6
+Graph[1][1] : 0
+9Graph[1][2] : 999
+Graph[1][3] : 2
+Graph[2][0] : 999
+Graph[2][1] : 6 5
+Graph[2][2] : 0
+Graph[2][3] : 999
+Graph[3][0] : 999
+Graph[3][1] : 999
+Graph[3][2] : 1
+Graph[3][3] : 0
+
+
+[OUTPUT]
+The final distance matrix with shortest distance between every pair of vertices : 
+0     1     -4     3     
+6     0     2     2     
+11     5     0     7     
+12     6     1     0     
+
+
 */ 
  
 
