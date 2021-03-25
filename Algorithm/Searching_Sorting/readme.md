@@ -69,4 +69,5 @@ Following are the types of searches which we will be discussing in this book.
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
 * Tree Sort ----> [C++](/Code/C++/tree_sort.cpp)
+* Bucket Sort ----> [C++](/Code/C++/bucket_sort.cpp)
 
