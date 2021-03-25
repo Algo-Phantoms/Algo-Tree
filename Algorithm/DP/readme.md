@@ -41,4 +41,4 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 
-- Shortest Common Supersequence ---->[C++](/Code/C++/shortest_common_supersequence.cpp)
+- Shortest Common Supersequence ---->[C++](/Code/C++/print_shortest_supersequence.cpp)
