@@ -24,10 +24,19 @@ for i in range(pos):
 for k in range(0, n):
     print(rot[k],end=" ")
     
-    
+#Time Complexity: O(n*k)            size of  array * no. of time array to be rotated
+#Space: O(1)                        fixed amount of space is required
+
 #e.g:    
 # Enter size of array:7
 # Give data: 
 # 12 11 3 13 5 6 7 
 # Enter the position from where u want left rotation:2
 # 3 13 5 6 7 12 11 
+
+
+# Enter size of array:5
+# Give data: 
+# 1 2 3 4 5
+# Enter the position from where u want left rotation:2
+# 3 4 5 1 2
