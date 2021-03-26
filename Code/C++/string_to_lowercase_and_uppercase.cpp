@@ -1,6 +1,6 @@
 /*program to convert string to lowercase and uppercase*/
 #include<iostream>
-#include<string.h>
+#include<string>
 using namespace std;
 
 
@@ -28,8 +28,8 @@ string uppercase(string s1){
    {
        string s1,lowercase_string,uppercase_string;
        getline(cin,s1);
-       lowercase_string=lowercase(s1);//lowerstring will contain the string with lowercase letter
-       uppercase_string=uppercase(s1);//upperstring will contain the string with uppercase letter
+       lowercase_string=lowercase(s1);//lowercase_string will contain the string with lowercase letter
+       uppercase_string=uppercase(s1);//uppercase_string will contain the string with uppercase letter
 
        cout<<"Lowercase ->"<<lowercase_string<<endl;
        cout<<"Uppercase ->"<<uppercase_string<<endl;
@@ -38,21 +38,22 @@ string uppercase(string s1){
 
 
    /*
-
-   Time complexity O(n)
-   Space Complexity O(n)
-
-
-   Test Case 1
+   Test Case 1:
 
    input - EloQuEnT
    output - Lowercase ->eloquent
             Uppercase ->ELOQUENT
 
 
-   Test Case 2
+   Test Case 2:
 
    input - DiVeRtIcuLaR
    output - Lowercase ->diverticular
             Uppercase ->DIVERTICULAR
+            
+   
+   Time complexity: O(n)
+   Space Complexity: O(n)
+
+
    */
