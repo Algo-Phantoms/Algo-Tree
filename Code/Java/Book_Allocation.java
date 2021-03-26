@@ -7,7 +7,7 @@ Provided "n" number of books and "m" number of students. Books are arranged in i
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-// / Name of the class hs to be "Main" only if the class is public. */
+
 class bookallocation
 {   
     // function to check if "key" number of pages can be allocated or not
