@@ -5,34 +5,58 @@ When we reach the leaf node we will check if the sum is equal to the node's data
 */
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
-struct Node {
+class Node{
+public:
     int data;
-    Node * left;
-    Node * right;
-    Node(int data) {
-        this -> data = data;
-        left = NULL;
-        right = NULL;
+    Node* left;
+    Node* right;
+
+    // constructor
+    Node(int x){                
+        data = x;
+        left = nullptr;
+        right = nullptr;
     }
 };
 
+Node* Insert(Node* root, int data){
+
+    // make new Node
+    if(root == nullptr){                
+        root = new Node(data);
+        return root;
+    }
+
+    else if(data < root->data){
+        root->left = Insert(root->left,data);
+    }
+    else{
+        root->right = Insert(root->right,data);
+    }
+
+    return root;
+}
+
 bool has_path_sum(Node * root, int sum) {
-    if (root == NULL) return false;
-    if (root -> data == sum && root -> left == NULL && root -> right == NULL) return true;
+    if (root == nullptr) return false;
+    if (root -> data == sum && root -> left == nullptr && root -> right == nullptr) return true;
     return has_path_sum(root -> left, sum - root -> data) || has_path_sum(root -> right, sum - root -> data);
 }
 
 int main() {
-    Node * root = new Node(1);
-    root -> left = new Node(2);
-    root -> right = new Node(3);
-    root -> left -> left = new Node(4);
-    root -> left -> right = new Node(5);
-    root -> right -> left = new Node(6);
-    root -> right -> right = new Node(7);
+
+    int data;               
+    cin >> data;
+
+    Node* root = new Node(data);
+
+    while(true){ 
+        cin >> data;
+        if(data==-1)break;
+        root = Insert(root, data);
+    }
 
     int sum;
     cin >> sum;
