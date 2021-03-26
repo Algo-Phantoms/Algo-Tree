@@ -90,18 +90,18 @@ class bookallocation
 }
 
 /* Test Case 1: 
-            input -
+            Input -
                 n = 6
                 m = 3
                 a[] = {13, 28, 34, 40, 57, 85}
-             output - 97
+            Output - 97
 
  Test Case 2:
-            input -
+            Input -
                 n = 7
                 m = 5
                 a[] = {10, 24, 33, 49, 59, 66, 107}
-            output - 107
+            Output - 107
 */
 /*
 Time complexity : O(n*log(sum)) -  n = number of books, sum = sum of the pages of all the books
