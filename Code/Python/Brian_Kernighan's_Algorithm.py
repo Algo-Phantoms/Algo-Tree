@@ -1,5 +1,7 @@
-""" Problem statement: Given a number "num", you to give the number of setbits in the number.
-                       The setbit is "1" in the binary form of given number. """
+""" Brian Kernighan's Algorithm
+Problem statement: Given a number "num", you to give the number of setbits in the number.
+                   The setbit is "1" in the binary form of given number. """
+
 def countBits(num):
     # variable for number of setbits
     cnt = 0
@@ -10,7 +12,6 @@ def countBits(num):
         cnt += 1
     return cnt
 
-
 # taking input number from user
 num = int(input())
 
@@ -19,13 +20,16 @@ print(countBits(num))
 
 
 """
-Test Case 1: input - 12
-            output - 2
-Test Case 2: input - 101
-            output - 4
-"""
-
-"""
+Test Case 1: input - 
+                     12
+            output -
+                     2
+                     
+Test Case 2: input - 
+                     101
+            output - 
+                     4
+            
 Time complexity: O(logn) - n = input number
 Space complexity: O(1)
 
