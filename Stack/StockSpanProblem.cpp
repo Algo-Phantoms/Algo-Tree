@@ -22,7 +22,7 @@ using namespace std;
 
 int main() {
 
-    // Input number of days
+    // n : Total number of days
     int n; cin >> n;
     int price[n];
     int span[n];
@@ -46,6 +46,7 @@ int main() {
         int currPrice = price[i];
 
         // Taking the topmost element in the stack
+        // p : Temporary Variable used to store topmost element of Stack 's'.
         auto p = s.top();
         int topSpan = p.first;
         int topPrice = p.second;
@@ -84,8 +85,6 @@ int main() {
 }
 
 /*
-Time Complexity: O(n)
-Space Complexity: O(n)
 ------------------------
 Sample Input :
 5
@@ -109,4 +108,6 @@ span is 1, 70 is greater than 60 so the
 span is 2 and so on. Hence the output will 
 be 1 1 1 2 1 4 6.
 ------------------------
+Time Complexity: O(n)
+Space Complexity: O(n)
 */
