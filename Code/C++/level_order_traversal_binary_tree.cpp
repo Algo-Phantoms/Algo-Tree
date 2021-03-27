@@ -1,29 +1,30 @@
-//LEVEL ORDER TRAVERSAL OF BINARY TREE
-// Level order traversal is breadth first traversal of the tree;
-//         (8)
-//       /     \
-//     (3)    (12)
-//     /      /  \
-//   (1)    (10) (16)
+/*
+LEVEL ORDER TRAVERSAL OF BINARY TREE
+Level order traversal is breadth first traversal of the tree;
+        (8)
+      /     \
+    (3)    (12)
+    /      /  \
+  (1)    (10) (16)
 
-// Level order traversal of the tree above: 8 3 12 1 10 16
-// We will use a queue. A queue uses First In First Out (FIFO) order. We will visit each node and push it's children into the queue.
-// In this way, the order in which nodes of a level are visited becomes the order in which the children of the nodes of this level
-// will be visited.
-// We will start by pushing the root in the queue. Then while the queue is not empty, we will pop the node at the top of the queue,
-// print it's value and push it's non-NULL children into the end of the queue.
-// The process stops when the queue becomes empty and there are no more nodes to traverse.
+Level order traversal of the tree above: 8 3 12 1 10 16
+We will use a queue. A queue uses First In First Out (FIFO) order. We will visit each node and push it's children into the queue.
+In this way, the order in which nodes of a level are visited becomes the order in which the children of the nodes of this level
+will be visited.
+We will start by pushing the root in the queue. Then while the queue is not empty, we will pop the node at the top of the queue,
+print it's value and push it's non-NULL children into the end of the queue.
+The process stops when the queue becomes empty and there are no more nodes to traverse.
 
-// The level order traversal of each level individually for the above tree will be:
-// 8
-// 3 12
-// 1 10 16
+The level order traversal of each level individually for the above tree will be:
+8
+3 12
+1 10 16
 
-// To print each level individually, we can modify our approach, such that in a single iteration we traverse all the nodes of a particular
-// level and then print a newline at the end of this iteration, before moving on to the next level. To do this, store the number of Nodes 
-// present in the queue, this will be the count of the nodes in the particular level. Then do the same operations as mentioned above to the
-// Nodes of this level. After we have visited every node of this level, we print a newline and start the next iteration for the next level.
-
+To print each level individually, we can modify our approach, such that in a single iteration we traverse all the nodes of a particular
+level and then print a newline at the end of this iteration, before moving on to the next level. To do this, store the number of Nodes 
+present in the queue, this will be the count of the nodes in the particular level. Then do the same operations as mentioned above to the
+Nodes of this level. After we have visited every node of this level, we print a newline and start the next iteration for the next level.
+*/
 
 #include <iostream>
 #include <bits/stdc++.h>
@@ -107,12 +108,14 @@ void PrintLevelOrderIndividually(Node* root){
 
 int main()
 {
-    //Creating a binary tree for test case 1
-    //         (8)
-    //       /     \
-    //     (3)    (12)
-    //     /      /  \
-    //   (1)    (10) (16)
+    /*
+    Creating a binary tree for test case 1
+            (8)
+          /     \
+        (3)    (12)
+        /      /  \
+      (1)    (10) (16)
+    */
     Node *root1 = new Node(8);
     root1->left = new Node(3);
     root1->right = new Node(12);
@@ -128,14 +131,16 @@ int main()
     PrintLevelOrderIndividually(root1);
     cout<<endl;
     
-    //Creating a binary tree for test case 2
-    //         (1)
-    //       /    \
-    //     (3)   (4)
-    //           /  \
-    //         (5) (6)
-    //         /
-    //       (7)
+    /*
+    Creating a binary tree for test case 2
+            (1)
+          /    \
+        (3)   (4)
+              /  \
+            (5) (6)
+            /
+          (7)
+    */
     Node *root2 = new Node(1);
     root2->left = new Node(3);
     root2->right = new Node(4);
@@ -153,6 +158,45 @@ int main()
     return 0;
 }
 
-// Time complexity:O(n), where n is the number of nodes
+/*
+Test Case 1:
 
-//Space complexity: O(n) for creating a queue, where n is the number of nodes
+Input:
+        (8)
+      /     \
+    (3)    (12)
+    /      /  \
+  (1)    (10) (16)
+
+Output:
+     Level Order traversal of binary tree with root1 is:                                                                                           
+     8 3 12 1 10 16                                                                                                                                
+     Level Order Traversal with of each level individually for root1 is:                                                                           
+     8                                                                                                                                             
+     3 12                                                                                                                                          
+     1 10 16  
+
+Test Case 2:
+
+Input:
+        (1)
+      /    \
+    (3)   (4)
+          /  \
+        (5) (6)
+        /
+      (7)
+
+Output:
+     Level Order traversal of binary tree with root2 is:                                                                                             
+     1 3 4 5 6 7                                                                                                                                     
+     Level Order Traversal with of each level individually for root2 is:                                                                             
+     1                                                                                                                                               
+     3 4                                                                                                                                             
+     5 6                                                                                                                                             
+     7  
+
+Time complexity:O(n), where n is the number of nodes
+
+Space complexity: O(n) for creating a queue, where n is the number of nodes
+*/
