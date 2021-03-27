@@ -27,23 +27,21 @@ class bookallocation
 
                      if(cnt > m) return false;   //if count of students is greater than given students "m", then its not possible to allocate these many books to given students "m"
                 }
-
                 else{
                     sum += a[j];  // else update current number of pages
                 }
-
             }
             return true;
     }
         //function to find the page distribution
-    public static int bin_search( int a[], int n, int m){
+    public static int binary_search( int a[], int n, int m){
 
             int ans = Integer.MAX_VALUE;
             // if students are greater than number of books then its impossible to allocate pages
             if(n < m) return -1;
-
+        
             int sum = 0;
-            
+   
             //counting total number of pages
               for (int i = 0; i < n; i++) 
                      sum += a[i]; 
@@ -62,15 +60,13 @@ class bookallocation
                 else{
                     low = mid + 1;
                 }
-            }
-            
+            } 
             //return minimum possible answer
             return ans;
         }
 
     public static void main (String[] args) throws java.lang.Exception
     {
-        // your code goes here
         Scanner sc = new Scanner(System.in); 
         int n = 0; 
         int m = 0;
@@ -80,10 +76,8 @@ class bookallocation
         int[] a = new int[n];  // array for page distribution of each book
         for(int i = 0 ; i < n; i++){
             a[i] = sc.nextInt();
-
         }
-
-        int ans = bin_search(a, n, m); // ans stores the minimum number of pages each student got to read
+        int ans = binary_search(a, n, m); // ans stores the minimum number of pages each student got to read
         System.out.println("Minimum number of pages = " + ans);
     }
 }
@@ -101,8 +95,7 @@ class bookallocation
                 m = 5
                 a[] = {10, 24, 33, 49, 59, 66, 107}
             Output - 107
-*/
-/*
+            
 Time complexity : O(n*log(sum)) -  n = number of books, sum = sum of the pages of all the books
 
 Space complexity: O(1)
