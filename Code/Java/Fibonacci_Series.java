@@ -53,9 +53,6 @@ class FibonacciExample2{
     }  
  }  
 
-
-
-
 /*Method 3: Using Dynamic Programming*/
 class FibonacciExample3
 {
@@ -87,34 +84,24 @@ class FibonacciExample3
     }
 }
 /*
- * (Method 1 - Via for Loop)
- * Time Complexity : O(n)
- * Space Complexity :O(1)
- *  
- * (Method 2 - Via Recursion)
- * Time Complexity : T(n) = T(n-1) + T(n-2) which is exponential.
- * Space complexity : O(n) , if we consider stack space in recursive calls
- *
- * (Method 3 : Via Dyanamic Programing)
- * Time Complexity : O(n)
- * Space Complexity : O(1)
- *
- * Test cases
- * Enter the number of elements: 6
-   0
-   1
-   1 
-   2
-   3 
-   5 
- * Enter the number of elements: 9
-   0 
-   1 
-   1 
-   2 
-   3 
-   5 
-   8 
-   13 
-   21 
-*/ 
+ 
+  Test case 1
+  Enter the number of elements: 6
+   0 1 1 2 3 5
+  Test case 2
+  Enter the number of elements: 9
+   0 1 1 2 3 5 8 13 21
+   
+  Time Complexity and Space Complexity
+  (Method 1 - Via for Loop)
+  Time Complexity : O(n)
+  Space Complexity :O(1)
+   
+  (Method 2 - Via Recursion)
+  Time Complexity : T(n) = T(n-1) + T(n-2) which is exponential.
+  Space complexity : O(n) , if we consider stack space in recursive calls
+ 
+  (Method 3 : Via Dyanamic Programing)
+  Time Complexity : O(n)
+  Space Complexity : O(1)
+ */ 
