@@ -19,13 +19,17 @@ Example: The given matrix is
             7 4 1
             8 5 2
             9 6 3
+        
+Time Complexity: O(m*n) where m and n are no of rows and columns respectively
+Space Complexity: O(1)
 */ 
         
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
 
-void transpose(vector<vector<int>>& v)                   //utility function to carry out the transpose of a 2d matrix
+//utility function to carry out the transpose of a 2d matrix
+void transpose(vector<vector<int>>& v)                   
 {
     int n = v.size();
 
@@ -33,12 +37,14 @@ void transpose(vector<vector<int>>& v)                   //utility function to c
     {
         for(int j = i; j < v[i].size() ; j++)
         {
-            swap(v[i][j], v[j][i]);                     //swap is a C++ STL function
+            //swap is a C++ STL function
+            swap(v[i][j], v[j][i]);                     
         }
     }
 }
 
-void reflect(vector<vector<int>>& v)                    //utility function to take reflection of a 2d matrix along the column
+//utility function to take reflection of a 2d matrix along the column
+void reflect(vector<vector<int>>& v)                    
 {
     int n = v.size();
 
@@ -46,18 +52,23 @@ void reflect(vector<vector<int>>& v)                    //utility function to ta
     {
         for(int j=0;j<v[i].size()/2;j++)
         {
-            swap(v[i][j],v[i][n-j-1]);                  //swap is a C++ STL function
+            swap(v[i][j],v[i][n-j-1]);                  
         }
     }
 }
 
-void rotate(vector<vector<int>>& v)                   //helper function to rotate the matrix
+//helper function to rotate the matrix
+void rotate(vector<vector<int>>& v)                   
 {
-    transpose(v);                                     //transpose function call to carry out transpose of matrix
-    reflect(v);                                       //reflect function call to        
+    //transpose function call to carry out transpose of matrix
+    transpose(v);                                    
+
+    //reflect function call to
+    reflect(v);                                               
 }
 
-void print(vector<vector<int>>& v)                     //utility function to print the matrix
+//utility function to print the matrix
+void print(vector<vector<int>>& v)                     
 {       
     int n = v.size();
 
@@ -72,15 +83,22 @@ void print(vector<vector<int>>& v)                     //utility function to pri
     
 }
 
-signed main(){
+signed main()
+{
     int n;
-    cin>>n;                         //input size of matrix
 
-    vector<vector<int>> v(n);       //declaring a 2d vector and assigning n number of rows
+    //input size of matrix
+    cin>>n;                         
 
-    for(int i=0;i<n;i++)            //input elemets of matrix
+    //declaring a 2d vector and assigning n number of rows
+    vector<vector<int>> v(n);       
+
+    //input elemets of matrix
+    for(int i=0;i<n;i++)            
     {
-        v[i]=vector<int>(n);        //v[i] is a normal vector of capacity n so that n columns will be created     
+        //v[i] is a normal vector of capacity n so that n columns will be created
+        v[i]=vector<int>(n);   
+
         for(int j=0;j<n;j++)
         {
             cin>>v[i][j];
@@ -89,11 +107,15 @@ signed main(){
 
     cout<<endl;
     cout<<"Original Matrix"<<endl;
-    print(v);                       //print function call to print original matrix
+    //print function call to print original matrix
+    print(v);                       
+
     rotate(v);
     cout<<endl;
     cout<<"Matrix rotated by 90degrees"<<endl;
-    print(v);                       //print function call to print rotated matrix
+
+    //print function call to print rotated matrix
+    print(v);                       
 
     return 0;
     
