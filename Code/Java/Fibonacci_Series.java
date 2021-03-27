@@ -18,8 +18,7 @@ class FibonacciExample1{
                   int i;    
                   System.out.print(t1 +" "+ t2);        //printing 0 and 1    
     
-                  for(i = 2 ; i < count ; ++i)               //loop starts from 2 because 0 and 1 are already printed    
-                   {    
+                  for(i = 2 ; i < count ; i++) {               //loop starts from 2 because 0 and 1 are already printed        
                         t3 = t1 + t2;    
                         System.out.print(" "+t3);    
                         t1 = t2;    
@@ -66,8 +65,7 @@ class FibonacciExample3
           arr[0] = 0;
           arr[1] = 1;
      
-         for (i = 2; i <= n; i++)
-           {
+         for (i = 2; i <= n; i++) {
        /* Add the previous 2 numbers in the series and store it */
               arr[i] = arr[i-1] + arr[i-2];
            }
@@ -86,11 +84,11 @@ class FibonacciExample3
 /*
  
   Test case 1
-  Enter the number of elements: 6
-   0 1 1 2 3 5
+  Input : Enter the number of elements: 6
+  Output : 0 1 1 2 3 5
   Test case 2
-  Enter the number of elements: 9
-   0 1 1 2 3 5 8 13 21
+  Input : Enter the number of elements: 9
+  Output : 0 1 1 2 3 5 8 13 21
    
   Time Complexity and Space Complexity
   (Method 1 - Via for Loop)
