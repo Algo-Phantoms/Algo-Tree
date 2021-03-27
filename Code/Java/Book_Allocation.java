@@ -8,8 +8,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class bookallocation
-{   
+class Book_Allocation{   
     // function to check if "key" number of pages can be allocated or not
     public static boolean pageread(int a[], int n, int key, int m){
             int sum = 0;
