@@ -12,17 +12,22 @@ The following algorithm is used for reversing a linked list:
 */
 #include<bits/stdc++.h>
 using namespace std;
+
+//Defining the structure of a node 
 class Node{
     public:
     int data;
     Node *next;
 };
 class linked_list{
+    //Head points to the first node in the list
     Node *head;
     public:
     linked_list(){
         head = nullptr;
     }
+    
+    //This method inserts a node in the beginning of the list
     void insert_at_beginning(int data){
         if(head==nullptr){
             head = new Node;
@@ -35,6 +40,8 @@ class linked_list{
         new_node->next = head;
         head = new_node;
     }
+    
+    //This method prints the list
     void print_list(){
         Node *n = head;
         while(n!=nullptr){
@@ -55,17 +62,22 @@ class linked_list{
     }
 };
 int main(){
+    //Number of nodes
     int n; cin>>n;
     linked_list a;
     int value;
+    //Constructing the linked list 
     for(int i=0;i<n;i++){
         cin>>value;
         a.insert_at_beginning(value);
     }
     cout<<"Your list: "<<endl;
+    //Prints the inputed list
     a.print_list();
+    //Reverses the list
     a.reverse_list();
     cout<<"Reversed list "<<endl;
+    //Prints the reversed list
     a.print_list();
     return 0;
 }
@@ -105,6 +117,6 @@ Your list:
 Reversed list 
 10 20 30 40 50 60 70 80
 
-Time Complexity : O(n)
+Time Complexity : O(n) n is the number of nodes.
 Space Complexity : O(1)
 */
