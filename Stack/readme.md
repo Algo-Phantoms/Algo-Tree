@@ -27,4 +27,4 @@ element in a full stack is called **overflow**.
 
 - Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
 
-- Reverse individual words of a string ----> [C++](/Code/C++/reverseWordsOfString.cpp)
+- Reverse individual words of a string ----> [C++](/Code/C++/reverse_words_of_string.cpp)
