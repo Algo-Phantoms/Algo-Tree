@@ -26,4 +26,5 @@ element in a full stack is called **overflow**.
 -   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
 -   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
 -   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
+-   Stock Span Problem ----> [C++](/Code/C++/StockSpanProblem.cpp)
 
