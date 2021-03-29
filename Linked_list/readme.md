@@ -33,4 +33,4 @@ properties.
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
 * Implementation of Linked List ----> [Python](/Code/Python/linked_list.py)
 * Reversing LinkedList ----> [Java}(/Code/Java/Reversing_Linked_List.java)
-
+* Reversing a Linked List ----> [C++](/Code/C++/reverse_a_linked_list.cpp)
