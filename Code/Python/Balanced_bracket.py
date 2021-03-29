@@ -15,8 +15,8 @@ Approach:
 
 The following code checks if a sequence of brackets taken as input is balanced.
 '''
-# The following method takes a sequence of brackets 's' as an input parameter
-# The method returns 'Balanced' if 's' is a balanced sequence, otherwise 'Unbalanced' is returned
+    # The following method takes a sequence of brackets 's' as an input parameter
+    # The method returns 'Balanced' if 's' is a balanced sequence, otherwise 'Unbalanced' is returned
 def check(s):
     open_brackets = ["[","{","("]
     close_brackets = ["]","}",")"]
@@ -35,12 +35,11 @@ def check(s):
     else:
         return "Unbalanced"
 
-# Driver Code: Takes user input and prints the output
+    # Driver Code: Takes user input and prints the output
 sequence=input()
 print(check(sequence))
 
-# Time Complexity: O(N)
-# Space Complexity: O(N) (for auxillary stack used)
+
 '''
 Sample Test Cases :
     Input 1:
@@ -58,3 +57,5 @@ Sample Test Cases :
     Output 3:
     UnBalanced
 '''
+    # Time Complexity: O(N)
+    # Space Complexity: O(N) (for auxillary stack used)
