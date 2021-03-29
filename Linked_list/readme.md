@@ -35,3 +35,4 @@ properties.
 * Implementation of Linked List Class ----> [Python](/Code/Python/linked_list.py)
 * Implementation of Linked List ----> [Python](/Code/Python/linked_list.py)
 * Polynomial addition and multiplication using linked list ----> [C++](/Code/C++/polynomial_addition_multiplication.cpp)
+* Reversing a Linked List ----> [C++](/Code/C++/reverse_a_linked_list.cpp)
