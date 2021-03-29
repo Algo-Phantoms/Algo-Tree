@@ -69,9 +69,6 @@ int main()
 }
 
 /*
-Time Complexity = O(V^3)
-Space Complexity = O(V^2)
-
 ** Test Cases ** 
 
 >> Case - 1
@@ -136,7 +133,10 @@ The final distance matrix with shortest distance between every pair of vertices 
 11     5     0     7     
 12     6     1     0     
 
+Complexities
 
+Time Complexity = O(V^3)
+Space Complexity = O(V^2)
 */ 
  
 
