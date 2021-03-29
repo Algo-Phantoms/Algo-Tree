@@ -1,3 +1,4 @@
+
  # Number Theory
 
  #### Fundamentals
@@ -34,5 +35,7 @@
 
 <hr>
 
-## Questions :
 
+# Questions related to Number Theory
+
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
