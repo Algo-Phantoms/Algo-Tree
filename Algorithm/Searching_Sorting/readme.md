@@ -68,5 +68,7 @@ Following are the types of searches which we will be discussing in this book.
 * Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
 * Linear Search ----> [Python](/Code/Python/linearsearch.py)
+* Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
+
 
