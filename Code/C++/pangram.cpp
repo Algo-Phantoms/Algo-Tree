@@ -60,6 +60,11 @@ int main()
 
     return 0;
 }
+/* 
+    Input: str = “The quick brown fox jumps over the lazy dog”
+    
+    Output: Yes,the string is a pangram
+*/
 
 /*
 	
