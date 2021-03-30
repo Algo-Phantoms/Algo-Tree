@@ -19,9 +19,7 @@ Example: The given matrix is
             7 4 1
             8 5 2
             9 6 3
-        
-Time Complexity: O(m*n) where m and n are no of rows and columns respectively
-Space Complexity: O(1)
+    
 */ 
         
 #include<bits/stdc++.h>
@@ -122,8 +120,11 @@ signed main()
 }
 
 /* 
-Test Case:
 
+Time Complexity: O(m*n) where m and n are no of rows and columns respectively
+Space Complexity: O(1)
+
+Test Case:
 4
 5 8 9 7 
 3 4 2 1
@@ -141,5 +142,7 @@ Matrix rotated by 90degrees
 5 6 4 8 
 6 5 2 9 
 7 4 1 7 
+
+
 
 */
