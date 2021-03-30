@@ -47,23 +47,32 @@ class Node {
         Node* next;
 };
 
-Node* pointOfIntersection(Node* headA, Node* headB)                     //Utility function to find intersection of node of linked list
+//Utility function to find intersection of node of linked list
+Node* pointOfIntersection(Node* headA, Node* headB)                     
 {
-    if(headA==NULL || headB==NULL)                                      //If one of the head is NULL then the intersection point will be NULL (corner test case)
+    //If one of the head is NULL then the intersection point will be NULL (corner test case)
+    if(headA==NULL || headB==NULL)                                      
     {
         return NULL;
     }
 
-    Node* a = headA;                                                    //Initialising 2 pointers to head nodes
+    //Initialising 2 pointers to head nodes
+    Node* a = headA;                                                    
     Node* b = headB;
 
     while(a!=b)
     {
-        a = a == NULL ? headB : a->next;                                //If the pointer reaches end of the linked list that is it NULL then reassign it to head of another linked list 
-        b = b == NULL ? headA : b->next;                                //else move it to next node
+        /*If the pointer reaches end of the linked list that is it NULL then reassign it to head of another linked list 
+        else move it to next node*/
+        a = a == NULL ? headB : a->next;    
+
+        /*If there is a intersection node then the while loop breaks and returns the node   
+        else it returns NULL.*/                         
+        b = b == NULL ? headA : b->next;                                
     }
-    return a;                                                           //If there is a intersection node then the while loop breaks and returns the node
-                                                                        //else it returns NULL.
+
+    return a;                                                           
+                                                                        
 }
 
 
@@ -77,20 +86,24 @@ int main(){
     
     */
 
-    Node* headA = new Node();       //head node of 1st linked list
+   //head node of 1st linked list
+    Node* headA = new Node();       
     headA->val = 5;
 
-    Node* headB = new Node();       //head node of second linked list
+    //head node of second linked list
+    Node* headB = new Node();       
     headB->val = 7; 
 
     Node* newNode;
 
-    newNode = new Node();            //Creation of 2nd linked list     
+    //Creation of 2nd linked list  
+    newNode = new Node();               
     newNode->val = 8;
     headB->next = newNode;
 
 
-    newNode = new Node();           //Creation of 1st linked list
+    //Creation of 1st linked list
+    newNode = new Node();           
     newNode->val = 10;
     headA->next = newNode;
     headB->next->next=newNode;
@@ -107,7 +120,8 @@ int main(){
     newNode->val = 25;
     headA->next->next->next->next = newNode;
 
-    headA->next->next->next->next->next=NULL;      //Initialising tail of linked list to NULL
+    //Initialising tail of linked list to NULL
+    headA->next->next->next->next->next=NULL;      
     
     Node* point = NULL;
 
@@ -118,6 +132,10 @@ int main(){
     
 }
 
+/*
+    Time Complexity: O(n+m)
+    Auxillary Space Required: O(1)
+*/
 /* 
 Test Case:
 
