@@ -106,26 +106,33 @@ int main() {
 /*
 
 Input:
-      1         <-
-       \  
-        7       ->
-       / \
-      9   4     <-
+1 5 4 9 -1
 
 Output:
-1 7 4 9
+1 5 9 4
+
+Explanation:
+    1         <-
+     \  
+      5       ->
+     / \
+    4   9     <-
+
 
 Input:
-      1         <-
-     / \
-    5   7       ->
-       / \
-      6   4     <-
-         / \
-        2   3   ->
+2 1 4 3 6 5 7 -1
 
 Output:
-1 5 7 4 6 2 3
+2 1 4 6 3 5 7
+
+Explanation:
+      2         <-
+     / \
+    1   4      ->
+       / \
+      3   6     <-
+         / \
+        5   7   ->
 
 Time Complexity: O(Nodes)
 Space Complexity: O(Nodes)
