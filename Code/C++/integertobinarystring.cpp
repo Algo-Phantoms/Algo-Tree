@@ -1,3 +1,7 @@
+// this is a program  to change a integer to a binary string 
+
+
+
 #include<bits/stdc++.h>
 
 using namespace std;
@@ -27,3 +31,6 @@ int main() {
     cout<<"\nIts binary string is "<<decimalToBinary(N);
     return 0;
 }
+
+
+// time complexity of this is O(1) 
