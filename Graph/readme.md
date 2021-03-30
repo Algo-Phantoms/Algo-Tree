@@ -2,7 +2,7 @@
 
 A graph is a pair (V, E), where V is a set of nodes, called vertices, and £ is a collection of pairs of vertices, called **edges**.
 
-• Vertices and edges are positions and store elements
+• Vertices are the positions that store the elements and edges are lines that connects different vertices.
 
 ## Terms related to Graph
 
