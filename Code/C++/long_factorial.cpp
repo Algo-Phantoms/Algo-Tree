@@ -37,3 +37,21 @@ int main() {
     cout << "\n";
     return 0;
 }
+
+/*
+    Test Cases : 
+
+  1)Input  : 10
+    Output : 3628800
+
+  2)Input  : 20
+    Output : 2432902008176640000
+
+  3)Input  : 30
+    Output : 265252859812191058636308480000000
+
+    Time Complexity: O ( N ) (where N is the number which is the input)
+    Space Complexity: O ( N ) (where N is the number of digits present in the final answer)
+
+
+*/ 
