@@ -9,6 +9,7 @@
 
 using namespace std;
 
+// Function to find max value
 int maxValue(int A[], int n)
 {
 	int m = A[0];
@@ -21,8 +22,10 @@ int maxValue(int A[], int n)
 	return m;
 }
 
+// Function for Bucket Sort
 void BucketSort(int A[], int n)
 {
+	// Calling function get maximum value among all the elements
 	int maximum = maxValue(A, n);
 
 	//  Create empty bins
@@ -44,12 +47,19 @@ void BucketSort(int A[], int n)
 
 int main()
 {
-	int n;
+	int n; 
+	// Number of elements
 	cin >> n;
 	int A[n];
+
+	// Taking input of the elements
 	for (int i = 0; i < n; i++)
 		cin >> A[i];
+
+	// Calling function to sort the elements using Bucket Sort
 	BucketSort(A, n);
+
+	// Displaying Sorted Elements
 	for (int i = 0; i < n; i++)
 		cout << A[i] << " ";
 	return 0;
@@ -58,9 +68,13 @@ int main()
 /*
 
     Test Case:
-    Input:   	7
+    Input:   		7
               	4 63 1 53 87 44 36
     Output:   	1 4 36 44 53 63 87
+
+    Input:   		6
+              	5 3 12 7 21 4
+    Output:   	3 4 5 7 12 21
 
     Time Complexity:
     Worst Time Complexity: O(n^2)
