@@ -103,6 +103,7 @@ Output - ABC*+DE/H*-
 Input - (A+B)*C^D^E/(F-G)*H
 Output - AB+CDE^^*FG-/H* 
          
+n = number of characters of string including operands and operators
 Time Complexity: O(n)
 since the time for push and pop operations are considered constant
 
