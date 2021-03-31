@@ -73,8 +73,6 @@ int main()
 		4. 	Input : 1000
 			Output : 9079565065540428013	
 
-*/
-/*
 	Time Complexity 
 		Theta(N), Where N is the input number (the number of stairs).
 	Space Complexity 
