@@ -133,7 +133,8 @@ y child nodes=>
 
 
   """
-
+#Time complexity: O(n)          ->number of nodes
+#Space complexity: O(n)         ->number of nodes
 
 
 
