@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+	public:
+		int is_StrongNumber(int N)
+		{
+		    int p,d,s=0;
+           p=N;
+        while(N!=0){
+            d=N%10;
+            s+=factorial(d);
+            N/=10;
+        }
+        if(s==p){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+    int factorial(int D){
+        if(D==0 || D==1){
+            return 1;
+            
+        }
+        else{
+            return D*factorial(D-1);
+        }
+    }
+};
+
+int main(){
+    int T;
+    cin >> T;
+    while(T--)
+    {
+    	int n; 
+    	cin >> n;
+    	Solution ob;
+    	int ans = ob.is_StrongNumber(n);
+    	cout << ans <<"\n";
+    }
+	return 0;
+}
