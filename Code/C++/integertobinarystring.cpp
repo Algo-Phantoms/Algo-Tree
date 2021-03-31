@@ -1,4 +1,5 @@
 // this is a program  to change a integer to a binary string 
+// it takes integer as an input and changes it to binary string 
 
 
 
@@ -25,7 +26,7 @@ string decimalToBinary(ll n)
 
 
 int main() {
-    cout<<"Enter a binary number ";
+    cout<<"Enter a decimal integer ";
     int N;
     cin>>N;
     cout<<"\nIts binary string is "<<decimalToBinary(N);
@@ -33,4 +34,9 @@ int main() {
 }
 
 
-// time complexity of this is O(1) 
+// time complexity of this is O(1)
+// space complexity of this program is O(1)
+// example input - 13
+// example output - Its binary string is 1101
+// second example - 19
+// example output - Its binary string is 1001
