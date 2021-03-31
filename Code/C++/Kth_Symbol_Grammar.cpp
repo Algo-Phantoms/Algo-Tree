@@ -1,16 +1,16 @@
 /*
-Problem Statement:- First row has 0. Every 0 is changed to 01 and every 1 is changed to 10.
-Given n rows and index K (column), return the K-th indexed symbol in row n.
+	Problem Statement:- First row has 0. Every 0 is changed to 01 and every 1 is changed to 10.
+	Given n rows and index K (column), return the K-th indexed symbol in row n.
 
-n=1 0
-n=2 0 1
-n=3 0 1 1 0
-n=4 0 1 1 0 1 0 0 1
+	n=1 0
+	n=2 0 1
+	n=3 0 1 1 0
+	n=4 0 1 1 0 1 0 0 1
 
-INPUT:-  n= 4 K=3
-OUTPUT:- 1
-INPUT:-  n= 3 K=4
-OUTPUT:- 0
+	INPUT:-  n= 4 K=3
+	OUTPUT:- 1
+	INPUT:-  n= 3 K=4
+	OUTPUT:- 0
 */
 
 #include <bits/stdc++.h>
@@ -59,14 +59,14 @@ int main()
 
 /*
 
-Test cases: 4
-INPUT: 4 3
-OUTPUT: 1
-INPUT: 3 4
-OUTPUT: 0
-INPUT: 2 2
-OUTPUT: 1
-INPUT: 2 1
-OUTPUT: 0
+	Test cases: 4
+	INPUT: 4 3
+	OUTPUT: 1
+	INPUT: 3 4
+	OUTPUT: 0
+	INPUT: 2 2
+	OUTPUT: 1
+	INPUT: 2 1
+	OUTPUT: 0
 
 */
