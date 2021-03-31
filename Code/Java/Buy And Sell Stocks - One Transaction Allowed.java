@@ -32,3 +32,29 @@ public class Main {
     }
 
 }
+/* CONSTRAINTS */
+/*
+0 <= n <= 20
+0 <= n1, n2, .. <= 10
+*/
+
+/*   SAMPLE INPUT   */
+
+/*
+9
+11
+6
+7
+19
+4
+1
+6
+18
+4
+*/
+
+/*  SAMPLE OUTPUT*/
+
+/*
+17
+*/
