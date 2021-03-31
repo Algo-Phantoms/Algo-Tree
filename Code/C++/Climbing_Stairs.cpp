@@ -1,5 +1,4 @@
 /*
-	
 	Problem Description :
 		You are climbing a staircase. It takes n steps to reach the top.
 
@@ -8,7 +7,7 @@
 	Algorithm :
 		Solving Using Dynamic Programming Approach.
 		Sub-problem Formula of each trail : steps[i] = steps[i - 1] + steps[i - 2]
-		Extra Storage Size : N + 1 array
+		Extra Storage Size : No extra storage Required.
 */
 
 
@@ -18,32 +17,30 @@ using namespace std;
 long long ClimbStairs(int N) 
 {
 	/*
-	 * Declare an array to store the steps at each stair
-	 * Complexity = Theta(1)
+	 	Base Case : at the first stair (steps[0]) the number of ways to get there is 1
+	 	Base Case : at the second stair (steps[1]) the number of ways to get there is 2
 	*/
-	long long steps[N + 1];
+	if(N == 1)
+		return 1;
+
+	long long s1 = 1;
+	long long s2 = 2;
 
 	/*
-	 * Base Case : at the first stair (steps[0]) the number of ways to get there is 1
-	 * Base Case : at the second stair (steps[1]) the number of ways to get there is 2
-	 * Complexity = Theta(1)
+	 	Calculate the steps at the (i - 1)th stair according to this formula :
+	 	steps[i] = steps[i - 1] + steps[i - 2]
 	*/
-	steps[0] = 1;
-	steps[1] = 2;
+	for(int i = 2; i < N; i++)
+	{
+		long long tmp = s2;
+		s2 = s1 + s2;
+		s1 = tmp;		
+	}		
 
 	/*
-	 * Calculate the steps at the (i - 1)th stair according to this formula :
-	 * steps[i] = steps[i - 1] + steps[i - 2]
-	 * Complexity = Theta(n)
+	 	Return the steps at the final stair.
 	*/
-	for(int i = 2; i < N; i++)			
-	    steps[i] = steps[i - 1] + steps[i - 2];
-
-	/*
-	 * Return the steps at the final stair.
-	 * Complexity = Theta(1)
-	*/
-	return steps[N - 1];
+	return s2;
 }
 
 int main() 
@@ -61,17 +58,6 @@ int main()
 
   return 0;
 }
-
-/*
-	Time Complexity 
-		Theta(N), Where N is the input number (the number of stairs).
-*/
-
-/*
-	Space Complexity 
-		O(N), Where N is the input number (the number of stairs).
-*/
-
 /*
 	Test Cases
 
@@ -87,4 +73,10 @@ int main()
 		4. 	Input : 1000
 			Output : 9079565065540428013	
 
+*/
+/*
+	Time Complexity 
+		Theta(N), Where N is the input number (the number of stairs).
+	Space Complexity 
+		O(1), Where N is the input number (the number of stairs).
 */
