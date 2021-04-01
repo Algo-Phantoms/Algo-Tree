@@ -35,16 +35,16 @@ class Node{
     int value;
     Node* left,*right;
     Node(int val){
-      value=val;
-      left=NULL;
-      right=NULL;
+        value=val;
+        left=nullptr;
+        right=nullptr;
     }
 };
 
 // Function for level order traversal of the binary tree
 void PrintLevelOrder(Node* root){
     //if root is NUll return
-    if(root == NULL)
+    if(root == nullptr)
         return;
     queue<Node*>q;
     
@@ -60,9 +60,9 @@ void PrintLevelOrder(Node* root){
         cout<<temp->value<<" ";
         
         // Push it's non-NULL children to the back of the queue;
-        if(temp->left != NULL)
+        if(temp->left != nullptr)
             q.push(temp->left);
-        if(temp->right != NULL)
+        if(temp->right != nullptr)
             q.push(temp->right);
     }
     return;
@@ -71,7 +71,7 @@ void PrintLevelOrder(Node* root){
 // Function for level order traversal of each level individually in a binary tree
 void PrintLevelOrderIndividually(Node* root){
     // if root is NUll return
-    if(root == NULL)
+    if(root == nullptr)
         return;
     queue<Node*>q;
     
@@ -94,9 +94,9 @@ void PrintLevelOrderIndividually(Node* root){
             cout<<temp->value<<" ";
             
             // Push it's non-NULL children to the back of the queue;
-            if(temp->left != NULL)
+            if(temp->left != nullptr)
                 q.push(temp->left);
-            if(temp->right != NULL)
+            if(temp->right != nullptr)
                 q.push(temp->right);
         }
         
