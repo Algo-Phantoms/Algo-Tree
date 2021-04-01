@@ -6,6 +6,7 @@ Given an nxn sized incomplete Sudoku in which 0 represents an empty cell. The ta
 import java.util.Scanner;
 class Sudoku_Solver
 {
+	//A function to check whether a number between 1 to n can be placed at the specified cell or not
 	public static boolean CanPlace(int[][] mat, int n, int i, int j, int num)
 	{
 		//check for rows and columns
@@ -32,6 +33,7 @@ class Sudoku_Solver
 		return true;
 	}
 
+	//A function to solve the Sudoku, once solved it prints the solution and returns true, otherwise false
 	public static boolean SudokuSolver(int[][] mat, int n, int i, int j)
 	{
 		//base case
@@ -144,6 +146,6 @@ Enter elements of Sudoku:
 Output:
 No Solution!
 
-TIME COMPLEXITY:  O(9^(n*n)), as there will be 9 options from 1 to 9 to fill in an empty cell
-SPACE COMPLEXITY: O(n*n)
+TIME COMPLEXITY:  O(9^(n*n)), as there will be 9 options from 1 to 9 to fill in an empty cell.
+SPACE COMPLEXITY: O(n*n), where n denotes the size of Sudoku grid
 */
