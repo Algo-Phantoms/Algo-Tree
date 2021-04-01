@@ -23,7 +23,12 @@ def dutch_nat_algo(lst):
             high=high-1
     return lst
 
-lst=[2,2,2,1,2,2,2,1,1,1,0,2,0,1]
+#user input
+
+n=int(input("How many element you want Enter"))
+lst=[]
+for i in range(n):
+  lst.append(int(input())
 
 #calling the function
 sort_lst=dutch_nat_algo(lst)
@@ -31,7 +36,12 @@ sort_lst=dutch_nat_algo(lst)
 #print sorting list
 print(sort_lst)
 
+             
 '''
+      time complexity 0(n)
+      space complexity 0(1)
+
+
 test case-1
         lst=[0,1,2,2,1,1,2,0,1,2]
         Sort List:
