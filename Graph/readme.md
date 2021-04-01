@@ -42,3 +42,4 @@ A graph is a pair (V, E), where V is a set of nodes, called vertices, and £ is 
 - Kruskal Algorithm ----> [C++](/Code/C++/Kruskal.cpp) | [Java]() | [Python]()
 - Topological Sort ----> [C++](/Code/C++/Topological_sort.cpp) | [Java]() | [Python]()
 - Negative Cycle In weighted Graph (Using Bellman–Ford algorithm) ---> [C++](/Code/C++/negative_cycle_in_weighted_graph.cpp) | [Java]() | [Python]()
+- Bridge(Cut-Edge) ----> [C++](/Code/C++/bridge.cpp)
