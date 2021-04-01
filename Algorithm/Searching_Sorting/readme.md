@@ -57,6 +57,7 @@ Following are the types of searches which we will be discussing in this book.
 * Binary Search Trees 
 * Symbol Tables and Hashing
 * String Searching Algorithms: Tries, Ternary Search and Suffix Trees
+* Fibonacci Search:[c++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
 
 ## Questions :
 
