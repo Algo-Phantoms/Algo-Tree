@@ -39,4 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
-- Perform Basic operations like Addition,Subtraction,Multiplication,Division,Exponentiation on 10^500000 constraints ----> [C++](Code/C++/ModularArithmetic.cpp)
+- Perform Basic operations like Addition,Subtraction,Multiplication,Division,Exponentiation on 10^500000 constraints ----> [C++](/Code/C++/ModularArithmetic.cpp)
