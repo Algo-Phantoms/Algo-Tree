@@ -22,11 +22,6 @@ long long int datatybe, after gradually and simulteneously calulating modulo ope
    Hence mod B with M-1 to reduce the number to a smaller one and then use power() method to compute (a^b)%m. 
             
    
-TIME COMPLEXITY - 
-        to convert inputs into modular value it will take bits 500000*log(10) approx O(1).
-        
-        to calculate  addition subtraction multiplication the time complexity is O(1).
-        to calculate division and power it will take O(Log m) time complexity, where is modulo given, Since after converting long input string to a number it will be under 'm'.
 
 */
 
@@ -188,5 +183,12 @@ Ouput 2
 12
 1
 6
-*/
 
+
+
+TIME COMPLEXITY - 
+        to convert inputs into modular value it will take bits 500000*log(10) approx O(1).
+        
+        to calculate  addition subtraction multiplication the time complexity is O(1).
+        to calculate division and power it will take O(Log m) time complexity, where is modulo given, Since after converting long input string to a number it will be under 'm'.
+*/
