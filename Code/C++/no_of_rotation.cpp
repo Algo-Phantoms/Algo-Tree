@@ -25,7 +25,7 @@ int noOfRotation(int arr[], int n)
     //declaring and initializing two pointers l and r
     //pointing to the leftmost and rightmost element respectively.
     int l = 0, r = n - 1;
-    //iterating the elements until i is less than equal to r
+    //iterating the elements until l is less than equal to r
     while (l <= r) {
 
         if (arr[l] <= arr[r])
@@ -87,7 +87,7 @@ Test Cases:
   * Output :-
     Number of times sorted array is rotated: 3
 
-  * Time complexity: O(n)
-  * Space Complexity: O(n)
+  * Time complexity: O(Log n)
+  * Space Complexity: O(1)
 
 */
