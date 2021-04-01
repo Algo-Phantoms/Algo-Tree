@@ -3,6 +3,10 @@
   with using any sorting algorithms.
   Time Complexity O(n)
   Space complexity O(1)
+
+   Sample Inputs
+    lst=[0,1,2,2,1,1,2,0,1,2]
+    lst=[2,2,2,2,1,1,1,1,0,0,0]
 '''
 
 
@@ -42,13 +46,15 @@ print(sort_lst)
       space complexity 0(1)
 
 
-test case-1
-        lst=[0,1,2,2,1,1,2,0,1,2]
+  Sample Output
+  
+  test case-1
+        
         Sort List:
         lst=[0,0,1,1,1,1,2,2,2,2]
 
-test case-2
-        lst=[2,2,2,2,1,1,1,1,0,0,0]
+  test case-2
+        
         Sort List
         lst=[0,0,0,1,1,1,1,2,2,2,2]
 '''
