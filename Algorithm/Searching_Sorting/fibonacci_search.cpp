@@ -1,4 +1,3 @@
-
 /*
 Fibonacci search is an efficient search algorithm based on:
 --> divide and conquer principle that can find an element in the given sorted array. */
