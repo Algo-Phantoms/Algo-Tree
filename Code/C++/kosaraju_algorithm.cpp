@@ -197,9 +197,9 @@ Input 2:
 9 10
 
 Output 2:
-2 3 4 1
 6 7 5
 10
+2 3 4 1
 9 8
 
 Time Complexity: O(V + E) – where V is the number of vertices and E is the number of edges.
