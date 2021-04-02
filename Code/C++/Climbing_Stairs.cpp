@@ -16,30 +16,28 @@ using namespace std;
 
 long long ClimbStairs(int N) 
 {
-	/*
-	 	Base Case : at the first stair (steps[0]) the number of ways to get there is 1
-	 	Base Case : at the second stair (steps[1]) the number of ways to get there is 2
-	*/
+	
+	// Base Case : at the first stair (steps[0]) the number of ways to get there is 1
+	// Base Case : at the second stair (steps[1]) the number of ways to get there is 2
 	if(N == 1)
 		return 1;
 
 	long long s1 = 1;
 	long long s2 = 2;
 
-	/*
-	 	Calculate the steps at the (i - 1)th stair according to this formula :
-	 	steps[i] = steps[i - 1] + steps[i - 2]
-	*/
+	// Calculate the steps at the (i - 1)th stair according to this formula :
+	// steps[i] = steps[i - 1] + steps[i - 2]
+	
+	// starting from the third stair, calculate the number of ways to reach stair i according to the previous formula 
 	for(int i = 2; i < N; i++)
 	{
+		// calculate s2 and update s1 to be equal the previous s2
 		long long tmp = s2;
 		s2 = s1 + s2;
 		s1 = tmp;		
 	}		
 
-	/*
-	 	Return the steps at the final stair.
-	*/
+	//Return the steps at the final stair.
 	return s2;
 }
 
