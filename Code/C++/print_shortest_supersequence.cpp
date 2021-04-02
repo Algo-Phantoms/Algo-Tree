@@ -170,5 +170,6 @@ Sample Test cases :-
 
   Time Complexity: O(m*n)
   Space Complexity: O(m*n)
+  where m and n are lengths of string s1 and s2 respectively.
 
 */
