@@ -11,7 +11,7 @@ The task is to take all those disks from one rod to some other rod following the
      --|--         |           |       ---->       |           |         --|--     
     ---|---        |           |                   |           |        ---|---    
    =========   =========   =========           =========   =========   =========   
-		A			B			C					A			B			C
+      A		   B		C		   A	       B	   C
 
  Program will print the source and destination to transfer each disks for all the steps in chronological order.'''
 
