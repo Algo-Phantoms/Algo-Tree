@@ -15,11 +15,8 @@ Right side view: 44 71 4 28
    to modify level order traversal to maintain nodes at the current level. Then if the current node is the last node of the
    current level , Print it.
 */
+import java.util.*;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
- 
-// A class to store a binary tree node
 class Node
 {
     int key;
@@ -29,10 +26,29 @@ class Node
         this.key = key;
     }
 }
- 
-class Main
-{
-    // Iterative function to print the right view of a given binary tree
+
+public class Right_Side_View_Of_BinaryTree{
+
+	public static Scanner sc=new Scanner(System.in);
+
+	public static Node BuildTree(){
+
+	//user inputs the values in preorder and enters -1 to denote a null node
+	int d=sc.nextInt();
+	
+	if(d == -1)
+		return null;
+
+	//A new node created with value d
+	Node root = new Node(d);
+
+	//Recursive call to the left and right child of the root
+	root.left = BuildTree();
+	root.right = BuildTree();
+
+	return root;
+}
+
     public static void printRightView(Node root)
     {
         // return if the tree is empty
@@ -75,20 +91,13 @@ class Main
             }
         }
     }
- 
-    public static void main(String[] args)
-    {
-        Node root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
-        root.left.right = new Node(4);
-        root.right.left = new Node(5);
-        root.right.right = new Node(6);
-        root.right.left.left = new Node(7);
-        root.right.left.right = new Node(8);
- 
-        printRightView(root);
-    }
+
+	public static void main(String[] args) {
+		
+		Node root = BuildTree();
+		printRightView(root);
+
+	}
 }
 
 /*
