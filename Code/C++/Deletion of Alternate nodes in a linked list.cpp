@@ -10,15 +10,18 @@ Traverse the list and unlink/delete and free data of every node at even position
 
 #include <iostream>
 #include <stdlib.h>
+#include <cstddef>
+
 using namespace std;
 
-struct node{
-int data;
-node *next;
+class Node{
+public:
+    int data;
+    Node *next;
 };
 
-struct node* head=NULL;
-struct node* tail=NULL;
+Node* head=nullptr;
+Node* tail=nullptr;
 
 void create(int n)
 {
@@ -26,19 +29,19 @@ void create(int n)
     {
         int x;
         cin>>x;
-        if (head==NULL)
+        if (head==nullptr)
         {
-            node* temp=new node;
+            Node* temp=new Node;
             temp->data=x;
-            temp->next=NULL;
+            temp->next=nullptr;
             head=temp;
             tail=head;
         }
         else
         {
-            node* temp=new node;
+            Node* temp=new Node;
             temp->data=x;
-            temp->next=NULL;
+            temp->next=nullptr;
             tail->next=temp;
             tail=temp;
         }
@@ -48,18 +51,18 @@ void create(int n)
 
 void alternate_delete()
 {
-    if(head==NULL)
+    if(head==nullptr)
     {
         return;
     }
-    node *temp1=head;
-    node *temp2=head->next;
-    while(temp2!=NULL&&temp1!=NULL)
+    Node *temp1=head;
+    Node *temp2=head->next;
+    while(temp2!=nullptr && temp1!=nullptr)
     {
         temp1->next=temp2->next;
         free(temp2);
         temp1=temp1->next;
-        if(temp1!=NULL)
+        if(temp1!=nullptr)
         {
             temp2=temp1->next;
         }
@@ -68,8 +71,8 @@ void alternate_delete()
 
 void display()
 {
-    node* temp=head;
-    while(temp!=NULL)
+    Node* temp=head;
+    while(temp!=nullptr)
     {
         cout<<temp->data<<"->";
         temp=temp->next;
