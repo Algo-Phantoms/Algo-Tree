@@ -22,7 +22,7 @@ public:
 	node* left;
 	node* right;
 
-				// constructor
+	// constructor
 	node(int x){				
 		data = x;
 		left = nullptr;
@@ -33,7 +33,7 @@ public:
 
 node* Insert_into_bst(node* root, int data){
 
-				// make new node
+	// make new node
 	if(root == nullptr){				
 		root = new node(data);
 		return root;
@@ -50,7 +50,7 @@ node* Insert_into_bst(node* root, int data){
 }
 node* Create_BST(){
 
-				// root node
+	// root node
 	int data;				
 	cin >> data;
 
@@ -96,14 +96,14 @@ int main(){
 }
 
 /* 
- Test Case :
+	Test Case :
 
- Input : 1 2 3 4 5 6 -1
- 4
+	Input : 1 2 3 4 5 6 -1
+	4
 
- Outout : true
+	Outout : true
 
- Time Complexity: O(n), in worst case (when BST is a right skew tree).
-Space Complexity: O(n), for recursive stack.
+	Time Complexity: O(n), in worst case (when BST is a right skew tree).
+	Space Complexity: O(n), for recursive stack.
 
  */

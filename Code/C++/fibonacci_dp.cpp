@@ -10,13 +10,13 @@ using namespace std;
 
 
 int top_down(int n, int dp[]){
-				// save
+	// save
 	if(n==0 || n==1){
 		dp[n] = n;				
 		return dp[n];
 	}
 
-				// check
+	// check
 	if(dp[n]!=-1){				
        return dp[n];
 	}
@@ -30,12 +30,12 @@ int top_down(int n, int dp[]){
 int bottom_up(int n){
 	int dp[100];				
 
-				// initialization with base case
+	// initialization with base case
 	dp[0] = 0;				
 	dp[1] = 1;
 
 	for(int i=2;i<=n;i++){
-					// recursive relation
+	// recursive relation
 		dp[i] = dp[i-1] + dp[i-2];				
 	}
 
@@ -47,7 +47,8 @@ int main() {
     int dp[100];
 
     cin >> n;
-    			//initilize with -1 
+    
+    //initilize with -1 
     for(int i=0;i<100;i++){				
     	dp[i] = -1;
     }
@@ -59,14 +60,14 @@ int main() {
 }
 
 /* 
- Test Case : 
+	Test Case : 
 
- Input : 4
- 
- Output : 
- Top down - 3
- Bottom up - 3
+	Input : 4
 
- Time Complexity: O(n)
- Space Complexity: O(n)
+	Output : 
+	Top down - 3
+	Bottom up - 3
+
+	Time Complexity: O(n)
+	Space Complexity: O(n)
 */

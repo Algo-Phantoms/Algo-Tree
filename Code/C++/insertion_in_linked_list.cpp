@@ -27,7 +27,9 @@ class node{
   public:
   	int data;
   	node* next;
-  	 node(int x){ 				//constructor
+
+  	//constructor
+  	 node(int x){ 				
        data = x;
        next = nullptr;
   	 }
@@ -38,14 +40,19 @@ class  LinkedList{
 public:
 	node* head;
 	node* tail;
-	 LinkedList(){				//constructor
+
+	//constructor
+	 LinkedList(){				
 	 	head = nullptr;
 	 	tail = nullptr;
 	 }
 	void insertion_at_head(int x){
 		
-		node* n = new node(x);				// node create
-		if(head == nullptr){				//only one node
+		// node create
+		node* n = new node(x);
+			
+		//only one node			
+		if(head == nullptr){				
 			head = n;
 			tail = n;
 		}
@@ -56,7 +63,9 @@ public:
 	}
 	void insertion_at_tail(int x){
 		node* n = new node(x);
-		if(head == nullptr){				//only one node
+
+		//only one node
+		if(head == nullptr){				
 			head = n;
 			tail = n;
 		}
@@ -132,25 +141,25 @@ int main() {
 
 /* 
 
-Test case : 
+	Test case : 
 
-Input : 
-5
-6
-7 3
+	Input : 
+	5
+	6
+	7 3
 
-Output : 
-4 3 2 1 
-4 3 2 1 6 
-4 3 7 2 1 6 
-6
+	Output : 
+	4 3 2 1 
+	4 3 2 1 6 
+	4 3 7 2 1 6 
+	6
 
-Time Complexity :
+	Time Complexity :
 
-Insertion at start : O(1)
-Insertion at end : O(N)
-Insertion at random position : O(N) 
+	Insertion at start : O(1)
+	Insertion at end : O(N)
+	Insertion at random position : O(N) 
 
-Space Complexity : O(N)
+	Space Complexity : O(N)
 
 */

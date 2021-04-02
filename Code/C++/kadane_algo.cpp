@@ -27,7 +27,8 @@ main()
     cin.tie(NULL);
 	
 	ll int n,maxs;
-				// no of elements in the array
+
+	// no of elements in the array
 	cin>>n;
 				
 	    
@@ -36,36 +37,36 @@ main()
 	for(i=0;i<n;i++)
 	{
 
-				// array input
+		// array input
 	    cin>>arr[i];
 		
-				// complete sum of the array 
+		// complete sum of the array 
 		sum += arr[i];
 		
-					// no of positive values
+		// no of positive values
 	    if(arr[i] >=0 )
 	    pos++;
 		
-				// no of negative values  
+		// no of negative values  
 	    else
 	    neg++;
 		
 	}
 	    
-				// if all elements are positive   
+	// if all elements are positive   
 	if(pos == n)
 	
 	printf("%lld\n",sum);
 	 
-				// if all elements are negative   
+	// if all elements are negative   
 	else if(neg == n)
 	
 	{
-					// find the largest element
+		// find the largest element
 	    for(i = 0; i<n; i++)
 	    maxi = max(maxi , arr[i]);
 		
-				// print the largest elements   
+		// print the largest elements   
 	    printf("%lld\n",maxi);
 		
 	}
@@ -76,7 +77,8 @@ main()
 	        
 	    for(i=0; i<n; i++)
 	    {
-	    				// if variable becomes negative, reset left to 0
+	    	
+	    	// if variable becomes negative, reset left to 0
 	        if( left + arr[i] <=0 )
 							
 	        {        
@@ -93,29 +95,31 @@ main()
 	        }
 	            
 	    }
-	    			// print the answer
+
+	    // print the answer
 	    printf("%lld\n",maxs);
 		
 	}
 }
+
 /*
-Testcase
+	Testcase
 
-Input :
+	Input :
 
-5
-4 1 -3 7 12
+	5
+	4 1 -3 7 12
 
-Output : 21
+	Output : 21
 
-Input :
+	Input :
 
-6
--1 -4 -5 8 7 9
+	6
+	-1 -4 -5 8 7 9
 
-Output : 24
+	Output : 24
 
-Time complexity : O(n) in average case
-Space complexity : O(1)
+	Time complexity : O(n) in average case
+	Space complexity : O(1)
 
 */

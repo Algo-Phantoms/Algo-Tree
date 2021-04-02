@@ -7,6 +7,7 @@ This process ends when we have got all N vertices of the Graph under considerati
 
 Following is The Core Implementation of Kruskal Algorithm
 */
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -145,53 +146,54 @@ int main()
 
 /*
 
-Test Cases:
+    Test Cases:
 
-Input 1 : 
-14 9
-0 1 4 
-0 7 8 
-1 2 8 
-1 7 11 
-2 3 7 
-2 8 2 
-2 5 4 
-3 4 9 
-3 5 14 
-4 5 10 
-5 6 2 
-6 7 1 
-6 8 6 
-7 8 7
+    Input 1 : 
+    14 9
+    0 1 4 
+    0 7 8 
+    1 2 8 
+    1 7 11 
+    2 3 7 
+    2 8 2 
+    2 5 4 
+    3 4 9 
+    3 5 14 
+    4 5 10 
+    5 6 2 
+    6 7 1 
+    6 8 6 
+    7 8 7
 
-Output 1 : 
+    Output 1 : 
 
-Edges from Minimum Spanning Tree:
-6 7 -> It's Weight is 1
-2 8 -> It's Weight is 2
-5 6 -> It's Weight is 2
-0 1 -> It's Weight is 4
-2 5 -> It's Weight is 4
-2 3 -> It's Weight is 7
-0 7 -> It's Weight is 8
-3 4 -> It's Weight is 9
-
-
-Input 2 :
-5 4
-0 1 10
-0 2 6
-0 3 5
-1 3 15
-2 3 4
-
-Output 2 :
-Edges from Minimum Spanning Tree:
-2 3 -> It's Weight is 4
-0 3 -> It's Weight is 5
-0 1 -> It's Weight is 10
+    Edges from Minimum Spanning Tree:
+    6 7 -> It's Weight is 1
+    2 8 -> It's Weight is 2
+    5 6 -> It's Weight is 2
+    0 1 -> It's Weight is 4
+    2 5 -> It's Weight is 4
+    2 3 -> It's Weight is 7
+    0 7 -> It's Weight is 8
+    3 4 -> It's Weight is 9
 
 
-Time Complexity: O(E log V)
-Space Complexity: O(E + V)
+    Input 2 :
+    5 4
+    0 1 10
+    0 2 6
+    0 3 5
+    1 3 15
+    2 3 4
+
+    Output 2 :
+    Edges from Minimum Spanning Tree:
+    2 3 -> It's Weight is 4
+    0 3 -> It's Weight is 5
+    0 1 -> It's Weight is 10
+
+
+    Time Complexity: O(E log V)
+    Space Complexity: O(E + V)
+    
 */

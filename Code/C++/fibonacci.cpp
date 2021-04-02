@@ -22,12 +22,12 @@ int main() {
 
 /* 
 
-Test case :
+	Test case :
 
-Input : 7
-Output : 13
+	Input : 7
+	Output : 13
 
-Time complexity: O(2^n)
-Space Complexity: O(n)
+	Time complexity: O(2^n)
+	Space Complexity: O(n)
 
 */

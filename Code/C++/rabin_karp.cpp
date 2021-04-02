@@ -5,30 +5,30 @@ using namespace std;
 const int mod = 1e9+7;
 const int p = 31;
 
-        // binary exponentiation(a^b %m) - o(log b)
+// binary exponentiation(a^b %m) - o(log b)
 int powr(int a, int b){ 
-     int res = 1;
-     while(b){
+    int res = 1;
+    while(b){
 
-       if(b & 1LL){
+        if(b & 1LL){
           res *= a;
           res %= mod;
-       }
-       b /= 2;
-       a *= a;
-       a %= mod;
-     }
-     return res;
+        }
+            b /= 2;
+            a *= a;
+            a %= mod;
+    }
+    return res;
 }
 
 int inv(int a){ 
    
-        //a^-1 % m
-        //fermats little theorem
+    //a^-1 % m
+    //fermats little theorem
 	return powr(a, mod-2); 
 }
 
-                // hash function
+// hash function
 int poly_hash_string(string s){ 
    
    int p_powr = 1;
@@ -55,23 +55,23 @@ int32_t main(){
 
     int text_hash = poly_hash_string(text.substr(0,m));
 
-                // found at index 0
+    // found at index 0
     if( text_hash == pat_hash){ 
        cout<<0;
     }
 
-                // rolling hash
+    // rolling hash
     for(int i=1;i+m <= n;i++){ 
        int new_hash = text_hash;
-                //[i-1] th
-                // removed the [i-m] char
+        //[i-1] th
+        // removed the [i-m] char
        new_hash = (new_hash - (text[i-1] - 'a' + 1) + mod) % mod;
 
-                //divide by p (make 1 power less)
+        //divide by p (make 1 power less)
        new_hash *= inv(p);
        new_hash %= mod;
 
-                //add 
+        //add 
        new_hash = new_hash + (text[i+m-1] - 'a' + 1) * powr(p, m-1);
        new_hash %= mod;
 
@@ -84,4 +84,8 @@ int32_t main(){
    return 0;
 }
 
-/* Output - 0*/
+/* 
+
+Output : 0
+
+*/
