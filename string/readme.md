@@ -11,11 +11,6 @@ A string is a class that contains a char array, but automatically manages it for
 
 <hr>
 
-# Minimum number of deletions to make pallindrome:
-
-There are two methods:
-
-- A simple solution is to remove all subsequences one by one and check if the remaining string is palindrome or not. The time complexity of this solution is exponential.
-
-- An efficient approach uses the concept of finding the length of the longest palindromic subsequence of a given sequence. 
-
+## Questions :
+* Revere a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
+* Number of deletions to make a string pallindrome ---->[Python](/string/Number_of_deletions_to_make_pallindrome.py)
