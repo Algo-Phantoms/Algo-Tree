@@ -47,6 +47,7 @@ that, this property should be satisfied at every node in the tree.
 * Sorting the elements of binary search tree and many more
 
 ## Questions :
+* AVL Tree ----> [C++](/Code/C++/avl_tree.cpp) 
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
 
