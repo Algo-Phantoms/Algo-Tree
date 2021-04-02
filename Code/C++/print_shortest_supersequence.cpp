@@ -131,46 +131,44 @@ Sample Test cases :-
   Length of Shortest Common SuperSequence: 7
   
   EXPLAINATION:-
-  * For s1 = "a c b c f" and s2 = "a b c d a f"
-  * and LCS matrix for this is :
-  *      #   a   b   c   d   a   f  <=== [s2]
-  * #    0   0   0   0   0   0   0
-  * a    0   1   1   1   1   1   1
-  * c    0   1   1   2   2   2   2
-  * b    0   1   2   2   2   2   2
-  * c    0   1   2   3   3   3   3
-  * f    0   1   2   3   3   3   4
-  * /\
-  * ||
-  * [s1]
-  *
-  * Now within this matrix we know if both characters are matching we have
-  * to include it's value just once.
-  *
-  * I am starting from matrix[s1.length()][s2.length()] to print the Shortest
-  * Common SuperSequence.
-  *
-  * So in this matrix[f][f] = 4.
-  * if you notice [f] == [f] hence this value must have came from left diagonal
-  * include this f in our result and move to leftDiagonal.
-  *
-  * Now compare matrix[c][a] = 3. [c] != [a]
-  * So we have to move to the max of top or left value, that's the only 2 choice.
-  * and we have to put in the result.
-  *
-  *
-  *
-  *  matrix[f][f] = 4   : Result[f]
-  *  matrix[c][a] = 3   : Result[a f]
-  *  matrix[c][d] = 3   : Result[d a f]
-  *  matrix[c][c] = 3   : Result[c d a f]
-  *  matrix[b][b] = 2   : Result[b c d a f]
-  *  matrix[c][a] = 1   : Result[c b c d a f]
-  *  matrix[a][a] = 1   : Result[a c b c d a f]  ===> this is our ShortestCommonSuperSequence.
-  *
+  For s1 = "a c b c f" and s2 = "a b c d a f"
+  and LCS matrix for this is :
+       #   a   b   c   d   a   f  <=== [s2]
+  #    0   0   0   0   0   0   0
+  a    0   1   1   1   1   1   1
+  c    0   1   1   2   2   2   2
+  b    0   1   2   2   2   2   2
+  c    0   1   2   3   3   3   3
+  f    0   1   2   3   3   3   4
+  /\
+  ||
+  [s1]
+ 
+  Now within this matrix we know if both characters are matching we have
+  to include it's value just once.
+ 
+  I am starting from matrix[s1.length()][s2.length()] to print the Shortest
+  Common SuperSequence.
+ 
+  So in this matrix[f][f] = 4.
+  if you notice [f] == [f] hence this value must have came from left diagonal
+  include this f in our result and move to leftDiagonal.
+ 
+  Now compare matrix[c][a] = 3. [c] != [a]
+  So we have to move to the max of top or left value, that's the only 2 choice.
+  and we have to put in the result.
+
+   matrix[f][f] = 4   : Result[f]
+   matrix[c][a] = 3   : Result[a f]
+   matrix[c][d] = 3   : Result[d a f]
+   matrix[c][c] = 3   : Result[c d a f]
+   matrix[b][b] = 2   : Result[b c d a f]
+   matrix[c][a] = 1   : Result[c b c d a f]
+   matrix[a][a] = 1   : Result[a c b c d a f]  ===> this is our ShortestCommonSuperSequence.
+ 
          
 
-* Time Complexity: O(m*n)
-* Space Complexity: O(m*n)
+  Time Complexity: O(m*n)
+  Space Complexity: O(m*n)
 
 */
