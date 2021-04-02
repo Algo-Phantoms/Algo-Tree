@@ -23,10 +23,11 @@ void ShortestSupersequence(string s1, string s2)
     int m = s2.length();
     //constructing an 2D matrix of size n+1 and m+1
     int dp[n + 1][m + 1];
-
+    //base condition
+    //initializing the first row and first column as 0
     for (int i = 0; i <= n; i++)
-        for (int j = 0; j <= m; j++) { //base condition
-            //initializing the first row and first column as 0
+        for (int j = 0; j <= m; j++) { 
+            
             if (i == 0 || j == 0)
                 dp[i][j] = 0;
         }
@@ -129,6 +130,7 @@ Sample Test cases :-
   Shortest Common Supersequence: acdcdaf
   Length of Shortest Common SuperSequence: 7
   
+  EXPLAINATION:-
   * For s1 = "a c b c f" and s2 = "a b c d a f"
   * and LCS matrix for this is :
   *      #   a   b   c   d   a   f  <=== [s2]
