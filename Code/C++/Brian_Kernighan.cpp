@@ -52,15 +52,15 @@ int main(){
     cout << ans << "\n";
 }
 
-/* TEST CASES
+/* Test case : 
     1) input   : 32
        output  : 1
     2) input   : 39
        output  : 4
 
-        TIME COMPLEXITY -> O(n) where n is No. of set bits in input.
+        Time Complexity -> O(n) where n is No. of set bits in input.
         
-        SPACE COMPLEXITY -> O(1)
+        Space Complexity -> O(1)
 
 */
 
