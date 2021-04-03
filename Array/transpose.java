@@ -36,7 +36,7 @@ public class transpose
                       matrix[count1][count]=swap;
 		}
            }
-	   System.out.println();
+	   System.out.println("Transpose:");
 	   for(int row1=0;row1<order;row1++)
            {
                 for(int column1=0;column1<order;column1++)
@@ -48,3 +48,38 @@ public class transpose
         
        }
 }
+/*        Output:
+Test Case 1:
+
+Enter the order of square matrix
+5
+Enter the elements of the matrix
+23 43 89 67 5
+34 54 56 7 89
+57 96 42 87 9
+79 34 32 1 23
+46 7 78 3 65
+Transpose:
+23 34 57 79 46
+43 54 96 34 7
+89 56 42 32 78
+67 7 87 1 3
+5 89 9 23 65
+
+Test Case 2:
+
+Enter the order of square matrix
+3
+Enter the elements of the matrix
+34 87 58
+33 5 6
+563 65 5
+
+34 33 563
+87 5 65
+58 6 5
+
+Time Complexity: O(n2)
+Space Complexity: O(1)
+*/
+
