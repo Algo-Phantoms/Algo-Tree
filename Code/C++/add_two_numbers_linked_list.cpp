@@ -94,24 +94,29 @@ int main(){
 return 0;
 }
 
-/*Input 
-a)
-1    // No. of testcases
-2    // No. of Nodes in List 1
-9 5  // represents number 95
-2    // No. of Nodes in List 2
-8 3  // represents number 83
-Output 
-1 7 8  // 95 + 83 = 178
+/* 
+Test Case 1:
 
-b)
-1    // No. of testcases
-3    // No. of Nodes in List 1
-1 9 5  // represents number 195
-3    // No. of Nodes in List 2
-2 0 6  // represents number 206
-Output 
-2 0 6  // 195 + 206 = 401
+Input :
+1
+2
+9 5 
+2    
+8 3  
+Output  :
+1 7 8 
+
+
+Test Case 2:
+
+Input :
+1    
+3    
+1 9 5
+3    
+2 0 6 
+Output : 
+2 0 6 
 
 Time Complexity: O(m + n) // m, n are the no. of nodes
 Space Complexity: O(m + n)
