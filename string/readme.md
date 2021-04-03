@@ -13,4 +13,4 @@ A string is a class that contains a char array, but automatically manages it for
 
 ## Questions :
 
-- Removing Duplicacy of characters from a word ---->[Java](/Code/Java/Remove_duplicacy_from_word.java)
+- 
