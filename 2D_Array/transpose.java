@@ -5,7 +5,6 @@ Approach: An arbitrary variable is taken which stores the array element of mth r
 It is then swapped with the array element corresponding to nth row and mth column. 
 This process is continued till the last element.
 */
-//mypack;
 import java.util.Scanner;
 public class transpose
 {
