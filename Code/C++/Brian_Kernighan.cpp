@@ -58,7 +58,7 @@ int main(){
     2) input   : 39
        output  : 4
 
-        Time Complexity -> O(n) where n is No. of set bits in input.
+        Time Complexity -> O(n) where n is number of set bits in input.
         
         Space Complexity -> O(1)
 
