@@ -1,19 +1,15 @@
 /*
+
  * DAG--> Directed Acyclic Graph
  * We will be given a Weighted Directed Acyclic Graph (DAG) and a source vertex 's' in it,
  * we have to find the longest distances from 's' to all other vertices in the given graph.
 
  * Concept Required--
    1) Topological Sort
-   2) Graph will be Directed
+   2) Graph will be Directed 
 
 
 */
-
-
-
-
-
 #include<bits/stdc++.h>
 #define int             long long int
 #define pb              push_back
@@ -137,9 +133,3 @@ Time Complexity-- O(V+E), where V = No. of Vertex and E = No. of Edges
 Space Complexity-- O(V), where V = No. of vertex, (assuming input graph is given)
 
 */
-    
-
-
-
-
-
