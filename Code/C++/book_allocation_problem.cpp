@@ -15,9 +15,7 @@ If a current mid can be a solution, then we search on the lower half, else we se
 
 Now the question arises, how to check if a mid value is feasible or not? Basically, we need to check if we can assign pages to all students in a way that the maximum number doesn't exceed current value. 
 To do this, we sequentially assign pages to every student while the current number of assigned pages doesn't exceed the value. In this process, if the number of students becomes more than m, then the solution is not feasible. Else feasible.
-
 */
-
 // Code in C++
 
 #include<bits/stdc++.h>
@@ -71,17 +69,15 @@ int main()
 	return 0;
 }
 /*
-
 Time Complexity: O(Nlog(N))
 Space Complexity: O(1)
-
 
 Test Case:
 
 Input 1:
-N = 4
-Array[] = {12,34,67,90}
-M = 2
+4
+12 34 67 90
+2
 
 Output 1:
 113  
@@ -95,9 +91,9 @@ Therefore, the minimum of these cases is
 113, which is selected as the output.
 
 Input 2:
-N = 3
-Array[] = {15,17,20}
-M = 2
+3
+15 17 20
+2
 
 Output 2:
 32

@@ -71,5 +71,4 @@ Following are the types of searches which we will be discussing in this book.
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
-
-
+* Book Allocation Problem ----> [C++](/Code/C++/book_allocation_problem.cpp)
