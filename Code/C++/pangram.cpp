@@ -2,10 +2,10 @@
 	 A string is a pangram if the string contains all the English alphabet letters.
 	 Given a string , the task is to check whether that string is pangram or not.
 	 
-	 	Input: str = �The quick brown fox jumps over the lazy dog�
+	 	Input: str = The quick brown fox jumps over the lazy dog�
 		Output: Yes
 		
-		Input: str = �We promptly judged antique ivory buckles for the prize�
+		Input: str = We promptly judged antique ivory buckles for the prize�
 		Output: No
 
 */
@@ -65,7 +65,10 @@ int main()
     
     Output: Yes,the string is a pangram
 */
-
+/*
+    Input: str ="We promptly judged antique ivory buckles for the prize"
+    Output: No,the string is not a pangram
+*/		
 /*
 	
 	Time Complexity: O(N), where N is the length of the string.
