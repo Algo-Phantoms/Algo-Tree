@@ -61,16 +61,13 @@ int main()
     return 0;
 }
 /* 
-    Input: str = “The quick brown fox jumps over the lazy dog”
-    
+    Input: str = “The quick brown fox jumps over the lazy dog”  
     Output: Yes,the string is a pangram
-*/
-/*
+
     Input: str ="We promptly judged antique ivory buckles for the prize"
     Output: No,the string is not a pangram
 */		
 /*
-	
 	Time Complexity: O(N), where N is the length of the string.
 	Auxiliary Space: O(1)
 */
