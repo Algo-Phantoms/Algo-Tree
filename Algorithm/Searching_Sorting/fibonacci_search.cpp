@@ -5,7 +5,6 @@ Fibonacci search is an efficient search algorithm based on:
 Algorithm --->
 
 Let the length of given array be n [0...n-1] and the element to be searched be x.
-
 Then we use the following steps to find the element with minimum steps:
 
 1) Find the smallest Fibonacci number greater than or equal to n.
