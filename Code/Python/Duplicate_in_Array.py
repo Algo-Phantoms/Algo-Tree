@@ -1,7 +1,6 @@
 '''
 PROBLEM STATEMENT:
-Given an array, arr of size n. The task is to print all those elements which are repeated in the array, i.e.,
-print the duplicates present in the array.
+Given an array, arr of size n. The task is to print all those elements which are repeated in the array, i.e., print the duplicates present in the array.
 For example, an array of [2, 3, 2, 4, 3] contains duplicates of 2 and 3. So, the output will be 2 3.
 '''
 
@@ -24,16 +23,13 @@ def Duplicate(arr, n):
 
 
 # Driver Code
-
 # User inputs the the size of array 
 n = int(input("Enter the size of an array: ")) 
 arr = []
 print("Enter ", n ," elements:")
-
 # User inputs array elemnents
 for i in range(n):
     arr.append(int(input()))
-
 # A function call to find duplicates
 print("The duplicates in the array are:") 
 Duplicate(arr, n)
