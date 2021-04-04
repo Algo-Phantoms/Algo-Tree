@@ -127,14 +127,10 @@ int main()
     return 0;
 }
 
-/* complexities */
+/* 
+test cases:
 
-/* Worst case time complexity:  O(log n)
-Average case time complexity:  O(log n)
-Best case time complexity:  O(1)
-Space complexity:  O(1)   */
-
-/* sample input :
+input :
 3
 7
 100 90 30 15 60 120 10
@@ -145,12 +141,13 @@ Space complexity:  O(1)   */
 2
 40 60
 45
-*/
 
-/* sample output:
+output:
 2
 1
--1              */
+-1   */
+
+
 
 
 
