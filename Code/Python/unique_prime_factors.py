@@ -20,7 +20,7 @@ def unique_prime_factors(n):
 
     # Since n cannot have any prime factors larger than it's square root, we run the first loop upto there
     for i in range(2, int(math.sqrt(n))+1):
-        # if spf[i] = i, none of the numbers before i have marked it, hence it is prime
+        # if spf[i] = i, none of the numbers before i have not marked it, hence it is prime
         if spf[i] == i:
 
             # since i is prime, we need to mark it's multiples, i.e change their spf
