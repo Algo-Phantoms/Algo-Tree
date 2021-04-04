@@ -41,7 +41,7 @@ QUESTION-->
 5) The array should be sorted if Unsorted.
 6) You have to chose an element and find its position in the sorted array.
 7) if element not found, print -1.
-    */
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
