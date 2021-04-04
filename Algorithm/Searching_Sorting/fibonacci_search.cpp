@@ -109,7 +109,6 @@ int main()
         int l;
         cout << "\nEnter the number of elements in array which should be less than 10";
         cin >> l;
-        //array defined
         int arr[10];
         cout << "Enter elements in array";
         for (int i = 0; i < l; i++)
