@@ -1,7 +1,7 @@
 /*
 Fibonacci search is an efficient search algorithm based on:
---> divide and conquer principle that can find an element in the given sorted array. */
-/*
+--> divide and conquer principle that can find an element in the given sorted array. 
+
 Algorithm --->
 
 Let the length of given array be n [0...n-1] and the element to be searched be x.
@@ -56,11 +56,9 @@ int FibonacciSearch(int arr[], int x, int n)
     int a = 0;
     int b = 1;
     int c = a + b;
-
     // until c does not become equal to or greater than n , loop executes.
     while (c < n)
     {
-
         a = b;
         b = c;
         c = a + b;
