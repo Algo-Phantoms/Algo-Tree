@@ -15,8 +15,7 @@
 using namespace std;
 
 long long ClimbStairs(int N) 
-{
-	
+{	
 	// Base Case : at the first stair (steps[0]) the number of ways to get there is 1
 	// Base Case : at the second stair (steps[1]) the number of ways to get there is 2
 	if(N == 1)
@@ -43,7 +42,6 @@ long long ClimbStairs(int N)
 
 int main() 
 {
-
 	int n;
 	cout << "Enter the number of stairs to calculate the number of ways to get to it's top :\t";
 	cin >> n;
