@@ -92,6 +92,7 @@ cut the subarray after i+1. */
             //if element found, return index.
             return i;
     }
+   
     //comparing the last element with x
     if (b && arr[offset + 1] == x)
         return offset + 1;
