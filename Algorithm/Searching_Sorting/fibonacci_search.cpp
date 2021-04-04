@@ -75,7 +75,6 @@ int FibonacciSearch(int arr[], int x, int n)
         /*If x is greater than the value at index ,c cut the subarray array from offset to i*/
         if (arr[i] < x)
         {
-
             c = b;
             b = a;
             a = c - b;
@@ -89,7 +88,6 @@ cut the subarray after i+1. */
             b = b - a;
             a = c - b;
         }
-
         else
             //if element found, return index.
             return i;
