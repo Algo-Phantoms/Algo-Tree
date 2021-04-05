@@ -1,4 +1,5 @@
-/*Reverse string
+/*Reverse a string using 2 pointer Approach
+
 Problem Statement:  Reverse the given string from user.
                     For e.g initial string: Hello, reversed string: olleH
 */
