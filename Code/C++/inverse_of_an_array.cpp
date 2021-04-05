@@ -32,8 +32,8 @@ Sample Output
 1 4 2 3 0
 0 1 2
 
-
 time comlexity - O(n) */
+
 
 #include <bits/stdc++.h>
 using namespace std;
