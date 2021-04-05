@@ -19,7 +19,6 @@ In de-queue operation, if stack2 is empty then all the elements are moved to sta
 and finally top of stack2 is returned.
 """
 
-
 class queue:
     def __init__(self):
         self.__s1 = []
@@ -60,8 +59,7 @@ class queue:
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    
     q = queue()
     q.enqueue(1)
     q.enqueue(10)
