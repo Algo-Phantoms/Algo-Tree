@@ -15,13 +15,14 @@ If the original list contains odd number of nodes(2n+1) then 1st list contains n
 using namespace std;
 
 //initializing structure
-struct node{
-int data;
-node *next;
+class Node{
+public:
+    int data;
+    Node *next;
 };
 
-struct node* head=NULL;
-struct node* tail=NULL;
+Node* head=NULL;
+Node* tail=NULL;
 
 //Function to create a linked list
 void create(int n)
@@ -32,7 +33,7 @@ void create(int n)
         cin>>x;
         if (head==NULL)
         {
-            node* temp=new node;
+            Node* temp=new Node;
             temp->data=x;
             temp->next=NULL;
             head=temp;
@@ -40,7 +41,7 @@ void create(int n)
         }
         else
         {
-            node* temp=new node;
+            Node* temp=new Node;
             temp->data=x;
             temp->next=NULL;
             tail->next=temp;
@@ -50,13 +51,13 @@ void create(int n)
     }
 }
 
-struct node* list1=NULL;
-struct node* list2=NULL;
+Node* list1=NULL;
+Node* list2=NULL;
 
 //Split Function
 void split()
 {
-    node* temp=head;
+    Node* temp=head;
     int count=0;
     while(temp!=NULL)
     {
@@ -75,9 +76,9 @@ void split()
     temp->next=NULL;
 }
 
-void display(struct node* list)
+void display(struct Node* list)
 {
-    node* temp=list;
+    Node* temp=list;
     while(temp!=NULL)
     {
         cout<<temp->data<<"->";
