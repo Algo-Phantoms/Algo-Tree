@@ -19,9 +19,8 @@ Input:
 3)Third line contains elements of the array.
 
 Output:
-1)contains t lines of output, inverse array of each original array. */
+1)contains t lines of output, inverse array of each original array. 
 
-/*
 Sample input:
 2
 5
@@ -32,9 +31,9 @@ Sample input:
 Sample Output
 1 4 2 3 0
 0 1 2
-*/
 
-// time comlexity - O(n)
+
+time comlexity - O(n) */
 
 #include <bits/stdc++.h>
 using namespace std;
