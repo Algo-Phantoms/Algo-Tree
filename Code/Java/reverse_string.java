@@ -13,7 +13,8 @@ class StringReverse{
 	public static void ReverseTheString(){
 	    
         Scanner sc = new Scanner(System.in); 
-        String input = sc.nextLine();       //taking input string from user
+        String input = sc.nextLine();       
+
         int k = input.length();                      //size of the string
         char[] output = input.toCharArray();         //converting it into array to access each Character of string
         /*using two pointer type approach to swap the characters of string 
