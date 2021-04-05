@@ -13,9 +13,10 @@ class StringReverse{
 	public static void ReverseTheString(){
 	    
         Scanner sc = new Scanner(System.in); 
+	//input the string from user
         String input = sc.nextLine();       
-
-        int k = input.length();                      //size of the string
+	//size of the string
+        int k = input.length();                      
         char[] output = input.toCharArray();         //converting it into array to access each Character of string
         //using two pointer type approach to swap the characters of string 
         //one pointer points to starting and other to ending
