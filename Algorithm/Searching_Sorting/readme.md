@@ -57,7 +57,7 @@ Following are the types of searches which we will be discussing in this book.
 * Binary Search Trees 
 * Symbol Tables and Hashing
 * String Searching Algorithms: Tries, Ternary Search and Suffix Trees
-* Fibonacci Search:[c++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
+* Fibonacci Search:  [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
 
 ## Questions :
 
@@ -67,4 +67,3 @@ Following are the types of searches which we will be discussing in this book.
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
-
