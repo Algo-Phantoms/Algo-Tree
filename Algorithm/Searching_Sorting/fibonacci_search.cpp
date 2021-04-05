@@ -130,7 +130,8 @@ int main()
 Test Cases:
 
 
-input :
+Input :
+
 3
 7
 100 90 30 15 60 120 10
