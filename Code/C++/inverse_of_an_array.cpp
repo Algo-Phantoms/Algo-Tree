@@ -1,6 +1,6 @@
 /*
 INVERSE OF AN ARRAY
-/*
+
 If the array elements are swapped with their corresponding indices,
 the array finally results is inverse of an array.
 
@@ -75,4 +75,4 @@ int main()
     }
     return 0;
 }
-// Driver code ends
+
