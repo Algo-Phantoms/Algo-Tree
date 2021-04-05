@@ -127,7 +127,8 @@ int main()
 }
 
 /* 
-test cases:
+Test Cases:
+
 
 input :
 3
