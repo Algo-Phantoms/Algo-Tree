@@ -99,7 +99,8 @@ int FibonacciSearch(int arr[], int x, int n)
 }
 
 int main()
-{
+{   
+    // t is number of test cases
     int t;
     cin >> t;
     while (t--)
