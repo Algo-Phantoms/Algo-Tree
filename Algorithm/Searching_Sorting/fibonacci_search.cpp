@@ -144,7 +144,10 @@ Input 3:
 45
 Output 3:
 -1
-  */
+
+Space complexity: 4
+Time complexity: O(n)
+*/
 
 
 
