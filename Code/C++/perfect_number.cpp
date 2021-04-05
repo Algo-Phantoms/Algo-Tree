@@ -18,6 +18,8 @@ void check_perfect_number(int num)
     int sum=0;
     int i;
 
+
+    //loop till half the number because further the multiples will be greater than the number itself.
     for(i=1;i<=(num/2);i++)
     {
         int rem=num%i;
