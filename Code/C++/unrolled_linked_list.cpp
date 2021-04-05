@@ -3,16 +3,27 @@ using namespace std;
 
 #define N 5
 
-//Unrolled Linked List Node
-struct node
-{
-    int arr[N];
-    node *ptr;
-    int capacity;       //it is the capacity of number of elements.
-};                      //if number of elements i.e. capacity == size i.e. N then we cannot insert any element.
+/*
+Instead of storing a single element at a node,
+unrolled linked lists store an array of elements at a node.
 
-//Printing all the elements of unrolled linked list
-void display(node *ull)
+The below program is a simple unrolled linked list with 5 nodes
+containing a variable number of elements in each.
+It also traverses the created list.
+*/
+
+//Unrolled Linked List Class
+class Unrolled
+{
+    public:
+        int arr[N];
+        Unrolled *ptr;
+        int capacity;       //it is the capacity of number of elements.
+};
+
+//Printing all the elements of unrolled linked list.
+//Print elements in current node and moving to next node.
+void display(Unrolled *ull)
 {
     int i;
     while(ull != NULL)
@@ -23,18 +34,19 @@ void display(node *ull)
     }
 }
 
+
 int main()
 {
-    node *ul1;
+    Unrolled *ul1;
 
     int threshold;
     threshold = ((N/2)+1);
 
     //dynamically allocating the four nodes
-    node* head = new node;
-    node* second = new node;
-    node* third = new node;
-    node* fourth = new node;
+    Unrolled* head = new Unrolled;
+    Unrolled* second = new Unrolled;
+    Unrolled* third = new Unrolled;
+    Unrolled* fourth = new Unrolled;
 
     //putting values in the first node
     head->capacity = threshold;
@@ -77,10 +89,15 @@ int main()
 }
 
 /*
-    Test Case -
+    Complexity:
+    Time complexity : O(n)
 
-    Output ;
+    Test Case 1-
+    Output:
     1  2  3  4  5  6  7  8  9  10  11  12
 
-
+    Test Case 2-
+    Output:
+    10 20 30 40 50 60 70 80 90 100 110 120
 */
+
