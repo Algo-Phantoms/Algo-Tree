@@ -1,7 +1,9 @@
 /*Reverse a string using 2 pointer Approach
 
 Problem Statement:  Reverse the given string from user.
-                    For e.g initial string: Hello, reversed string: olleH
+                    For e.g initial string: hello, reversed string: olleh.
+		    Using two pointer approach, firstly 'h' and 'o' are swapped similarly other characters follow the same sequence.
+		    In this way, the string is reversed without using extra space.
 */
 
 import java.util.*;
@@ -11,21 +13,21 @@ import java.io.*;
 class StringReverse{
     // function for reversing the given string
 	public static void ReverseTheString(){
-	    
         Scanner sc = new Scanner(System.in); 
 	//input the string from user
         String input = sc.nextLine();       
 	//size of the string
-        int k = input.length();                      
-        char[] output = input.toCharArray();         //converting it into array to access each Character of string
+        int k = input.length();
+	//converting it into array to access each Character of string
+        char[] output = input.toCharArray();         
         //using two pointer type approach to swap the characters of string 
         //one pointer points to starting and other to ending
         for(int itr = 0, ptr = k-1; itr < ptr; itr++, ptr--){
-            char flag = output[itr];                //swapping the characters
+	    //swapping the characters
+            char flag = output[itr];                
             output[itr] = output[ptr];
             output[ptr] = flag;
         }
-
         System.out.print("Reversed string: ");
         // printing the reversed string
         for(int itr = 0; itr < k; itr++){
@@ -34,7 +36,8 @@ class StringReverse{
     }
 
     public static void main (String[] args) throws java.lang.Exception{
-        ReverseTheString();         //calling for the reverse function from main
+	 //calling for the reverse function from main
+        ReverseTheString();         
     }
 }
 
@@ -51,7 +54,7 @@ reversemalayalam
 Output -
 Reversed string: malayalamesrever
 
-Time Complexity: O(k), for traversing the array of characters
+Time Complexity: O(k), for traversing the array of characters where 'k' is the size of input string
 Space Complexity: O(1), no extra space is used
 */
 
