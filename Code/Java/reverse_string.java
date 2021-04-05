@@ -17,8 +17,8 @@ class StringReverse{
 
         int k = input.length();                      //size of the string
         char[] output = input.toCharArray();         //converting it into array to access each Character of string
-        /*using two pointer type approach to swap the characters of string 
-        one pointer points to starting and other to ending*/
+        //using two pointer type approach to swap the characters of string 
+        //one pointer points to starting and other to ending
         for(int itr = 0, ptr = k-1; itr < ptr; itr++, ptr--){
             char flag = output[itr];                //swapping the characters
             output[itr] = output[ptr];
@@ -53,3 +53,4 @@ Reversed string: malayalamesrever
 Time Complexity: O(k), for traversing the array of characters
 Space Complexity: O(1), no extra space is used
 */
+
