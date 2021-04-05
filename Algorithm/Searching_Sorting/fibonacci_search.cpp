@@ -141,7 +141,8 @@ input :
 40 60
 45
 
-output:
+Output:
+
 2
 1
 -1   */
