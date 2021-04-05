@@ -79,7 +79,7 @@ int FibonacciSearch(int arr[], int x, int n)
             a = c - b;
             offset = i;
         }
-        //If x is greater than the value at index ,cut the subarray after i+1. 
+        //If x is greater than the value at index ,cut the subarray after i+1.
         else if (arr[i] > x)
         {
             c = a;
@@ -90,7 +90,7 @@ int FibonacciSearch(int arr[], int x, int n)
             //if element found, return index.
             return i;
     }
-   
+
     //comparing the last element with x
     if (b && arr[offset + 1] == x)
         return offset + 1;
@@ -99,55 +99,52 @@ int FibonacciSearch(int arr[], int x, int n)
 }
 
 int main()
-{   
-    // t is number of test cases
-    int t;
-    cin >> t;
-    while (t--)
+{
+    int l;
+    cout << "\nEnter the number of elements in array which should be less than 10";
+    cin >> l;
+    int arr[10];
+    cout << "Enter elements in array";
+    for (int i = 0; i < l; i++)
     {
-        int l;
-        cout << "\nEnter the number of elements in array which should be less than 10";
-        cin >> l;
-        int arr[10];
-        cout << "Enter elements in array";
-        for (int i = 0; i < l; i++)
-        {
-            cin >> arr[i];
-        }
-        //sorting the array
-        sort(arr, arr + l);
-
-        int n = sizeof(arr) / sizeof(arr[0]);
-        int x;
-        cout << "\nEnter element to be searched :";
-        cin >> x;
-        cout << "Found at index:" << FibonacciSearch(arr, x, n);
+        cin >> arr[i];
     }
+    //sorting the array
+    sort(arr, arr + l);
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int x;
+    cout << "\nEnter element to be searched :";
+    cin >> x;
+    cout << "Found at index:" << FibonacciSearch(arr, x, n);
     return 0;
 }
+
 
 /* 
 Test Cases:
 
-
-Input :
-
-3
+Input 1:
 7
 100 90 30 15 60 120 10
 30
+Output 1:
+2
+
+Input 2:
 5
 40 60 22 10 45
 22
+Output 2:
+1
+
+Input 3:
 2
 40 60
 45
-
-Output:
-
-2
-1
--1   */
+Output 3:
+-1
+  */
 
 
 
