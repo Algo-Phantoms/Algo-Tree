@@ -71,7 +71,7 @@ int FibonacciSearch(int arr[], int x, int n)
         // i will be assigned the value of min() used.
         int i = min(offset + a, n - 1);
 
-        /*If x is greater than the value at index ,c cut the subarray array from offset to i*/
+        //If x is greater than the value at index ,c cut the subarray array from offset to i.
         if (arr[i] < x)
         {
             c = b;
@@ -79,8 +79,7 @@ int FibonacciSearch(int arr[], int x, int n)
             a = c - b;
             offset = i;
         }
-        /*If x is greater than the value at index ,c
-cut the subarray after i+1. */
+        //If x is greater than the value at index ,cut the subarray after i+1. 
         else if (arr[i] > x)
         {
             c = a;
