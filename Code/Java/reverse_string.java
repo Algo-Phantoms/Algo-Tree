@@ -1,5 +1,6 @@
 /*
 Reverse a string using 2 pointer Approach
+
 Problem Statement:  Reverse the given string from user.
                     For e.g initial string: hello, reversed string: olleh.
 		    Using two pointer approach, firstly 'h' and 'o' are swapped similarly other characters follow the same sequence.
