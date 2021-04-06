@@ -1,7 +1,10 @@
 /*
 Generate all valid parentheses
 
-Problem  Statement: Write a program to generate all possible "n" pairs of balanced parantheses.
+Problem  Statement: Write a program to generate all possible "n" pairs of balanced parantheses where "n" is the input from user.
+                    For e.g if  n = 2, the possible combinations are {}{}, {{}} only. I have solved it by storing the combination of paranthesis
+                    and calling for the next set recursively.
+                    
 */
 
 import java.util.*;
@@ -14,20 +17,25 @@ class Paranthesis{
         static void generate_paranthesis(char str[], int pos, int n, int start, int end){
             if(end == n){
                 for(int i = 0; i < str.length; i++){
-                    System.out.print(str[i]);           //printing all pairs of parantheses
+                    //printing all pairs of parantheses
+                    System.out.print(str[i]);           
                 }
                 
                 System.out.println();
                 return;
             }
             else{
-                if(start > end){                       //checking the condition for inserting the closing parantheses
+                if(start > end){
+                     //checking the condition for inserting the closing parantheses
                     str[pos] = '}';
-                    generate_paranthesis(str, pos+1, n, start, end+1);     //calling the function for the next position using recursion
+                    //calling the function for the next position using recursion
+                    generate_paranthesis(str, pos+1, n, start, end+1);     
                 }
-                if(start < n){                          //checking the condition for inserting the opeing paranthesis
+                //checking the condition for inserting the opeing paranthesis
+                if(start < n){                          
                     str[pos] = '{';
-                    generate_paranthesis(str, pos+1, n, start+1, end);    //calling the function for the next position using recursion
+                     //calling the function for the next position using recursion
+                    generate_paranthesis(str, pos+1, n, start+1, end);   
                 }
             }
         }
@@ -44,13 +52,15 @@ class Paranthesis{
     	{
     	        Scanner sc = new Scanner(System.in); 
                 int n = 0;
-                n = sc.nextInt();                               //input from the users
-                char [] arr = new char[2*n];                    //generating a character array for storing parantheses
-        		valid_paranthesis(arr, n);                      //calling the function
+                n = sc.nextInt();        
+                //generating a character array for storing parantheses
+                char [] arr = new char[2*n];                   
+        		valid_paranthesis(arr, n);                      
     	}
 }
 
-/*Test Case 1: 
+/*Test Cases:
+1.
         Input: 
                 3
         Output:
@@ -60,7 +70,7 @@ class Paranthesis{
                 {{}{}}
                 {{{}}}
                
-Test Case 2: 
+2. 
         Input: 
                  4
         Output:
@@ -80,8 +90,8 @@ Test Case 2:
                 {{{{}}}}
 
                
-Time Complexity: O(2^n)
+Time Complexity: O(2^n), where n is the number input from user
 
-Space Complexity: O(n)
+Space Complexity: O(n), since we have created character array of size 2*n, n is the input from user
               
 */
