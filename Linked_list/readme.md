@@ -28,4 +28,5 @@ properties.
 • Find nth node from the end of the list
 
 ## Questions :
+* Alternate Node Deletion ----> [C++](/Code/C++/Deletion of Alternate nodes in a linked list.cpp)
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
