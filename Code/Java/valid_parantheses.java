@@ -1,4 +1,6 @@
-/*Generate all valid parantheses
+/*
+Generate all valid parentheses
+
 Problem  Statement: Write a program to generate all possible "n" pairs of balanced parantheses.
 */
 
