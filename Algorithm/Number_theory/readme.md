@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Multiplicative  Inverse ----> [Java](/Code/Java/MultiplicativeInverse.java)
