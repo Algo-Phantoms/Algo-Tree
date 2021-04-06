@@ -1,7 +1,5 @@
 /*
 Reverse a string using 2 pointer Approach
-
-
 Problem Statement:  Reverse the given string from user.
                     For e.g initial string: hello, reversed string: olleh.
 		    Using two pointer approach, firstly 'h' and 'o' are swapped similarly other characters follow the same sequence.
@@ -15,13 +13,13 @@ import java.io.*;
 class StringReverse{
     // function for reversing the given string
 	public static void ReverseTheString(){
-        Scanner sc = new Scanner(System.in); 
-	//input the string from user
+        Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();       
 	//size of the string
         int k = input.length();
 	//converting it into array to access each Character of string
-        char[] output = input.toCharArray();         
+        char[] output = input.toCharArray();        
+		
         //using two pointer type approach to swap the characters of string 
         //one pointer points to starting and other to ending
         for(int itr = 0, ptr = k-1; itr < ptr; itr++, ptr--){
@@ -30,15 +28,15 @@ class StringReverse{
             output[itr] = output[ptr];
             output[ptr] = flag;
         }
+		
         System.out.print("Reversed string: ");
-        // printing the reversed string
         for(int itr = 0; itr < k; itr++){
             System.out.print(output[itr]);
         }
     }
 
     public static void main (String[] args) throws java.lang.Exception{
-	 //calling for the reverse function from main
+	//calling for the reverse function from main
         ReverseTheString();         
     }
 }
