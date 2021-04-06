@@ -7,7 +7,7 @@ if our number is A and modulus is M and the Multiplicative inverse is B then (A*
 
 
 import java.util.*;
-public class ModulerInverse{
+public class MultiplicativeInverse{
 
      public static void main(String []args){
         int c=0;
