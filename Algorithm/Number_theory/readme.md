@@ -3,6 +3,7 @@
  #### Fundamentals
 
 - [Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html)
+- [Binary Exponentiation](/Code/C++/binary_exponentiation.cpp)
 - [Euclidean algorithm for computing the greatest common divisor](https://cp-algorithms.com/algebra/euclid-algorithm.html)
 - [Extended Euclidean Algorithm](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
 - [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)

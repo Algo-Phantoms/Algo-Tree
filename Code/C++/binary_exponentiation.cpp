@@ -31,3 +31,13 @@ int main()
     cout<<power(n,a)<<"\n";
 
 }
+
+/*
+    Test Cases : 
+  1)Input  : n = 2 , a = 9
+    Output : 64
+  2)Input  : n = 3 , a = 9
+    Output : 729
+    Time Complexity: O ( log N ) (where N is the power of a number)
+    Space Complexity: O ( 1 ) 
+*/ 
