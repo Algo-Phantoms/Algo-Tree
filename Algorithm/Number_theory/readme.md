@@ -1,6 +1,6 @@
- # Number Theory
+# Number Theory
 
- #### Fundamentals
+#### Fundamentals
 
 - [Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html)
 - [Binary Exponentiation](/Code/C++/binary_exponentiation.cpp)
@@ -35,4 +35,3 @@
 <hr>
 
 ## Questions :
-
