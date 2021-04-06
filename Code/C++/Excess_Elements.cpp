@@ -8,6 +8,34 @@ It then prints the excess elements of the second array.
 #include <iostream>
 using namespace std;
 
+void Extra(int a[10], int b[10], int pos[10], int m, int n)
+{
+    int i,j;
+            //Loop for comparing the elements
+        for(int  i=0;i<m;i++)
+                       for(int j=0;j<n;j++)
+                        //This condition tells us that corresponding elements in array b is not present in array a
+                        if(pos[j]==0)
+                                if(a[i]==b[j]){
+                                        //So that the corresponding element in b wont be considered again later
+                                        pos[j]=1;
+                                        break;
+                                }
+        
+
+        cout << "The Excess Elements are: ";
+        for(int i=0;i<n;i++)
+        {
+                //If the positions were 0, that tells us elements in those positions are not equal to the elements in the corresponding positons in array a.
+                if(pos[i]==0)
+                    {
+                        cout << b[i];
+                        cout << " ";
+                    }
+        }
+        cout << "\n";
+}
+
 int main()
 {
         int a[10], b[10],pos[10], m,n;
@@ -26,30 +54,8 @@ int main()
                 cin >> b[j];
                 pos[j]=0;  // Corrseponding array used for comparison
         }
+        Extra(a, b, pos,  m, n);
 
-        //Loop for comparing the elements
-        for(int  i=0;i<m;i++)
-                for(int j=0;j<n;j++)
-                        //This condition tells us that corresponding elements in array b is not present in array a
-                        if(pos[j]==0)
-                                if(a[i]==b[j]){
-                                        //So that the corresponding element in b wont be considered again later
-                                        pos[j]=1;
-                                        break;
-                                    
-                                }
-
-        cout << "The Excess Elements are: ";
-        for(int i=0;i<n;i++)
-        {
-                //If the positions were 0, that tells us elements in those positions are not equal to the elements in the corresponding positons in array a.
-                if(pos[i]==0)
-                    {
-                        cout << b[i];
-                        cout << " ";
-                    }
-        }
-        cout << "\n";
         return 0;
 }
 
