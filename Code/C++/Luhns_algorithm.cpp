@@ -20,6 +20,9 @@ Checksum = 1 + 9 + 7 + 7 + 3 + 5 + 8 + 0 + 4 + 4 + 3 + 8 + 2 + 3 + 1 + 5 = 70
 Since the checksum is divisible by ten, 5987654024681355 is a valid credit card number. Write a program
 that, upon input a 16-digit credit card number, determines whether the card number is valid. A 16-digit
 integer cannot be accommodated in a long int variable, so read the input as a string (a character array).
+
+                                                                                         Author - @Suvraneel 
+                                                                                                Suvraneel Bhuin
 ************************************************************************************/
 
 #include <bits/stdc++.h>
@@ -60,7 +63,7 @@ int main()
     char card[16];
     cout << "Enter credit card number:" << endl;
     //reads a line from input and stores it into the 'card' character array
-    gets (card);
+    cin.getline(card, 20);
     //function to evaluate checksum
     Luhn_checksum_calc(card);
     //test if checksum is valid (ie, if modulo10 = 0)
@@ -91,7 +94,4 @@ Enter the credit card number:
 59876540246813550
  + 1 + 9 + 7 + 7 + 3 + 5 + 8 + 0 + 4 + 4 + 3 + 8 + 2 + 3 + 1 + 5 + 0     = 70  (Invalid)
 [Invalid because card number must have exactly 16 digits.]
-
-                                                                                    Author - @Suvraneel 
-                                                                                            Suvraneel Bhuin
 */
