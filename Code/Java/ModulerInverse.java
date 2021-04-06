@@ -37,3 +37,5 @@ Teat Case-
   
   Input-10 10 
   Output-Inverse not found 
+Time Complexity-O(M) //M=Modulus
+Space complexity-1*/
