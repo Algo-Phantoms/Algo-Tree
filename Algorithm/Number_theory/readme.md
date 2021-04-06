@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Calculate the value of nCr ----> [Python](/Code/Python/calculate_the_value_of_nCr.py)
