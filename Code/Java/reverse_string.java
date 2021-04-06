@@ -1,4 +1,6 @@
-/*Reverse a string using 2 pointer Approach
+/*
+Reverse a string using 2 pointer Approach
+
 
 Problem Statement:  Reverse the given string from user.
                     For e.g initial string: hello, reversed string: olleh.
@@ -57,4 +59,3 @@ Reversed string: malayalamesrever
 Time Complexity: O(k), for traversing the array of characters where 'k' is the size of input string
 Space Complexity: O(1), no extra space is used
 */
-
