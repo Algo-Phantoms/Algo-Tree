@@ -50,7 +50,7 @@ is one of the techniques for making the elements ordered.
 
 Following are the types of searches which we will be discussing in this book.
 
-* Unordered Linear Search ----> [C++](/Code/C++/Linear_search.cpp)
+* Unordered Linear Search 
 * Sorted/Ordered Linear Search
 * Binary Search
 * Interpolation search
@@ -68,6 +68,7 @@ Following are the types of searches which we will be discussing in this book.
 * Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
 * Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
+* Linear Search ----> [Python](/Code/Python/linearsearch.py)
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
