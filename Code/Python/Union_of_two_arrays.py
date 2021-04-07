@@ -6,19 +6,19 @@ def union_of_arrays(arr1, arr2):
     arr2.sort()
 
     
-    dt = 0
-    ft  = 0
+    firstelement = 0
+    secondelement  = 0
     union = []
 
-    while dt < len(arr1) and ft < len(arr2):
-        if arr1[dt] < arr2[ft]:
-            dt += 1
-        elif arr1[dt] > arr2[ft]:
-            ft += 1
+    while firstelement < len(arr1) and secondelement < len(arr2):
+        if arr1[firstelement] < arr2[secondelement]:
+            firstelement += 1
+        elif arr1[firstelement] > arr2[secondelement]:
+            secondelement += 1
         else:
-            union.append(arr1[dt])  
-            dt += 1
-            ft += 1
+            union.append(arr1[firstelement])  
+            firstelement += 1
+            secondelement += 1
 
     return union
 
