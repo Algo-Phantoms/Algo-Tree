@@ -1,10 +1,33 @@
 /*
-    Merging of two sorted arrays can be done in constant space by following steps
+    Merging of two sorted arrays can be done in constant space by following steps:
     (i) iterate first array from last and second array from start
     (ii)if element in first array is greater than the second array then swap those elements
     (iii)decrement iterator of first and increment iterator of second
     (iv)sort both the arrays
-    (v)resulting two arrays will be combined sorted
+    (v)resulting two arrays will be combined for the sorted output
+
+	Example:  array1:2 6 8 10 12
+			  array2:1 3 6 9 10 15
+
+			 1) last=12 and first=1 as 12>1 
+			    swap 12 and 1
+															array1:2 6 8 10 1
+			    											array2:12 3 6 9 10 15
+			 2) last=10 and first=3 as 10>3 
+			    swap 10 and 3
+															array1:2 6 8 3 1
+															array2:12 10 6 9 10 15
+			 3) last=8 and first=6 as 8>6 
+			    swap 8 and 6
+															array1:2 6 6 3 1
+															array2:12 10 8 9 10 15
+			 4) last=6 and first=9 as loop now terminates checking condition is false
+															array1:2 6 6 3 1
+															array2:12 10 8 9 10 15	
+			 5) sort both the arrays
+			                                                array1:1 2 3 6 6 
+															array2:8 9 10 10 12 15
+			 6)array1+array2 is result 	1 2 3 6 6 8 9 10 10 12 15																									
 */
 
 #include<bits/stdc++.h>
@@ -12,26 +35,34 @@ using namespace std;
 
 void merge(int arr1[],int arr2[],int n,int m)
 {
-	for(int i=n-1,j=0;i>=0 && j<m && arr1[i]>arr2[j];i--,j++)
+	//iterating the first array from last and second array from first element 
+	for(int i=n-1,j=0;i>=0 && j<m && arr1[i]>arr2[j];i--,j++)         //--------O(n+m)
 	{
+		//swap those elements of second array from first array which are less than the element of first array 
 		int temp=arr1[i];
 		arr1[i]=arr2[j];
 		arr2[j]=temp;
 	}
-	sort(arr1,arr1+n);
-	sort(arr2,arr2+m);
+	// sort the respective arrays and combined array will be our result
+	sort(arr1,arr1+n);                                                //---------O(nlogn)
+	sort(arr2,arr2+m);                                                //---------O(mlogm)
 }
 
 int main()
 {
 	int n,m;
 	cin>>n>>m;
-	int arr1[n],arr2[m];	
-	for(int i=0;i<n;i++)
+	int arr1[n],arr2[m];
+	//taking input for first array	
+	for(int i=0;i<n;i++)       
 	    cin>>arr1[i];
+	//taking input for first array	
 	for(int i=0;i<m;i++)
-	    cin>>arr2[i];    
+	    cin>>arr2[i];  
+	//call merge operation   
 	merge(arr1,arr2,n,m);
+
+	//printing sorted array
 	for(int i=0;i<n;i++)
 	    cout<<arr1[i]<<" ";
 	for(int i=0;i<m;i++)
@@ -40,16 +71,23 @@ int main()
 }
 
 /*Test cases
-User input:
+User input 1:
 5 6
 2 6 8 10 12
 1 3 6 9 10 15
 output: 1 2 3 6 6 8 9 10 10 12 15
+User input 2:
+9 6
+17 19 20 22 28 30 31 33 34
+1 3 6 9 10 15
+output: 1 3 6 9 10 15 17 19 20 22 28 30 31 33 34
 */
 
 /*Time Complexity
-The merge() takes total nlogn and mlogm to sort the arrays.
-So T(n)=O(nlogn), assuming n>m
+Time Complexity of merge(): 
+T(n+m)=O(n+m)+O(nlogn)+O(mlogm)=O(nlogn)
+So ,Time Complexity of algorithm will be
+T(n+m)=O((n+m)log(n+m))
 
 Space Complexity=O(1)
 */
