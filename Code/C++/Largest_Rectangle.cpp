@@ -1,3 +1,10 @@
+/*Here, we consider each bar has a unit width. We will use a notion of a Rectangle for each bar and two indices j and k. For each bar, we can find the rectangle with the height of it and also containing it.
+To do this for a bar, let's say i bar, we go to left from i and stop at the first bar which is smaller than the i bar. Say we have stopped at j position. 
+
+Time Complexity: For each bar we are considering a linear search. Thus it is O(n^2) in total.
+
+Here, we use Divide and Conquer Approach.*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -47,3 +54,12 @@ int main(void)
     }
     return 0;
 }
+
+
+/* _Test Case 1:_                                       _Test Case 2:_
+    Input:  5                                            Input: 10
+            1 2 3 4 5                                           6320 6020 6098 1332 7263 672 9472 2838 3401 9494
+    
+    Output: 9                                            Output: 18060
+
+Time and Space complexcity: We calculate the desired rectangle, for each bar is O(n) */
