@@ -27,4 +27,4 @@ element in a full stack is called **overflow**.
 
 - Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
 
-- Largest Rectangle ----> [C++](/Stack/Largest_Rectangle.cpp)
+- Largest Rectangle ----> [C++](https://github.com/sudipg4112001/Algo-Tree/blob/LR/Stack/Largest_Rectangle.cpp)
