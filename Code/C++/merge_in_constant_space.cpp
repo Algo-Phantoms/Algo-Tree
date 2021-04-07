@@ -4,30 +4,7 @@
     (ii)if element in first array is greater than the second array then swap those elements
     (iii)decrement iterator of first and increment iterator of second
     (iv)sort both the arrays
-    (v)resulting two arrays will be combined for the sorted output
-
-	Example:  array1:2 6 8 10 12
-			  array2:1 3 6 9 10 15
-
-			 1) last=12 and first=1 as 12>1 
-			    swap 12 and 1
-															array1:2 6 8 10 1
-			    											array2:12 3 6 9 10 15
-			 2) last=10 and first=3 as 10>3 
-			    swap 10 and 3
-															array1:2 6 8 3 1
-															array2:12 10 6 9 10 15
-			 3) last=8 and first=6 as 8>6 
-			    swap 8 and 6
-															array1:2 6 6 3 1
-															array2:12 10 8 9 10 15
-			 4) last=6 and first=9 as loop now terminates checking condition is false
-															array1:2 6 6 3 1
-															array2:12 10 8 9 10 15	
-			 5) sort both the arrays
-			                                                array1:1 2 3 6 6 
-															array2:8 9 10 10 12 15
-			 6)array1+array2 is result 	1 2 3 6 6 8 9 10 10 12 15																									
+    (v)resulting two arrays will be combined for the sorted output																								
 */
 
 #include<bits/stdc++.h>
