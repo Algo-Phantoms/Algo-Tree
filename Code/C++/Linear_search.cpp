@@ -60,4 +60,4 @@ int main()
 // output : 24 is present at index 2
 
 // Time-Complexity : O(n)
-// Space-Complexity : O(n)
+// Space-Complexity : O(1)
