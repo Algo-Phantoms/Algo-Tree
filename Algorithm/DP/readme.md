@@ -45,3 +45,5 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Minimum Number of Deletions To Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
 
+- Grundy Number of a Game ----> [C++](/Code/C++/grundy_number.cpp)
+
