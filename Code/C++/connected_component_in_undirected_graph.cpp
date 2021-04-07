@@ -35,7 +35,7 @@ void dfs(vector<int>graph_list[],vector<bool>&visited,int cnt,int node,vector<in
             dfs(graph_list,visited,cnt,curnode,components);
         }
     }
-    return ;
+    
 }
 
 
