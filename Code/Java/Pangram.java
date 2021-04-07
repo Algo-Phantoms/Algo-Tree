@@ -45,7 +45,7 @@ public static void main(String[] args){
    count_var[ch-'a']++;
 }
 }
-??checking if count_var array has any zeroes .
+//checking if count_var array has any zeroes .
 for(i=0;i<count_var.length;i++){
 if(count_var[i]==0){ //If count_var has any zeroes, the given string  is not a pangram
 flag=false;
