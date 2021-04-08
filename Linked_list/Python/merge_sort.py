@@ -92,7 +92,7 @@ if __name__=="__main__":
     print("After merge-sort: ",end="")
     print_ll(root)
 
-#Time complexity: O(n*logn)
+#Time complexity:   O(n*logn)
 #Space complexity: O(n*logn)
 
 #e.g-1)
