@@ -1,3 +1,4 @@
+/* Remove Loop from the linked list. Linked list has to be taken as an input from the user*/
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -157,6 +158,8 @@ print_list(head);
 }
 
 /*
+---------------------------------------------------------
+SAMPLE TEST CASE 1:
 INPUT:
 
 Enter number of elements :5
@@ -181,5 +184,30 @@ Linked list has a loop
 
 List after removing loop:
 9 10 12 40 50 
+-------------------------------------------------
+SAMPLE TEST CASE 2:
 
+Enter number of elements :6
+
+Enter the elements :1 2 3 4 5 6
+
+The Linked List is : 6 5 4 3 2 1 
+
+Linked list does not have any loop
+
+Creating loop…
+
+Printing list with loop
+6 5 4 3 2 1 5 4 3 2 1 5 4 3 2 1 5 4 3 2 1 5 4 3 2 
+
+Removing loop…
+
+Linked list has a loop
+
+List after removing loop:
+6 5 4 3 2 1 
+-----------------------------------------------------
+
+TIME COMPLEXITY: O(n)
+SPACE COMPLEXITY: O(1)
 */
