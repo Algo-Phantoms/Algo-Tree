@@ -28,4 +28,5 @@ To create an array, you need to known the length (or size) of the array in advan
  * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp) 
  * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) 
  * Find duplicate in array ----> [C++](/Code/C++/repeated_element.cpp)
+ * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp)
 
