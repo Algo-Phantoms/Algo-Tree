@@ -83,7 +83,15 @@ int main(){
     root->left->left=new Node(4);
     root->right->right=new Node(5);
 
-   cout<<distance(root,4,5)<<endl;
+   int i,j;
+    cin>>i>>j;
+   cout<<distance(root,i,j)<<endl;  
+   
+   //if i=4 ,j=5 then distance between them is 4.
+   //if i=3 ,j=5 then distance between them is 1.
   
     return 0;
 }
+
+//TIME COMPLEXITY:O(h) where h is the height of tree 
+//SPACE COMPLEXITY:O(1)
