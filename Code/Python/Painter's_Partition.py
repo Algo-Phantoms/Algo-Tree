@@ -63,8 +63,6 @@ print(answer)
 
 
 """
-Time Complexity  : O(N*log(sum(boards))
-Space Complexity : O(1)
 
 TestCaes
 Input-1
@@ -78,4 +76,8 @@ Input-2
  1 2 3 4 5 6 7 8 9
 Output-1
  85
+ 
+Time Complexity  : O(N*log(sum(boards))
+Space Complexity : O(1)
+
 """
