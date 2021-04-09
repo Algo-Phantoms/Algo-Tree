@@ -29,5 +29,3 @@ element in a full stack is called **overflow**.
 -   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp)
 - Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
 - Largest Rectangle ----> [C++](/Code/C++/Largest_Rectangle.cpp)
-
- main
