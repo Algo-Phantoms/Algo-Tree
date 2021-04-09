@@ -52,6 +52,7 @@ that, this property should be satisfied at every node in the tree.
 * Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/binary_tree_from_preorder_and_inorder.cpp) 
 * Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
 * Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
+* Find nodes at distance k from root in binary tree ----> [C++](/Code/C++/nodes_at_distance_k_from_binary_tree_root.cpp) 
 
 
 
