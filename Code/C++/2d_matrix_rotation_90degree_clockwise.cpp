@@ -1,7 +1,5 @@
 /*
 Rotation of a 2D matrix by 90degrees in anticlockwise direction
-*/
-/*
 Example: The given matrix is 
             1 2 3
             4 5 6
@@ -27,14 +25,11 @@ using namespace std;
 #define int long long
 
 //utility function to carry out the transpose of a 2d matrix
-void transpose(vector<vector<int>>& v)                   
-{
+void transpose(vector<vector<int>>& v){
     int n = v.size();
 
-    for(int i = 0 ; i < n ; i++)
-    {
-        for(int j = i; j < v[i].size() ; j++)
-        {
+    for(int i = 0 ; i < n ; i++){
+        for(int j = i; j < v[i].size() ; j++){
             //swap is a C++ STL function
             swap(v[i][j], v[j][i]);                     
         }
@@ -42,22 +37,18 @@ void transpose(vector<vector<int>>& v)
 }
 
 //utility function to take reflection of a 2d matrix along the column
-void reflect(vector<vector<int>>& v)                    
-{
+void reflect(vector<vector<int>>& v){
     int n = v.size();
 
-    for(int i = 0 ; i < n; i++)
-    {
-        for(int j=0;j<v[i].size()/2;j++)
-        {
+    for(int i = 0 ; i < n; i++){
+        for(int j = 0 ; j < v[i].size() / 2 ; j++){
             swap(v[i][j],v[i][n-j-1]);                  
         }
     }
 }
 
 //helper function to rotate the matrix
-void rotate(vector<vector<int>>& v)                   
-{
+void rotate(vector<vector<int>>& v){
     //transpose function call to carry out transpose of matrix
     transpose(v);                                    
 
@@ -66,14 +57,11 @@ void rotate(vector<vector<int>>& v)
 }
 
 //utility function to print the matrix
-void print(vector<vector<int>>& v)                     
-{       
+void print(vector<vector<int>>& v){       
     int n = v.size();
 
-    for(int i = 0 ; i < n; i++)
-    {
-        for(int j=0;j<v[i].size();j++)
-        {
+    for(int i = 0 ; i < n; i++){
+        for(int j = 0 ; j < v[i].size() ; j++){
             cout<<v[i][j]<<" ";
         }
         cout<<endl;
@@ -81,8 +69,7 @@ void print(vector<vector<int>>& v)
     
 }
 
-signed main()
-{
+signed main(){
     int n;
 
     //input size of matrix
@@ -92,13 +79,11 @@ signed main()
     vector<vector<int>> v(n);       
 
     //input elemets of matrix
-    for(int i=0;i<n;i++)            
-    {
+    for( int i = 0 ; i < n ; i++ ){
         //v[i] is a normal vector of capacity n so that n columns will be created
-        v[i]=vector<int>(n);   
+        v[i] = vector<int>(n);   
 
-        for(int j=0;j<n;j++)
-        {
+        for( int j = 0 ; j < n ; j++ ){
             cin>>v[i][j];
         }
     }
@@ -121,8 +106,7 @@ signed main()
 
 /* 
 
-Time Complexity: O(m*n) where m and n are no of rows and columns respectively
-Space Complexity: O(1)
+
 
 Test Case:
 4
@@ -143,6 +127,7 @@ Matrix rotated by 90degrees
 6 5 2 9 
 7 4 1 7 
 
-
+Time Complexity: O(m*n) where m and n are no of rows and columns respectively
+Space Complexity: O(1)
 
 */
