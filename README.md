@@ -11,7 +11,7 @@
 [![Stars](https://img.shields.io/github/stars/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree) 
 [![Watchers](https://img.shields.io/github/watchers/Algo-Phantoms/Algo-Tree?style=social)](https://github.com/Algo-Phantoms/Algo-Tree)
 
-**Algo-Tree** is a collection of Algorithms and data structures which are fundamentals to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. It contains solutions in various languages such as ``C++``, ``Python`` and ``Java``.
+**Algo-Tree** is a collection of Algorithms and data structures which are fundamentals to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. It contains solutions in various languages such as ``C``, ``C++``, ``Python`` and ``Java``.
 
 # Code Structure
 * [Array](/Array)
