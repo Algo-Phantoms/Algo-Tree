@@ -13,7 +13,8 @@ If there is no common prefix, return an empty string " ".
 
 
 import java.util.Scanner;
-class LongestCommonPrefix {
+class LongestCommonPrefix 
+{
 	
 	public static void main(String arggs[])
 	{
@@ -29,15 +30,16 @@ class LongestCommonPrefix {
 	
 	}
 	
-    public static String longestCommonPrefix(String[] strs) {
-       
-        if(strs.length == 0)  //returning empty string if input array is empty
-		{
+    public static String longestCommonPrefix(String[] strs) 
+    {
+       //returning empty string if input array is empty
+        if(strs.length == 0)  
+	{
             return "";
         }
-       
-        if(strs.length == 1)  //returning 1st element if input is only 1 string element
-		{
+        //returning 1st element if input is only 1 string element
+        if(strs.length == 1) 
+	{
             return strs[0];
         }
        
@@ -47,7 +49,8 @@ class LongestCommonPrefix {
         {
             if(commonPrefix.equals("")) 
             {
-                return "";  //base condition for exiting the method
+		//base condition for exiting the method
+                return "";  
             }
             commonPrefix = findCommonPrefix(commonPrefix, strs[i]);
         }
@@ -56,15 +59,19 @@ class LongestCommonPrefix {
     
 	//divide and conquer method for finding longest common prefix
 	
-    static String findCommonPrefix(String s1, String s2) {
+    static String findCommonPrefix(String s1, String s2) 
+    {
         
-        if(s2.length() == 0) {
+        if(s2.length() == 0) 
+	{
             return "";
         }
         
         int i = 0;
-        for(i=0; i<Math.min(s1.length(), s2.length()); i++) {
-            if(s1.charAt(i)!=s2.charAt(i)) {
+        for(i=0; i<Math.min(s1.length(), s2.length()); i++) 
+	{
+            if(s1.charAt(i)!=s2.charAt(i)) 
+	    {
                 return s1.substring(0, i);
             }
         }
