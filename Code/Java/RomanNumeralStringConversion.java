@@ -21,13 +21,23 @@ eg. Input = XXIV -> (X = 10) + (X = 10)+ (IV = 4) = 24
 	Output = 24
 
 */
+
+
+
+
+
+
+
+
 import java.io.*;
 import java.util.*;
 
-class RomanNumeralStringConversion{
+class RomanNumeralStringConversion
+{
 
-	public static void main(String[] args) throws IOException {
-        BufferedReader br =
+	public static void main(String[] args) throws IOException 
+	{
+       	    BufferedReader br =
             new BufferedReader(new InputStreamReader(System.in));
 
         
@@ -35,41 +45,42 @@ class RomanNumeralStringConversion{
             RomanToNumber rn = new RomanToNumber();
             System.out.println(rn.romanToDecimal(roman));
         
-    }
+    	}
 }
 
 class RomanToNumber {
-	public int romanToDecimal(String str) {
-        int res = 0;  //total result
-		
-		//Using Java HashMap for mapping
-		
-        HashMap<Character,Integer> hm = new HashMap<Character,Integer>();
-        
-        hm.put('I',1);
-        hm.put('V',5);
-        hm.put('X',10);
-        hm.put('L',50);
-        hm.put('C',100);
-        hm.put('D',500);
-        hm.put('M',1000);
-       
-        int pre = 0; //Variable  for comparision of prev valuue
-        
-        for(int i = str.length()-1 ; i >=0  ; i--)
-        {
-            int x = hm.get(str.charAt(i));
-			
-            if(x>=pre) //if value at i greater than previous value  --> VI = 6 ( 5 + 1 )
-                res = res + x;
-            else
-                res = res - x; //if value at i less than previous value  --> IV = 4 ( -1 + 5 )
-            //Storing previous value for comparision
-			pre = x;
-        }
-        
-        return res; 
-    }
+	public int romanToDecimal(String str) 
+	{
+		int res = 0;  //total result
+
+			//Using Java HashMap for mapping
+
+		HashMap<Character,Integer> hm = new HashMap<Character,Integer>();
+
+		hm.put('I',1);
+		hm.put('V',5);
+		hm.put('X',10);
+		hm.put('L',50);
+		hm.put('C',100);
+		hm.put('D',500);
+		hm.put('M',1000);
+
+		int pre = 0; //Variable  for comparision of prev valuue
+
+		for(int i = str.length()-1 ; i >=0  ; i--)
+		{
+		    int x = hm.get(str.charAt(i));
+
+		    if(x>=pre) //if value at i greater than previous value  --> VI = 6 ( 5 + 1 )
+			res = res + x;
+		    else
+			res = res - x; //if value at i less than previous value  --> IV = 4 ( -1 + 5 )
+		    //Storing previous value for comparision
+				pre = x;
+		}
+
+		return res; 
+	}
 }
 
 
