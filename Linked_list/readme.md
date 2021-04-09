@@ -33,3 +33,4 @@ properties.
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
 * Implementation of Linked List ----> [Python](/Code/Python/linked_list.py)
 * Reversing a Linked List ----> [C++](/Code/C++/reverse_a_linked_list.cpp)
+* Finding Intersection of Linked Lists ----> [Python](/Code/Python/linked_lists_intersection.py)
