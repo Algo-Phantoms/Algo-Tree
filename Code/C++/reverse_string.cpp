@@ -7,17 +7,15 @@ o with e
 m with t
 p with u
 At the end, we'll get "retupmoc", which is the required answer.
-We can also reverse a string using a predefined function in CPP i.e., reverse()
+We can also reverse a string using a predefined function of STL in CPP i.e., std::reverse()
 SYNTAX: reverse(str.begin(), str.end());
 */
 
 #include<bits/stdc++.h>
 using namespace std;
 
-int main(){
-	string str;
-	//Taking input using getline() to include whitespaces
-	getline(cin, str);	
+//A function to reverse a string and print it
+void revstr(string str){
 	//size() is used to find the length of the string
 	int len = str.size();
 	//Traversing half of the string
@@ -26,7 +24,15 @@ int main(){
 		swap(str[i], str[len - 1 - i]);
 	}
 	//Printing reversed string
-	cout<<str;	
+	cout<<str;
+}
+
+int main(){
+	string str;
+	//Taking input using getline() to include whitespaces
+	getline(cin, str);
+	//A function call to reverse a string
+	revstr(str);
 	return 0;
 }
 
