@@ -51,9 +51,10 @@ class RomanNumeralStringConversion
 class RomanToNumber {
 	public int romanToDecimal(String str) 
 	{
-		int res = 0;  //total result
+		//total result
+		int res = 0;  
 
-			//Using Java HashMap for mapping
+		//Using Java HashMap for mapping
 
 		HashMap<Character,Integer> hm = new HashMap<Character,Integer>();
 
@@ -65,17 +66,21 @@ class RomanToNumber {
 		hm.put('D',500);
 		hm.put('M',1000);
 
-		int pre = 0; //Variable  for comparision of prev valuue
-
+		//Variable  for comparision of prev valuue
+		int pre = 0; 
+		
 		for(int i = str.length()-1 ; i >=0  ; i--)
 		{
 		    int x = hm.get(str.charAt(i));
-
-		    if(x>=pre) //if value at i greater than previous value  --> VI = 6 ( 5 + 1 )
+		    
+		    //if value at i greater than previous value  --> VI = 6 ( 5 + 1 )
+		    if(x>=pre) 
 			res = res + x;
 		    else
-			res = res - x; //if value at i less than previous value  --> IV = 4 ( -1 + 5 )
-		    //Storing previous value for comparision
+			    //if value at i less than previous value  --> IV = 4 ( -1 + 5 )
+			res = res - x; 
+		   
+			//Storing previous value for comparision
 				pre = x;
 		}
 
