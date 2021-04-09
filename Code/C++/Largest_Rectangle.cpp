@@ -8,7 +8,7 @@ Here, we use Divide and Conquer Approach.*/
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long           lli;
+typedef long long lli;
 
 #define pb push_back
 
@@ -56,10 +56,17 @@ int main(void)
 }
 
 
-/* _Test Case 1:_                                       _Test Case 2:_
-    Input:  5                                            Input: 10
-            1 2 3 4 5                                           6320 6020 6098 1332 7263 672 9472 2838 3401 9494
+/* _Test Case 1:_                                      
+    Input:  5                                            
+            1 2 3 4 5                                          
     
-    Output: 9                                            Output: 18060
-
-Time and Space complexcity: We calculate the desired rectangle, for each bar is O(n) */
+    Output: 9                                           
+    
+    _Test Case 2:_
+    Input: 10
+           6320 6020 6098 1332 7263 672 9472 2838 3401 9494
+           
+    Output: 18060
+Time Complexcity:  O(n)
+Space Complexcity:  O(n) 
+*/
