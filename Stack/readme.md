@@ -27,10 +27,7 @@ element in a full stack is called **overflow**.
 -   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
 -   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
 -   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp)
-
- LR
 - Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
-
 - Largest Rectangle ----> [C++](/Code/C++/Largest_Rectangle.cpp)
 
  main
