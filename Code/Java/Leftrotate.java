@@ -42,21 +42,16 @@ public class Leftrotate {
 }
 /*
     Test Cases:
-A.
-        Input: 5 
-	       8 9 5 2 4 
-	       1
-       Output: 9 5 2 4 8
 
+        Input : 5 
+	        8 9 5 2 4
+	        1
+        Output: 9 5 2 4 8
 
-
-B.
-        Input: 6 
-	       2 4 6 5 8 3 
-	       2
-       Output: 6 5 8 3 2 4
-
-
+        Input : 6 
+	        2 4 6 5 8 3 
+	        2
+        Output: 6 5 8 3 2 4
 
         Time Complexity: O(n)
         Space Complexity: O(1)
