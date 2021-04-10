@@ -26,5 +26,5 @@ To create an array, you need to known the length (or size) of the array in advan
 
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
  * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
- * Peak element in array using linear search ----> [Java](/Code/java/peakvalueinarray.java)
+ * Peak element in array using linear search ----> [Java](/Code/Java/peakvalueinarray.java)
 
