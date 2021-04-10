@@ -1,7 +1,10 @@
 /*
-Here we will Assume Peak element in Array is array[0] i.e 1st value,
-then we will compare it with next one, if found grater than peak then
-we will change peak to that value
+An array element is a peak if it is NOT smaller than
+its neighbours. For corner elements, we need to
+consider only one neighbour.
+Here we will Assume Peak element in Array is -11 i.e if peak elemwnt dosent exists then will retuen -1,
+then by Liner Search, we will compare (i) with (i+1) & (i-1), if found greater than both the Neighbouring Elemnts
+then it will retuen that Element.
 */
 
 package peakval;
@@ -26,10 +29,21 @@ public class peakvalueinarray {
         }
     }
     public static int peakval(int[] arr){
-        int peak = arr[0];
-        for (int i = 0;i<arr.length;i++){
-            if (peak<arr[i]){
+        if (arr.length >=2){
+            if(arr[0]>arr[1]){
+                return arr[0];
+            }
+        }
+        int peak = -1;
+        for (int i = 1;i<arr.length-1;i++){
+            if (arr[i]>arr[i+1] && arr[i]>arr[i-1]){
                 peak = arr[i];
+                return peak;
+            }
+        }
+        if (arr.length >=2){
+            if(arr[arr.length-1]>arr[arr.length-2]){
+                return arr[arr.length-1];
             }
         }
         return peak;
@@ -38,15 +52,13 @@ public class peakvalueinarray {
 /*
     Test Cases:
         Input : 5
-	        8 9 5 2 4
+	            8 9 5 2 4
         Output: 9
 
         Input : 3
-		0 1 0
+		        0 1 0
         Output: 1
 
         Time Complexity: O(n)
         Space Complexity: O(1)
-
-
  */
