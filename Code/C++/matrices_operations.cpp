@@ -10,21 +10,20 @@ void addition_of_matrices(int rows, int cols, double a[][20],double b[][20])
 
     for(int  i = 0; i < rows; i++)
     {
-		for(int j =0; j < cols; j++)
+	for(int j =0; j < cols; j++)
         {
-			sum[i][j] = a[i][j] + b[i][j];
-		}
+		sum[i][j] = a[i][j] + b[i][j];
 	}
+    }
 
     for(int  i = 0; i < rows; i++ )
     {
-		for(int j =0; j < cols; j++)
+	for(int j =0; j < cols; j++)
         {
-			cout << sum[i][j] << "\t";
-		}
-        cout << endl;
+		cout << sum[i][j] << "\t";
 	}
-
+        cout << endl;
+    }
 }
 
 // Function to find the difference of two matrices
@@ -34,20 +33,20 @@ void subtraction_of_matrices(int rows, int cols, double a[][20],double b[][20])
 
     for(int  i = 0; i < rows; i++)
     {
-		for(int j = 0; j < cols; j++)
+	for(int j = 0; j < cols; j++)
         {
-			sub[i][j] = a[i][j] - b[i][j];
-		}
+		sub[i][j] = a[i][j] - b[i][j];
 	}
+    }
 
     for(int  i = 0; i < rows; i++ )
     {
-		for(int j =0; j < cols; j++)
+	for(int j =0; j < cols; j++)
         {
-			cout << sub[i][j] << "\t";
-		}
-        cout << endl;
+		cout << sub[i][j] << "\t";
 	}
+        cout << endl;
+    }
 
 }
 
@@ -71,12 +70,12 @@ void product_of_matrices(int rows, int cols, double a[][20],double b[][20])
 
     for(int  i = 0; i < rows; i++ )
     {
-		for(int j = 0; j < cols; j++)
+	for(int j = 0; j < cols; j++)
         {
-			cout << mul[i][j] << "\t";
-		}
-        cout << endl;
+		cout << mul[i][j] << "\t";
 	}
+        cout << endl;
+    }
 }
 
 // Function to find the inverse of matrix
@@ -137,25 +136,24 @@ void inverse_of_matrices(int n, double a[][20])
 
 int main()
 {
-    double a[20][20], b[20][20];
+	double a[20][20], b[20][20];
 	int rows, cols;
-    cout << "Enter the number of rows and columns: ";
+	cout << "Enter the number of rows and columns: ";
 	cin >> rows >> cols;
-
-    cout << "\nEnter the elements of matrix A: "<<endl;
+	cout << "\nEnter the elements of matrix A: "<<endl;
 	for(int  i = 0; i < rows; i++ )
-    {
+	{
 		for(int j =0; j < cols; j++)
-        {
+		{
 			cin >> a[i][j];
 		}
 	}
-
-    cout << "\nEnter the elements of matrix B: "<<endl;
+	
+	cout << "\nEnter the elements of matrix B: "<<endl;
 	for(int  i = 0; i < rows; i++ )
-    {
+	{
 		for(int j =0; j < cols; j++)
-        {
+		{
 			cin >> b[i][j];
 		}
 	}
@@ -164,18 +162,17 @@ int main()
 	addition_of_matrices(rows,cols,a,b);
 
 	cout<<"\nSUBTRACTION OF TWO MATRICES: "<<endl;
-    subtraction_of_matrices(rows,cols,a,b);
+	subtraction_of_matrices(rows,cols,a,b);
 
-    if(rows == cols)
-    {
-        cout<<"\nMULTIPLICATION OF TWO MATRICES: "<<endl;
-        product_of_matrices(rows,cols,a,b);
-
+	if(rows == cols)
+        {
+		cout<<"\nMULTIPLICATION OF TWO MATRICES: "<<endl;
+		product_of_matrices(rows,cols,a,b);
+		
 		// Formula for finding inverse of a matrix: A^(-1) = adj(A) / det(A)
 		cout<<"\nINVERSE OF MATRIX A: "<<endl;
 		inverse_of_matrices(rows,a);
-	}
-
+        }
 	return 0;
 }
 
