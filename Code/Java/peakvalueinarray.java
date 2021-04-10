@@ -52,11 +52,11 @@ public class peakvalueinarray {
 /*
     Test Cases:
         Input : 5
-	            8 9 5 2 4
+	        8 9 5 2 4
         Output: 9
 
         Input : 3
-		        0 1 0
+		0 1 0
         Output: 1
 
         Time Complexity: O(n)
