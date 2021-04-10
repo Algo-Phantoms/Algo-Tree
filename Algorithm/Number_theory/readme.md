@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
