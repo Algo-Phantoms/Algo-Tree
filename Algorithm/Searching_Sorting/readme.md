@@ -74,4 +74,5 @@ Following are the types of searches which we will be discussing in this book.
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
+* Searching in sorted rotated array ----> [Java](/Code/Java/searching_in_sorted_rotated_array.java)
 
