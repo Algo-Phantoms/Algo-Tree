@@ -11,22 +11,31 @@ public class revindivstring {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter Sentence : ");
-        String txt = scan.nextLine();
+        //Taking Input of String
+	String txt = scan.nextLine();
+	//String with Reversed Words Result Output
         System.out.println(RevIndivString(txt));
     }
     public static String RevIndivString(String txt){
-        String temp = "";
+        //Creating an Empty String to which the Reversed Words will be Concatenated
+	String temp = "";
         int carry = 0;
         for (int i = 0;i<txt.length();i++){
-            if (txt.charAt(i) == ' '){
+        //Finding Last Index of Word    
+	if (txt.charAt(i) == ' '){
+		//Concatenating from 1 index behind space upto previous Carry
+		//which forms a complete word
                 for (int j = i-1;j>=carry;j--){
                     temp += txt.charAt(j);
                 }
+		//Adding Space for Next Reversed Word
                 temp += ' ';
+		// Carrying Starting Index of Next Word
                 carry = i+1;
             }
 
         }
+	//Concatenation Last Word in Reversed Order to String temp 
         for (int i = txt.length()-1;i>=carry;i--){
             temp += txt.charAt(i);
         }
