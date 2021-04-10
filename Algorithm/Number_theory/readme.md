@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
