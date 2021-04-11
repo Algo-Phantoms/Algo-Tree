@@ -54,7 +54,7 @@ int main() {
 
     while(true){ 
         cin >> data;
-        if(data==-1)break;
+        if(data == -1)break;
         root = Insert(root, data);
     }
 
@@ -66,29 +66,37 @@ int main() {
 }
 
 /*
+Test Cases:
+
+1.
+
 Input:
-    1         
-     \  
-      7       
-     / \
-    9   4   
-sum=8
+1 7 9 4 -1 50
 
 Output:
 0
 
-Input:
-      1         
+Explanation:
+    1         
+     \  
+      7       
      / \
-    5   7       
-       / \
-      6   4     
-         / \
-        2   3   
-sum=14
+    4   9  
+    
+2.
+
+Input:
+5 1 7 6 8 -1 6  
 
 Output:
 1
+
+Explanation:
+      5         
+     / \
+    1   7       
+       / \
+      6   8  
 
 Time Complexity: O(Nodes)
 Space Complexity: O(Height)
