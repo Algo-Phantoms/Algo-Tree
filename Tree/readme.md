@@ -52,6 +52,5 @@ that, this property should be satisfied at every node in the tree.
 * Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/binary_tree_from_preorder_and_inorder.cpp) 
 * Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
 * Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
-* Root to leaf path with given sum ----> [C++](/Code/C++/Root_to_leaf_path_with_given_sum.cpp)
-
+* Root to Leaf Path with Given Sum ----> [C++](/Code/C++/Root_to_leaf_path_with_given_sum.cpp)
 
