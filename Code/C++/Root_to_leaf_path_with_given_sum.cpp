@@ -69,7 +69,6 @@ int main() {
 Test Cases:
 
 1.
-
 Input:
 1 7 9 4 -1 50
 
@@ -82,9 +81,9 @@ Explanation:
       7       
      / \
     4   9  
+There is no path from which 50 can be obtained.
     
 2.
-
 Input:
 5 1 7 6 8 -1 6  
 
@@ -92,11 +91,12 @@ Output:
 1
 
 Explanation:
-      5         
-     / \
-    1   7       
+    / 5         
+   / / \
+  / 1   7       
        / \
       6   8  
+The path consisting of 5 and 1 will give us 6.
 
 Time Complexity: O(Nodes)
 Space Complexity: O(Height)
