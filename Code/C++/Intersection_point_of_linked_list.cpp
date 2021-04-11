@@ -95,39 +95,38 @@ int getCount(Node* head)
 // Driver Code
 int main()
 {
+	int numb1,num2,b,d;
+	cin>>numb1>>numb2;
 	Node* newNode;
-
-	// Addition of new nodes
-	Node* head1 = new Node();
-	head1->data = 10;
-
-	Node* head2 = new Node();
-	head2->data = 3;
-
-	newNode = new Node();
-	newNode->data = 6;
-	head2->next = newNode;
-
-	newNode = new Node();
-	newNode->data = 9;
-	head2->next->next = newNode;
-
-	newNode = new Node();
-	newNode->data = 15;
-	head1->next = newNode;
-	head2->next->next->next = newNode;
-
-	newNode = new Node();
-	newNode->data = 30;
-	head1->next->next = newNode;
-
-	head1->next->next->next = NULL;
+	for(int i=0;i<numb1;i++)
+	{
+		Node* head1 = new Node();
+		cin>>b;
+		head1->data=b;
+		if(i+1<numb1)
+		head1=head1->next;
+		else
+			head1->next = NULL;
+	}
+	for(int i=0;i<numb2;i++)
+	{
+		Node* head2 = new Node();
+		cin>>d;
+		head2->data=d;
+		if(i+1<numb2)
+		head2=head2->next;
+		else
+			head2->next=NULL;
+	}
+	
+	
 
 	cout << "The node of intersection is " << getIntesectionNode(head1, head2);
 }
 
 // This code is contributed by rathbhupendra
-// Input    3
+// Input    numb1 =5, numb2 = 3
+//	     3
 //            \
 //              6
 //               \
@@ -139,3 +138,17 @@ int main()
 
 
 // Output     15
+
+// Input  numb1 = 4 numb2 = 4
+//	 2   4
+//        \ /
+//         3 
+//         |
+//         5
+//         |
+//         7
+
+// Output 3
+
+// Time Complexity: O(m+n) 
+// Auxiliary Space: O(1)
