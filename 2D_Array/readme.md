@@ -10,3 +10,4 @@ Due to the fact that the elements of 2D arrays can be random accessed. Similar t
 ## Questions :
 * Spiral Print ----> [C++](/Code/C++/spiral_print.cpp)
 * Wave Print ----> [C++](/Code/C++/wave_print.cpp)
+* Multiplication of two Matrices ----> [Java](/Code/Java/matrixop_mul.java)
