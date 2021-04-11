@@ -23,7 +23,7 @@ element in a full stack is called **overflow**.
 
 ## Questions :
 
--   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
+-   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp) | [Java]() | [Python](/Code/Python/Postfix_expression.py)
 -   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
 -   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
 -   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp)
