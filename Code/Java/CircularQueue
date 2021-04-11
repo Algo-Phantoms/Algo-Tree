@@ -1,24 +1,21 @@
-
-/**
- * Author - Khushee Kapoor
- * 
- * Ciruclar Queue is a Data Structure which operates on the FIFO (First In First Out) Principle.
- * The pointers to the first and last element are dynamic. 
- *                               
- *          First element -> O - O                   Last element -> O - O <- First element
- *                          /     \                                 /     \
- *          Last element -> O     O      may also be                O     O
- *                          \     /                                 \     /
- *                           O - O                                   O - O 
- * 
- * 
- *       O - O - O - O - O - O           may also be         O - O - O - O - O - O
- *       ^                   ^                               ^   ^
- *      first               last                           last first
- * 
- * In a normal Queue, we can insert elements until queue becomes full. But once queue becomes full, 
- * we can not insert the next element even if there is a space in front of queue. This is possible
- * in Circular Queues and hence is a optimizes space consumption.
+/*
+  Ciruclar Queue is a Data Structure which operates on the FIFO (First In First Out) Principle.
+  The pointers to the first and last element are dynamic. 
+                                
+           First element -> O - O                   Last element -> O - O <- First element
+                           /     \                                 /     \
+           Last element -> O     O      may also be                O     O
+                           \     /                                 \     /
+                            O - O                                   O - O 
+  
+  
+        O - O - O - O - O - O           may also be         O - O - O - O - O - O
+        ^                   ^                               ^   ^
+       first               last                           last first
+  
+  In a normal Queue, we can insert elements until queue becomes full. But once queue becomes full, 
+  we can not insert the next element even if there is a space in front of queue. This is possible
+  in Circular Queues and hence is a optimizes space consumption.
  */
 
 import java.util.*;
@@ -37,28 +34,18 @@ public class CircularQueue
 
     public void insert(int value)
     {
-        /**
-         * This function is used to insert an element into the circular queue. 
-         * In a circular queue, the new element is always inserted at last position. 
-         * Steps:
-         * 1. Check if Circular Queue cq is full (first==0 && last==cq.length-1 || first==last+1).
-         * 2. If it is full then display "Overflow" and return to main function. If Circular Queue is not full then go to Step 3. 
-         * 3. Check if (first==-1).
-         *    If it is, then set first=last=0.
-         *    Else check if (last==cq.length-1).
-         *    If it is, then set last=0.
-         *    Else increment last by 1.
-         * 4. Insert value at position last.
-         */
-        if(first==0 && last==cq.length-1 || first==last+1)
+         // This function is used to insert an element into the circular queue. 
+         // In a circular queue, the new element is always inserted at last position. 
+         
+        if(first == 0 && last == cq.length-1 || first == last+1)
         { 
             System.out.println("Overflow"); return;
         }
-        else if(first==-1)
+        else if(first == -1)
         {
             first=last=0;
         }
-        else if(last==cq.length-1)
+        else if(last == cq.length-1)
         {
             last=0;
         }
@@ -71,32 +58,21 @@ public class CircularQueue
 
     public int delete()
     {
-        /**
-         * This function is used to delete an element from the Circular Queue. 
-         * In a circular queue, the element is always deleted from first position. 
-         * Steps:
-         * 1. Check if the Circular Queue cq is empty (first==-1).
-         * 2. If it is empty then display "Underflow" and return 0. If the Circular Queue is not empty then go to Step 3.
-         * 3. Check if (first==last).
-         *    If it is, then call reset function [first=last=-1].
-         *    Else check if (first==cq.length-1).
-         *    If it is, then set first=0.
-         *    Else increment first by 1.
-         * 4. Return the element at position first.
-         */
-
-        if(first==-1)
+        // This function is used to delete an element from the Circular Queue. 
+        // In a circular queue, the element is always deleted from first position. 
+         
+        if(first == -1)
         {
             System.out.println("Underflow"); return 0; 
         }
         else
         {
             int temp = cq[first];
-            if(first==last)
+            if(first == last)
             { 
                 reset(); 
             }
-            else if(first==cq.length-1)
+            else if(first == cq.length-1)
             {
                 first=0;
             }
@@ -110,20 +86,9 @@ public class CircularQueue
 
     private void display()
     {
-        /**
-         * This function is used to display a Circular Queue.
-         * Steps:
-         * 1. Check if Circular Queue is empty (first==-1)
-         * 2. If it is empty then display "Circular Queue is Empty". If the Circular Queue is not empty then go to Step 3.
-         * 3. Start for loop from the position pointed by variable first, incrementing i by 1.
-         *    Check if i points to end of Circular Queue.
-         *    If it does, then initialize first as 0.
-         * 4. Print the element at i.
-         * 5. Check if i points to last (i==last)
-         *    If it does, then all the elements are printed. Break.
-         *    
-         */
-        if(first==-1)
+        // This function is used to display a Circular Queue.
+         
+        if(first == -1)
         {
             System.out.print("Circular Queue is Empty");
             return;
@@ -131,14 +96,14 @@ public class CircularQueue
         
         for(int i = first; ; i++)
         {
-            if(i==cq.length)
+            if(i == cq.length)
             {
                 i=0;
             }
 
-            System.out.print(cq[i]+" ");
+            System.out.print(cq[i] + " ");
 
-            if(i==last)
+            if(i == last)
             {
                 break;
             }
@@ -148,21 +113,14 @@ public class CircularQueue
 
     void reset()
     {
-        /**
-         * This function is used to reset first and last to original values -1.
-         */
+        // This function is used to reset first and last to original values -1.
         first=last=-1;
     }
 
     void main()
     {
-        /** 
-         * This function serves as a driver code.
-         * It follows a menu driven approach and gives user the options to 
-         * or delete an element from the Circular Queue or display its elements
-         * and calls the appropriate functions to do so.
-         * It contniues until the user enter 0 (no).
-         */
+        // This function serves as a driver code.
+         
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter number of elements: ");
@@ -172,7 +130,7 @@ public class CircularQueue
 
         int flag=1;
 
-        while(flag==1)
+        while(flag == 1)
         {
             System.out.println("Choose from following: ");
             System.out.println("1. Insert an element");
@@ -208,7 +166,7 @@ public class CircularQueue
     }
 }
 
-/**
+/*
     Test Case:
     
     Enter number of elements: 
@@ -388,15 +346,15 @@ public class CircularQueue
     0
 */
    
- /**
-  * Time Complexity:
-  * insert - O(1)
-  * delete - O(1)
-  * display - O(n)
-  * 
-  * Space Complexity:
-  * O(n)
-  * 
-  * where n is number of elements
+ /*
+   Time Complexity:
+   insert - O(1)
+   delete - O(1)
+   display - O(n)
+   
+   Space Complexity:
+   O(n)
+   
+   where n is number of elements
  */
     
