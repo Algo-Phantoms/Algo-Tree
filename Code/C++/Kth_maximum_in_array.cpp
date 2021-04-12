@@ -6,10 +6,24 @@
 
 #include <bits/stdc++.h>
 using namespace std;
+
+void sort(int arr[],int n)
+{
+   int i, j, min, temp;
+   for (i = 0; i < n - 1; i++) {
+      min = i;
+      for (j = i + 1; j < n; j++)
+      if (arr[j] < arr[min])
+      min = j;
+      temp = arr[i];
+      arr[i] = arr[min];
+      arr[min] = temp;
+}
+}
 int Kth_max_element(int arr[],int n,int k)
 {
     if(k>n)return -1; //If given k is greater then number of elements return -1
-    sort(arr,arr+n); //sort the given array
+    sort(arr,n); //sort the given array
     return arr[k-1]; //return (k-1)th element in the given array.
 }
 int main()
@@ -43,5 +57,5 @@ int main()
 // Output:
 // 4
 
-// Time-Complexity : O(nlogn)
+// Time-Complexity : O(n^2)
 // Space-Complexity : O(n)
