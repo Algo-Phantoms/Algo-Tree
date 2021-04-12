@@ -83,31 +83,22 @@ public static void main (String[] args)
          d               --> this is the no of element to rotate together in an array
 
 Test case 1:
-
     input:
-
         Enter the size of the array:                                            
         8 
-
         Enter the elements of the array:  --> this is space seperated array
         1 2 3 4 5 6 7 8 
-
         Enter the number of the element that you want to rotate in the array:
         4
-
     output:
-
         5 6 7 8 1 2 3 4            
 
  Test case 2:
-
     input:
         Enter the size of the array:                                                  
         12  
-
         Enter the elements of the array:  --> this is space seperated array                                                         
         11 23 35 24 57 63 74 89   
-
         Enter the number of the element that you want to rotate in the array:                                           
         3
     output:
