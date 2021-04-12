@@ -28,3 +28,4 @@ unsolvable.
 ## Questions :
 
 * Permutation of a string ----> [C++](/Code/C++/permutation_of_a_string.cpp)
+* Rat in a Maze ----> [C++](/Code/C++/rat_in_maze.cpp)
