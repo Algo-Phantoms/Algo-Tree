@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 
-// Function to find the difference of two matrices
+// Function to find the sum of two matrices
 void addition_of_matrices(int rows, int cols, double a[][20],double b[][20])
 {
     int sum[rows][cols];
@@ -207,5 +207,9 @@ INVERSE OF MATRIX A:
 5       -4      2
 -10     8       -3
 4       -3      1
+
+
+Time Complexity: O(n^2)
+Space Complexity: O(n^2)
 
 */
