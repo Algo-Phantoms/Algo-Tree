@@ -17,10 +17,12 @@
    string uppercase(string s1)
    {
       for(int i=0;i<s1.size();++i)
-       if(s1[i]>=97 && s1[i]<=122)
-       {
+      {
+         if(s1[i]>=97 && s1[i]<=122)
+         {
            s1[i]=s1[i]-32;//convertion to uppercase case
-       }
+         }
+      }
        return s1;
    }
 
