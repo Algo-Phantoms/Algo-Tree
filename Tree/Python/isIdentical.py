@@ -1,4 +1,4 @@
-#Ques: Check if two trees are identical or not.
+#Problem Statement : Check if two trees are identical or not.
 #Language: Python3
 
 #input:                                 ----->first line will demand for number of nodes in first tree(n)
