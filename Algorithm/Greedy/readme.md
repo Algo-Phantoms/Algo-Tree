@@ -7,3 +7,5 @@ Greedy Algorithms are one of the most intuitive algorithms. Whenever we see a pr
 • You hope that by choosing a **local optimum** ateach step, you will end up at a **global optimum**. 
 
 ## Questions :
+
+- Job Sequencing Problem ----> [C++]() | [Java]() | [Python](/Code/Python/Job_sequencing.py)
