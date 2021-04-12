@@ -21,8 +21,8 @@ public:
     Node *next;
 };
 
-Node* head=NULL;
-Node* tail=NULL;
+Node* head = nullptr;
+Node* tail = nullptr;
 
 //Function to create a linked list
 void create(int n)
@@ -31,11 +31,11 @@ void create(int n)
     {
         int x;
         cin>>x;
-        if (head==NULL)
+        if (head == nullptr)
         {
             Node* temp=new Node;
             temp->data=x;
-            temp->next=NULL;
+            temp->next = nullptr;
             head=temp;
             tail=head;
         }
@@ -43,7 +43,7 @@ void create(int n)
         {
             Node* temp=new Node;
             temp->data=x;
-            temp->next=NULL;
+            temp->next = nullptr;
             tail->next=temp;
             tail=temp;
         }
@@ -51,15 +51,15 @@ void create(int n)
     }
 }
 
-Node* list1=NULL;
-Node* list2=NULL;
+Node* list1 = nullptr;
+Node* list2 = nullptr;
 
 //Split Function
 void split()
 {
     Node* temp=head;
     int count=0;
-    while(temp!=NULL)
+    while(temp != nullptr)
     {
         temp=temp->next;
         count++;
@@ -73,13 +73,13 @@ void split()
     }
     list1=head;
     list2=temp->next;
-    temp->next=NULL;
+    temp->next = nullptr;
 }
 
 void display(struct Node* list)
 {
     Node* temp=list;
-    while(temp!=NULL)
+    while(temp!=nullptr)
     {
         cout<<temp->data<<"->";
         temp=temp->next;
