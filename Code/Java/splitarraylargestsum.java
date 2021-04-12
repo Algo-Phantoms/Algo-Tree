@@ -28,17 +28,19 @@ public class splitarr {
         int n = nums.length;
         int left = 0;
         int right = 0;
+        // Here Lest will be incresed Forwards
+        //Set left to be the largest number in the array
+        //Set right to be the sum of the array.
         for (int i = 0; i < n; ++i) {
             left = Math.max(left, nums[i]);
             right += nums[i];
         }
-
+        // Then the result should be in the range of [left, right].
         while (left <= right) {
             int mid = (right - left) / 2 + left;
             if (canSplit(nums, mid, m)) right = mid - 1;
             else left = mid + 1;
         }
-
         return left;
     }
 
@@ -53,7 +55,6 @@ public class splitarr {
                 if (cnt > m) return false;
             }
         }
-
         return true;
     }
 }
