@@ -13,3 +13,5 @@ A string is a class that contains a char array, but automatically manages it for
 
 ## Questions :
 * Revere a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
+* Longest Common prefix in strings array  ---->[Java](/Code/Java/LongestCommonPrefix.java)
+* Conversion of Roman Numerals String to Decimal Integer(Int). ---->[Java](/Code/Java/RomanNumeralStringConversion.java)
