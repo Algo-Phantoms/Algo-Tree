@@ -15,8 +15,10 @@
 #define inf INT_MAX
 #define ll long long int 
 using namespace std;
-//recursive function to print the required soluton
+//recursive function to print the required soluton,  uses p[] to print the solution.
 void printwordwrap(ll p[],ll n){
+        //starts traversing from back till it get 1
+	//once 1 is achieved it prints the required value and from where it came from
 	if(p[n]==1)
 	cout<<p[n]<<" "<<n<<" ";
 	else{
@@ -84,7 +86,7 @@ int main() {
 			}
 		}
 	}
-	//calling printp(...)
+	//calling printwordwrap(...)
 	printwordwrap(p,n);
 	cout<<"\n";
 	return 0;
