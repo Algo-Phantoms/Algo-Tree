@@ -91,9 +91,9 @@ Output:
 1
 
 Explanation:
-    / 5         
-   / / \
-  / 1   7       
+      5         
+     / \
+    1   7       
        / \
       6   8  
 The path consisting of 5 and 1 will give us 6.
