@@ -1,11 +1,12 @@
-//Ques: Find the subarry sum in an array of size n such that its sum is greater than x.
-//language: C++
-//subarray:- A subbarray is a contiguous part of an array.
+/*Problem statement: Find the subarry sum in an array of size n such that its sum is greater than x.
+language: C++
+subarray:- A subbarray is a contiguous part of an array.
 
-//input: n (no. of elements)
-//       arr[0] arr[1] arr[2] ..... (space seperated integers)
- //      x      
-//output: ans  (subarray sum just greater than x)
+input: n (no. of elements)
+       arr[0] arr[1] arr[2] ..... (space seperated integers)
+       x      
+output: ans  (subarray sum just greater than x)
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -37,7 +38,7 @@ int main()
 	int x,n,i,tot=0,ans,flag=0;
 	cin>>n;
 	int v[n];
-
+	
 	for(i=0;i<n;i++)
 	{
 		cin>>v[i];
@@ -52,12 +53,28 @@ int main()
 			ans=i;
 			break;
 		}
-
+		
 	}
   if(flag==0)   
     cout<<"Not possible\n";
   else
 	cout<<ans<<endl;
-
+	
 	return 0;
 }
+
+//Time Complexity: O(n)
+
+/*e.g-1)
+5					--->(n)
+3 1 7 1 2			--->arr[]
+11					--->k
+12					--->smallest subset sum greater than k
+
+e.g-2)
+6
+12 3 1 5 4 2
+45
+Not possible
+
+*/
