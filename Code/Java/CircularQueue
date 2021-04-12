@@ -28,26 +28,25 @@ public class CircularQueue
     { 
         //This is a default constructor to declare Circular Queue and global parameters first and last.
         cq = new int[size];
-        first =-1;
+        first = -1;
         last = -1;
     }
-
+    
+    // This function is used to insert an element into the circular queue. 
+    // In a circular queue, the new element is always inserted at last position.
     public void insert(int value)
     {
-         // This function is used to insert an element into the circular queue. 
-         // In a circular queue, the new element is always inserted at last position. 
-         
         if(first == 0 && last == cq.length-1 || first == last+1)
         { 
             System.out.println("Overflow"); return;
         }
         else if(first == -1)
         {
-            first=last=0;
+            first = last = 0;
         }
         else if(last == cq.length-1)
         {
-            last=0;
+            last = 0;
         }
         else
         {
@@ -56,11 +55,10 @@ public class CircularQueue
         cq[last]=value;
     }
 
+    // This function is used to delete an element from the Circular Queue. 
+    // In a circular queue, the element is always deleted from first position.
     public int delete()
     {
-        // This function is used to delete an element from the Circular Queue. 
-        // In a circular queue, the element is always deleted from first position. 
-         
         if(first == -1)
         {
             System.out.println("Underflow"); return 0; 
@@ -74,7 +72,7 @@ public class CircularQueue
             }
             else if(first == cq.length-1)
             {
-                first=0;
+                first = 0;
             }
             else
             {
@@ -84,10 +82,9 @@ public class CircularQueue
         }
     }
 
+    // This function is used to display a Circular Queue.
     private void display()
     {
-        // This function is used to display a Circular Queue.
-         
         if(first == -1)
         {
             System.out.print("Circular Queue is Empty");
@@ -98,7 +95,7 @@ public class CircularQueue
         {
             if(i == cq.length)
             {
-                i=0;
+                i = 0;
             }
 
             System.out.print(cq[i] + " ");
@@ -111,16 +108,14 @@ public class CircularQueue
         System.out.println();
     }
 
+    // This function is used to reset first and last to original values -1.
     void reset()
     {
-        // This function is used to reset first and last to original values -1.
-        first=last=-1;
+        first = last = -1;
     }
 
     void main()
     {
-        // This function serves as a driver code.
-         
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter number of elements: ");
@@ -128,7 +123,7 @@ public class CircularQueue
 
         CircularQueue ob = new CircularQueue(size);
 
-        int flag=1;
+        int flag = 1;
 
         while(flag == 1)
         {
@@ -167,7 +162,7 @@ public class CircularQueue
 }
 
 /*
-    Test Case:
+    Test Case-
     
     Enter number of elements: 
     5
