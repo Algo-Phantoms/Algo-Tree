@@ -71,5 +71,4 @@ Following are the types of searches which we will be discussing in this book.
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
-
-
+* Union of two Unsorted Array ----> [Python](/Code/Python/Union_of_2_unsorted_array.py)
