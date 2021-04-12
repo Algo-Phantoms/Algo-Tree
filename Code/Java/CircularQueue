@@ -339,16 +339,13 @@ public class CircularQueue
     Circular Queue is Empty
     Do you wish to continue? Enter 1 for YES or 0 for NO: 
     0
-*/
-   
- /*
+
    Time Complexity:
-   insert - O(1)
-   delete - O(1)
-   display - O(n)
+   Insertion of elements - O(1)
+   Deletion of elements - O(1)
+   Displaying of elements - O(n)
    
-   Space Complexity:
-   O(n)
+   Space Complexity: O(n)
    
    where n is number of elements
  */
