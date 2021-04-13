@@ -13,3 +13,4 @@ A string is a class that contains a char array, but automatically manages it for
 
 ## Questions :
 
+* Manacher's algorithm (finding the longest palindrome in a string) ----> [Java](/Code/Java/longPalindrome.java)
