@@ -1,4 +1,8 @@
-// C++ program to implement Three Way Merge Sort
+/* C++ program to implement Three Way Merge Sort
+ Three Way Merge Sort is a variant of merge sort, where an array is recursively split into three subarrays.
+ And sort function is called on these three subarrays. The base case of the recursion occurs when size of 
+ the array is one, if that occur Return. Finally Merge the subarrays so as to get the resultant sorted array.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -154,10 +158,6 @@ int main()
 }
 
 /*
-
-Time Complexity: O(n*logn)
-Space Complexity: O(n)
-
 SAMPLE INPUT AND OUTPUT
 
 SAMPLE 1
@@ -171,4 +171,6 @@ SAMPLE 2
 How many numbers do you want to sort? 0
 There are no numbers to sort!!!
 
+Time Complexity: O(n*logn)
+Space Complexity: O(n)
 */
