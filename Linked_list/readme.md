@@ -34,5 +34,6 @@ properties.
 * Implementation of Linked List ----> [Python](/Code/Python/linked_list.py)
 * Reversing a Linked List ----> [C++](/Code/C++/reverse_a_linked_list.cpp)
 * Unrolled Linked List Implementation ----> [C++](/Code/C++/unrolled_linked_list.cpp)
+* Reversing a Circular Linked List ----> [Java](/Code/Java/ReversingCircularLinkedList.java)
 
 
