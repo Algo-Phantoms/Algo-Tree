@@ -1,0 +1,83 @@
+/*In Moore's voting algorithm --taking a variable count & if count of that variable is zero
+then changing the element(majority element) to that element. 
+if majority element is equal to that element increment the count else decrement the count.
+At last using check function check if the element is in majority (>n/2) or not. 
+Conclusion:- if majority element == minority element, then count will be zero
+*/
+
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int MajorityEle(vector<int>& arr){
+    int count=0;
+    int element=0;
+    int n=arr.size();
+    for(int i=0;i<n;i++){
+        if(count==0){
+            element=arr[i];
+        }
+        if(arr[i]==element){
+            count++;
+        }
+        else{
+            count--;
+        }
+    }
+    return element;
+}
+bool checkMajority(vector<int>& arr,int element){
+    int count=0;
+    for(int i=0;i<arr.size();i++){
+        if(arr[i]==element){
+            count++;
+        }
+    }
+    if(count>(arr.size()/2)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+int main() {
+	int SizeOfarray;
+    cout<<"Enter Size of array"<<endl;
+    cin>>SizeOfarray;
+    cout<<"Enter element in array"<<endl;
+    vector<int>arr;
+    for(int i=0;i<SizeOfarray;i++){
+        int ele;
+        cin>>ele;
+        arr.push_back(ele);
+    }
+    int Majorityele=MajorityEle(arr);
+    if(checkMajority(arr,Majorityele))
+    {
+          cout<<"Majority element is:"<<Majorityele<<endl;
+    }
+   else{
+       cout<<"No Majority element is found"<<endl;
+   }
+	return 0;
+}
+
+//TEST CASES
+/*Example 1:
+   Enter Size of array:7
+   Enter element in array 3 3 3 4 5 3 3 
+   Majority element is: 3
+Example 2:
+   Enter Size of array:8
+   Enter element in array 3 3 4 4 5 5 6 6
+   Majority element is: No Majority element is found
+Example 3:
+   Enter Size of array:5
+   Enter element in array 3 2 3 2 2 
+   Majority element is: 2
+
+Time Complexity:O(n)
+Space Complexity:O(1)
+
+*/
+    
