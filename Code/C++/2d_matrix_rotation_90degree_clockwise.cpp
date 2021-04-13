@@ -86,12 +86,7 @@ signed main(){
         for( int j = 0 ; j < n ; j++ ){
             cin>>v[i][j];
         }
-    }
-
-    cout<<endl;
-    cout<<"Original Matrix"<<endl;
-    //print function call to print original matrix
-    print(v);                       
+    }                      
 
     rotate(v);
     cout<<endl;
@@ -105,27 +100,20 @@ signed main(){
 }
 
 /* 
-
-
-
 Test Case:
-4
-5 8 9 7 
-3 4 2 1
-7 6 5 4
-3 5 6 7
+Input:  
+        4
+        5 8 9 7 
+        3 4 2 1
+        7 6 5 4
+        3 5 6 7
 
-Original Matrix
-5 8 9 7 
-3 4 2 1 
-7 6 5 4 
-3 5 6 7 
-
-Matrix rotated by 90degrees
-3 7 3 5 
-5 6 4 8 
-6 5 2 9 
-7 4 1 7 
+Output:
+        Matrix rotated by 90degrees
+        3 7 3 5 
+        5 6 4 8 
+        6 5 2 9 
+        7 4 1 7 
 
 Time Complexity: O(m*n) where m and n are no of rows and columns respectively
 Space Complexity: O(1)
