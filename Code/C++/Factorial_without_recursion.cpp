@@ -16,9 +16,15 @@ int main()
     return 0;
 }
 /*
-Test case :
+Test case 1:
 	Input : 5
 	Output : 120
-	Time complexity: O(n)
+Test case 1:
+	Input : 3
+	Output : 6
+	
+*/
+/*
+        Time complexity: O(n)
 	Space Complexity: 1
 */
