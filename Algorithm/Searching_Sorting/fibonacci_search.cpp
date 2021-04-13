@@ -145,7 +145,8 @@ Input 3:
 Output 3:
 -1
 
-Space complexity: 4
+Space complexity: O(1)
+
 Time complexity: O(n)
 */
 
