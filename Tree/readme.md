@@ -47,7 +47,12 @@ that, this property should be satisfied at every node in the tree.
 * Sorting the elements of binary search tree and many more
 
 ## Questions :
-* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* Check if a Binary Tree is a valid Binary Search Tree ----> [Java](/Code/Java/check_valid_BST.java)
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp)
+* Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/binary_tree_from_preorder_and_inorder.cpp) 
+* Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
+* Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
+
 
 
 
