@@ -106,7 +106,6 @@ Enter number of students: 5
 Output -
 Minimum number of pages = 107
 
-Time complexity : O(n*log(sum)) where n = number of books, sum = sum of the pages
-                  of all the books 
+Time complexity : O(n*log(sum)) where n = number of books, sum = sum of the pages of all the books 
 Space complexity: O(1), no extra space is used
  */
