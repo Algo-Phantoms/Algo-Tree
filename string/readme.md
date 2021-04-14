@@ -13,4 +13,8 @@ A string is a class that contains a char array, but automatically manages it for
 
 ## Questions :
 * Revere a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
+
 * Checking for Anagram ---->[Java](/Code/Java/Anagram.java)
+
+* Reverse a string ---->[C++](/Code/C++/reverse_string.cpp)
+
