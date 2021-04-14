@@ -66,4 +66,4 @@ Following are the types of searches which we will be discussing in this book.
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
-
+* DNF Sort ----> [C++](/Code/C++/dnf_sort.cpp)
