@@ -11,12 +11,12 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class StringReverse{
-    // function for reversing the given string
+class reverse_string{
+	
+   	// function for reversing the given string
 	public static void ReverseTheString(){
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();       
-	//size of the string
         int k = input.length();
 	//converting it into array to access each Character of string
         char[] output = input.toCharArray();        
@@ -24,7 +24,6 @@ class StringReverse{
         //using two pointer type approach to swap the characters of string 
         //one pointer points to starting and other to ending
         for(int itr = 0, ptr = k-1; itr < ptr; itr++, ptr--){
-	    //swapping the characters
             char flag = output[itr];                
             output[itr] = output[ptr];
             output[ptr] = flag;
@@ -43,13 +42,14 @@ class StringReverse{
 }
 
 /*
-Test Case 1:
+Test Cases:
+1.
 Input -
 towerofhanoi
 Output -
 Reversed string: ionahforewot
 
-Test Case 2:
+2.
 Input -
 reversemalayalam
 Output -
