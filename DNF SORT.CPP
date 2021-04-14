@@ -43,10 +43,15 @@ void dnfSort(int arr[],int n){
 }
 
 int main(){
-  int arr[]={1,0,2,1,0,1,2,1,2};
-  dnfSort(arr,9);
+  int n;
+  cin >> n;
+  int arr[n];
+  for(int i=0;i<n;i++){
+    cin >> arr[i];
+  }
+  dnfSort(arr,n);
 
-  for(int i=0;i<9;i++){
+  for(int i=0;i<n;i++){
     cout << arr[i] <<" ";
   }
 
@@ -55,6 +60,7 @@ int main(){
 }
 
 /*
+INPUT : 1 0 2 1 0 1 2 1 2
 OUTPUT: 0 0 1 1 1 1 2 2 2
 TIME COMPLEXITY:
 O(N)
