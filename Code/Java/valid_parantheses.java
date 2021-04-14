@@ -88,8 +88,8 @@ class valid_parantheses{
                 {{{{}}}}
 
                
-Time Complexity: O(2^n), where n is the number input from user
+Time Complexity: O(2^n), where n is the number for which, pairs are to generated
 
-Space Complexity: O(n), since we have created character array of size 2*n, n is the input from user
+Space Complexity: O(n), since we have created character array of size 2*n where n is the number for which, pairs are to generated
               
 */
