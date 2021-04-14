@@ -66,8 +66,7 @@ int main()
 
     Input: str ="We promptly judged antique ivory buckles for the prize"
     Output: No,the string is not a pangram
-*/		
-/*
-	Time Complexity: O(N), where N is the length of the string.
-	Auxiliary Space: O(1)
+
+    Time Complexity: O(N), where N is the length of the string.
+    Auxiliary Space: O(1)
 */
