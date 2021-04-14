@@ -2,7 +2,7 @@
 Generate all valid parentheses
 
 Problem  Statement: Write a program to generate all possible "n" pairs of balanced parantheses where "n" is the input from user.
-                    For e.g if  n = 2, the possible combinations are {}{}, {{}} only. I have solved it by storing the combination of paranthesis
+                    For e.g if  n = 2, the possible combinations are {}{}, {{}} only. I have solved it by storing the combination of parantheses
                     and calling for the next set recursively.
                     
 */
@@ -11,10 +11,10 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Paranthesis{
+class valid_parantheses{
         
         //function to print all valid pairs of parantheses by storing the count of opening and closing brackets
-        static void generate_paranthesis(char str[], int pos, int n, int start, int end){
+        static void generate_parantheses(char str[], int pos, int n, int start, int end){
             if(end == n){
                 for(int i = 0; i < str.length; i++){
                     //printing all pairs of parantheses
@@ -28,20 +28,20 @@ class Paranthesis{
                 //checking the condition for inserting the closing parantheses
                 if(start > end){
                     str[pos] = '}';
-                    generate_paranthesis(str, pos+1, n, start, end+1);     
+                    generate_parantheses(str, pos+1, n, start, end+1);     
                 }
-                //checking the condition for inserting the opening paranthesis
+                //checking the condition for inserting the opening parantheses
                 if(start < n){                          
                     str[pos] = '{';
-                    generate_paranthesis(str, pos+1, n, start+1, end);   
+                    generate_parantheses(str, pos+1, n, start+1, end);   
                 }
             }
         }
         
         //function to call the generate_parantheses function with initial values
-        static void valid_paranthesis(char ans[], int n){
+        static void valid_parantheses_call(char ans[], int n){
             if( n > 0)
-                generate_paranthesis(ans, 0, n, 0 , 0);
+                generate_parantheses(ans, 0, n, 0 , 0);
             
             return;
         }
@@ -53,7 +53,7 @@ class Paranthesis{
                 n = sc.nextInt();        
                 //generating a character array for storing parantheses
                 char [] arr = new char[2*n];                   
-        		    valid_paranthesis(arr, n);                      
+        		    valid_parantheses_call(arr, n);                      
     	}
 }
 
