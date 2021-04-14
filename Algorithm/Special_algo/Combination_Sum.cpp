@@ -1,4 +1,4 @@
-/* C++ Code for Combination Sum Problem.
+/* Combination Sum Problem.
 Problem Statement:
 Given an array of integers and a target value, the unique combination of values in array should sum up to the target value. 
 The same number can be chosen multiple times.
