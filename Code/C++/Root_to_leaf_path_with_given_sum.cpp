@@ -47,14 +47,15 @@ bool has_path_sum(Node * root, int sum) {
 
 int main() {
 
-    int data;               
+    int n;               
+    cin >> n;
+    
+    int data;
     cin >> data;
-
     Node* root = new Node(data);
 
-    while(true){ 
+    for(int i=1;i<n;i++){ 
         cin >> data;
-        if(data == -1)break;
         root = Insert(root, data);
     }
 
@@ -70,7 +71,9 @@ Test Cases:
 
 1.
 Input:
-1 7 9 4 -1 50
+4
+1 7 9 4  
+50
 
 Output:
 0
@@ -85,7 +88,9 @@ There is no path from which 50 can be obtained.
     
 2.
 Input:
-5 1 7 6 8 -1 6  
+5
+5 1 7 6 8 
+6  
 
 Output:
 1
