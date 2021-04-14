@@ -74,4 +74,5 @@ Following are the types of searches which we will be discussing in this book.
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
 * Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
+* DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
 
