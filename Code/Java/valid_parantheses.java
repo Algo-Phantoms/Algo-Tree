@@ -25,12 +25,12 @@ class Paranthesis{
                 return;
             }
             else{
-                //checking the condition for inserting the closing parantheses and afterwards calling the function for next position using recursion
+                //checking the condition for inserting the closing parantheses.
                 if(start > end){
                     str[pos] = '}';
                     generate_paranthesis(str, pos+1, n, start, end+1);     
                 }
-                //checking the condition for inserting the opening paranthesis and afterwards calling the function for next position using recursion
+                //checking the condition for inserting the opening paranthesis.
                 if(start < n){                          
                     str[pos] = '{';
                     generate_paranthesis(str, pos+1, n, start+1, end);   
