@@ -38,3 +38,4 @@ called **overflow**. Generally, we treat them as exceptions. As an example, cons
 
 ## Questions :
 * Queue using Stacks ----> [C++](/Code/C++/queue_using_stacks.cpp)
+* Circular Queue Implementation ----> [Java](/Code/Java/CircularQueue.java)
