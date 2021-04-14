@@ -11,15 +11,20 @@ element in a full stack is called **overflow**.
 
 ## Main stack operations
 
-* **Push (data):** Inserts data onto stack.
-* **Pop():** Removes and returns the last inserted element from the stack.
+- **Push (data):** Inserts data onto stack.
+- **Pop():** Removes and returns the last inserted element from the stack.
 
 ## Auxiliary stack operations
 
-* **Top():** Returns the last inserted element without removing it.
-* **Size():** Returns the number of elements stored in the stack.
-* **IsEmptyStack():** Indicates whether any elements are stored in the stack or not.
-* **IsFullStack():** Indicates whether the stack is full or not.
+- **Top():** Returns the last inserted element without removing it.
+- **Size():** Returns the number of elements stored in the stack.
+- **IsEmptyStack():** Indicates whether any elements are stored in the stack or not.
+- **IsFullStack():** Indicates whether the stack is full or not.
 
 ## Questions :
-* Stack Class ----> [C++](/Code/C++/stack_class.cpp)
+
+-   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
+-   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
+-   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
+-   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp)
+
