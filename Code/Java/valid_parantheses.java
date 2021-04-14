@@ -52,8 +52,8 @@ class valid_parantheses{
                 int n = 0;
                 n = sc.nextInt();        
                 //generating a character array for storing parantheses
-                char [] arr = new char[2*n];                   
-        		    valid_parantheses_call(arr, n);                      
+                char [] arr = new char[2*n];
+        valid_parantheses_call(arr, n);
     	}
 }
 
