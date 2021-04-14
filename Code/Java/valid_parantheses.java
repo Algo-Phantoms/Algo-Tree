@@ -25,16 +25,14 @@ class Paranthesis{
                 return;
             }
             else{
+                //checking the condition for inserting the closing parantheses and afterwards calling the function for next position using recursion
                 if(start > end){
-                     //checking the condition for inserting the closing parantheses
                     str[pos] = '}';
-                    //calling the function for the next position using recursion
                     generate_paranthesis(str, pos+1, n, start, end+1);     
                 }
-                //checking the condition for inserting the opeing paranthesis
+                //checking the condition for inserting the opening paranthesis and afterwards calling the function for next position using recursion
                 if(start < n){                          
                     str[pos] = '{';
-                     //calling the function for the next position using recursion
                     generate_paranthesis(str, pos+1, n, start+1, end);   
                 }
             }
@@ -55,7 +53,7 @@ class Paranthesis{
                 n = sc.nextInt();        
                 //generating a character array for storing parantheses
                 char [] arr = new char[2*n];                   
-        		valid_paranthesis(arr, n);                      
+        		    valid_paranthesis(arr, n);                      
     	}
 }
 
