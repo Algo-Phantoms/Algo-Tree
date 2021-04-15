@@ -31,8 +31,8 @@ class Book_Allocation {
                 if (cnt > m)
                     return false; 
             }
+            // else update current number of pages
             else {
-                // else update current number of pages
                 sum += a[j]; 
             }
         }
@@ -70,13 +70,11 @@ class Book_Allocation {
 
     public static void main(String[] args) throws java.lang.Exception {
         Scanner sc = new Scanner(System.in);
-        int n = 0;
-        int m = 0;
         System.out.print("Enter number of pages of each books: ");
-        n = sc.nextInt(); 
+        int n = sc.nextInt(); 
         System.out.println();
         System.out.print("Enter number of students: ");
-        m = sc.nextInt(); 
+        int m = sc.nextInt(); 
         System.out.println();
         // array for page distribution of each book
         int[] a = new int[n];
