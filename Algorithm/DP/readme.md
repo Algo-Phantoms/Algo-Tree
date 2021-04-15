@@ -41,4 +41,4 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 
-- Word Wrap Problem ----> [C++](/Algorithm/DP/word_wrap.cpp)
+- Word Wrap Problem ----> [C++](/Code/C++/word_wrap.cpp)
