@@ -154,9 +154,6 @@ Linked List 1 = 1->2->3->4->5->6->7->None
 Linked List 2 = 5->4->3->4->5->6->7->None
 The intersection point is 3
 
-Corner Test Cases Result
-Code works fine for all corner test cases tested , including null linked lists.
-
 Time/Space Complexity
 Time Complexity : O(m+n)
   where m and n are size of two linked lists
