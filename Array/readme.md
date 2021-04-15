@@ -25,8 +25,7 @@ To create an array, you need to known the length (or size) of the array in advan
 ## Questions :
 
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) 
- * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp) 
- * Repeating And Missing Number ----> [Java](/Code/Java/Repeating_And_Missing_Number.java)
- * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) 
+ * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)  
+ * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp)
-
+ * 
