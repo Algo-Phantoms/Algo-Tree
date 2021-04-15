@@ -40,7 +40,7 @@ public class Repeating_And_Missing_Number {
 
         
        for(int i = 0; i < n; i++) {
-          //Checking if numset contains that element
+         //Checking if numset contains that element
            if(!numSet.contains(arr[i]))     
            {   
             //if condition gets false then adding the element to numset
