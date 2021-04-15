@@ -30,7 +30,7 @@ def size(head):
 def eq(head1, head2):
 
     # If both nodes are NONE , they are equal
-    if(!head1 and !head2):
+    if(head1==None and head2==None):
         return True
     # If one of the nodes is NONE , they are not equal        
     if(None in (head1, head2)):
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     # Bulid Linked List 1 from List 1 values
     LinkedList1 = None
     temp = LinkedList1
-    for k in enumerate(List1):
+    for k in range(len(List1)):
         if k == 0:
             LinkedList1 = Node(List1[0])
             temp = LinkedList1
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     # Build Linked List 2 from List 2 Values
     LinkedList2 = None
     temp = LinkedList2
-    for j in enumerate(List2):
+    for j in range(len(List2)):
         if j == 0:
             LinkedList2 = Node(List2[0])
             temp = LinkedList2
@@ -138,7 +138,7 @@ if __name__ == '__main__':
         # If node is NONE , print that the given lists do not intersect
 
 '''
-Sample Test Case      
+Sample Test Case 1    
 Input Format :
  
 Example :
@@ -153,6 +153,22 @@ Example : ( Output to the above input example )
 Linked List 1 = 1->2->3->4->5->6->7->None
 Linked List 2 = 5->4->3->4->5->6->7->None
 The intersection point is 3
+
+Sample Test Case 2   
+Input Format :
+ 
+Example :
+
+Enter the values of each node of Linked List 1 in order : 1 2 3 4
+Enter the values of each node of Linked List 2 in order : 5 6 7 8  
+
+Output Format :
+
+Example : ( Output to the above input example ) 
+
+Linked List 1 = 1->2->3->4->None
+Linked List 2 = 5->6->7->8->None
+The lists do not intersect
 
 Time/Space Complexity
 Time Complexity : O(m+n)
