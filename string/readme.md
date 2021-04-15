@@ -13,5 +13,5 @@ A string is a class that contains a char array, but automatically manages it for
 
 ## Questions :
 
-- Longest Prefix Suffix Problem ---->[C++](/string/longest_prefix_suffix.cpp)
+- Longest Prefix Suffix Problem ---->[C++](/Code/C++/longest_prefix_suffix.cpp)
 
