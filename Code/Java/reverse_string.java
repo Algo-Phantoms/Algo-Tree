@@ -36,8 +36,8 @@ class reverse_string{
     }
 
     public static void main (String[] args) throws java.lang.Exception{
-	//calling for the reverse function from main
-	ReverseTheString();         
+	    //calling for the reverse function from main
+	    ReverseTheString(); 
     }
 }
 
