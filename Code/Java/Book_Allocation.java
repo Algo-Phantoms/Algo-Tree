@@ -72,10 +72,9 @@ class Book_Allocation {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of pages of each books: ");
         int n = sc.nextInt(); 
-        System.out.println();
         System.out.print("Enter number of students: ");
         int m = sc.nextInt(); 
-        System.out.println();
+        
         // array for page distribution of each book
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
