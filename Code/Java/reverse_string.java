@@ -18,7 +18,7 @@ class reverse_string{
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();       
         int k = input.length();
-	//converting it into array to access each Character of string
+	 //converting it into array to access each Character of string
         char[] output = input.toCharArray();        
 		
         //using two pointer type approach to swap the characters of string 
