@@ -1,11 +1,12 @@
 /*Repeating And Missing Numbers :-
- *     Given an array of size n.
- *      Array elements are in the range from 1 to n. One number from set {1, 2, …n} is missing and one number occurs twice in the array.
- *       we are going to find these two numbers.*/
+     Given an array of size n.
+     Array elements are in the range from 1 to n. One number from set {1, 2, …n} is missing and one number occurs twice in the array.
+     we are going to find these two numbers.
 
-/*Algorithm
- *    This method involves creating a Hashset with the help of Sets. In this, the elements are assigned to their natural index. In this process,
- *    if an element is assigned twice, then it is the repeating element. And if an element’s assigning is not there, then it is the missing element.*/
+  Algorithm
+    This method involves creating a Hashset with the help of Sets. In this, the elements are assigned to their natural index. In this process,
+    if an element is assigned twice, then it is the repeating element. And if an element’s assigning is not there, then it is the missing element.
+*/
 
 package reapeating_and_mising_number;
 
@@ -23,10 +24,9 @@ public class Repeating_And_Missing_Number {
         int[] a; 
         a = new int[n];
         for(int i = 0; i < n; i++) {   
-             //Array input
             a[i] = Integer.parseInt(br.readLine());
         } 
-              //Calling function
+        
         int[] ans = findTwoElement(a, n);                       
         System.out.println("Repeating Number"+"  "+ans[0] + " " +"Missing Number"+"  "+ ans[1]);
         
@@ -34,7 +34,7 @@ public class Repeating_And_Missing_Number {
     
     
     public static int[] findTwoElement(int arr[], int n) {
-        //creating Hashset
+      
        Set<Integer> numSet = new HashSet<Integer>();    
        int[] a = {0,0};
 
