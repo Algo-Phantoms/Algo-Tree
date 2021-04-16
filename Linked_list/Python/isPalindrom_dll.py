@@ -66,3 +66,14 @@ if __name__=="__main__":
         items.append_item(i)
     print(items.isPalindrom())
     #items.print_foward()
+
+#Time complexity: O(n)
+#Space complexity: O(1)
+
+#e.g-1)
+#Enter string: level
+#True
+
+#e.g-2)
+#Enter string: panics
+#False
