@@ -68,10 +68,10 @@ Following are the types of searches which we will be discussing in this book.
 * Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
 * Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
+* Binary Search ----> [Python] (/Code/Python/Binary_Search.py)
 * Linear Search ----> [Python](/Code/Python/linearsearch.py)
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
 * Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
-
