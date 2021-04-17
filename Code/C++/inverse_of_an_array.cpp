@@ -22,6 +22,7 @@ At last you will be getting 1,4,2,3,0 in inverse array.
 #include <bits/stdc++.h>
 using namespace std;
 
+//This function returns inverse of the given array 
 void inverse(int a[], int n, int b[])
 {
     for (int i = 0; i < n; i++)
@@ -34,15 +35,18 @@ void inverse(int a[], int n, int b[])
 }
 
 int main()
-{
+{   
+    // n is size of the array.
     int n;
     cin >> n;
     int ori[n];
+    // inverse array should be of same size as of the given array.
     int inv[n];
     for (int i = 0; i < n; i++)
     {
         cin >> ori[i];
     }
+    //calling inverse function
     inverse(ori, n, inv);
     return 0;
 }
