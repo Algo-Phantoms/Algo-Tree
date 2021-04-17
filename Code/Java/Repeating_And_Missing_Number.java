@@ -18,7 +18,7 @@ public class Repeating_And_Missing_Number {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter the Number of Intergers : ");
-          //Taking the input of n
+        //Taking the input of n
         int n = Integer.parseInt(br.readLine());   
         
         int[] a; 
@@ -38,21 +38,17 @@ public class Repeating_And_Missing_Number {
        Set<Integer> numSet = new HashSet<Integer>();    
        int[] a = {0,0};
 
-        
        for(int i = 0; i < n; i++) {
-         //Checking if numset contains that element
+        //Checking if numset contains that element
            if(!numSet.contains(arr[i]))     
            {   
             //if condition gets false then adding the element to numset
             numSet.add(arr[i]);         
-           }
-           else
-           {    
+           } else {    
             //assigning value to a[0](repeating number)
              a[0] = arr[i];              
            }
-        
-        }
+       }
        for(int num = 1; num <= n; num++) {  
             //checking for missing number 
            if(!numSet.contains(num))                     
