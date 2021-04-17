@@ -3,7 +3,6 @@ INVERSE OF AN ARRAY
 
 If the array elements are swapped with their corresponding indices,
 the array finally results is inverse of an array.
-
 For Example,
 If we have 4,0,2,3,1 in original array with indices 0,1,2,3,4 respectively,
 so assume a blank array of same size. Now at 4th index, element in inverse array will be 0.
@@ -54,14 +53,14 @@ int main()
 /*
 Time complexity - O(n)
 
-Test cases :
+
+Test cases :-
 
 Sample Input-1:
 5
 4 0 2 3 1
 Sample Output-1:
 1 4 2 3 0
-
 
 Sample Input-2:
 3
