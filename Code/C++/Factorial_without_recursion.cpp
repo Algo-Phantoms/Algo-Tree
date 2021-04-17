@@ -22,9 +22,6 @@ Test case 1:
 Test case 1:
 	Input : 3
 	Output : 6
-	
-*/
-/*
-        Time complexity: O(n)
-	Space Complexity: 1
+Time complexity: O(n)
+Space Complexity: 1
 */
