@@ -19,3 +19,4 @@ eventually converge on the base case.
 * Fibonocci ----> [C++](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/Code/C%2B%2B/fibonacci.cpp)
 * Tower of Hanoi ----> [C++](/Code/C++/tower_of_hanoi.cpp)
 * Phone Keypad ----> [C++](/Code/C++/phone_keypad.cpp)
+* Generate all valid parantheses ----> [Java](/Code/Java/valid_parantheses.java)
