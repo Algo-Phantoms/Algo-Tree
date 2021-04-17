@@ -32,17 +32,17 @@ using namespace std;
 int checksum = 0;
 
 //function to evaluate checksum according to Luhn's Algorithm
-void Luhn_checksum_calc(char card[])
+void Luhn_checksum_calc(string card)
 {
     //iterates as many times as there are characters in the input string
-    for (int i = 0; i < strlen(card); i++)
+    for (int i = 0; i < card.length(); i++)
     {
         int digit = card[i] - '0';
         //for even positions
         if (i%2==1){
             //digits added to checksum as it is (unchanged)
             checksum += digit;
-            cout << digit;
+            cout << " + " << digit;
         }
         //for odd positions (will require 2 digit adjustments if 2*digit>9)
         if (i%2==0){
@@ -51,7 +51,7 @@ void Luhn_checksum_calc(char card[])
             But for 2digit nos., sum of the digits is to be added to checksum.
             (n modulo 10) + 1 yields same value as the 2 digit adjustment
             (eg, (12%10)+1 = 3 = 1+2   ;   (10%10)+1 =1 = 1+0     ; (18%10)+1 = 9 = 1+8 )   */
-            cout << (2*digit<10) ? (2*digit):(((2*digit)%10)+1);
+            cout << " + " << ((2*digit<10) ? (2*digit):(((2*digit)%10)+1));
         }
     }
 }
@@ -60,17 +60,17 @@ void Luhn_checksum_calc(char card[])
 int main()
 {
     //declare character array
-    char card[16];
+    string card;
     cout << "Enter credit card number:" << endl;
     //reads a line from input and stores it into the 'card' character array
-    cin.getline(card, 20);
+    cin >> card;
     //function to evaluate checksum
     Luhn_checksum_calc(card);
     //test if checksum is valid (ie, if modulo10 = 0)
     cout <<"\t =  " << checksum;
-    cout << "\t" << ((int)strlen(card) == 16 && checksum%10==0 ? "(Valid)":"(Invalid)") << endl;       
+    cout << "\t" << (card.length() == 16 && checksum%10==0 ? "(Valid)":"(Invalid)") << endl;       
     //the card number must have exactly 16 digits   
-    if ((int)strlen(card) != 16)
+    if (card.length() != 16)
         cout << "[Invalid because card number must have exactly 16 digits.]" << endl;            
     return 0; 
 }
