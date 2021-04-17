@@ -76,9 +76,6 @@ int main()
 }
 
 /*
-Time Complexity = O(1)
-Space Complexity = O(1)
-
 Std O/P 1:
 Enter the credit card number:
 5987654024681355        
@@ -94,4 +91,7 @@ Enter the credit card number:
 59876540246813550
  + 1 + 9 + 7 + 7 + 3 + 5 + 8 + 0 + 4 + 4 + 3 + 8 + 2 + 3 + 1 + 5 + 0     = 70  (Invalid)
 [Invalid because card number must have exactly 16 digits.]
+
+Time Complexity = O(1)
+Space Complexity = O(1)
 */
