@@ -6,7 +6,7 @@
  * The order is First In First Out (FIFO).
  */
 import java.util.*;
-class queue {
+class Queue {
     int front, rear, size;
     int capacity;
     int array[];
@@ -19,12 +19,12 @@ class queue {
         array = new int[this.capacity];
     }
 
-    boolean isFull(queue queue)
+    boolean isFull(Queue queue)
     {
         return (queue.size == queue.capacity);
     }
 
-    boolean isEmpty(queue queue)
+    boolean isEmpty(Queue queue)
     {
         return (queue.size == 0);
     }
@@ -79,7 +79,7 @@ class queue {
             queue.enqueue(input);
 
         }
-  
+
         System.out.println("Front item is "
             + queue.front());
         System.out.println(queue.dequeue()
