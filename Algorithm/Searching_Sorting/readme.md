@@ -78,3 +78,4 @@ Following are the types of searches which we will be discussing in this book.
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
 * Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
 * Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
+* Union of two Unsorted Array ----> [Python](/Code/Python/Union_of_2_unsorted_array.py)
