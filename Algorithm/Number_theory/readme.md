@@ -36,7 +36,7 @@
 <hr>
 
 
-# Questions related to Number Theory
+## Questions related to Number Theory
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
