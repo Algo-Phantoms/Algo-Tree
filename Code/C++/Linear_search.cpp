@@ -13,8 +13,8 @@
 using namespace std;
 int linear_search(int arr[],int n,int element)
 {
-    int i=0;
-    for(int i=0;i<n;i++)
+    int i;
+    for(i=0;i<n;i++)
     {
         if(arr[i]==element)
         {
