@@ -50,8 +50,7 @@ is one of the techniques for making the elements ordered.
 
 Following are the types of searches which we will be discussing in this book.
 
-* Linear Search ----> [C++](/Code/C++/Linear_search.cpp)
-* Unordered Linear Search 
+* Unordered Linear Search ----> [C++](/Code/C++/Linear_search.cpp) 
 * Sorted/Ordered Linear Search
 * Binary Search
 * Interpolation search
