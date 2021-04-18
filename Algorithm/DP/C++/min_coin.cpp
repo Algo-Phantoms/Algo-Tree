@@ -9,7 +9,13 @@ total                                       ------>total amount
 output:  ans                                ----->only line of output will give us minimum number of coins which sum as "total"
 */
 
+/*
+This is a classic dynamic programming problem. If you maintain an array of different type of coins available i.e arr change can be made from 0 to n-1  
+you can step through each denomination starting at its index and incrementing to the right, adding dp[i-arr[j]] to each of the element dp[j] to get running total.
 
+After filling the dp array in the bottom-up manner, our final solution gets stored at the last Index of the array i.e. return
+
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,14 +24,13 @@ using namespace std;
 
 int count_coins(int a[],int n,int sum)
 {
-	int dp[sum+1];
+	int dp[sum+1]; // temporary array Initialization or base case
 	int i,j;
 	for(i=0;i<=sum;i++)
 	dp[i]=INT_MAX;
-	dp[0]=0;
+	dp[0]=0; // Initialize all table values
 
-	//for(i=1;i<=sum;i++)
-	//dp[1][i]=INT_MAX-1;
+	// Now Calculate minimum coins required
 	for(i=1 ;i<=sum;i++)
 	{ 
 		for(j=0;j<n;j++)
@@ -62,7 +67,7 @@ int main()
 }
 
 //Time complexity: O(n*sum)
-
+//Space Complexity = O(sum)
 /*
 e.g-1)
 Enter number of coins: 4
