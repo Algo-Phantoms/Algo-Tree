@@ -1,61 +1,55 @@
 '''INVERSE OF AN ARRAY
-If the array elements are swapped with their correseponding
-indices,we get the inverse of an array
-
-For Exaample:
-Let arr be an array such as:
- arr=[2,4,1,0,3]
- In this array,at index[0]-2,index[1]-4,index[2]-1 and so on.
-
- Now,to find inverse of array ,swap the index and the value 
- of array
- After swaping ,arr=[3,2,0,4,1]
-
- Note:The elements must be unique and less than the length of array
-
-Question-->
-Input:
-1)First line contains the number of test cases
-2)Size of array
-3)Array elements
-
-Output-->
-1)Contains t lines of output,inverse of each array
-
-Sample Input:
-2
-5
-2 4 1 0 3
-4
-1 3 0 2
-
-Sample Output:
-3 2 0 4 1
-2 0 3 1
-
-Time complexity: O(n)
+Problem statement:   If the array elements are swapped with their correseponding
+                     indices,we get the inverse of an array
+NOTE: The elements must be unique and less than the length of array.
 '''
+#inserts the elements in an array of size n
 def inputElements(n):
     arr=[]
     for i in range(n):
-         ele=int(input())
-         arr.append(ele)
-    print(arr)
+        #enter element to insert in array
+         element=int(input())
+         arr.append(element)
+    print("original array:",arr)
     return arr
+#function to find inverse of array
 def inverseArray(lst):
-    lst1=[]
+    inverted_array=[]
     for i in range(0,len(lst)):
         k=lst[i]
-        lst1.insert(k,i)
-        print(lst1[k])
-    return lst1
+        inverted_array.insert(k,i)
+    return inverted_array
+
 #main code
+# Enter the number of testcases
 t=int(input()) 
 for i in range(0,t):
-    l=int(input())
-    arr=inputElements(l)
+    # enter length of array
+    array_length=int(input())
+    arr=inputElements(array_length)
     arr2=inverseArray(arr)
-    print(arr2)
+    print("Inverse of array :",arr2)
 
+'''
+TestCases :
+2
+Input:
+5
+2 4 1 0 3
 
+Output:
+original array: [2,4,1,0,3]
+Inverse of array: [3,2,0,4,1]
 
+Input:
+4
+1 3 0 2
+
+Output:
+Original array:[1,3,0,2]
+Inverse of array:[2,0,3,1]
+
+Time Complexity: O(n)  for traversing array of characters where size is n
+Space Complexity:O(n),where n is size of array
+
+'''
