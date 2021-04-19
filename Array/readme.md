@@ -30,3 +30,4 @@ To create an array, you need to known the length (or size) of the array in advan
  * Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp)
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp)
  * Kth Minimum Element ---->[Java](/Code/Java/kthmin.java)
+ * Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp)
