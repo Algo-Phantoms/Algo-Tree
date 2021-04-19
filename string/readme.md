@@ -12,9 +12,15 @@ A string is a class that contains a char array, but automatically manages it for
 <hr>
 
 ## Questions :
+
+* Convert string to lowercase and uppercase ---->[C++](/Code/C++/string_to_lowercase_and_uppercase.cpp)
 * Revere a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
+
 
 * Checking for Anagram ---->[Java](/Code/Java/Anagram.java)
 
 * Reverse a string ---->[C++](/Code/C++/reverse_string.cpp)
+
+
+* Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
 
