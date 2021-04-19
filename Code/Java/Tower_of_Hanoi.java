@@ -32,12 +32,10 @@ public class Tower_of_Hanoi
        }
        else
        {
-           /*
-           Equivalent to:
-           1. Move the top N-1 discs to middle.
-           2. Move 1 disc from first to last.
-           3. Take N-1 discs from middle to last.
-           */
+           // Equivalent to:
+           // 1. Move the top N-1 discs to middle.
+           // 2. Move 1 disc from first to last.
+           // 3. Take N-1 discs from middle to last.
          
            Shift(N-1, first, last, middle);
            System.out.println("Disc moved from \t"+first+"->"+last);
@@ -47,7 +45,6 @@ public class Tower_of_Hanoi
     
    public static void main()
    {
-       //driver fucntion
        Tower_of_Hanoi ob = new Tower_of_Hanoi();
        System.out.println("Enter number of discs:");
        Scanner scanner = new Scanner(System.in);
