@@ -89,3 +89,4 @@ public class Segregate01and2
 Time Complexity - O(n)
 Space Complexity - O(1)
 */
+
