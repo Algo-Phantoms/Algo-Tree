@@ -1,5 +1,6 @@
 /*Find Duplicate in array
-Problem Statement: Given an array with size "size", the elements inside the array can be any number of times.
+Problem Statement: Given an array with size "size", the elements inside the array can be present any number of times.
+
                    Print all the elements whose frequency is greater than 1.
 */
 
