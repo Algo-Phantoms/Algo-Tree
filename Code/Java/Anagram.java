@@ -21,7 +21,7 @@ public class Anagram {
 		
 		if(l1!=l2) {
 			//if both are of unequal length then its for sure that they are not an anagram
-			System.out.println("OUTPUT:Two strings are not Anagram"); 
+			System.out.println("Two strings are not Anagram"); 
 		}
 		else {
 			char c1[] = s.toCharArray(),c2[] = s1.toCharArray();
@@ -38,9 +38,9 @@ public class Anagram {
 				s1 = s1 + ch;
 			}
 			if(s.compareTo(s1)==0) {
-				System.out.println("OUTPUT:Two strings are Anagram");
+				System.out.println("Two strings are Anagram");
 			}else
-				System.out.println("OUTPUT:Two strings are not Anagram");
+				System.out.println("Two strings are not Anagram");
 				
 		}
 	}
@@ -49,17 +49,18 @@ public class Anagram {
 
 /*  
              OUTPUT
+	     
     INPUT: Enter string 1: prateek
 	   Enter string 2: eektarp
-       OUTPUT:  Two strings are Anagram
+    OUTPUT: Two strings are Anagram
     
     INPUT: Enter string 1: abcde
            Enter string 2: cdba       
-      OUTPUT:  Two strings are not Anagram
+    OUTPUT: Two strings are not Anagram
       
       
       Time Complexity-O(nlog n)
       Space Complexity-O(n) 
-      where n: size of the input
+      where n: number of characters in string
     
     */
