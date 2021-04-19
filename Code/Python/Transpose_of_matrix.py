@@ -21,7 +21,8 @@ def Transpose(mat, m, n):
 # User inputs the the dimension of matrix 
 m = int(input("Enter the no. of rows: "))
 n = int(input("Enter the no. of columns: ")) 
-#Creating a matrix with m rows and n columns
+
+# Creating a matrix with m rows and n columns
 mat = [[0 for j in range(n)] for i in range(m)]
 print("Enter elements of matrix:")
 # User inputs matrix elemnents
@@ -29,7 +30,8 @@ for i in range(m):
 	for j in range(n):
 		num = int(input())
 		mat[i][j] = num
-#Printing the entered matrix
+		
+# Printing the entered matrix
 print("The entered matrix is:\n", mat)
 # A function call to transpose the matrix
 print("The transpose of the entered matrix is:") 
