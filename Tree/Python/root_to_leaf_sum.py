@@ -70,6 +70,7 @@ if __name__=='__main__':
         print("Not possible!")
 
 #Time Complexity: O(n)
+#Space Complexity: O(n*logn)
 
 #e.g- 1)
 #Enter number of nodes: 5
