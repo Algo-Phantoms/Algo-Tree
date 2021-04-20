@@ -58,7 +58,8 @@ class Long_Factorial{
 	}
 }
 
-/*Test Cases
+/*
+Test Cases
 1. 
 Input: 
 Enter the number: 50
@@ -75,6 +76,5 @@ Factorial of the number is: 9332621544394415268169923885626670049071596826438162
 Time Complexity: O(n^2) for the loop for applying the multiplication formula and calling the function "multiplication inside it
                  where n is the number whose factorial is to be calculated
 
-Space Complexity: O(n) for creating the array of size n, where n is the number whose factorial is to be calculated
-              
+Space Complexity: O(n) for creating the array of size n, where n is the number whose factorial is to be calculated            
 */
