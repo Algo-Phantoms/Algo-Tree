@@ -9,10 +9,11 @@ public class first_non_repeating_characters {
     public static void non_repeating(String s) {
         int frequency_of_char[] = new int[256];
         //creating an array that calculates the frequency of all the charachter in the string
+        
         for (int i = 0; i < s.length(); i++)
            frequency_of_char[(int) s.charAt(i)]++;
            
-        //calculating the frequency of the char
+         //calculating the frequency of the char
         for (int j = 0; j < 256; j++) {
         //if the frequency of a char is 1 then print and stop the loop.
             if (frequency_of_char[j] == 1)
