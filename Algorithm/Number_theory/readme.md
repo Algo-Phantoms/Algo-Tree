@@ -39,5 +39,5 @@
 
 ## Questions related to Number Theory
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
-
+- Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
