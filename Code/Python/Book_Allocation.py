@@ -12,8 +12,6 @@ def IsPossible(lis, n, stud, minval):
 
     students = 1
     sumval = 0
-  
-    # Iterating over the books
     for i in range(n): 
   
         # If the number of pages in a book is greater than the minimum value, then the minimum value chosen cannot be used to alloacte books 
@@ -21,12 +19,8 @@ def IsPossible(lis, n, stud, minval):
             return False
   
         # Counting number of students required for allocating minval pages
-        if (sumval + lis[i] > minval): 
-  
-            #incrementing students by 1 
+        if (sumval + lis[i] > minval):
             students += 1
-  
-            # Updating current value of sum
             sumval = lis[i] 
   
             # If more number of students are required than the given number of students, then also it is not possible to allocate books
@@ -47,8 +41,7 @@ def MinPages(lis, n, stud):
     # If number of students are more than number of books, we'll return -1 because all the students won't get a book
     if (n < stud): 
         return -1
-  
-    #Finding the sum of all the pages 
+    
     for i in range(n): 
         sum += lis[i] 
   
@@ -60,7 +53,7 @@ def MinPages(lis, n, stud):
 
         if (IsPossible(lis, n, stud, mid)): 
   
-            # If possible, them comparing the mid value with the answer that we have so far
+            # If possible, then comparing the mid value with the answer that we have so far
             ans = min(ans, mid)   
             # Because the number of pages are given in ascending order and we are looking for the minimum value possible, so for the next possible answer, we will reduce our search by decreasing high to mid-1
             high = mid - 1
@@ -68,8 +61,6 @@ def MinPages(lis, n, stud):
         else: 
             # If it is not possible to allocate books using mid value as the minimum value, then we will look for the minimum element in the other half that is low will be increased to mid + 1
             low = mid + 1
-  
-    #Returning the final answer
     return ans
 
 
