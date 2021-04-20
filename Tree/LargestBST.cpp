@@ -99,4 +99,6 @@ INPUT
 enter the root data:8 3 10 1 6 -1 14 -1 -1 4 7 13 -1 -1 -1 -1 -1 -1 -1
 OUTPUT
 4
+
+TIME COMPLEXITY: O(N)
 */
