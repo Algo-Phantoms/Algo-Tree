@@ -158,17 +158,18 @@ int main()
 }
 
 /*
-SAMPLE INPUT AND OUTPUT
-
-SAMPLE 1
-
+Test Cases
+1.
+Input - 
 How many numbers do you want to sort? 5
 Enter the numbers: 5 4 3 2 1 
+Output - 
 The numbers in sorted order is:  1  2  3  4  5
 
-SAMPLE 2
-
+2.
+Input - 
 How many numbers do you want to sort? 0
+Output - 
 There are no numbers to sort!!!
 
 Time Complexity: O(n*logn)
