@@ -43,7 +43,6 @@ node* BuildTree(){
 		return NULL;
 	
 	node* root = new node(d);
-	//Recursive call to the left and right child of the root
 	root->left = BuildTree();
 	root->right = BuildTree();
 
@@ -65,17 +64,13 @@ void RightView(node* root, int level, int &maxlevel){
 		//Updating maxlevel
 		maxlevel = level;
 	}
-
-	//recursive cases for right and left childs
 	RightView(root->right, level + 1, maxlevel);
 	RightView(root->left, level + 1, maxlevel);
 }
 
-//Driver function
 int main(){
 
 	cout<<"enter elemnets: ";
-	//Function call to build the tree
 	node* root = BuildTree();
 	//maxlevel ensures that no two nodes on the same level of the tree are printed
 	int maxlevel = -1;
