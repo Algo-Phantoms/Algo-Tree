@@ -1,6 +1,5 @@
 /*
 PROBLEM STATEMENT:
-
 Given a binary tree, print the right side view of the tree. The right side view of the binary tree
 includes the nodes which are visible when the tree is viewed from the right side.
 For example:
@@ -23,13 +22,9 @@ using namespace std;
 // Class for the structure of tree
 class node{
 	public:
-		//value stored at each node
 		int data;
-		//pointer to refer to the left child	
 		node* left;
-		//pointer to refer the right child
 		node* right;
-
 		//constructor for initializing values
 		node(int d){
 			data = d;
@@ -46,10 +41,8 @@ node* BuildTree(){
 	cin>>d;
 	if(d == -1)
 		return NULL;
-
-	//A new node created with value d
+	
 	node* root = new node(d);
-
 	//Recursive call to the left and right child of the root
 	root->left = BuildTree();
 	root->right = BuildTree();
@@ -69,7 +62,6 @@ void RightView(node* root, int level, int &maxlevel){
 
 		//Displays the values which appear from the right side view of a tree
 		cout<<root->data<<" ";
-
 		//Updating maxlevel
 		maxlevel = level;
 	}
@@ -83,16 +75,12 @@ void RightView(node* root, int level, int &maxlevel){
 int main(){
 
 	cout<<"enter elemnets: ";
-
 	//Function call to build the tree
 	node* root = BuildTree();
-
 	//maxlevel ensures that no two nodes on the same level of the tree are printed
 	int maxlevel = -1;
-
 	//Function call to display the right side view of the tree. The parameters passed are: the root node, the 0th level of the tree, and maxlevel 
 	RightView(root, 0, maxlevel);
-
 	return 0;
 }
 
