@@ -33,7 +33,11 @@ print("Inverse of array :",arr2)
 TestCases :
 Input :
 5
-2 4 1 0 3
+2
+4
+1
+0
+3
 
 Output:
 original array: [2,4,1,0,3]
@@ -41,7 +45,10 @@ Inverse of array: [3,2,0,4,1]
 
 Input :
 4
-1 3 0 2
+1
+3
+0
+2
 
 Output :
 Original array:[1,3,0,2]
