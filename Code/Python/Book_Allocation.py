@@ -129,6 +129,6 @@ Explanation:
 Because number of students are more than number of books. Therefore, there is no valid
 assignment possible.
 
-TIME COMPLEXITY: O(N*LOG(Sum of pages))
-SPACE COMPLEXITY: O(1)
+TIME COMPLEXITY: O(N*LOG(Sum of pages)), where 'N' denotes number of books.
+SPACE COMPLEXITY: O(1), no extra space used.
 '''
