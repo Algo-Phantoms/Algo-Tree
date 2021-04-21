@@ -23,11 +23,9 @@ def Duplicate(arr, n):
 
 
 # Driver Code
-# User inputs the the size of array 
 n = int(input("Enter the size of an array: ")) 
 arr = []
 print("Enter ", n ," elements:")
-# User inputs array elemnents
 for i in range(n):
     arr.append(int(input()))
 # A function call to find duplicates
@@ -39,16 +37,31 @@ Duplicate(arr, n)
 TEST CASES:
 1.
 Input:
-8 
-[2, 4, 6, 1 ,2 ,6 ,8 ,4]
+Enter the size of an array: 8
+Enter 8 elements:
+2
+4
+6
+1
+2
+6
+8
+4
 Output:
+The duplicates in the array are:
 2 4 6
 
 2.
 Input:
-5
-[1, 1, 1, 1, 1]
+Enter the size of an array: 5
+Enter 5 elements:
+1
+1
+1
+1
+1
 Output:
+The duplicates in the array are:
 1
 
 TIME COMPLEXITY: O(n), due to a single traversal of the given array, where 'n' denotes the array size
