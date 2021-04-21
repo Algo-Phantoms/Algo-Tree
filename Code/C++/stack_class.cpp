@@ -95,21 +95,6 @@ public:
         push(x);
     }
 
-    //getmin() returns the minimum element from Stack
-     T getmin(T minimum)
-    {
-        if (empty())
-            return minimum;
-        T x = top();
-        if (x <= minimum) {
-            minimum=x;
-        }
-        pop();
-        minimum = getmin(minimum);
-        push(x);
-        return minimum;
-    }
-
 };
 
 int main()
@@ -127,10 +112,9 @@ int main()
     cout << s.size()<< "\n";
     cout << s.empty() << "\n";
     s.display();
-    s.change(1,0);
+    s.change(1,0); //5,10
     cout<<"\n";
     s.display();
-   	cout << "\n" << s.getmin(s.top()) << "\n";
 
     return 0;
 }
@@ -138,7 +122,6 @@ int main()
 /*
 	Test Case :
 	Input : 5
-
 	Output :
     5
     4
@@ -146,7 +129,15 @@ int main()
     0
     1 2 3 4
     1 0 3 4
+
+    Input : 8
+    Output:
+    8
+    7
+    7
     0
+    1 2 3 4 5 6 7
+    1 2 3 4 5 10 7
 
 	Time Complexity of Push() : O(1)
 	Time Complexity of Pop() : O(1)
@@ -156,7 +147,6 @@ int main()
 	Time Complexity of DeleteStack() : O(1)
 	Time Complexity of Display() : O(n)
 	Time Complexity of Change() : O(n)
-	Time Complexity of GetMin() : O(n)
 
 	Space Complexity (for n push operations) : O(n)
 */
