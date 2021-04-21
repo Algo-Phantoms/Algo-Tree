@@ -7,11 +7,12 @@ separated by a single space.
  */
 import java.util.*;
 class solution{
- public static int[][] take2DInput(int n)
+//function to insert elements in 2d array
+ public static int[][] take2DInput()
     {
           Scanner s=new Scanner(System.in);
-          int n_rows=s.nextInt();
-           int n_cols=s.nextInt();
+          int n_rows=s.nextInt();  //number of rows 
+           int n_cols=s.nextInt(); //number of columns
            
            if(n_rows==0)
            {
@@ -23,7 +24,7 @@ class solution{
            {
                for(int col=0 ; col<n_cols; col++)
                { 
-                    int item=s.nextInt();
+                    int item=s.nextInt(); //element to insert in 2d array
                     mat[row][col]=item;
                
                }
@@ -31,16 +32,18 @@ class solution{
            return mat;
            
     }
+	
+//calculates row wise sum in 2d array	
  public static void rowWiseSum(int[][] mat) {
-		//Your code goes here
+	//Your code goes here
         if(mat.length!=0){
-         int rows=mat.length;
-         int cols=mat[0].length;     
+         int rows=mat.length; //length os row
+         int cols=mat[0].length;    //length of column  
          int sumit=0;
         
         for( int k=0;k<rows;k++){
             for(int j=0;j<cols;j++) {
-             sumit+=mat[k][j];
+             sumit+=mat[k][j]; //sum of row elements
                           
               }
               System.out.print(sumit+" ");
@@ -54,23 +57,15 @@ class solution{
 
 public class RowWise_Sum {        
     public static void main(String[] args) {
-          Scanner s=new Scanner(System.in);
-          int t=s.nextInt();
-          while (t>0)
-          {
-              int[][] mat = solution.take2DInput(t);
-
-              solution.rowWiseSum(mat);
-             System.out.println();
-
-            t -= 1;
-          }
+          //function call to insert elements in 2d array
+          int[][] mat = solution.take2DInput();
+          solution.rowWiseSum(mat);
+          System.out.println();
           
     }
 
 }
 /*Sample Input 1:
-1
 4 2 
 1 2 
 3 4 
@@ -81,17 +76,11 @@ output-->
 3 7 11 15 
 
 Input 2-->
-2
 2 5 
 4 5 3 2 6 
 7 5 3 8 9
-4 4
-1 2 3 4
-9 8 7 6
-3 4 5 6
--1 1 -10 5
-
 Output-->
 20 32 
-10 30 18 -5 
+
+Time Complexity - O(n^2)
 */
