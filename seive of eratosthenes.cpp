@@ -48,7 +48,7 @@ int main()
 =============
 Test cases:-
 
-1)Input : 30
+1)Input : 3
 1)Output: 2 3 5 7 11 13 17 19 23 29
 
 2)Input : 50
