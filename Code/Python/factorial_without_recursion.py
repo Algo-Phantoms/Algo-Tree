@@ -4,7 +4,6 @@ Given a number, the task is to print its factorial.
 A factorial of a number 'n' is the product of numbers from 1 to n.
 '''
 
-
 # A function to calculate factorial of a number and to print it
 def Factorial(n):
     fact = 1
@@ -13,14 +12,11 @@ def Factorial(n):
         n -= 1
     print(fact)
 
-
 # Driver Code
-# User inputs the number
 n = int(input("Enter a number: "))
 print("Factorial of", n, "is:", end=" ")
 # A function call to print factorial
 Factorial(n)
-
 
 '''
 TEST CASES:
