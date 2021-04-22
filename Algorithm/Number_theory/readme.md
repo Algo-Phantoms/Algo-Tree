@@ -9,6 +9,7 @@
 - [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
 - [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
 - [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
+- [Factorial of a number](Code/java/factorial of a number.java)
 
 #### Prime numbers
 
