@@ -54,4 +54,4 @@ There are different bitwise operations used in the bit manipulation. Bit operati
 ## Questions :
 
 - Brian Kernighan's Algorithm ----> [C++](/Code/C++/Brian_Kernighan.cpp) | [Java](/Code/Java/BrianKernighanAlgorithm.java)
-
+- Swap odd and even Bits of a number ----> [C++](/Code/C++/Swap_odd_even_bits.cpp)
