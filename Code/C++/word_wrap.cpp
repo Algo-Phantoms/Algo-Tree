@@ -16,15 +16,19 @@
 #define ll long long int 
 using namespace std;
 //recursive function to print the required soluton,  uses p[] to print the solution.
-void printwordwrap(ll p[],ll n){
+ll printwordwrap(ll p[],ll n){
         //starts traversing from back till it get 1
 	//once 1 is achieved it prints the required value and from where it came from
-	if(p[n]==1)
-	cout<<p[n]<<" "<<n<<" ";
-	else{
-		printwordwrap(p,p[n]-1);
-		cout<<p[n]<<" "<<n<<" ";
+	ll lineno;
+	if(p[n]==1){
+		lineno=1;
+		cout<<"Line number "<<lineno<<": From word number "<<p[n]<<" to "<<n<<"\n";
 	}
+	else{
+		lineno=printwordwrap(p,p[n]-1)+1;
+	        cout<<"Line number "<<lineno<<": From word number "<<p[n]<<" to "<<n<<"\n";
+	}
+	return lineno;
 }
 
 int main() {
@@ -35,7 +39,7 @@ int main() {
 	ll a[n+1];
 	for(ll i=1;i<=n;i++)
 	cin>>a[i];
-    //max width of a line
+        //max width of a line
 	ll max;
 	cin>>max;
 	//space[.][.] contains the number of spaces in a single line
@@ -99,23 +103,30 @@ TEST CASES
 
 -Test-Case 1
 
-Input
+Input:
 18
 7 2 4 2 10 4 6 2 7 2 1 9 3 2 10 4 2 2
 20
 
-Output
-1 3 4 6 7 10 11 14 15 17 18 18 
+Output:
+Line number 1: From word number 1 to 3
+Line number 2: From word number 4 to 6
+Line number 3: From word number 7 to 10
+Line number 4: From word number 11 to 14
+Line number 5: From word number 15 to 17
+Line number 6: From word number 18 to 18
+
 
 -Test-Case 2
 
-Input
+Input:
 6
 4 2 2 7 2 4 
 16
 
-Output
-1 3 4 6
+Output:
+Line number 1: From word number 1 to 3
+Line number 2: From word number 4 to 6
 
 
 Time Complexity - O(n*n)
