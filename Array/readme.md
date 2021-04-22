@@ -26,7 +26,8 @@ To create an array, you need to known the length (or size) of the array in advan
 
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) 
  * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp) 
- * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) 
+ * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java) 
  * Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp)
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp)
- * Inverse of Array ----> [Java](/Code/Java/inverseofarray.java)
+ * Inverse of Array ----> [Java](/Code/Java/inverseofarray.java) | [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
+ * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
