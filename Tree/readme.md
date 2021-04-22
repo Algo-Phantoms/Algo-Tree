@@ -54,4 +54,4 @@ that, this property should be satisfied at every node in the tree.
 * Right Side View of Binary Tree ----> [C++](/Code/C++/Right_Side_View_of_Binary_Tree.cpp)
 * Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
 * Root to Leaf Path with Given Sum ----> [C++](/Code/C++/Root_to_leaf_path_with_given_sum.cpp)
-
+* Lowest common ancestor in a binary tree ----> [Python](/Code/Python/LCA_in_binary_tree.py)
