@@ -22,31 +22,32 @@ The task is to take all those disks from one rod to some other rod following the
  
 def Tower_of_Hanoi(n,src,dest,help):
 
-    if(n==0): # defining the base case of the function
+    # defining the base case of the function
+    if(n==0): 
         return
 
-    Tower_of_Hanoi(n-1,src,help,dest) # recursively calling the function
     # moving disk from source to helper rod
+    Tower_of_Hanoi(n-1,src,help,dest)
 
     print(f"Move from {src} to {dest}")
-
-    Tower_of_Hanoi(n-1,help,dest,src) #moving disk from helper to destination rod
+    
+    #moving disk from helper to destination rod
+    Tower_of_Hanoi(n-1,help,dest,src)
 
 #Driver code of the function
 if __name__=='__main__':
 
-    n=int(input("Enter number of rods: "))  # taking the number of rods from the user
+    n=int(input("Enter number of rods: "))
 
+    #A B C are name of the rods 
     Tower_of_Hanoi(n,'A','B','C')
-    # A B C are the name of rods
 
 ''' 
 TESTCASES:
 
-Sample Input :
+Input :
    Enter number of rods: 3
-
-Sample Output:
+Output:
   Move from A to B
   Move from A to C
   Move from B to C
@@ -57,14 +58,14 @@ Sample Output:
 
 
 
-Sample Input:
+Input:
    Enter number of rods: 2
-
-Sample Output:
+Output:
    Move from A to C
    Move from A to B
    Move from A to C
 
    Time Complexity : O(2^n)
    Space Complexity : O(n)
+   where n refers to the number of disks
 '''
