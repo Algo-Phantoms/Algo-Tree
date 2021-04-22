@@ -1,3 +1,4 @@
+
  # Number Theory
 
  #### Fundamentals
@@ -8,6 +9,7 @@
 - [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
 - [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
 - [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
+- [Factorial without recursion](https://github.com/Subhangini/Algo-Tree/blob/subh/Code/C%2B%2B/Factorial_without_recursion.cpp)
 
 #### Prime numbers
 
@@ -34,5 +36,8 @@
 
 <hr>
 
-## Questions :
 
+## Questions related to Number Theory
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
+- Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
