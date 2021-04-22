@@ -51,6 +51,9 @@ There are different bitwise operations used in the bit manipulation. Bit operati
     - 6 >> 1 = 3
 
 
+- <h4>Operator Overloading:</h4> Giving extended meaning beyond predefined operational meaning. When we use '+' operator, the magic method __add__  is automatically invoked in which the operation for + is defined. There by changing this magic method’s code, we can give extra meaning to the + operator.
+
+
 ## Questions :
 
 - Brian Kernighan's Algorithm ----> [C++](/Code/C++/Brian_Kernighan.cpp) | [Java](/Code/Java/BrianKernighanAlgorithm.java)
