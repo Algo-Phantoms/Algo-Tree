@@ -27,9 +27,9 @@ void generate_names(char *in,char *out,int i,int j)
 }
 int main()
 {
-	char in[100];
+	char in[100]; //Denotes the input string
 	cin>>in;
-	char out[100];
+	char out[100]; //Denotes the output string
 	generate_names(in,out,0,0);
 	return 0;
 }
@@ -60,5 +60,7 @@ ST
 SU
 SV 
 Time Complexity : O(4^n)
-Space Complexity : O(n) */
+Space Complexity : O(n) 
+Here, n denotes the no of characters present in the input string
+*/
 
