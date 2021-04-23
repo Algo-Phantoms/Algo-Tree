@@ -43,6 +43,7 @@ You may go through these guidelines and contribute accordingly:
 * If you want to contribute for an existing algorithm, we prefer that you create an issue before making a PR and link your PR to that issue.
 * If you have modified/added code work, make sure the code compiles before submitting.
 * Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
+* Just mention the issue against which the pull request is open by writing ```Fixes #(your issue number)``` in the description of the pull request
 * Do not update the [README.md](README.md).
 
 ## Guidelines for code base :
