@@ -1,17 +1,19 @@
 /*
 PROBLEM STATEMENT:
 Given two positive integers, find its product. The numbers may be very large, they may or may not fit in long long int.
+Approach:
+The idea is to store the numbers in array, every digit will be stored as an element of array.
 */
 
 #include<bits/stdc++.h>
 using namespace std;
-//The idea is to store the numbers in array, every digit will be stored as an element of array.
 
 // A function to print the product of two large integers
 void LargeMultiplication(vector<int> num1, vector<int> num2, int len1, int len2){
 
 	// Multiplying the ith digit of second number to all the jth digits of first number and storing it at (i+j)th index of the product array
-	int product[len1 + len2] = {0};	//maximum length of the product will be sum of the lengths of both the numbers
+	//maximum length of the product will be sum of the lengths of both the numbers
+	int product[len1 + len2] = {0};	
 	for(int i = 0; i < len2; i++){
 		for(int j = 0; j < len1; j++){
 			product[i+j] += num2[i]*num1[j];
@@ -42,12 +44,12 @@ int main(){
 	vector<int>num1;
 	vector<int>num2;
 	string str1, str2;
-	//Entering number in the form of a string
+	
 	cout<<"Enter first number: ";
 	cin>>str1;
 	cout<<"Enter second number: ";
 	cin>>str2;
-	//Pushing the values in an integer vector in reverse order to simplify the calculations
+	
 	for(int i = str1.size()-1; i >= 0; i--){
 		num1.push_back(str1[i] - '0');
 	}
