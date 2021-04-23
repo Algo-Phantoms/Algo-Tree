@@ -42,7 +42,7 @@ int main()
 }
 
 /*
-Time complexity : O(n*n)
+Time complexity : O(log n)
 Space complexity : O(1)
 */
 
