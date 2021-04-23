@@ -18,7 +18,7 @@ void permute(char *inp, int cur_Index, set<string> &ans) {
 		return;
 	}
 
-	//recusrcive case
+	//recursive case
 	for (int j = cur_Index; inp[j] != '\0'; ++j)
 	{
 		//we will place every available charater at current_Index
@@ -40,9 +40,7 @@ int main()
 	//because set keeps only unique elements and stores elements in sorted order
 	//hence iterating on set will give all unique words in lexicographically sorted order
 	set<string> ans;
-	ans.clear();
-
-
+	
 	//input the string
 	cout << "Enter the String : ";
 	char inp[10000];
@@ -56,8 +54,7 @@ int main()
 	for (auto cur : ans) {
 		cout << cur << endl;
 	}
-
-
+	
 	return 0;
 }
 
