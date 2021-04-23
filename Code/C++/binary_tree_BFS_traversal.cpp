@@ -4,7 +4,7 @@ using namespace std;
 struct Node                       //structure of the binary tree
 {
     int info;                     //data part
-    struct Node *left,*right;     //left and right node which will contain address of left and right subtree
+    struct Node *left, *right;     //left and right node which will contain address of left and right subtree
 };
 
 //function to create tree
@@ -13,20 +13,20 @@ struct Node* create()
     int data;
     Node *tree;
     tree = new Node;
-    cout<<"\nEnter data to be inserted or type -1 : ";
-    cin>>data;
+    cout << "\nEnter data to be inserted or type -1 : ";
+    cin >> data;
 
     //condition for termination
-    if(data==-1)
+    if(data == -1)
         return 0;
 
-    tree->info=data;
+    tree->info = data;
 
-    cout<<"Enter left child of "<<data;
-    tree->left=create();
+    cout << "Enter left child of " << data;
+    tree->left = create();
 
-    cout<<"Enter right child of "<<data;
-    tree->right=create();
+    cout << "Enter right child of " << data;
+    tree->right = create();
 
     return tree;
 };
@@ -39,26 +39,27 @@ Then repeat this process until queue becomes empty.
 */
 void BFS_traversal(Node *root)
 {
-    if(root==NULL)
+    if(root == NULL)
         return;
 
-    queue<Node*> q;
+    queue <Node*> q;
 
-    cout<<root->info<<" ";
+    cout << root->info << " ";
     q.push(root);
 
     while(!q.empty())
     {
         root = q.front();
         q.pop();
+        
         if(root->left)
         {
-            cout<<root->left->info<<" ";
+            cout << root->left->info << " ";
             q.push(root->left);
         }
         if(root->right)
         {
-            cout<<root->right->info<<" ";
+            cout << root->right->info << " ";
             q.push(root->right);
         }
     }
@@ -66,9 +67,9 @@ void BFS_traversal(Node *root)
 //Driver Program
 int main()
 {
-    Node *root= NULL;
-    root=create();
-    cout<<"BFS Traversal of the tree is : ";
+    Node *root = NULL;
+    root = create();
+    cout << "BFS Traversal of the tree is : ";
     BFS_traversal(root);
     return 0;
 }
