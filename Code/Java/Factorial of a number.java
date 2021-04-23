@@ -27,7 +27,10 @@ public static void main(String[] args){
 
     Enter Number: 0
     Factorial of 0 is: 1
+    
+    Enter Number:5
+    Factorial of 5 is: 120
 
     Time Complexity: O(n)
-    
+    Space Complexity: O(n)
 */
