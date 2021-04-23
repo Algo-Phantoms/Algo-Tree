@@ -77,6 +77,7 @@ Vatsal kesarwani </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Alg
 Raksha Jain </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=raksha009" title="Code">💻 🖋</a></td></a></td>
     <td align="center"><a href="https://github.com/Anjul2000"><img alt="" src="https://avatars.githubusercontent.com/Anjul2000" width="100px;"><br><sub><b>Anjul Singh</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=Anjul2000" title="Code">💻 🖋</a></td> </a></td>
     <td align="center"><a href="https://github.com/rish-singhal"><img alt="" src="https://avatars.githubusercontent.com/rish-singhal" width="100px;"><br><sub><b>Rishabh Singhal</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=rish-singhal" title="Code">💻 🖋</a></td> </a></td>
+     <td align="center"><a href="https://github.com/Rohan27s"><img alt="" src="https://avatars.githubusercontent.com/u/74227860?v=4" width="100px;"><br><sub><b>Rohan</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=rish-singhal" title="Code">💻 🖋</a></td> </a></td>
     
 </tbody></tr></table>
 
