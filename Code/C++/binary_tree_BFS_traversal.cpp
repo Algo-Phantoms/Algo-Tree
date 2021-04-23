@@ -1,3 +1,8 @@
+/*Binary tree is a data structure that has at most 2 child node i.e. left and right child
+For BFS traversal, we will traverse all nodes level by level. That means first root node
+is traversed, then all the direct children of the root node is traversed. 
+Similarly we move to their children and so on.*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -30,6 +35,7 @@ struct Node* create()
 
     return tree;
 };
+
 /*
 BFS traversal is similar to the Level Order Traversal. We will travel the
 tree row wise i.e. first row then second and so on.
@@ -75,8 +81,8 @@ int main()
 }
 
 /*
-Time Complexity : O(n)
-Space Complexity: O(n)
+Time Complexity : O(n), because we are traversing n-nodes on the tree
+Space Complexity: O(n), because we are using a queue
 
 Sample Input/Output:
 Enter data to be inserted or type -1 : 10
