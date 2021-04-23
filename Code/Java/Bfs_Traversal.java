@@ -1,25 +1,20 @@
 /*Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. 
- * It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]),
- *  and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.*/
+  It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]),
+  and explores all of the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.
 
-/*For each node, first the node is visited and then it’s child nodes are put in a FIFO queue. 
+For each node, first the node is visited and then itâ€™s child nodes are put in a FIFO queue. 
 
 printLevelorder(tree)
 1) Create an empty queue q
 2) temp_node = root //start from root
 3) Loop while temp_node is not NULL
     a) print temp_node->data.
-    b) Enqueue temp_node’s children 
+    b) Enqueue temp_nodeâ€™s children 
       (first left then right children) to q
-    c) Dequeue a node from q.*/
-
- 
-/**
- * @author Pallavi Dhere
- *
+    c) Dequeue a node from q.
  */
 
-package bfs_traversal;
+package bfs_Traversal;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,8 +22,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-
-
 
 public class Bfs_Traversal { 
    public Node root; 
@@ -47,8 +40,7 @@ public class Bfs_Traversal {
     } 
   
     // Function to insert nodes in level order 
-    public static Node insertLevelOrder(int[] arr, Node root, 
-                                                int i) 
+    public static Node insertLevelOrder(int[] arr, Node root, int i) 
     { 
         // Base case for recursion 
         if (i < arr.length) { 
@@ -56,12 +48,10 @@ public class Bfs_Traversal {
             root = temp; 
   
             // insert left child 
-            root.left = insertLevelOrder(arr, root.left, 
-                                             2 * i + 1); 
+            root.left = insertLevelOrder(arr, root.left, 2 * i + 1); 
   
             // insert right child 
-            root.right = insertLevelOrder(arr, root.right, 
-                                               2 * i + 2); 
+            root.right = insertLevelOrder(arr, root.right, 2 * i + 2); 
         } 
         return root; 
     } 
@@ -85,7 +75,6 @@ public class Bfs_Traversal {
             System.out.print(node.data + " ");
             System.out.print(" ");
 
-           
            /*Enqueue left child*/
            if(node.left != null)
              q.add(node.left);
@@ -113,31 +102,28 @@ public class Bfs_Traversal {
         t2.bfs(t2.root); 
     } 
 }
-/*INPUT AND OUTPUT
- *Enter the Number of notes in a tree
-5
-1
-2
-3
-4
-5
-1  2  3  4  5  
+/*Test Case 1
+INPUT : Enter the Number of notes in a tree
+        5
+        1
+        2
+        3
+        4
+        5
+OUTPUT: 1  2  3  4  5 
 
-* Enter the Number of notes in a tree
-5
-6
-7
-8
-9
-4
-6  7  8  9  4  
- * 
- * */
-/*
- *TIME COMPLEXITY & SPACE COMPLEXITY 
- *
- * Time Complexity: O(n) where n is number of nodes in the binary tree 
- *
-*Space Complexity: O(n) where n is number of nodes in the binary tree 
-
+Test case 2
+ 
+INPUT : Enter the Number of notes in a tree
+        5
+        6
+        7
+        8
+        9
+        4
+OUTPUT: 6  7  8  9  4  
+ 
+TIME COMPLEXITY & SPACE COMPLEXITY 
+Time Complexity: O(n) where n is number of nodes in the binary tree 
+Space Complexity: O(n) where n is number of nodes in the binary tree 
 */
