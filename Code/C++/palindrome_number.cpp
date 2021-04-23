@@ -1,6 +1,7 @@
-/*       Palindrome Number : Given an integer x, return true if x is palindrome integer.
-                            An integer is a palindrome when it reads the same backward as forward.
-                            This code is implemented without using extra space.                       
+/*       Palindrome Number : 
+                    Given an integer x, return true if x is palindrome integer.
+                    An integer is a palindrome when it reads the same backward as forward.
+                    This code is implemented without using extra space.                       
 */
 
 #include <bits/stdc++.h>
@@ -16,6 +17,7 @@ bool checkPalindrome(int num)
     {
         divi *= 10;
     }
+
     while (num != 0)
     {
         int leading = num / divi;
@@ -40,7 +42,7 @@ int main()
 }
 
 /*
-Time complexity : O(n2)
+Time complexity : O(n*n)
 Space complexity : O(1)
 */
 
