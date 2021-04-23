@@ -1,14 +1,16 @@
-/*Binary tree is a data structure that has at most 2 child node i.e. left and right child
+/*
+Binary tree is a data structure that has at most 2 child node i.e. left and right child
 For BFS traversal, we will traverse all nodes level by level. That means first root node
 is traversed, then all the direct children of the root node is traversed. 
-Similarly we move to their children and so on.*/
+Similarly we move to their children and so on.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Node                       //structure of the binary tree
+struct Node                        //structure of the binary tree
 {
-    int info;                     //data part
+    int info;                      //data part
     struct Node *left, *right;     //left and right node which will contain address of left and right subtree
 };
 
@@ -84,7 +86,7 @@ int main()
 Time Complexity : O(n), because we are traversing n-nodes on the tree
 Space Complexity: O(n), because we are using a queue
 
-Sample Input/Output:
+Sample Input/Output(1):
 Enter data to be inserted or type -1 : 10
 Enter left child of 10
 Enter data to be inserted or type -1 : 20
@@ -114,5 +116,36 @@ Tree Formed :
   20  40
  /     \
 30     50
+
+Sample Input/Output(2):
+Enter data to be inserted or type -1 : 1
+Enter left child of 1
+Enter data to be inserted or type -1 : 2
+Enter left child of 2
+Enter data to be inserted or type -1 : -1
+Enter right child of 2
+Enter data to be inserted or type -1 : 3
+Enter left child of 3
+Enter data to be inserted or type -1 : -1
+Enter right child of 3
+Enter data to be inserted or type -1 : -1
+Enter right child of 1
+Enter data to be inserted or type -1 : 4
+Enter left child of 4
+Enter data to be inserted or type -1 : 5
+Enter left child of 5
+Enter data to be inserted or type -1 : -1
+Enter right child of 5
+Enter data to be inserted or type -1 : -1
+Enter right child of 4
+Enter data to be inserted or type -1 : -1
+BFS Traversal of the tree is : 1 2 4 3 5
+
+Tree Formed :
+     1
+    / \
+   2   4
+   \   /
+   3  5
 */
 
