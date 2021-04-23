@@ -71,7 +71,21 @@ class queue:
             print(i, "--->", end=' ')
         print(None)
 
-"""Time-Complexity:
+
+if __name__ == "__main__":
+    q = queue()
+    print("Enter values to push in the queue: ")
+    value=[ele for ele in input().split()]
+    for i in range(len(value)):
+        q.enqueue(value[i])
+    q.display_queue()
+    q.front()
+    q.dequeue()
+    q.front()
+    q.rear()
+    print(q.isEmpty())
+
+"""Time-Complexity of the program:
 enqueue(): O(1)
 dequeue(): O(1)
 front(): O(1)
@@ -80,28 +94,44 @@ isEmpty(): O(1)
 display_queue(): O(N)
 """
 
+"""Test-Cases:
 
-if __name__ == "__main__":
-    q = queue()
-    q.display_queue()
-    q.enqueue(10)
-    q.enqueue(20)
-    q.enqueue(30)
-    q.enqueue(40)
-    q.display_queue()
-    q.dequeue()
-    q.dequeue()
-    q.front()
-    q.rear()
-    print(q.isEmpty())
+>>>
+Input:
+Enter values to push in the queue:
+5 6 7
 
-"""Expected Output:
+Output:
+5 ---> 6 ---> 7 ---> None
+Front element is: 5
+5 has been removed
+Front element is: 6
+Rear element is : 7
+False
 
-The queue is empty
-10 ---> 20 ---> 30 ---> 40 ---> None
-10 has been removed
-20 has been removed
-Front element is: 30
-Rear element is : 40
+>>>
+Input:
+Enter values to push in the queue:
+Anamika B.Tech Computer-Science
+
+Output:
+Anamika ---> B.Tech ---> Computer-Science ---> None
+Front element is: Anamika
+Anamika has been removed
+Front element is: B.Tech
+Rear element is : Computer-Science
+False
+
+>>>
+Input:
+Enter values to push in the queue:
+1 Apple Bangkok 32 64
+
+Output:
+1 ---> Apple ---> Bangkok ---> 32 ---> 64 ---> None
+Front element is: 1
+1 has been removed
+Front element is: Apple
+Rear element is : 64
 False
 """
