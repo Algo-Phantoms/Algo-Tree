@@ -40,3 +40,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Fcatorial of a number ---->[Jva](/code/Java/factorial of a number.java)
