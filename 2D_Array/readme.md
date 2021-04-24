@@ -8,6 +8,7 @@ However, 2D arrays are created to implement a relational database look alike dat
 Due to the fact that the elements of 2D arrays can be random accessed. Similar to one dimensional arrays, we can access the individual cells in a 2D array by using the indices of the cells. There are two indices attached to a particular cell, one is its row number while the other is its column number.
 
 ## Questions :
+* Row-wise sum ----> [C++](/Code/C++/row_wise_sum.cpp)
 * Spiral Print ----> [C++](/Code/C++/spiral_print.cpp)
 * Wave Print ----> [C++](/Code/C++/wave_print.cpp)
 * Clockwise Rotation ----> [C++](/Code/C++/2d_matrix_rotation_90degree_clockwise.cpp)
