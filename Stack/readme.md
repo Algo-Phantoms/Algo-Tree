@@ -28,5 +28,4 @@ element in a full stack is called **overflow**.
 -   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
 -   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp) | [Python](/Code/Python/StockSpan.py)
 -   Reverse individual words of a string ----> [C++](/Code/C++/reverse_words_of_string.cpp)
--   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp)
 
