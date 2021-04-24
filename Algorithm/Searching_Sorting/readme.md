@@ -80,3 +80,7 @@ Following are the types of searches which we will be discussing in this book.
 * Find peak element using binary search ----> [Python](/Code/Python/peak_element.py)
 * Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
 * Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
+* DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
+
+
+
