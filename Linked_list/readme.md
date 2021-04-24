@@ -29,3 +29,4 @@ properties.
 
 ## Questions :
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
+* Ispalindrome ----> [Python](/Code/Python/isPalindrom_dll.py)
