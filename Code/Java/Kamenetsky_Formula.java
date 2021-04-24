@@ -6,6 +6,7 @@
  *        which can be simplified to:
  *        number of digits in factorial = n* log10(( n/ e)) + log10(2*pi*n)/2
  * where n is the number.
+ * Reference paper: https://oeis.org/A034886
  */
 
 import java.util.*;
