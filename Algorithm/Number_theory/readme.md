@@ -38,5 +38,5 @@
 
 # Questions related to Number Theory
 
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
