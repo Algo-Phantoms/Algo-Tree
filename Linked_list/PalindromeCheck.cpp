@@ -50,6 +50,7 @@ SAMPLE TEST CASE 2:
  false
  ----------------------------------------------------------------------------------------
 TIME COMPLEXITY: O(N)
+SPACE COMPLEXITY: O(1)
 */
 
 
