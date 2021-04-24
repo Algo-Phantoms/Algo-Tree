@@ -40,5 +40,7 @@
 ## Questions related to Number Theory
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
+- Check Prime Number ----> [Java](/Code/Java/check_prime.java)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
+- Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
