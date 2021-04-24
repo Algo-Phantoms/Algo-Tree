@@ -32,7 +32,9 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
+
 <hr>
 
 ## Questions :
 
+- Checking for anagram ---->[Python](/Code/Python/Anagram.py)
