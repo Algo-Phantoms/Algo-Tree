@@ -30,9 +30,12 @@ def max_water(arr, n):
 
 if __name__ == "__main__":
     arr = []
+
+    print("Enter number of elements")
     # number of elements as input
     n = int(input())
-
+    
+    print("Enter the elements")
     # iterating till the range
     for i in range(0,n):
         p = int(input())
