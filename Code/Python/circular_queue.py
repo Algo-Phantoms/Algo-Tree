@@ -1,8 +1,9 @@
 """
 Circular Queue
-Problem Statement: Circular Queue is a linear data structure which follows FIFO principle
-                   The difference is that the last position is connected back to the first position to make a circle.
-                   Perform insertion, deletion and traversal operations on Circular Queue.
+Problem Statement:
+Circular Queue is a linear data structure which follows FIFO principle
+The difference is that the last position is connected back to the first position to make a circle.
+Perform insertion, deletion and traversal operations on Circular Queue.
 """
 
 
@@ -29,7 +30,6 @@ class CircularQueue:
             print("Elements in Queue: ")
             for k in range(self.quehead, self.quetail + 1):
                 print(self.queue[k], end = " ")
-                
 
     def enqueue(self, val):
         # checking if the queue is Overflow
@@ -64,9 +64,9 @@ class CircularQueue:
 
 
 # input the size of the queue
-size = int(input())
+size = int(input("Enter the size of queue: "))
 # input the number of elements to be deleted
-delete = int(input())
+delete = int(input("Enter the number of elements to be deleted: "))
 # creating object pf queue to access the elements and perform operations
 queobj = CircularQueue(int(size))
 # taking the input the elements from user
@@ -86,8 +86,8 @@ queobj.traverse()
 """
 Test case 1 
 input -
-5
-2
+Enter the size of queue: 5
+Enter the number of elements to be deleted: 2
 1
 2
 3
@@ -104,8 +104,8 @@ Elements in Queue:
 
 Test case 2
 input -
-10
-4
+Enter the size of queue: 10
+Enter the number of elements to be deleted: 4
 33
 44
 22
