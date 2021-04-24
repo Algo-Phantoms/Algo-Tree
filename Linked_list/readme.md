@@ -31,6 +31,7 @@ properties.
 * Alternate Node Deletion ----> [C++](/Code/C++/Deletion of Alternate nodes in a linked list.cpp)
 * Cycle detection using Hare and Tortoise algorithm ----> [C++](/Code/C++/CycleDetectLinkedList.cpp) | [Java](/Code/Java/Cycle_Detection_In_Linked_List.java)
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
+* Splitting ----> [C++](/Code/C++/Splitting_Linked_lists.cpp)
 * Implementation of Linked List ----> [Python](/Code/Python/linked_list.py)
 * Reversing a Linked List ----> [C++](/Code/C++/reverse_a_linked_list.cpp)
 * Finding Intersection of Linked Lists ----> [Python](/Code/Python/linked_lists_intersection.py)
