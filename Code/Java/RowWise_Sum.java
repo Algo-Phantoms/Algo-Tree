@@ -82,5 +82,6 @@ Input 2-->
 Output-->
 20 32 
 
-Time Complexity - O(n^2)
+Time Complexity - O(m*n) ,where m and n are no. of rows and columns resp.
+Space Complexity - O(1) ,as no extra space is used except sum variable.
 */
