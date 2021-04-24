@@ -35,4 +35,5 @@
 <hr>
 
 ## Questions :
+- Checking Pangram ----> [Java](/code/Java/Pangram.java)
 
