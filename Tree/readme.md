@@ -48,6 +48,7 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* Root to Leaf Sum ----> [Python](/Code/Python/root_to_leaf_sum.py)
 
 
 
