@@ -43,11 +43,12 @@ int main()
 
 /*
 Time complexity : O(log n)
+(here n is number of elements in array)
 Space complexity : O(1)
 */
 
 /*
-Test Case : 
+Test Case's : 
     Test case 1 :
         Input : 1001
         Output : True
