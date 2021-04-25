@@ -18,3 +18,4 @@ A string is a class that contains a char array, but automatically manages it for
 * Convert string to lowercase and uppercase ---->[C++](/Code/C++/string_to_lowercase_and_uppercase.cpp)
 * Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
+* Number of deletions to make a string pallindrome ---->[Python](/string/Number_of_deletions_to_make_pallindrome.py)
