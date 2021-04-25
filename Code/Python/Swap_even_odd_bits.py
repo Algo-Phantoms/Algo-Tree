@@ -7,15 +7,9 @@ Pre-Requisite Knowlegde:
 2) Right Shift and Left Shift Operator.
 
 Note:- 
-I) HexaDecimal numbers is a number system with 16 digits, range from 0 to 9 and A to F (representing digits 10 to 15).
 It's important to know that Hexadecimal number '5' and 'A' (decimal number 10) is written as 0101 and 1010 in binary format respectively.
 
-General Algorithm:- 
-1) Seperate the odd bits from the given number and shift them to the even positions.  
-2) Seperate the even bits from the given number and shift them to the odd positions.
-3) Finally combine the both shifted bits together. 
-
-Example:-
+General Algorithm with an Example:-
 Lets take an integer value 45. Binary Representation of 45 is 00101101.
 I) Create a bit-mask and seperate odd and even bits.
 For the above example inorder to obtain even bits we will use 10101010 bit-mask.
