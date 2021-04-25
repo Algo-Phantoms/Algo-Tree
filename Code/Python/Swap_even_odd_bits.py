@@ -8,36 +8,16 @@ Pre-Requisite Knowlegde:
 
 Note:- 
 I) HexaDecimal numbers is a number system with 16 digits, range from 0 to 9 and A to F (representing digits 10 to 15).
-
-HexaDecimal Number <-------> 4-bit Binary Representation
-0                                       0000
-1                                       0001
-2                                       0010
-3                                       0011
-4                                       0100
-5                                       0101
-6                                       0110
-7                                       0111
-8                                       1000
-9                                       1001
-A (Decimal - 10)                        1010
-B (Decimal - 11)                        1011
-C (Decimal - 12)                        1100
-D (Decimal - 13)                        1101
-E (Decimal - 14)                        1110
-F (Decimal - 15)                        1111
-
-Understanding the Problem Statement:-
-We need to swap the even bits of an integer with odd bits and vice-versa.  
+It's important to know that Hexadecimal number '5' and 'A' (decimal number 10) is written as 0101 and 1010 in binary format respectively.
 
 General Algorithm:- 
-1) Need to seperate the odd bits from the given number and shift them to the even positions.  
-2) Need to seperate the even bits from the given number and shift them to the odd positions.
+1) Seperate the odd bits from the given number and shift them to the even positions.  
+2) Seperate the even bits from the given number and shift them to the odd positions.
 3) Finally combine the both shifted bits together. 
 
 Example:-
 Lets take an integer value 45. Binary Representation of 45 is 00101101.
-First step would be creating a bit-mask and seperating odd and even bits.
+I) Create a bit-mask and seperate odd and even bits.
 For the above example inorder to obtain even bits we will use 10101010 bit-mask.
 Notice in the above bit-mask all the odd positions are zero. Using 'and'/'&' operator between the given integer and the bit-mask created will give us only the even bits.
 
@@ -60,14 +40,14 @@ Notice in the above bit-mask all the even positions are zero. Using 'and'/'&' op
 Note all the odd bits of the given number are obtained.
 Notice that the bit-mask used to obtain odd bits can be also written as 0x55555555 in 32 bit HexaDecimal format.
 
-Second step would be shifting the even bits and odd bits.
+II) Shift the even bits and odd bits.
 We need to right shift the even bits by 1 to make them odd bits.  
 even_bits >> 1 = 00010100 
 
 We need to left shift the odd bits by 1 to make them even bits.
 odd_bits << 1 = 00001010 
 
-Third and final step to combine both the shifted bits together.
+III) Combine both the shifted bits together.
 
 even_bits | odd_bits 
 
@@ -75,7 +55,6 @@ even_bits | odd_bits
             |   00001010
 ---------------------------
 final_answer =  00011110 = 30 (Decimal)
-
 '''
 
 #METHOD - 1 - Using HexaDecimal Number
@@ -117,6 +96,7 @@ print("\n")
 #METHOD - 2 Using Binary Number
 print("METHOD - 2 Using Binary Number")
 print("\n")
+# Function for swapping even and odd bits
 
 def swap_even_odd_bits(int_number):
     
@@ -141,14 +121,11 @@ def swap_even_odd_bits(int_number):
     #Obtain the final number using 'OR' / '|' operator.
     return (even_bits | odd_bits)
     
-
 #Taking an user input
 int_number = int(input("Please enter an integer number: "))
 
 #Output
 print("The output for", int_number ,"after swapping even and odd bits is:", swap_even_odd_bits(int_number))
-
-
 
 '''
 Test Case: - 
@@ -163,7 +140,6 @@ where 56 is 00000000111000
 Output 2: 52 
 where 52 is 00000000110100
             
-
 Time Complexity : O(1)
 The number of steps required to in computing the solution is finite.
 Note that the finite number of steps doesnot grow with our input varaible "int_number".
@@ -173,14 +149,3 @@ Space Complexity : O(1)
 The space remain constant throughout the program.
 This implies that the space complexity is also of order 1 that is constant space.
 '''
-
-
-
-
-
-
-
-
-
-
-
