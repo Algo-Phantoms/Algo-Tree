@@ -27,4 +27,4 @@ element in a full stack is called **overflow**.
 -   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
 -   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
 -   Reverse individual words of a string ----> [C++](/Code/C++/reverse_words_of_string.cpp)
--   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp) / [Java]
+-   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp) / [Java] (Stack/Stock Span Problem .Java)
