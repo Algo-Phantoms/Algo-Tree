@@ -7,3 +7,5 @@ Greedy Algorithms are one of the most intuitive algorithms. Whenever we see a pr
 • You hope that by choosing a **local optimum** ateach step, you will end up at a **global optimum**. 
 
 ## Questions :
+
+* Huffman Encoding ----> [C++] (/Code/C++/Huffman_encoding.cpp)
