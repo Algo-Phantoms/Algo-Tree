@@ -36,15 +36,9 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 ## Questions :
 
 - Knapsack ----> [C++](/Code/C++/knapsack.cpp)
-
 - Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
-
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
-
 - Minimum Number of Deletions To Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
-
 - Climbing Stairs ----> [C++](/Code/C++/Climbing_Stairs.cpp)
-
 - Flood Fill ----> [Java](/Code/Java/FloodFill.java)
-
 - Word Wrap Problem ----> [C++](/Code/C++/word_wrap.cpp)
