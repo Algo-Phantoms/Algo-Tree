@@ -2,7 +2,7 @@
 
 /* Procedure 
 ==================
-First of all here we'll initialize an empty hash set 's'.
+First of all here we'll initialize an empty set 's'.
 then we'll iterate through the first array and put every element of the first array in the set s.
 Repeat the process for the second array.
 Finally we'll print the set s.
