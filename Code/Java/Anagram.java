@@ -47,20 +47,25 @@ public class Anagram {
 }
 
 
-/*  
-             OUTPUT
-	     
-    INPUT: Enter string 1: prateek
-	   Enter string 2: eektarp
-    OUTPUT: Two strings are Anagram
-    
-    INPUT: Enter string 1: abcde
-           Enter string 2: cdba       
-    OUTPUT: Two strings are not Anagram
+/* 
+Test Cases
+1.	     
+INPUT: 
+Enter string 1: prateek
+Enter string 2: eektarp
+OUTPUT:
+Two strings are Anagram
+
+2.
+INPUT:
+Enter string 1: abcde
+Enter string 2: cdba       
+OUTPUT:
+Two strings are not Anagram
       
       
-      Time Complexity-O(nlog n)
-      Space Complexity-O(n) 
-      where n: number of characters in string
+Time Complexity-O(nlog n)
+Space Complexity-O(n) 
+where n: number of characters in string
     
     */
