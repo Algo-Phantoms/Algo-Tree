@@ -6,8 +6,6 @@ First of all here we'll initialize an empty hash set 's'.
 then we'll iterate through the first array and put every element of the first array in the set s.
 Repeat the process for the second array.
 Finally we'll print the set s.
-Time Complexity: O(m+n)
-where m,n : sizes of both arrays.
 */
 
 #include <bits/stdc++.h>
@@ -44,18 +42,45 @@ int main()
 }
 
 /*
+Time Complexity: O(log n)
 Sample Input output set
 ==========================
-
-Sample Input
+Sample Input 1
+----------------
 5
 6
 2 6 9 7 1
+1 2 3 4 5 6
+Sample Output 
+--------------
+Enter the size of both the arrays: 
+Enter the elements of 1st array:
+Enter the elements of 2nd array:
+Union of both the arrays:
+1 2 3 4 5 6 7 9 
+
+Sample Input 2
+---------------
+6
+6
+1 2 3 4 5 6
 1 2 3 4 5 6
 Sample Output
 Enter the size of both the arrays: 
 Enter the elements of 1st array:
 Enter the elements of 2nd array:
 Union of both the arrays:
-1 2 3 4 5 6 7 9 
+1 2 3 4 5 6 
+
+Sample Input
+1
+4
+7 
+1 2 3 4 
+Sample Output
+Enter the size of both the arrays: 
+Enter the elements of 1st array:
+Enter the elements of 2nd array:
+Union of both the arrays:
+1 2 3 4 7 
 */
