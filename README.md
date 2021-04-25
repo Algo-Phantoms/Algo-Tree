@@ -43,6 +43,7 @@ You may go through these guidelines and contribute accordingly:
 * If you want to contribute for an existing algorithm, we prefer that you create an issue before making a PR and link your PR to that issue.
 * If you have modified/added code work, make sure the code compiles before submitting.
 * Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
+* Just mention the issue against which the pull request is open by writing ```Fixes #(your issue number)``` in the description of the pull request
 * Do not update the [README.md](README.md).
 
 ## Guidelines for code base :
@@ -76,6 +77,10 @@ Vatsal kesarwani </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Alg
   <td align="center"><a href="https://github.com/raksha009"><img alt="" src="https://avatars.githubusercontent.com/raksha009" width="100px;"><br><sub><b>
 Raksha Jain </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=raksha009" title="Code">💻 🖋</a></td></a></td>
     <td align="center"><a href="https://github.com/Anjul2000"><img alt="" src="https://avatars.githubusercontent.com/Anjul2000" width="100px;"><br><sub><b>Anjul Singh</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=Anjul2000" title="Code">💻 🖋</a></td> </a></td>
+    <td align="center"><a href="https://github.com/rish-singhal"><img alt="" src="https://avatars.githubusercontent.com/rish-singhal" width="100px;"><br><sub><b>Rishabh Singhal</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=rish-singhal" title="Code">💻 🖋</a></td> </a></td>
+     <td align="center"><a href="https://github.com/Rohan27s"><img alt="" src="https://avatars.githubusercontent.com/u/74227860?v=4" width="100px;"><br><sub><b>Rohan</b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=rish-singhal" title="Code">💻 🖋</a></td> </a></td>
+     <td align="center"><a href="https://github.com/yasharth291"><img alt="" src="https://avatars.githubusercontent.com/yasharth291" width="100px;"><br><sub><b>
+Yasharth Dubey </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=yasharth291" title="Code">💻 🖋</a></td></a></td>
     
 </tbody></tr></table>
 
