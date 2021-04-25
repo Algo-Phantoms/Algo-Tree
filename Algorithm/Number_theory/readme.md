@@ -34,10 +34,9 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
-<hr>
-
 
 ## Questions related to Number Theory
+- Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
