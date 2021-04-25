@@ -42,7 +42,8 @@ int main()
 }
 
 /*
-Time Complexity: O(log n)
+Time Complexity: O((n+m) log(n+m))
+ where m,n are the sizes of both arrays.
 Sample Input output set
 ==========================
 Sample Input 1
