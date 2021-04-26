@@ -39,6 +39,7 @@
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java)
+- Check for Palindrome number ---->[Java](/Code/Java/Palindrome_number.java)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
