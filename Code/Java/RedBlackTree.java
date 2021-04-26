@@ -11,8 +11,7 @@
 
 package rbt;
 import java.util.*;   //importing required packages
-class Node 
-{
+class Node {
 	int data;  // contains the data
 	Node parent;  // pointer to the parent
 	Node left;  // pointer to left child
@@ -22,22 +21,18 @@ class Node
 
 
 // class RedBlackTree implements the operations in Red Black Tree
-public class RedBlackTree 
-{
+public class RedBlackTree {
 	private Node root;
 	private Node TNULL;
 
-	private void preOrder(Node node)   //preorder 
-	{
-		if (node != TNULL)  //node does not have terminal nodes
-		{
+	private void preOrder(Node node) {   //preorder 
+		if (node != TNULL){  //node does not have terminal nodes
+		
 			String c;
-			if(node.color == 0)  //if node color's value is 0
-			{
+			if(node.color == 0){ //if node color's value is 0
 				c = "Black";  //: assign color as black
 			}
-			else  // if 1
-			{
+			else { // if 1
 				c ="Red";  // then assign color as red
 			}
 			System.out.print(node.data+"("+c+")"+ " ");
@@ -46,17 +41,13 @@ public class RedBlackTree
 		} 
 	}
 
-	private void inOrder(Node node) 
-	{
-		if (node != TNULL)  //node does not have terminal nodes
-		{
+	private void inOrder(Node node) {
+		if (node != TNULL){  //node does not have terminal nodes
 			String c;
-			if(node.color == 0)  //if node color's value is 0  
-			{
+			if(node.color == 0){  //if node color's value is 0  
 				c = "Black";     //: assign color as black
 			}
-			else  // if 1 
-			{
+			else{   // if 1 
 				c ="Red";  // then assign color as red
 			}
 			inOrder(node.left);  //recursive traverse left node
@@ -65,17 +56,13 @@ public class RedBlackTree
 		} 
 	}
 
-	private void postOrder(Node node) 
-	{
-		if (node != TNULL)  //node does not have terminal nodes
-		{
+	private void postOrder(Node node) {
+		if (node != TNULL){  //node does not have terminal nodes
 			String c;
-			if(node.color == 0) //if node color's value is 0
-			{
+			if(node.color == 0){ //if node color's value is 0
 				c = "Black"; //: assign color as black
 			}
-			else  // if 1
-			{
+			else{  // if 1
 				c ="Red";  //then assign color as red
 			}
 			postOrder(node.left);  //recursive traverse left node
@@ -86,16 +73,12 @@ public class RedBlackTree
 
 
 	// fix the rb tree modified by the delete operation
-	private void fixDelete(Node x) 
-	{
+	private void fixDelete(Node x) {
 		Node s;
-		while (x != root && x.color == 0)   //x is not the root and x is black 
-		{
-			if (x == x.parent.left)   //if x is left child of its parent node
-			{
+		while (x != root && x.color == 0) {  //x is not the root and x is black 
+			if (x == x.parent.left){   //if x is left child of its parent node
 				s = x.parent.right;
-				if (s.color == 1)   //if s is of red color 
-				{
+				if (s.color == 1) {  //if s is of red color 
 					// x ’s sibling S is red
 					s.color = 0;   //set s as black color
 					x.parent.color = 1;   //set x's parent color to red
@@ -103,16 +86,13 @@ public class RedBlackTree
 					s = x.parent.right;   //change s to right child of x's parent
 				}
 
-				if (s.left.color == 0 && s.right.color == 0) 
-				{
+				if (s.left.color == 0 && s.right.color == 0) {
 					// x ’s sibling S is black, and both of S’s children are black.
 					s.color = 1;   //re-color s to red
 					x = x.parent;  
 				} 
-				else 
-				{
-					if (s.right.color == 0) 
-					{
+				else{
+					if (s.right.color == 0){
 						// x ’s sibling S is black, S’s left child is red, and S’s right child is black.
 						s.left.color = 0;
 						s.color = 1;   //re-color s to red
@@ -128,11 +108,9 @@ public class RedBlackTree
 					x = root;
 				}
 			} 
-			else 
-			{
+			else {
 				s = x.parent.left;
-				if (s.color == 1)   //if s is red 
-				{
+				if (s.color == 1){   //if s is red 
 					//x ’s sibling S is red
 					s.color = 0;
 					x.parent.color = 1;   //re-color x's color to red 
@@ -140,16 +118,13 @@ public class RedBlackTree
 					s = x.parent.left;
 				}
 
-				if (s.right.color == 0 && s.right.color == 0)   //if right child of s is black
-				{
+				if (s.right.color == 0 && s.right.color == 0){   //if right child of s is black
 					// x ’s sibling S is black, S’s left child is red, and S’s right child is black.
 					s.color = 1;  // re-color 
 					x = x.parent;
 				} 
-				else 
-				{
-					if (s.left.color == 0)  //if s-> left color is black
-					{
+				else {
+					if (s.left.color == 0) {  //if s-> left color is black
 						// x ’s sibling S is black, S’s left child is red, and S’s right child is black.
 						s.right.color = 0;
 						s.color = 1;   //re-color s to red
@@ -170,74 +145,60 @@ public class RedBlackTree
 	}
 
 
-	private void rbTransplant(Node u, Node v)
-	{
-		if (u.parent == null)   // if u is the root
-		{
+	private void rbTransplant(Node u, Node v){
+		if (u.parent == null) {   // if u is the root
 			root = v;  // set v as root
 		} 
-		else if (u == u.parent.left) // if u is at left child of it's parent 
-		{
+		else if (u == u.parent.left) { // if u is at left child of it's parent 
 			u.parent.left = v;   //assign v as left child of u.parent
 		} 
-		else 
-		{
+		else{
 			u.parent.right = v;   //assign v as right child of u.parent
 		}
 		v.parent = u.parent;
 	}
 
-	private void deleteNodeHelper(Node node, int key)   //for deletion of a node
-	{
+	private void deleteNodeHelper(Node node, int key) {   //for deletion of a node 
 		// find the node containing key
 		Node z = TNULL;
 		Node x, y;
-		while (node != TNULL)   //node doesn't have terminal nodes 
-		{
-			if (node.data == key) //node to be deleted found
-			{
+		while (node != TNULL) 
+		{   //node doesn't have terminal nodes 
+			if (node.data == key) { //node to be deleted found
 				z = node;  //set node as z
 			}
 
-			if (node.data <= key)  //node to be deleted is greater than/equal to node.data 
-			{
+			if (node.data <= key) {  //node to be deleted is greater than/equal to node.data 
 				node = node.right;  //traverse to node's right child
 			} 
-			else 
-			{
+			else {
 				node = node.left;   //traverse to node's left child
 			}
 		}
 
-		if (z == TNULL)   //if node has terminal nodes
-		{
+		if (z == TNULL)  { //if node has terminal nodes
 			System.out.println("Couldn't find key in the tree");  //node to be deleted not found
 			return;
 		} 
 
 		y = z;   //set z as y
 		int yOriginalColor = y.color;   
-		if (z.left == TNULL)    //z's left child has terminal nodes 
-		{
+		if (z.left == TNULL) {    //z's left child has terminal nodes 
 			x = z.right;   //set z's right child as x
 			rbTransplant(z, z.right);    //call transplant function for balancing the tree
 		} 
-		else if (z.right == TNULL)    //z's right child has terminal nodes
-		{
+		else if (z.right == TNULL) {   //z's right child has terminal nodes
 			x = z.left;  //set z's left child as x
 			rbTransplant(z, z.left);    //call transplant function for balancing the tree
 		} 
-		else 
-		{
+		else {
 			y = minimum(z.right);    //find the minimum node and assign it to y
 			yOriginalColor = y.color;  
 			x = y.right;
-			if (y.parent == z)   //if y->parent is equal to z
-			{
+			if (y.parent == z) {  //if y->parent is equal to z
 				x.parent = y;    //set y as x->parent
 			} 
-			else 
-			{
+			else {
 				rbTransplant(y, y.right);  //use transplant function for balancing 
 				y.right = z.right;      
 				y.right.parent = y;
@@ -248,32 +209,25 @@ public class RedBlackTree
 			y.left.parent = y;
 			y.color = z.color;     //set the color of z same as y
 		}
-		if (yOriginalColor == 0)   
-		{
+		if (yOriginalColor == 0)   {
 			fixDelete(x);   //call fixdelete function for balancing the tree 
 		}
 	}
 	
-	private void BalanceInsert(Node k)  // balance the red-black tree
-	{
+	private void BalanceInsert(Node k) {  // balance the red-black tree
 		Node u;  //uncle node
-		while (k.parent.color == 1)   //loop until k's parent is red 
-		{
-			if (k.parent == k.parent.parent.right)   //if k.parent is equal to grandparent's right child
-			{
+		while (k.parent.color == 1) {  //loop until k's parent is red 
+			if (k.parent == k.parent.parent.right) {  //if k.parent is equal to grandparent's right child
 				u = k.parent.parent.left; // uncle
-				if (u.color == 1)  // if uncle's color is red
-				{
+				if (u.color == 1){  // if uncle's color is red
 					//Parent  is red and Uncle is red too.
 					u.color = 0;
 					k.parent.color = 0;  
 					k.parent.parent.color = 1;  //set grandparent's color to red
 					k = k.parent.parent;
 				} 
-				else 
-				{
-					if (k == k.parent.left)   //if k is the left child of its parent
-					{
+				else {
+					if (k == k.parent.left){   //if k is the left child of its parent
 						// P  is red and U is black (or NULL).
 						k = k.parent;
 						rightRotate(k);  //apply right rotation
@@ -284,22 +238,18 @@ public class RedBlackTree
 					leftRotate(k.parent.parent);  //apply left rotation
 				}
 			} 
-			else 
-			{
+			else {
 				u = k.parent.parent.right; // uncle
 
-				if (u.color == 1) 
-				{
+				if (u.color == 1) {
 					// P  is red and U is red too.
 					u.color = 0;
 					k.parent.color = 0;  //set parent's color as black
 					k.parent.parent.color = 1;   //set grandparent's color as red
 					k = k.parent.parent;	  //set k as grandparent 
 				} 
-				else 
-				{
-					if (k == k.parent.right) 
-					{
+				else {
+					if (k == k.parent.right) {
 						// P  is red and U is black (or NULL)
 						k = k.parent;
 						leftRotate(k); //apply left rotation 
@@ -318,8 +268,7 @@ public class RedBlackTree
 		root.color = 0;   //set root's color to black
 	}
 
-	private void printHelper(Node root)   //for printing the nodes of the tree
-	{
+	private void printHelper(Node root){   //for printing the nodes of the tree
 		// print the tree structure on the screen
 		 {
 		    if (root == null)  //no nodes in the tree
@@ -330,7 +279,7 @@ public class RedBlackTree
 		  }
 	}
 
-	public RedBlackTree()   //RedBlackTree class
+	public RedBlackTree()  //RedBlackTree class
 	{
 		TNULL = new Node();   //terminal nodes- objects of Node class
 		TNULL.color = 0;     //initialize variables 
@@ -387,8 +336,7 @@ public class RedBlackTree
 		// if the right subtree is not null,
 		// the successor is the leftmost node in the
 		// right subtree
-		if (x.right != TNULL) 
-		{
+		if (x.right != TNULL){
 			return minimum(x.right);  //calling minimum function
 		}
 
@@ -409,8 +357,7 @@ public class RedBlackTree
 		// if the left subtree is not null,
 		// the predecessor is the rightmost node in the 
 		// left subtree
-		if (x.left != TNULL) 
-		{
+		if (x.left != TNULL){ 
 			return maximum(x.left);  //find maximum node
 		}
 
@@ -429,21 +376,17 @@ public class RedBlackTree
 	{
 		Node y = x.right;   //assign x->right child to y
 		x.right = y.left;
-		if (y.left != TNULL)   //left child of y has no terminal nodes
-		{
+		if (y.left != TNULL){   //left child of y has no terminal nodes
 			y.left.parent = x;
 		}
 		y.parent = x.parent;
-		if (x.parent == null)   //there is no parent of x node
-		{
+		if (x.parent == null){   //there is no parent of x node
 			this.root = y;
 		} 
-		else if (x == x.parent.left) //x is left child
-		{
+		else if (x == x.parent.left){ //x is left child
 			x.parent.left = y; //set y as x's left child
 		} 
-		else 
-		{
+		else {
 			x.parent.right = y;  //set y as x's right child
 		}
 		y.left = x;
@@ -455,21 +398,17 @@ public class RedBlackTree
 	{
 		Node y = x.left;
 		x.left = y.right;
-		if (y.right != TNULL)   //right child of y has no terminal nodes 
-		{
+		if (y.right != TNULL){   //right child of y has no terminal nodes 
 			y.right.parent = x; 
 		}
 		y.parent = x.parent;
-		if (x.parent == null) //x does not have a parent
-		{
+		if (x.parent == null){  //x does not have a parent
 			this.root = y;
 		} 
-		else if (x == x.parent.right) //x is right child
-		{
+		else if (x == x.parent.right){ //x is right child
 			x.parent.right = y; //set y as right child of x
 		} 
-		else 
-		{
+		else {
 			x.parent.left = y;  //set y as left child of x
 		}
 		y.right = x;  //set x as right child of y
@@ -494,41 +433,34 @@ public class RedBlackTree
 		while (x != TNULL)  //loop until x have terminal nodes 
 		{
 			y = x;
-			if (node.data < x.data) //check condition
-			{
+			if (node.data < x.data){ //check condition
 				x = x.left; //traverse left
 			} 
-			else 
-			{
+			else {
 				x = x.right; //traverse right
 			}
 		}
 
 		// y is parent of x
 		node.parent = y;
-		if (y == null) 
-		{
+		if (y == null) {
 			root = node; //set node as root
 		} 
-		else if (node.data < y.data)  //check equality condition
-		{
+		else if (node.data < y.data){  //check equality condition
 			y.left = node;  //node will be left child of y
 		} 
-		else 
-		{
+		else{
 			y.right = node; //node will be right child of y
 		}
 
 		// if new node is a root node, simply return
-		if (node.parent == null)
-		{
+		if (node.parent == null){
 			node.color = 0;  //set node color to black
 			return;
 		}
 
 		// if the grandparent is null, simply return
-		if (node.parent.parent == null) 
-		{
+		if (node.parent.parent == null) {
 			return;
 		}
 
