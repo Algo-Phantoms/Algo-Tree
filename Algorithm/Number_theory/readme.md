@@ -36,13 +36,13 @@
 
 
 ## Questions related to Number Theory
-- Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Calculate the value of nCr ---->[Python](/Code/Python/calculate_the_value_of_nCr.py)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java)
-- Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
+- Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
+- Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
-- Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
-- Calculate the value of nCr ---->[Python](/Code/Python/calculate_the_value_of_nCr.py)
+- Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 
 
