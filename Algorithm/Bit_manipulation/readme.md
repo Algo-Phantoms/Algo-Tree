@@ -55,8 +55,9 @@ There are different bitwise operations used in the bit manipulation. Bit operati
 
 ## Questions :
 
-# <<<<<<< Updated upstream
-
 - Brian Kernighan's Algorithm ----> [C++](/Code/C++/Brian_Kernighan.cpp) | [Java](/Code/Java/BrianKernighanAlgorithm.java)
 - Bitwise Operator Overloading ---->[C++](/Code/C++/Bitwise_operator_overloading.cpp)
-  > > > > > > > Stashed changes
+
+- Bitwise Operator Overloading ---->[C++](/Code/C++/Bitwise_operator_overloading.cpp)
+- Brian Kernighan's Algorithm ----> [C++](/Code/C++/Brian_Kernighan.cpp) | [Java](/Code/Java/BrianKernighanAlgorithm.java)
+- Brian Kernighan's Algorithm ----> [C++](/Code/C++/Brian_Kernighan.cpp) | [Java](/Code/Java/BrianKernighanAlgorithm.java) | [Python](/Code/Python/Brian_Kernighan's_Algorithm.py)
