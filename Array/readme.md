@@ -42,3 +42,4 @@ To create an array, you need to known the length (or size) of the array in advan
  * Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp)
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
+ * Remove the duplicates from sorted array ----> [C++](Code/C++/Remove_Duplicates.cpp)
