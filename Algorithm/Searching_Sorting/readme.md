@@ -65,7 +65,6 @@ Following are the types of searches which we will be discussing in this book.
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
-* Searching in sorted rotated array ----> [C++](/Code/C++/searching_in_sorted_rotated_array.cpp)
 * Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
 * Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
