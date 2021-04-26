@@ -43,5 +43,6 @@
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
+- Calculate the value of nCr ---->[Python](/Code/Python/calculate_the_value_of_nCr.py)
 
 
