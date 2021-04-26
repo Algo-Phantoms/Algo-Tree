@@ -54,9 +54,9 @@ There are different bitwise operations used in the bit manipulation. Bit operati
   - 6 >> 1 = 3
 
 ## Questions :
-<<<<<<< Updated upstream
-=======
+
+# <<<<<<< Updated upstream
 
 - Brian Kernighan's Algorithm ----> [C++](/Code/C++/Brian_Kernighan.cpp) | [Java](/Code/Java/BrianKernighanAlgorithm.java)
-- Bitwise Operator Overloading ---->[C++](Code/C++/Bitwise_operator_overloading.cpp)
->>>>>>> Stashed changes
+- Bitwise Operator Overloading ---->[C++](/Code/C++/Bitwise_operator_overloading.cpp)
+  > > > > > > > Stashed changes
