@@ -13,3 +13,5 @@ A string is a class that contains a char array, but automatically manages it for
 
 ## Questions :
 
+* Print the decimal equivalent of a binary string ---->[C++](/Code/C++/binary_string_to_decimal.cpp)
+
