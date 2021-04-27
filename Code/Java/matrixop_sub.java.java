@@ -6,6 +6,7 @@ A 2D Array is Used for Matrix, size is taken first then 2 Matrix of that Size is
 package matrixop;
 import java.util.Scanner;
 
+
 public class MatrixOP {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -13,6 +14,7 @@ public class MatrixOP {
         int l = scan.nextInt();
         int h = scan.nextInt();
         int[][] twoDarr1 = new int[l][h];
+        
         System.out.println("Enter All Values of 1st Matrix");
         // Taking Input of 1st Matrix
         for (int i = 0; i < l; i++) {
@@ -20,6 +22,7 @@ public class MatrixOP {
                 twoDarr1[i][j] = scan.nextInt();
             }
         }
+        
         System.out.println("Enter All Values of 2nd Matrix :");
         int[][] twoDarr2 = new int[l][h];
         // Taking Input of 2nd Matrix
@@ -28,6 +31,8 @@ public class MatrixOP {
                 twoDarr2[i][j] = scan.nextInt();
             }
         }
+        
+        
         // Subtracting Two Matrix
         for (int i = 0; i < l; i++) {
             for (int j = 0; j < h; j++) {
@@ -35,6 +40,7 @@ public class MatrixOP {
             }
         }
 
+        
         //Printing Matrix after Subtraction
         System.out.println("Matrix after subtraction is :");
         for (int i = 0; i < l; i++) {
@@ -43,6 +49,7 @@ public class MatrixOP {
             }
             System.out.println();
         }
+        
     }
 }
 /*
@@ -68,6 +75,6 @@ public class MatrixOP {
         Output:  3 -4
                  9  2
 
-        Time Complexity: O(n^2)
+        Time Complexity: O(n^2) where n is the length of matrix
         Space Complexity: O(n^2)
  */
