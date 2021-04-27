@@ -22,10 +22,13 @@ public class manacherAlgo{
         if (N == 0)
             return;
         N = 2 * N + 1;
+        
         // L for LPS Length Array and N for Position count
         int[] L = new int[N + 1];
         L[0] = 0;
         L[1] = 1;
+        
+        
         // centerPosition then centerRightPosition then currentRightPosition then acurrentLeftPosition
         int C = 1;
         int R = 2;
@@ -37,6 +40,7 @@ public class manacherAlgo{
         int end = -1;
         int diff = -1;
 
+        
         // Uncomment it to print LPS Length array
         // printf("%d %d ", L[0], L[1]);
         for (i = 2; i < N; i++)
@@ -45,9 +49,13 @@ public class manacherAlgo{
             iMirror = 2 * C - i;
             L[i] = 0;
             diff = R - i;
+            
+            
             // If currentRightPosition i is within centerRightPosition R
             if (diff > 0)
                 L[i] = Math.min(L[iMirror], diff);
+            
+        
             // Attempt to expand palindrome centered at currentRightPosition i. Here for odd positions,
             // here we compare characters and if match then increment LPS Length by ONE.
             // If even position, we just increment LPS by ONE without any character comparison
@@ -59,11 +67,16 @@ public class manacherAlgo{
                 L[i]++;
             }
 
+            
+            
             if (L[i] > maximumLenOFLPS) // Track maximumLenOFLPS
             {
                 maximumLenOFLPS = L[i];
                 maximumLPSCenPos = i;
             }
+            
+            
+            
             // If palindrome centered at currentRightPosition i
             // expand beyond centerRightPosition R,
             // adjust centerPosition C based on expanded palindrome.
@@ -73,8 +86,12 @@ public class manacherAlgo{
                 R = i + L[i];
             }
         }
+        
         start = (maximumLPSCenPos - maximumLenOFLPS) / 2;
         end = start + maximumLenOFLPS - 1;
+        
+        
+        
         for (i = start; i <= end; i++)
             System.out.print(text.charAt(i));
         System.out.println();
