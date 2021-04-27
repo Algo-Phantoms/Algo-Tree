@@ -1,4 +1,5 @@
-/* ROW WISE SUM OF A 2D ARRAY */
+/* ROW WISE SUM OF A 2D ARRAY :
+For a given 2-D integer type array of size (N x M), find and print the sum of each of the row elements in a single line, separated by a single space.*/
 
 #include <iostream>
 using namespace std;
@@ -36,25 +37,16 @@ int main()
     row_wise_sum(arr,rows,cols);
     return 0;
 }
-
-
-/*
-
-EXAMPLE 1:
-
+/* EXAMPLE 1:
 Enter the number of rows and columns:3 4
-
 Enter the elements of the 2D array:
 1 2 3 4
 0 -2 -1 3
 -6 2 1 11
-
 Row-wise Sum:
 10 0 8
 
-
 EXAMPLE 2:
-
 Enter the number of rows and columns:3 3
 Enter the elements of the 2D array:
 1 2 3
@@ -63,4 +55,5 @@ Enter the elements of the 2D array:
 Row-wise Sum:
 6 12 16
 
-*/
+Time Complexity - O(N * M)
+Space Complexity - O(1) */
