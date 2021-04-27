@@ -7,7 +7,8 @@
             
             1. We will create a min heap.
             2. We will traverse through all the elements of the array 
-               and insert them into the min heap.
+               and insert them into the min heap
+            3. We are using a min heap and inverting the numbers, i.e. inserting -1*number.
             3. We are maintaining the heap at the size of k always.
             4. Pop extra elements if the size becomes greater than k.
             5. When we reach the end of the array then we will 
@@ -44,7 +45,7 @@ int main()
     cout << "\nK largest array element in ascending order are : ";
     while (!minHeap.empty())
     {
-        cout << -minHeap.top() << ",";
+        cout << -minHeap.top() << ", ";
         minHeap.pop();
     }
     return 0;
@@ -52,7 +53,7 @@ int main()
 
 /*
            Time-Complexity: O(nlog(k))
-           where n => size of the array , k => K'th largest number
+           where n => size of the array , k => the number of largest elements to find
            
            Sample Input/Output
            =====================
@@ -68,7 +69,7 @@ int main()
            Enter the size of the array :
            Enter the elements of the array :
            Enter the value of K :
-           K largest array element in ascending order are : 7,8,9
+           K largest array element in ascending order are : 7, 8, 9,
            
            Sample Input 2 :
            
@@ -81,7 +82,7 @@ int main()
            Enter the size of the array :
            Enter the elements of the array :
            Enter the value of K :
-           K largest array element in ascending order are : 8,15,17,18
+           K largest array element in ascending order are : 8, 15, 17, 18,
            
            Sample Input 3 :
            
@@ -94,5 +95,5 @@ int main()
            Enter the size of the array :
            Enter the elements of the array :
            Enter the value of K :
-           K largest array element in ascending order are : 10,15,20,
+           K largest array element in ascending order are : 10, 15, 20,
 */
