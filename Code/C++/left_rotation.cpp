@@ -1,10 +1,13 @@
 /*
-left_rotation(arr, len) alters the int array of length len to shift every element of the array one position to it's left.
+ Rotates the elements of the array one position to it's left
 */
 
 #include <iostream>
 using namespace std;
 
+/*
+left_rotation(arr, len) alters the int array of length len to shift every element of the array one position to it's left.
+*/
 void left_rotation(int *arr, int len)
 {
   //checks if arr is not empty
@@ -52,6 +55,7 @@ int main(void)
 	Input  : -1 -5 -9 5 0
 	Output : -5 -9 5 0 -1
 
-	Time Complexity: O(n)  
-	Space Complexity: O(1)  
+	Time Complexity: O(n), where n is the length of the array  
+	Space Complexity: O(1) 
+
  */
