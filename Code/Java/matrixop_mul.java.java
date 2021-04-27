@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class MatrixOP {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter Size of Arraay");
+        System.out.println("Enter Size of Array");
         // Taking Size of 1st Matrix
         int l1 = scan.nextInt();
         int h1 = scan.nextInt();
@@ -94,6 +94,6 @@ public class MatrixOP {
         Output:  -2 24
                  -5 48
 
-        Time Complexity: O(n^3)
+        Time Complexity: O(n^3) where n is length of matrix
         Space Complexity: O(n^2)
  */
