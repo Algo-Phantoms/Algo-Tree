@@ -6,7 +6,7 @@
  * This code checks whehter the input number is trimorphic or not.
  */
 import java.util.*;
-public class trimorphic_number
+class trimorphic_number
 {
     void main()
     {
