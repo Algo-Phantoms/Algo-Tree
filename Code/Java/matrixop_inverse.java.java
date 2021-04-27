@@ -93,7 +93,7 @@ public class MatrixOP {
     }
 
     // Function to get adjoint of A[N][N] in adj[N][N].
-    public static void adjoint(int A[][],int [][]adj)
+    public static void adjoint(int A[][], int [][]adj)
     {
         if (A.length == 1)
         {
@@ -176,6 +176,6 @@ public class MatrixOP {
                  0.740741   -0.259259  -0.407407
                 -0.629630    0.370370   0.296296
 
-        Time Complexity: O(n^2)
+        Time Complexity: O(n^2) where n is the length of matrix
         Space Complexity: O(n^2)
  */
