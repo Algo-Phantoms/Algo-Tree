@@ -14,9 +14,9 @@ public class algojava {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         // After Demonitization in India Due to Launch of 200 and 2000 Notes in Market :)
-        int[] arr = {1,2,5,10,20,50,100,200,500,1000,2000};
+        int[] arr = {1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000};
         int k = scan.nextInt();
-        findMin(k,arr);
+        findMin(k, arr);
 
     }
     public static void findMin(int V,int[] notes)
@@ -51,6 +51,6 @@ public class algojava {
         Output: 50 20 2
                 Min No of Coins / Notes is 3
 
-        Time Complexity: O(n)
+        Time Complexity: O(n)  where n is No. of Different Denomination of Notes Available
         Space Complexity: O(1)
  */
