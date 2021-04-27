@@ -10,6 +10,7 @@
 - [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
 - [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
 - [Factorial without recursion](https://github.com/Subhangini/Algo-Tree/blob/subh/Code/C%2B%2B/Factorial_without_recursion.cpp)
+- [Palindrome Number](/Code/C++/palindrome_number.cpp)
 
 #### Prime numbers
 

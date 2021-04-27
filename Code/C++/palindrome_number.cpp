@@ -2,9 +2,10 @@
                     Given an integer x, return true if x is palindrome integer.
                     An integer is a palindrome when it reads the same backward as forward.
                     This code is implemented without using extra space.  
-                    In this we will be taking point , leading and trailing which will be pointing
+                    In this we will be taking two point , leading and trailing which will be pointing
                     in start and end of the number and then we will be comparing start and end , if 
-                    found equal then we will return true else return false.                     
+                    found equal then we will move the pointers and we will compare till every digit is
+                    checked . So if condition satidfied then we will  return true else return false.                     
 */
 
 #include <bits/stdc++.h>
