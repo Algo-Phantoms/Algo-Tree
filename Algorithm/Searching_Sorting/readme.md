@@ -77,10 +77,9 @@ Following are the types of searches which we will be discussing in this book.
 * Book Allocation ----> [Java](/Code/Java/Book_Allocation.java)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
+* Searching in sorted rotated array ----> [Java](/Code/Java/searching_in_sorted_rotated_array.java)
 * Find peak element using binary search ----> [Python](/Code/Python/peak_element.py)
 * Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
 * Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
 * DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
-
-
 
