@@ -13,6 +13,7 @@ public class MatrixOP {
         int l = scan.nextInt();
         int h = scan.nextInt();
         int[][] twoDarr1 = new int[l][h];
+        
         System.out.println("Enter All Values of 1st Matrix");
         // Taking Input of 1st Matrix
         for (int i = 0; i < l; i++) {
@@ -20,6 +21,7 @@ public class MatrixOP {
                 twoDarr1[i][j] = scan.nextInt();
             }
         }
+        
         System.out.println("Enter All Values of 2nd Matrix :");
         int[][] twoDarr2 = new int[l][h];
         // Taking Input of 2nd Matrix
@@ -28,6 +30,8 @@ public class MatrixOP {
                 twoDarr2[i][j] = scan.nextInt();
             }
         }
+        
+        
         // Adding Two Matrix
         for (int i = 0; i < l; i++) {
             for (int j = 0; j < h; j++) {
@@ -68,6 +72,6 @@ public class MatrixOP {
         Output:  5 8
                  7 8
 
-        Time Complexity: O(n^2)
+        Time Complexity: O(n^2) where n is the lenght of matrix
         Space Complexity: O(n^2)
  */
