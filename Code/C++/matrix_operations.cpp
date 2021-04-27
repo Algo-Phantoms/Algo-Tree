@@ -1,4 +1,10 @@
-/* C++ CODE TO SHOW DIFFERENT OPERATIONS ON 2D ARRAY LIKE SUBTRACTION, ADDITION, MULTIPLICATION AND FINDING THE INVERSE OF A MATRIX */
+/* C++ CODE TO SHOW DIFFERENT OPERATIONS ON 2D ARRAY:
+Implementation of operations on two different matrices, say A and B, like -
+1. Multiplication(A × B)
+2. Subtraction(A - B)
+3. Addition(A + B)
+4. Inverse(A^(-1) and B^(-1)), by checing the order of matrix as well.
+*/
 
 #include<iostream>
 using namespace std;
@@ -175,10 +181,32 @@ int main()
         }
 	return 0;
 }
+/* OUTPUT 1:
+Enter the number of rows and columns: 2 2
 
-/*
+Enter the elements of matrix A:
+3 4 5 6
 
-OUTPUT:
+Enter the elements of matrix B:
+1 5 -4 2
+
+ADDITION OF TWO MATRICES:
+4       9
+1       8
+
+SUBTRACTION OF TWO MATRICES:
+2       -1
+9       4
+
+MULTIPLICATION OF TWO MATRICES:
+-13     23
+-19     37
+
+INVERSE OF MATRIX A:
+-3      2
+2.5     -1.5
+
+OUTPUT 2:
 Enter the number of rows and columns: 3 3
 Enter the elements of matrix A:
 1 2 4 2 3 5 2 1 0
@@ -204,8 +232,5 @@ INVERSE OF MATRIX A:
 5       -4      2
 -10     8       -3
 4       -3      1
-
 Time Complexity: O(n^2)
-Space Complexity: O(n^2)
-
-*/
+Space Complexity: O(n^2) */
