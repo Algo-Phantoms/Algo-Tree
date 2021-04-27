@@ -34,8 +34,6 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
-## Questions :
-- Checking for Anagram ---->[Python](/Code/Python/Anagram.py)
 ## Questions related to Number Theory
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
@@ -43,5 +41,6 @@
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
+- Checking for Anagram ---->[Python](/Code/Python/Anagram.py)
 
 
