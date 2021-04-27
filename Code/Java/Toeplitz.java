@@ -1,4 +1,5 @@
 /*
+
 A matrix is Toeplitz if every diagonal from top-left to bottom-right has the same elements.
 or
 A Toeplitz (or diagonal-constant) matrix is a matrix in which each descending diagonal
@@ -7,9 +8,14 @@ So, Starting from [0][0], Here We will check Elements one by one but next elemen
 in the next row and next column. if its not found as previous element then its not following Torplitz
 Algorithm so, Return False else if It runs upto end with no retuen means Its Following Toeplitz algo,
 So Return True.
- */
+
+*/
+
+
+
 package tmatrix;
 import java.util.Scanner;
+
 
 public class CheckToePlitxMatrix {
     public static void main(String[] args){
@@ -19,8 +25,8 @@ public class CheckToePlitxMatrix {
         int b = scan.nextInt();
         int[][] matrix = new int[l][b];
         //Taking Matrix Values
-        for (int i = 0;i<l;i++){
-            for (int j = 0;j<b;j++){
+        for (int i = 0; i<l; i++){
+            for (int j = 0; j<b; j++){
                 matrix[i][j] = scan.nextInt();
             }
         }
@@ -31,12 +37,12 @@ public class CheckToePlitxMatrix {
         int clen = matrix[0].length;
 
         //horizontal checking
-        for (int i = 0;i<clen;i++){
+        for (int i = 0; i<clen; i++){
             //temp is count so that j will move till till max row length
             int temp = 0;
             int val = matrix[temp][i];
             temp++;
-            for (int j = i+1;j<clen && temp<rlen;j++){
+            for (int j = i+1; j<clen && temp<rlen; j++){
                 if (val!=matrix[temp][j]){
                     return false;
                 }
@@ -45,12 +51,12 @@ public class CheckToePlitxMatrix {
         }
 
         //vertical checking
-        for (int i = 1;i<rlen;i++){
+        for (int i = 1; i<rlen; i++){
             //temp is count so that j will move till till max column length
             int temp = 0;
             int val = matrix[i][temp];
             temp++;
-            for (int j = i+1;j<rlen && temp<clen;j++){
+            for (int j = i+1; j<rlen && temp<clen; j++){
                 if (val!=matrix[j][temp]){
                     return false;
                 }
@@ -75,6 +81,6 @@ public class CheckToePlitxMatrix {
                2 2
         Output: false
 
-        Time Complexity: O(n^2)
+        Time Complexity: O(n^2) where n is No. of Diagonal Elements in Matrix
         Space Complexity: O(1)
  */
