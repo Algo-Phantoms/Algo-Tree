@@ -3,7 +3,7 @@ Implementation of operations on two different matrices, say A and B, like -
 1. Multiplication(A × B)
 2. Subtraction(A - B)
 3. Addition(A + B)
-4. Inverse(A^(-1) and B^(-1)), by checing the order of matrix as well.
+4. Inverse(A^(-1) and B^(-1)), by checking the order of matrix as well.
 */
 
 #include<iostream>
