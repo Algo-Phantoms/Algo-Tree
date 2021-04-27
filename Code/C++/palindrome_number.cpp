@@ -5,7 +5,7 @@
                     In this we will be taking two point , leading and trailing which will be pointing
                     in start and end of the number and then we will be comparing start and end , if 
                     found equal then we will move the pointers and we will compare till every digit is
-                    checked . So if condition satidfied then we will  return true else return false.                     
+                    checked . So if condition satisfied then we will  return true else return false.                     
 */
 
 #include <bits/stdc++.h>
