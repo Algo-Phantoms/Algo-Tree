@@ -1,7 +1,10 @@
 /*       Palindrome Number : 
                     Given an integer x, return true if x is palindrome integer.
                     An integer is a palindrome when it reads the same backward as forward.
-                    This code is implemented without using extra space.                       
+                    This code is implemented without using extra space.  
+                    In this we will be taking point , leading and trailing which will be pointing
+                    in start and end of the number and then we will be comparing start and end , if 
+                    found equal then we will return true else return false.                     
 */
 
 #include <bits/stdc++.h>
@@ -48,7 +51,7 @@ Space complexity : O(1)
 */
 
 /*
-Test Case's : 
+Test Cases : 
     Test case 1 :
         Input : 1001
         Output : True
