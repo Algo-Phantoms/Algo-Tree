@@ -105,7 +105,6 @@ public class manacherAlgo{
         Input: abacdfgdcabba
         Output: abba
 
-        Time Complexity: O(n)
+        Time Complexity: O(n)  where, n is number of characters in input String
         Space Complexity: O(1)
-
  */
