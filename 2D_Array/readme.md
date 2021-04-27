@@ -11,6 +11,7 @@ Due to the fact that the elements of 2D arrays can be random accessed. Similar t
 
 * Checking Teoplitz Matrix Algorithm ----> [Java](/Code/Java/Toeplitz.java)
 * Clockwise Rotation ----> [C++](/Code/C++/2d_matrix_rotation_90degree_clockwise.cpp)
+* Multiplication of two Matrices ----> [Java](/Code/Java/matrixop_mul.java)
 * Spiral Print ----> [C++](/Code/C++/spiral_print.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
 * Transpose of a Matrix ----> [Python](/Code/Python/Transpose_of_matrix.py)
