@@ -25,6 +25,7 @@ To create an array, you need to known the length (or size) of the array in advan
 ## Questions :
  
  * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
+ * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp)
  * Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
  * Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
