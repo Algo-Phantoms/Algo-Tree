@@ -7,5 +7,5 @@ Greedy Algorithms are one of the most intuitive algorithms. Whenever we see a pr
 • You hope that by choosing a **local optimum** ateach step, you will end up at a **global optimum**.
 
 ## Questions :
-
-- Jump Game ----> [Java](/Code/Java/Jump_Game.java)
+ * Find Minimum number of Coins ----> [Java](/Code/Java/greedyalgo.java)
+ * Jump Game ----> [Java](/Code/Java/Jump_Game.java)
