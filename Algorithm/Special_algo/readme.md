@@ -1,4 +1,6 @@
 # Extra Questions :
 
+* GCD ----------------> [Python](/Code/Python/GCD.py)
 * Kahns_algorithm ----> [C++](/Code/C++/Kahns_algorithm.cpp)
-  GCD ----------------> [Python](/Code/Python/GCD.py)
+* Trapping_Rainwater ----> [Python](/Code/Python/trapping_rainwater.py)
+* Multiplying large integer number algorithm ----> [C++](/Code/C++/Multiplying_large_integer_number.cpp)
