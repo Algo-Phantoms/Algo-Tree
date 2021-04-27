@@ -58,6 +58,6 @@ that, this property should be satisfied at every node in the tree.
 * Root to Leaf Path with Given Sum ----> [C++](/Code/C++/Root_to_leaf_path_with_given_sum.cpp)
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
 * Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
-* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp)
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
 
