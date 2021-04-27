@@ -44,7 +44,10 @@ int main()
 }
 /*
 Time Complexity: O(n^2)
+Space Complexity: O(W)
+
 TEST CASE 1:
+
 INPUT:
 5
 10 200
@@ -53,14 +56,18 @@ INPUT:
 2 10
 1 6
 20
+
 OUTPUT:
 552
+
 TEST CASE 2:
+
 INPUT:
 2
 10 100
 2 40
 15
+
 OUTPUT:
 280
 */

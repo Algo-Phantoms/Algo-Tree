@@ -47,3 +47,5 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Word Wrap Problem ----> [C++](/Code/C++/word_wrap.cpp)
 
+- Unbounded Knapsack ----> [C++](/Code/C++/unbounded_knapsack.cpp)
+
