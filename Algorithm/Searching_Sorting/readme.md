@@ -50,7 +50,7 @@ is one of the techniques for making the elements ordered.
 
 Following are the types of searches which we will be discussing in this book.
 
-* Unordered Linear Search
+* Unordered Linear Search ----> [C++](/Code/C++/Linear_search.cpp) 
 * Sorted/Ordered Linear Search
 * Binary Search
 * Interpolation search
@@ -60,10 +60,26 @@ Following are the types of searches which we will be discussing in this book.
 
 ## Questions :
 
+* Painter's Partition -->[C++](/Code/Python/Painter's_Partition.py)
 * Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
+* Bucket Sort ----> [C++](/Code/C++/bucket_sort.cpp)
+* Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
+* Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
 * Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
+* Binary Search ----> [Python](/Code/Python/Binary_Search.py)
+* Linear Search ----> [Python](/Code/Python/linearsearch.py)
+* Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
+* Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
+* Book Allocation ----> [Java](/Code/Java/Book_Allocation.java)
+* Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
+* Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
+* Searching in sorted rotated array ----> [Java](/Code/Java/searching_in_sorted_rotated_array.java)
+* Find peak element using binary search ----> [Python](/Code/Python/peak_element.py)
+* Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
+* Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
+* DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
 
