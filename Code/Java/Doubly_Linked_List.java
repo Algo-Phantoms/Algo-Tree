@@ -10,7 +10,6 @@ Insert at end - To insert an element at the end of the doubly linked list.
 Insert at specific position - To insert an element at the specified position in the doubly linked list.
 Delete - To delete an element from the doubly linked list.)
 */ 
-
 import java.util.*;
 import java.io.*;
 class Node
