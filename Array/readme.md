@@ -33,3 +33,4 @@ To create an array, you need to known the length (or size) of the array in advan
 - Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
 - Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
 - Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
+- Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
