@@ -41,9 +41,6 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 
-- Shortest Common Supersequence ---->[C++](/Code/C++/print_shortest_supersequence.cpp)
-
 - Minimum Number of Deletions To Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
 
-- Grundy Number of a Game ----> [C++](/Code/C++/grundy_number.cpp)
-
+- Climbing Stairs ----> [C++](/Code/C++/Climbing_Stairs.cpp)
