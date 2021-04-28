@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
