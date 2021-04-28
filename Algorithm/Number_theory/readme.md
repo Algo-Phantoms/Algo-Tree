@@ -47,5 +47,5 @@
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
