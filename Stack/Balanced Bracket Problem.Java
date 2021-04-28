@@ -1,14 +1,10 @@
 /* Balanced Bracket Problem
 Explanation :- To check if the expression is balanced i.e. closing brackets and opening brackets match up well.
 
-
 It will be an iterative solution in which loop will iterate over each character of expression, if opening brackets encountered then simply push in stack, if closing brackets 
 encountered then if stack is empty return false or if top element of stack is not brackets significant other return false. After Iterating whole expression if stack not empty 
 means some opening brackets doesn't have closing hence not balanced. At end if stack is empty means expression is balanced.
-
-
 */
-
 import java.io.*;
 import java.util.*;
 
@@ -60,23 +56,15 @@ public class Main {
                 }
                 st.pop();
             }
-
-
-
         }
-
         if(st.size()!=0)    // at the end if stack is not empty this means some opening brackets doesn't have closing pair so not balanced
         {
              System.out.println(false);
              return;
         }
         System.out.println(true);  // if all cases satisfies means brackets are balanced
-
-
-
-    }
-
-}
+       }
+ }
 
 /* for e.g  test case 1 = "[]" 
 
