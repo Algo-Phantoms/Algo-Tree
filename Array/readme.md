@@ -24,14 +24,15 @@ To create an array, you need to known the length (or size) of the array in advan
 
 
 ## Questions :
+
+- Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
 - Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
+- Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | | [Python](/Code/Python/inverseArray.py)
+- Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
 - Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
-- Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp)
-- Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java) 
+- Kth Minimum Element ---->[Java](/Code/Java/kthmin.java)
+- K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) 
 - Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp)
 - Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp)
-- Kth Minimum Element ---->[Java](/Code/Java/kthmin.java)
-- Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | | [Python](/Code/Python/inverseArray.py)
-- Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
-- Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
-- Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
+- Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java) 
+- Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp) 
