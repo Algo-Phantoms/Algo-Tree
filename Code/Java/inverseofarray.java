@@ -13,6 +13,7 @@ public class peakvalueinarray {
         System.out.println("Enter Size of Arraay");
         int n = scan.nextInt();
         int[] arr = new int[n];
+        // Taking Array Elements
         for (int i = 0; i < n; i++) {
             arr[i] = scan.nextInt();
         }
