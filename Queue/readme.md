@@ -37,4 +37,6 @@ called **overflow**. Generally, we treat them as exceptions. As an example, cons
 * Component of other data structures
 
 ## Questions :
+* Implementation of Queue ----> [Python](/Code/Python/queue.py)
 * Queue using Stacks ----> [C++](/Code/C++/queue_using_stacks.cpp)
+* Circular Queue Implementation ----> [Java](/Code/Java/CircularQueue.java) | [Python](/Code/Python/circular_queue.py)
