@@ -22,6 +22,8 @@ The syntax is:
 
 To create an array, you need to known the length (or size) of the array in advance, and allocate accordingly. Once an array is created, its length is fixed and cannot be changed. At times, it is hard to ascertain the length of an array. Nonetheless, you need to estimate the length and allocate an upper bound. This is probably the major drawback of using an array.
 
+##Questions
+
 - Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
 - Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
 - Inverse of Array ----> [Java](/Code/Java/inverseofarray.java) | [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
