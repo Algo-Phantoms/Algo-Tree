@@ -18,12 +18,14 @@ public class peakvalueinarray {
         }
         inversearrray(arr);
     }
+    
     public static void inversearrray(int[] arr){
         int[] ans = new int[arr.length];
-        for (int i = 0;i<arr.length;i++){
+        for (int i = 0; i<arr.length; i++){
             ans[arr[i]] = i;
         }
-        for (int i = 0;i<ans.length;i++){
+        
+        for (int i = 0; i<ans.length; i++){
             System.out.print(ans[i]+" ");
         }
     }
@@ -38,7 +40,7 @@ public class peakvalueinarray {
                 2 0 1
         Output: 1 2 0
 
-        Time Complexity: O(n)
+        Time Complexity: O(n) where n is Length of Array
         Space Complexity: O(1)
 
 
