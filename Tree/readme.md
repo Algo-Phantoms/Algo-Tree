@@ -61,5 +61,5 @@ that, this property should be satisfied at every node in the tree.
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) | [Java](Searching in BST.Java)
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
 * Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp)
-
+ 
 
