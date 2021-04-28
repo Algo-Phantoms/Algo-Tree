@@ -1,3 +1,7 @@
+/*Given a binary tree in which each node element contains a number. Find the maximum possible sum from one leaf node to another. 
+The maximum sum path may or may not go through root.
+ For example, in the following binary tree, the maximum sum is 27(3 + 6 + 9 + 0 – 1 + 10). Expected time complexity is O(n)*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
