@@ -6,10 +6,13 @@
 - [Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html)
 - [Euclidean algorithm for computing the greatest common divisor](https://cp-algorithms.com/algebra/euclid-algorithm.html)
 - [Extended Euclidean Algorithm](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
-- [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
-- [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
-- [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
 - [Factorial without recursion](https://github.com/Subhangini/Algo-Tree/blob/subh/Code/C%2B%2B/Factorial_without_recursion.cpp)
+- [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
+- [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
+- [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
+- [Palindrome Number](/Code/C++/palindrome_number.cpp)
+
+
 
 #### Prime numbers
 
@@ -34,14 +37,15 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
-<hr>
-
 
 ## Questions related to Number Theory
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+
+- All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java)
-- Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
+- Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
+- Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
-
-
+- Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
