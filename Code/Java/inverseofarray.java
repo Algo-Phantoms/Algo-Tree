@@ -1,7 +1,7 @@
 /*
-INVERSE OF AN ARRAY
+---------------- INVERSE OF AN ARRAY ----------------------
 If the array elements are swapped with their corresponding indices,
-the array finally results is inverse of an array.
+then the array finally results is called as inverse of an array.
 */
 
 package peakval;
