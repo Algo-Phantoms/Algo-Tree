@@ -1,10 +1,8 @@
-# Ques: Create a general (N-ary) tree
-# Language: Python
-
-# Firstly, class treenode is defined with several inner functions including "__init__" for creating tree node with chils as list and #intitially storing 'None' as address of parent, "add_child" add data in child list, there is a helping function named "get_level" as #well to get the level of a child node while printing its value and finally "print_tree" function prints tree with according to its #level .
-
-# And function "build_tree" creats the whole tree using class "TreeNode"
-
+""" Ques: Create a general (N-ary) tree
+Language: Python
+Firstly, class treenode is defined with several inner functions including "__init__" for creating tree node with chils as list and #intitially storing 'None' as address of parent, "add_child" add data in child list, there is a helping function named "get_level" as #well to get the level of a child node while printing its value and finally "print_tree" function prints tree with according to its #level .
+And function "build_tree" creats the whole tree using class "TreeNode"
+"""
 
 class TreeNode:
     def __init__(self, data):
@@ -25,7 +23,6 @@ class TreeNode:
 
         return lev
 
-
 def print_tree(root):
     s = root.data + " child nodes=> "
     for i in root.child:
@@ -34,7 +31,6 @@ def print_tree(root):
     print(s)
     for i in root.child:
         print_tree(i)
-
 
 def build_tree():
     print('Enter data of root node:',end=" ")
