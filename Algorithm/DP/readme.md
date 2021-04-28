@@ -47,3 +47,4 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Word Wrap Problem ----> [C++](/Code/C++/word_wrap.cpp)
 
+-Grundy Number of a Game ----> [C++](/Code/C++/grundy_number.cpp)
