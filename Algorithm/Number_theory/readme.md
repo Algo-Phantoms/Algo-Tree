@@ -40,7 +40,7 @@
 
 ## Questions related to Number Theory
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
 - All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
