@@ -49,3 +49,4 @@
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
+- Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
