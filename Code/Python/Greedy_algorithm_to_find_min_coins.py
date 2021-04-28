@@ -1,3 +1,7 @@
+#  Find Minimum number of Coins in C++
+
+
+
 def findMin(V):
 
     deno = [1, 2, 5, 10, 20, 50,
@@ -30,4 +34,10 @@ if __name__ == '__main__':
     findMin(n)
 
 # n = 153
-# 3 (100,50,2,1)
+# 4 (100,50,2,1)
+
+
+# n = 3
+# 2 {2,1}
+#Time Complexity: O(n) 
+ #Space Complexity: O(1)
