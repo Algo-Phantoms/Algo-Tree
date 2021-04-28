@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Program to check a string a pangram or not ----> [Python](Code/Python/check pangram.py) 
