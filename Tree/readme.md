@@ -48,6 +48,8 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* N-ary Tree ----> [Python](/Code/Python/n_ary_tree.py)
 * BFS traversal on Binary Tree ----> [C++](/Code/C++/binary_tree_BFS_traversal.cpp)
 * Check if a Binary Tree is a valid Binary Search Tree ----> [Java](/Code/Java/check_valid_BST.java)
 * Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/binary_tree_from_preorder_and_inorder.cpp) 
