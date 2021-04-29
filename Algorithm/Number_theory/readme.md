@@ -41,7 +41,7 @@
 ## Questions related to Number Theory
 
 - All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
-- Check Prime Number ----> [Java](/Code/Java/check_prime.java)
+- Check Prime Number ----> [Java](/Code/Java/check_prime.java) | [Python](/Code/Python/TrimorphicNumber.py)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
@@ -50,3 +50,4 @@
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
 - Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
+
