@@ -206,11 +206,21 @@ int32_t main()
 /*
 Time Complexity : O(N·log(N))
 Space Complexity : O( 1 )
- Standard Input And Output
+#1 Standard Input And Output
 4 2
 1 2
 2 3
 2 4 
 Output:
 4 2 
+
+#2
+input: 
+4  2 
+2  3
+3  4
+3  5
+output:
+5 2
+
   */
