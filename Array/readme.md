@@ -32,4 +32,5 @@ To create an array, you need to known the length (or size) of the array in advan
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp)
  * Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp)
  * Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
+ * Counting rotations in a sorted array ---> [Python](/Code/Python/Count_of_rotations.py)
 
