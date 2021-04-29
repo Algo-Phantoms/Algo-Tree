@@ -12,23 +12,23 @@ If the element is 2, we will swap it with the element at a[high] and decrement h
 
 """
 
-a=list(map(int, input("Enter the array elements seperated by space- ").split()))
+a = list(map(int, input("Enter the array elements seperated by space- ").split()))
 
-low=i=0    #i will be used to traverse the array
-high=len(a)-1
+low = i = 0    #i will be used to traverse the array
+high = len(a)-1
 
-while i<=high:
+while i <= high:
     if a[i] is 0:
-        a[i],a[low]=a[low],a[i]
-        low+=1
-        i+=1
+        a[i], a[low] = a[low], a[i]
+        low += 1
+        i += 1
     elif a[i] is 2:
-        a[i],a[high]=a[high],a[i]
-        high-=1
+        a[i], a[high] = a[high], a[i]
+        high -= 1
     else:
-        i+=1
+        i += 1
 
-print("The sorted array is- ", end=" ")
+print("The sorted array is- ", end = " ")
 print(a)
 
 """
@@ -42,7 +42,7 @@ Example 2-
 Enter the array elements seperated by space- 2 2 1 0 1 2 0 0 0
 The sorted array is-  [0, 0, 0, 0, 1, 1, 2, 2, 2]
 
-Time complexity = O(n)
+Time complexity = O(n) where n is the size of the array
 Space complexity = O(1)
 
 """
