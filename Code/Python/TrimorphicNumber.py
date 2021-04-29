@@ -28,7 +28,7 @@ else:
     
     1)Input: 
             Enter the Number
-            20
+            24
     2)Output:
             The given number is Trimorphic
     
