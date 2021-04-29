@@ -10,9 +10,6 @@ Algorithm so, Return False else if It runs upto end with no retuen means Its Fol
 So Return True.
 
 */
-
-
-
 package tmatrix;
 import java.util.Scanner;
 
@@ -25,8 +22,8 @@ public class CheckToePlitxMatrix {
         int b = scan.nextInt();
         int[][] matrix = new int[l][b];
         //Taking Matrix Values
-        for (int i = 0; i<l; i++){
-            for (int j = 0; j<b; j++){
+        for (int i = 0; i < l; i++){
+            for (int j = 0; j < b; j++){
                 matrix[i][j] = scan.nextInt();
             }
         }
@@ -37,13 +34,13 @@ public class CheckToePlitxMatrix {
         int clen = matrix[0].length;
 
         //horizontal checking
-        for (int i = 0; i<clen; i++){
+        for (int i = 0; i < clen; i++){
             //temp is count so that j will move till till max row length
             int temp = 0;
             int val = matrix[temp][i];
             temp++;
-            for (int j = i+1; j<clen && temp<rlen; j++){
-                if (val!=matrix[temp][j]){
+            for (int j = i+1; j < clen && temp < rlen; j++){
+                if (val != matrix[temp][j]){
                     return false;
                 }
                 temp++;
@@ -51,13 +48,13 @@ public class CheckToePlitxMatrix {
         }
 
         //vertical checking
-        for (int i = 1; i<rlen; i++){
+        for (int i = 1; i < rlen; i++){
             //temp is count so that j will move till till max column length
             int temp = 0;
             int val = matrix[i][temp];
             temp++;
-            for (int j = i+1; j<rlen && temp<clen; j++){
-                if (val!=matrix[j][temp]){
+            for (int j = i+1; j < rlen && temp < clen; j++){
+                if (val != matrix[j][temp]){
                     return false;
                 }
                 temp++;
