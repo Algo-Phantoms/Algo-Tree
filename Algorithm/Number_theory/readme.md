@@ -50,4 +50,5 @@
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
 - Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
+- Sliding Window Maximum----> [Python](/Code/Python/SlidingWindowMaximum.py)
 
