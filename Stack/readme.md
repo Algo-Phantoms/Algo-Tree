@@ -23,9 +23,9 @@ element in a full stack is called **overflow**.
 
 ## Questions :
 
--   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
+-   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp) | [Java](/Code/Java/Balanced_Bracket_Problem.java)
 -   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
 -   Largest Rectange Area (Histogram) ----> [Java](/Code/Java/largestarea.java)
 -   Reverse individual words of a string ----> [C++](/Code/C++/reverse_words_of_string.cpp)
 -   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
--   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp) | [Python](/Code/Python/StockSpan.py)
+-   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp) | [Python](/Code/Python/StockSpan.py) | [Java](/Code/Java/Stock_Span_Problem.Java)
