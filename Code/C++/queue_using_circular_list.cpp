@@ -171,7 +171,9 @@ int main()
     Peek -       O(1)
     isEmpty -    O(1)
 
-
+    Space Complexity: O(n), as we are using linked list of n-nodes.
+    
+    
     Sample Input/Output:
 
     1. INSERT
