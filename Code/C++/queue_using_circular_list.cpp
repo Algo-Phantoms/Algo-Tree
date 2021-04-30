@@ -1,3 +1,8 @@
+/*
+Queue is a data structure in which insertion is done at one end and deletion is done at the other end as 
+it follows the principle of First In First Out(FIFO). We are implementing queue using circular singly-linked list,
+so we will craete class and then perform various function like: enqueue, dequeue, peek, display, isEmpty, isFull on it.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
