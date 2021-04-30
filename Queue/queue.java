@@ -28,7 +28,7 @@ class Queue {
     {
         return (queue.size == 0);
     }
-
+   // Pushing element into the Queue
     void enqueue(int item)
     {
         if (isFull(this))
@@ -39,7 +39,8 @@ class Queue {
         System.out.println(item
             + " enqueued to queue");
     }
-
+    
+    // Popping element from the Queue
     int dequeue()
     {
         if (isEmpty(this))
@@ -50,7 +51,8 @@ class Queue {
         this.size = this.size - 1;
         return item;
     }
-
+    
+    // Function returns front/top element from the Queue
     int front()
     {
         if (isEmpty(this))
@@ -58,7 +60,8 @@ class Queue {
 
         return this.array[this.front];
     }
-
+    
+    // Function returns rear element from the Queue
     int rear()
     {
         if (isEmpty(this))
@@ -95,7 +98,7 @@ class Queue {
 }
 
 /*
- * Test Case :
+ * Test Case 1 :
  * Input : No. of elements to be added in Queue :
  * 5 
  * 1 2 3 4 5
@@ -115,6 +118,23 @@ class Queue {
 
    Front item is 2
    Rear item is 5
+   
+   Test Case 2 :
+ * Input : No. of elements to be added in Queue :
+ * 3 
+ * 1 2 3 
+ * Output :
+ * 1 enqueued to queue
+   2
+   2 enqueued to queue
+   3
+   3 enqueued to queue
+  
+   Front item is 1
+   1 dequeued from queue
+
+   Front item is 2
+   Rear item is 3
    
  * Time  Complexity is
  * Insertion(Enqueue) O(1) 
