@@ -26,7 +26,7 @@ void insertQueue(int item)
 
     if(temp == NULL)
     {
-        cout<<"Memory problem."<<endl;
+        cout<<"\nMemory problem."<<endl;
         return;
     }
 
@@ -51,7 +51,7 @@ int deleteElement()
 
     if(isEmpty())
     {
-        cout<<"Queue underflow"<<endl;
+        cout<<"\nQueue underflow"<<endl;
         return -1;
     }
 
@@ -77,7 +77,7 @@ int peek()
 {
     if(isEmpty())
     {
-        cout<<"Queue underflow"<<endl;
+        cout<<"\nQueue underflow."<<endl;
         return -1;
     }
 
@@ -90,11 +90,11 @@ void display()
     Node *temp;
     if(isEmpty())
     {
-        cout<<"Queue is empty"<<endl;
+        cout<<"\nQueue is empty"<<endl;
         return;
     }
 
-    cout<<"Queue formed : ";
+    cout<<"\nQueue formed : ";
 
     temp = rear->link;
     do
@@ -103,7 +103,7 @@ void display()
         temp = temp->link;
 
     }while(temp != rear->link);
-
+    cout<<endl;
 }
 
 
@@ -124,7 +124,7 @@ int main()
         switch(choice)
         {
         case 1:
-            cout<<"Enter the element for insertion : ";
+            cout<<"\nEnter the element for insertion : ";
             cin>>item;
             insertQueue(item);
 
@@ -134,15 +134,15 @@ int main()
             if(deleteElement() == -1)
                 cout<<endl;
             else
-                cout<<"Deleted element : "<<deleteElement();
+                cout<<"\nDeleted element : "<<deleteElement()<<endl;
 
             break;
 
         case 3:
             if(peek() == -1)
-                cout<<"Not found"<<endl;
+                cout<<"\nNot found"<<endl;
             else
-                cout<<"Item at the front of queue is : "<<peek();
+                cout<<"\nItem at the front of queue is : "<<peek()<<endl;
 
             break;
 
@@ -160,12 +160,12 @@ int main()
 }
 
 /*
-
     Time Complexity:
     Insertion -  O(1)
     Deletion -   O(n)
     Peek -       O(1)
     isEmpty -    O(1)
+
 
     Sample Input/Output:
 
@@ -175,74 +175,50 @@ int main()
     4. DISPLAY
     5. EXIT
     Enter your choice : 1
+
     Enter the element for insertion : 10
+
     1. INSERT
     2. DELETE
     3. PEEK
     4. DISPLAY
     5. EXIT
     Enter your choice : 1
+
     Enter the element for insertion : 20
+
     1. INSERT
     2. DELETE
     3. PEEK
     4. DISPLAY
     5. EXIT
     Enter your choice : 1
+
     Enter the element for insertion : 30
+
     1. INSERT
     2. DELETE
     3. PEEK
     4. DISPLAY
     5. EXIT
     Enter your choice : 3
+
     Item at the front of queue is : 10
+
     1. INSERT
     2. DELETE
     3. PEEK
     4. DISPLAY
     5. EXIT
     Enter your choice : 4
+
     Queue formed : 10  20  30
+
     1. INSERT
     2. DELETE
     3. PEEK
     4. DISPLAY
     5. EXIT
     Enter your choice : 5
-    (2.) Output:
-    1. INSERT
-    2. DELETE
-    3. PEEK
-    4. DISPLAY
-    5. EXIT
-    Enter your choice : 1
-    Enter the element for insertion : 50
-    1. INSERT
-    2. DELETE
-    3. PEEK
-    4. DISPLAY
-    5. EXIT
-    Enter your choice : 1
-    Enter the element for insertion : 78
-    1. INSERT
-    2. DELETE
-    3. PEEK
-    4. DISPLAY
-    5. EXIT
-    Enter your choice : 3
-    Item at the front of queue is : 50
-    1. INSERT
-    2. DELETE
-    3. PEEK
-    4. DISPLAY
-    5. EXIT
-    Enter your choice : 4
-    Queue formed : 50  78
-    1. INSERT
-    2. DELETE
-    3. PEEK
-    4. DISPLAY
-    5. EXIT
-    Enter your choice : 5
+
 */
