@@ -11,13 +11,13 @@ import java.util.*;
 public class Main{
   
   public static void main(String[] args) throws Exception {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    int n = Integer.parseInt(br.readLine());
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
     int[] a = new int[n];
     for(int i = 0; i < n; i++){
-       a[i] = Integer.parseInt(br.readLine());
+       a[i] = scn.nextInt();
     }
-    int k = Integer.parseInt(br.readLine());
+    int k = scn.nextInt();
     int [] r =right(a);                   // calling maximum element on right function it will return the index of maximum elements on right
     int j=0;                              // let first element be maximum element
     for(int i=0;i<a.length-k+1;++i)       // sliding the window
@@ -69,47 +69,14 @@ public static int[] right(int[] arr)     // function to get next maximum element
 /*
 Test Case 1:
 input: 17
-       2
-       9
-       3
-       8
-       1
-       7
-       12
-       6
-       14
-       4
-       32
-       0
-       7
-       19
-       8
-       12
-       6
+       2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6 
        4
 output: 9 9 8 12 12 14 14 32 32 32 32 19 19 19             
 */
 /*
 Test Case 2: 
 input: 18
-       7
-       9
-       3
-       8
-       19
-       7
-       17
-       6
-       14
-       4
-       32
-       0
-       6
-       18
-       8
-       12
-       3
-       0
+       7 9 3 8 19 7 17 6 14 4 32 0 6 18 8 12 3 0 
        5
 output: 19 19 19 19 19 17 32 32 32 32 32 18 18 18              
 */
