@@ -21,7 +21,7 @@ class Stack {
     {
         top=-1;
     }
-
+    // Pushing element on the top of the Stack 
     boolean push(int x)
     {
         if(top>=(MAX-1)){
@@ -34,7 +34,7 @@ class Stack {
             return true;
         }
     }
-
+    // Popping element from the top of the Stack
     int pop()
     {
         if(top<0){
@@ -46,7 +46,7 @@ class Stack {
             return x;
         }
     }
-
+    // Displaying element on the top of the Stack
     int peek()
     {
         if(top<0){
@@ -79,7 +79,7 @@ class Stack {
 
 /*
  *   Test Case 1:
- *   No. of elements to be added in Queue :
+ *   No. of elements to be added in Stack :
    4
    4
    4 pushed into stack 
@@ -93,9 +93,35 @@ class Stack {
    1 Popped from stack
    Top Element after Pop operation :2
  *    
+ *   Test Case 2:
+*    No. of elements to be added in Stack :
+   5
+   5 
+   5 pushed into stack
+   4
+   4 pushed into stack 
+   3
+   3 pushed into stack
+   2
+   2 pushed into stack
+   1
+   1 pushed into stack
+   Top Element :1
+   1 Popped from stack
+   Top Element after Pop operation :2
+   Top Element :2
+   2 Popped from stack
+   Top Element after Pop operation :3
+   Top Element :3
+   3 Popped from stack
+   Top Element after Pop operation :4
+ * 
+ * 
  * Time Complexity is
  * Insertion(Push) O(1) 
  * Deletion(Pop)  O(1) 
  * Space Complexity is O(n) , n is the size of the Stack.
 
  */
+
+ 
