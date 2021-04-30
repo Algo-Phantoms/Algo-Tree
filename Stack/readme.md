@@ -22,7 +22,7 @@ element in a full stack is called **overflow**.
 - **IsFullStack():** Indicates whether the stack is full or not.
 
 ## Questions :
-
+-   Stack Implementation ----> [Java](/Code/Java/stack.java)
 -   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
 -   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
 -   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp) | [Java](/Code/Java/Balanced_Bracket_Problem.java)
