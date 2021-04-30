@@ -60,6 +60,7 @@ Following are the types of searches which we will be discussing in this book.
 
 ## Questions :
 
+* Painter's Partition Problem  -----> [C++](Code/C++/Implement_Painter's_Partition.cpp)
 * Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
