@@ -151,4 +151,5 @@ int main()
 // Output 3
 
 // Time Complexity: O(m+n) 
+// where m and n is the node of two linked list
 // Auxiliary Space: O(1)
