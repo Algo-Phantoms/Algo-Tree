@@ -26,3 +26,5 @@ element in a full stack is called **overflow**.
 - Stack Class ----> [C++](/Code/C++/stack_class.cpp)
 
 - Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp)
+
+- Prefix to postfix ----> [C++](/Code/C++/Prefix_to_postfix.cpp)
