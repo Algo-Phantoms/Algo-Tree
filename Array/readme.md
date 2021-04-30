@@ -33,6 +33,6 @@ To create an array, you need to known the length (or size) of the array in advan
 - Kth Max Element in Array ----> [Java](/Code/Java/kthmax.java)
 - K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) 
 - Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp)
-- Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp)
+- Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp) | [Java](/Code/Java/peakvalueinarray.java)
 - Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
 - Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
