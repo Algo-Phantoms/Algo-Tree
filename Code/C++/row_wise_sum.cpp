@@ -4,14 +4,14 @@ For a given 2-D integer type array of size (N x M), find and print the sum of ea
 #include <iostream>
 using namespace std;
 
-void row_wise_sum(int arr[][50],int r,int c)
+void row_wise_sum(int *arr,int r,int c)
 {
     for (int i = 0; i < r ; i++)
     {
         int sum = 0;
         for (int j = 0; j < c ; j++)
         {
-            sum += arr[i][j];
+            sum += *((arr + i * c) + j);
         }
         cout << sum << " ";
     }
@@ -19,10 +19,10 @@ void row_wise_sum(int arr[][50],int r,int c)
 
 int main()
 {
-    int arr[50][50];
     int rows,cols;
     cout<<"Enter the number of rows and columns:";
     cin >> rows >> cols;
+    int arr[rows][cols];
 
     cout<<"Enter the elements of the 2D array:\n";
     for(int i = 0; i < rows; i++)
@@ -34,7 +34,7 @@ int main()
     }
 
     cout<<"Row-wise Sum:"<<endl;
-    row_wise_sum(arr,rows,cols);
+    row_wise_sum(&arr[0][0],rows,cols);
     return 0;
 }
 /* EXAMPLE 1:
