@@ -1,4 +1,4 @@
-#include <climits>
+#include <climits>   // This header difines constants with the limits of fundamenntal integral type for the specific system and compiler implementation used. 
 #include <iostream>
 using namespace std;
 
@@ -28,7 +28,11 @@ int partition(int arr[], int n, int k)
 
 int main()
 {
-	int arr[] = { 10, 10, 10, 10};
+	int size;
+        cin>>size;
+         int arr[size];
+        for(int i=0;i<size;i++)
+          cin>>arr[i];
 	int n = sizeof(arr) / sizeof(arr[0]);
 	int k = 2;
 	cout << partition(arr, n, k) << endl;
@@ -36,5 +40,10 @@ int main()
 	return 0;
 }
 
-// Input:  k=2 , A={10, 10, 10, 10}
+// Input: size=4, k=2 , A={10, 10, 10, 10}
 // Output: 20
+
+// Input: size= 4, k = 2, A = {10, 20, 30, 40}
+// Output: 60
+
+// Time Complexity: O(N*log(sum(arr[])))
