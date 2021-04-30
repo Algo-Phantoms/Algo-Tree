@@ -38,10 +38,10 @@
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
 
-## Questions related to Number Theory
-
+## Questions related to Number The
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
-- Check Prime Number ----> [Java](/Code/Java/check_prime.java)
+- Check Prime Number ----> [Java](/Code/Java/check_prime.java) | [Python](/Code/Python/TrimorphicNumber.py)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
@@ -51,3 +51,5 @@
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
 - All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
+- To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
+- Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
