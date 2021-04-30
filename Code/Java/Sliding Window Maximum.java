@@ -90,7 +90,7 @@ input: 17
 output: 9 9 8 12 12 14 14 32 32 32 32 19 19 19             
 */
 /*
-Test Case 2:
+Test Case 2: 
 input: 18
        7
        9
@@ -114,6 +114,6 @@ input: 18
 output: 19 19 19 19 19 17 32 32 32 32 32 18 18 18              
 */
 /*
-Time Complexity: O(n)
+Time Complexity: O(n)  // where n is the size of input array
 Space Complexity: O(n)
 */
