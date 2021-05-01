@@ -23,4 +23,4 @@ element in a full stack is called **overflow**.
 
 ## Questions :
 * Minimum Element ----> [Python](/Code/Python/minimium_element.py)
-
+* Stack Class ----> [C++](/Code/C++/stack_class.cpp)
