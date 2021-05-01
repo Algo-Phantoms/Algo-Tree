@@ -83,7 +83,8 @@ Transpose:
 87 5 65
 58 6 5
 
-Time Complexity: O(order^2)
+Time Complexity: O(n^2)
+Here n is the order of matrix
 Space Complexity: O(1)
 */
 
