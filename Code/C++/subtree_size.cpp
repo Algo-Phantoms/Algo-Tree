@@ -95,6 +95,10 @@ int main() {
 
 /*USER'S INPUT AND OUTPUT
 
+TIME COMPLEXITY :  O(n)  (in order to calculate n-1 edges) 
+
+SPACE COMPLEXITY : O(n) (to keep track of visited nodes and array to store subtree size)
+
 SAMPLE INPUT OUTPUT 1
 
                 0
