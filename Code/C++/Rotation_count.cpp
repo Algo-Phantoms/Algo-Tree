@@ -43,7 +43,7 @@ int main()
     {
         cin>>arr[i];
     }
-    
+    //function call
     cout << countRotations(arr, n);
     return 0;
 }
