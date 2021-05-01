@@ -29,17 +29,17 @@ int main() {
 
 /*
 
-Input : abc
+	Input : abc
 
-Output :
-abc
-acb
-bac
-bca
-cba
-cab
+	Output :
+	abc
+	acb
+	bac
+	bca
+	cba
+	cab
 
-Time Complexity: O(n*n!)
-Space Complexity: O(n*n!)
+	Time Complexity: O(n*n!)
+	Space Complexity: O(n*n!)
 
 */

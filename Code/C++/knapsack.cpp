@@ -110,18 +110,18 @@ int main()
 	return 0;
 }
  
- /*
- Test Case : 
- Input : 4
- 10 20 10 15
- 2 2 3 1
- 30
+/*
+	Test Case : 
+	Input : 4
+	10 20 10 15
+	2 2 3 1
+	30
 
- Output : 
- Top down - 55
- Bottom up - 55
+	Output : 
+	Top down - 55
+	Bottom up - 55
 
-Time Complexity: O(N*W)
-Space Complexity: O(W)
+	Time Complexity: O(N*W)
+	Space Complexity: O(W)
 
 */

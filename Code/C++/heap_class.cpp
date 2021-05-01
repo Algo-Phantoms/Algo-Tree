@@ -6,7 +6,7 @@ class Heap{
     vector<int> v;
     bool minHeap;
 
-          // a-current element, b-parent
+    // a-current element, b-parent
     bool compare(int a, int b){             
        if(minHeap){
           return a < b;
@@ -19,11 +19,12 @@ class Heap{
         int left = 2*ind;
         int right = 2*ind +1;
 
-              //for pointing the idx
+        //for pointing the idx
         int min_idx = ind;              
         int last = v.size()-1;
-               //find the correct place for min_idx
-              //cmpare with left if it is  smaller then min_idx will be left
+
+        //find the correct place for min_idx
+        //cmpare with left if it is  smaller then min_idx will be left
 
         if(left <=last && compare(v[left],v[ind])){             
             min_idx = left;
@@ -42,7 +43,8 @@ class Heap{
 public:
 
 	Heap(int default_size = 10, bool type = true){
-          // vector will not expand untill its size == 10
+
+        // vector will not expand untill its size == 10
          v.reserve(default_size);               
          v.push_back(-1);
          minHeap = type;
@@ -68,10 +70,11 @@ public:
 
 	void pop(){
          int last = v.size() - 1;
-              // swap first and last element and then remove
+
+        // swap first and last element and then remove
          swap(v[1],v[last]);                
          v.pop_back();
-               // for maintaining heap order property
+        // for maintaining heap order property
          heapify(1);               
 	} 
 
@@ -91,7 +94,7 @@ int main(){
        h.push(no);
 	}
 
-        //remove all the elements one by one
+    //remove all the elements one by one
 	while(!h.empty()){
         cout<<h.top()<<" ";
         h.pop();
@@ -102,14 +105,14 @@ int main(){
 
 /*
 
-Test case :
+    Test case :
 
-Input : 5
-3 2 4 5 1
+    Input : 5
+    3 2 4 5 1
 
-Output : 1 2 3 4 5
+    Output : 1 2 3 4 5
 
-Time Complexity : O(log N)
-Space Complexity : O(log N)
+    Time Complexity : O(log N)
+    Space Complexity : O(log N)
 
 */

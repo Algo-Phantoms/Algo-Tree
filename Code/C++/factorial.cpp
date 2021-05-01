@@ -22,12 +22,12 @@ using namespace std;
  }
 
 /* 
-Test case :
+	Test case :
 
-Input : 6
-Output : 720
+	Input : 6
+	Output : 720
 
-Time complexity: O(n)
-Space Complexity: O(n)
+	Time complexity: O(n)
+	Space Complexity: O(n)
 
  */

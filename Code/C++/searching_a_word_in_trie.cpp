@@ -38,7 +38,7 @@ public:
 		for(int i=0;word[i]!='\0';i++){
 			char ch = word[i];
 
-				//if not present
+			//if not present
 			if(temp->m.count(ch)==0){				
 				// create link
                 node* child = new node(ch);
@@ -51,7 +51,7 @@ public:
 
 			}
 		}
-				// last node
+		// last node
 		temp->is_terminal = true;				
 	}
 
@@ -62,17 +62,17 @@ public:
 		for(int i=0;word[i]!='\0';i++){
 
 			char ch = word[i];
-				// if present 
+			// if present 
 			if(temp->m.count(ch)==1){				
                  temp = temp->m[ch];
 			}
 			else{		
-				// not present		
+			 	// not present		
                return false;
 			}
 			
 		}
-		    	// not always at last node
+	// not always at last node
     return temp->is_terminal;				
 	}
 
@@ -98,12 +98,12 @@ int main()
 
 /* 
 
-Test Case :
+	Test Case :
 
-Input : adf
-Output : true
+	Input : adf
+	Output : true
 
-Time Complexity : O(L), where L is the length of the string to be searched.
-Time Complexity : O(1)
+	Time Complexity : O(L), where L is the length of the string to be searched.
+	Time Complexity : O(1)
 
 */

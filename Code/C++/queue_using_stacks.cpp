@@ -12,9 +12,9 @@ class Queue{
 
 public:
 
-				//main data structure
+	//main data structure
 	stack<int> s1;				
-				//helper
+	//helper
 	stack<int> s2;				
 
 	void push(int x){ 
@@ -23,7 +23,7 @@ public:
 
 	void pop(){
 
-				//copy s1 to s2
+		//copy s1 to s2
 
 		while(!s1.empty()){
 			s2.push(s1.top());
@@ -32,7 +32,7 @@ public:
 
 		s2.pop();
 
-				//copy s2 to s1
+		//copy s2 to s1
 
 		while(!s2.empty()){
 			s1.push(s2.top());
@@ -42,7 +42,7 @@ public:
 	}
 
 	int front(){
-				//copy s1 to s2
+		//copy s1 to s2
 
 		while(!s1.empty()){
 			s2.push(s1.top());
@@ -51,7 +51,7 @@ public:
 
 		int x = s2.top();
 
-				//copy s2 to s1
+		//copy s2 to s1
 
 		while(!s2.empty()){
 			s1.push(s2.top());
@@ -110,26 +110,26 @@ int main()
 
 /* 
 
-Test case :
+	Test case :
 
-Input : 5
+	Input : 5
 
-Output : 
-1
-5
-2
-0
-2
-3
-4
-5
+	Output : 
+	1
+	5
+	2
+	0
+	2
+	3
+	4
+	5
 
-Time Complexity : 
+	Time Complexity : 
 
-Push operation : O(N).
-Pop operation : O(1).
+	Push operation : O(N).
+	Pop operation : O(1).
 
-SpaceComplexity : O(N).
+	SpaceComplexity : O(N).
 
 
 

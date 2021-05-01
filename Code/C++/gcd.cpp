@@ -24,11 +24,11 @@ int main(){
 
 
 /* 
- Test case :
+	Test case :
 
- Input : 6 9
- Output : 3
+	Input : 6 9
+	Output : 3
 
- Time Complexity: O(Log min(a, b))  
- Space Complexity: O(1)  
+	Time Complexity: O(Log min(a, b))  
+	Space Complexity: O(1)  
  */

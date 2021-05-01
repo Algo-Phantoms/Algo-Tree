@@ -42,8 +42,8 @@ int main()
 {
 
 	int n;
-
-	cin >> n;				// getting the number of disks initially
+	// getting the number of disks initially
+	cin >> n;				
 	tower_of_hanoi(n, 'A', 'B', 'C');
 
 	return 0;
