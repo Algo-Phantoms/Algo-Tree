@@ -159,19 +159,21 @@ int main()
 
 /*
 Test Cases
+
 1.
-Input - 
-How many numbers do you want to sort? 5
-Enter the numbers: 5 4 3 2 1 
-Output - 
-The numbers in sorted order is:  1  2  3  4  5
+ Input - 
+     How many numbers do you want to sort? 5
+     Enter the numbers: 5 4 3 2 1 
+ Output - 
+     The numbers in sorted order is:  1  2  3  4  5
 
 2.
-Input - 
-How many numbers do you want to sort? 0
-Output - 
-There are no numbers to sort!!!
 
-Time Complexity: O(n*logn)
+ Input - 
+     How many numbers do you want to sort? 0
+ Output - 
+     There are no numbers to sort!!!
+
+Time Complexity: O(n*logn), where 'n' is the length of the array.
 Space Complexity: O(n)
 */
