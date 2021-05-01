@@ -6,10 +6,13 @@
 - [Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html)
 - [Euclidean algorithm for computing the greatest common divisor](https://cp-algorithms.com/algebra/euclid-algorithm.html)
 - [Extended Euclidean Algorithm](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
-- [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
-- [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
-- [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
 - [Factorial without recursion](https://github.com/Subhangini/Algo-Tree/blob/subh/Code/C%2B%2B/Factorial_without_recursion.cpp)
+- [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
+- [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
+- [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
+- [Palindrome Number](/Code/C++/palindrome_number.cpp)
+
+
 
 #### Prime numbers
 
@@ -44,5 +47,4 @@
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
-
 
