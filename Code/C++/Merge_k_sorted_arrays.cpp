@@ -80,9 +80,9 @@ int main()
 {
 	// Change n at the top to change number of elements
 	// in an array
-	int arr[][n] = {{3, 4, 11, 0},
-					{1, 90, 200, 1000},
-					{23, 34, 99, 2000}};
+	int arr[][n] = {{66, 99, 110, 800},
+					{1, 6, 70, 100},
+					{2, 4, 9, 200}};
 	int k = sizeof(arr)/sizeof(arr[0]);
 	int output[n*k];
 	mergeKArrays(arr,0,2, output);
@@ -92,16 +92,37 @@ int main()
 
 	return 0;
 }
-/*
-    INPUT--{{3, 4, 1, 0},
-			{1, 90, 200, 1000},
-			{23, 34, 99, 2000}}
-
+/*	
+	1-->
+    INPUT--{{6, 9, 11, 800},
+			{1, 5, 10, 1000},
+			{2, 4, 99, 200}}
 
     OUTPUT--- 
     Merged array -->
-    1 3 4 11 0 23 34 90 99 200 1000 2000
-    */
+    1 2 4 5 6 9 10 11 99 200 800 1000 
+   
+	2-->
+	INPUT-- {{3, 7, 11, 80},
+			{12, 90, 100, 1000},
+			{23, 34, 99, 209}}
+
+
+	OUTPUT---
+	Merged array -->
+	3 7 11 12 23 34 80 90 99 100 209 1000 
+    
+	3-->
+	INPUT-- {{66, 99, 110, 800},
+			{1, 6, 70, 100},
+     		{2, 4, 9, 200}}
+
+
+	OUTPUT---
+	Merged array -->
+	1 2 4 6 9 66 70 99 100 110 200 800
+
+	*/
 
 
 // Time Complexity: O( n * k * log k). 
