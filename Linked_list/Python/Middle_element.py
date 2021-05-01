@@ -71,7 +71,7 @@ if __name__=="__main__":
     print("Middle value of the linked list is " + str(ll.find_middle()))
 
 
-#Time complexity: O(n)
+#Time complexity: O(n)              --->n is number of nodes in linked list 
 #Space complexity: O(1)
 
 
