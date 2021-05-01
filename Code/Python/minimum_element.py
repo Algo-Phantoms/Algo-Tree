@@ -112,10 +112,10 @@ if __name__=="__main__":
 
 
 #Time comlpexity: O(1) ---->inserting an element
-#                 O(1) ---->poping an element ,O(n) for deleting any particuler element
+#                 O(1) ---->poping an element ,O(n) for deleting any particuler element where n is number of elements inside stack
 #                 O(1)  --->getting minimum element from stack
 
-#Space Complexity : O(n)
+#Space Complexity : O(n) , where n is number of elements present inside stack
 
 """e.g
 Wanna create a stack?(y/n)y
