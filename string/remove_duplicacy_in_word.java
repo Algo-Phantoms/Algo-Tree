@@ -9,8 +9,8 @@
 
  Remove()
  {
- recur=0;
- newstring="";
+    recur=0;
+    newstring="";
  } 
 
 
@@ -22,7 +22,7 @@
     }
     else{
         if(recur==0){
-           newstring=original.charAt(0)+newstring;
+            newstring=original.charAt(0)+newstring;
            }
         else{
             char ch=original.charAt(0);
@@ -30,10 +30,10 @@
             for(int charcount=0;charcount<newstring.length();charcount++)
             {
                 if(ch==newstring.charAt(charcount)||ch==(char)(newstring.charAt(charcount)+32)||ch==(char)(newstring.charAt(charcount)-32))
-                count++;
+                    count++;
             }
             if(count==0)
-            newstring=newstring+ch;
+                newstring=newstring+ch;
         }
        recur++; calduplicacy(original.substring(1));
      }
