@@ -61,8 +61,8 @@ that, this property should be satisfied at every node in the tree.
 * Red Black Tree (Insertion and Deletion operation) ----> [Java](/Code/Java/RedBlackTree.java) 
 * Right Side View of Binary Tree ----> [C++](/Code/C++/Right_Side_View_of_Binary_Tree.cpp)
 * Root to Leaf Path with Given Sum ----> [C++](/Code/C++/Root_to_leaf_path_with_given_sum.cpp)
-* Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) | [Java](Code\Java\Searching_in_BST.Java)
+* Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
 * Subtree Size of all nodes ----> [C++] (/Code/C++/subtree_size.cpp) 
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
 
