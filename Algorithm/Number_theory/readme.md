@@ -39,6 +39,8 @@
 
 
 ## Questions related to Number Theory
+- All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
+- All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
 - Calculate the value of nCr ---->[Python](/Code/Python/calculate_value_of_nCr.py)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
@@ -46,5 +48,7 @@
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
-
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
+- Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
+- Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
+- To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
