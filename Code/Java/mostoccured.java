@@ -28,13 +28,13 @@ public class MostOccured {
 	// A Variable which Keeps Count of Occurance
         int count = 1;
         int maxoccc = Integer.MIN_VALUE;
-        for (int i = 1;i<arr.length;i++){
+        for (int i = 1; i<arr.length; i++){
             if (arr[i] == prevno){
                 count++;
             }else {
                 prevno = arr[i];
         	// If count is more than maxocc then that element will be Most Occured Element        
-		if (count>maxoccc){
+		if (count > maxoccc){
                     maxoccc = count;
                     ans = arr[i-1];
                 }
@@ -42,7 +42,7 @@ public class MostOccured {
             }
         }
 	// For checking Last Count
-	if (count>maxoccc){
+	if (count > maxoccc){
             ans = arr[arr.length-1];
         }
         return ans;
@@ -50,13 +50,13 @@ public class MostOccured {
 
 // Sorting Array Algorithm
     public static void sortArray(int[] nums) {
-        for (int i = 0;i<nums.length;i++){
-            for (int j = i+1 ;j<nums.length;j++){
+        for (int i = 0; i<nums.length; i++){
+            for (int j = i+1 ;j<nums.length; j++){
                 int minindex = Integer.MAX_VALUE;
-                if (minindex>nums[j]){
+                if (minindex > nums[j]){
                     minindex = j;
                 }
-                if (nums[minindex]<nums[i]){
+                if (nums[minindex] < nums[i]){
                     int temp = nums[i];
                     nums[i] = nums[minindex];
                     nums[minindex] = temp;
@@ -76,7 +76,7 @@ public class MostOccured {
                 2 4 6 5 4 3 4
         Output: 4
 
-        Time Complexity: O(n)
+        Time Complexity: O(n) Where n is Length of Arrray
         Space Complexity: O(n)
 
  */
