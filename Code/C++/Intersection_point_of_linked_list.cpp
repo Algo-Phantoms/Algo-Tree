@@ -124,7 +124,10 @@ int main()
 	cout << "The node of intersection is " << getIntesectionNode(head1, head2);
 }
 
-// This code is contributed by rathbhupendra
+// Time Complexity: O(m+n) 
+// where m and n is the node of two linked list
+// Auxiliary Space: O(1)
+
 // Input    numb1 =5, numb2 = 3
 //	     3
 //            \
@@ -149,7 +152,3 @@ int main()
 //         7
 
 // Output 3
-
-// Time Complexity: O(m+n) 
-// where m and n is the node of two linked list
-// Auxiliary Space: O(1)
