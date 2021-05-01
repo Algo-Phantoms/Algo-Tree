@@ -1,14 +1,13 @@
-#Ques: Check weather provided linked list is palindrome or not
-#Language: Python3
+"""
+Ques: Check weather provided linked list is palindrome or not
+Language: Python3
 
-#class "node" is user defined datatype to create node such that it should have two section one for integer data and second for storing #address of next node, and class "linked_list" which has several defined function i.e, insert_node for linking nodes , viewll is for #printing linked list data and finally isPalindrome which takes head address of linked list to cheack weather is palindrom or not
+class "node" is user defined datatype to create node such that it should have two section one for integer data and second for storing #address of next node, and class "linked_list" which has several defined function i.e, insert_node for linking nodes , viewll is for #printing linked list data and finally isPalindrome which takes head address of linked list to cheack weather is palindrom or not
 
-#input: Enter number of node you need:                  //user will be asked for no. of nodes, and after providing number of nodes user #                                                           should provide that many integers in new line everytime
+input: Enter number of node you need:                  //user will be asked for no. of nodes, and after providing number of nodes user #                                                           should provide that many integers in new line everytime
 
-
-
-#output: .........                          //then in output user can view space seperated integers which he entered and in next line he/#                                              she can find weather this linked list is palindrome
-
+output:                           //then in output user can view space seperated integers which he entered and in next line he/#                                              she can find weather this linked list is palindrome
+"""
 class node:
     def __init__(self,data):
         self.data=data
@@ -77,11 +76,19 @@ if __name__=="__main__":
 #time complexity: O(n)
 #space : O(1)
 
-#e.g: Enter number of node you need:5
-#   1
-#   2
-#   1
-#   2
-#   1
-#   1 2 1 2 1
-#   True
+"""
+e.g:
+Input: Enter number of node you need:5
+       1
+       2
+       1
+       2
+       1
+Output: 1 2 1 2 1
+       True
+e.g.
+Input: Enter number of node you need:1
+       9
+Output: 9
+       True
+"""
