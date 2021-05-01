@@ -1,6 +1,9 @@
 /*
 DeQueue or Double Ended Queue is a type of queue in which insertion
 and removal of elements can be performed from either front or rear.
+We are implementing Dequeue using array so we will craete class and 
+then perform various function like: startInsert , endInsert , 
+deleteFront , deleteRear , and display on it.
 */
 #include <bits/stdc++.h>
 using namespace std;
