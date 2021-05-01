@@ -37,4 +37,6 @@ called **overflow**. Generally, we treat them as exceptions. As an example, cons
 * Component of other data structures
 
 ## Questions :
+* DeQueue using Array ----> [C++](/Code/C++/dequeue_using_array.cpp)
 * Queue using Stacks ----> [C++](/Code/C++/queue_using_stacks.cpp)
+
