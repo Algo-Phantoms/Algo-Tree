@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Program to check a number is perfect ---> [C++](/Code/C++/perfect_number.cpp)
