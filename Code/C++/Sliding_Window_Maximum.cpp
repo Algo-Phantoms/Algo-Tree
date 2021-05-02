@@ -50,6 +50,7 @@ int main()
 }
 /*
            Time complexity is O(N).
+           Space Complexity is O(N).
            
            Sample Input/Output
            
