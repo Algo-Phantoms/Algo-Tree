@@ -15,20 +15,20 @@ using namespace std;
 void check_perfect_number(int num)
 {
 
-    int sum=0;
+    int sum = 0;
     int i;
 
 
     //loop till half the number because further the multiples will be greater than the number itself.
-    for(i=1;i<=(num/2);i++)
+    for(i = 1 ; i <= (num/2) ; i++)
     {
-        int rem=num%i;
+        int rem = num%i;
 
         if(rem == 0)
-            sum=sum+i;
+            sum = sum + i;
     }
 
-        if(num==sum)
+        if(num == sum)
             cout<<"You entered a perfect number\n";
 
         else
@@ -39,7 +39,7 @@ void check_perfect_number(int num)
 //main
 int main(){
 
-int number,sum=0,rem,i;
+int number, sum = 0, rem, i;
 
 cout<<"Enter number:\n";
 cin>>number;
