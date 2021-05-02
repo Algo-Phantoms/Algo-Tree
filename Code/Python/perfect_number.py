@@ -15,7 +15,7 @@ def check_perfect_number(number):
     
     
     #initialising the sum with 1 because 1 is the factor of every number
-    sum_of_divisor=1
+    sum_of_divisor = 1
     
     
     #checking till the half of the number, 
@@ -23,17 +23,17 @@ def check_perfect_number(number):
     for i in range(2,int(number/2)+1):
         
         #divisibilty check
-        if(number%i==0):
-            sum_of_divisor+=i
+        if(number%i == 0):
+            sum_of_divisor += i
             
     
-    return number==sum_of_divisor
+    return number == sum_of_divisor
 
 
 
 
 #main
-num=int(input("Enter any number: "))
+num = int(input("Enter any number: "))
 
 
 #function call
@@ -42,18 +42,19 @@ print(check_perfect_number(num))
 
 '''
 
-Time complexity: O(n)
-
 
 Test cases:
-1. Enter any number:6
-   True
+1. Input: Enter any number:6
+   Output: True
    (The factors are 1,2,3 excluding the number
    =>1+2+3=6)
 
-2. Enter any number: 15
-   False
+2. Input: Enter any number: 15
+   Output: False
    (The factors are 1,3,5 excluding the number
    =>1+3+5=9!=15)
+   
+Time complexity: O(n)
+Space Complexity: O(1)
 
 '''
