@@ -26,6 +26,7 @@ To create an array, you need to known the length (or size) of the array in advan
 ## Questions :
 
  * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
+ * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp)
  * Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
  * Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
@@ -36,6 +37,7 @@ To create an array, you need to known the length (or size) of the array in advan
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp) | [Java](/Code/Java/peakvalueinarray.java)
  * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
  * Search in sorted rotated array ----> [Python](/Code/Python/search_in_sorted_rotated_array.py)
+ * Sliding Window Maximum ---->[C++](/Code/C++/Sliding_Window_Maximum.cpp)
  * Sorted Zig-Zag Array ----> [C++](/Code/C++/sorted_zig_zag_array.cpp)
  * Three Sum ----> [Python](/Code/Python/Three_Sum.py)
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
