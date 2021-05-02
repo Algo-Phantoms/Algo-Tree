@@ -47,6 +47,7 @@
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Program to check a string is a pangram----> [Python](/Code/Python/check_pangram.py) 
 
 ## Questions related to Number The  
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
