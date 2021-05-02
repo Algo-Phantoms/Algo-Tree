@@ -52,7 +52,7 @@ There are different bitwise operations used in the bit manipulation. Bit operati
 
 
 ## Questions :
-- Bitwise Operator Overloading ---->[C++](Code/C++/Bitwise_op_overloading.cpp)
+- Bitwise Operator Overloading ---->[C++](/Code/C++/Bitwise_op_overloading.cpp)
 - Brian Kernighan's Algorithm ----> [C++](/Code/C++/Brian_Kernighan.cpp) | [Java](/Code/Java/BrianKernighanAlgorithm.java) | [Python](/Code/Python/Brian_Kernighan's_Algorithm.py)
 - Swap Even and Odd Bits Algorithm ----> [Python](/Code/Python/Swap_even_odd_bits.py)
 
