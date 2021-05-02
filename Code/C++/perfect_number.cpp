@@ -50,3 +50,19 @@ check_perfect_number(number);
 return 0;
 
 }
+
+
+/*
+
+Test cases:
+1. Input : Enter any number: 6
+   Output : You entered a perfect number
+
+
+2.Input:  Enter any number: 15
+  Output: Not perfect number
+
+Time complexity: O(n)
+Space Complexity : O(1)
+
+*/
