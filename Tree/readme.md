@@ -54,7 +54,7 @@ that, this property should be satisfied at every node in the tree.
 - Check if a Binary Tree is a valid Binary Search Tree ----> [Java](/Code/Java/check_valid_BST.java)
 - Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/binary_tree_from_preorder_and_inorder.cpp)
 - DFS traversal on Binary Tree ----> [C++](/Code/C++/binary_tree_DFS_traversal.cpp)
-- Diameter of Binary Tree ----> [C++](/Code/C++/diameter_of_binary_tree.cpp)
+- Diameter of Binary Tree ----> [C++](/Code/C++/diameter_of_binary_tree.cpp) | [Python](/Code/Python/Diameter_BinaryTree.py)
 - Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
 - Lowest common ancestor in a binary tree ----> [Python](/Code/Python/LCA_in_binary_tree.py)
 - Red Black Tree (Insertion and Deletion operation) ----> [Java](/Code/Java/RedBlackTree.java)
@@ -65,4 +65,3 @@ that, this property should be satisfied at every node in the tree.
 - Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp)
 - Maiximum sum path from any node to any node in Binary Tree ----> [C++](/Code/C++/max_tree_path.cpp)
 - Maximum Topology Short ----> [C++](/Code/C++/Max_Topology_Short.cpp)
-- Diameter of Binary Tree ----> [Python](/Code/Python/Diameter_BinaryTree.py)
