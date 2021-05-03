@@ -1,3 +1,11 @@
+// K-ary heaps are a generalization of binary heap(K=2) in which each node have K children instead of 2. 
+// Just like binary heap, it follows two properties:
+// 1) Nearly complete binary tree, with all levels having maximum number of nodes except the last, which is filled in left to right manner.
+// 2) Like Binary Heap, it can be divided into two categories: 
+// (a) Max k-ary heap (key at root is greater than all descendants and same is recursively true for all nodes). 
+// (b) Min k-ary heap (key at root is lesser than all descendants and same is recursively true for all nodes)
+
+
 // C++ program to demonstrate all operations of
 // k-ary Heap
 #include<bits/stdc++.h>
@@ -210,5 +218,9 @@ int main()
     Heap after extract max:
     9 8 5 7 3 1 3
 
+
+	Time complexity of build heap is O(n)
+	Insert and decreaseKey() operations call restoreUp() once. So complexity is O(logkn).
+	Since extractMax() calls restoreDown() once, its complexity O(k logkn)
    
     */
