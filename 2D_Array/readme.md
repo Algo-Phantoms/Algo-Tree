@@ -9,9 +9,13 @@ Due to the fact that the elements of 2D arrays can be random accessed. Similar t
 
 ## Questions :
 
+* Checking Teoplitz Matrix Algorithm ----> [Java](/Code/Java/Toeplitz.java)
 * Clockwise Rotation ----> [C++](/Code/C++/2d_matrix_rotation_90degree_clockwise.cpp)
+* Matrix Operations ----> [C++](/Code/C++/matrix_operations.cpp)
 * Multiplication of two Matrices ----> [Java](/Code/Java/matrixop_mul.java)
+* Row-wise sum ----> [C++](/Code/C++/row_wise_sum.cpp)
 * Spiral Print ----> [C++](/Code/C++/spiral_print.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
-* Transpose of a Matrix ----> [Python](/Code/Python/Transpose_of_matrix.py)
+* Transpose of a Matrix --->[Java](/Code/Java/transpose.java)|[Python](/Code/Python/Transpose_of_matrix.py)
 * Wave Print ----> [C++](/Code/C++/wave_print.cpp)
+
