@@ -37,7 +37,6 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
-
 ## Questions related to Number Theory
 - All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
 - All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
