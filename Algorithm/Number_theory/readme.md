@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Rotation Count in a sorted array ----> [Python](/Code/Python/RotationCount.py)
