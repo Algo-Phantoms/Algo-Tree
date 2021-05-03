@@ -77,6 +77,6 @@ OUTPUT: 0
 
 
 
-Time Complexity: O(n+k)
+Time Complexity: O(n+k)  where n is rows and K is column as per inputs
 Space Complexity: O(n)
 */
