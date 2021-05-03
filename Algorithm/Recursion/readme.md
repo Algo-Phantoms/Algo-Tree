@@ -17,5 +17,6 @@ eventually converge on the base case.
 
 * Factorial ----> [C++](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/Code/C%2B%2B/factorial.cpp) | [Java](/Code/Java/factorial.java)
 * Fibonocci ----> [C++](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/Code/C%2B%2B/fibonacci.cpp)
-* Tower of Hanoi ----> [C++](/Code/C++/tower_of_hanoi.cpp)
 * Kth_Symbol_Grammar ----> [C++](https://github.com/Ayush12062000/Algo-Tree/blob/issue-645/Code/C%2B%2B/Kth_Symbol_Grammar.cpp)
+* Tower of Hanoi ----> [C++](/Code/C++/tower_of_hanoi.cpp)
+
