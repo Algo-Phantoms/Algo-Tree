@@ -8,4 +8,6 @@ Greedy Algorithms are one of the most intuitive algorithms. Whenever we see a pr
 
 ## Questions :
 
-- Jump Game ----> [Java](/Code/Java/Jump_Game.java)
+* Huffman Encoding ----> [C++](/Code/C++/Huffman_encoding.cpp)
+ * Find Minimum number of Coins ----> [Java](/Code/Java/greedyalgo.java)
+ * Jump Game ----> [Java](/Code/Java/Jump_Game.java)
