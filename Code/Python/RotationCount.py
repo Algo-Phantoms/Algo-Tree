@@ -50,14 +50,14 @@ Test Case 1:
             Input : lst = [4, 9, 11, 12, 5]
             Output : 4
 
-Test Case 1:
+Test Case 2:
             Input : lst = [7, 9, 11, 12, 15]
             Output : 0
 
-Test Case 1:
+Test Case 3:
             Input : lst = [15, 18, 2, 3, 6, 12]
             Output : 2
 
-Time Complexity: O(log n)
+Time Complexity: O(log n)  # n = total number of elements in the array
 Space Complexity: O(1)
 '''
