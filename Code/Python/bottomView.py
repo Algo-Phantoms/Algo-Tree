@@ -48,6 +48,9 @@ def printBottomView(root):
         print(dict.get(key)[0], end=' ')
 
 
+# the time complexity is O(n.log(n)) and requires O(n) extra space where n is the size of binary tree.
+
+
 if __name__ == '__main__':
 
     root = Node(1)
@@ -60,3 +63,10 @@ if __name__ == '__main__':
     root.right.left.right = Node(8)
 
     printBottomView(root)
+
+
+# (horizontal distance —> (node’s value, node’s level))
+# -1 —> (7, 4)
+# 0 —> (5, 3)
+# 1 —> (8, 4)
+# 2 —> (6, 3)
