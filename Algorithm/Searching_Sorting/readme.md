@@ -62,6 +62,7 @@ Following are the types of searches which we will be discussing in this book.
 
 * Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
+* Painter's Partition Problem  -----> [C++](Code/C++/Implement_Painter's_Partition.cpp)
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
