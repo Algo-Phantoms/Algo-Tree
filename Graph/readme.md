@@ -41,5 +41,6 @@ A graph is a pair (V, E), where V is a set of nodes, called vertices, and £ is 
 - Dijkstra Algorithm ----> [C++](/Code/C++/Dijkstra.cpp) | [Java]() | [Python]()
 - Kruskal Algorithm ----> [C++](/Code/C++/Kruskal.cpp) | [Java]() | [Python]()
 - Largest Piece of Cake ----> [C++](/Code/C++/largest_cake.cpp) | [Java]() | [Python]()
-- Topological Sort ----> [C++](/Code/C++/Topological_sort.cpp) | [Java]() | [Python]()
 - Negative Cycle In weighted Graph (Using Bellman–Ford algorithm) ---> [C++](/Code/C++/negative_cycle_in_weighted_graph.cpp) | [Java]() | [Python]()
+- Topological Sort ----> [C++](/Code/C++/Topological_sort.cpp) | [Java]() | [Python]()
+
