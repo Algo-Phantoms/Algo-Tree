@@ -57,40 +57,40 @@ using namespace std;
 int helper(vector<vector<int>> &cake,bool**visited,int i,int j, int n)
 {
     //base cases
-    if(i>=n||j>=n||i<0||j<0)
+    if( i>=n || j >=n || i<0 || j<0 )
     {
         return 0;
     }
-    if(cake[i][j]==0)
+    if( cake[i][j] == 0 )
     {
         return 0;
     }
-    if(visited[i][j]==1)
+    if( visited[i][j] == 1 )
     {
         return 0;
     }
     
     
-    int ans=0;
-    visited[i][j]=1;
+    int ans = 0;
+    visited[i][j] = 1;
     
     //just checking in all the 4 directions and adding their respective ans into our main ans
     //since the piece of the cake can be of any shape but it should be continuous,i.e the
     //connected component of 1's will give you the length of a  piece of cake ;
    
     //top
-    int small_ans=helper(cake,visited,i-1,j,n);
-    ans+=small_ans;
+    int small_ans = helper( cake , visited , i-1 , j , n );
+    ans+ = small_ans;
    //down
-    small_ans=helper(cake,visited,i+1,j,n);
-    ans+=small_ans;
+    small_ans = helper(cake , visited , i+1 , j , n );
+    ans+ = small_ans;
     
    //left
-    small_ans=helper(cake,visited,i,j-1,n);
-    ans+=small_ans;
+    small_ans = helper( cake , visited , i ,j-1 ,n );
+    ans+ = small_ans;
    //right
-    small_ans=helper(cake,visited,i,j+1,n);
-    ans+=small_ans;
+    small_ans = helper( cake , visited , i , j+1 , n );
+    ans+ = small_ans;
     
     return ans+1;
     
@@ -98,26 +98,26 @@ int helper(vector<vector<int>> &cake,bool**visited,int i,int j, int n)
 
 int getBiggestPieceSize(vector<vector<int>> &cake, int n)
 {
-    bool**visited=new bool*[n];
-    for(int i=0;i<n;i++)
+    bool**visited = new bool*[ n ];
+    for(int i = 0 ; i<n ; i++)
     {
         visited[i]=new bool[n];
-        for(int j=0;j<n;j++)
+        for(int j = 0 ; j<n ; j++ )
         {
-            visited[i][j]=false;
+            visited[i][j] = false;
         }
     }
-    int ans=INT_MIN;
-    for(int i=0;i<n;i++)
+    int ans = INT_MIN;
+    for(int i = 0 ;i < n ; i++ )
     {
-        for(int j=0;j<n;j++)
+        for(int j = 0 ;j < n ; j++ )
         {
-            if(cake[i][j]==1&& !visited[i][j])
+            if(cake[i][j] == 1 && !visited[i][j])
             {
-                int small=helper(cake,visited,i,j,n);
+                int small = helper( cake , visited , i , j ,n );
                 //checking for all the  different size of the cake given  in the input and updating our ans accordingly
                 //i.e getting the length of the each connected component of 1's in the graph and updating the ans ;
-                ans=max(ans,small);
+                ans = max( ans , small );
             }
         }
     }
@@ -127,9 +127,9 @@ int getBiggestPieceSize(vector<vector<int>> &cake, int n)
 int main()
 {
     int n;
-    cin>>n;
-    vector<vector<int>>cake;
-    for(int i=0;i<n;i++)
+    cin >> n;
+    vector<vector<int>> cake;
+    for(int i = 0 ;i < n; i++ )
     {
         vector<int>v;
         cake.push_back(v);
@@ -139,7 +139,7 @@ int main()
                cin >> cake[i][j];
            }
        }
-    cout<<getBiggestPieceSize(cake, n)<<endl;;
+    cout << getBiggestPieceSize(cake, n) << endl;;
 }
 
 
