@@ -39,7 +39,7 @@ Node* LCA(Node* root, int n1,int n2){
         return root;
     }
 
-    if(left == NULL && right==NULL){
+    if(left == NULL && right == NULL){
         return NULL;
     }
 
@@ -51,16 +51,16 @@ Node* LCA(Node* root, int n1,int n2){
 }
 
 int finddistance(Node* root, int k, int dist){
-    if(root==NULL){
+    if(root == NULL){
         return -1;
     }
 
-    if(root->data==k){
+    if(root->data == k){
         return dist;
     }
 
     int left=finddistance(root->left,k,dist+1);
-    if(left!=-1){
+    if(left != -1){
         return left;
     }
 
@@ -70,18 +70,18 @@ int finddistance(Node* root, int k, int dist){
 int distance(Node* root, int n1, int n2){
     Node* lca = LCA(root,n1,n2);
 
-    int d1=finddistance(lca,n1,0);
-    int d2=finddistance(lca,n2,0);
+    int d1 = finddistance(lca,n1,0);
+    int d2 = finddistance(lca,n2,0);
 
     return d1+d2;
 }
 
 int main(){
-    Node*root=new Node(1);
-    root->left=new Node(2);
-    root->right=new Node(3);
-    root->left->left=new Node(4);
-    root->right->right=new Node(5);
+    Node*root = new Node(1);
+    root->left = new Node(2);
+    root->right = new Node(3);
+    root->left->left = new Node(4);
+    root->right->right = new Node(5);
 
    int i,j;
     cin>>i>>j;
