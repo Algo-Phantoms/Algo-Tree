@@ -42,5 +42,8 @@ print("Number of rotataions = ",min_in)
 #          1 2 3 4 5
 #   OUTPUT:
 #          Number of rotataions = 0
+#
+#  Time Complexity: O(n)
+#  Space Complexity: O(n)   Here n is the length of the array
 
 
