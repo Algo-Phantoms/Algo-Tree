@@ -87,8 +87,13 @@ int main(){
     cin>>i>>j;
    cout<<distance(root,i,j)<<endl;  
    
-   //if i=4 ,j=5 then distance between them is 4.
-   //if i=3 ,j=5 then distance between them is 1.
+   //TEST CASE1:
+   //INPUT: i=4 ,j=5 
+   //OUTPUT: 4.
+ 
+   //TEST CASE 2: 
+   //INPUT: i=3 ,j=5 
+   //OUTPUT:1.
   
     return 0;
 }
