@@ -25,6 +25,7 @@ To create an array, you need to known the length (or size) of the array in advan
 
 ## Questions :
 
+ * Counting rotations in a sorted array ---> [Python](/Code/Python/Count_of_rotations.py)
  * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
  * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp)
@@ -44,3 +45,4 @@ To create an array, you need to known the length (or size) of the array in advan
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Rotation Count in a sorted array ----> [Python](/Code/Python/RotationCount.py)
+
