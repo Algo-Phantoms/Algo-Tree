@@ -98,6 +98,7 @@ void deleteNodewohead(Node *node)
 
 
 /*
+sample case 1:
 Input:
 N = 4
 value[] = {10,20,4,30}
@@ -107,6 +108,18 @@ Explanation: After deleting 20 from
 the linked list, we have remaining
 nodes as 10, 4 and 30.
 
+Sample case 2:
+Input:
+N = 2
+value[] = {1,2}
+node = 1
+Output: 2
+Explanation: After deleting 1 from the
+linked list, we have remaining nodes
+as 2.
 
-complexity O(1)
+
+
+Time complexity--> O(1)
+Auxilliary Space--> O(1)
 */
