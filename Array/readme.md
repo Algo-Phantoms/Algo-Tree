@@ -25,13 +25,15 @@ To create an array, you need to known the length (or size) of the array in advan
 
 ## Questions :
 
+ * Counting rotations in a sorted array ---> [Python](/Code/Python/Count_of_rotations.py)
  * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
  * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp)
  * Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
  * Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
  * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp) 
- * K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) 
+ * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
+ * K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) | [Java](/Code/Java/K Largest Elements.java)
  * Left_rotation ----> [Python](/Code/Python/left_rotation.py)
  * Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp) 
  * Most Occured Element in Array ----> [Java](/Code/Java/mostoccured.java)
