@@ -49,6 +49,7 @@
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - Program to check a string is a pangram----> [Python](/Code/Python/check_pangram.py)
 - To check for palindrome number---->[Java](/Code/Java/Palindrome_number.java) 
+- Program to check a number is perfect ---> [C++](/Code/C++/perfect_number.cpp)
 
 
 ## Questions related to Number The  
