@@ -65,6 +65,6 @@ that, this property should be satisfied at every node in the tree.
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
 * Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp)
 * Maximum Topology Short ----> [C++](/Code/C++/Max_Topology_Short.cpp)
-* Bottom View Of Binary Tree ---->[Python](/Code/Python/bottomView.py)
+* Bottom View Of Binary Tree ---->  [Python](/Code/Python/bottomView.py)
  
 
