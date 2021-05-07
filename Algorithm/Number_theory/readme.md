@@ -64,5 +64,5 @@
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
 - All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
 - To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
-- Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
+- Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp) | [Java](/Code/Java/geekonacci.java)
 - All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
