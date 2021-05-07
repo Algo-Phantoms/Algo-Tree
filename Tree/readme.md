@@ -48,18 +48,22 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) 
+* N-ary Tree ----> [Python](/Code/Python/n_ary_tree.py)
 * BFS traversal on Binary Tree ----> [C++](/Code/C++/binary_tree_BFS_traversal.cpp)
 * Check if a Binary Tree is a valid Binary Search Tree ----> [Java](/Code/Java/check_valid_BST.java)
 * Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/binary_tree_from_preorder_and_inorder.cpp) 
 * DFS traversal on Binary Tree ----> [C++](/Code/C++/binary_tree_DFS_traversal.cpp)
+* Diameter of Binary Tree ----> [C++](/Code/C++/diameter_of_binary_tree.cpp)
 * Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
 * Lowest common ancestor in a binary tree ----> [Python](/Code/Python/LCA_in_binary_tree.py)
+* Red Black Tree (Insertion and Deletion operation) ----> [Java](/Code/Java/RedBlackTree.java) 
 * Right Side View of Binary Tree ----> [C++](/Code/C++/Right_Side_View_of_Binary_Tree.cpp)
 * Root to Leaf Path with Given Sum ----> [C++](/Code/C++/Root_to_leaf_path_with_given_sum.cpp)
-* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp)
 * Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
-* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) | [Java](Searching in BST.Java)
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) | [Java](Code\Java\Searching_in_BST.Java)
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
 * Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp)
+* Maximum Topology Short ----> [C++](/Code/C++/Max_Topology_Short.cpp)
  
 
