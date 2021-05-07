@@ -16,16 +16,16 @@ struct Node{
     Node* right;
 
     Node(int val){
-        data=val;
-        left=NULL;
-        right=NULL;
+        data = val;
+        left = nullptr;
+        right = nullptr;
     }
 
 };
  
 Node* LCA(Node* root, int n1,int n2){
-    if(root==NULL){
-        return NULL;
+    if(root == nullptr){
+        return nullptr;
     }
 
     if(root->data == n1 || root->data == n2){
@@ -35,15 +35,15 @@ Node* LCA(Node* root, int n1,int n2){
     Node* left=LCA(root->left,n1,n2);
     Node* right=LCA(root->right,n1,n2);
 
-    if(left!=NULL && right != NULL){
+    if(left!= nullptr && right != nullptr){
         return root;
     }
 
-    if(left == NULL && right == NULL){
-        return NULL;
+    if(left == nullptr && right == nullptr){
+        return nullptr;
     }
 
-    if(left!=NULL){
+    if(left != nullptr){
         return LCA(root->left,n1,n2);
     }
 
@@ -51,7 +51,7 @@ Node* LCA(Node* root, int n1,int n2){
 }
 
 int finddistance(Node* root, int k, int dist){
-    if(root == NULL){
+    if(root == nullptr){
         return -1;
     }
 
