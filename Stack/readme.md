@@ -22,8 +22,7 @@ element in a full stack is called **overflow**.
 - **IsFullStack():** Indicates whether the stack is full or not.
 
 ## Questions :
-
-*   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp) | [Java](/Code/Java/Balanced_Bracket_Problem.java)
+*   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp) | [Java](/Code/Java/Balanced_Bracket_Problem.java) | [Python](/Code/Python/Balanced_brackets.py)
 *   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
 *   Minimum Element ----> [Python](/Code/Python/minimium_element.py)
 *   Reverse individual words of a string ----> [C++](/Code/C++/reverse_words_of_string.cpp)
