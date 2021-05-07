@@ -80,9 +80,6 @@ int main(){
 
 /*
 
-Time Complexity: O(N)
-Space Complexity: O(1)
-
 Input:
 5
 1 2 3 4 5
@@ -96,5 +93,8 @@ Input:
 
 Output:
 4
+
+Time Complexity: O(N)
+Space Complexity: O(1)
 
 */
