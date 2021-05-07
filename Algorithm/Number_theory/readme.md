@@ -37,15 +37,21 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
-
 ## Questions related to Number Theory
 
 - All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
-- Check Prime Number ----> [Java](/Code/Java/check_prime.java)
+- All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
+- Checking for Anagram ---->[Python](/Code/Python/Anagram.py)
+- Check Prime Number ----> [Java](/Code/Java/check_prime.java) | [Python](/Code/Python/TrimorphicNumber.py)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
+- Program to check a string is a pangram----> [Python](/Code/Python/check_pangram.py)
 - Square Root using Binary Search ----> [Java](Code/Java/sqrt.java)
+- Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
+- To check for palindrome number---->[Java](/Code/Java/Palindrome_number.java) 
+- To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
