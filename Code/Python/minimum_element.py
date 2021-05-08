@@ -118,87 +118,87 @@ if __name__=="__main__":
 #Space Complexity : O(n) , where n is number of elements present inside stack
 
 """e.g
-Wanna create a stack?(y/n)y
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-1
-Enter data: 11
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-1
-Enter data: 12
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-1
-Enter data: 3
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-1
-Enter data: 5
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-1
-Enter data: 2
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-3
-11 12 3 5 2  
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-2
-Data to be deleted: 2
-Deleted!!
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-3
-11 12 3 5  
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-4
-So minimum value inside stack is: 3
-Menu:
-0.Quit process
-1.Push into stack
-2.Delete from stack
-3.Print data
-4.Get minimum
-0
-Okay bye there!
+input: Wanna create a stack?(y/n)y
+       Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       1
+output: Enter data: 11
+input: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       1
+output: Enter data: 12
+inout: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       1
+output: Enter data: 3
+input: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       1
+output: Enter data: 5
+input: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       1
+output: Enter data: 2
+input: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       3
+output: 11 12 3 5 2  
+input: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       2
+output: Data to be deleted: 2
+        Deleted!!
+input: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       3
+output: 11 12 3 5  
+input: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       4
+output: So minimum value inside stack is: 3
+input: Menu:
+       0.Quit process
+       1.Push into stack
+       2.Delete from stack
+       3.Print data
+       4.Get minimum
+       0
+output:Okay bye there!
 """
 
