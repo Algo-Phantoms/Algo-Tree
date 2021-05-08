@@ -23,6 +23,7 @@ struct Node{
 
 };
  
+//finding the lowest common ancestor.
 Node* LCA(Node* root, int n1,int n2){
     if(root == nullptr){
         return nullptr;
@@ -50,6 +51,7 @@ Node* LCA(Node* root, int n1,int n2){
     return LCA(root->right,n1,n2);
 }
 
+//finding the distance between two nodes
 int finddistance(Node* root, int k, int dist){
     if(root == nullptr){
         return -1;
@@ -67,6 +69,7 @@ int finddistance(Node* root, int k, int dist){
     return finddistance(root->right,k,dist+1);
 }
 
+//calculating final distance between two nodes
 int distance(Node* root, int n1, int n2){
     Node* lca = LCA(root,n1,n2);
 
@@ -87,16 +90,20 @@ int main(){
     cin>>i>>j;
    cout<<distance(root,i,j)<<endl;  
    
-   //TEST CASE1:
-   //INPUT: i=4 ,j=5 
-   //OUTPUT: 4.
- 
-   //TEST CASE 2: 
-   //INPUT: i=3 ,j=5 
-   //OUTPUT:1.
-  
-    return 0;
+     return 0;
 }
+  
+/*
+    TEST CASE1:
+    INPUT: i=4 ,j=5 
+    OUTPUT: 4.
+ 
+    TEST CASE 2: 
+    INPUT: i=3 ,j=5 
+    OUTPUT:1.
+  
 
-//TIME COMPLEXITY:O(h) where h is the height of tree 
-//SPACE COMPLEXITY:O(1)
+
+    TIME COMPLEXITY:O(h) where h is the height of tree 
+    SPACE COMPLEXITY:O(1)
+*/
