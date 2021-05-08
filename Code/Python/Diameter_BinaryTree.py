@@ -49,6 +49,7 @@ if __name__ == '__main__':
 
 
 # The time complexity of the above algorith is O(n) where n is total no of nodes in the binary tree.
+# The code requires O(h) extra space for call stack where h is the height of the tree
 
     #    1
     #    /\
