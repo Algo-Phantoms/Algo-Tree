@@ -2,8 +2,7 @@
 // The diameter of a tree(sometimes called the width) is the number of
 // nodes on the longest path between two end nodes.
 
-// The time complexity of the above solution is O(n), 
-//where n is the total number of nodes in the binary tree. 
+
 
 import java.util.concurrent.atomic.AtomicInteger;
  
@@ -82,3 +81,7 @@ class Diameter_BinaryTree
     //        /\
     //       7  8
 
+
+
+// The time complexity of the above solution is O(n),where n is the total number of nodes in the binary tree. 
+// The code requires O(h) extra space for call stack where h is the height of the tree  
