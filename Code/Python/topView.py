@@ -47,7 +47,6 @@ def printTopView(root):
         print(dict.get(key)[0], end=' ')
 
 
-# the time complexity is O(n.log(n)) and requires O(n) extra space where n is the size of binary tree.
 if __name__ == '__main__':
 
     root = Node(1)
@@ -67,3 +66,6 @@ if __name__ == '__main__':
 # 0 —> (1, 1)
 # 1 —> (3, 2)
 # 2 —> (6, 3)
+
+
+# the time complexity is O(n.log(n)) and requires O(n) extra space where n is the size of binary tree.
