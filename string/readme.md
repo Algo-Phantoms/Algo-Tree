@@ -12,4 +12,5 @@ A string is a class that contains a char array, but automatically manages it for
 <hr>
 
 ## Questions :
+* Check String2 in String1 : [Python](/Code/Python/check_string.py)
 
