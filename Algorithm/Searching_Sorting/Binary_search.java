@@ -13,6 +13,7 @@ class Binary_search
     static int countRotations(int arr[], int low, 
                                        int high) 
     { 
+        
         // This condition is needed to handle  
         // the case when array is not rotated  
     
