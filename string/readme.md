@@ -22,3 +22,4 @@ A string is a class that contains a char array, but automatically manages it for
 * Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
+* Checking for subsequence of string ----> [Java](/Code/Java/subsequence.java)
