@@ -1,48 +1,48 @@
 # Here we are printing the matrix in clockwise direction
 
-def spiralClockwise(rows, cols, matrix):
+def spiral_clockwise(rows, cols, matrix):
 
-    rowStart = 0
-    rowEnd = rows - 1
-    colStart = 0
-    colEnd = cols - 1
+    row_start = 0
+    row_end = rows - 1
+    col_start = 0
+    col_end = cols - 1
     count = 0
 
     while(count < rows*cols):
 
         if count < rows*cols:
 
-            for cur in range(colStart, colEnd + 1):
+            for cur in range(col_start, col_end + 1):
 
                 count += 1
-                print(matrix[rowStart][cur], end=" ")
+                print(matrix[row_start][cur], end=" ")
 
-        rowStart += 1
+        row_start += 1
 
         if count < rows*cols:
 
-            for cur in range(rowStart, rowEnd + 1):
+            for cur in range(row_start, row_end + 1):
 
                 count += 1
-                print(matrix[cur][colEnd], end=" ")
+                print(matrix[cur][col_end], end=" ")
 
-        colEnd -= 1
+        col_end -= 1
 
         if count < rows*cols:
 
-            for cur in range(colEnd, colStart - 1, -1):
+            for cur in range(col_end, col_start - 1, -1):
 
                 count += 1
-                print(matrix[rowEnd][cur], end=" ")
+                print(matrix[row_end][cur], end=" ")
 
-        rowEnd -= 1
+        row_end -= 1
         if count < rows*cols:
-            for cur in range(rowEnd, rowStart - 1, -1):
+            for cur in range(row_end, row_start - 1, -1):
 
                 count += 1
-                print(matrix[cur][colStart], end=" ")
+                print(matrix[cur][col_start], end=" ")
 
-        colStart += 1
+        col_start += 1
 
 
 def main():
@@ -50,7 +50,7 @@ def main():
     columns = int(input())
     matrix = [[int(input()) for element in range(columns)] for row in range(rows)]
 
-    spiralClockwise(rows, columns, matrix)
+    spiral_clockwise(rows, columns, matrix)
 
 
 if __name__ == "__main__":
