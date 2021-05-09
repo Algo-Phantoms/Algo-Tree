@@ -53,6 +53,8 @@ that, this property should be satisfied at every node in the tree.
 * Check if a Binary Tree is a valid Binary Search Tree ----> [Java](/Code/Java/check_valid_BST.java)
 * Construction of binary tree from preorder and inorder traversal ----> [C++](/Code/C++/binary_tree_from_preorder_and_inorder.cpp) 
 * DFS traversal on Binary Tree ----> [C++](/Code/C++/binary_tree_DFS_traversal.cpp)
+* Diameter of Binary Tree ----> [C++](/Code/C++/diameter_of_binary_tree.cpp)
+* Distance between two nodes of a binary tree ----> [C++](/Code/C++/distance_between_two_nodes_of_BT.cpp)
 * Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
 * Lowest common ancestor in a binary tree ----> [Python](/Code/Python/LCA_in_binary_tree.py)
 * Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp)
@@ -64,5 +66,4 @@ that, this property should be satisfied at every node in the tree.
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp)
 * Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp)  
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp)
-
 
