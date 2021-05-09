@@ -21,3 +21,5 @@ A string is a class that contains a char array, but automatically manages it for
 * Reverse Individual Words in String ----> [Java](/Code/Java/revindivstring.java)
 * Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
 * Remove the duplicacy of characters from a word ---->[Java](/Code/Java/remove_duplicacy_in_word.java)
+* Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
+* Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
