@@ -31,3 +31,4 @@ unsolvable.
 * Rat in a Maze ----> [C++](/Code/C++/rat_in_maze.cpp)
 * N Queen Problem ----> [C++](/Code/C++/n_queen_problem.cpp)
 * Sudoku Solver ----> [C++](/Code/C++/sudoku_solver.cpp) | [Java](/Code/Java/Sudoku_Solver.java)
+* Knights Tour  ----> [Java]()
