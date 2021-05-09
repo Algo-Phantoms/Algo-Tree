@@ -12,6 +12,7 @@ A string is a class that contains a char array, but automatically manages it for
 <hr>
 
 ## Questions :
+* Check String2 in String1 : [Python](/Code/Python/check_string.py)
 
 * Convert string to lowercase and uppercase ---->[C++](/Code/C++/string_to_lowercase_and_uppercase.cpp)
 * Manacher's algorithm (finding the longest palindrome in a string) ----> [Java](/Code/Java/longPalindrome.java)
