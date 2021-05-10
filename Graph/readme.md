@@ -36,7 +36,7 @@ A graph is a pair (V, E), where V is a set of nodes, called vertices, and £ is 
 
 ## Questions :
 
-- Breath First Search ----> [C++](/Code/C++/BFS.cpp) | [Java](/Code/C++/BFS.cpp) | [Python]()
+- Breath First Search ----> [C++](/Code/C++/BFS.cpp) | [Java] | [Python]()
 - Depth First Search ----> [C++](/Code/C++/DFS.cpp) | [Java]() | [Python]()
 - Largest-Cake-Piece ----> [C++](/Code/C++/largest_cake.cpp)
 - Kruskal Algorithm ----> [C++](/Code/C++/Kruskal.cpp) | [Java](/Code/Java/Kruskals_Algorithm.java) | [Python](/Code/Python/Kruskal.py)
