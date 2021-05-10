@@ -51,3 +51,7 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Word Wrap Problem ----> [C++](/Code/C++/word_wrap.cpp)
 
+- Painting Fence Algorithm ----> [Python](/Code/Python/PaintFenceAlgo.cpp)
+
+
+
