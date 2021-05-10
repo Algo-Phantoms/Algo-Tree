@@ -21,5 +21,5 @@ current element and continue this process until the heap property is satisfied a
 
 ## Questions :
 
-* Heap Class ----> [C++](/Code/C++/heap_class.cpp) | [Java]() | [Python]()
+* Heap Class ----> [C++](/Code/C++/heap_class.cpp) | [Java]() | [Python](/Code/Python/heap_implementation.py)
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
