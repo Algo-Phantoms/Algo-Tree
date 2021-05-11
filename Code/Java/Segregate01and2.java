@@ -4,7 +4,6 @@
  The function should put all 0s first,then all 1s and all 2s in last but without using any sorting algorithm.
 */
 
-// Sample Input - 1 0 2 1 0 2 1 0 0 1 0
 class Seg01and2
 {
     // Function to sort the given array, the array is assumed to have values in between 0,1 and 2.
@@ -80,10 +79,20 @@ public class Segregate01and2
         arr.print(a);
     }
 }
-// Sample Output - 0 0 0 0 0 1 1 1 1 2 2
+
 
 /*
-Time Complexity - O(n)
-Space Complexity - O(1)
+
+Test Cases :
+1)  Input  -  1 2 0 1 0 2
+    Output -  0 0 1 1 2 2
+   
+2)  Input  -   1 0 2 1 0 2 1 0 0 1 0
+    Output -   0 0 0 0 0 1 1 1 1 2 2
+
+Complexity Analysis :
+Time Complexity   -  O(n)
+Space Complexity  -  O(1)
+
 */
 
