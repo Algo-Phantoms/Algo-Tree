@@ -98,7 +98,7 @@ if __name__=="__main__":
 #Time complexity in poping data: O(1)
 #Time complexity in printing data: O(n)                 ---->where n is size of heap
 #Time complexity in finding top element: O(1)
-
+#Space complexity: O(1)
 """
 input: 
 Enter 1 for max-heap 2 for min-heap:1
