@@ -1,10 +1,7 @@
-package openSource1;
-import java.util.Scanner;
-// Issue No - 958
 
 /*
  Given an array consisting of 0s,1s and 2s.The task is to write a function that sorts the given array.
- The function should put all 0s first,then all 1s and all 2s in last.
+ The function should put all 0s first,then all 1s and all 2s in last but without using any sorting algorithm.
 */
 
 // Sample Input - 1 0 2 1 0 2 1 0 0 1 0
