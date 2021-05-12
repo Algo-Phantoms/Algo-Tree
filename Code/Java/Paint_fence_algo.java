@@ -27,11 +27,11 @@ import java.io.*;
         int k=scn.nextInt();
         
         /*
-        Here same variable will store the number of ways in which i fences can be colored 
-        such that the color of last two fenced is same.
+        Here same variable will store the number of ways in which i posts can be colored 
+        such that the color of last two posts is same.
         
-        The diff variable will store the number of ways in which i fences can be coloured with 
-        last two fences of different color.
+        The diff variable will store the number of ways in which i posts can be coloured with 
+        last two posts of different color.
         
         The tot variable conatains sum of all ways.
         */
