@@ -17,7 +17,7 @@
         place it in map2;
       5.After this whole thing we will have map2 with the unique postions and the node's value corresponding to it and in the ascending order
         as well
-      6.So just iterate through the map2 and print the second value .
+      6.So just iterate through the map2 and print the second value...
  
  */
 
