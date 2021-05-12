@@ -1,8 +1,23 @@
 /*
  
- QUES :  Top view of a binary tree is the set of nodes visible when the tree is viewed from the top. Given a binary tree, print the top view of it. The output nodes can be    printed in any order.
+ QUES :  Top view of a binary tree is the set of nodes visible when the tree is viewed from the top. Given a binary tree, print the top view of it. The output nodes can be    printed  in any order.
 
         A node x is there in output if x is the topmost node at its horizontal distance. Horizontal distance of left child of a node x is equal to horizontal distance of x minus 1, and that of right child is horizontal distance of x plus 1.
+*/
+
+/*
+ Approach:
+      
+      1.We will create 2 maps map1 and map2,first we will store the position  corresponding to an node and the other will store the node corresponding to a
+        particular position.
+      2.And we will use level order traversal that if it's left/right root exist then it will push in the queue and stores it's pos in the
+        map1. for left node position will become pos-1 and for right node position will become pos+1.
+      3.Doing this work till queue does not become empty;
+      4.While poping the element ,find the pos corresponding to it .If the key as the pos is already present in map2 don't do anything otherwise
+        place it in map2;
+      5.After this whole thing we will have map2 with the unique postions and the node's value corresponding to it and in the ascending order
+        as well
+      6.So just iterate through the map2 and print the second value .
  
  */
 
@@ -75,55 +90,6 @@ BinaryTreeNode< int >* takeInput() {
     return root;
 }
 
-
-/*
-Creating a void function that will print the top view of Binary Tree
-
-
- Consider example:
-          1
-        2   3
-      4  5 6  7
-
-      output: 4 2 1 3 7
-
-      let's assign the position to the root pos=0;
-      and the left node will have left_pos=pos-1;
-      and the right node will have right_pos=pos+1;
-
-      therefore: 1=0
-                 2=-1
-                 3=1
-                 4=-2
-                 5=0
-                 6=0
-                 7=2
-      If we carefully observe this ,the numbers lies  in the same vertical line will have the same postion
-      for pos=0 no: 1,5,6
-
-      so if we safe the node's value corresponding to every unique position in map will provide the top most view in the particular
-      order from leftmost to rightmost .
-      But the point is what to do with the repeating pos like in the case for pos=0 .So we will make sure that if key corresponding
-      to the particular pos is not being created then we have to place a key-value pair into it otherwise don't.
-      By storing the node for the first occurance of the particular position will just store the outerost elements and thus in return
-      giving us the top-most view.
-
-      Approach:
-
-      We will create 2 maps map1 and map2,first will store the pos corresponding to an node and the other will store the node correspondingto a
-      particular position
-      And we will use level order traversal that if it's left/right root exist then it will push in the queue and stores it's pos in the
-      map1.
-      Doing this work till queue does not become empty;
-      While poping the element ,find the pos corresponding to it .If the key as the pos is already present in map2 don't do anything otherwise
-      place it in map2;
-      After this whole thing we will have map2 with the unique postion and the node's value corresponding to it and in the ascending order
-      as well
-      So just iterate through the map2 and print the second value .
-*/
-
-
-
 void TopViewofBT( BinaryTreeNode< int >* root )
 {
 	//Base Case
@@ -141,6 +107,7 @@ void TopViewofBT( BinaryTreeNode< int >* root )
     
     queue< Node* >q;
     
+    //initializing the root's position as 0;
     m[root] = 0;
     
     q.push( root );
@@ -164,7 +131,7 @@ void TopViewofBT( BinaryTreeNode< int >* root )
         
         if( temp->left )
         {
-            //pos_left=pos-1
+            //pos_left = pos-1
             m[temp->left] = t - 1;
             q.push(temp->left);
         }
@@ -173,7 +140,7 @@ void TopViewofBT( BinaryTreeNode< int >* root )
         
         if(temp->right)
         {
-            //pos_right=pos+1;
+            //pos_right = pos+1;
             q.push( temp->right );
             m[temp->right] = t + 1;
         }
