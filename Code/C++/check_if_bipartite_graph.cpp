@@ -1,9 +1,9 @@
 /*
 Check if a graph is bipartite graph.
 
-A Bipartite graph is a graph whose vertcies can be divided into independent sets such that for every edge(u,v) u and v belong to different set i.e all edges should be from one set to another.
-A bipartite graph is possible if the graph coloring is possible using two colors such that vertices in a set are colored with same color.
+A Bipartite graph is a graph whose vertcies can be divided into independent sets such that for every edge(u,v) u and v belong to different set i.e all edges should be from one set to another.Itis possible if the graph coloring is possible using two colors such that vertices in a set are colored with same color.
 */
+
 /*
 We are trying to split the graph into two groups of edges.
 So we color the edges, 1 = red, -1 = blue, 0 = not colored yet.
@@ -76,28 +76,30 @@ int main(){
 }
 
 /*
-Input : 
-    4
-    4
-    0 1
-    1 2
-    2 3
-    0 3
-Output: 
-    The graph is Bipartite
 
-Input
-    5
-    5
-    0 1
-    1 2
-    2 3
-    3 4
-    4 0
-Output:
-    The graph is not Bipartite
+TestCase:
+    Input : 
+        4
+        4
+        0 1
+        1 2
+        2 3
+        0 3
+    Output: 
+        The graph is Bipartite
+
+    Input
+        5
+        5
+        0 1
+        1 2
+        2 3
+        3 4
+        4 0
+    Output:
+        The graph is not Bipartite
 
 Time Complexity : O(V + E)  
-Space Complexity : O(V)     
-where V is the number of vertices and E is the no of edges
+Space Complexity : O(V)     where V is the number of vertices and E is the no of edges
+
 */
