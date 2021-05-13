@@ -11,11 +11,9 @@ class Edge:
 # Structure to represent a directed and weighted graph
 class Graph:
 	def __init__(self):
-		
 		# V. Number of vertices, E - Number of edges
 		self.V = 0
 		self.E = 0
-		
 		# Graph is represented as an array of edges.
 		self.edge = []
 	
