@@ -1,9 +1,16 @@
+/*
+The longest repeating subsequence problem is a classic variation of the Longest Common Subsequence (LCS) problem. 
+The idea is to find the LCS of the given string with itself, i.e., call LCS(X, X) and 
+exclude the cases when indexes are the same (i = j) since repeated characters hold a different index in the input string.
+
+            | 0                                    (if i = 0 or j = 0)
+LRS[i][j] = | LRS[i-1][j-1] + 1                    (if X[i-1] = X[j-1] & i!=j)
+            | max (LRS[i-1][j], LRS[i][j-1])       (if X[i-1] != X[j-1])
+*/
 import java.util.Scanner;
 
 class LongestRepeatingSubsequence {
-
-    // Time Complexity - O(n^2)
-    // Space Complexity - O(n^2)
+    
     // Function to find LRS of substrings X[0…m-1], X[0…n-1]
     public static String LRS(String X, int m, int n, int[][] T) {
 
@@ -88,6 +95,9 @@ class LongestRepeatingSubsequence {
         // System.out.println("The longest repeating subsequence is " + result);
     }
 }
+
+// Time Complexity - O(n^2)
+// Space Complexity - O(n^2)
 
 // TestCase-1
 // Input
