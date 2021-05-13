@@ -38,6 +38,7 @@ properties.
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
 * Ispalindrome ----> [Python](/Code/Python/isPalindrome_linked_list.py)
 * Middle Element ----> [Python](/Code/Python/middle_element_linked_list.py)
+* Remove Duplicates from Unsorted List ----> [C++](/Code/C++/remove_duplicates.cpp)
 * Reversing a Linked List ----> [C++](/Code/C++/reverse_a_linked_list.cpp)
 * Splitting ----> [C++](/Code/C++/Splitting_Linked_lists.cpp)
 * Unrolled Linked List Implementation ----> [C++](/Code/C++/unrolled_linked_list.cpp)
