@@ -65,4 +65,4 @@
 - All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
 - To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
 - Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
-- All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
+- Sliding Window Maximum ----> [Python](/Code/Python/SlidingWindowMax.py)
