@@ -91,8 +91,12 @@ Test Cases :
     Output -   0 0 0 0 0 1 1 1 1 2 2
 
 Complexity Analysis :
+
 Time Complexity   -  O(n)
+We are looping from 0 to n where n is length of the array(array only traversed once).So the time complexity is O(n).
+
 Space Complexity  -  O(1)
+No space is used.We are using constant space.
 
 */
 
