@@ -1,37 +1,37 @@
-/*Check if the linked list is palindrome or not if yes return true if not return false. Linked list has to be taken as an input from the user.*/
-Node* reverse(Node *save)
-{
-   if(save==NULL || save->next==NULL)  
-    {
-
-        return save;
-    }
+   /*Check if the linked list is palindrome or not if yes return true if not return false. Linked list has to be taken as an input from the user.*/
+       Node* reverse (Node *save)
+       {
+          if(save == NULL || save->next == NULL)  
+           {
     
-    Node *new_head = reverse(save->next);
-    Node *temp = save->next;      
-    temp->next = save;
-    save->next = NULL;
-    return new_head; 
-}
-bool isPalindrome(Node *head)
-{
-    Node *help=head;
-  Node *temp = reverse(help);
+               return save; // BASE CASE: if it is empty or is of size one
+           }
     
-    if(head==NULL){
-        return 1;
-    }
-    while(temp && help){
-        if(temp->data != help->data){
-            return 0;
-        }
-        else{
-            return 1;
-        }
-        temp = temp->next;
-        head = head->next;
-    }
-}
+           Node *new_head = reverse(save->next);//RECURSIVE CALL
+           Node *temp = save->next;      
+           temp->next = save;
+           save->next = NULL;
+           return new_head; 
+       }
+       bool isPalindrome (Node *head)
+       {
+           Node *help=head;
+           Node *temp = reverse(help);//reversing the linked list ans saving its head in temp
+    
+           if(head==NULL){
+               return 1;
+           }
+           while(temp && help){
+               if(temp->data != help->data){  //comparing the given input linked list with its reverse
+                   return 0;
+               }
+               else{
+                   return 1;
+               }
+               temp = temp->next;
+               head = head->next;
+           }
+       }
 /*
 ----------------------------------------------------------------------------------
 SAMPLE TEST CASE 1:
