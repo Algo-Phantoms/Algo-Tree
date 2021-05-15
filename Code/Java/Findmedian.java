@@ -1,14 +1,11 @@
 /*
 Problem statement: A stream of integers is given and we have to find the median of the stream.
 
-
 Solution: Median is the middle element that is a boundary of the lower half and the higher half. If the input array size is odd, then the middle element of the sorted data is taken to be the median and if the iput array sizs is even, then the average of the two middle elements from the sorted streams is taken to be the median. Here, we have solved the problem using two heaps that is the less heap and more heap which is implemented using the priority queue class in Java.
-
 
 Implementation of code:
 
 Step 1: Two heaps have been created. The less heap to store higher half of the stream and the more heap to store the lower half of the stream. The median value is initialized to 0.
-
 Step 2: Now there can be 3 cases:
 Case 1: When the size of more heap is more than the size of less heap and the element is less than the previous median then, pop the top element of the more heap and insert it into less heap and insert the new element in the more heap or else insert the new element to less heap. The new median is the average of top elements of both the heaps.
 Case 2: When the size of more heap is less than the size of less heap and the element is greater than the previous median then, pop the top element of the less heap and insert into the more heap and insert the new element to less heap or else insert the new element to more heap. The new median is the average of top elements of both the heaps.
@@ -110,4 +107,3 @@ Time complexity: The time complexity is of order O(nlog n) because the complexit
 
 Space complexity: The space complexity is of order O(n).
 */
-
