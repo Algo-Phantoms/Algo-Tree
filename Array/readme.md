@@ -32,7 +32,6 @@ To create an array, you need to known the length (or size) of the array in advan
  * Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
  * Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
  * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp) 
- * K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) 
  * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
  * K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) | [Java](/Code/Java/K Largest Elements.java)
  * Left_rotation ----> [Python](/Code/Python/left_rotation.py)
@@ -43,7 +42,6 @@ To create an array, you need to known the length (or size) of the array in advan
  * Search in sorted rotated array ----> [Python](/Code/Python/search_in_sorted_rotated_array.py)
  * Sliding Window Maximum ---->[C++](/Code/C++/Sliding_Window_Maximum.cpp)
  * Three Sum ----> [Python](/Code/Python/Three_Sum.py)
- * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
- * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
+ * Union of two Unsorted Arrays ----> [C++](/Code/C++/Union_of_two_unsorted_array.cpp)
  * Rotation Count in a sorted array ----> [Python](/Code/Python/RotationCount.py)
 
