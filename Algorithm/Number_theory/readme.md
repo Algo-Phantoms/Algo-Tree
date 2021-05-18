@@ -49,6 +49,7 @@
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
 - Program to check a string is a pangram----> [Python](/Code/Python/check_pangram.py)
 - To check for palindrome number---->[Java](/Code/Java/Palindrome_number.java) 
+- Generate Unique numbers ----> [Java](/Code/Java/unique_number.java)
 
 ## Questions related to Number The  
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
@@ -66,3 +67,4 @@
 - To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
 - Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
 - All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
+- Generate Unqiue numbers ----> [Java](/Code/Java/unique_number.java)
