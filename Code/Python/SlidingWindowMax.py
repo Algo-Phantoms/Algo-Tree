@@ -55,7 +55,7 @@ lst= { 5 2 -1 0 3 }
 Output : 6
 
 
-Time Complexity : O(N)
+Time Complexity : O(N)  # here N= number of entries in the array
 Space Complexity : O(1)
 '''
 
