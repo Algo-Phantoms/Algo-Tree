@@ -1,3 +1,10 @@
+/*
+AVL tree is basically a self-balancing binary search tree in which the balancing factor
+i.e difference between the height of left-subtree and right-subtrees is either 0 or 1 or -1
+(not more than one). If the balance factor is disturbed then we need to rotate the nodes 
+to maintain the balance factor.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -15,7 +22,7 @@ void inorder(node* root)
         return;
 
     inorder(root->left);
-    cout<<root->info<<" ";
+    cout << root->info<<" ";
     inorder(root->right);
 }
 
@@ -25,7 +32,7 @@ void preorder(node* root)
    if(root == NULL)
     return;
 
-   cout<<root->info<<" ";
+   cout << root->info<<" ";
    preorder(root->left);
    preorder(root->right);
 }
@@ -38,7 +45,7 @@ void postorder(node* root)
 
    preorder(root->left);
    preorder(root->right);
-   cout<<root->info<<" ";
+   cout << root->info<<" ";
 }
 
 //height() will calculate the height of the tree
@@ -172,23 +179,23 @@ node* AVLinsertion(node* root , int data)
     root->height = (max(height(root->left) , height(root->right))+1);
 
     //Insertion is done now conditions for rotation if needed.
-    if(BalanceFactor(root)==2 && BalanceFactor(root->left)==1)
+    if(BalanceFactor(root) == 2 && BalanceFactor(root->left) == 1)
         return LLrotation(root);
 
-    if(BalanceFactor(root)==2 && BalanceFactor(root->left)==-1)
+    if(BalanceFactor(root) == 2 && BalanceFactor(root->left) == -1)
         return LRrotation(root);
 
-    if(BalanceFactor(root)==-2 && BalanceFactor(root->right)==-1)
+    if(BalanceFactor(root) == -2 && BalanceFactor(root->right) == -1)
         return RRrotation(root);
 
-    if(BalanceFactor(root)==-2 && BalanceFactor(root->right)==1)
+    if(BalanceFactor(root) == -2 && BalanceFactor(root->right) == 1)
         return RLrotation(root);
 
     return root;
 }
 
 //return the minimum node of the tree
-node* minimumnode(node *root)
+node* minimum_node(node *root)
 {
     if(root == NULL)
         return NULL;
@@ -197,11 +204,11 @@ node* minimumnode(node *root)
         return root;
 
     else
-        minimumnode(root->left);
+        minimum_node(root->left);
 }
 
 //return the maximum node of the tree
-node* maximumnode(node *root)
+node* maximum_node(node *root)
 {
     if(root == NULL)
         return NULL;
@@ -210,28 +217,28 @@ node* maximumnode(node *root)
         return root;
 
     else
-        maximumnode(root->right);
+        maximum_node(root->right);
 }
 
 //deletes an element from tree
-node* deleteelement(node *root , int data)
+node* delete_element(node *root , int data)
 {
     if(root == NULL)
         return root;
 
     if(data < root->info)
-        root->left = deleteelement(root->left , data);
+        root->left = delete_element(root->left , data);
 
     else if(data > root->info)
-        root->right = deleteelement(root->right , data);
+        root->right = delete_element(root->right , data);
 
     else
     {
         if(root->left != NULL && root->right != NULL)
         {
-            node* temp = minimumnode(root->right);
+            node* temp = minimum_node(root->right);
             root->info = temp->info;
-            root->right = deleteelement(root->right , temp->info);
+            root->right = delete_element(root->right , temp->info);
         }
 
         else if(root->left != NULL)
@@ -247,18 +254,18 @@ node* deleteelement(node *root , int data)
     if(root == NULL)
         return root;
 
-    root->height = 1+(max(height(root->left) , height(root->right)));
+    root->height = 1 + (max(height(root->left) , height(root->right)));
 
-    if(BalanceFactor(root)==2 && BalanceFactor(root->left)==1)
+    if(BalanceFactor(root) == 2 && BalanceFactor(root->left) == 1)
         return LLrotation(root);
 
-    else if(BalanceFactor(root)==2 && BalanceFactor(root->left)==-1)
+    else if(BalanceFactor(root) == 2 && BalanceFactor(root->left) == -1)
         return LRrotation(root);
 
-    else if(BalanceFactor(root)==-2 && BalanceFactor(root->right)==-1)
+    else if(BalanceFactor(root) == -2 && BalanceFactor(root->right) == -1)
         return RRrotation(root);
 
-    else if(BalanceFactor(root)==-2 && BalanceFactor(root->right)==1)
+    else if(BalanceFactor(root) == -2 && BalanceFactor(root->right) == 1)
         return RLrotation(root);
 
     return root;
@@ -279,21 +286,19 @@ int checkAVL(node* root)
     return 0;
 }
 
-
-
 int main()
 {
     node *root = NULL;
     int data,choice;
     while(1)
     {
-        cout<<"\n1. Insertion";
-        cout<<"\n2. Deletion";
-        cout<<"\n3. Traversal";
-        cout<<"\n4. Check for AVL";
-        cout<<"\n5. EXIT";
-        cout<<"\nENTER CHOICE : ";
-        cin>>choice;
+        cout << "\n1. Insertion";
+        cout << "\n2. Deletion";
+        cout << "\n3. Traversal";
+        cout << "\n4. Check for AVL";
+        cout << "\n5. EXIT";
+        cout << "\nENTER CHOICE : ";
+        cin >> choice;
 
         switch(choice)
         {
@@ -301,8 +306,8 @@ int main()
             {
                 while(1)
                 {
-                    cout<<"\nEnter element or press -1 : ";
-                    cin>>data;
+                    cout << "\nEnter element or press -1 : ";
+                    cin >> data;
                     if(data == -1)
                         break;
                     else
@@ -310,46 +315,40 @@ int main()
                 }
                 break;
             }
-
         case 2:
             {
-                cout<<"\nEnter element to be deleted : ";
-                cin>>data;
-                deleteelement(root , data);
+                cout << "\nEnter element to be deleted : ";
+                cin >> data;
+                delete_element(root , data);
                 break;
             }
-
         case 3:
             {
-                cout<<"\nPre-order traversal of the tree formed = ";
+                cout << "\nPre-order traversal of the tree formed = ";
                 preorder(root);
 
-                cout<<"\nIn-order traversal of the tree formed = ";
+                cout << "\nIn-order traversal of the tree formed = ";
                 inorder(root);
 
-                cout<<"\nPost-order traversal of the tree formed = ";
+                cout << "\nPost-order traversal of the tree formed = ";
                 postorder(root);
-
                 break;
             }
-
         case 4:
             {
                 if(checkAVL(root) == 1)
-                    cout<<"\nTree is AVL";
+                    cout << "\nTree is AVL";
                 else
-                    cout<<"\nTree is not AVL";
+                    cout << "\nTree is not AVL";
                 break;
             }
-
         case 5:
             {
                 exit(0);
                 break;
             }
-
         default:
-            cout<<"\nINVALID CHOICE\n";
+            cout << "\nINVALID CHOICE\n";
         }
     }
     return 0;
