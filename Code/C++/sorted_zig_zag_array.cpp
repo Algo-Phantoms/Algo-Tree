@@ -1,6 +1,6 @@
 /*
-Approach : Swap pairs of elements except the first element.
-As - keep a[0], swap a[1] with a[2], swap a[3] with a[4], and so on.
+Approach : First sort the array then, swap pairs of elements
+except the first element. Example - keep a[0], swap a[1] with a[2], swap a[3] with a[4], and so on.
 So, we will take array and its size as parameters, run a loop from i to size of the array 
 and swap every pair of element using swap function. At the end of loop, we will print the array.
 */
@@ -50,8 +50,5 @@ int main()
 
     Time Complexity : O(n log n)
     Space Complexity : O(1)
-
-    If we want a sorted data we can first sort the array
-    using sort() and then call the zigzag() function.
 */
 
