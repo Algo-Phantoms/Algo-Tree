@@ -1,81 +1,61 @@
-//Cpp program for Sliding Window Maximum.
-/*
-         Approach
-         ========
-               The basic Approach is to use a deque (b) to save all currently "maximum" elements.
-               
-               1. So for each i,we first pop up the elements that are no larger than (vector) v[i].
-               2. From b until we find one that is larger than v[i] or the b is empty since those elements
-                  will be covered by v[i] and can not be a maximum of any k-element window. 
-               3. Then we put v[i] in the b.
-               4. If i>=k-1, we need to ouput the maximum for window [i-k+1, i], 
-                  which is the front element of b.
-               5. We will check if the front element is v[i-k+1],
-               6. If so, we have to pop it up since it will be out of the
-                  window [i-k+2, i+1] in the next iteration.
+/* 
+Problem: Given an array and an integer K, find the maximum for each and every contiguous subarray of size k.
+eg.) Input: arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, k = 3
+     Output: 3 4 5 6 7 8 9 10 
+Explanation: Maximum of first window 1,2,3 is ---> 3
+	     Maximum of next window 2,3,4 is ---> 4
+	     Maximum of next window 3,4,5 is ---> 5
+	     Maximum of next window 4,5,6 is ---> 6
+	     Maximum of next window 5,6,7 is ---> 7
+	     Maximum of next window 6,7,8 is ---> 8
+	     Maximum of next window 7,8,9 is ---> 9
+	     Maximum of next window 8,9,10 is ---> 10
 */
 
 #include <bits/stdc++.h>
 using namespace std;
-int main()
-{
+
+// Function to slide the window and get maximum of them.
+void slide_window(int arr[], int n, int k) {
     vector<int> v;
-    deque<int> b;
-    vector<int> r;
-    int n, m, i, k;
-    cout << "\nEnter the size of the array(N) and value of K(size of window):";
-    cin >> n >> k;
-    cout << "\nEnter the elements of the array:";
-    for (int i = 0; i < n; i++)
-    {
-        cin >> m;
-        v.push_back(m);
+    priority_queue<int> maxh;  // max-heap
+    for (int i = 0; i < n; i++) {
+        maxh.push(arr[i]);
+
+        // If size of max-heap is equal to k, store the top element and then make the heap empty.
+        if (maxh.size() == k) {
+            cout << maxh.top() << " ";
+            while (maxh.size() > 0)
+                maxh.pop();
+            if (i == n)
+                return;
+            else
+                i -= k - 1;
+        }
     }
-    for (auto i = 0; i < v.size(); ++i)
-    {
-        while (!b.empty() && v[i] >= v[b.back()])
-            b.pop_back();
-        b.push_back(i);
-        if (i >= k - 1)
-            r.push_back(v[b.front()]);
-        if (b.front() <= i - k + 1)
-            b.pop_front();
+}
+
+int main() {
+    int n, k;
+    cout << "Size of array: ";
+    cin >> n;
+    cout << "Array elements: ";
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
     }
-    cout << "\nThe resultant array : ";
-    for (auto i = 0; i < r.size(); ++i)
-    {
-        cout << r[i] << " ";
-    }
+    cout << "Value of k: ";
+    cin >> k;
+    slide_window(arr, n, k);
     return 0;
 }
-/*
-           Time complexity is O(N).
-           Space Complexity is O(N).
-           
-           Sample Input/Output
-           
-           Sample Input 1:
-               8 3
-               1 3 -1 -3 5 3 6 7 
-           Sample Output 1:
-               Enter the size of the array(N) and value of K(size of window):
-               Enter the elements of the array:
-               The resultant array : 3 3 5 5 6 7 
-               
-           Sample Input 2:
-               8 4
-               1 3 -1 -3 5 3 6 7 
-           Sample Output 2:
-               Enter the size of the array(N) and value of K(size of window):
-               Enter the elements of the array:
-               The resultant array : 3 5 5 6 7 
-               
-           Sample Input 3:
-               8 3
-               3 4 2 4 5 6 7 8 
-           Sample Output 3:
-               Enter the size of the array(N) and value of K(size of window):
-               Enter the elements of the array:
-               The resultant array : 4 4 5 6 7 8
-               
+
+/* Test Cases
+1) Input --> arr[] = {8, 5, 10, 7, 9, 4, 15, 12, 90, 13}, k = 4
+   Output --> 10 10 10 15 15 90 90 
+2) Input --> arr[] = {1, 2, 3, 1, 4, 5, 2, 3, 6} , k = 3
+   Output --> 3 3 4 5 5 5 6 
 */
+
+// Time Complexity ---> O(n*(logk + k)) = O(n*k)
+// Space Complexity ----> O(k) <---- To store elements in heap
