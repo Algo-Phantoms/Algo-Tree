@@ -8,23 +8,6 @@
         (its compulsory to define the root node because for different root nodes ,we will have different subtrees)
 
 
-
-    EXAMPLE TREE
-
-                                                  take  0 as the root node
-
-                    0                             subtree size node 0    : 10
-                /   |   \                         subtree size of node 1 :  7
-              1     2    3                        subtree size of node 2 :  1
-            /  |  \                               subtree size of node 3 :  1
-           4   5   6                              subtree size of node 4 :  3
-          / \      /                              subtree size of node 5 :  1
-         7   8    9                               subtree size of node 6 :  2
-                                                  subtree size of node 7 :  1
-                                                  subtree size of node 8  : 1
-                                                  subtree size of node 9  : 1
-
-
      ALGORITHM
 
     1.We use DFS (depth first search ) approach to solve this problem
@@ -95,10 +78,6 @@ int main() {
 
 /*USER'S INPUT AND OUTPUT
 
-TIME COMPLEXITY :  O(n)  (in order to calculate n-1 edges) 
-
-SPACE COMPLEXITY : O(n) (to keep track of visited nodes and array to store subtree size)
-
 SAMPLE INPUT OUTPUT 1
 
                 0
@@ -162,4 +141,9 @@ SAMPLE INPUT OUTPUT 1
     node : 7 subtree_nodes : 1 
     node : 8 subtree_nodes : 1 
     node : 9 subtree_nodes : 1
-    */
+
+   
+    TIME COMPLEXITY :  O(n)  (in order to calculate n-1 edges) 
+    SPACE COMPLEXITY : O(n) (to keep track of visited nodes and array to store subtree size)
+   
+*/
