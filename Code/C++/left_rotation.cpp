@@ -30,13 +30,19 @@ int main(void)
 {
   //dummy max length
   int arr[100]; 
+  //Number of times the array needs to be left rotated
+  int count = 0; 
+
+  cin>>count;//Count Input
   int i = 0;
-  while (cin >> arr[i]) //Input
+  while (cin >> arr[i]) //Array Input
   {
     ++i;
   }
 
+  for (int k = 0; k < count; ++k){
   left_rotation(arr, i); //function call
+  }
 
   for (int k = 0; k < i; ++k) // Output
   {
@@ -48,14 +54,16 @@ int main(void)
 /* 
 	Test case :
 
-	Input  : 1 2 3 4 5
+	Input  : 1
+           1 2 3 4 5
 	Output : 2 3 4 5 1
 
 
-	Input  : -1 -5 -9 5 0
+	Input  : 1 
+          -1 -5 -9 5 0
 	Output : -5 -9 5 0 -1
 
-	Time Complexity: O(n), where n is the length of the array  
+	Time Complexity: O(n^2), where n is the length of the array  
 	Space Complexity: O(1) 
 
  */
