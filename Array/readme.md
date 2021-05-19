@@ -25,7 +25,6 @@ To create an array, you need to known the length (or size) of the array in advan
 
 ## Questions :
 
- * 3 Sum Problem      ----> [C++](/Code/C++/ThreeSum.cpp)
  * Counting rotations in a sorted array ---> [Python](/Code/Python/Count_of_rotations.py)
  * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
  * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
@@ -42,7 +41,7 @@ To create an array, you need to known the length (or size) of the array in advan
  * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
  * Search in sorted rotated array ----> [Python](/Code/Python/search_in_sorted_rotated_array.py)
  * Sliding Window Maximum ---->[C++](/Code/C++/Sliding_Window_Maximum.cpp)
- * Three Sum ----> [Python](/Code/Python/Three_Sum.py)
+ * Three Sum ----> [C++](/Code/C++/ThreeSum.cpp) | [Python](/Code/Python/Three_Sum.py)
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Rotation Count in a sorted array ----> [Python](/Code/Python/RotationCount.py)
