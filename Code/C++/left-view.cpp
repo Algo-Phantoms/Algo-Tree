@@ -2,7 +2,6 @@
  QUESTION : Print the left view of a given Binary Tree
  
  APPROACH :
- 
  We will use Level Order Traversal of a Binary Tree with some extensions,that will  print the first node of every level in a Binart Tree
  Note :
  
@@ -12,12 +11,7 @@
  3. We will maintain a curr and a count variable that will store the number of nodes in a curr level and next level respectively. count  will always get incremented as soon as we push the node in the queue for the level on which we are working . curr will always get decremented as soon as the node  get popped out from queue.
  4. As soon as our curr becomes 0 ,curr will get the value of count and count will be back to 0 so that it can count the nodes for the next level.
  5. This is how we will get to every level and will prints the first node's data that we will encounters.
- 
- 
  */
-
-
-
 
 #include<iostream>
 using namespace std;
@@ -154,13 +148,9 @@ void leftview ( BinaryTreeNode< int >* root )
 
 int main()
 {
-    
     BinaryTreeNode<int>* root = takeInput();
     leftview(root);
-    
 }
-
-
 /*
  EXAMPLE :
  
@@ -182,9 +172,7 @@ int main()
  
 OUTPUT :  11 6 2
  
- 
- 
- TIME COMPLEXITY  : O(n)
+TIME COMPLEXITY  : O(n)
  
  SPACE COMPLEXITY : O(n)
  
