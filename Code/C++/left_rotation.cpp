@@ -30,6 +30,7 @@ int main(void)
 {
   //dummy max length
   int arr[100]; 
+	
   //Number of times the array needs to be left rotated
   int count = 0; 
 
@@ -55,12 +56,12 @@ int main(void)
 	Test case :
 
 	Input  : 1
-           1 2 3 4 5
+           	 1 2 3 4 5
 	Output : 2 3 4 5 1
 
 
 	Input  : 1 
-          -1 -5 -9 5 0
+          	 -1 -5 -9 5 0
 	Output : -5 -9 5 0 -1
 
 	Time Complexity: O(n^2), where n is the length of the array  
