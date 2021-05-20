@@ -61,5 +61,5 @@ The number of ways of painting the fence is : 6
 
 Complexity Analysis
 Time complexity - O(n)
-Space complexity - O(n), where n is the number of posts
+Space complexity - O(1), where n is the number of posts
 */
