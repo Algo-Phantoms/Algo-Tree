@@ -56,6 +56,7 @@ that, this property should be satisfied at every node in the tree.
 * DFS traversal on Binary Tree ----> [C++](/Code/C++/binary_tree_DFS_traversal.cpp)
 * Diameter of Binary Tree ----> [C++](/Code/C++/diameter_of_binary_tree.cpp)
 * Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
+* Right Side View of Binary Tree ----> [Java](/Code/java/Right_Side_View_Of_BinaryTree.java)
 * Lowest common ancestor in a binary tree ----> [Python](/Code/Python/LCA_in_binary_tree.py)
 * Red Black Tree (Insertion and Deletion operation) ----> [Java](/Code/Java/RedBlackTree.java) 
 * Right Side View of Binary Tree ----> [C++](/Code/C++/Right_Side_View_of_Binary_Tree.cpp)
@@ -64,6 +65,8 @@ that, this property should be satisfied at every node in the tree.
 * Distance between two nodes of a binary tree ----> [C++](/Code/C++/distance_between_two_nodes_of_BT.cpp)
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) | [Java](Code\Java\Searching_in_BST.Java)
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
+* Top-View of a Binary tree ----> [C++](/Code/C++/Top-View.cpp) 
 * Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp)
 * Maximum Topology Short ----> [C++](/Code/C++/Max_Topology_Short.cpp)
+
 
