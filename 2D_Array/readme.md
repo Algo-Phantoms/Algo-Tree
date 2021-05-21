@@ -19,3 +19,6 @@ Due to the fact that the elements of 2D arrays can be random accessed. Similar t
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
 * Transpose of a Matrix --->[Java](/Code/Java/transpose.java)|[Python](/Code/Python/Transpose_of_matrix.py)
 * Wave Print ----> [C++](/Code/C++/wave_print.cpp)
+* Transpose of a Matrix ----> [Python](/Code/Python/Transpose_of_matrix.py)
+* Wave Print ----> [C++](/Code/C++/wave_print.cpp)
+* Row wise sum ---->[java](/Code/java/RowWise_Sum.java)
