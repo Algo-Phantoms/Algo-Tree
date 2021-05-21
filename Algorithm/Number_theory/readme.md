@@ -37,10 +37,10 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
+
 ## Questions related to Number Theory
 
-- All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
-- All Unique Prime Factors of any number N ----> [C++](/Code/C++/Unique_prime_factor.cpp)
+- All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java) | [C++](/Code/C++/Unique_prime_factor.cpp)
 - Checking for Anagram ---->[Python](/Code/Python/Anagram.py)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java) | [Python](/Code/Python/TrimorphicNumber.py)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
@@ -48,8 +48,9 @@
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
 - Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
+- Palindrome Number --->[Python](/Code/Python/palindrome_number.py)
 - Program to check a string is a pangram----> [Python](/Code/Python/check_pangram.py)
 - Square Root using Binary Search ----> [Java](Code/Java/sqrt.java)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
