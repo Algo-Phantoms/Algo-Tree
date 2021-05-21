@@ -1,0 +1,126 @@
+/*
+Morris Inorder Tree Traversal algorithm provides an efficient way to traverse 
+a binary tree without using extra memory space like stack, and without using
+recursion.That means it's space complexity is constant i.e. O(1).
+
+STEPS INVOLVED IN IMPLEMENTATION
+1. Find the inorder predecessor of the node before going to it's left sub-tree.
+2. Connect that predecessor to the node, so that we have a path to come back to the node. Connect node to the right of the predecessor.
+3. To find predecessor, goto the left node of the current node and find the right-most node of it.
+4. After traversing the left sub-tree, remove that connection and leave the tree as it was.
+
+EXAMPLE
+
+                          10
+                        /   \
+                       5    20
+                     / \     \
+                   -2   6    21
+                    \
+                    3
+                   /
+                  1
+                   
+    In the above given example, the connections in red color are the predecessor's connection.
+			      
+*/
+#include <bits/stdc++.h>
+using namespace std;
+
+struct Node {
+	int data;
+	Node* left, *right;
+	Node(int value)
+	{
+		data=value;
+		left=NULL;
+		right=NULL;
+	}
+};
+
+void MorrisTraversal(struct Node* root)
+{   
+    if (root == NULL)
+	  return;
+	
+  struct Node *current=NULL, *previous=NULL;
+     current = root;
+	
+  	while (current != NULL) {
+
+		if (current->left != NULL) 
+		{	
+                  previous = current->left;
+		
+			     while (previous->right != NULL && previous->right != current)
+			     previous = previous->right;
+
+			     if (previous->right != NULL) 
+			     {
+				    cout<<current->data<<" ";
+				    current = current->right;
+			    	previous->right = NULL;
+			     }
+           else 
+			     {
+			        previous->right = current;
+				      current = current->left;
+			     } 
+		 }
+		 else
+		 {
+	        cout<<current->data<<" ";
+			    current = current->right;
+		 } 
+	} 
+}
+
+int main()
+{
+	struct Node* root = new Node(1);
+	root->left = new Node(2);
+	root->right = new Node(3);
+	root->left->left = new Node(4);
+	root->left->right = new Node(5);
+
+	MorrisTraversal(root);
+
+	return 0;
+}
+
+/*
+Test Case 1:
+
+                         6
+                          \
+                          10
+                           \
+                           20
+                            \
+                            30
+    
+Output:
+6 10 20 30
+
+Test Case 2:
+
+                          12
+                        /   \
+                       7    20
+                     / \     \
+                   -2   9    25
+                    \
+                    3
+                   /
+                  2
+                /
+               1
+               
+Output:
+-2 1 2 3 7 9 12 20 25
+
+COMPLEXITIES:
+time complexity : O(n) ;  n is number of nodes in a tree
+space complexity:O(n) ; n is number of nodes in a tree
+
+*/
