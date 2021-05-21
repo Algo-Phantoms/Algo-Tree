@@ -1,6 +1,10 @@
 /*
 Find the Dublicate in the array.
-
+Here we will transverse all element of array in first start upto end.
+For every element,take its absolute value and if the abs(array[i])‘th element
+is positive, the element has not encountered before, else if negative the
+element has been encountered before print the absolute value of the
+current element.
 */
 package array_dublicate;
 import java.util.Scanner;
