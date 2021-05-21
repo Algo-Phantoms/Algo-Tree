@@ -16,6 +16,7 @@
 - [Sieve of Eratosthenes With Linear Time Complexity](https://cp-algorithms.com/algebra/prime-sieve-linear.html)
 - [Primality tests](https://cp-algorithms.com/algebra/primality_tests.html)
 - [Integer factorization]()
+- [Counting Divisors Using Sieve](https://github.com/Ritu7683/Algo-Tree/blob/main/Algorithm/Number_theory/Counting_Divisors_using_Sieve.cpp)
 
 #### Number-theoretic functions
 
