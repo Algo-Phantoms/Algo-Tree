@@ -30,7 +30,7 @@ public class Dublicate_array {
     }
 }
 /*
-    Test Cases:
+    Test Cases :
         Input: 5
                1 2 2 3 1
         Output:2 1
