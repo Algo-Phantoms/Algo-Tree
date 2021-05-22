@@ -1,5 +1,4 @@
 /*
-Idea is same which is used all over the world for transforming from binary to decimal
 The idea is to extract the digits of a given binary number starting from the rightmost digit
 and keep a variable dec. At the time of extracting digits from the binary number,
 multiply the digit with the (Power of 2) that will be made via Math.pow in which increment of i
@@ -36,7 +35,7 @@ public class BinaryToDecimal {
     }
 }
 /*
-    Test Cases:
+        Test Cases:
         Input: 10110
         Output: 22
 
