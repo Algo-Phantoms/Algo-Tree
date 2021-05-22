@@ -1,14 +1,11 @@
 /*SUBARRAY OF SIZE K WITH PALINDROMIC CONCATENATION
 PALINDROME: words that are spelled the same from forward as well as backward.
-
 PROBLEM: for a given array and an integer k, check if any subarray of size k exists in the array 
 such that concatenation of elements form a palindrome.
-
 APPROACH:        SLIDING WINDOW APPROACH
 1.store concatenation of initial k elements.
 2.iterate over the array & start deleting elements from the start and adding elements from the end.
 3.at each step,check if concatenation is a palindrome.
-
 */
 
 #include<iostream>
@@ -19,7 +16,7 @@ using namespace std;
 //functions that checks whether number is palindrome or not
 bool ispalindrome(int n){
     int temp=n, num=0;
-    
+
     //this loop will calculate reverse of n
     while(temp>0){
         num=num*10 +temp%10;
@@ -83,11 +80,9 @@ int main(){
 /*TEST CASE 1:
 INPUT: arr={2,3,5,1,1,5} , k=4
 OUTPUT:5 1 1 5
-
 TEST CASE 2:
 INPUT:arr={1,2,3,4,5,6,7} , k=4
 OUTPUT:palindromic subarray doesn't exists
-
 TIME COMPLEXITY:O(n^2)
 SPACE COMPLEXITY:O(1)
 */
