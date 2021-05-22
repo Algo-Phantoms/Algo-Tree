@@ -39,3 +39,4 @@
 # Questions related to Number Theory
 
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+- Binary to Decimal Number Transformation ----> [Java](/Code/Java/Bin_Dec.java)
