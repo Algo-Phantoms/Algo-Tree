@@ -9,17 +9,12 @@
 - [Factorial without recursion](https://github.com/Subhangini/Algo-Tree/blob/subh/Code/C%2B%2B/Factorial_without_recursion.cpp)
 - [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
 - [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
-- [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
-- [Palindrome Number](/Code/C++/palindrome_number.cpp)
-
-
 
 #### Prime numbers
 
 - [Sieve of Eratosthenes](https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html)
 - [Sieve of Eratosthenes With Linear Time Complexity](https://cp-algorithms.com/algebra/prime-sieve-linear.html)
 - [Primality tests](https://cp-algorithms.com/algebra/primality_tests.html)
-- [Integer factorization]()
 
 #### Number-theoretic functions
 
@@ -37,34 +32,10 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
-<<<<<<< HEAD
-<hr>
 
-
-# Questions related to Number Theory
-
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
+## Questions related to Number Theory  
+- All Unique Prime Factors ----> [C++](/Code/C++/Unique_prime_factor.cpp) | [Java](/Code/Java/Uniquefactor.java)
 - Binary to Decimal Number Transformation ----> [Java](/Code/Java/Bin_Dec.java)
-||||||| 1543e18
-<hr>
-
-
-# Questions related to Number Theory
-
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
-=======
-## Questions related to Number Theory
-- All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java)
-- Check Prime Number ----> [Java](/Code/Java/check_prime.java)
-- Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
-- Checking for Anagram ---->[Python](/Code/Python/Anagram.py)
-- Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
-- Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
-- Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
-
-
-## Questions related to Number The  
-- All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java) | [C++](/Code/C++/Unique_prime_factor.cpp)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java) | [Python](/Code/Python/TrimorphicNumber.py)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
@@ -73,7 +44,7 @@
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
 - Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
-- Palindrome Number --->[Python](/Code/Python/palindrome_number.py)
+- Modular Exponentiation ----> [C++](/Code/C++/modular_exponentiation.cpp)
+- Palindrome Number ---> [C++](/Code/C++/palindrome_number.cpp) | [Python](/Code/Python/palindrome_number.py)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
-- To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
->>>>>>> 8a57aa9205f907e0460e9ff6416a748e9d621bd2
+- To find all prime number from 2 to N ----> [C++](/Code/C++/Sieves_prime.cpp)
