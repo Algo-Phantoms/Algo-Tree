@@ -27,12 +27,12 @@ public class BinaryToDecimal {
 }
 /*
     Test Cases:
-        Input:
-        Output:
+        Input: 10110
+        Output: 22
 
-        Input:
-        Output:
+        Input: 1110010
+        Output: 114
 
-        Time Complexity: O(n)
+        Time Complexity: O(n) where n is the Number of Digits in Decimal Number
         Space Complexity: O(1)
  */
