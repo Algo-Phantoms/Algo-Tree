@@ -38,9 +38,11 @@ A graph is a pair (V, E), where V is a set of nodes, called vertices, and £ is 
 
 - Breath First Search ----> [C++](/Code/C++/BFS.cpp) | [Java]() | [Python]()
 - Depth First Search ----> [C++](/Code/C++/DFS.cpp) | [Java]() | [Python]()
+- Largest-Cake-Piece ----> [C++](/Code/C++/largest_cake.cpp)
 - Kruskal Algorithm ----> [C++](/Code/C++/Kruskal.cpp) | [Java](/Code/Java/Kruskals_Algorithm.java) | [Python](/Code/Python/Kruskal.py)
 - Dijkstra Algorithm ----> [C++](/Code/C++/Dijkstra.cpp) | [Java](/Code/Java/Dijkstra.java) | [Python]()
 - Strongly Connected Components (Using Kosaraju Algorithm) ----> [C++](/Code/C++/kosaraju_algorithm.cpp)
+- Strongly Connected Components (Using Tarjan Algorithm) ----> [Java](/Code/Java/Tarjan_SCC.java)
 - Topological Sort ----> [C++](/Code/C++/Topological_sort.cpp) | [Java](/Code/Java/Topological_sort.java) | [Python]()
 - Prim's Algorithm ----> [C++]() | [Java](Code/Java/Prims_Algorithm.java) | [Python]()
 - Negative Cycle In weighted Graph (Using Bellman–Ford algorithm) ---> [C++](/Code/C++/negative_cycle_in_weighted_graph.cpp) | [Java]() | [Python]()
