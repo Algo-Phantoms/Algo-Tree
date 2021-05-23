@@ -45,7 +45,7 @@
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
-- Counting Divisors Using Sieve ---->[C++](https://github.com/Ritu7683/Algo-Tree/blob/main/Algorithm/Number_theory/Counting_Divisors_using_Sieve.cpp)
+- Counting Divisors Using Sieve ---->[C++](/Code/C++/Counting_Divisors_using_Sieve.cpp)
 
 
 ## Questions related to Number The  
