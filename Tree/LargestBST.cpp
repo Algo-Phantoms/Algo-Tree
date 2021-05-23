@@ -1,21 +1,22 @@
 /*Find the BST with the maximum heigth i.e. largest BST of the binary tree, which the user will input.*/
+
 #include <iostream>
 #include <queue>
 #include<limits.h>
 
-template <typename T>
+template <typename T> // template to take any data type string and int as integer
 class BinaryTreeNode {
    public:
     T data;
     BinaryTreeNode<T>* left;
     BinaryTreeNode<T>* right;
 
-    BinaryTreeNode(T data) {
-        this->data = data;
+    BinaryTreeNode(T data) {  //constructor
+        this->data = data; 
         left = NULL;
         right = NULL;
     }
-    ~BinaryTreeNode() {
+    ~BinaryTreeNode() {     //destructor
         if (left) delete left;
         if (right) delete right;
     }
@@ -24,31 +25,31 @@ class BinaryTreeNode {
 using namespace std;
 
 
-int height(BinaryTreeNode<int> *root) {
+int height(BinaryTreeNode<int> *root)  //returnning heigth of the tree
 
     if(root==NULL) return 0;
-    return 1+max(height(root->left),height(root->right));
+    return 1+max(height(root->left), height(root->right)); 
 }
 
-bool isbst(BinaryTreeNode<int> *root,int min,int max){
+bool isbst(BinaryTreeNode<int> *root, int min, int max){ //checking if the tree is bst or not
     if(root==NULL) return true;
     if(root->data<min||root->data>max) return false;
-    return isbst(root->left,min,root->data-1)&&isbst(root->right,root->data,max);
+    return isbst(root->left, min, root->data-1)&&isbst(root->right, root->data, max); 
 }
 bool isBST(BinaryTreeNode<int> *root){
 
-    return isbst(root,INT_MIN,INT_MAX);
+    return isbst(root, INT_MIN, INT_MAX); //creating helper function to check BST
 }
 
 int largestBSTSubtree(BinaryTreeNode<int> *root) {
     
     
     if(isBST(root)) return height(root);
-    return max(largestBSTSubtree(root->left),largestBSTSubtree(root->right));
+    return max(largestBSTSubtree(root->left), largestBSTSubtree(root->right));
 
 }
 
-BinaryTreeNode<int>* takeInput() {
+BinaryTreeNode<int>* takeInput() { //INPUT FUNCTION
     int rootData;
     cout<<"enter the root data:";
     cin >> rootData;
@@ -87,19 +88,22 @@ int main() {
     delete root;
 }
 /*
--------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+TIME COMPLEXITY: O(N) [WHERE N IS NUMBER OF NODES IN INPUT BST]
+SPACE COMPLEXITY: O(H) [WHERR H IS HEIGHT OF THE INPUT BST]
+
+-------------------------------------------------------------------------------
 SAMPLE CASE 1:
 INPUT
 enter the root data:9 3 5 10  2 3 -1 -1 -1 -1 -1 9 -1 -1
 OUTPUT
 2
---------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 SAMPLE CASE 2:
 INPUT
 enter the root data:8 3 10 1 6 -1 14 -1 -1 4 7 13 -1 -1 -1 -1 -1 -1 -1
 OUTPUT
 4
 
-TIME COMPLEXITY: O(N)
-SPACE COMPLEXITY: O(1)
 */
