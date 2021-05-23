@@ -53,5 +53,4 @@ class Binary_search
         }
         System.out.println(countRotations(arr, 0, n-1)); 
     } 
-} 
-
+}
