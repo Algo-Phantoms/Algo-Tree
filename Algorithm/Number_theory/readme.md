@@ -35,7 +35,7 @@
 
 ## Questions related to Number Theory  
 - All Unique Prime Factors ----> [C++](/Code/C++/Unique_prime_factor.cpp) | [Java](/Code/Java/Uniquefactor.java)
-- Binary to Decimal Number Transformation ----> [Java](/Code/Java/Bin_Dec.java)
+- Binary to Decimal Number Transformation ----> [C++](/Code/C++/binary_string_to_decimal.cpp) | [Java](/Code/Java/Bin_Dec.java)
 - Check Prime Number ----> [Java](/Code/Java/check_prime.java) | [Python](/Code/Python/TrimorphicNumber.py)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
