@@ -45,8 +45,6 @@
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
-- Counting Divisors Using Sieve ---->[C++](/Code/C++/Counting_Divisors_using_Sieve.cpp)
-
 
 ## Questions related to Number The  
 - All Unique Prime Factors ----> [Java](/Code/Java/Uniquefactor.java) | [C++](/Code/C++/Unique_prime_factor.cpp)
@@ -61,3 +59,4 @@
 - Palindrome Number --->[Python](/Code/Python/palindrome_number.py)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
 - To find all prime number from 2 to N ----> [C++](Code/C++/Sieves_prime.cpp)
+- Counting Divisors Using Sieve ---->[C++](/Code/C++/Counting_Divisors_using_Sieve.cpp)
