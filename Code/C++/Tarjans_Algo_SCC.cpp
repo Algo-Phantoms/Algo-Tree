@@ -131,22 +131,9 @@ SCC is 3
 SCC is 1 2 0
 
 Time complexity: O(V+E)
+V - no. of vertices
+E - no. of edges
+Space complexity: O(V)
+Total vertices of the graph are stored in map, arrays and stack which makes the complexity of the order O(V).
  
 */ 
-
-/*
-APPLICATIONS:
-
-1) Finding Bridges in a connected graph or Cut Edge problem
-Bridge is an edge removing which increases number of disconnected components.
-
-The condition for an edge (u, v) to be a bridge is, low[v] > disc[u]
-
-2) Finding Articulation Points in a graph or Cut vertex problem
-An articulation point is a node removing which the no. of disconnected components increases.
-
-In DFS tree, a vertex u is articulation point if one of the following two conditions is true. 
-1) u is root of DFS tree and it has at least two children. 
-2) If u is not a root of a DFS tree and it has a child v such that no vertex in subtree rooted with v has a back edge to one of the ancestors of u.
-
-*/
