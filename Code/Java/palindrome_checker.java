@@ -1,5 +1,9 @@
 /*
-                        ALGORITHM
+                                                                    ALGORITHM
+
+
+
+
 
 Step 1: Create a doubly linked list where each node contains only one 
         character of a string.
