@@ -6,17 +6,15 @@
 - [Binary Exponentiation](https://cp-algorithms.com/algebra/binary-exp.html)
 - [Euclidean algorithm for computing the greatest common divisor](https://cp-algorithms.com/algebra/euclid-algorithm.html)
 - [Extended Euclidean Algorithm](https://cp-algorithms.com/algebra/extended-euclid-algorithm.html)
-- [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
-- [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
-- [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
 - [Factorial without recursion](https://github.com/Subhangini/Algo-Tree/blob/subh/Code/C%2B%2B/Factorial_without_recursion.cpp)
+- [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
+- [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
 
 #### Prime numbers
 
 - [Sieve of Eratosthenes](https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html)
 - [Sieve of Eratosthenes With Linear Time Complexity](https://cp-algorithms.com/algebra/prime-sieve-linear.html)
 - [Primality tests](https://cp-algorithms.com/algebra/primality_tests.html)
-- [Integer factorization]()
 
 #### Number-theoretic functions
 
@@ -34,10 +32,19 @@
 - [Discrete Root](https://cp-algorithms.com/algebra/discrete-root.html)
 - [Montgomery Multiplication](https://cp-algorithms.com/algebra/montgomery_multiplication.html)
 
-<hr>
 
-
-## Questions related to Number Theory
-- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java)
-- Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
+## Questions related to Number Theory  
+- All Unique Prime Factors ----> [C++](/Code/C++/Unique_prime_factor.cpp) | [Java](/Code/Java/Uniquefactor.java)
+- Binary to Decimal Number Transformation ----> [C++](/Code/C++/binary_string_to_decimal.cpp) | [Java](/Code/Java/Bin_Dec.java)
+- Check Prime Number ----> [Java](/Code/Java/check_prime.java) | [Python](/Code/Python/TrimorphicNumber.py)
+- Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
+- Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
+- Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
+- Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
+- GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
+- Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
+- Modular Exponentiation ----> [C++](/Code/C++/modular_exponentiation.cpp)
+- Palindrome Number ---> [C++](/Code/C++/palindrome_number.cpp) | [Python](/Code/Python/palindrome_number.py)
+- Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
+- To find all prime number from 2 to N ----> [C++](/Code/C++/Sieves_prime.cpp)
