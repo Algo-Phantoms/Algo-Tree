@@ -70,7 +70,7 @@ public class splitarr {
                 1 4 4
         Output: 9
 
-        Time Complexity: O(n)
+        Time Complexity: O(n) where n is length of array
         Space Complexity: O(1)
 
  */
