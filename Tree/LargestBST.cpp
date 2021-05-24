@@ -27,14 +27,14 @@ using namespace std;
 
 int height(BinaryTreeNode<int> *root)  //returnning heigth of the tree
 
-    if(root==NULL) return 0;
-    return 1+max(height(root->left), height(root->right)); 
+    if(root == NULL) return 0;
+    return 1 + max( height(root->left), height(root->right) ); 
 }
 
 bool isbst(BinaryTreeNode<int> *root, int min, int max){ //checking if the tree is bst or not
-    if(root==NULL) return true;
-    if(root->data<min||root->data>max) return false;
-    return isbst(root->left, min, root->data-1)&&isbst(root->right, root->data, max); 
+    if(root == NULL) return true;
+    if(root->data < min || root->data > max) return false;
+    return isbst(root->left, min, root->data-1) && isbst(root->right, root->data, max); 
 }
 bool isBST(BinaryTreeNode<int> *root){
 
@@ -73,8 +73,7 @@ BinaryTreeNode<int>* takeInput() { //INPUT FUNCTION
         
         cin >> rightChild;
         if (rightChild != -1) {
-            BinaryTreeNode<int>* rightNode =
-                new BinaryTreeNode<int>(rightChild);
+            BinaryTreeNode<int>* rightNode = new BinaryTreeNode<int>(rightChild);
             currentNode->right = rightNode;
             q.push(rightNode);
         }
@@ -91,7 +90,7 @@ int main() {
 ----------------------------------------------------------------------------------
 
 TIME COMPLEXITY: O(N) [WHERE N IS NUMBER OF NODES IN INPUT BST]
-SPACE COMPLEXITY: O(H) [WHERR H IS HEIGHT OF THE INPUT BST]
+SPACE COMPLEXITY: O(H) [WHERE H IS HEIGHT OF THE INPUT BST]
 
 -------------------------------------------------------------------------------
 SAMPLE CASE 1:
