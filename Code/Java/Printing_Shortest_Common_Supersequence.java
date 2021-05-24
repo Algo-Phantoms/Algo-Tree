@@ -131,8 +131,31 @@ public class Printing_Shortest_Common_Supersequence {
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 2 words: ");
         String X = sc.nextLine();
         String Y = sc.nextLine();;
-        System.out.println(printShortestSuperSeq(X, Y));
+        System.out.println("The Shortest Common Supersequence: " + printShortestSuperSeq(X, Y));
     }
 }
+
+/*Time Complexity: O(n*n)
+Space Complexity: O(n*n)
+
+Example 1:
+Input:
+Enter 2 words: 
+AGGTAB
+GXTXAYB
+
+Output:
+The Shortest Common Supersequence: AGXGTXAYB
+
+Example 2:
+Input:
+Enter 2 words: 
+JHOJDO
+SIHOHD
+
+Output:
+The Shortest Common Supersequence: SIJHOHJDO
+*/
