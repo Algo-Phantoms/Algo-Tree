@@ -11,12 +11,22 @@ A string is a class that contains a char array, but automatically manages it for
 
 <hr>
 
-## Questions :
+# Minimum number of deletions to make pallindromicsubstring:
+ 
+ There are two ways to solve this problem:
 
+- A simple solution is to remove all subsequences one by one and check if the remaining string is palindrome or not. The time           complexity of this solution is exponential.
+
+- An efficient approach uses the concept of finding the length of the longest palindromic subsequence of a given sequence. 
+
+
+* Longest Prefix Suffix Problem ---->[C++](/Code/C++/longest_prefix_suffix.cpp)
 * Convert string to lowercase and uppercase ---->[C++](/Code/C++/string_to_lowercase_and_uppercase.cpp)
 * Manacher's algorithm (finding the longest palindrome in a string) ----> [Java](/Code/Java/longPalindrome.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Number of deletions to make a string pallindrome ---->[Python](/string/Number_of_deletions_to_make_pallindrome.py)
+* Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
 * Revere a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
 * Reverse Individual Words in String ----> [Java](/Code/Java/revindivstring.java)
-* Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
+* Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
+* Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
