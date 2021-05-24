@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         
         Scanner scn = new Scanner (System.in);
-        int n= scn.nextInt();                         // size of chess board
+        int n = scn.nextInt();                         // size of chess board
         int[][] chess = new int[n][n];
         int row = scn.nextInt();                      // starting row
         int col = scn.nextInt();                      // starting column
@@ -24,22 +24,22 @@ public class Main {
 
     public static void printKnightsTour(int[][] chess, int row,int col,int count ) {
        
-       if(row<0 || row>=chess.length || col<0 || col>=chess.length || chess[row][col]!=0)  // check for invalid moves i.e if box is already visited, or for non exixting points
+       if(row < 0 || row>=chess.length || col < 0 || col >= chess.length || chess[row][col] != 0)  // check for invalid moves i.e if box is already visited, or for non exixting points
         {
             return; 
         } 
         
         
-        if(count==(chess.length*chess.length))       // if all boxes of chess board visited
+        if(count == (chess.length*chess.length))       // if all boxes of chess board visited
         {
-            chess[row][col]=count;                  // put the count value in the box
+            chess[row][col] = count;                  // put the count value in the box
             displayBoard(chess);                    // print the result
-            chess[row][col]=0;                      // undo the changes made in box so that next solution can be generated
+            chess[row][col] = 0;                      // undo the changes made in box so that next solution can be generated
             return;
         }
         
         
-        chess[row][col]=count;                     // if no base cases applies then put the count value in the currrent block
+        chess[row][col] = count;                     // if no base cases applies then put the count value in the currrent block
        
         
        printKnightsTour(chess, row-2, col+1, count+1); // solution is searching clock wise all these functions are calling row and columns accordingly
@@ -51,7 +51,7 @@ public class Main {
        printKnightsTour(chess, row-1, col-2, count+1);
        printKnightsTour(chess, row-2, col-1, count+1);
        
-       chess[row][col]=0;                            // undo the changes made in box so that next solution can be generated
+       chess[row][col] = 0;                            // undo the changes made in box so that next solution can be generated
         
         
         
@@ -414,5 +414,5 @@ output :
 */
 /*
 Time Complexity : O(8^(N^2))
-Space Complexity: O(N*N)
+Space Complexity: O(N*N), Where N is the length of board.
 */
