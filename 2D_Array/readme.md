@@ -12,6 +12,7 @@ Due to the fact that the elements of 2D arrays can be random accessed. Similar t
 * Addition of two Matrices ----> [Java](/Code/Java/matrixop_add.java)
 * Checking Teoplitz Matrix Algorithm ----> [Java](/Code/Java/Toeplitz.java)
 * Clockwise Rotation ----> [C++](/Code/C++/2d_matrix_rotation_90degree_clockwise.cpp)
+* Inverse of a Matrix ----> [Java](/Code/Java/matrixop_inverse.java)
 * Matrix Operations ----> [C++](/Code/C++/matrix_operations.cpp)
 * Multiplication of two Matrices ----> [Java](/Code/Java/matrixop_mul.java)
 * Row-wise sum ----> [C++](/Code/C++/row_wise_sum.cpp) | [java](/Code/java/RowWise_Sum.java)
