@@ -48,6 +48,6 @@ public class sqrt {
         Input: 8
         Output: 2
 
-        Time Complexity: O(log n)
+        Time Complexity: O(log n) where n is the given number
         Space Complexity: O(1)
  */
