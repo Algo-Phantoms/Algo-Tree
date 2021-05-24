@@ -19,7 +19,7 @@ Node* reverse (Node *save)
           if(save == NULL || save->next == NULL)  
            {
     
-               return save; // BASE CASE: if it is empty or is of size one
+               return save;                      // BASE CASE: if it is empty or is of size one
            }
     
            Node *new_head = reverse(save->next);//RECURSIVE CALL
@@ -28,25 +28,27 @@ Node* reverse (Node *save)
            save->next = NULL;
            return new_head; 
        }
+
        bool isPalindrome (Node *head)
        {
-           Node *help=head;
-           Node *temp = reverse(help);//reversing the linked list ans saving its head in temp
+           Node *help = head;
+           Node *temp = reverse(help);          //reversing the linked list ans saving its head in temp
     
-           if(head==NULL){
+           if(head == NULL) {
                return 1;
            }
-           while(temp && help){
-               if(temp->data != help->data){  //comparing the given input linked list with its reverse
+           while(temp && help) {
+               if(temp->data != help->data) {   //comparing the given input linked list with its reverse
                    return 0;
                }
-               else{
+               else {
                    return 1;
                }
                temp = temp->next;
                head = head->next;
            }
        }
+
 Node *takeinput()
 {
 	int data;
