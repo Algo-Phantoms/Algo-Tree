@@ -48,3 +48,4 @@
 - Palindrome Number ---> [C++](/Code/C++/palindrome_number.cpp) | [Python](/Code/Python/palindrome_number.py)
 - Taylor's Series of e^x ----> [Java](/Code/Java/Taylorseries.java)
 - To find all prime number from 2 to N ----> [C++](/Code/C++/Sieves_prime.cpp)
+- Check Smith Number ----> [Java](/Code/Java/smith_number.java)
