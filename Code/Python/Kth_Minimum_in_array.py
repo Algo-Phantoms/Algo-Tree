@@ -32,7 +32,6 @@ Enter number of elements:
 6
 Enter elements: 
 7 10 4 3 20 15
-
 Enter the number k: 
 3
 
@@ -46,7 +45,6 @@ Enter number of elements:
 7
 Enter elements: 
 8 1 0 9 5 11 4
-
 Enter the number k: 
 4
 
