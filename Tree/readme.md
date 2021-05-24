@@ -68,5 +68,8 @@ that, this property should be satisfied at every node in the tree.
 * Top-View of a Binary tree ----> [C++](/Code/C++/Top-View.cpp) 
 * Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp)
 * Maximum Topology Short ----> [C++](/Code/C++/Max_Topology_Short.cpp)
+* Left View of  a Binary Tree----> [C++](/Code/C++/left-view.cpp)
+* Bottom-View of a Binary tree ----> [C++](/Code/C++/bottomView.cpp) 
+
 
 
