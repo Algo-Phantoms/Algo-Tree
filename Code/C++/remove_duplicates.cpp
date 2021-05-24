@@ -1,14 +1,12 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 /*
 
- Problem : Remove duplicates from an unsorted linked list
- Algorithm : This problem can be solved by hashing. The elements are hashed to a hash array and elements with frequency more than 1 are picked only once.
- Time Complexity : O(n)
- Space Complexity : O(1)
+    Problem : Remove duplicates from an unsorted linked list
+    Algorithm : This problem can be solved by hashing. The elements are hashed to a hash array and elements with frequency more than 1 are picked only once.
 
- */
+*/
+    #include <bits/stdc++.h>
+    using namespace std;
+
 
     struct Node
     {
@@ -102,6 +100,10 @@ using namespace std;
            36 48 75 12 35 36 110 250 12 24 96 12 85 100 75
  Output -  The final list is
            36 48 75 12 35 110 250 24 96 85 100
+
+ Time Complexity : O(n)
+ Space Complexity : O(1)
+    where 'n' is the number of elements in the list.
 
  */
 
