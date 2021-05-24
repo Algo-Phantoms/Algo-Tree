@@ -22,10 +22,13 @@ int main()                          // main function from where the execution of
 }
 
 
-/*  Sample Test Case :
-        Input       Output
-         5            120
-         7            5040
+/*  Test Case :
+        Input   : 5   
+        Output  : 120
+        
+        Input   : 5   
+        Output  : 120
+        
 */
 
 
