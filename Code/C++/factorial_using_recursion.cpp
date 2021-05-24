@@ -32,7 +32,7 @@ int main()                          // main function from where the execution of
 */
 
 
-/*   Time Complexity in this case is : O(n)
-     Space Complexity in this case is : O(n)
+/*   Time Complexity in this case is : O(N)
+     Space Complexity in this case is : O(N)
 */  
 
