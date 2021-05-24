@@ -43,10 +43,9 @@ bool isBST(BinaryTreeNode<int> *root){
 
 int largestBSTSubtree(BinaryTreeNode<int> *root) {
     
-    
     if(isBST(root)) return height(root);
     return max(largestBSTSubtree(root->left), largestBSTSubtree(root->right));
-
+   
 }
 
 BinaryTreeNode<int>* takeInput() { //INPUT FUNCTION
