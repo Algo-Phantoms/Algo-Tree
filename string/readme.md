@@ -30,3 +30,4 @@ A string is a class that contains a char array, but automatically manages it for
 * Reverse Individual Words in String ----> [Java](/Code/Java/revindivstring.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
+* Pig Latin Converter ----> [Java](/Code/Java/piglatin_convertor.java)
