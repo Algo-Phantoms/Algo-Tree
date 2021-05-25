@@ -39,6 +39,8 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
 
+- Longest Bitonic Subsequence ----> [C++](/Code/C++/longest_bitonic_subsequence.cpp)
+
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 
 - Longest Common Substring ----> [C++](/Code/C++/longest_common_substring.cpp)
