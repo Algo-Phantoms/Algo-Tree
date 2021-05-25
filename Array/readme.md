@@ -25,7 +25,7 @@ To create an array, you need to known the length (or size) of the array in advan
 ##Questions
 
  * Counting rotations in a sorted array ---> [Python](/Code/Python/Count_of_rotations.py)
- * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
+ * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp) | [Java](/Code/Java/dublicate.java)
  * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
  * Inverse of Array ----> [Java](/Code/Java/inverseofarray.java) | [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
@@ -42,5 +42,6 @@ To create an array, you need to known the length (or size) of the array in advan
  * Split Array Largest Sum ----> [Java](/Code/Java/splitarraylargestsum.java)
  * Sliding Window Maximum ---->[C++](/Code/C++/Sliding_Window_Maximum.cpp)
  * Three Sum ----> [Python](/Code/Python/Three_Sum.py)
+ * Union and Intersection of 2 Array ----> [Java](/Code/Java/unionANDinter.java)
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Union of two Unsorted Arrays ----> [C++](/Code/C++/Union_of_two_unsorted_array.cpp) 
