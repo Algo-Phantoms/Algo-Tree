@@ -24,7 +24,7 @@ public class Main {
 
     public static void printKnightsTour(int[][] chess, int row,int col,int count ) {
        
-       if(row < 0 || row>=chess.length || col < 0 || col >= chess.length || chess[row][col] != 0)  // check for invalid moves i.e if box is already visited, or for non exixting points
+       if(row < 0 || row >= chess.length || col < 0 || col >= chess.length || chess[row][col] != 0)  // check for invalid moves i.e if box is already visited, or for non exixting points
         {
             return; 
         } 
