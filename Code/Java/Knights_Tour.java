@@ -42,14 +42,14 @@ public class Main {
         chess[row][col] = count;                     // if no base cases applies then put the count value in the currrent block
        
         
-       printKnightsTour(chess, row-2, col+1, count+1); // solution is searching clock wise all these functions are calling row and columns accordingly
-       printKnightsTour(chess, row-1, col+2, count+1); // by using backtracking function will print all possible solutions in which knight will be able to cover whole board
-       printKnightsTour(chess, row+1, col+2, count+1);
-       printKnightsTour(chess, row+2, col+1, count+1);
-       printKnightsTour(chess, row+2, col-1, count+1);
-       printKnightsTour(chess, row+1, col-2, count+1);
-       printKnightsTour(chess, row-1, col-2, count+1);
-       printKnightsTour(chess, row-2, col-1, count+1);
+       printKnightsTour(chess, row - 2, col + 1, count + 1); // solution is searching clock wise all these functions are calling row and columns accordingly
+       printKnightsTour(chess, row - 1, col + 2, count + 1); // by using backtracking function will print all possible solutions in which knight will be able to cover whole board
+       printKnightsTour(chess, row + 1, col + 2, count + 1);
+       printKnightsTour(chess, row + 2, col + 1, count + 1);
+       printKnightsTour(chess, row + 2, col - 1, count + 1);
+       printKnightsTour(chess, row + 1, col - 2, count + 1);
+       printKnightsTour(chess, row - 1, col - 2, count + 1);
+       printKnightsTour(chess, row - 2, col - 1, count + 1);
        
        chess[row][col] = 0;                            // undo the changes made in box so that next solution can be generated
         
