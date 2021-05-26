@@ -20,16 +20,16 @@ A string is a class that contains a char array, but automatically manages it for
 - An efficient approach uses the concept of finding the length of the longest palindromic subsequence of a given sequence. 
 
 
-* Longest Prefix Suffix Problem ---->[C++](/Code/C++/longest_prefix_suffix.cpp)
+* Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
 * Convert string to lowercase and uppercase ---->[C++](/Code/C++/string_to_lowercase_and_uppercase.cpp)
+* Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_array.py)
+* Longest Common Prefix ----> [Java](/Code/Java/Longest_Conmmon_Prefix.java)
+* Longest Prefix Suffix Problem ---->[C++](/Code/C++/longest_prefix_suffix.cpp)
 * Manacher's algorithm (finding the longest palindrome in a string) ----> [Java](/Code/Java/longPalindrome.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Number of deletions to make a string pallindrome ---->[Python](/string/Number_of_deletions_to_make_pallindrome.py)
 * Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
-* Revere a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
+* Reverse a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
 * Reverse Individual Words in String ----> [Java](/Code/Java/revindivstring.java)
-* Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
-* Longest Common Prefix ----> [Java](/Code/Java/Longest_Conmmon_Prefix.java)
-* Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
-* Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_array.py)
+
 
