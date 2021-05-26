@@ -14,15 +14,15 @@ def factorial(num):
     
 num = int(input("Input: "))
 
-print('Output' ,factorial(num))
+print('Output:',factorial(num))
 
 '''
     Test cases:
     Input: 7
-    5040
+    Output: 5040
     
     Input: 0
-    1
+    Output: 1
 
     Time complexity: O(n)
     Space Complexity: O(1)
