@@ -31,3 +31,4 @@ A string is a class that contains a char array, but automatically manages it for
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
 * Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_array.py)
+* Longest Palindromic Substring ----> [Python](/Code/Python/longest_palindromic_substring.py)
