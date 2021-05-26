@@ -70,6 +70,7 @@ Following are the types of searches which we will be discussing in this book.
 * Find peak element using binary search ----> [Python](/Code/Python/peak_element.py)
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
 * Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
+* In Place Merge Sort ----> [C++](/Code/C++/in_place_merge_sort.cpp)
 * Linear Search ----> [Python](/Code/Python/linearsearch.py)
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
