@@ -41,6 +41,7 @@
         5. Make a count of the maximum length of palindromic substring found
            and it's start index throughout the filling of the table.
 '''
+
 for _ in range(int(input())):
     s = input()
     n = len(s)
