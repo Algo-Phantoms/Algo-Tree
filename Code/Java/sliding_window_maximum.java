@@ -18,19 +18,19 @@ public class Main{
        a[i] = scn.nextInt();
     }
     int k = scn.nextInt();
-    int [] r =right(a);                   // calling maximum element on right function it will return the index of maximum elements on right
-    int j=0;                              // let first element be maximum element
-    for(int i=0;i<a.length-k+1;++i)       // sliding the window
+    int [] r = right(a);                   // calling maximum element on right function it will return the index of maximum elements on right
+    int j = 0;                              // let first element be maximum element
+    for(int i = 0; i < a.length - k + 1; ++i)       // sliding the window
     {
-        if(j<i)                           // if element is out of window
+        if(j < i)                           // if element is out of window
         {
-            j=i;                          // set first element in window the maximum element
+            j = i;                          // set first element in window the maximum element
         }
-        while(r[j]<i+k)                   // here j is the index of current maximum element and r[j] will give the index of next maximum element, while r[j] is in the window 
+        while(r[j] < i + k)                   // here j is the index of current maximum element and r[j] will give the index of next maximum element, while r[j] is in the window 
         {
-            j=r[j];                       // update maximum to r[j]
+            j = r[j];                       // update maximum to r[j]
         }
-        System.out.print(a[j]+" ");        // at last j will have the index of maximum element print jth element of array
+        System.out.print(a[j] + " ");        // at last j will have the index of maximum element print jth element of array
     }
   }
  
@@ -39,18 +39,18 @@ public static int[] right(int[] arr)     // function to get next maximum element
 {
     Stack<Integer> st = new Stack<>();   // create a stack of type integer
     int [] ans = new int[arr.length];    // create an ans array of same length
-    int right = arr.length-1;            // traverse from the last element of array
+    int right = arr.length - 1;            // traverse from the last element of array
     
-    while(right>=0)                      // while index in range
+    while(right >= 0)                      // while index in range
     {
-        if(st.size()==0)                 // if size of stack is zero this means element has no maximum element on right
+        if(st.size() == 0)                 // if size of stack is zero this means element has no maximum element on right
         {
             ans[right] = arr.length;     // put arr.length on the right index of ans array
             st.push(right);              // push the current index in the stack
             right--;                     // decrease index
         }
         
-        else if(arr[right]<arr[st.peek()]) // if top of stack contains index of element that is greater than current element 
+        else if(arr[right] < arr[st.peek()]) // if top of stack contains index of element that is greater than current element 
         {
             ans[right] = st.peek();        // put top element on the right index of ans array 
             st.push(right);                // push the current index in the stack
