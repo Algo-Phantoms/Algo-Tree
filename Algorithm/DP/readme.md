@@ -47,12 +47,12 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Minimum Number of Deletions To Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
 
-- Longest Palindromic Substring ----> [Python](/Code/Python/longest_palindromic_substring.py)
-
 - Climbing Stairs ----> [C++](/Code/C++/Climbing_Stairs.cpp)
 
 - Word Wrap Problem ----> [C++](/Code/C++/word_wrap.cpp)
 
-- Painting Fence Algorithm ----> [Python](/Code/Python/PaintFenceAlgo.py) | [Java](/Code/Java/Paint_fence_algo.java) 
+- Painting Fence Algorithm ----> [Python](/Code/Python/PaintFenceAlgo.py) | [Java](/Code/Java/Paint_fence_algo.java)
+
+- Longest Palindromic Substring ----> [Python](/Code/Python/longest_palindromic_substring.py)
 
 
