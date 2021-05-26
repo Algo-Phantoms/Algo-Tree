@@ -63,6 +63,7 @@ Following are the types of searches which we will be discussing in this book.
 * Binary Search ----> [Python](/Code/Python/Binary_Search.py)
 * Book Allocation ----> [Java](/Code/Java/Book_Allocation.java)
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
+* Comb Sort ----> [C++](/Code/C++/comb_sort.cpp)
 * Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
 * Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
 * DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
