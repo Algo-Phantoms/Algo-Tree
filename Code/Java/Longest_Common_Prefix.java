@@ -1,12 +1,6 @@
 /* Here is the code for finding the Longest Conmmon Prefix
 from the input provided by user.
 
-Time complexity:
-O(N) as depends on the characters given in the string
-
-Space complexity:
-Takes constant space.
-
 _______________________________________________________________
 */ 
 
@@ -44,10 +38,22 @@ public class Main {
 	}
 }
 
+/*
+Time complexity:
+O(N) as depends on the characters given in the string
+
+Space complexity:
+Takes constant space.
+*/
 
 /*
 
     Test case:
+    
         Input:  small smile smell
         Output: sm
+	
+	Input:  flight flock fly
+	Output: fl
 */
+
