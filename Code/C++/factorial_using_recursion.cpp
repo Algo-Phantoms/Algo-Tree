@@ -5,19 +5,19 @@
     if(n == 0) : return 1;  
 */
 
-#include<iostream>                  // header file required for Input/Output in the program
+#include<iostream>                      // header file required for Input/Output in the program
 using namespace std;
 
-int factorial(int n)                // Function to calculate this factorial
-{   if(n == 0)                       // Base Case if n = 0
-        return 1;                     // 0! = 1
-    return n*factorial(n-1);          // Multiplied the current number and recursed the factorial (n-1)
+int factorial(int n)                    // Function to calculate this factorial
+{   if(n == 0)                          // Base Case if n = 0
+        return 1;                       // 0! = 1
+    return n*factorial(n-1);            // Multiplied the current number and recursed the factorial (n-1)
 }
 
-int main()                          // main function from where the execution of code starts
-{   int n;                            // number for which we need to find factorial
-    cin >> n;                          // number input by the user
-    cout << factorial(n) <<endl;       // calling the factorial function created
+int main()                              // main function from where the execution of code starts
+{   int n;                              // number for which we need to find factorial
+    cin >> n;                           // number input by the user
+    cout << factorial(n) <<endl;        // calling the factorial function created
     return 0;
 }
 
@@ -33,6 +33,6 @@ int main()                          // main function from where the execution of
 
 
 /*   Time Complexity in this case is : O(N)
-     Space Complexity in this case is : O(N)
+     Space Complexity in this case is : O(1)
 */  
 
