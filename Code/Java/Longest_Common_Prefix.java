@@ -16,18 +16,19 @@ public class Main {
         
         int index = 0;
         
-        for(char c:strs[0].toCharArray())
+        for(char c : strs[0].toCharArray())
         {
-            for(int i=1;i<strs.length;i++)
+            for(int i=1 ; i<strs.length ; i++)
             {
-                if(index >= strs[i].length() || c != strs[i].charAt(index)){
+                if(index >= strs[i].length() || c != strs[i].charAt(index))
+		{
                     return lcp;
                 }
             }
             lcp += c;
             index++;
         }
-        return lcp;
+        return lcp ;
         
     }
     public static void main(String[] args) {
