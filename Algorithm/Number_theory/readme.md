@@ -42,6 +42,7 @@
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp)
 - Counting number of digits in factorial using Kamenetsky's Formula ----> [Java](Code/Java/Kamenetsky_Formula.java)
 - Determining if a number is a prime number or not using Trial Division Algorithm ---> [C++](/Code/C++/prime_number.cpp)
+- Factorial of a number using recursion ---->[C++](/Code/C++/factorial_using_recursion.cpp)
 - Factorial of a number without recursion ---->[Python](/Code/Python/factorial_without_recursion.py)
 - Check Trimorphic number ---->[C++](/Code/C++/Trimorphic_number.cpp) | [Java](/Code/Java/trimorphic_number.java)
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)

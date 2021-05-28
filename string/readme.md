@@ -20,8 +20,11 @@ A string is a class that contains a char array, but automatically manages it for
 - An efficient approach uses the concept of finding the length of the longest palindromic subsequence of a given sequence. 
 
 
-* Longest Prefix Suffix Problem ---->[C++](/Code/C++/longest_prefix_suffix.cpp)
+* Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
 * Convert string to lowercase and uppercase ---->[C++](/Code/C++/string_to_lowercase_and_uppercase.cpp)
+* Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_array.py)
+* Longest Palindromic Substring ----> [Python](/Code/Python/longest_palindromic_substring.py)
+* Longest Prefix Suffix Problem ---->[C++](/Code/C++/longest_prefix_suffix.cpp)
 * Manacher's algorithm (finding the longest palindrome in a string) ----> [Java](/Code/Java/longPalindrome.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Number of deletions to make a string pallindrome ---->[Python](/string/Number_of_deletions_to_make_pallindrome.py)
@@ -31,3 +34,4 @@ A string is a class that contains a char array, but automatically manages it for
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
 * Pig Latin Converter ----> [Java](/Code/Java/piglatin_convertor.java)
+
