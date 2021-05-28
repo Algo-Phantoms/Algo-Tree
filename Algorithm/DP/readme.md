@@ -37,7 +37,7 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Climbing Stairs ----> [C++](/Code/C++/Climbing_Stairs.cpp)
 - Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
-- Knapsack ----> [C++](/Code/C++/knapsack.cpp)
+- Knapsack ----> [C++](/Code/C++/knapsack.cpp) | [Java](/Code/Java/knapsack.java)
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 - Longest Common Substring ----> [C++](/Code/C++/longest_common_substring.cpp)
 - Minimum Number of Deletions To Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
