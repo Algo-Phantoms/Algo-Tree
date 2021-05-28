@@ -23,6 +23,8 @@ A string is a class that contains a char array, but automatically manages it for
 * Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
 * Convert string to lowercase and uppercase ---->[C++](/Code/C++/string_to_lowercase_and_uppercase.cpp)
 * Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_array.py)
+* Longest Common Prefix ----> [Java](/Code/Java/Longest_Conmmon_Prefix.java)
+* Longest Palindromic Substring ----> [Python](/Code/Python/longest_palindromic_substring.py)
 * Longest Prefix Suffix Problem ---->[C++](/Code/C++/longest_prefix_suffix.cpp)
 * Manacher's algorithm (finding the longest palindrome in a string) ----> [Java](/Code/Java/longPalindrome.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
@@ -30,5 +32,4 @@ A string is a class that contains a char array, but automatically manages it for
 * Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
 * Reverse a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
 * Reverse Individual Words in String ----> [Java](/Code/Java/revindivstring.java)
-* Longest Common Prefix ----> [Java](/Code/Java/Longest_Conmmon_Prefix.java)
-* Longest Palindromic Substring ----> [Python](/Code/Python/longest_palindromic_substring.py)
+
