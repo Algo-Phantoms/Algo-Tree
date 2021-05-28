@@ -10,3 +10,7 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Hi 😄, thanks for creating issue at AlgoTree, do read and follow the [Code of Conduct](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/CODE_OF_CONDUCT.md) and the [Contribution Guidelines](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/GUIDLINES.md) while contributing.'
+        
+        
+        
+        
