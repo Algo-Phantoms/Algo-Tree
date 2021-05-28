@@ -1,7 +1,6 @@
 ## Related Issue
 
 - Info about Issue or bug
-
 fixes #[issue number that will be closed through this PR]
 
 #### Describe the changes you've made
