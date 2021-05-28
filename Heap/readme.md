@@ -26,3 +26,4 @@ current element and continue this process until the heap property is satisfied a
 * Merge K Sorted Arrays ----> [C++](/Code/C++/Merge_k_sorted_arrays.cpp)
 * Sliding Window Problem ----> [C++] (/Code/C++/Sliding_window_Maximum.cpp)
 * Top K Frequent Elements ----> [C++](/Code/C++/top_k_frequent_elements.cpp)
+* K-ary Heap ----> [C++](/Code/C++/k_ary_heap.cpp)
