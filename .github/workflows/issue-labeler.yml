@@ -1,0 +1,14 @@
+name: issue-labeler
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  automate-issues-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: initial labeling
+        uses: andymckay/labeler@master
+        with:
+          add-labels: 'GSSOC21'
