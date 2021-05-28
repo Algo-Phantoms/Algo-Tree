@@ -48,7 +48,7 @@ int main()
     Original array  : 11  12  13  14  16  17  18
     Zig - Zag array : 11  13  12  16  14  18  17
 
-    Time Complexity : O(n log n)
+    Time Complexity : O(n log n), where n is the number of elements.
     Space Complexity : O(1)
 */
 
