@@ -39,6 +39,7 @@ To create an array, you need to known the length (or size) of the array in advan
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp) | [Java](/Code/Java/peakvalueinarray.java)
  * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
  * Rotation Count in a sorted array ----> [Python](/Code/Python/RotationCount.py)
+ * Subset Sum Greater than X ----> [C++](/Code/C++/subset_sum.cpp) 
  * Search in sorted rotated array ----> [Python](/Code/Python/search_in_sorted_rotated_array.py)
  * Sliding Window Maximum ---->[C++](/Code/C++/Sliding_Window_Maximum.cpp)
  * Split Array Largest Sum ----> [Java](/Code/Java/splitarraylargestsum.java)
