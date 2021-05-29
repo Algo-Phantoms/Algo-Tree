@@ -22,9 +22,10 @@ element in a full stack is called **overflow**.
 - **IsFullStack():** Indicates whether the stack is full or not.
 
 ## Questions :
-*   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp) | [Java](/Code/Java/Balanced_Bracket_Problem.java) | [Python](/Code/Python/Balanced_brackets.py)
-*   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
-*   Minimum Element ----> [Python](/Code/Python/minimium_element.py)
-*   Reverse individual words of a string ----> [C++](/Code/C++/reverse_words_of_string.cpp)
-*   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
-*   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp) | [Python](/Code/Python/StockSpan.py) | [Java](/Code/Java/Stock_Span_Problem.Java)
+
+-   Balanced Bracket Problem ----> [C++](/Code/C++/balanced_bracket.cpp) | [Java](/Code/Java/Balanced_Bracket_Problem.java) | [Python](/Code/Python/Balanced_brackets.py)
+-   Evaluation of postfix expression ----> [C++](/Code/C++/Postfixexpression.cpp)
+-   Largest Rectangle ----> [C++](/Code/C++/Largest_Rectangle.cpp)
+-   Reverse individual words of a string ----> [C++](/Code/C++/reverse_words_of_string.cpp)
+-   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
+-   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp) | [Java](/Code/Java/Stock_Span_Problem.Java) | [Python](/Code/Python/StockSpan.py)
