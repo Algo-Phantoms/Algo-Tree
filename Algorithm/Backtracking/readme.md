@@ -27,4 +27,9 @@ unsolvable.
 
 ## Questions :
 
+* Knights Tour  ----> [Java](Code/Java/Knights_Tour.java)
 * Permutation of a string ----> [C++](/Code/C++/permutation_of_a_string.cpp)
+* Rat in a Maze ----> [C++](/Code/C++/rat_in_maze.cpp)
+* N Queen Problem ----> [C++](/Code/C++/n_queen_problem.cpp) | [Python](/Code/Python/n_queens.py)
+* Sudoku Solver ----> [C++](/Code/C++/sudoku_solver.cpp) | [Java](/Code/Java/Sudoku_Solver.java)
+
