@@ -8,6 +8,7 @@ jobs:
   auto-response:
     runs-on: ubuntu-latest
 
+    if: github.event.pull_request.merged == true
     steps:
     - uses: derekprior/add-autoresponse@master
       env:
