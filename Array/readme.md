@@ -30,10 +30,11 @@ To create an array, you need to known the length (or size) of the array in advan
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
  * Inverse of Array ----> [Java](/Code/Java/inverseofarray.java) | [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
  * Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
- * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)  
+ * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp) 
  * K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) | [Java](/Code/Java/K Largest Elements.java)
  * Left_rotation ----> [Python](/Code/Python/left_rotation.py)
- * Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp) | [C++](/Code/C++/merge_in_constant_space.cpp)
+ * Minimum Merge Operation ----> [Python](/Code/Python/merge_to_palindrome.py)
+ * Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp) 
  * Most Occured Element in Array ----> [Java](/Code/Java/mostoccured.java)
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp) | [Java](/Code/Java/peakvalueinarray.java)
  * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
@@ -47,20 +48,6 @@ To create an array, you need to known the length (or size) of the array in advan
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Union of two Unsorted Arrays ----> [C++](/Code/C++/Union_of_two_unsorted_array.cpp) 
  * Union and Intersection of 2 Array ----> [Java](/Code/Java/unionANDinter.java)
- * Unsorted Zig-Zag Array ----> [C++](/Code/C++/unsorted_zig_zag_array.cpp)
- 
-- Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
-- Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
-- Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
-- Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
-- Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
-- K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) 
-- Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp)
-- Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp) | [Java](/Code/Java/peakvalueinarray.java)
-- Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
-- Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
+ * Unsorted Zig-Zag Array ----> [C++](/Code/C++/unsorted_zig_zag_array.cpp) 
 
  
-
-
-
