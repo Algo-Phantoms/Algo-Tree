@@ -10,6 +10,7 @@ jobs:
   automate-issues-labels:
     runs-on: ubuntu-latest
     # These tasks will be run in each job
+    if: github.event.pull_request.merged == true
     steps:
       - name: initial labeling
         uses: andymckay/labeler@master
@@ -17,5 +18,7 @@ jobs:
           add-labels: 'GSSOC21'
           
           
-          
-        
+ 
+ 
+ 
+ 
