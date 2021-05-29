@@ -61,7 +61,7 @@ that, this property should be satisfied at every node in the tree.
 * Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) | [Java](Code\Java\Searching_in_BST.Java)
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
-* Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp)
+* Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp) | [Java][/Code/Java/maximumSum.java]
 * Maximum Topology Short ----> [C++](/Code/C++/Max_Topology_Short.cpp)
  
 
