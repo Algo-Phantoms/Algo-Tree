@@ -90,7 +90,7 @@ int main()
        max_sum = 27
        Output : No
 
-    Time Complexity : O(sum*n)
+    Time Complexity : O(sum*n)                      ----->where sum is maximum sum which is to be checked and n is size of array
     Space Complexity : O(sum*n)
 */
 
