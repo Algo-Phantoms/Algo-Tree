@@ -29,3 +29,4 @@ properties.
 
 ## Questions :
 * Insertion ----> [C++](/Code/C++/insertion_in_linked_list.cpp)
+* Palindrome Check using Doubly LInked List---->[Java](/Linked_list/palindrome_checker.java)
