@@ -36,15 +36,31 @@ To create an array, you need to known the length (or size) of the array in advan
  * Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp) | [C++](/Code/C++/merge_in_constant_space.cpp)
  * Most Occured Element in Array ----> [Java](/Code/Java/mostoccured.java)
  * Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp) | [Java](/Code/Java/peakvalueinarray.java)
- * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java) | [Python](/Code/Python/Repeating_and_missing_number.py) 
+ * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
  * Rotation Count in a sorted array ----> [Python](/Code/Python/RotationCount.py)
  * Search in sorted rotated array ----> [Python](/Code/Python/search_in_sorted_rotated_array.py)
+ * Sliding Window Maximum ---->[C++](/Code/C++/Sliding_Window_Maximum.cpp)
  * Split Array Largest Sum ----> [Java](/Code/Java/splitarraylargestsum.java)
- * Sliding Window Maximum ---->[C++](/Code/C++/Sliding_Window_Maximum.cpp) | [Java](/Code/Java/sliding_window_maximum.java)
- * Three Sum ----> [Python](/Code/Python/Three_Sum.py)
- * Union and Intersection of 2 Array ----> [Java](/Code/Java/unionANDinter.java)
- * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
- * Rotation Count in a sorted array ----> [Python](/Code/Python/RotationCount.py)
+ * Sorted Zig-Zag Array ----> [C++](/Code/C++/sorted_zig_zag_array.cpp)
  * Subarray with palindromic concatenation ----> [C++](/Code/C++/subarray_palindrome_concat.cpp)
+ * Three Sum ----> [Python](/Code/Python/Three_Sum.py)
+ * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Union of two Unsorted Arrays ----> [C++](/Code/C++/Union_of_two_unsorted_array.cpp) 
+ * Union and Intersection of 2 Array ----> [Java](/Code/Java/unionANDinter.java)
+ * Unsorted Zig-Zag Array ----> [C++](/Code/C++/unsorted_zig_zag_array.cpp)
  
+- Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp)
+- Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
+- Inverse of an array ----> [C++](Code/C++/inverse_of_an_array.cpp) | [Python](/Code/Python/inverseArray.py)
+- Job Sequencing Problem ----> [C++](/Code/C++/job_sequencing_problem.cpp)
+- Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
+- K Largest Element  ----> [C++](/Code/C++/K_largest_element.cpp) 
+- Merging two sorted arrays in O(1) space ---->[C++](/Code/C++/merge_in_constant_space.cpp)
+- Peak element in array using linear search ----> [C++](/Code/C++/peak_value_linear_search.cpp) | [Java](/Code/Java/peakvalueinarray.java)
+- Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) | [Java](/Code/Java/Repeating_And_Missing_Number.java)
+- Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
+
+ 
+
+
+
