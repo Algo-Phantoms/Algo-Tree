@@ -1,11 +1,15 @@
-/*Problem statement: Find the subarry sum in an array of size n such that its sum is greater than x.
-language: C++
-subarray:- A subbarray is a contiguous part of an array.
+/*
+    Problem Statement : 
+        You are given a set of non-negative integers and a sum and the task is to find out if there is any subset of the given set
+        with sum equal to the given sum.
 
-input: n (no. of elements)
-       arr[0] arr[1] arr[2] ..... (space seperated integers)
-       x      
-output: ans  (subarray sum just greater than x)
+    Approach : 
+        To consider all subsets of items, there can be two cases for every item:
+            (1) the item is included in the optimal subset, 
+            (2) not included in the optimal set. Therefore, the maximum value that can be obtained from n items is max of following two values.
+
+        we will use the top down approach of Dynamic programming to solve this problem. We will create a 2D array (dp[][]) of size 
+        (n+1)(sum+1). The value of dp[i][j] will be true if there exists a subset of elements from arr[0….i] with sum value = ‘j’. 
 */
 
 #include <stdio.h>
@@ -14,67 +18,79 @@ output: ans  (subarray sum just greater than x)
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isPresent(int v[],int n,int sum)          //this function checks wheather the provided subarray sum("sum") is possible in this array or not
+//Function to calculate the subset sum
+bool subset_sum(int arr[], int max_sum, int n)
 {
-	int i,j,x=0;
-	for(i=0;i<n;i++){
-		j=i;
-		x=0;
-		while(j<n && x<sum)         //keep on adding elments from array until it becomes greater than provided sum
-		{
-			x+=v[j];
-			j++;
-		}
-		if(x==sum)      //checks if subarray sum from i to j is equal to sum(given) or not
-		return true;
-	}
-	return false;
+    int i,j;
+    //top down matrix
+    bool dp[n+1][max_sum+1];
+    
+    for(i=0;i<=n;i++)
+    {
+        for(j=0;j<=max_sum;j++)
+        {
+            //To fill the first column
+            if(j==0){
+                dp[i][j] = true;
+            }
+
+            //To fill the first row
+            else if(i==0){
+                dp[i][j] = false;
+            }
+
+            //for filling the rest of the cell
+            else{
+
+                //if the current array element is greater then the current max_sum
+                //condition for ecluding the array element
+                if(arr[i-1]>max_sum){
+                    dp[i][j] = dp[i-1][j];
+                }
+
+                //Condition for including the array element
+                else{
+                    dp[i][j] = dp[i-1][j] || dp[i-1][j-arr[i-1]];
+                }
+            }
+        }
+    }
+    //answer will be the last cell of the dp matrix
+    return dp[n][max_sum];
 }
 
-
-
+//main method
 int main()
 {
-	int x,n,i,tot=0,ans,flag=0;
-	cin>>n;
-	int v[n];
-	
-	for(i=0;i<n;i++)
-	{
-		cin>>v[i];
-		tot+=v[i];    //finding maximum possible sum 
-	}
-	cin>>x;   //taking x as input and we need to find that smallest possible subarray sum which is just greater than x
-	for(i=x+1;i<=tot;i++){
-		//cout<<i<<endl;
-		if(isPresent(v,n,i))
-		{
-			flag=1;
-			ans=i;
-			break;
-		}
-		
-	}
-  if(flag==0)   
-    cout<<"Not possible\n";
-  else
-	cout<<ans<<endl;
-	
-	return 0;
+    int arr[100], n, i, max_sum;
+    cout << "Enter the number of elements : ";
+    cin >> n;
+    for(i=0;i<n;i++)
+    {
+        cout << "Enter element at index "<< i << " : ";
+        cin >> arr[i];
+    }
+    cout << "Enter the sum : ";
+    cin >> max_sum;
+    //function calling
+    if(subset_sum(arr,max_sum,n))
+        cout << "Yes\n";
+    else
+        cout << "No\n";
+    return 0;    
 }
 
-//Time Complexity: O(n)
+/*
+    Test Cases : 
+    1. arr[3, 22, 41, 35, 6, 12]
+       max_sum = 9
+       Output : Yes
 
-/*e.g-1)
-5					--->(n)
-3 1 7 1 2			--->arr[]
-11					--->k
-12					--->smallest subset sum greater than k
+    2. arr[2, 19, 4, 3, 62, 12]
+       max_sum = 27
+       Output : No
 
-e.g-2)
-6
-12 3 1 5 4 2
-45
-Not possible
-
+    Time Complexity : O(sum*n)
+    Space Complexity : O(sum*n)
 */
+
