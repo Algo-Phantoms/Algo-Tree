@@ -37,7 +37,7 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 - Climbing Stairs ----> [C++](/Code/C++/Climbing_Stairs.cpp)
 - Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
-- Knapsack ----> [C++](/Code/C++/knapsack.cpp)
+- Knapsack ----> [C++](/Code/C++/knapsack.cpp) | [Java](/Code/Java/knapsack.java) | [Python](/Code/Python/knapsack.py)
 - Longest Bitonic Subsequence ----> [C++](/Code/C++/longest_bitonic_subsequence.cpp)
 - Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
 - Longest Repeating Subsequence ----> [C++](/Code/C++/longest_repeating_subsequence.cpp)
