@@ -1,0 +1,22 @@
+name: Auto message on Creating Issue.
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create comment for issue
+      if: github.event_name =='issues' 
+      uses: peter-evans/create-or-update-comment@v1
+      with:
+        issue-number: ${{tojson(github.event.issue.number)}}
+        body: |
+            Hi 😄, @${{ github.actor }} Thanks for creating  issue at AlgoTree, do read and follow the [Code of Conduct](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/CODE_OF_CONDUCT.md) and the [Contribution Guidelines](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/GUIDLINES.md) while contributing. Refer to PR's which has been merged earlier in AlgoTree [Click Here](https://github.com/Algo-Phantoms/Algo-Tree/pulse#merged-pull-requests) Like, How many File they have changed?, Which type of files need to be change? and many more.
+    
+    
+    
+    
+    

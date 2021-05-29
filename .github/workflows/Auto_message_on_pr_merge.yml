@@ -1,0 +1,24 @@
+name: congratulations  Message on PR merge
+
+on:
+  pull_request_target:
+    types: [closed]
+
+jobs:
+  auto-response:
+    runs-on: ubuntu-latest
+
+    if: github.event.pull_request.merged == true
+    steps:
+    - uses: derekprior/add-autoresponse@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        respondableId: ${{ github.event.pull_request.node_id }}
+        response: "Congratulations 🎉🎊, Your PR has been Merged and Thank you @${{ github.event.pull_request.user.login }} for taking out your valuable time in order to contribute to AlgoTree. Looking forward for more such amazing contributions :)"
+        author: ${{ github.event.pull_request.user.login }}
+        
+        
+        
+        
+        
