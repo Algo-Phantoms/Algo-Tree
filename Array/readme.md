@@ -50,4 +50,5 @@ To create an array, you need to known the length (or size) of the array in advan
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Union of two Unsorted Arrays ----> [C++](/Code/C++/Union_of_two_unsorted_array.cpp) 
  * Unsorted Zig-Zag Array ----> [C++](/Code/C++/unsorted_zig_zag_array.cpp) 
+ * Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_Array.py)
 
