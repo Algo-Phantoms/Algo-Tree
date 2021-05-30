@@ -36,4 +36,5 @@ A string is a class that contains a char array, but automatically manages it for
 * Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
 * Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_array.py)
 * Print Shortest Common Supersequence ---->[Java](/Code/Java/Printing_Shortest_Common_Supersequence.java)
+* Find first non repeating character ----> [Java](/Code/Java/nonrepeating_char.java)
 
