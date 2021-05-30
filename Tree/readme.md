@@ -48,6 +48,8 @@ that, this property should be satisfied at every node in the tree.
 
 ## Questions :
 
+
+* Check Whether given Binary Tree is BST ----> [C++](/Code/C++/check_tree_is_BST.cpp) | [Java](/Code/Java/check_valid_BST.java) | [Python]()
 * AVL Tree ----> [C++](/Code/C++/avl_tree.cpp) 
 * BFS traversal on Binary Tree ----> [C++](/Code/C++/binary_tree_BFS_traversal.cpp)
 * Bottom-View of a Binary tree ----> [C++](/Code/C++/bottomView.cpp) 
@@ -60,6 +62,7 @@ that, this property should be satisfied at every node in the tree.
 * Largest BST---->[C++](Tree/LargestBST.cpp)
 * Left View of  a Binary Tree----> [C++](/Code/C++/left-view.cpp)
 * Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
+* Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp)
 * Lowest common ancestor in a binary tree ----> [Python](/Code/Python/LCA_in_binary_tree.py)
 * Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp) | [Java](/Code/Java/maximumSum.java)
 * Maximum Topology Short ----> [C++](/Code/C++/Max_Topology_Short.cpp)
