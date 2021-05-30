@@ -46,9 +46,8 @@ To create an array, you need to known the length (or size) of the array in advan
  * Sorted Zig-Zag Array ----> [C++](/Code/C++/sorted_zig_zag_array.cpp)
  * Subarray with palindromic concatenation ----> [C++](/Code/C++/subarray_palindrome_concat.cpp)
  * Three Sum ----> [Python](/Code/Python/Three_Sum.py)
+ * Union and Intersection of 2 Array ----> [Java](/Code/Java/unionANDinter.java)
  * Union of two Arrays ----> [C++](Code/C++/Union_of_two_unsorted_array.cpp)
  * Union of two Unsorted Arrays ----> [C++](/Code/C++/Union_of_two_unsorted_array.cpp) 
- * Union and Intersection of 2 Array ----> [Java](/Code/Java/unionANDinter.java)
  * Unsorted Zig-Zag Array ----> [C++](/Code/C++/unsorted_zig_zag_array.cpp) 
 
- 
