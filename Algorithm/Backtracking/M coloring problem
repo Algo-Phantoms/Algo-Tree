@@ -1,0 +1,88 @@
+Given an undirected graph and a number m, determine if the graph can be coloured with at most m colours such that no two adjacent vertices of the graph are colored with the same color.
+Input : in input we have taken a undirected graph in which user has to enter no of vertices and edges between vertices also we have to provide a number m which is the maximum number of colors that can be used.
+Output:In output the array is displayed of all the pattern in which we can color the graph .If there is no possiblity then program is simply terminated
+//Program in C++
+#include<stdio.h>
+
+int nextvalue(int k,int x[],int n,int a[][20],int m);
+
+int mcoloring(int k,int x[],int n,int a[][20],int m)
+{
+	int i;
+	do
+	{
+		nextvalue(k,x,n,a,m);
+		if(x[k]==0)
+		     return 0;
+		if(k==n)
+		{
+			for(i=1;i<=n;i++)
+			printf("%d\t",x[i]);
+			printf("\n");
+		}
+		else
+		        mcoloring(k+1,x,n,a,m);
+	}while(1);
+}
+
+int nextvalue(int k,int x[],int n,int a[][20],int m)
+{
+	int j;
+	do
+	{
+		x[k]=(x[k]+1)%(m+1);
+		
+		if(x[k]==0)
+		        return 0;
+		for(j=1;j<=n;j++)
+		{
+			if((a[k][j]!=0)&&(x[k]==x[j]))
+			      break;
+		}
+		if(j==n+1)
+		        return 0;
+	}while(1);
+}
+
+int main()
+{
+	int n,ne,k,x[20],ar[20][20],i,j,a,b,m;
+	
+	printf("enter no of vertices: ");
+	scanf("%d",&n);
+	
+	printf("enter total no of edges: ");
+	scanf("%d",&ne);
+	
+	printf("m= ");
+	scanf("%d",&m);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
+	               ar[i][j]=0;
+	               
+	        x[i]=0;
+	}
+		      
+		             
+	for(i=1;i<=ne;i++)
+	{
+		printf("enter first terminal: ");
+		scanf("%d",&a);
+		
+		printf("enter second terminal: ");
+		scanf("%d",&b);
+		
+		ar[a][b]=1;
+		ar[b][a]=1;
+	}
+	
+	mcoloring(1,x,n,ar,m);	
+}
+/*
+Time Complexity: O(m^V). 
+There are total O(m^V) combination of colors. So time complexity is O(m^V).
+Space Complexity: O(V). 
+It will require O(V) space.
+*/
