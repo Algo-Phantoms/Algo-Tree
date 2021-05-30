@@ -74,4 +74,5 @@
 - To check for palindrome number---->[Java](/Code/Java/Palindrome_number.java) 
 - To find all prime number from 2 to N ----> [C++](/Code/C++/Sieves_prime.cpp)
 - Sliding Window Maximum ----> [Python](/Code/Python/SlidingWindowMax.py)
+- Pronic Number ---> [C++](/Code/C++/pronic_Number.cpp)
 
