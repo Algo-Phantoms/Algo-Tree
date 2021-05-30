@@ -42,7 +42,7 @@ To create an array, you need to known the length (or size) of the array in advan
  * Subset Sum Greater than X ----> [C++](/Code/C++/subset_sum.cpp) 
  * Search in sorted rotated array ----> [Python](/Code/Python/search_in_sorted_rotated_array.py)
  * Sliding Window Maximum ---->[C++](/Code/C++/Sliding_Window_Maximum.cpp)
- * Split Array Largest Sum ----> [Java](/Code/Java/splitarraylargestsum.java)
+ * Split Array Largest Sum ----> [CPP](/Code/Java/splitarraylargestsum.cpp) | [Java](/Code/Java/splitarraylargestsum.java) 
  * Sorted Zig-Zag Array ----> [C++](/Code/C++/sorted_zig_zag_array.cpp)
  * Subarray with palindromic concatenation ----> [C++](/Code/C++/subarray_palindrome_concat.cpp)
  * Three Sum ----> [Python](/Code/Python/Three_Sum.py)
