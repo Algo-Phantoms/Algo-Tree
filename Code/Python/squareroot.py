@@ -3,13 +3,8 @@ Problem statement: Given an integer,we have to find its square root.
 
 If the given number is not a perfect square then we have to find floor(squareroot(x))
 """
-
 #solution:
-
-
 def squareroot(n):
-    
-
     if n==0  or n==1: #if  entered number is 1 or 0  then square root is number itself .So return the entered number .
         return n
 # if entered number is not 1 or 0 then perform binary search operation to find squareroot
@@ -36,10 +31,6 @@ n=int(input("enter a number :"))
 print(squareroot(n))
 
 """
-Time complexity:O(logn)
-space complexity: O(1)
-
-
 Example 1:
     Enter a number: 8
     Output:
@@ -55,13 +46,11 @@ Example 1:
 
     iv.now low=3 and high=2 ,while loop terminates and result value(2)is returned.
 
-
-
 Example 2:
     enter a number: 9
     Output:
     3
-                                   
-       
-
+  
+Time complexity:O(logn)
+space complexity: O(1)
 """
