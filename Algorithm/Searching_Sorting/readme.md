@@ -74,6 +74,7 @@ Following are the types of searches which we will be discussing in this book.
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
 * Painter's Partition -->[C++](/Code/Python/Painter's_Partition.py)
+* Peak Element's Index ---->[C++](/Code/C++/peak_element.cpp)
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
 * Searching in sorted rotated array ----> [Java](/Code/Java/searching_in_sorted_rotated_array.java)
