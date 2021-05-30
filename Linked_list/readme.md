@@ -45,3 +45,4 @@ properties.
 * Splitting ----> [C++](/Code/C++/Splitting_Linked_lists.cpp)
 * Unrolled Linked List Implementation ----> [C++](/Code/C++/unrolled_linked_list.cpp)
 * Reverse Linked List in groups of size k ---->[Python](/Code/Python/reverse_linkedlist_in_group_of_size_k.py)
+* Deleting Node from Linked List ----> [Java](/Code/Java/DeleteNodeFromLinkedList.java)
