@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
 
 '''
-Time Complexity: O(N + klog(N))
+Time Complexity: O(N + klog(N)) (where N is number of elements in array and K is the position)
 Space Complexity: O(N)
 Example 1:
 Input:

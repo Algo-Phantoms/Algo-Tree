@@ -33,6 +33,5 @@ A string is a class that contains a char array, but automatically manages it for
 * Reverse Individual Words in String ----> [Java](/Code/Java/revindivstring.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Checking for Anagram of two string ---->[Java](/Code/Java/Anagram.java)
-* Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_Array.py)
 * Print Shortest Common Supersequence ---->[Java](/Code/Java/Printing_Shortest_Common_Supersequence.java)
 
