@@ -78,6 +78,7 @@ that, this property should be satisfied at every node in the tree.
 * Spiral Traversal of Binary Tree ----> [C++](/Code/C++/spiral_traversal_of_binary_tree.cpp) 
 * Distance between two nodes of a binary tree ----> [C++](/Code/C++/distance_between_two_nodes_of_BT.cpp)
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp) | [Java](Code\Java\Searching_in_BST.Java)
+* Serialize and Deserialize Binary Tree ----> [C++](/Code/C++/serialize_and_deserialize_binary_tree.cpp)
 * Threaded Tree ----> [C++](/Code/C++/threaded_binary_tree.cpp) 
 * Top-View of a Binary tree ----> [C++](/Code/C++/Top-View.cpp) 
 
