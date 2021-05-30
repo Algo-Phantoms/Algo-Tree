@@ -64,7 +64,7 @@ that, this property should be satisfied at every node in the tree.
 * Level Order Traversal in BST ----> [C++]() | [Java]() | [Python](/Code/Python/level_order_traversal_binary_tree.py)
 * Searching in BST ----> [C++](/Code/C++/searching_in_bst.cpp)
 * Lowest common ancestor in a binary tree ----> [Python](/Code/Python/LCA_in_binary_tree.py)
-* Root to Leaf Path with Given Sum ----> [C++](/Code/C++/Root_to_leaf_path_with_given_sum.cpp) | [Python](/Code/Python/root_to_leaf_sum.py)
+* Root to Leaf Path with Given Sum ----> [C++](/Code/C++/Root_to_leaf_path_with_given_sum.cpp) | [Java](/Code/Java/root_to_leaf_with_gven_sum.java) | [Python](/Code/Python/root_to_leaf_sum.py)
 * Maiximum  sum path from any node to any node in Binary Tree  ----> [C++](/Code/C++/max_tree_path.cpp) | [Java](/Code/Java/maximumSum.java)
 * Maximum Topology Short ----> [C++](/Code/C++/Max_Topology_Short.cpp)
 * Median of running streams of integers ----> [C++](/Code/C++/median_running_stream.cpp) 
