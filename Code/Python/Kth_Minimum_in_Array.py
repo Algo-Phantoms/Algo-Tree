@@ -1,16 +1,24 @@
-# Python3 program to find k'th smallest element
-
-# Function to return k'th smallest element in a given array
-def kthSmallest(arr, n, k):
-
-    # Sort the given array
-    arr.sort()
-
-    # Return k'th element in the
-    return arr[k-1]
-
+import heapq
+from heapq import heappop
+ 
+ 
+# Function to find the k'th smallest element in a list using min-heap
+def kthSmallest(arr, kth):
+ 
+    # transform the input list into a min-heap
+    heapq.heapify(arr)
+ 
+    # pop from min-heap exactly `k-1` times
+    while kth > 1:
+        heappop(arr)
+        kth = kth - 1
+ 
+    # return the root of min-heap
+    return arr[0]
+ 
 # Driver code
-if __name__=='__main__':
+if __name__ == '__main__':
+ 
     arr = []
     n = int(input("Enter number of elements: "))
     print("Enter elements: ")
@@ -20,10 +28,11 @@ if __name__=='__main__':
 
     k = int(input("Enter the number k: "))
     print("K'th smallest element is",
-          kthSmallest(arr, n, k))
+          kthSmallest(arr, k))
+
 
 '''
-Time Complexity: O(N Log N)
+Time Complexity: O(N + klog(N))
 Space Complexity: O(N)
 Example 1:
 Input:
