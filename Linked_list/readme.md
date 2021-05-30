@@ -45,3 +45,5 @@ properties.
 * Splitting ----> [C++](/Code/C++/Splitting_Linked_lists.cpp)
 * Unrolled Linked List Implementation ----> [C++](/Code/C++/unrolled_linked_list.cpp)
 * Unrolled Linked List Implementation ----> [C++](/Code/C++/unrolled_linked_list.cpp)
+* Deleting Node from Linked List ----> [Java](/Code/Java/DeleteNodeFromLinkedList.java)
+* Unrolled Linked List Implementation ----> [C++](/Code/C++/unrolled_linked_list.cpp)
