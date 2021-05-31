@@ -22,23 +22,24 @@ output:
                             -----> Maximum possible value we could find from given set of weight and their values
 
 """
-def knapsack(a,val,n, w):
-    dp=[[0 for i in range(w+1)] for i in range(n+1)]
-    for i in range(1, n+1):
-        for j in range(1, w+1):
-            if j>=a[i-1]:
-                dp[i][j]=max(dp[i-1][j], dp[i-1][j-a[i-1]]+val[i-1])
+def knapsack(a, val, n, w):
+    dp = [[0 for i in range(w + 1)] for i in range(n + 1)]
+    for i in range(1, n + 1):
+        for j in range(1, w + 1):
+            if j >= a[i - 1]:
+                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j-a[i - 1]]+val[i - 1])
             else:
-                dp[i][j]=dp[i-1][j]
+                dp[i][j] = dp[i - 1][j]
 
     return dp[n][w]
 
-if __name__=="__main__":
-    n=int(input('Enter number of elements: '))
-    w=int(input('Enter weight that knapsack can hold: '))
-    wgt=list(map(int,input('Enter weight of each n space seperated elements: ').split(' ') ))[:n]
+if __name__ == "__main__":
+    n = int(input('Enter number of elements: '))
+    w = int(input('Enter weight that knapsack can hold: '))
+    wgt = list(map(int, input('Enter weight of each n space seperated elements: ').split(' ')))[:n]
     val = list(map(int, input('Enter value of each n space seperated elements: ').split(' ')))[:n]
-    print(knapsack(wgt,val,n,w))
+    print(knapsack(wgt, val, n, w))
+
 
 #Time Complexity: O(n*w)          ----->where n is size of array and w is the maximum weight knapsack can hold
 #Space Complexity: O(n*w)
