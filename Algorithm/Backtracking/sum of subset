@@ -1,0 +1,81 @@
+/* Subset sum problem is to find subset of elements that are selected from a given set whose sum adds up to a given number K.Given n distinct positive integers (called weights), find all
+combinations of these numbers whose sum is m. 
+solved this problem using approach of backtracking .
+Here backtracking approach is used for trying to select a valid subset when an item is not valid, we will backtrack to get the previous subset and add another element to get the solution.
+ Recursive backtracking code for sum of subset problem 
+It find all the subset of w[1:n] that sum to m */
+#include<stdio.h>
+void sumofsub(int s,int k,int r,int m,int w[],int x[],int n);
+
+int main()
+{
+	int x[20],w[20],i,n,s,r=0,m;
+	
+	printf("enter no of tuples: ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		printf("weight of x%d: ",i);
+		scanf("%d",&w[i]);
+		r=r+w[i];
+		x[i]=0;
+	}
+	
+	printf("enter value of m: ");
+	scanf("%d",&m);
+	
+	sumofsub(0,1,r,m,w,x,n);
+	
+}
+
+void sumofsub(int s,int k,int r,int m,int w[],int x[],int n)
+{
+	int i;
+  // generate left child
+	x[k]=1;
+	
+	if(s+w[k]==m)  //Subset found
+	{
+		printf("considered tuple: (");
+		for(int i=1;i<=n;i++)// There is no recursive call here
+		printf("%d,",x[i]);
+		printf(")\n");
+	}
+	
+	else if(s+w[k]+w[k+1]<=m)// generate right child
+	sumofsub(s+w[k],k+1,r-w[k],m,w,x,n);
+	
+	if((s+r-w[k]>=m)&&(s+w[k+1]<=m))
+	{
+		x[k]=0;
+		sumofsub(s,k+1,r-w[k],m,w,x,n);
+	}
+}
+/*
+Test case 1
+Input:
+enter no of tuples: 4
+weight of x1: 10
+weight of x2: 20
+weight of x3: 30
+weight of x4: 40
+enter value of m: 50
+Output:
+considered tuple: (1,0,0,1)
+considered tuple: (1,1,1,0)
+Test case 2
+Input
+enter no of tuples: 5
+weight of x1: 7
+weight of x2: 10
+weight of x3: 15
+weight of x4: 18
+weight of x5: 20
+enter value of m: 35
+Output
+considered tuple: (1,1,0,1,0)
+considered tuple: (0,0,1,0,1)
+
+Time complexity=O(2*N)
+*/
