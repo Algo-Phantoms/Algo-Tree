@@ -81,5 +81,5 @@ Minimum number of coins whose total is equal to provided sum: 7
 */
 
 
-//Time complexity: O(n*sum)
+//Time complexity: O(n*sum)				----->where n is size of the array and sum is required sum
 //Space Complexity = O(sum)
