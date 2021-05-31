@@ -66,8 +66,6 @@ int main()
 	return 0;
 }
 
-//Time complexity: O(n*sum)
-//Space Complexity = O(sum)
 /*
 e.g-1)
 Enter number of coins: 4
@@ -81,3 +79,7 @@ Provide coins value: 3 6 2 5
 40
 Minimum number of coins whose total is equal to provided sum: 7
 */
+
+
+//Time complexity: O(n*sum)
+//Space Complexity = O(sum)
