@@ -114,8 +114,15 @@ class Heap:
 
 
 
-#Input
+#Input1
 heap=Heap()
 karr=[[1,4,6],[2,5,7],[8,9],[0,3]]
 sorted_arr=heap.merge_k_sorted_arrays(karr)
 print(sorted_arr)
+
+#Input2
+heap=Heap()
+karr=[[21,42,60],[2,51,70],[80,90],[0,13]]
+sorted_arr=heap.merge_k_sorted_arrays(karr)
+print(sorted_arr)
+
