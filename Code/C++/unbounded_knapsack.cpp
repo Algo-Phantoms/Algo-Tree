@@ -43,9 +43,6 @@ int main()
     cout << Knapsack(w, val, n, W);
 }
 /*
-Time Complexity: O(n^2)
-Space Complexity: O(W)
-
 TEST CASE 1:
 
 INPUT:
@@ -70,4 +67,7 @@ INPUT:
 
 OUTPUT:
 280
+
+Time Complexity: O(n^2)
+Space Complexity: O(W)
 */
