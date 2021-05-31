@@ -12,7 +12,10 @@
         (n+1)(sum+1). The value of dp[i][j] will be true if there exists a subset of elements from arr[0….i] with sum value = ‘j’. 
 */
 
-#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 //Function to calculate the subset sum
@@ -87,6 +90,7 @@ int main()
        max_sum = 27
        Output : No
 
-    Time Complexity : O(sum*n)
+    Time Complexity : O(sum*n)                      ----->where sum is maximum sum which is to be checked and n is size of array
     Space Complexity : O(sum*n)
 */
+
