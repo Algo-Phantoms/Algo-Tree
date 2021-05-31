@@ -1,7 +1,7 @@
 // Red Black Tree implementation in C++
 
 /*A red-black tree is a kind of self-balancing binary search tree where each node has an extra bit, and that bit is often interpreted as the colour (red or black).
-The time complexity for insertion and deletion is O(log(n))
+
 */
 
 #include <iostream>
@@ -38,8 +38,8 @@ private:
 	void preOrder(NodePtr node) {
 		if (node != TNULL) {
 			
- 		string node_Color = node->color?"RED":"BLACK";
-		   cout<<node->data<<"("<<node_Color<<")  ";
+ 		string node_Color = node->color ? "RED" : "BLACK";
+		   cout << node->data << "(" << node_Color <<")  ";
 			preOrder(node->left);
 			preOrder(node->right);
 		} 
@@ -48,8 +48,8 @@ private:
 	void inOrder(NodePtr node) {
 		if (node != TNULL) {
 			inOrder(node->left);
-			string node_Color = node->color?"RED":"BLACK";
-		   cout<<node->data<<"("<<node_Color<<")  ";
+			string node_Color = node->color ? "RED" : "BLACK";
+		   cout<<node->data << "(" << node_Color <<")  ";
 			inOrder(node->right);
 		} 
 	}
@@ -58,8 +58,8 @@ private:
 		if (node != TNULL) {
 			postOrder(node->left);
 			postOrder(node->right);
-			string node_Color = node->color?"RED":"BLACK";
-		   cout<<node->data<<"("<<node_Color<<")  ";
+			string node_Color = node->color ? "RED" : "BLACK";
+		   cout << node->data << "(" << node_Color << ")  ";
 		} 
 	}
 
@@ -67,7 +67,7 @@ private:
 	void fixDelete(NodePtr x) {
 		NodePtr s;
 		while (x != root && x->color == 0) {
-            // If the new node gets inserted on the left of parent node
+            	// If the new node gets inserted on the left of parent node
 			if (x == x->parent->left) {
 				s = x->parent->right;
 				if (s->color == 1) {
@@ -84,7 +84,8 @@ private:
 					// x's sibling S is black, and both of S's children are black.
 					s->color = 1;
 					x = x->parent;
-				} else {
+				} 
+				else {
 					if (s->right->color == 0) {
 						// x ’s sibling S is black, S's left child is red, and S's right child is black.
 						s->left->color = 0;
@@ -100,7 +101,8 @@ private:
 					leftRotate(x->parent);
 					x = root;
 				}
-			} else {
+			} 
+			else {
                 // If the new node gets inserted on the right of parent node
 				s = x->parent->left;
 				if (s->color == 1) {
@@ -115,7 +117,8 @@ private:
 					// x's sibling S is black, and both of S's children are black.
 					s->color = 1;
 					x = x->parent;
-				} else {
+				} 
+				else {
 					if (s->left->color == 0) {
 						// x ’s sibling S is black, S's left child is red, and S's right child is black.
 						s->right->color = 0;
@@ -140,9 +143,11 @@ private:
 	void rbTransplant(NodePtr u, NodePtr v){
 		if (u->parent == nullptr) {
 			root = v;
-		} else if (u == u->parent->left){
+		} 
+		else if (u == u->parent->left){
 			u->parent->left = v;
-		} else {
+		} 
+		else {
 			u->parent->right = v;
 		}
 		v->parent = u->parent;
@@ -159,7 +164,8 @@ private:
 
 			if (node->data <= key) {
 				node = node->right;
-			} else {
+			} 
+			else {
 				node = node->left;
 			}
 		}
@@ -174,16 +180,19 @@ private:
 		if (z->left == TNULL) {
 			x = z->right;
 			rbTransplant(z, z->right);
-		} else if (z->right == TNULL) {
+		} 
+		else if (z->right == TNULL) {
 			x = z->left;
 			rbTransplant(z, z->left);
-		} else {
+		} 
+		else {
 			y = minimum(z->right);
 			y_original_color = y->color;
 			x = y->right;
 			if (y->parent == z) {
 				x->parent = y;
-			} else {
+			} 
+			else {
 				rbTransplant(y, y->right);
 				y->right = z->right;
 				y->right->parent = y;
@@ -212,7 +221,8 @@ private:
 					k->parent->color = 0;
 					k->parent->parent->color = 1;
 					k = k->parent->parent;
-				} else {
+				} 
+				else {
 					if (k == k->parent->left) {
 						//  Parent node  is right child of Grand parent and new node is left child of parent node
 						k = k->parent;
@@ -223,16 +233,18 @@ private:
 					k->parent->parent->color = 1;
 					leftRotate(k->parent->parent);
 				}
-			} else {
+			} 
+			else {
 				u = k->parent->parent->right; // uncle
-                // Similar to the cases in if statement, just invert the sides
+                	// Similar to the cases in if statement, just invert the sides
 				if (u->color == 1) {
 					
 					u->color = 0;
 					k->parent->color = 0;
 					k->parent->parent->color = 1;
 					k = k->parent->parent;	
-				} else {
+				} 
+				else {
 					if (k == k->parent->right) {
 						
 						k = k->parent;
@@ -263,7 +275,7 @@ public:
 	}
 
 	
-    // Pre-Order traversal
+    	// Pre-Order traversal
 	// Node->Left Subtree->Right Subtree
 	void preorder() {
 		preOrder(this->root);
@@ -348,9 +360,11 @@ public:
 		y->parent = x->parent;
 		if (x->parent == nullptr) {
 			this->root = y;
-		} else if (x == x->parent->left) {
+		} 
+		else if (x == x->parent->left) {
 			x->parent->left = y;
-		} else {
+		} 
+		else {
 			x->parent->right = y;
 		}
 		y->left = x;
@@ -367,9 +381,11 @@ public:
 		y->parent = x->parent;
 		if (x->parent == nullptr) {
 			this->root = y;
-		} else if (x == x->parent->right) {
+		} 
+		else if (x == x->parent->right) {
 			x->parent->right = y;
-		} else {
+		} 
+		else {
 			x->parent->left = y;
 		}
 		y->right = x;
@@ -394,7 +410,8 @@ public:
 			y = x;
 			if (node->data < x->data) {
 				x = x->left;
-			} else {
+			} 
+			else {
 				x = x->right;
 			}
 		}
@@ -404,10 +421,10 @@ public:
 		if (y == nullptr) {
 			root = node;
 		} 
-        else if (node->data < y->data) {
+        	else if (node->data < y->data) {
 			y->left = node;
 		} 
-        else {
+        	else {
 			y->right = node;
 		}
 
@@ -444,40 +461,40 @@ int main() {
     int choice;
 
     do{
-        cout<<"\n\n------------------------- RED BLACK TREE ---------------------------"<<endl;
-        cout<<"\nOperations in Red Black Tree"<<endl;
-        cout<<"\nOption 1 : To insert a node"<<endl;
-        cout<<"Option 2 : To delete a node"<<endl;
-        cout<<"Option 3 : Display the Red Black Tree"<<endl;
-        cout<<"Option 4 : To end the program. "<<endl;
+        cout << "\n\n------------------------- RED BLACK TREE ---------------------------" << endl;
+        cout << "\nOperations in Red Black Tree" << endl;
+        cout << "\nOption 1 : To insert a node" << endl;
+        cout << "Option 2 : To delete a node" << endl;
+        cout << "Option 3 : Display the Red Black Tree" << endl;
+        cout << "Option 4 : To end the program. " << endl;
 
-        cout<<"\nEnter your choice : "<<endl;
-        cin>>choice;
+        cout << "\nEnter your choice : " << endl;
+        cin >> choice;
 
         switch (choice){
         case 1:
-            cout<<"\n------------- Inserting a node in Red Black Tree ---------------\n"<<endl;
+            cout << "\n------------- Inserting a node in Red Black Tree ---------------\n" << endl;
             int node1;
-            cout<<"Enter the value of node you want to insert: ";
-            cin>>node1;
+            cout << "Enter the value of node you want to insert: ";
+            cin >> node1;
             bst.insert(node1);
             break;
         
         case 2:
-            cout<<"\n------------- Deleting a node in Red Black Tree ---------------\n"<<endl;
+            cout << "\n------------- Deleting a node in Red Black Tree ---------------\n" << endl;
             int node2;
-            cout<<"Enter the node you want to delete: ";
-            cin>>node2;
+            cout << "Enter the node you want to delete: ";
+            cin >> node2;
             bst.deleteNode(node2);
             break;
 
         case 3:
-            cout<<"\n------------- Printing the Red Black Tree ---------------\n"<<endl;
-            cout<<"Pre order : ";
+            cout << "\n------------- Printing the Red Black Tree ---------------\n" << endl;
+            cout << "Pre order : ";
             bst.preorder();
-            cout<<"\n\nIn order : ";
+            cout << "\n\nIn order : ";
             bst.inorder();
-            cout<<"\n\nPost order : ";
+            cout << "\n\nPost order : ";
             bst.postorder();
             break;
 
@@ -491,6 +508,9 @@ int main() {
 }
 
 /* 
+
+Test Case : 1
+
 ------------------------- RED BLACK TREE ---------------------------
 
 Operations in Red Black Tree
@@ -663,4 +683,142 @@ Option 4 : To end the program.
 
 Enter your choice :
 4
+
+_____________________________________________________________________________
+
+Test Case : 2
+
+------------------------- RED BLACK TREE ---------------------------
+
+Operations in Red Black Tree
+
+Option 1 : To insert a node
+Option 2 : To delete a node
+Option 3 : Display the Red Black Tree
+Option 4 : To end the program.
+
+Enter your choice :
+1
+
+------------- Inserting a node in Red Black Tree ---------------
+
+Enter the value of node you want to insert: 13
+
+
+------------------------- RED BLACK TREE ---------------------------
+
+Operations in Red Black Tree
+
+Option 1 : To insert a node
+Option 2 : To delete a node
+Option 3 : Display the Red Black Tree
+Option 4 : To end the program.
+
+Enter your choice :
+1
+
+------------- Inserting a node in Red Black Tree ---------------
+
+Enter the value of node you want to insert: 45
+
+
+------------------------- RED BLACK TREE ---------------------------
+
+Operations in Red Black Tree
+
+Option 1 : To insert a node
+Option 2 : To delete a node
+Option 3 : Display the Red Black Tree
+Option 4 : To end the program.
+
+Enter your choice :
+1
+
+------------- Inserting a node in Red Black Tree ---------------
+
+Enter the value of node you want to insert: 23
+
+
+------------------------- RED BLACK TREE ---------------------------
+
+Operations in Red Black Tree
+
+Option 1 : To insert a node
+Option 2 : To delete a node
+Option 3 : Display the Red Black Tree
+Option 4 : To end the program.
+
+Enter your choice :
+3
+
+------------- Printing the Red Black Tree ---------------
+
+Pre order : 23(BLACK)  13(RED)  45(RED)  
+
+
+In order : 13(RED)  23(BLACK)  45(RED)  
+
+
+Post order : 13(RED)  45(RED)  23(BLACK)  
+
+
+------------------------- RED BLACK TREE ---------------------------
+
+Operations in Red Black Tree
+
+Option 1 : To insert a node
+Option 2 : To delete a node
+Option 3 : Display the Red Black Tree
+Option 4 : To end the program.
+
+Enter your choice :
+2
+
+------------- Deleting a node in Red Black Tree ---------------
+
+Enter the node you want to delete: 13
+
+
+------------------------- RED BLACK TREE ---------------------------
+
+Operations in Red Black Tree
+
+Option 1 : To insert a node
+Option 2 : To delete a node
+Option 3 : Display the Red Black Tree
+Option 4 : To end the program.
+
+Enter your choice :
+3
+
+------------- Printing the Red Black Tree ---------------
+
+Pre order : 23(BLACK)  45(RED)
+
+
+In order : 23(BLACK)  45(RED)
+
+
+Post order : 45(RED)  23(BLACK)  
+
+
+------------------------- RED BLACK TREE ---------------------------
+
+Operations in Red Black Tree
+
+Option 1 : To insert a node
+Option 2 : To delete a node
+Option 3 : Display the Red Black Tree
+Option 4 : To end the program.
+
+Enter your choice :
+4
+
+Time Complexity for Insertion in the Red black tree : O(log(n)), where n is the number of nodes in the tree
+Time Complexity for Deletion of a node from the tree : O(log(n)), where n is the number of nodes in the tree
+Time Complexity for Printing the tree : O(n), where n is the number of nodes in the tree
+Time Complexity for the functions rightRotate and leftRotate : O(1) ; since the rotation is at a single node
+Space Complexity for Insertion in the Red Black Tree tree : O(n), where n is the number of nodes in the tree
+Space Complexity for Deletion in the Red Black Tree tree : O(n), where n is the number of nodes in the tree
 */
+
