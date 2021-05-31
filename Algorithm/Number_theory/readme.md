@@ -9,6 +9,7 @@
 - [Linear Diophantine Equations](https://cp-algorithms.com/algebra/linear-diophantine-equation.html)
 - [Fibonacci Numbers](https://cp-algorithms.com/algebra/fibonacci-numbers.html)
 - [Modular Exponentiation](Code/C++/modular_exponentiation.cpp)
+- [Reverse Bits](Algorithm/Number_theory/Reverse_Bits.cpp)
 
 #### Prime numbers
 
@@ -21,7 +22,6 @@
 
 - [Euler's totient function](https://cp-algorithms.com/algebra/phi-function.html)
 - [Number of divisors / sum of divisors](https://cp-algorithms.com/algebra/divisors.html)
-- [Reverse Bits](Algorithm/Number_theory/Reverse_Bits.cpp)
 
 #### Modular arithmetic
 
