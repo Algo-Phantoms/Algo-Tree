@@ -40,7 +40,7 @@ if __name__=="__main__":
     val = list(map(int, input('Enter value of each n space seperated elements: ').split(' ')))[:n]
     print(knapsack(wgt,val,n,w))
 
-#Time Complexity: O(n*w)
+#Time Complexity: O(n*w)          ----->where n is size of array and w is the maximum weight knapsack can hold
 #Space Complexity: O(n*w)
 
 """
