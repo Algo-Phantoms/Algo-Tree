@@ -21,6 +21,7 @@
 
 - [Euler's totient function](https://cp-algorithms.com/algebra/phi-function.html)
 - [Number of divisors / sum of divisors](https://cp-algorithms.com/algebra/divisors.html)
+- [Reverse Bits](Algorithm/Number_theory/Reverse_Bits.cpp)
 
 #### Modular arithmetic
 
