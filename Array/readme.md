@@ -22,9 +22,11 @@ The syntax is:
 
 To create an array, you need to known the length (or size) of the array in advance, and allocate accordingly. Once an array is created, its length is fixed and cannot be changed. At times, it is hard to ascertain the length of an array. Nonetheless, you need to estimate the length and allocate an upper bound. This is probably the major drawback of using an array.
 
+
 ##Questions
 
  * Counting rotations in a sorted array ---> [Python](/Code/Python/Count_of_rotations.py)
+ * Factorials of big numbers ----> [C++](/Code/C++/long_factorial.cpp)
  * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp) | [Java](/Code/Java/dublicate.java)
  * Finding All subset ----> [C++](/Code/C++/Finding_all_subset.cpp)
  * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
@@ -51,4 +53,6 @@ To create an array, you need to known the length (or size) of the array in advan
  * Union of two Unsorted Arrays ----> [C++](/Code/C++/Union_of_two_unsorted_array.cpp) 
  * Unsorted Zig-Zag Array ----> [C++](/Code/C++/unsorted_zig_zag_array.cpp) 
  * Kth Minimum in array ---->[Python](/Code/Python/Kth_Minimum_in_Array.py)
-
+ * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) | [Java](/Code/Java/insertion_at_start.java) | [Python](/Code/Python/insertion_at_start.py)
+ * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
+ 
