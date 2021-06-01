@@ -60,9 +60,10 @@ Following are the types of searches which we will be discussing in this book.
 
 ## Questions :
 
-* Binary Search ----> [Python](/Code/Python/Binary_Search.py)
+* Binary Search ----> [Python](/Code/Python/Binary_Search.py) | [Java](/Code/Java/binary_search.java)
 * Book Allocation ----> [Java](/Code/Java/Book_Allocation.java)
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
+* Circle Sort ----> [C++](/Code/C++/circle_sort.cpp)
 * Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
 * Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
 * DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
