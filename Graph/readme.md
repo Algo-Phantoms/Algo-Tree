@@ -53,5 +53,5 @@ A graph is a pair (V, E), where V is a set of nodes, called vertices, and £ is 
 - Strongly Connected Components (Using Tarjans Algorithm) ----> [C++](/Code/C++/Tarjans_Algo_SCC.cpp) | [Java](/Code/Java/Tarjan_SCC.java)
 - Subtree Size ----> [C++](Code/C++/subtree_size.cpp) | [Java]() | [Python]()
 - Topological Sort ----> [C++](/Code/C++/Topological_sort.cpp) | [Java](/Code/Java/Topological_sort.java) | [Python]()
-- Negative Cycle In weighted Graph (Using Bellman–Ford algorithm) ---> [C++](/Code/C++/negative_cycle_in_weighted_graph.cpp) | [Java]() | [Python]()
+- Shortest Distance Using Bellman Ford --> [C++](/Code/C++/bellman_ford.cpp) | [Java]() | [Python]()
 - Articulation-Point(Cut-Vertex) ----> [C++](/Code/C++/articulation_point.cpp)
