@@ -46,4 +46,5 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 - Painting Fence Algorithm ----> [Python](/Code/Python/PaintFenceAlgo.py) | [Java](/Code/Java/Paint_fence_algo.java)
 - Shortest Common Supersequence ---->[C++](/Code/C++/print_shortest_supersequence.cpp)
 - Word Wrap Problem ----> [C++](/Code/C++/word_wrap.cpp)
+- Unbounded Knapsack ----> [C++](/Code/C++/unbounded_knapsack.cpp)
 - Painting Fence algorithm ----> [C++](/Code/C++/paint_fence.cpp)
