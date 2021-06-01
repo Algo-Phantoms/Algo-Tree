@@ -60,20 +60,23 @@ Following are the types of searches which we will be discussing in this book.
 
 ## Questions :
 
-* Binary Search ----> [Python](/Code/Python/Binary_Search.py)
+* Binary Search ----> [Python](/Code/Python/Binary_Search.py) | [Java](/Code/Java/binary_search.java)
 * Book Allocation ----> [Java](/Code/Java/Book_Allocation.java)
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
+* Circle Sort ----> [C++](/Code/C++/circle_sort.cpp)
 * Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
 * Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
 * DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
 * Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
 * Find peak element using binary search ----> [Python](/Code/Python/peak_element.py)
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
+* In Place Merge Sort ----> [C++](/Code/C++/in_place_merge_sort.cpp)
 * Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
 * Linear Search ----> [Python](/Code/Python/linearsearch.py)
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
 * Painter's Partition -->[C++](/Code/Python/Painter's_Partition.py)
+* Peak Element's Index ---->[C++](/Code/C++/peak_element.cpp)
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
 * Searching in sorted rotated array ----> [Java](/Code/Java/searching_in_sorted_rotated_array.java)
@@ -82,3 +85,5 @@ Following are the types of searches which we will be discussing in this book.
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
 * Three Way Merge Sort ----> [C++](/Code/C++/three_way_merge_sort.cpp)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
+
+
