@@ -2,8 +2,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Time Complexity: O(n^2)
-// Space Complexity: O(n)
 
 // Merges two subarrays in an inPlace mode
 void inplace_merge(int arr[], int beg, int mid, int end)
@@ -54,7 +52,7 @@ void merge_sort(int arr[], int beg, int end)
     {
 
         //Finds the mid index of the concerned array
-        int mid = beg + (end - beg) / 2;
+        int mid = beg + (end - beg)/2;
 
         // Recursively call the function for the first and the second part of the array
         merge_sort(arr, beg, mid);
@@ -106,3 +104,8 @@ SAMPLE 2
 How many numbers do you want to sort? 0
 There are no numbers to sort!!!
 */
+
+// Time Complexity: O(n^2) where n is the number of elements
+// Space Complexity: O(n)
+
+
