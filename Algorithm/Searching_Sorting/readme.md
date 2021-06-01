@@ -60,7 +60,7 @@ Following are the types of searches which we will be discussing in this book.
 
 ## Questions :
 
-* Binary Search ----> [Python](/Code/Python/Binary_Search.py)
+* Binary Search ----> [Python](/Code/Python/Binary_Search.py) | [Java](Algorithm/Searching_Sorting/Binary_search.java)
 * Book Allocation ----> [Java](/Code/Java/Book_Allocation.java)
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
 * Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
@@ -69,8 +69,8 @@ Following are the types of searches which we will be discussing in this book.
 * Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
 * Find peak element using binary search ----> [Python](/Code/Python/peak_element.py)
 * Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
-* Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
 * In Place Merge Sort ----> [C++](/Code/C++/in_place_merge_sort.cpp)
+* Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
 * Linear Search ----> [Python](/Code/Python/linearsearch.py)
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
@@ -83,5 +83,5 @@ Following are the types of searches which we will be discussing in this book.
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
 * Three Way Merge Sort ----> [C++](/Code/C++/three_way_merge_sort.cpp)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
-* Binary Search ----> [Java](Algorithm/Searching_Sorting/Binary_search.java)
+
 
