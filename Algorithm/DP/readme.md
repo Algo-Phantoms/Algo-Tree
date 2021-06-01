@@ -35,8 +35,16 @@ be avoided by constructinng a temporary array dp[] and memoizing the computed va
 
 ## Questions :
 
-- Knapsack ----> [C++](/Code/C++/knapsack.cpp)
-
-- Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
-
-- Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
+* Climbing Stairs ----> [C++](/Code/C++/Climbing_Stairs.cpp)
+* Knapsack ----> [C++](/Code/C++/knapsack.cpp) | [Python](/Code/Python/knapsack_dp.py) 
+* Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp)
+* Longest Bitonic Subsequence ----> [C++](/Code/C++/longest_bitonic_subsequence.cpp)
+* Longest Repeating Subsequence ----> [C++](/Code/C++/longest_repeating_subsequence.cpp)
+* Longest Common Subsequence ----> [C++](/Code/C++/longest_common_subsequence.cpp)
+* Longest Common Substring ----> [C++](/Code/C++/longest_common_substring.cpp)
+* Longest Repeating Subsequence ----> [C++](/Code/C++/longest_repeating_subsequence.cpp)
+* Minimum Number of Deletions To Make a String Palindrome ---->[C++](/Code/C++/min_deletions_to_make_string_palindrome.cpp)
+* Painting Fence Algorithm ---->  [C++](/Code/C++/paint_fence.cpp) | [Python](/Code/Python/PaintFenceAlgo.py) | [Java](/Code/Java/Paint_fence_algo.java)
+* Shortest Common Supersequence ---->[C++](/Code/C++/print_shortest_supersequence.cpp)
+* Word Wrap Problem ----> [C++](/Code/C++/word_wrap.cpp)
+* Unbounded Knapsack ----> [C++](/Code/C++/unbounded_knapsack.cpp)
