@@ -29,7 +29,10 @@ A string is a class that contains a char array, but automatically manages it for
 * Manacher's algorithm (finding the longest palindrome in a string) ----> [Java](/Code/Java/longPalindrome.java)
 * Maximum occuring character in a string ---->[C++](/Code/C++/max_count.cpp)
 * Number of deletions to make a string pallindrome ---->[Python](/string/Number_of_deletions_to_make_pallindrome.py)
+* Print Shortest Common Supersequence ---->[Java](/Code/Java/Printing_Shortest_Common_Supersequence.java)
 * Reverse a string ---->[C++](/Code/C++/reverse_string.cpp) | [Java](/Code/Java/reverse_string.java)
 * Reverse a string using Stack ---->[C++](/Code/C++/reverse_a_string_using_stack.cpp)
 * Reverse Individual Words in String ----> [Java](/Code/Java/revindivstring.java)
+
+
 

@@ -44,4 +44,6 @@ properties.
 * Reversing a Linked List ----> [C++](/Code/C++/reverse_a_linked_list.cpp)
 * Splitting ----> [C++](/Code/C++/Splitting_Linked_lists.cpp)
 * Unrolled Linked List Implementation ----> [C++](/Code/C++/unrolled_linked_list.cpp)
-* Unrolled Linked List Implementation ----> [C++](/Code/C++/unrolled_linked_list.cpp)
+* Reverse Linked List in groups of size k ---->[Python](/Code/Python/reverse_linkedlist_in_group_of_size_k.py)
+* Deleting Node from Linked List ----> [Java](/Code/Java/DeleteNodeFromLinkedList.java)
+* Delete a given node without using head pointer ----> [C++](/Code/C++/delete_without_head.cpp)
