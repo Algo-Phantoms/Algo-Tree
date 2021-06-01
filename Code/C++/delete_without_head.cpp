@@ -76,6 +76,7 @@ int main(void)
     {
         insert();
         scanf("%d",&a);
+      
         Node *dele = find(head, a);
         if (dele != NULL && dele->next != NULL)
         {
@@ -87,6 +88,14 @@ int main(void)
 }
 void deleteNodewohead(Node *node)
 {
+  //It is assumed that the node asked to delete is not the last node but we can always try this :-
+
+//         if(node->next!=NULL)
+//         {
+//         *node=*node->next;
+//         return;
+//         }
+//         node=NULL;
    if(!node->next){
        return;
    }
