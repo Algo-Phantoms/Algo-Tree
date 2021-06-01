@@ -60,9 +60,10 @@ Following are the types of searches which we will be discussing in this book.
 
 ## Questions :
 
-* Binary Search ----> [Python](/Code/Python/Binary_Search.py) | [Java](Algorithm/Searching_Sorting/Binary_search.java)
+* Binary Search ----> [Python](/Code/Python/Binary_Search.py) | [Java](/Code/Java/binary_search.java)
 * Book Allocation ----> [Java](/Code/Java/Book_Allocation.java)
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
+* Circle Sort ----> [C++](/Code/C++/circle_sort.cpp)
 * Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
 * Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
 * DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
@@ -75,6 +76,7 @@ Following are the types of searches which we will be discussing in this book.
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
 * Painter's Partition -->[C++](/Code/Python/Painter's_Partition.py)
+* Peak Element's Index ---->[C++](/Code/C++/peak_element.cpp)
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
 * Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
 * Searching in sorted rotated array ----> [Java](/Code/Java/searching_in_sorted_rotated_array.java)

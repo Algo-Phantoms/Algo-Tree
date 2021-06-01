@@ -15,6 +15,7 @@ Due to the fact that the elements of 2D arrays can be random accessed. Similar t
 * Inverse of a Matrix ----> [Java](/Code/Java/matrixop_inverse.java)
 * Matrix Operations ----> [C++](/Code/C++/matrix_operations.cpp)
 * Multiplication of two Matrices ----> [Java](/Code/Java/matrixop_mul.java)
+* Overall Median of Matrix ---> [Java](/Code/Java/overall_median_matrix.java)
 * Row-wise sum ----> [C++](/Code/C++/row_wise_sum.cpp) | [java](/Code/java/RowWise_Sum.java)
 * Spiral Print ----> [C++](/Code/C++/spiral_print.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
