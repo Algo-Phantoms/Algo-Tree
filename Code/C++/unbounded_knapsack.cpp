@@ -2,6 +2,7 @@
 Given:  a knapsack of weight W and n number of items
 Task: find the maximum value of items that can be packed into the knapsack if unlimited number of each item can be included
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 int Knapsack(int w[], int val[], int n, int W)
@@ -42,6 +43,7 @@ int main()
     cin >> W;
     cout << Knapsack(w, val, n, W);
 }
+
 /*
 TEST CASE 1:
 
@@ -68,6 +70,6 @@ INPUT:
 OUTPUT:
 280
 
-Time Complexity: O(n^2)
-Space Complexity: O(W)
+Time Complexity: O(N*W)
+Space Complexity: O(N*W)
 */
