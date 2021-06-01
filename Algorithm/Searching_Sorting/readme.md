@@ -50,7 +50,7 @@ is one of the techniques for making the elements ordered.
 
 Following are the types of searches which we will be discussing in this book.
 
-* Unordered Linear Search
+* Unordered Linear Search ----> [C++](/Code/C++/Linear_search.cpp) 
 * Sorted/Ordered Linear Search
 * Binary Search
 * Interpolation search
@@ -60,16 +60,29 @@ Following are the types of searches which we will be discussing in this book.
 
 ## Questions :
 
-* Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
-* Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
-* Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
-* Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
-* Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
-* Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
-* Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
-* Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
+* Binary Search ----> [Python](/Code/Python/Binary_Search.py)
+* Book Allocation ----> [Java](/Code/Java/Book_Allocation.java)
 * Bucket Sort ----> [Java](/Code/Java/Bucket_Sort.java)
-* Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
+* Circle Sort ----> [C++](/Code/C++/circle_sort.cpp)
+* Counting Sort ----> [C++](/Code/C++/couting_sort.cpp)
+* Cycle Sort ----> [C++](/Code/C++/cycle_sort.cpp)
+* DNF SORT ----> [C++](Algorithm/Searching_Sorting/dnf_sort.cpp)
+* Fibonacci Search ----> [C++](Algorithm/Searching_Sorting/fibonacci_search.cpp)
+* Find peak element using binary search ----> [Python](/Code/Python/peak_element.py)
+* Heap Sort ----> [C++](/Code/C++/heap_sort.cpp)
+* Insertion Sort ----> [C++](/Code/C++/insertion_sort.cpp)
+* Linear Search ----> [Python](/Code/Python/linearsearch.py)
+* Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
+* Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
+* Painter's Partition -->[C++](/Code/Python/Painter's_Partition.py)
+* Peak Element's Index ---->[C++](/Code/C++/peak_element.cpp)
+* Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
+* Rabin Karp Algorithm ----> [C++](/Code/C++/rabin_karp.cpp)
+* Searching in sorted rotated array ----> [Java](/Code/Java/searching_in_sorted_rotated_array.java)
+* Selection Sort ----> [C++](/Code/C++/selection_sort.cpp)
+* Shell Sort ----> [C++](/Code/C++/shell_sort.cpp)
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
-
+* Three Way Merge Sort ----> [C++](/Code/C++/three_way_merge_sort.cpp)
+* Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
+* Binary Search ----> [Java](Algorithm/Searching_Sorting/Binary_search.java)
 
