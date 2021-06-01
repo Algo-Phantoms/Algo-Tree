@@ -116,6 +116,3 @@ public class binary_search
  * Space Complexity: O(1)
  * where n is the number of elements in the array
  */
-    
-    
-    
