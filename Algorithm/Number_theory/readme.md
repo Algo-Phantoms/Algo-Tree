@@ -45,3 +45,4 @@
 - Fibonacci Series ----> [Java](/Code/Java/Fibonacci_Series.java)
 - GCD of two number using Euclidean Algorithm ----> [Java](/Code/Java/GCD.java) | [Python](/Code/Python/GCD.py)
 - Geek-onacci Number----> [C++](/Code/C++/Geek-onacciNumber.cpp)
+- Program to check a number is perfect--->[Python](/Code/Python/perfect_number.py)
