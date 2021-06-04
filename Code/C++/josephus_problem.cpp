@@ -2,7 +2,9 @@
 
 This is a theoretical computer science problem.
 There are n people in a circle waiting to be executed.
-Starting from any position, a person starts executing the k'th person ahead of him, then the person after the one who is executed repeats the same task, as there will be only one person surviving, we have to find the person who will remain alive.
+Starting from any position, a person starts executing the k'th person ahead of him, 
+then the person after the one who is executed repeats the same task, 
+as there will be only one person surviving, we have to find the person who will remain alive.
 
 */
 
