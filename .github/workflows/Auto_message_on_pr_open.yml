@@ -1,0 +1,22 @@
+name: Auto message on pr opened
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  auto-response:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: derekprior/add-autoresponse@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        respondableId: ${{ github.event.pull_request.node_id }}
+        response: "AlgoTree team will review your PR soon. Take Care of Few of the Things where most contributors are missing out. ![msgonpr](https://user-images.githubusercontent.com/73196470/119976078-3a7a5600-bfd4-11eb-9600-502fcbe36ac4.JPG) @${{ github.event.pull_request.user.login }} :)"
+        author: ${{ github.event.pull_request.user.login }}
+        
+        
+        
+        

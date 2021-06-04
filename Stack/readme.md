@@ -28,4 +28,5 @@ element in a full stack is called **overflow**.
 -   Largest Rectangle ----> [C++](/Code/C++/Largest_Rectangle.cpp)
 -   Reverse individual words of a string ----> [C++](/Code/C++/reverse_words_of_string.cpp)
 -   Stack Class ----> [C++](/Code/C++/stack_class.cpp)
+-   Stack using Linked List ----> [Python](/Code/Python/stack_using_linked_list.py)
 -   Stock Span Problem ----> [C++](/Code/C++/Stock_Span_Problem.cpp) | [Java](/Code/Java/Stock_Span_Problem.Java) | [Python](/Code/Python/StockSpan.py)
