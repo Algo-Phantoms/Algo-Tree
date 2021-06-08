@@ -13,6 +13,7 @@ Due to the fact that the elements of 2D arrays can be random accessed. Similar t
 * Checking Teoplitz Matrix Algorithm ----> [Java](/Code/Java/Toeplitz.java)
 * Clockwise Rotation ----> [C++](/Code/C++/2d_matrix_rotation_90degree_clockwise.cpp)
 * Inverse of a Matrix ----> [Java](/Code/Java/matrixop_inverse.java)
+* Longest Substring Without Repeating Characters ----> [Java](/Code/Java/Longest_Substring.java) 
 * Matrix Operations ----> [C++](/Code/C++/matrix_operations.cpp)
 * Multiplication of two Matrices ----> [Java](/Code/Java/matrixop_mul.java)
 * Overall Median of Matrix ---> [Java](/Code/Java/overall_median_matrix.java)
@@ -22,4 +23,3 @@ Due to the fact that the elements of 2D arrays can be random accessed. Similar t
 * Substraction of two Matrices ----> [Java](/Code/Java/matrixop_sub.java)
 * Transpose of a Matrix --->[Java](/Code/Java/transpose.java) | [](/Code//Transpose_of_matrix.py)
 * Wave Print ----> [C++](/Code/C++/wave_print.cpp)
-* Longest Substring Without Repeating Characters ----> [Java](/Code/Java/Longest_Substring.java) 
