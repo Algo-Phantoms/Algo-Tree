@@ -44,3 +44,4 @@ called **overflow**. Generally, we treat them as exceptions. As an example, cons
 * Queue using Circular Linked List ----> [C++](/Code/C++/queue_using_circular_list.cpp)
 * Queue using Linkedlist ----> [C++](/Code/c++/Queue_all_operations_using_linkedlist.cpp)
 * Queue using Stacks ----> [C++](/Code/C++/queue_using_stacks.cpp)
+* Priority Queue ----> [Python](/Code/Python/priority_queue.py)
