@@ -26,7 +26,7 @@ void printMatrix(int matrix[N][N]){
 main function or the driver function
 */
 int main(){
-    /* ###Test Case:
+    /* ###Test Case: 01
     Matrix:
         1 2 3
         4 5 6
@@ -35,6 +35,16 @@ int main(){
         3 6 9
         2 5 6
         7 8 9
+    */
+    /* ###Test Case: 02
+    Matrix:
+        10 9 4
+        3 4 20
+        50 12 19
+    After Rotation:
+        4 20 19
+        9 4 12
+        10 3 50
     */
     
     // Initializing matrix
@@ -68,3 +78,6 @@ int main(){
 
     return 0;
 }
+
+// Time Complexity: O(N*N), Where 'N' is the size of square matrix
+// Auxiliary Space: O(1), No extra space has been used
