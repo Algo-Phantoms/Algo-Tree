@@ -75,6 +75,7 @@ Following are the types of searches which we will be discussing in this book.
 * Linear Search ----> [Python](/Code/Python/linearsearch.py)
 * Merge Sort ----> [C++](/Code/C++/merge_sort.cpp)
 * Number of times sorted array rotated ---->[C++](/Code/C++/no_of_rotation.cpp)
+* Pancake Sort ----> [C++](https://github.com/Ayush12062000/Algo-Tree/blob/issue-1059/Code/C%2B%2B/Pancake_sort.cpp)
 * Painter's Partition -->[C++](/Code/Python/Painter's_Partition.py)
 * Peak Element's Index ---->[C++](/Code/C++/peak_element.cpp)
 * Quick Sort ----> [C++](/Code/C++/quick_sort.cpp)
