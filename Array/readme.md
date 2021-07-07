@@ -25,6 +25,10 @@ To create an array, you need to known the length (or size) of the array in advan
 
 ##Questions
 
+ * Insertion_at_start ----> [C++](/Code/C++/insertion_at_start.cpp) 
+ * Kadane's Algorithm ----> [C++](/Code/C++/kadane_algo.cpp) 
+ * Repeating and Missing Number ----> [C++](/Code/C++/repeating_and_missing_number.cpp) 
+ * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp) | [Python](/Code/Python/Duplicate_in_Array.py)
  * Counting rotations in a sorted array ---> [Python](/Code/Python/Count_of_rotations.py)
  * Factorials of big numbers ----> [C++](/Code/C++/long_factorial.cpp)
  * Find duplicate in array ----> [C++](/Code/C++/Duplicate_in_array.cpp) | [Java](/Code/Java/dublicate.java)
