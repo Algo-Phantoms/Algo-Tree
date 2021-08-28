@@ -62,3 +62,6 @@ int main() {
 //    dp[4]=dp[3]+1=3,so now the last number is 80 which is greater than 40 so:
 //    dp[5]=dp[4]+1=4,so the greatest value is 4 ,
 //    and the answer is 4.
+
+// Time Complexity:O(N^2)
+// Space Complexity:O(N)
