@@ -85,5 +85,6 @@ Following are the types of searches which we will be discussing in this book.
 * Staircase Search ----> [C++](/Code/C++/staircase_search.cpp)
 * Three Way Merge Sort ----> [C++](/Code/C++/three_way_merge_sort.cpp)
 * Tim Sort ----> [C++](/Code/C++/tim_sort.cpp)
+* Tree Sort ----> [C++](/Code/C++/tree_sort.cpp)
 
 
