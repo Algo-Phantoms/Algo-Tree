@@ -4,7 +4,7 @@ Example: The given matrix is
             1 2 3
             4 5 6
             7 8 9
-        After rotation by 90 degree it will become
+    After rotation by 90 degree it will become
             7 4 1
             8 5 2
             9 6 3
@@ -65,8 +65,7 @@ void print(vector<vector<int>>& v){
             cout<<v[i][j]<<" ";
         }
         cout<<endl;
-    }
-    
+    }    
 }
 
 signed main(){
