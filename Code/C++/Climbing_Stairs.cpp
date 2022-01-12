@@ -10,7 +10,6 @@
 		Extra Storage Size : No extra storage Required.
 */
 
-
 #include <iostream>
 using namespace std;
 
@@ -51,9 +50,9 @@ int main()
 	else
 		cout << "The number of stairs must be greater than 0." <<endl;
 
-
   return 0;
 }
+
 /*
 	Test Cases
 
