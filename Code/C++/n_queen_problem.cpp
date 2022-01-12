@@ -118,96 +118,96 @@ int main(){
     return 0;
 }
 /*
-TEST CASE 1:
-INPUT: 4
-OUTPUT: 
+    TEST CASE 1:
+    INPUT: 4
+    OUTPUT: 
 
-* Q * *
-* * * Q
-Q * * *
-* * Q *
-
-
-* * Q *
-Q * * *
-* * * Q
-* Q * *
-
-TEST CASE 2:
-INPUT: 5
-OUTPUT:
-
-Q * * * * 
-* * Q * *
-* * * * Q
-* Q * * *
-* * * Q *
+    * Q * *
+    * * * Q
+    Q * * *
+    * * Q *
 
 
-Q * * * *
-* * * Q *
-* Q * * *
-* * * * Q 
-* * Q * *
+    * * Q *
+    Q * * *
+    * * * Q
+    * Q * *
+
+    TEST CASE 2:
+    INPUT: 5
+    OUTPUT:
+
+    Q * * * * 
+    * * Q * *
+    * * * * Q
+    * Q * * *
+    * * * Q *
 
 
-* Q * * *
-* * * Q *
-Q * * * *
-* * Q * *
-* * * * Q
+    Q * * * *
+    * * * Q *
+    * Q * * *
+    * * * * Q 
+    * * Q * *
 
 
-* Q * * *
-* * * * Q
-* * Q * *
-Q * * * *
-* * * Q * 
+    * Q * * *
+    * * * Q *
+    Q * * * *
+    * * Q * *
+    * * * * Q
 
 
-* * Q * *
-Q * * * *
-* * * Q *
-* Q * * *
-* * * * Q 
+    * Q * * *
+    * * * * Q
+    * * Q * *
+    Q * * * *
+    * * * Q * 
 
 
-* * Q * *
-* * * * Q
-* Q * * *
-* * * Q *
-Q * * * * 
+    * * Q * *
+    Q * * * *
+    * * * Q *
+    * Q * * *
+    * * * * Q 
 
 
-* * * Q *
-Q * * * *
-* * Q * *
-* * * * Q
-* Q * * *
+    * * Q * *
+    * * * * Q
+    * Q * * *
+    * * * Q *
+    Q * * * * 
 
 
-* * * Q *
-* Q * * *
-* * * * Q
-* * Q * * 
-Q * * * *
+    * * * Q *
+    Q * * * *
+    * * Q * *
+    * * * * Q
+    * Q * * *
 
 
-* * * * Q
-* Q * * *
-* * * Q *
-Q * * * *
-* * Q * *
+    * * * Q *
+    * Q * * *
+    * * * * Q
+    * * Q * * 
+    Q * * * *
 
 
-* * * * Q
-* * Q * *
-Q * * * *
-* * * Q *
-* Q * * *
+    * * * * Q
+    * Q * * *
+    * * * Q *
+    Q * * * *
+    * * Q * *
 
-TIME COMPLEXITY: O(N!)  (N is the user input, that is the number of queens to be placed on a N X N chessboard)
-SPACE COMPLEXITY: O(N^2) 
+
+    * * * * Q
+    * * Q * *
+    Q * * * *
+    * * * Q *
+    * Q * * *
+
+    TIME COMPLEXITY: O(N!)  (N is the user input, that is the number of queens to be placed on a N X N chessboard)
+    SPACE COMPLEXITY: O(N^2) 
 */
 
 
