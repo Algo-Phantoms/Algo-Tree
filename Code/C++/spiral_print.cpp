@@ -1,3 +1,13 @@
+/*
+	To print the elements of a 2D matrix in spiral order
+	Example: The given matrix is:
+		  7 3 4
+		  2 6 9
+		  4 7 8
+		 The spiral print order is:
+		  7 3 4 9 8 7 4 2 6	
+*/
+
 #include<iostream>
 using namespace std;
 
