@@ -10,10 +10,12 @@ using namespace std;
 
 int dx[] = {1,-1,0,0};
 int dy[] = {0,0,1,-1};
+
 bool valid(int x,int y,int n)
 {
     return (x>=0 && x<n && y>=0 && y<n);
 }
+
 bool solve(vector<vector<int>>&matrix,int maze[][20],int n,int x,int y)
 {
     if(x>n || y>n || y<0 || x<0)
@@ -104,8 +106,8 @@ int main()
 		0 0 1 1
 	
 	
-Time Complexity = O(2^n)
-Space Complexity = O(n*n)
-where n = size of maze rows and columns
+	Time Complexity = O(2^n)
+	Space Complexity = O(n*n)
+	where n = size of maze rows and columns
 		
 */
