@@ -1,3 +1,13 @@
+/*
+	To print the elements of a 2D matrix in wave order, i.e. print the first column elements in top to bottom order the next column bottom to top and so on
+	Example: The given matrix is:
+		  7 3 4
+		  2 6 9
+		  4 7 8
+		 The wave print order is:
+		  7 2 4 7 6 3 4 9 8	
+*/
+
 #include<iostream>
 using namespace std;
 
