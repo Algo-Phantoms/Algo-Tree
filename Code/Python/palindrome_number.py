@@ -39,3 +39,25 @@ else:
 #       OUTPUT:
 #               The given number is a palindrome.
     
+
+
+'''Solution No. 2 Using String ''' 
+n = int(input())
+n_str = str(n)  #convert it into string in order to do slicing
+n_str = int(n_str[::-1]) #reversed the order by slicing
+
+if n_str == n:
+      print("The given number is a Palindrome number.")
+else:
+      print("The given number is not a Palindrome number.")
+
+
+#TEST CASES : 
+
+'''1. Enter the number : 1252153374328989
+The given number is not a Palindrome number.'''
+
+'''2.Enter the number : 23455432
+The given number is a Palindrome number.'''
+
+
